@@ -76,7 +76,6 @@ ma_up/
 │   │   ├── sentiment.py
 │   │   ├── argumentation.py
 │   │   ├── pos.py
-│   │   ├── sentiment.py
 │   │   ├── discourse.py
 │   │   └── article_builder.py
 │   │
@@ -92,6 +91,7 @@ ma_up/
 │   │   └── logging.py
 │   │
 │   └── workflows/
+│       ├── acquire_corpus.py
 │       ├── build_corpus.py
 │       ├── annotate_corpus.py
 │       ├── train_am.py
@@ -105,8 +105,13 @@ ma_up/
 │   │   │   └── raw_metadata.parquet
 │   │   └── crawl_logs/
 │   │
+│   ├── gold_standard/                       # Downloaded newspaper pages (.jpg)
+│   │   ├── newspaper_1.parquet
+│   │   ├── newspaper_2.parquet
+│   │   └── ...
+│   │
 │   ├── ocr_output/
-│   │   ├── experiment_results.csv   # Saves: config_id, status, CER, F1, etc.
+│   │   ├── experiment_results.parquet   # Saves: config_id, status, CER, F1, etc.
 │   │   ├── checkpoints/           # Latest state per newspaper
 │   │   │   ├── newspaper_1_checkpoint.pkl
 │   │   │   └── ...
@@ -118,6 +123,11 @@ ma_up/
 │   │
 │   └── final_dataset/
 │       └── unified_corpus.parquet
+│
+├── models/                        # Send to common folders (?)
+│   ├── domain_adaptation/
+│   ├── am_models/
+│   └── checkpoints/
 │
 ├── hpc_scripts/
 │   ├── submit_ocr_jobs.sh

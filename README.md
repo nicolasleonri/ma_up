@@ -1,54 +1,101 @@
 # Masterarbeit UP
 
-## Architecture
+Research pipeline for building, annotating and analyzing a large-scale corpus of Peruvian newspaper articles about the informal economy.
+
+## Project Structure
 
 ```
 ma_up/
 ├── config/
-│   ├── pipeline_config.yaml # Determines algorithms to be used
-│   ├── slurm_templates.sh # Formats bash-scripts
-│   └── gpu_allocation.yaml # Determines combinations of RAM & GPU
+│   ├── pipeline_config.yaml    # Determines algorithms to be used
+│   ├── slurm_templates.sh      # Formats bash-scripts
+│   └── gpu_allocation.yaml     # Presets HPC resources
 │
-├── src/ 
+├── src/
+│   ├── schemas/                 # Shared data models
+│   │   ├── article.py
+│   │   ├── paragraph.py
+│   │   ├── sentence.py
+│   │   ├── annotations.py
+│   │   └── provenance.py
+│   │
 │   ├── corpus_construction/
-│   │   ├── ocr_pipeline.py        # Main orchestrator + checkpointing
-│   │   ├── config_generator.py    # Generates 13,608 possible configs
-│   │   ├── preprocessing.py       # Algorithms
-│   │   ├── layout_detection.py    # Algorithms 
-│   │   ├── vlm_extraction.py      # uses vLLM (with Dspy) - GPU intensive
-│   │   ├── llm_postprocessing.py  # vLLM (with Dspy) - GPU intensive
+│   │   ├── pipeline.py          # Main orchestrator + checkpointing
+│   │   ├── benchmark.py
+│   │   ├── config_generator.py  # Generates 13,608 possible configs
+│   │   ├── preprocessing.py /   # Algorithms
+│   │   │   ├── base.py 
+│   │   │   ├── otsu.py
+│   │   │   ├── niblack.py 
+│   │   │   └── ...
+│   │   ├── layout.py /          # Algorithms
+│   │   │   ├── base.py 
+│   │   │   ├── layoutparser.py
+│   │   │   ├── doclayout_yolo.py 
+│   │   │   └── ...
+│   │   ├── vlm.py /             # w/ Dspy - GPU intensive
+│   │   │   ├── base.py 
+│   │   │   ├── olmocr.py
+│   │   │   ├── rolmocr.py 
+│   │   │   └── ...
+│   │   ├── llm.py /             # w/ Dspy - GPU intensive
+│   │   │   ├── base.py 
+│   │   │   ├── llama31.py
+│   │   │   ├── mistral.py 
+│   │   │   └── ...
 │   │   └── evaluation.py
 │   │
 │   ├── corpus_annotation/
-│   │   ├── topic_filtering.py    # Needs results from semantic_analysis.py
-│   │   ├── llm_preannotation.py  # uses vLLM - GPU intensive
-│   │   ├── csv_exporter.py       # Before manual validation
-│   │   └── csv_importer.py       # After manual validation
+│   │   ├── topic_filtering.py   # Needs results from semantic_analysis.py
+│   │   ├── llm_preannotation.py # uses vLLM - GPU intensive
+│   │   ├── csv_exporter.py      # Used before manual validation
+│   │   └── csv_exporter.py      # Used after manual validation
 │   │
-│   ├── model_finetuning/
-│   │   ├── domain_adaptation.py  # MLM Training - GPU intensive
-│   │   ├── am_finetuning.py      # uses different datasets combinations - GPU intensive
-│   │   └── model_evaluation.py   # uses vLLM - GPU intensive
+│   ├── am_model/
+│   │   ├── train_am.py          # Model Training w/ datasets - GPU intensive
+│   │   ├── evaluate_am.py
+│   │   ├── infer_am.py          # uses best model
+│   │   └── domain_adaptation.py # MLM Training - GPU intensive
 │   │
 │   ├── feature_extraction/
-│   │   ├── semantic_analysis.py  # BERTopic w/ majority voting - GPU intensive
-│   │   ├── sentiment_analysis.py # HF models w/ majority voting
-│   │   ├── pos_analysis.py       # Models w/ majority voting (?)
-│   │   ├── discourse_analysis.py # 1 Model from HF
-│   │   ├── interpretative_frames.py  # Clustering only, manual review
-│   │   └── aggregation.py
+│   │   ├── engine.py 
+│   │   └── extractors /
+│   │       ├── semantic.py      # BERTopic w/ majority voting - GPU intensive
+│   │       ├── sentiment.py     # HF models w/ majority voting
+│   │       ├── pos.py           # Models w/ majority voting (?)
+│   │       ├── interpretative_frames.py # Clustering only, manual review
+│   │       └── discourse.py     # 1 Model from HF
 │   │
-│   └── utils/
-│       ├── config_tracker.py      # Track completed configs, avoid repeats
-│       ├── checkpoint.py          # Resume from last checkpoint
-│       ├── data_serialization.py  # Parquet I/O
-│       ├── hpc_job_manager.py     # SLURM integration
-│       └── logging.py
+│   ├── aggregation/
+│   │   ├── sentiment.py
+│   │   ├── argumentation.py
+│   │   ├── pos.py
+│   │   ├── sentiment.py
+│   │   ├── discourse.py
+│   │   └── article_builder.py
+│   │
+│   ├── providers/
+│   │   ├── llm_provider.py
+│   │   └── vlm_provider.py
+│   │
+│   ├── utils/
+│   │   ├── config_tracker.py     # Track completed configs, avoid repeats
+│   │   ├── checkpoint.py         # Resume from last checkpoint
+│   │   ├── data_serialization.py # Parquet I/O
+│   │   ├── hpc_job_manager.py    # SLURM integration
+│   │   └── logging.py
+│   │
+│   └── workflows/
+│       ├── build_corpus.py
+│       ├── annotate_corpus.py
+│       ├── train_am.py
+│       ├── extract_features.py
+│       └── build_final_dataset.py
 │
 ├── data/
 │   ├── raw/                       # Downloaded newspaper pages (.jpg)
 │   ├── ocr_output/
-│   │   ├── configs_metadata.csv   # Saves: config_id, status, CER, F1, etc.
+│   │   ├── experiment_results.csv   # Saves: config_id, status, CER, F1, etc.
 │   │   ├── checkpoints/           # Latest state per newspaper
 │   │   │   ├── newspaper_1_checkpoint.pkl
 │   │   │   └── ...
@@ -81,36 +128,20 @@ ma_up/
 
 ## Workflow
 
-```
-1. CONFIG GENERATION (single node)
-   → Generates 13,608 configs
-   → Saves to configs_metadata.csv
+1. Generate OCR configurations
+   Build the full set of preprocessing/layout/VLM/LLM combinations and store metadata in experiment_results.parquet.
+2. Run parallel OCR benchmarking
+   Execute configurations on HPC nodes, evaluate against the gold standard, and append results to experiment_results.parquet.
+3. Select the best pipeline
+   Aggregate benchmark results and save the optimal configuration for each newspaper in best_pipeline.json.
+4. Build the article-level corpus
+   Run the selected OCR pipeline over all newspaper pages and produce structured article objects.
+5. Filter and annotate the corpus
+   Apply BERTopic filtering, export paragraphs for manual validation and import the validated annotations.
+6. Train and evaluate the AM model
+   Perform domain adaptation, fine-tuning, evaluation and full-corpus inference.
+7. Extract linguistic features
+   Run semantic, sentiment, POS, discourse and argumentative extractors, then aggregate all outputs to article level.
+8. Build the final analytical dataset
+   Merge all article-level variables into unified_corpus.parquet for statistical analysis in R.
 
-2. PARALLEL EVALUATION (GPU array job)
-   ├─ Job 1: Configs 1-100 (GPU:0)
-   ├─ Job 2: Configs 101-200 (GPU:1)
-   └─ Job N: Configs 13500-13608 (GPU:N)
-   → Outputs: evaluation_results.parquet
-
-3. BEST PIPELINE SELECTION (single node)
-   → Aggregates results
-   → Saves best_pipeline.json
-
-4. ANNOTATION & VALIDATION (local/interactive)
-   → Export: manual_validation.csv
-   → You review & edit
-   → Import: validated_final.parquet
-
-5. MODEL FINETUNING (GPU job)
-   → Uses best config + validated annotations
-   → Saves model checkpoints
-
-6. FEATURE EXTRACTION (CPU job, parallelizable)
-   → Runs all 5 linguistic layers
-   → Outputs: unified_corpus.parquet
-
-7. STATISTICAL ANALYSIS (R on local machine)
-   → Read unified_corpus.parquet
-   → Run hypothesis tests (H1-H11)
-   → Generate tables & visualizations
-```

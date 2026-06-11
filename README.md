@@ -19,6 +19,12 @@ ma_up/
 │   │   ├── annotations.py
 │   │   └── provenance.py
 │   │
+│   ├── corpus_acquisition/
+│   │   ├── crawler.py
+│   │   ├── downloader.py
+│   │   ├── metadata_extractor.py
+│   │   └── crawl_registry.py
+│   │
 │   ├── corpus_construction/
 │   │   ├── pipeline.py          # Main orchestrator + checkpointing
 │   │   ├── benchmark.py
@@ -94,15 +100,22 @@ ma_up/
 │
 ├── data/
 │   ├── raw/                       # Downloaded newspaper pages (.jpg)
+│   │   ├── images/
+│   │   ├── metadata/
+│   │   │   └── raw_metadata.parquet
+│   │   └── crawl_logs/
+│   │
 │   ├── ocr_output/
 │   │   ├── experiment_results.csv   # Saves: config_id, status, CER, F1, etc.
 │   │   ├── checkpoints/           # Latest state per newspaper
 │   │   │   ├── newspaper_1_checkpoint.pkl
 │   │   │   └── ...
 │   │   └── best_pipeline.json
+│   │
 │   ├── annotated/
 │   │   ├── manual_validation.csv
 │   │   └── validated_final.parquet
+│   │
 │   └── final_dataset/
 │       └── unified_corpus.parquet
 │
@@ -122,12 +135,14 @@ ma_up/
 │   ├── test_annotation.py
 │   └── test_aggregation.py
 │
-├── main.py                        # Orchestration
+├── main.py                        # Orchestration (only calls workflows/ and config/)
 └── requirements.txt
 ```
 
 ## Workflow
 
+0. Corpus Acquisition
+   Crawl the digital newspaper archives, download newspaper page images and extract metadata. Store downloaded pages and metadata in the raw data directory.
 1. Generate OCR configurations
    Build the full set of preprocessing/layout/VLM/LLM combinations and store metadata in experiment_results.parquet.
 2. Run parallel OCR benchmarking

@@ -220,6 +220,10 @@ __marimo__/
 # Config files
 .config/corpus_acquisition/credentials.yaml
 .config/corpus_acquisition/
+config/corpus_acquisition/credentials.yaml
+config/corpus_acquisition/
+
 
 # Venv
 .venv/
+venv/

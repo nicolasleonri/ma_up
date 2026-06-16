@@ -1,0 +1,4 @@
+module add virtualenv/20.32.0-GCCcore-14.3.0
+module add Python/3.13.5-GCCcore-14.3.0
+
+source venv/corpus_creation/bin/activate

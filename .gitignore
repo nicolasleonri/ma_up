@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Config files
+.config/corpus_acquisition/credentials.yaml
+
+# Venv
+.venv/

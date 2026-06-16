@@ -38,7 +38,7 @@ def main():
 
         browser.locator("div", has_text="El Comercio").click()
         browser.wait(5)
-        browser.screenshot("initialstate.png")
+        # browser.screenshot("initialstate.png")
 
         # Then, crawls
         crawler = ArchiveCrawler(

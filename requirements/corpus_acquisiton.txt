@@ -1,0 +1,10 @@
+distlib @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/distlib/distlib-0.4.0
+filelock @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/filelock/filelock-3.18.0
+git-filter-repo==2.47.0
+greenlet==3.5.1
+platformdirs @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/platformdirs/platformdirs-4.3.8
+playwright==1.60.0
+pyee==13.0.1
+PyYAML==6.0.3
+typing_extensions==4.15.0
+virtualenv @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/virtualenv/virtualenv-20.32.0

@@ -38,7 +38,7 @@ class ImagePreprocessingPipeline:
                 "conservative_filter",
                 "laplacian_filter",
                 "frequency_filter",
-                "crimmins_speckle_removal"
+                # "crimmins_speckle_removal"
             ]:
 
                 configs.append((b,n))

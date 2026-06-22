@@ -9,7 +9,6 @@ class BrowserSession:
         self.context = None
         self.page = None
 
-
     def start(self):
         self.playwright = sync_playwright().start()
         self.browser = self.playwright.chromium.launch(

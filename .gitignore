@@ -227,3 +227,11 @@ config/corpus_acquisition/
 # Venv
 .venv/
 venv/
+
+# Image files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.svg

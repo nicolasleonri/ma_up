@@ -14,6 +14,8 @@ It addresses the TODOs left in ``acquire_corpus.py``:
 - logging instead of bare ``print`` calls
 """
 
+from random import random
+import time
 import logging
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -99,6 +101,7 @@ class CorpusDownloader:
                         skip_existing=skip_existing,
                     )
                     all_pages.extend(pages)
+                    time.sleep(random.uniform(3, 7))  # Delay to prevent overwhelming the server
                 except Exception as exc:
                     logger.error(
                         "Skipping %s on %s due to unrecoverable error: %s",

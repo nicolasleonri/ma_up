@@ -1,0 +1,252 @@
+config_0
+  binarization: none
+  noise_removal: none
+
+config_1
+  binarization: none
+  noise_removal: mean_filter
+
+config_2
+  binarization: none
+  noise_removal: median_filter
+
+config_3
+  binarization: none
+  noise_removal: gaussian_filter
+
+config_4
+  binarization: none
+  noise_removal: unsharp_filter
+
+config_5
+  binarization: none
+  noise_removal: conservative_filter
+
+config_6
+  binarization: none
+  noise_removal: laplacian_filter
+
+config_7
+  binarization: none
+  noise_removal: frequency_filter
+
+config_8
+  binarization: none
+  noise_removal: crimmins_speckle_removal
+
+config_9
+  binarization: basic
+  noise_removal: none
+
+config_10
+  binarization: basic
+  noise_removal: mean_filter
+
+config_11
+  binarization: basic
+  noise_removal: median_filter
+
+config_12
+  binarization: basic
+  noise_removal: gaussian_filter
+
+config_13
+  binarization: basic
+  noise_removal: unsharp_filter
+
+config_14
+  binarization: basic
+  noise_removal: conservative_filter
+
+config_15
+  binarization: basic
+  noise_removal: laplacian_filter
+
+config_16
+  binarization: basic
+  noise_removal: frequency_filter
+
+config_17
+  binarization: basic
+  noise_removal: crimmins_speckle_removal
+
+config_18
+  binarization: otsu
+  noise_removal: none
+
+config_19
+  binarization: otsu
+  noise_removal: mean_filter
+
+config_20
+  binarization: otsu
+  noise_removal: median_filter
+
+config_21
+  binarization: otsu
+  noise_removal: gaussian_filter
+
+config_22
+  binarization: otsu
+  noise_removal: unsharp_filter
+
+config_23
+  binarization: otsu
+  noise_removal: conservative_filter
+
+config_24
+  binarization: otsu
+  noise_removal: laplacian_filter
+
+config_25
+  binarization: otsu
+  noise_removal: frequency_filter
+
+config_26
+  binarization: otsu
+  noise_removal: crimmins_speckle_removal
+
+config_27
+  binarization: adaptive_mean
+  noise_removal: none
+
+config_28
+  binarization: adaptive_mean
+  noise_removal: mean_filter
+
+config_29
+  binarization: adaptive_mean
+  noise_removal: median_filter
+
+config_30
+  binarization: adaptive_mean
+  noise_removal: gaussian_filter
+
+config_31
+  binarization: adaptive_mean
+  noise_removal: unsharp_filter
+
+config_32
+  binarization: adaptive_mean
+  noise_removal: conservative_filter
+
+config_33
+  binarization: adaptive_mean
+  noise_removal: laplacian_filter
+
+config_34
+  binarization: adaptive_mean
+  noise_removal: frequency_filter
+
+config_35
+  binarization: adaptive_mean
+  noise_removal: crimmins_speckle_removal
+
+config_36
+  binarization: adaptive_gaussian
+  noise_removal: none
+
+config_37
+  binarization: adaptive_gaussian
+  noise_removal: mean_filter
+
+config_38
+  binarization: adaptive_gaussian
+  noise_removal: median_filter
+
+config_39
+  binarization: adaptive_gaussian
+  noise_removal: gaussian_filter
+
+config_40
+  binarization: adaptive_gaussian
+  noise_removal: unsharp_filter
+
+config_41
+  binarization: adaptive_gaussian
+  noise_removal: conservative_filter
+
+config_42
+  binarization: adaptive_gaussian
+  noise_removal: laplacian_filter
+
+config_43
+  binarization: adaptive_gaussian
+  noise_removal: frequency_filter
+
+config_44
+  binarization: adaptive_gaussian
+  noise_removal: crimmins_speckle_removal
+
+config_45
+  binarization: yannihorne
+  noise_removal: none
+
+config_46
+  binarization: yannihorne
+  noise_removal: mean_filter
+
+config_47
+  binarization: yannihorne
+  noise_removal: median_filter
+
+config_48
+  binarization: yannihorne
+  noise_removal: gaussian_filter
+
+config_49
+  binarization: yannihorne
+  noise_removal: unsharp_filter
+
+config_50
+  binarization: yannihorne
+  noise_removal: conservative_filter
+
+config_51
+  binarization: yannihorne
+  noise_removal: laplacian_filter
+
+config_52
+  binarization: yannihorne
+  noise_removal: frequency_filter
+
+config_53
+  binarization: yannihorne
+  noise_removal: crimmins_speckle_removal
+
+config_54
+  binarization: niblack
+  noise_removal: none
+
+config_55
+  binarization: niblack
+  noise_removal: mean_filter
+
+config_56
+  binarization: niblack
+  noise_removal: median_filter
+
+config_57
+  binarization: niblack
+  noise_removal: gaussian_filter
+
+config_58
+  binarization: niblack
+  noise_removal: unsharp_filter
+
+config_59
+  binarization: niblack
+  noise_removal: conservative_filter
+
+config_60
+  binarization: niblack
+  noise_removal: laplacian_filter
+
+config_61
+  binarization: niblack
+  noise_removal: frequency_filter
+
+config_62
+  binarization: niblack
+  noise_removal: crimmins_speckle_removal
+

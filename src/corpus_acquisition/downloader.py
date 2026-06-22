@@ -14,7 +14,7 @@ It addresses the TODOs left in ``acquire_corpus.py``:
 - logging instead of bare ``print`` calls
 """
 
-from random import random
+import random
 import time
 import logging
 from datetime import datetime, timedelta

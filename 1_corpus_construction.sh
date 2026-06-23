@@ -28,3 +28,13 @@ export HF_HOME=/scratch/nicolasal97/.cache/huggingface
 source venv/corpus_construction/layout_detection/bin/activate
 python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/layout_detection/test/ --output-dir data/corpus_construction/layout_detection/results/ --detectors doclayout
 module purge
+
+### 3. VLM
+module add virtualenv/20.32.0-GCCcore-14.3.0
+module add Python/3.13.5-GCCcore-14.3.0
+module load CUDA/12.1.1
+module load cuDNN/8.9.2.26-CUDA-12.1.1
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+export HF_HOME=/scratch/nicolasal97/.cache/huggingface
+source venv/corpus_construction/vlm_extraction/bin/activate
+

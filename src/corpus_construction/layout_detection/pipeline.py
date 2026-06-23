@@ -12,7 +12,7 @@ date               str     e.g. "2026-01-03"
 page               str     e.g. "2"
 image_stem         str     full original stem, e.g. "elcomercio_2026-01-03_2"
 preprocessing_config int   config index from preprocessing step
-detector           str     "layoutparser" | "doclayout_yolo"
+detector           str     "layoutparser" | "doclayout" | "ppdoclayout" | "surya"
 article_idx        int     1-based article number (top-to-bottom)
 crop_file          str     filename of the saved crop
 x1, y1, x2, y2    int     merged bounding box of the article
@@ -33,18 +33,26 @@ from typing import List, Dict, Any, Optional
 import cv2
 import numpy as np
 
+
 from .steps import (
     LayoutParserDetector,
     DocLayoutYOLODetector,
+    PPDocLayoutDetector,
+    SuryaLayoutDetector,
+    HistogramColumnDetector,
     LayoutRegion,
     Article,
     assign_grid_index,
     group_regions_into_articles,
 )
 
+
 DETECTORS = {
     "layoutparser": LayoutParserDetector,
     "doclayout": DocLayoutYOLODetector,
+    "ppdoclayout": PPDocLayoutDetector,
+    "surya": SuryaLayoutDetector,
+    "histogram": HistogramColumnDetector,
 }
 
 # Parquet output path (relative to project root, mirrors preprocessing convention)

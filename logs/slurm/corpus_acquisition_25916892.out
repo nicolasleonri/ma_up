@@ -1529,3 +1529,5 @@ Call log:
 2026-06-23 11:28:50,591 [ERROR] src.corpus_acquisition.downloader: Failed to collect URLs for elcomercio on 2026-04-30: Locator.count: Connection closed while reading from the driver
 2026-06-23 11:28:50,598 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/elcomercio_2026-04-30.json (status=failed)
 2026-06-23 11:28:55,707 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2026-05-01
+[2026-06-23T15:34:50.028] error: *** JOB 25916892 ON c003 CANCELLED AT 2026-06-23T15:34:50 DUE TO TIME LIMIT ***
+[2026-06-23T15:34:50.584] error: Detected 1 oom_kill event in StepId=25916892.batch. Some of the step tasks have been OOM Killed.

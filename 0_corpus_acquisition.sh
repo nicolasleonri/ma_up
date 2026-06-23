@@ -21,6 +21,6 @@ source venv/corpus_acquisition/bin/activate
 
 python3 -m src.workflows.acquire_corpus \
     --newspaper elcomercio \
-    --start-date 2026-03-10 \
-    --end-date 2026-06-30 \
+    --start-date 2025-01-01 \
+    --end-date 2025-12-31 \
     --log-dir logs/corpus_acquisition

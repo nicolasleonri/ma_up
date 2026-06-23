@@ -1,0 +1,66 @@
+[
+  {
+    "image": "elcomercio_2026-01-03_2",
+    "preprocessing_config": 1,
+    "detector": "histogram",
+    "num_regions_detected": 3,
+    "num_articles": 2,
+    "elapsed_s": 0.015,
+    "articles": [
+      {
+        "x1": 0,
+        "y1": 0,
+        "x2": 1106,
+        "y2": 2358,
+        "grid_row": 0,
+        "grid_col": 1,
+        "num_regions": 2,
+        "regions": [
+          {
+            "label": "plain text",
+            "score": 0.5,
+            "x1": 0,
+            "y1": 0,
+            "x2": 1106,
+            "y2": 1037,
+            "grid_row": 0,
+            "grid_col": 1
+          },
+          {
+            "label": "plain text",
+            "score": 0.5,
+            "x1": 0,
+            "y1": 1037,
+            "x2": 1106,
+            "y2": 2358,
+            "grid_row": 2,
+            "grid_col": 1
+          }
+        ],
+        "crop_file": "elcomercio_2026-01-03_2_config_1_histogram_1.tiff"
+      },
+      {
+        "x1": 1106,
+        "y1": 0,
+        "x2": 1540,
+        "y2": 2358,
+        "grid_row": 1,
+        "grid_col": 2,
+        "num_regions": 1,
+        "regions": [
+          {
+            "label": "plain text",
+            "score": 0.5,
+            "x1": 1106,
+            "y1": 0,
+            "x2": 1540,
+            "y2": 2358,
+            "grid_row": 1,
+            "grid_col": 2
+          }
+        ],
+        "crop_file": "elcomercio_2026-01-03_2_config_1_histogram_2.tiff"
+      }
+    ]
+  }
+]

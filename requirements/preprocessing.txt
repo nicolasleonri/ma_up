@@ -1,0 +1,14 @@
+distlib @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/distlib/distlib-0.4.0
+filelock @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/filelock/filelock-3.18.0
+ImageIO==2.37.3
+lazy-loader==0.5
+networkx==3.6.1
+numpy==2.5.0
+opencv-python==4.13.0.92
+packaging==26.2
+pillow==12.2.0
+platformdirs @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/platformdirs/platformdirs-4.3.8
+scikit-image==0.26.0
+scipy==1.18.0
+tifffile==2026.6.1
+virtualenv @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/virtualenv/virtualenv-20.32.0

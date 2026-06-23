@@ -6,9 +6,7 @@ from src.corpus_construction.layout_detection.pipeline import LayoutAnalysisPipe
 
 logger = logging.getLogger(__name__)
 
-AVAILABLE_DETECTORS = ["layoutparser", "doclayout"]
-# AVAILABLE_DETECTORS = ["layoutparser"]
-
+AVAILABLE_DETECTORS = ["doclayout", "ppdoclayout", "histogram"] # Excludes "layoutparser", "surya"
 
 def parse_args():
     parser = argparse.ArgumentParser(
@@ -87,3 +85,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# TODO: Unify parquet from all OCR Steps

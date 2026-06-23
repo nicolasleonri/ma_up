@@ -35,7 +35,7 @@ class ImagePreprocessingPipeline:
                 "median_filter",
                 "gaussian_filter",
                 "unsharp_filter",
-                "conservative_filter",
+                # "conservative_filter",
                 "laplacian_filter",
                 "frequency_filter",
                 # "crimmins_speckle_removal"

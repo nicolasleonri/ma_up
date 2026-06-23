@@ -4,6 +4,10 @@ VLM extraction pipeline.
 Reads article crop TIFFs produced by the layout analysis step and runs one
 or more VLMs over each crop to extract title and body text.
 
+Crops are grouped per VLM and pushed through `extractor.extract_batch()` in
+chunks of `batch_size`, so vLLM's offline continuous batching actually gets
+a real batch to schedule instead of one crop at a time.
+
 Output schema (one row per crop × VLM)
 ---------------------------------------
 newspaper          str     e.g. "elcomercio"
@@ -23,16 +27,14 @@ status             str     "ok" | "failed"
 error              str     error message if status == "failed", else null
 """
 
-import json
 import logging
-import time
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Tuple
 
 import cv2
 import pandas as pd
 
-from .vlm_steps import (
+from .steps import (
     ExtractionResult,
     OlmOCRExtractor,
     RolmOCRExtractor,
@@ -54,18 +56,19 @@ _KEY_COLS = [
 
 class VLMExtractionPipeline:
     """
-    Runs one or more VLM extractors over every article crop produced by the
-    layout analysis step.
+    Runs one or more offline VLM extractors over every article crop
+    produced by the layout analysis step.
 
     Usage
     -----
     The pipeline reads a layout Parquet file (produced by LayoutAnalysisPipeline)
-    to discover which crop TIFFs exist and what metadata to attach.  It then
-    iterates over each crop × VLM combination, calls the VLM, and appends
-    results to a separate Parquet file.
-
-    Previously processed (crop, vlm) pairs are skipped automatically so the
-    pipeline is safe to re-run after interruption.
+    to discover which crop TIFFs exist and what metadata to attach. For each
+    requested VLM it collects every crop that hasn't been processed yet,
+    chunks them into batches of `batch_size`, and calls
+    `extractor.extract_batch(images, metadata_list)` once per chunk — vLLM
+    handles continuous batching across the chunk on the GPU. Results are
+    flushed to Parquet after every chunk so the pipeline is safe to re-run
+    after interruption.
 
     Parameters
     ----------
@@ -73,13 +76,13 @@ class VLMExtractionPipeline:
     vlms                  : List of VLM names to run (subset of VLM_EXTRACTORS).
     layout_parquet        : Path to the layout analysis results Parquet file.
     parquet_path          : Output Parquet path for VLM results.
-    olmocr_server_url     : vLLM server URL for OlmOCR.
-    rolmocr_server_url    : vLLM server URL for RolmOCR.
-    nanonets_server_url   : vLLM server URL for NanonetsOCR.
-    olmocr_use_local      : If True, load OlmOCR locally (no server needed).
-    nanonets_use_local    : If True, load NanonetsOCR locally.
     max_new_tokens        : Passed to every VLM.
+    batch_size            : Number of crops per offline vLLM batch call.
     skip_failed_crops     : If True, skip crops that previously failed.
+    vlm_engine_kwargs     : Optional dict of {vlm_name: {kwarg: value}} passed
+                            straight through to that VLM's extractor
+                            constructor (e.g. gpu_memory_utilization,
+                            tensor_parallel_size, max_model_len, dtype).
     """
 
     def __init__(
@@ -88,25 +91,26 @@ class VLMExtractionPipeline:
         vlms: List[str] = None,
         layout_parquet: str = "data/corpus_construction/layout_detection/results.parquet",
         parquet_path: str = DEFAULT_PARQUET,
-        olmocr_server_url: str = "http://localhost:8001/v1",
-        rolmocr_server_url: str = "http://localhost:8002/v1",
-        nanonets_server_url: str = "http://localhost:8003/v1",
-        olmocr_use_local: bool = False,
-        nanonets_use_local: bool = False,
         max_new_tokens: int = 2048,
+        batch_size: int = 16,
         skip_failed_crops: bool = True,
+        vlm_engine_kwargs: Dict[str, Dict[str, Any]] = None,
+        # Kept for backward compat with old CLI args; accepted and ignored
+        # since every extractor is offline-only now.
+        olmocr_server_url: str = None,
+        rolmocr_server_url: str = None,
+        nanonets_server_url: str = None,
+        olmocr_use_local: bool = True,
+        nanonets_use_local: bool = True,
     ):
         self.logger = logger
         self.vlm_names = vlms or list(VLM_EXTRACTORS.keys())
         self.layout_parquet = Path(layout_parquet)
         self.parquet_path = Path(parquet_path)
-        self.olmocr_server_url = olmocr_server_url
-        self.rolmocr_server_url = rolmocr_server_url
-        self.nanonets_server_url = nanonets_server_url
-        self.olmocr_use_local = olmocr_use_local
-        self.nanonets_use_local = nanonets_use_local
         self.max_new_tokens = max_new_tokens
+        self.batch_size = batch_size
         self.skip_failed_crops = skip_failed_crops
+        self.vlm_engine_kwargs = vlm_engine_kwargs or {}
 
         self._loaded_vlms: Dict[str, Any] = {}
 
@@ -116,26 +120,14 @@ class VLMExtractionPipeline:
 
     def _get_vlm(self, name: str):
         if name not in self._loaded_vlms:
-            self.logger.info("Loading VLM extractor: %s", name)
-            if name == "olmocr":
-                self._loaded_vlms[name] = OlmOCRExtractor(
-                    server_url=self.olmocr_server_url,
-                    max_new_tokens=self.max_new_tokens,
-                    use_local=self.olmocr_use_local,
-                )
-            elif name == "rolmocr":
-                self._loaded_vlms[name] = RolmOCRExtractor(
-                    server_url=self.rolmocr_server_url,
-                    max_new_tokens=self.max_new_tokens,
-                )
-            elif name == "nanonets":
-                self._loaded_vlms[name] = NanonetsOCRExtractor(
-                    server_url=self.nanonets_server_url,
-                    max_new_tokens=self.max_new_tokens,
-                    use_local=self.nanonets_use_local,
-                )
-            else:
+            if name not in VLM_EXTRACTORS:
                 raise ValueError(f"Unknown VLM: {name!r}. Choose from {list(VLM_EXTRACTORS)}")
+            self.logger.info("Loading VLM extractor (offline, in-process): %s", name)
+            extractor_cls = VLM_EXTRACTORS[name]
+            self._loaded_vlms[name] = extractor_cls(
+                max_new_tokens=self.max_new_tokens,
+                **self.vlm_engine_kwargs.get(name, {}),
+            )
         return self._loaded_vlms[name]
 
     # ------------------------------------------------------------------
@@ -152,12 +144,61 @@ class VLMExtractionPipeline:
         return set(zip(*(df[c] for c in _KEY_COLS)))
 
     # ------------------------------------------------------------------
+    # Crop discovery
+    # ------------------------------------------------------------------
+
+    def _discover_crops(self, crops_root: Path) -> List[Dict[str, Any]]:
+        """
+        Read the layout Parquet and return one metadata dict per
+        successfully-laid-out crop that exists on disk. Image loading is
+        deferred to batch time so we don't hold every crop in memory at
+        once.
+        """
+        layout_df = pd.read_parquet(self.layout_parquet)
+        layout_df = layout_df[layout_df["status"] == "ok"].copy()
+
+        crops = []
+        for _, layout_row in layout_df.iterrows():
+            crop_path = (
+                crops_root
+                / layout_row["image_stem"]
+                / f"config_{layout_row['preprocessing_config']}"
+                / layout_row["detector"]
+                / layout_row["crop_file"]
+            )
+            if not crop_path.exists():
+                self.logger.warning("Crop file missing: %s", crop_path)
+                continue
+
+            crops.append(
+                {
+                    "crop_path": crop_path,
+                    "newspaper": layout_row["newspaper"],
+                    "date": layout_row["date"],
+                    "page": layout_row["page"],
+                    "image_stem": layout_row["image_stem"],
+                    "preprocessing_config": int(layout_row["preprocessing_config"]),
+                    "detector": layout_row["detector"],
+                    "article_idx": int(layout_row["article_idx"]),
+                    "crop_file": layout_row["crop_file"],
+                    "x1": int(layout_row["x1"]),
+                    "y1": int(layout_row["y1"]),
+                    "x2": int(layout_row["x2"]),
+                    "y2": int(layout_row["y2"]),
+                    "grid_row": int(layout_row["grid_row"]),
+                    "grid_col": int(layout_row["grid_col"]),
+                }
+            )
+        return crops
+
+    # ------------------------------------------------------------------
     # Core run
     # ------------------------------------------------------------------
 
     def run(self, crops_root: Path) -> int:
         """
-        Extract text from all article crops listed in the layout Parquet.
+        Extract text from all article crops listed in the layout Parquet,
+        one VLM at a time, batched.
 
         Parameters
         ----------
@@ -176,102 +217,83 @@ class VLMExtractionPipeline:
             )
             return 0
 
-        layout_df = pd.read_parquet(self.layout_parquet)
-        # Only process rows where layout succeeded and a crop file exists
-        layout_df = layout_df[layout_df["status"] == "ok"].copy()
-
-        if layout_df.empty:
-            self.logger.warning("No successful layout rows found in %s", self.layout_parquet)
+        crops = self._discover_crops(crops_root)
+        if not crops:
+            self.logger.warning("No usable crops found under %s", crops_root)
             return 0
 
         done_keys = self._load_done_keys()
         self.logger.info(
-            "Layout crops available: %d. Already extracted: %d.",
-            len(layout_df), len(done_keys),
+            "Crops available: %d. Already-extracted (any vlm): %d.",
+            len(crops), len(done_keys),
         )
 
         self.parquet_path.parent.mkdir(parents=True, exist_ok=True)
         processed = 0
-        rows_buffer: List[Dict] = []
 
-        for _, layout_row in layout_df.iterrows():
-            crop_path = (
-                crops_root
-                / layout_row["image_stem"]
-                / f"config_{layout_row['preprocessing_config']}"
-                / layout_row["detector"]
-                / layout_row["crop_file"]
-            )
-
-            if not crop_path.exists():
-                self.logger.warning("Crop file missing: %s", crop_path)
-                continue
-
-            image = cv2.imread(str(crop_path))
-            if image is None:
-                self.logger.warning("Could not read crop: %s", crop_path)
-                continue
-
-            metadata = {
-                "newspaper": layout_row["newspaper"],
-                "date": layout_row["date"],
-                "page": layout_row["page"],
-                "image_stem": layout_row["image_stem"],
-                "preprocessing_config": int(layout_row["preprocessing_config"]),
-                "detector": layout_row["detector"],
-                "article_idx": int(layout_row["article_idx"]),
-                "crop_file": layout_row["crop_file"],
-                # Geometry — forwarded for convenience
-                "x1": int(layout_row["x1"]),
-                "y1": int(layout_row["y1"]),
-                "x2": int(layout_row["x2"]),
-                "y2": int(layout_row["y2"]),
-                "grid_row": int(layout_row["grid_row"]),
-                "grid_col": int(layout_row["grid_col"]),
-            }
-
-            for vlm_name in self.vlm_names:
-                key = (
-                    metadata["image_stem"],
-                    metadata["preprocessing_config"],
-                    metadata["detector"],
-                    metadata["article_idx"],
+        for vlm_name in self.vlm_names:
+            pending = [
+                crop
+                for crop in crops
+                if (
+                    crop["image_stem"],
+                    crop["preprocessing_config"],
+                    crop["detector"],
+                    crop["article_idx"],
                     vlm_name,
                 )
-                if key in done_keys:
-                    self.logger.debug("Skipping already-done: %s", key)
+                not in done_keys
+            ]
+            if not pending:
+                self.logger.info("[%s] nothing pending, skipping.", vlm_name)
+                continue
+
+            self.logger.info("[%s] %d crops pending, loading model...", vlm_name, len(pending))
+            extractor = self._get_vlm(vlm_name)
+
+            for chunk_start in range(0, len(pending), self.batch_size):
+                chunk = pending[chunk_start : chunk_start + self.batch_size]
+                images, metadata_list = [], []
+                for crop in chunk:
+                    image = cv2.imread(str(crop["crop_path"]))
+                    if image is None:
+                        self.logger.warning("Could not read crop: %s", crop["crop_path"])
+                        continue
+                    metadata = {k: v for k, v in crop.items() if k != "crop_path"}
+                    metadata["vlm"] = vlm_name
+                    images.append(image)
+                    metadata_list.append(metadata)
+
+                if not images:
                     continue
 
                 self.logger.info(
-                    "[%s] config_%s | detector=%s | article=%d | vlm=%s",
-                    metadata["image_stem"],
-                    metadata["preprocessing_config"],
-                    metadata["detector"],
-                    metadata["article_idx"],
+                    "[%s] batch %d-%d / %d",
                     vlm_name,
+                    chunk_start,
+                    chunk_start + len(images),
+                    len(pending),
                 )
 
-                extractor = self._get_vlm(vlm_name)
-                result = extractor.extract(image, metadata=metadata)
+                results: List[ExtractionResult] = extractor.extract_batch(images, metadata_list)
 
-                self.logger.info(
-                    "  → status=%s | title=%r | body_chars=%d | %.3fs",
-                    result.status,
-                    result.title[:60] if result.title else "",
-                    len(result.body),
-                    result.elapsed_s,
-                )
+                for result in results:
+                    self.logger.info(
+                        "  → status=%s | title=%r | body_chars=%d | %.3fs",
+                        result.status,
+                        result.title[:60] if result.title else "",
+                        len(result.body),
+                        result.elapsed_s,
+                    )
 
-                rows_buffer.append(result.to_dict())
-                processed += 1
+                self._append_to_parquet([r.to_dict() for r in results])
+                processed += len(results)
 
-                # Flush to Parquet every 50 results to limit data loss on crash
-                if len(rows_buffer) >= 50:
-                    self._append_to_parquet(rows_buffer)
-                    rows_buffer.clear()
-
-        if rows_buffer:
-            self._append_to_parquet(rows_buffer)
+            # Free GPU memory before loading the next VLM — vLLM does not
+            # release device memory just because the object is dereferenced.
+            self.logger.info("[%s] done, unloading model to free GPU memory.", vlm_name)
+            extractor.unload()
+            del self._loaded_vlms[vlm_name]
 
         self.logger.info("VLM extraction complete. Extractions run: %d", processed)
         return processed

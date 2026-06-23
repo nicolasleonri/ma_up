@@ -1,33 +1,31 @@
 """
 vlm_extraction.py — CLI entry point for the VLM text extraction step.
 
+All VLMs run fully offline (in-process, via vLLM's offline LLM API) — no
+vLLM server needs to be started separately, and no server URLs are needed.
+This is intended for HPC compute nodes (e.g. `srun --pty bash` on curta)
+where you can't open ports to a long-running server process.
+
 Typical usage
 -------------
-# Run all three VLMs against all crops
-python -m src.corpus_construction.vlm_extraction.vlm_extraction \\
+# Run all three VLMs against all crops, batches of 16 crops per GPU call
+python -m src.workflows.vlm_extraction \\
     --crops-dir  data/corpus_construction/layout_detection/crops \\
-    --layout-parquet data/corpus_construction/layout_detection/results.parquet
+    --layout-parquet data/corpus_construction/layout_detection/results.parquet \\
+    --batch-size 16
 
-# Run only RolmOCR (fastest, no metadata needed)
+# Run only RolmOCR
 python ... --vlms rolmocr
 
-# Use OlmOCR locally (no vLLM server) with NanonetsOCR via vLLM
-python ... --vlms olmocr nanonets \\
-    --olmocr-local \\
-    --nanonets-server http://gpu-node-3:8003/v1
-
-vLLM server commands (run each in a separate terminal / tmux pane)
-------------------------------------------------------------------
-  OlmOCR    : vllm serve allenai/olmOCR-2-7B-1025 --port 8001
-  RolmOCR   : VLLM_USE_V1=1 vllm serve reducto/RolmOCR --port 8002
-  NanonetsOCR: vllm serve nanonets/Nanonets-OCR-s --port 8003
+# Tune GPU memory usage / context length for a specific model
+python ... --vlms olmocr --gpu-memory-utilization 0.7 --max-model-len 4096
 """
 
 import argparse
 import logging
 from pathlib import Path
 
-from src.corpus_construction.vlm_extraction.vlm_pipeline import VLMExtractionPipeline
+from src.corpus_construction.vlm_extraction.pipeline import VLMExtractionPipeline
 
 logger = logging.getLogger(__name__)
 
@@ -36,7 +34,7 @@ AVAILABLE_VLMS = ["olmocr", "rolmocr", "nanonets"]
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Run VLM text extraction on newspaper article crops."
+        description="Run offline VLM text extraction on newspaper article crops."
     )
 
     parser.add_argument(
@@ -62,7 +60,8 @@ def parse_args():
         nargs="+",
         choices=AVAILABLE_VLMS,
         default=AVAILABLE_VLMS,
-        help="Which VLMs to run (default: all).",
+        help="Which VLMs to run (default: all). Models load one at a time, "
+        "in this order, so they don't all need to fit on the GPU simultaneously.",
     )
 
     parser.add_argument(
@@ -72,33 +71,37 @@ def parse_args():
         help="Maximum tokens to generate per crop (default: 2048).",
     )
 
-    # --- Per-model server URLs ---
     parser.add_argument(
-        "--olmocr-server",
-        default="http://localhost:8001/v1",
-        help="vLLM server URL for OlmOCR (default: http://localhost:8001/v1).",
-    )
-    parser.add_argument(
-        "--rolmocr-server",
-        default="http://localhost:8002/v1",
-        help="vLLM server URL for RolmOCR (default: http://localhost:8002/v1).",
-    )
-    parser.add_argument(
-        "--nanonets-server",
-        default="http://localhost:8003/v1",
-        help="vLLM server URL for NanonetsOCR (default: http://localhost:8003/v1).",
+        "--batch-size",
+        type=int,
+        default=16,
+        help="Number of crops per offline vLLM batch call (default: 16). "
+        "Larger batches improve GPU throughput but use more memory.",
     )
 
-    # --- Local-model flags ---
+    # --- vLLM engine tuning (applied to every requested VLM) ---
     parser.add_argument(
-        "--olmocr-local",
-        action="store_true",
-        help="Load OlmOCR locally via Transformers instead of using a vLLM server.",
+        "--gpu-memory-utilization",
+        type=float,
+        default=0.85,
+        help="Fraction of GPU memory vLLM is allowed to reserve (default: 0.85).",
     )
     parser.add_argument(
-        "--nanonets-local",
-        action="store_true",
-        help="Load NanonetsOCR locally via Transformers instead of using a vLLM server.",
+        "--tensor-parallel-size",
+        type=int,
+        default=1,
+        help="Number of GPUs to shard each model across (default: 1).",
+    )
+    parser.add_argument(
+        "--max-model-len",
+        type=int,
+        default=None,
+        help="Override the model's max context length (default: model default).",
+    )
+    parser.add_argument(
+        "--dtype",
+        default="bfloat16",
+        help="Model weight/activation dtype (default: bfloat16).",
     )
 
     parser.add_argument(
@@ -118,20 +121,29 @@ def main():
         format="%(asctime)s %(levelname)s %(message)s",
     )
 
+    engine_kwargs = dict(
+        gpu_memory_utilization=args.gpu_memory_utilization,
+        tensor_parallel_size=args.tensor_parallel_size,
+        dtype=args.dtype,
+    )
+    if args.max_model_len is not None:
+        engine_kwargs["max_model_len"] = args.max_model_len
+
+    # Same engine settings applied to every requested VLM. Pass a dict here
+    # instead if you need per-model overrides (e.g. {"olmocr": {...}}).
+    vlm_engine_kwargs = {vlm: engine_kwargs for vlm in args.vlms}
+
     pipeline = VLMExtractionPipeline(
         logger=logger,
         vlms=args.vlms,
         layout_parquet=args.layout_parquet,
         parquet_path=args.output_parquet,
-        olmocr_server_url=args.olmocr_server,
-        rolmocr_server_url=args.rolmocr_server,
-        nanonets_server_url=args.nanonets_server,
-        olmocr_use_local=args.olmocr_local,
-        nanonets_use_local=args.nanonets_local,
         max_new_tokens=args.max_new_tokens,
+        batch_size=args.batch_size,
         skip_failed_crops=not args.no_skip_failed,
+        vlm_engine_kwargs=vlm_engine_kwargs,
     )
-
+    print(Path(args.crops_dir))
     try:
         processed = pipeline.run(crops_root=Path(args.crops_dir))
         logger.info("VLM extraction finished. Extractions run: %d", processed)

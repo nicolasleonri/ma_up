@@ -1375,3 +1375,7 @@ Call log:
 2026-06-23 21:05:38,115 [ERROR] src.corpus_acquisition.downloader: Skipping elcomercio on 2025-02-13 due to unrecoverable error: Page.wait_for_timeout: Connection closed while reading from the driver
 2026-06-23 21:05:38,120 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/elcomercio_2025-02-13.json (status=failed)
 2026-06-23 21:05:38,121 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2025-02-14
+[2026-06-23T22:01:47.135] error: slurm_get_node_energy: Socket timed out on send/recv operation
+[2026-06-23T22:01:47.146] error: _get_joules_task: can't get info from slurmd
+[2026-06-23T22:51:45.781] error: *** JOB 25919521 ON c003 CANCELLED AT 2026-06-23T22:51:45 DUE to SIGNAL Terminated ***
+[2026-06-23T22:51:46.255] error: Detected 1 oom_kill event in StepId=25919521.batch. Some of the step tasks have been OOM Killed.

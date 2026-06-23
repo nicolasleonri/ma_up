@@ -42,3 +42,9 @@ source venv/corpus_construction/vlm_extraction/bin/activate
 python3 -m src.workflows.vlm_extraction --crops-dir data/corpus_construction/layout_detection/results --gpu-memory-utilization 0.85
 
 ## 4. Evaluate
+module purge
+module add virtualenv/20.32.0-GCCcore-14.3.0
+module add Python/3.13.5-GCCcore-14.3.0
+source venv/corpus_construction/evaluate_extraction/bin/activate
+python3 -m src.workflows.evaluate_extraction --results data/corpus_construction/vlm_extraction/results.parquet --gold data/corpus_construction/evaluate_extraction/gold_standard.csv --output-csv data/corpus_construction/evaluate_extraction/evaluation.csv
+    

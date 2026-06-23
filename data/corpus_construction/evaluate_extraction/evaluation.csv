@@ -1,0 +1,3 @@
+image_stem,preprocessing_config,detector,vlm,gold_title,pred_title,title_exact,body_exact,title_precision,title_recall,title_f1,title_cer,title_wer,body_precision,body_recall,body_f1,body_cer,body_wer,body_len_delta_chars
+elcomercio_2026-01-03_2,1,doclayout,nanonets,De los socavones a las urnas,De los socavones a las urnas,True,False,1.0,1.0,1.0,0.0,0.0,0.019313304721030045,0.375,0.036734693877551024,16.792207792207794,19.041666666666668,2583
+elcomercio_2026-01-03_2,1,doclayout,olmocr,De los socavones a las urnas,,False,False,0.0,0.0,0.0,1.0,1.0,0.2222222222222222,0.16666666666666666,0.1904761904761905,0.7207792207792207,0.9583333333333334,-55

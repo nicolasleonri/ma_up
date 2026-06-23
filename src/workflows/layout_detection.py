@@ -6,8 +6,8 @@ from src.corpus_construction.layout_detection.pipeline import LayoutAnalysisPipe
 
 logger = logging.getLogger(__name__)
 
-# AVAILABLE_DETECTORS = ["layoutparser", "doclayout_yolo"]
-AVAILABLE_DETECTORS = ["layoutparser"]
+AVAILABLE_DETECTORS = ["layoutparser", "doclayout"]
+# AVAILABLE_DETECTORS = ["layoutparser"]
 
 
 def parse_args():

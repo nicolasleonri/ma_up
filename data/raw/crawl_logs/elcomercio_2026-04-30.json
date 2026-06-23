@@ -1,0 +1,9 @@
+{
+  "newspaper": "elcomercio",
+  "date": "2026-04-30",
+  "status": "failed",
+  "pages_downloaded": 0,
+  "pages_expected": 20,
+  "error": "Locator.count: Connection closed while reading from the driver",
+  "timestamp": "2026-06-23T11:28:50"
+}

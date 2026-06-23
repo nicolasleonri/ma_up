@@ -2175,3 +2175,5 @@
 2026-06-22 17:13:44,504 [ERROR] src.corpus_acquisition.downloader: Skipping elcomercio on 2026-03-12 due to unrecoverable error: Page.wait_for_timeout: Connection closed while reading from the driver
 2026-06-22 17:13:44,508 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/elcomercio_2026-03-12.json (status=failed)
 2026-06-22 17:13:44,517 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2026-03-13
+[2026-06-22T21:28:01.031] error: *** JOB 25912465 ON c003 CANCELLED AT 2026-06-22T21:28:01 DUE TO TIME LIMIT ***
+[2026-06-22T21:28:01.119] error: Detected 1 oom_kill event in StepId=25912465.batch. Some of the step tasks have been OOM Killed.

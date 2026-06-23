@@ -1,0 +1,9 @@
+{
+  "newspaper": "elcomercio",
+  "date": "2026-04-29",
+  "status": "failed",
+  "pages_downloaded": 0,
+  "pages_expected": 20,
+  "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"div[class='readingnav rn-right']\")\n    - locator resolved to <div class=\"readingnav rn-right\">…</div>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is not visible\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is not visible\n    - retrying click action\n      - waiting 100ms\n    9 × waiting for element to be visible, enabled and stable\n      - element is not visible\n    - retrying click action\n      - waiting 500ms\n",
+  "timestamp": "2026-06-23T11:27:32"
+}

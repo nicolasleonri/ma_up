@@ -88,7 +88,7 @@ class ImagePreprocessingPipeline:
                     f"[{image_name}] "
                     f"Config {idx} finished "
                     f"in {elapsed:.3f}s"
-                )
+                ) # TODO: Save in parquet
 
 
                 outputs.append(
@@ -185,9 +185,9 @@ class ImagePreprocessingPipeline:
                 )
 
 
-                self.logger.info(
-                    f"Saved {out.name}"
-                )
+                # self.logger.info(
+                #     f"Saved {out.name}"
+                # )
 
 
 

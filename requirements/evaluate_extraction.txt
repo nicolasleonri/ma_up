@@ -1,0 +1,9 @@
+distlib @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/distlib/distlib-0.4.0
+filelock @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/filelock/filelock-3.18.0
+numpy==2.5.0
+pandas==3.0.3
+platformdirs @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/platformdirs/platformdirs-4.3.8
+pyarrow==24.0.0
+python-dateutil==2.9.0.post0
+six==1.17.0
+virtualenv @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/virtualenv/virtualenv-20.32.0

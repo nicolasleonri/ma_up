@@ -6,10 +6,9 @@ Research pipeline for building, annotating and analyzing a large-scale corpus of
 
 ```
 ma_up/
-├── config/
-│   ├── pipeline_config.yaml    # Determines algorithms to be used
-│   ├── slurm_templates.sh      # Formats bash-scripts
-│   └── gpu_allocation.yaml     # Presets HPC resources
+├── config/                      # Includes passwords
+│
+├── requirements/                      # txt
 │
 ├── src/
 │   ├── schemas/                 # Shared data models
@@ -20,42 +19,27 @@ ma_up/
 │   │   └── provenance.py
 │   │
 │   ├── corpus_acquisition/
+│   │   ├── browser.py
+│   │   ├── crawl_registry.py
 │   │   ├── crawler.py
-│   │   ├── downloader.py
 │   │   ├── metadata_extractor.py
-│   │   └── crawl_registry.py
+│   │   └── downloader.py
 │   │
 │   ├── corpus_construction/
-│   │   ├── pipeline.py          # Main orchestrator + checkpointing
-│   │   ├── benchmark.py
-│   │   ├── config_generator.py  # Generates 13,608 possible configs
-│   │   ├── preprocessing.py /   # Algorithms
-│   │   │   ├── base.py 
-│   │   │   ├── otsu.py
-│   │   │   ├── niblack.py 
-│   │   │   └── ...
-│   │   ├── layout.py /          # Algorithms
-│   │   │   ├── base.py 
-│   │   │   ├── layoutparser.py
-│   │   │   ├── doclayout_yolo.py 
-│   │   │   └── ...
-│   │   ├── vlm.py /             # w/ Dspy - GPU intensive
-│   │   │   ├── base.py 
-│   │   │   ├── olmocr.py
-│   │   │   ├── rolmocr.py 
-│   │   │   └── ...
-│   │   ├── llm.py /             # w/ Dspy - GPU intensive
-│   │   │   ├── base.py 
-│   │   │   ├── llama31.py
-│   │   │   ├── mistral.py 
-│   │   │   └── ...
-│   │   └── evaluation.py
+│   │   ├── layout_detection.py /   # Algorithms
+│   │   │   ├── pipeline.py 
+│   │   │   └── steps.py
+│   │   │    
+│   │   ├── preprocessing.py /          # Algorithms
+│   │   │   ├── pipeline.py 
+│   │   │   └── steps.py
+│   │   │    
+│   │   └──  vlm_extraction.py /             # w/ Dspy - GPU intensive
+│   │       ├── pipeline.py 
+│   │       └── steps.py    
 │   │
 │   ├── corpus_annotation/
-│   │   ├── topic_filtering.py   # Needs results from semantic_analysis.py
-│   │   ├── llm_preannotation.py # uses vLLM - GPU intensive
-│   │   ├── csv_exporter.py      # Used before manual validation
-│   │   └── csv_exporter.py      # Used after manual validation
+│   │   └── llm_preannotation.py # Needs results from semantic_analysis.py
 │   │
 │   ├── am_model/
 │   │   ├── train_am.py          # Model Training w/ datasets - GPU intensive
@@ -79,24 +63,16 @@ ma_up/
 │   │   ├── discourse.py
 │   │   └── article_builder.py
 │   │
-│   ├── providers/
-│   │   ├── llm_provider.py
-│   │   └── vlm_provider.py
-│   │
 │   ├── utils/
-│   │   ├── config_tracker.py     # Track completed configs, avoid repeats
-│   │   ├── checkpoint.py         # Resume from last checkpoint
-│   │   ├── data_serialization.py # Parquet I/O
-│   │   ├── hpc_job_manager.py    # SLURM integration
-│   │   └── logging.py
+│   │   └── config_loader.py
 │   │
 │   └── workflows/
 │       ├── acquire_corpus.py
-│       ├── build_corpus.py
-│       ├── annotate_corpus.py
-│       ├── train_am.py
-│       ├── extract_features.py
-│       └── build_final_dataset.py
+│       ├── evaluate_extraction.py
+│       ├── finetune_vlm.py
+│       ├── layout_detection.py
+│       ├── preprocess_images.py
+│       └── vlm_extraction.py
 │
 ├── data/
 │   ├── raw/                       # Downloaded newspaper pages (.jpg)
@@ -124,29 +100,11 @@ ma_up/
 │   └── final_dataset/
 │       └── unified_corpus.parquet
 │
-├── models/                        # Send to common folders (?)
-│   ├── domain_adaptation/
-│   ├── am_models/
-│   └── checkpoints/
-│
-├── hpc_scripts/
-│   ├── submit_ocr_jobs.sh
-│   ├── submit_training.sh
-│   └── aggregate_results.sh
-│
-├── analysis_scripts/              # Standalone R scripts
-│   └── dea.R
-│   └── hypothesis_testing.R
-│   └── graphs.R
-│   └── ...
-│
-├── tests/
-│   ├── test_ocr_pipeline.py
-│   ├── test_annotation.py
-│   └── test_aggregation.py
-│
-├── main.py                        # Orchestration (only calls workflows/ and config/)
-└── requirements.txt
+└── analysis_scripts/              # Standalone R scripts
+    └── dea.R
+    └── hypothesis_testing.R
+    └── graphs.R
+    └── ...
 ```
 
 ## Workflow

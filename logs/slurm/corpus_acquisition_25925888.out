@@ -1,0 +1,12 @@
+2026-06-24 17:32:47,977 [INFO] __main__: Logging in to portal...
+2026-06-24 17:33:10,520 [INFO] __main__: Login successful!
+2026-06-24 17:33:10,525 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2025-07-20: already crawled successfully.
+2026-06-24 17:33:10,528 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2025-07-21
+2026-06-24 17:33:16,503 [INFO] src.corpus_acquisition.downloader: Collected 7 / 20 pages
+2026-06-24 17:33:20,785 [INFO] src.corpus_acquisition.downloader: Collected 9 / 20 pages
+2026-06-24 17:33:22,935 [INFO] src.corpus_acquisition.downloader: Collected 11 / 20 pages
+2026-06-24 17:33:25,095 [INFO] src.corpus_acquisition.downloader: Collected 12 / 20 pages
+2026-06-24 17:33:27,253 [INFO] src.corpus_acquisition.downloader: Collected 15 / 20 pages
+2026-06-24 17:33:29,417 [INFO] src.corpus_acquisition.downloader: Collected 17 / 20 pages
+2026-06-24 17:33:31,592 [INFO] src.corpus_acquisition.downloader: Collected 19 / 20 pages
+2026-06-24 17:33:33,750 [INFO] src.corpus_acquisition.downloader: Collected 21 / 20 pages

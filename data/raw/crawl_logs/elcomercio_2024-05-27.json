@@ -1,0 +1,9 @@
+{
+  "newspaper": "elcomercio",
+  "date": "2024-05-27",
+  "status": "failed",
+  "pages_downloaded": 0,
+  "pages_expected": null,
+  "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://visor.peruquiosco.pe/diario-el-comercio/20240527\", waiting until \"load\"\n",
+  "timestamp": "2026-06-25T19:57:02"
+}

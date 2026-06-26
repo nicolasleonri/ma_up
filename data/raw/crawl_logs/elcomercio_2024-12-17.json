@@ -1,0 +1,9 @@
+{
+  "newspaper": "elcomercio",
+  "date": "2024-12-17",
+  "status": "partial",
+  "pages_downloaded": 19,
+  "pages_expected": 60,
+  "error": "1 page(s) failed to download",
+  "timestamp": "2026-06-26T14:46:40"
+}

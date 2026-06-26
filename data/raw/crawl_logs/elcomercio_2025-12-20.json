@@ -1,9 +1,0 @@
-{
-  "newspaper": "elcomercio",
-  "date": "2025-12-20",
-  "status": "failed",
-  "pages_downloaded": 0,
-  "pages_expected": null,
-  "error": "Page.wait_for_timeout: Connection closed while reading from the driver",
-  "timestamp": "2026-06-24T19:36:20"
-}

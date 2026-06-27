@@ -2,6 +2,10 @@ from src.schemas.page import Page
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 
+class RateLimitedError(Exception):
+    """Raised when the portal returns HTTP 403, indicating we've been rate-limited/blocked."""
+    pass
+
 class ArchiveCrawler:
     def __init__(self, browser, config, credentials):
         self.browser = browser
@@ -31,6 +35,9 @@ class ArchiveCrawler:
         print(f"Downloading -> {output_file}")
 
         response = self.browser.page.request.get(url)
+
+        if response.status == 403:
+            raise RateLimitedError(f"Received 403 while downloading page {page_number} from {url}")
 
         if not response.ok:
             raise Exception(

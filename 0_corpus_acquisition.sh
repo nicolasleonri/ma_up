@@ -18,5 +18,15 @@ source venv/corpus_acquisition/bin/activate
 
 python3 -m src.workflows.acquire_corpus \
     --newspaper elcomercio \
-    --start-date 2023-01-01 \
-    --end-date 2023-12-31
+    --start-date 2025-05-08 \
+    --end-date 2026-06-30 # Final date
+
+exit_code=$?
+
+if [ "$exit_code" -eq 75 ]; then
+    echo "Rate-limited (403). Resubmitting in 40 minutes..."
+    sbatch --begin=now+40minutes "$0"
+    exit 0
+fi
+
+exit $exit_code

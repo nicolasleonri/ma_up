@@ -2,13 +2,16 @@ import argparse
 import logging
 from datetime import datetime
 from pathlib import Path
+import sys
 
 from src.corpus_acquisition.browser import BrowserSession
-from src.corpus_acquisition.crawler import ArchiveCrawler
 from src.corpus_acquisition.crawl_registry import NEWSPAPERS, PORTAL_LOGIN_URL
 from src.utils.config_loader import load_yaml
 from datetime import datetime
 from src.corpus_acquisition.downloader import CorpusDownloader
+from src.corpus_acquisition.crawler import RateLimitedError
+
+RATE_LIMIT_EXIT_CODE = 75
 
 logger = logging.getLogger(__name__)
 
@@ -109,71 +112,12 @@ def main():
         )
 
         logger.info("Finished. Downloaded %d page(s) across the requested date range.", len(pages))
-
-        # # Then, crawls
-        # crawler = ArchiveCrawler(
-        #     browser=browser,
-        #     config=NEWSPAPERS["el_comercio"], # TODO: Make newspaper configurable through command line arguments.
-        #     credentials=credentials
-        # )
-
-        # date = datetime(2026, 6, 3) # TODO: Loop through years
-        # crawler.open_archive(date)
-        # browser.wait(5)
-
-        # print("Collecting URLs...") #TODO: Replace print() with logging module
-        # # TODO: Skip downloading files that already exist.
-
-        # seen = set()
-        # step = 0
-
-        # while True:
-        #     step += 1
-
-        #     current = crawler.get_urls()
-        #     old_size = len(seen)
-        #     seen.update(current)
-        #     new_urls = len(seen) - old_size
-
-        #     if new_urls != 0:
-        #         print(f"Collected {len(seen)} / 20 pages")
-
-        #     if len(seen) >= 20: # TODO: Make this dynamic through config
-        #         break
-
-        #     browser.locator(
-        #         "div[class='readingnav rn-right']"
-        #     ).click()
-
-        #     browser.wait(2)
-
-        # pages = {}
-        # for url in seen:
-        #     page = int(
-        #         parse_qs(
-        #             urlparse(url).query
-        #         )["page"][0]
-        #     )
-        #     pages[page] = url
-        
-        # for page in sorted(pages):
-        #     url = crawler.build_page_url(
-        #         pages[page],
-        #         scale=200
-        #     )
-
-        #     print(f"Downloading page {page} from {url}...")
-
-            # try:
-            #     # crawler.download_page(url, page, path=f"data/raw/images/el_comercio/2026/03/03/name_date_{page}.jpg") # TODO: Make path dynamic through config
-            #     # TODO: Store pages as Page objects
-            #     # TODO: Save crawl metadata
-            # except Exception as e:
-            #     print(f"An error occurred while downloading page {page}: {e}")
+    
+    except RateLimitedError as exc:
+        logger.error("Stopped due to rate limiting (403): %s", exc)
+        sys.exit(RATE_LIMIT_EXIT_CODE)
     except Exception as exc:
         logger.error("An error occurred: %s", exc)
-        # Crawl logs written by CorpusDownloader allow a re-run of this same
-        # command to resume from the last successfully completed date.
     finally:
         browser.close()
 

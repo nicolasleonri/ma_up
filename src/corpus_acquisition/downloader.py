@@ -22,7 +22,7 @@ from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
 from src.corpus_acquisition import metadata_extractor as meta
-from src.corpus_acquisition.crawler import ArchiveCrawler
+from src.corpus_acquisition.crawler import ArchiveCrawler, RateLimitedError
 from src.schemas.page import Page
 
 logger = logging.getLogger(__name__)
@@ -102,6 +102,8 @@ class CorpusDownloader:
                     )
                     all_pages.extend(pages)
                     time.sleep(random.uniform(3, 7))  # Delay to prevent overwhelming the server
+                except RateLimitedError:
+                    raise   # stop the whole range immediately, don't try the next date
                 except Exception as exc:
                     logger.error(
                         "Skipping %s on %s due to unrecoverable error: %s",
@@ -196,6 +198,14 @@ class CorpusDownloader:
 
             try:
                 crawler.download_page(page_url, page_number, path=str(output_path))
+            except RateLimitedError:
+                logger.error("Rate-limited (403) on page %d for %s on %s; aborting run.", page_number, newspaper, date_str)
+                meta.save_crawl_log(
+                    newspaper, date, status="failed", pages_downloaded=len(pages),
+                    pages_expected=expected_pages, error="rate_limited_403",
+                    log_dir=self.log_dir,
+                )
+                raise
             except Exception as exc:
                 logger.error("Failed to download page %d: %s", page_number, exc)
                 failures += 1

@@ -1,0 +1,35 @@
+
+================================================================================
+                              Slurm Job Statistics                              
+================================================================================
+         Job ID: 25943300
+   User/Account: nicolasal97/agfritz
+       Job Name: corpus_acquisition
+          State: CANCELLED
+          Nodes: 1
+      CPU Cores: 1
+     CPU Memory: 2GB
+  QOS/Partition: standard/scavenger
+        Cluster: curta
+     Start Time: Fri Jun 26, 2026 at 5:37 PM
+       Run Time: 16:23:52
+     Time Limit: 18:00:00
+
+                              Overall Utilization                               
+================================================================================
+  CPU utilization  [|||||||||||||||||||||||||||||||||||||||||||||  90%]
+  CPU memory usage [|||||||||||||||||||||||||||||||||||||||||||||||98%]
+
+                              Detailed Utilization                              
+================================================================================
+  CPU utilization per node (CPU time used/run time)
+      c003.curta.zedat.fu-berlin.de: 14:53:38/16:23:52 (efficiency=90.8%)
+
+  CPU memory usage per node - used/allocated
+      c003.curta.zedat.fu-berlin.de: 2.0GB/2GB 
+
+                                     Notes                                      
+================================================================================
+  * Have a nice day!
+
+

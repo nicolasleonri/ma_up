@@ -1,0 +1,36 @@
+2026-06-27 11:00:59,334 [INFO] __main__: Logging in to portal...
+2026-06-27 11:01:24,870 [INFO] __main__: Login successful!
+2026-06-27 11:01:24,876 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2025-05-08: already crawled successfully.
+2026-06-27 11:01:24,878 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2025-05-09: already crawled successfully.
+2026-06-27 11:01:24,884 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2025-05-10
+2026-06-27 11:01:31,003 [INFO] src.corpus_acquisition.downloader: Collected 7 / 60 pages
+2026-06-27 11:01:35,447 [WARNING] src.corpus_acquisition.downloader: No new pages found after 2 attempts; stopping with 7 page(s).
+2026-06-27 11:01:47,303 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eaaj2025051000000000001001&page=1&scale=200
+2026-06-27 11:01:48,875 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://i.prcdn.co/img?file=eaaj2025051000000000001001&page=2&scale=200&ticket=AN7%2BICp6fStGBJNeuk5BiGw%3D
+2026-06-27 11:01:49,948 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://i.prcdn.co/img?file=eaaj2025051000000000001001&page=3&scale=200&ticket=AMDX9Hr5B4mfnsJDwwX%2FNIg%3D
+2026-06-27 11:01:51,065 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://i.prcdn.co/img?file=eaaj2025051000000000001001&page=4&scale=200&ticket=AChrqtMhTP7YVrrtyorFgU4%3D
+2026-06-27 11:01:51,134 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://i.prcdn.co/img?file=eaaj2025051000000000001001&page=5&scale=200&ticket=AFaTW8bLh0%2B8UbvzD%2Bci32w%3D
+2026-06-27 11:01:51,203 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://i.prcdn.co/img?file=eaaj2025051000000000001001&page=6&scale=200&ticket=ALfX1AfrRb4o5kh6ZH7qDSE%3D
+2026-06-27 11:01:51,262 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://i.prcdn.co/img?file=eaaj2025051000000000001001&page=7&scale=200&ticket=AIeFhBY7oC2yHV7C9HD3lbk%3D
+2026-06-27 11:01:51,516 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 7 page(s) -> data/raw/metadata/raw_metadata.parquet (total rows: 12968)
+2026-06-27 11:01:51,529 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/elcomercio_2025-05-10.json (status=success)
+2026-06-27 11:01:56,582 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2025-05-11
+2026-06-27 11:02:02,815 [INFO] src.corpus_acquisition.downloader: Collected 7 / 60 pages
+2026-06-27 11:02:07,232 [INFO] src.corpus_acquisition.downloader: Collected 9 / 60 pages
+2026-06-27 11:02:09,427 [INFO] src.corpus_acquisition.downloader: Collected 11 / 60 pages
+2026-06-27 11:02:11,629 [INFO] src.corpus_acquisition.downloader: Collected 13 / 60 pages
+2026-06-27 11:02:13,882 [INFO] src.corpus_acquisition.downloader: Collected 15 / 60 pages
+2026-06-27 11:02:16,085 [INFO] src.corpus_acquisition.downloader: Collected 17 / 60 pages
+2026-06-27 11:02:18,277 [INFO] src.corpus_acquisition.downloader: Collected 18 / 60 pages
+2026-06-27 11:02:20,500 [INFO] src.corpus_acquisition.downloader: Collected 21 / 60 pages
+2026-06-27 11:02:22,680 [INFO] src.corpus_acquisition.downloader: Collected 23 / 60 pages
+2026-06-27 11:02:24,887 [INFO] src.corpus_acquisition.downloader: Collected 25 / 60 pages
+2026-06-27 11:02:29,358 [INFO] src.corpus_acquisition.downloader: Collected 29 / 60 pages
+2026-06-27 11:02:31,568 [INFO] src.corpus_acquisition.downloader: Collected 31 / 60 pages
+2026-06-27 11:02:33,762 [INFO] src.corpus_acquisition.downloader: Collected 33 / 60 pages
+2026-06-27 11:02:35,972 [INFO] src.corpus_acquisition.downloader: Collected 35 / 60 pages
+2026-06-27 11:02:38,172 [INFO] src.corpus_acquisition.downloader: Collected 37 / 60 pages
+2026-06-27 11:02:40,382 [INFO] src.corpus_acquisition.downloader: Collected 39 / 60 pages
+2026-06-27 11:02:42,584 [INFO] src.corpus_acquisition.downloader: Collected 41 / 60 pages
+2026-06-27 11:02:44,782 [INFO] src.corpus_acquisition.downloader: Collected 43 / 60 pages
+2026-06-27 11:02:46,959 [INFO] src.corpus_acquisition.downloader: Collected 44 / 60 pages

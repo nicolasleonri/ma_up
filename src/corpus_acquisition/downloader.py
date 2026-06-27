@@ -250,7 +250,7 @@ class CorpusDownloader:
         """
         seen: set[str] = set()
         stall_rounds = 0
-        max_stall_rounds = 2 # Min: 2
+        max_stall_rounds = 3 # Min: 2
 
         while True:
             current = crawler.get_urls()

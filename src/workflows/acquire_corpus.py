@@ -123,7 +123,10 @@ def main():
     except Exception as exc:
         logger.error("An error occurred: %s", exc)
     finally:
-        browser.close()
+        try:
+            browser.close()
+        except Exception as exc:
+            logger.warning("Browser close failed (connection likely already dead): %s", exc)
 
 
 if __name__ == "__main__":

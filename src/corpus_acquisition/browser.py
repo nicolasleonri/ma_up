@@ -39,9 +39,16 @@ class BrowserSession:
         self.page.screenshot(path=path)
 
     def close(self):
-        self.context.close()
-        self.browser.close()
-        self.playwright.stop()
+        try:
+            if self.context:
+                self.context.close()
+        except Exception as exc:
+            print(f"Warning: failed to close context cleanly: {exc}")
+        try:
+            if self.playwright:
+                self.playwright.stop()
+        except Exception as exc:
+            print(f"Warning: failed to stop playwright cleanly: {exc}")
 
     def wait(self, seconds):
         self.page.wait_for_timeout(seconds * 1000)

@@ -10,8 +10,10 @@ from src.utils.config_loader import load_yaml
 from datetime import datetime
 from src.corpus_acquisition.downloader import CorpusDownloader
 from src.corpus_acquisition.crawler import RateLimitedError
+from src.corpus_acquisition.downloader import BrowserCrashedError
 
 RATE_LIMIT_EXIT_CODE = 75
+BROWSER_CRASHED_EXIT_CODE = 76
 
 logger = logging.getLogger(__name__)
 
@@ -112,7 +114,9 @@ def main():
         )
 
         logger.info("Finished. Downloaded %d page(s) across the requested date range.", len(pages))
-    
+    except BrowserCrashedError as exc:
+        logger.error("Browser/driver connection died: %s", exc)
+        sys.exit(BROWSER_CRASHED_EXIT_CODE)
     except RateLimitedError as exc:
         logger.error("Stopped due to rate limiting (403): %s", exc)
         sys.exit(RATE_LIMIT_EXIT_CODE)

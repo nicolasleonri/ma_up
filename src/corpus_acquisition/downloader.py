@@ -25,8 +25,19 @@ from src.corpus_acquisition import metadata_extractor as meta
 from src.corpus_acquisition.crawler import ArchiveCrawler, RateLimitedError
 from src.schemas.page import Page
 
-logger = logging.getLogger(__name__)
+_CRASH_MARKERS = (
+    "Connection closed while reading from the driver",
+    "Target page, context or browser has been closed",
+)
 
+class BrowserCrashedError(Exception):
+    """Raised when the browser/driver connection has died and cannot recover in-process."""
+    pass
+
+def _is_browser_crashed(exc: Exception) -> bool:
+    return any(marker in str(exc) for marker in _CRASH_MARKERS)
+
+logger = logging.getLogger(__name__)
 
 class CorpusDownloader:
     """Crawl a newspaper's digital archive over a date range and persist results.
@@ -102,6 +113,8 @@ class CorpusDownloader:
                     )
                     all_pages.extend(pages)
                     time.sleep(random.uniform(3, 7))  # Delay to prevent overwhelming the server
+                except BrowserCrashedError:
+                    raise
                 except RateLimitedError:
                     raise   # stop the whole range immediately, don't try the next date
                 except Exception as exc:
@@ -155,6 +168,10 @@ class CorpusDownloader:
         try:
             crawler.open_archive(date)
         except Exception as exc:
+            if _is_browser_crashed(exc):
+                logger.error("Browser connection is dead (%s on %s): %s. Aborting for a clean restart.", newspaper, date_str, exc)
+                raise BrowserCrashedError(str(exc)) from exc
+
             screenshot_dir = Path("logs/screenshots")
             screenshot_dir.mkdir(parents=True, exist_ok=True)
             screenshot_path = screenshot_dir / f"{newspaper}_{date:%Y-%m-%d}_{datetime.now():%H%M%S}.png"
@@ -163,6 +180,12 @@ class CorpusDownloader:
                 logger.error("Navigation failed for %s on %s: %s (screenshot: %s)", newspaper, date_str, exc, screenshot_path)
             except Exception as shot_exc:
                 logger.error("Navigation failed for %s on %s: %s (screenshot also failed: %s)", newspaper, date_str, exc, shot_exc)
+            raise
+
+            try:
+                self.browser.goto("about:blank")  # cancel any dangling in-flight navigation
+            except Exception:
+                pass
             raise
 
         self.browser.wait(5)

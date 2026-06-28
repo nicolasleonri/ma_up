@@ -1,1 +1,23 @@
 2026-06-28 01:08:19,781 [INFO] __main__: Logging in to portal...
+2026-06-28 01:08:37,898 [INFO] __main__: Login successful!
+2026-06-28 01:08:37,901 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2025-09-15: already crawled successfully.
+2026-06-28 01:08:37,902 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2025-09-16: already crawled successfully.
+2026-06-28 01:08:37,905 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2025-09-17
+2026-06-28 01:08:43,777 [INFO] src.corpus_acquisition.downloader: Collected 7 / 60 pages
+2026-06-28 01:08:47,943 [INFO] src.corpus_acquisition.downloader: Collected 9 / 60 pages
+2026-06-28 01:08:50,026 [INFO] src.corpus_acquisition.downloader: Collected 11 / 60 pages
+2026-06-28 01:08:52,109 [INFO] src.corpus_acquisition.downloader: Collected 13 / 60 pages
+2026-06-28 01:08:54,194 [INFO] src.corpus_acquisition.downloader: Collected 15 / 60 pages
+2026-06-28 01:08:56,280 [INFO] src.corpus_acquisition.downloader: Collected 17 / 60 pages
+2026-06-28 01:08:58,363 [INFO] src.corpus_acquisition.downloader: Collected 19 / 60 pages
+2026-06-28 01:09:00,449 [INFO] src.corpus_acquisition.downloader: Collected 20 / 60 pages
+2026-06-28 01:09:06,703 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 20 page(s).
+2026-06-28 01:09:13,062 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eaaj2025091700000000001001&page=1&scale=200
+2026-06-28 01:09:13,611 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eaaj2025091700000000001001&page=2&scale=200
+2026-06-28 01:09:13,740 [ERROR] src.corpus_acquisition.downloader: Rate-limited (403) on page 2 for elcomercio on 2025-09-17; aborting run.
+2026-06-28 01:09:13,743 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/elcomercio_2025-09-17.json (status=failed)
+2026-06-28 01:09:13,743 [ERROR] __main__: Stopped due to rate limiting (403): Received 403 while downloading page 2 from https://t.prcdn.co/img?file=eaaj2025091700000000001001&page=2&scale=200
+Downloading -> data/raw/images/elcomercio/2025/09/17/elcomercio_2025-09-17_1.jpg
+Downloading -> data/raw/images/elcomercio/2025/09/17/elcomercio_2025-09-17_2.jpg
+Rate-limited (403). Resubmitting in 40 minutes...
+Submitted batch job 25951765

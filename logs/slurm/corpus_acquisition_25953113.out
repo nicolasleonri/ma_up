@@ -1,0 +1,157 @@
+2026-06-28 15:36:12,093 [INFO] __main__: Logging in to portal...
+2026-06-28 15:36:29,305 [INFO] __main__: Login successful!
+2026-06-28 15:36:29,307 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-01: already crawled successfully.
+2026-06-28 15:36:29,310 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2020-01-02
+2026-06-28 15:36:39,139 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 0 page(s).
+2026-06-28 15:36:40,249 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/elcomercio_2020-01-02.json (status=failed)
+2026-06-28 15:36:45,882 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-03: already crawled successfully.
+2026-06-28 15:36:45,883 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-04: already crawled successfully.
+2026-06-28 15:36:45,885 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-05: already crawled successfully.
+2026-06-28 15:36:45,886 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-06: already crawled successfully.
+2026-06-28 15:36:45,887 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-07: already crawled successfully.
+2026-06-28 15:36:45,887 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-08: already crawled successfully.
+2026-06-28 15:36:45,888 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-09: already crawled successfully.
+2026-06-28 15:36:45,889 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-10: already crawled successfully.
+2026-06-28 15:36:45,890 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-11: already crawled successfully.
+2026-06-28 15:36:45,891 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-12: already crawled successfully.
+2026-06-28 15:36:45,892 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-13: already crawled successfully.
+2026-06-28 15:36:45,893 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-14: already crawled successfully.
+2026-06-28 15:36:45,894 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-15: already crawled successfully.
+2026-06-28 15:36:45,895 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-16: already crawled successfully.
+2026-06-28 15:36:45,896 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-17: already crawled successfully.
+2026-06-28 15:36:45,897 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-18: already crawled successfully.
+2026-06-28 15:36:45,898 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-19: already crawled successfully.
+2026-06-28 15:36:45,900 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-20: already crawled successfully.
+2026-06-28 15:36:45,900 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-21: already crawled successfully.
+2026-06-28 15:36:45,901 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-22: already crawled successfully.
+2026-06-28 15:36:45,902 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-23: already crawled successfully.
+2026-06-28 15:36:45,903 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-24: already crawled successfully.
+2026-06-28 15:36:45,904 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-25: already crawled successfully.
+2026-06-28 15:36:45,905 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2020-01-26
+2026-06-28 15:36:55,626 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 0 page(s).
+2026-06-28 15:36:55,651 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/elcomercio_2020-01-26.json (status=failed)
+2026-06-28 15:37:02,337 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-27: already crawled successfully.
+2026-06-28 15:37:02,338 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-28: already crawled successfully.
+2026-06-28 15:37:02,339 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-29: already crawled successfully.
+2026-06-28 15:37:02,340 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-30: already crawled successfully.
+2026-06-28 15:37:02,341 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-31: already crawled successfully.
+2026-06-28 15:37:02,343 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2020-02-01
+2026-06-28 15:37:12,128 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 0 page(s).
+2026-06-28 15:37:12,154 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/elcomercio_2020-02-01.json (status=failed)
+2026-06-28 15:37:17,703 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2020-02-02
+2026-06-28 15:37:27,538 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 0 page(s).
+2026-06-28 15:37:27,557 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/elcomercio_2020-02-02.json (status=failed)
+2026-06-28 15:37:32,378 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2020-02-03
+2026-06-28 15:37:42,335 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 0 page(s).
+2026-06-28 15:37:42,356 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/elcomercio_2020-02-03.json (status=failed)
+2026-06-28 15:37:49,333 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-04: already crawled successfully.
+2026-06-28 15:37:49,334 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-05: already crawled successfully.
+2026-06-28 15:37:49,335 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-06: already crawled successfully.
+2026-06-28 15:37:49,336 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-07: already crawled successfully.
+2026-06-28 15:37:49,338 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2020-02-08
+2026-06-28 15:37:59,152 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 0 page(s).
+2026-06-28 15:37:59,173 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/elcomercio_2020-02-08.json (status=failed)
+2026-06-28 15:38:04,765 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-09: already crawled successfully.
+2026-06-28 15:38:04,766 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-10: already crawled successfully.
+2026-06-28 15:38:04,767 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-11: already crawled successfully.
+2026-06-28 15:38:04,768 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-12: already crawled successfully.
+2026-06-28 15:38:04,769 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-13: already crawled successfully.
+2026-06-28 15:38:04,770 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-14: already crawled successfully.
+2026-06-28 15:38:04,771 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-15: already crawled successfully.
+2026-06-28 15:38:04,772 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-16: already crawled successfully.
+2026-06-28 15:38:04,773 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-17: already crawled successfully.
+2026-06-28 15:38:04,775 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-18: already crawled successfully.
+2026-06-28 15:38:04,776 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-19: already crawled successfully.
+2026-06-28 15:38:04,777 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-20: already crawled successfully.
+2026-06-28 15:38:04,778 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-21: already crawled successfully.
+2026-06-28 15:38:04,779 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-22: already crawled successfully.
+2026-06-28 15:38:04,780 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-23: already crawled successfully.
+2026-06-28 15:38:04,781 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-24: already crawled successfully.
+2026-06-28 15:38:04,782 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-25: already crawled successfully.
+2026-06-28 15:38:04,783 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-26: already crawled successfully.
+2026-06-28 15:38:04,784 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-27: already crawled successfully.
+2026-06-28 15:38:04,785 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-28: already crawled successfully.
+2026-06-28 15:38:04,786 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-02-29: already crawled successfully.
+2026-06-28 15:38:04,788 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-01: already crawled successfully.
+2026-06-28 15:38:04,789 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-02: already crawled successfully.
+2026-06-28 15:38:04,790 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-03: already crawled successfully.
+2026-06-28 15:38:04,791 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-04: already crawled successfully.
+2026-06-28 15:38:04,792 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-05: already crawled successfully.
+2026-06-28 15:38:04,793 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-06: already crawled successfully.
+2026-06-28 15:38:04,794 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-07: already crawled successfully.
+2026-06-28 15:38:04,796 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-08: already crawled successfully.
+2026-06-28 15:38:04,797 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-09: already crawled successfully.
+2026-06-28 15:38:04,798 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-10: already crawled successfully.
+2026-06-28 15:38:04,799 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-11: already crawled successfully.
+2026-06-28 15:38:04,800 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-12: already crawled successfully.
+2026-06-28 15:38:04,801 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-13: already crawled successfully.
+2026-06-28 15:38:04,802 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-14: already crawled successfully.
+2026-06-28 15:38:04,803 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-15: already crawled successfully.
+2026-06-28 15:38:04,804 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-16: already crawled successfully.
+2026-06-28 15:38:04,805 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-17: already crawled successfully.
+2026-06-28 15:38:04,806 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-18: already crawled successfully.
+2026-06-28 15:38:04,807 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-19: already crawled successfully.
+2026-06-28 15:38:04,808 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-20: already crawled successfully.
+2026-06-28 15:38:04,809 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-21: already crawled successfully.
+2026-06-28 15:38:04,810 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-22: already crawled successfully.
+2026-06-28 15:38:04,811 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-23: already crawled successfully.
+2026-06-28 15:38:04,812 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-24: already crawled successfully.
+2026-06-28 15:38:04,814 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-25: already crawled successfully.
+2026-06-28 15:38:04,816 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2020-03-26
+2026-06-28 15:38:14,618 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 0 page(s).
+2026-06-28 15:38:14,639 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/elcomercio_2020-03-26.json (status=failed)
+2026-06-28 15:38:21,153 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-27: already crawled successfully.
+2026-06-28 15:38:21,154 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-28: already crawled successfully.
+2026-06-28 15:38:21,155 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-29: already crawled successfully.
+2026-06-28 15:38:21,156 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-30: already crawled successfully.
+2026-06-28 15:38:21,158 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-03-31: already crawled successfully.
+2026-06-28 15:38:21,159 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-04-01: already crawled successfully.
+2026-06-28 15:38:21,159 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-04-02: already crawled successfully.
+2026-06-28 15:38:21,160 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-04-03: already crawled successfully.
+2026-06-28 15:38:21,162 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-04-04: already crawled successfully.
+2026-06-28 15:38:21,163 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-04-05: already crawled successfully.
+2026-06-28 15:38:21,164 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-04-06: already crawled successfully.
+2026-06-28 15:38:21,165 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-04-07: already crawled successfully.
+2026-06-28 15:38:21,166 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-04-08: already crawled successfully.
+2026-06-28 15:38:21,167 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-04-09: already crawled successfully.
+2026-06-28 15:38:21,168 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-04-10: already crawled successfully.
+2026-06-28 15:38:21,173 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2020-04-11
+2026-06-28 15:38:26,982 [INFO] src.corpus_acquisition.downloader: Collected 7 / 60 pages
+2026-06-28 15:38:31,144 [INFO] src.corpus_acquisition.downloader: Collected 9 / 60 pages
+2026-06-28 15:38:33,241 [INFO] src.corpus_acquisition.downloader: Collected 11 / 60 pages
+2026-06-28 15:38:35,333 [INFO] src.corpus_acquisition.downloader: Collected 13 / 60 pages
+2026-06-28 15:38:37,422 [INFO] src.corpus_acquisition.downloader: Collected 15 / 60 pages
+2026-06-28 15:38:39,516 [INFO] src.corpus_acquisition.downloader: Collected 17 / 60 pages
+2026-06-28 15:38:41,600 [INFO] src.corpus_acquisition.downloader: Collected 19 / 60 pages
+2026-06-28 15:38:43,698 [INFO] src.corpus_acquisition.downloader: Collected 21 / 60 pages
+2026-06-28 15:38:45,797 [INFO] src.corpus_acquisition.downloader: Collected 23 / 60 pages
+2026-06-28 15:38:52,080 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 23 page(s).
+2026-06-28 15:38:52,168 [INFO] src.corpus_acquisition.downloader: Page 1 already downloaded, skipping.
+2026-06-28 15:38:52,168 [INFO] src.corpus_acquisition.downloader: Page 2 already downloaded, skipping.
+2026-06-28 15:38:52,168 [INFO] src.corpus_acquisition.downloader: Page 3 already downloaded, skipping.
+2026-06-28 15:38:52,168 [INFO] src.corpus_acquisition.downloader: Page 4 already downloaded, skipping.
+2026-06-28 15:38:52,168 [INFO] src.corpus_acquisition.downloader: Page 5 already downloaded, skipping.
+2026-06-28 15:38:52,168 [INFO] src.corpus_acquisition.downloader: Page 6 already downloaded, skipping.
+2026-06-28 15:38:52,168 [INFO] src.corpus_acquisition.downloader: Page 7 already downloaded, skipping.
+2026-06-28 15:38:52,168 [INFO] src.corpus_acquisition.downloader: Page 8 already downloaded, skipping.
+2026-06-28 15:38:52,169 [INFO] src.corpus_acquisition.downloader: Page 9 already downloaded, skipping.
+2026-06-28 15:38:52,169 [INFO] src.corpus_acquisition.downloader: Page 10 already downloaded, skipping.
+2026-06-28 15:38:52,169 [INFO] src.corpus_acquisition.downloader: Page 11 already downloaded, skipping.
+2026-06-28 15:38:52,169 [INFO] src.corpus_acquisition.downloader: Page 12 already downloaded, skipping.
+2026-06-28 15:38:52,169 [INFO] src.corpus_acquisition.downloader: Page 13 already downloaded, skipping.
+2026-06-28 15:38:52,169 [INFO] src.corpus_acquisition.downloader: Page 14 already downloaded, skipping.
+2026-06-28 15:38:52,169 [INFO] src.corpus_acquisition.downloader: Page 15 already downloaded, skipping.
+2026-06-28 15:38:52,169 [INFO] src.corpus_acquisition.downloader: Page 16 already downloaded, skipping.
+2026-06-28 15:38:52,169 [INFO] src.corpus_acquisition.downloader: Page 17 already downloaded, skipping.
+2026-06-28 15:38:52,169 [INFO] src.corpus_acquisition.downloader: Page 18 already downloaded, skipping.
+2026-06-28 15:38:52,169 [INFO] src.corpus_acquisition.downloader: Page 19 already downloaded, skipping.
+2026-06-28 15:38:52,169 [INFO] src.corpus_acquisition.downloader: Page 20 already downloaded, skipping.
+2026-06-28 15:38:52,169 [INFO] src.corpus_acquisition.downloader: Page 21 already downloaded, skipping.
+2026-06-28 15:38:52,169 [INFO] src.corpus_acquisition.downloader: Page 22 already downloaded, skipping.
+2026-06-28 15:38:52,171 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eaaj2020041100000000001001&page=23&scale=200
+2026-06-28 15:38:52,750 [ERROR] src.corpus_acquisition.downloader: Rate-limited (403) on page 23 for elcomercio on 2020-04-11; aborting run.
+2026-06-28 15:38:52,753 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/elcomercio_2020-04-11.json (status=failed)
+2026-06-28 15:38:52,753 [ERROR] __main__: Stopped due to rate limiting (403): Received 403 while downloading page 23 from https://t.prcdn.co/img?file=eaaj2020041100000000001001&page=23&scale=200
+Downloading -> data/raw/images/elcomercio/2020/04/11/elcomercio_2020-04-11_23.jpg
+Rate-limited (403). Resubmitting in 40 minutes...
+Submitted batch job 25953120

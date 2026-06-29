@@ -3,6 +3,8 @@ import logging
 from datetime import datetime
 from pathlib import Path
 import sys
+import threading
+import os
 
 from src.corpus_acquisition.browser import BrowserSession
 from src.corpus_acquisition.crawl_registry import NEWSPAPERS, PORTAL_LOGIN_URL
@@ -95,6 +97,7 @@ def main():
     browser = BrowserSession(headless=not args.headed)
     credentials = load_yaml(args.credentials)
     
+    exit_code = 0
     try:
         browser.start()
         logger.info("Logging in to portal...")
@@ -123,10 +126,15 @@ def main():
     except Exception as exc:
         logger.error("An error occurred: %s", exc)
     finally:
-        try:
-            browser.close()
-        except Exception as exc:
-            logger.warning("Browser close failed (connection likely already dead): %s", exc)
+        close_thread = threading.Thread(target=browser.close, daemon=True)
+        close_thread.start()
+        close_thread.join(timeout=15)
+
+        if close_thread.is_alive():
+            logger.error("Browser close() hung (dead connection); forcing process exit with code %d.", exit_code)
+            os._exit(exit_code)
+
+    sys.exit(exit_code)
 
 
 if __name__ == "__main__":

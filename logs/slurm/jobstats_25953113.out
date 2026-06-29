@@ -1,0 +1,40 @@
+
+================================================================================
+                              Slurm Job Statistics                              
+================================================================================
+         Job ID: 25953113
+   User/Account: nicolasal97/agfritz
+       Job Name: corpus_acquisition
+          State: COMPLETED
+          Nodes: 1
+      CPU Cores: 1
+     CPU Memory: 6GB
+  QOS/Partition: standard/scavenger
+        Cluster: curta
+     Start Time: Sun Jun 28, 2026 at 3:36 PM
+       Run Time: 00:02:46
+     Time Limit: 12:00:00
+
+                              Overall Utilization                               
+================================================================================
+  CPU utilization  [||||||                                         12%]
+  CPU memory usage [|||||                                          10%]
+
+                              Detailed Utilization                              
+================================================================================
+  CPU utilization per node (CPU time used/run time)
+      c003.curta.zedat.fu-berlin.de: 00:00:20/00:02:46 (efficiency=12.1%)
+
+  CPU memory usage per node - used/allocated
+      c003.curta.zedat.fu-berlin.de: 629.2MB/6GB 
+
+                                     Notes                                      
+================================================================================
+  * The overall CPU utilization of this job is 12.1%. This value is low
+    compared to the target range of 90% and above. Please investigate the
+    reason for the low efficiency. For more info:
+      https://www.fu-berlin.de/en/sites/high-performance-computing/Dokumentation/Ressourcennutzung
+
+  * Have a nice day!
+
+

@@ -1,0 +1,6 @@
+2026-06-29 14:10:41,921 [INFO] __main__: Logging in to portal...
+2026-06-29 14:11:02,446 [INFO] __main__: Login successful!
+2026-06-29 14:11:02,448 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2020-01-01: already crawled successfully.
+2026-06-29 14:11:02,451 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2020-01-02
+2026-06-29 14:11:12,321 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 0 page(s).
+2026-06-29 14:11:16,472 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/elcomercio_2020-01-02.json (status=failed)

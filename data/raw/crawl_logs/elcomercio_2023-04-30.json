@@ -1,9 +1,9 @@
 {
   "newspaper": "elcomercio",
-  "date": "2023-04-23",
+  "date": "2023-04-30",
   "status": "success",
-  "pages_downloaded": 32,
+  "pages_downloaded": 44,
   "pages_expected": 60,
   "error": null,
-  "timestamp": "2026-07-05T12:20:12"
+  "timestamp": "2026-07-05T12:34:28"
 }

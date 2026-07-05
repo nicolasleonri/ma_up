@@ -18,7 +18,7 @@ source venv/corpus_acquisition/bin/activate
 
 python3 -m src.workflows.acquire_corpus \
     --newspaper elcomercio \
-    --start-date 2023-04-01 \
+    --start-date 2023-05-07 \
     --end-date 2026-06-30 # Final date
 
 exit_code=$?

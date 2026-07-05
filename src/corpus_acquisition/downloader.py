@@ -112,7 +112,7 @@ class CorpusDownloader:
                         skip_existing=skip_existing,
                     )
                     all_pages.extend(pages)
-                    time.sleep(random.uniform(3, 5))  # Delay to prevent overwhelming the server
+                    time.sleep(random.uniform(2, 3))  # Delay to prevent overwhelming the server
                 except BrowserCrashedError:
                     raise
                 except RateLimitedError:
@@ -231,7 +231,7 @@ class CorpusDownloader:
                 failures += 1
                 continue
 
-            time.sleep(random.uniform(1, 3))  # Delay to prevent overwhelming the server
+            time.sleep(random.uniform(1, 2))  # Delay to prevent overwhelming the server
 
             pages.append(
                 meta.build_page(

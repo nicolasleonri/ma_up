@@ -18,7 +18,7 @@ source venv/corpus_acquisition/bin/activate
 
 python3 -m src.workflows.acquire_corpus \
     --newspaper elcomercio \
-    --start-date 2023-05-07 \
+    --start-date 2020-01-01 \
     --end-date 2026-06-30 # Final date
 
 exit_code=$?
@@ -36,3 +36,5 @@ if [ "$exit_code" -eq 75 ]; then
 fi
 
 exit $exit_code
+
+# sbatch -d afterany:26016299 0_corpus_acquisition.sh

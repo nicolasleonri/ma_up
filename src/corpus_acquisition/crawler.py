@@ -1,6 +1,9 @@
 from src.schemas.page import Page
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
+import logging
+
+logger = logging.getLogger(__name__)
 
 class RateLimitedError(Exception):
     """Raised when the portal returns HTTP 403, indicating we've been rate-limited/blocked."""
@@ -32,7 +35,8 @@ class ArchiveCrawler:
         output_dir = output_file.parent
         output_dir.mkdir(parents=True, exist_ok=True)
 
-        print(f"Downloading -> {output_file}")
+        # print(f"Downloading -> {output_file}")
+        logger.info("Downloading -> %s", output_file)
 
         response = self.browser.page.request.get(url)
 

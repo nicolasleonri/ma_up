@@ -1,0 +1,29 @@
+2026-07-04 09:43:22,362 [INFO] __main__: Logging in to portal...
+2026-07-04 09:43:41,341 [INFO] __main__: Login successful!
+2026-07-04 09:43:41,343 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2022-03-01
+2026-07-04 09:43:47,253 [INFO] src.corpus_acquisition.downloader: Collected 7 / 60 pages
+2026-07-04 09:43:51,438 [INFO] src.corpus_acquisition.downloader: Collected 9 / 60 pages
+2026-07-04 09:43:53,532 [INFO] src.corpus_acquisition.downloader: Collected 10 / 60 pages
+2026-07-04 09:43:55,626 [INFO] src.corpus_acquisition.downloader: Collected 11 / 60 pages
+2026-07-04 09:43:57,720 [INFO] src.corpus_acquisition.downloader: Collected 15 / 60 pages
+2026-07-04 09:44:00,014 [INFO] src.corpus_acquisition.downloader: Collected 17 / 60 pages
+2026-07-04 09:44:02,119 [INFO] src.corpus_acquisition.downloader: Collected 19 / 60 pages
+2026-07-04 09:44:04,231 [INFO] src.corpus_acquisition.downloader: Collected 21 / 60 pages
+2026-07-04 09:44:06,323 [INFO] src.corpus_acquisition.downloader: Collected 23 / 60 pages
+2026-07-04 09:44:08,412 [INFO] src.corpus_acquisition.downloader: Collected 24 / 60 pages
+2026-07-04 09:44:14,772 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 24 page(s).
+2026-07-04 09:44:17,303 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eaaj2022030100000051001001&page=1&scale=200
+2026-07-04 09:44:18,670 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eaaj2022030100000051001001&page=2&scale=200
+2026-07-04 09:44:18,844 [ERROR] src.corpus_acquisition.downloader: Rate-limited (403) on page 2 for elcomercio on 2022-03-01; aborting run.
+2026-07-04 09:44:18,855 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/elcomercio_2022-03-01.json (status=failed)
+2026-07-04 09:44:18,855 [ERROR] __main__: Stopped due to rate limiting (403): Received 403 while downloading page 2 from https://t.prcdn.co/img?file=eaaj2022030100000051001001&page=2&scale=200
+Downloading -> data/raw/images/elcomercio/2022/03/01/elcomercio_2022-03-01_1.jpg
+Downloading -> data/raw/images/elcomercio/2022/03/01/elcomercio_2022-03-01_2.jpg
+Warning: failed to close context cleanly: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x15552fb21ac0 (otid=0x1554e4000b90) current active started main>
+	Expected: <greenlet.greenlet object at 0x155545775d80 (otid=0x448d10) suspended active started main>
+Warning: failed to stop playwright cleanly: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x15552fb21ac0 (otid=0x1554e4000b90) current active started main>
+	Expected: <greenlet.greenlet object at 0x155545775d80 (otid=0x448d10) suspended active started main>
+Rate-limited (403). Resubmitting in 40 minutes...
+Submitted batch job 26010662

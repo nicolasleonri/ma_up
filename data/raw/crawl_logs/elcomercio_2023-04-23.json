@@ -1,0 +1,9 @@
+{
+  "newspaper": "elcomercio",
+  "date": "2023-04-23",
+  "status": "failed",
+  "pages_downloaded": 0,
+  "pages_expected": 60,
+  "error": "rate_limited_403",
+  "timestamp": "2026-07-05T07:14:07"
+}

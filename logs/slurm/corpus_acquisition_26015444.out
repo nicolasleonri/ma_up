@@ -1,0 +1,83 @@
+2026-07-05 03:00:20,546 [INFO] __main__: Logging in to portal...
+2026-07-05 03:00:40,827 [INFO] __main__: Login successful!
+2026-07-05 03:00:40,829 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-01: already crawled successfully.
+2026-07-05 03:00:40,830 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-02: already crawled successfully.
+2026-07-05 03:00:40,831 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-03: already crawled successfully.
+2026-07-05 03:00:40,832 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-04: already crawled successfully.
+2026-07-05 03:00:40,833 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-05: already crawled successfully.
+2026-07-05 03:00:40,834 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-06: already crawled successfully.
+2026-07-05 03:00:40,835 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-07: already crawled successfully.
+2026-07-05 03:00:40,836 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-08: already crawled successfully.
+2026-07-05 03:00:40,837 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-09: already crawled successfully.
+2026-07-05 03:00:40,838 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-10: already crawled successfully.
+2026-07-05 03:00:40,839 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-11: already crawled successfully.
+2026-07-05 03:00:40,840 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-12: already crawled successfully.
+2026-07-05 03:00:40,841 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-13: already crawled successfully.
+2026-07-05 03:00:40,842 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-14: already crawled successfully.
+2026-07-05 03:00:40,843 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-15: already crawled successfully.
+2026-07-05 03:00:40,844 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-16: already crawled successfully.
+2026-07-05 03:00:40,845 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-17: already crawled successfully.
+2026-07-05 03:00:40,846 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-18: already crawled successfully.
+2026-07-05 03:00:40,847 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-19: already crawled successfully.
+2026-07-05 03:00:40,848 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-20: already crawled successfully.
+2026-07-05 03:00:40,849 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-21: already crawled successfully.
+2026-07-05 03:00:40,849 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2023-04-22: already crawled successfully.
+2026-07-05 03:00:40,852 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2023-04-23
+2026-07-05 03:00:46,700 [INFO] src.corpus_acquisition.downloader: Collected 7 / 60 pages
+2026-07-05 03:00:50,867 [INFO] src.corpus_acquisition.downloader: Collected 9 / 60 pages
+2026-07-05 03:00:53,091 [INFO] src.corpus_acquisition.downloader: Collected 11 / 60 pages
+2026-07-05 03:00:55,201 [INFO] src.corpus_acquisition.downloader: Collected 13 / 60 pages
+2026-07-05 03:00:57,283 [INFO] src.corpus_acquisition.downloader: Collected 15 / 60 pages
+2026-07-05 03:00:59,369 [INFO] src.corpus_acquisition.downloader: Collected 17 / 60 pages
+2026-07-05 03:01:01,454 [INFO] src.corpus_acquisition.downloader: Collected 19 / 60 pages
+2026-07-05 03:01:03,544 [INFO] src.corpus_acquisition.downloader: Collected 21 / 60 pages
+2026-07-05 03:01:05,640 [INFO] src.corpus_acquisition.downloader: Collected 23 / 60 pages
+2026-07-05 03:01:07,729 [INFO] src.corpus_acquisition.downloader: Collected 25 / 60 pages
+2026-07-05 03:01:09,824 [INFO] src.corpus_acquisition.downloader: Collected 27 / 60 pages
+2026-07-05 03:01:11,916 [INFO] src.corpus_acquisition.downloader: Collected 29 / 60 pages
+2026-07-05 03:01:14,007 [INFO] src.corpus_acquisition.downloader: Collected 31 / 60 pages
+2026-07-05 03:01:16,101 [INFO] src.corpus_acquisition.downloader: Collected 33 / 60 pages
+2026-07-05 03:01:18,183 [INFO] src.corpus_acquisition.downloader: Collected 35 / 60 pages
+2026-07-05 03:01:20,271 [INFO] src.corpus_acquisition.downloader: Collected 37 / 60 pages
+2026-07-05 03:01:22,353 [INFO] src.corpus_acquisition.downloader: Collected 39 / 60 pages
+2026-07-05 03:01:24,431 [INFO] src.corpus_acquisition.downloader: Collected 41 / 60 pages
+2026-07-05 03:01:26,512 [INFO] src.corpus_acquisition.downloader: Collected 43 / 60 pages
+2026-07-05 03:01:28,593 [INFO] src.corpus_acquisition.downloader: Collected 45 / 60 pages
+2026-07-05 03:01:30,690 [INFO] src.corpus_acquisition.downloader: Collected 47 / 60 pages
+2026-07-05 03:01:32,785 [INFO] src.corpus_acquisition.downloader: Collected 49 / 60 pages
+2026-07-05 03:01:34,867 [INFO] src.corpus_acquisition.downloader: Collected 51 / 60 pages
+2026-07-05 03:01:36,950 [INFO] src.corpus_acquisition.downloader: Collected 52 / 60 pages
+2026-07-05 03:01:43,212 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 52 page(s).
+2026-07-05 03:01:44,022 [INFO] src.corpus_acquisition.downloader: Page 1 already downloaded, skipping.
+2026-07-05 03:01:44,022 [INFO] src.corpus_acquisition.downloader: Page 2 already downloaded, skipping.
+2026-07-05 03:01:44,023 [INFO] src.corpus_acquisition.downloader: Page 3 already downloaded, skipping.
+2026-07-05 03:01:44,023 [INFO] src.corpus_acquisition.downloader: Page 4 already downloaded, skipping.
+2026-07-05 03:01:44,023 [INFO] src.corpus_acquisition.downloader: Page 5 already downloaded, skipping.
+2026-07-05 03:01:44,023 [INFO] src.corpus_acquisition.downloader: Page 6 already downloaded, skipping.
+2026-07-05 03:01:44,024 [INFO] src.corpus_acquisition.downloader: Page 7 already downloaded, skipping.
+2026-07-05 03:01:44,024 [INFO] src.corpus_acquisition.downloader: Page 8 already downloaded, skipping.
+2026-07-05 03:01:44,024 [INFO] src.corpus_acquisition.downloader: Page 9 already downloaded, skipping.
+2026-07-05 03:01:44,024 [INFO] src.corpus_acquisition.downloader: Page 10 already downloaded, skipping.
+2026-07-05 03:01:44,025 [INFO] src.corpus_acquisition.downloader: Page 11 already downloaded, skipping.
+2026-07-05 03:01:44,025 [INFO] src.corpus_acquisition.downloader: Page 12 already downloaded, skipping.
+2026-07-05 03:01:44,026 [INFO] src.corpus_acquisition.downloader: Page 13 already downloaded, skipping.
+2026-07-05 03:01:44,026 [INFO] src.corpus_acquisition.downloader: Page 14 already downloaded, skipping.
+2026-07-05 03:01:44,026 [INFO] src.corpus_acquisition.downloader: Page 15 already downloaded, skipping.
+2026-07-05 03:01:44,026 [INFO] src.corpus_acquisition.downloader: Page 16 already downloaded, skipping.
+2026-07-05 03:01:44,026 [INFO] src.corpus_acquisition.downloader: Page 17 already downloaded, skipping.
+2026-07-05 03:01:44,027 [INFO] src.corpus_acquisition.downloader: Page 18 already downloaded, skipping.
+2026-07-05 03:01:44,027 [INFO] src.corpus_acquisition.downloader: Page 19 already downloaded, skipping.
+2026-07-05 03:01:44,027 [INFO] src.corpus_acquisition.downloader: Page 20 already downloaded, skipping.
+2026-07-05 03:01:44,027 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://i.prcdn.co/img?file=eaaj2023042300000051001001&page=21&scale=200&ticket=ACS9Sj7uXqZAZ2MAciAk3KE%3D
+2026-07-05 03:01:44,028 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2023/04/23/elcomercio_2023-04-23_21.jpg
+2026-07-05 03:01:44,709 [ERROR] src.corpus_acquisition.downloader: Rate-limited (403) on page 21 for elcomercio on 2023-04-23; aborting run.
+2026-07-05 03:01:44,713 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/elcomercio_2023-04-23.json (status=failed)
+2026-07-05 03:01:44,713 [ERROR] __main__: Stopped due to rate limiting (403): Received 403 while downloading page 21 from https://i.prcdn.co/img?file=eaaj2023042300000051001001&page=21&scale=200&ticket=ACS9Sj7uXqZAZ2MAciAk3KE%3D
+Warning: failed to close context cleanly: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x155544133f80 (otid=0x1554e4000b90) current active started main>
+	Expected: <greenlet.greenlet object at 0x155545742200 (otid=0x448d10) suspended active started main>
+Warning: failed to stop playwright cleanly: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x155544133f80 (otid=0x1554e4000b90) current active started main>
+	Expected: <greenlet.greenlet object at 0x155545742200 (otid=0x448d10) suspended active started main>
+Rate-limited (403). Resubmitting in 40 minutes...
+Submitted batch job 26015445

@@ -2,50 +2,48 @@
 ================================================================================
                               Slurm Job Statistics                              
 ================================================================================
-         Job ID: 25919810
+         Job ID: 26020068
    User/Account: nicolasal97/agfritz
-       Job Name: corpus_construction
+       Job Name: corpus_acquisition
           State: COMPLETED
           Nodes: 1
-      CPU Cores: 4
-     CPU Memory: 20GB (5GB per CPU-core)
-           GPUs: 1
+      CPU Cores: 1
+     CPU Memory: 12GB
   QOS/Partition: standard/scavenger
         Cluster: curta
-     Start Time: Tue Jun 23, 2026 at 11:29 PM
-       Run Time: 00:14:17
-     Time Limit: 01:00:00
+     Start Time: Mon Jul 6, 2026 at 2:52 AM
+       Run Time: 00:33:30
+     Time Limit: 12:00:00
 
                               Overall Utilization                               
 ================================================================================
-  CPU utilization  [|||||||||                                      19%]
-  CPU memory usage [||||||||||||||||||||||||                       48%]
-  GPU utilization  [|                                               2%]
-  GPU memory usage [|||||||||||||||||||||||||||||||||||            70%]
+  CPU utilization  [||||                                            9%]
+  CPU memory usage [|||                                             7%]
 
                               Detailed Utilization                              
 ================================================================================
   CPU utilization per node (CPU time used/run time)
-      g016.curta.zedat.fu-berlin.de: 00:10:56/00:57:08 (efficiency=19.1%)
+      c003.curta.zedat.fu-berlin.de: 00:03:10/00:33:30 (efficiency=9.5%)
 
   CPU memory usage per node - used/allocated
-      g016.curta.zedat.fu-berlin.de: 9.5GB/20GB (2.4GB/5GB per core of 4)
-
-  GPU utilization per node
-      g016.curta.zedat.fu-berlin.de (GPU 2): 1.8%
-
-  GPU memory usage per node - maximum used/total
-      g016.curta.zedat.fu-berlin.de (GPU 2): 55.7GB/79.6GB (69.9%)
+      c003.curta.zedat.fu-berlin.de: 832.0MB/12GB 
 
                                      Notes                                      
 ================================================================================
-  * The overall GPU utilization of this job is only 2%. This value is low.
-    Please investigate the reason for the low utilization. For more info:
+  * The overall CPU utilization of this job is 9.5%. This value is low
+    compared to the target range of 90% and above. Please investigate the
+    reason for the low efficiency. For more info:
       https://www.fu-berlin.de/en/sites/high-performance-computing/Dokumentation/Ressourcennutzung
 
-  * This job only used 48% of the 20GB of total allocated CPU memory. For
+  * This job only needed 5% of the requested time, which was 12:00:00. For
+    future jobs, please request less time by modifying the --time Slurm
+    directive. This will lower your queue times and allow the Slurm job
+    scheduler to work more effectively for all users. For more info:
+      https://www.fu-berlin.de/en/sites/high-performance-computing/Dokumentation/Ressourcen-Manager/Zeitlimit
+
+  * This job only used 7% of the 12GB of total allocated CPU memory. For
     future jobs, please allocate less memory by using a Slurm directive such
-    as --mem-per-cpu=3G or --mem=12G. This will reduce your queue times and
+    as --mem-per-cpu=1G or --mem=1G. This will reduce your queue times and
     make the resources available to other users. For more info:
       https://www.fu-berlin.de/en/sites/high-performance-computing/Dokumentation/Ressourcen-Manager/Hauptspeicher/
 

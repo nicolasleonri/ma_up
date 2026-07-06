@@ -1,0 +1,46 @@
+
+================================================================================
+                              Slurm Job Statistics                              
+================================================================================
+         Job ID: 26010678
+   User/Account: nicolasal97/agfritz
+       Job Name: corpus_acquisition
+          State: COMPLETED
+          Nodes: 1
+      CPU Cores: 1
+     CPU Memory: 12GB
+  QOS/Partition: standard/scavenger
+        Cluster: curta
+     Start Time: Sat Jul 4, 2026 at 9:55 AM
+       Run Time: 16:01:48
+     Time Limit: 18:00:00
+
+                              Overall Utilization                               
+================================================================================
+  CPU utilization  [|||                                             6%]
+  CPU memory usage [|||||||||||||||||||||||||||                    54%]
+
+                              Detailed Utilization                              
+================================================================================
+  CPU utilization per node (CPU time used/run time)
+      c003.curta.zedat.fu-berlin.de: 01:04:48/16:01:48 (efficiency=6.7%)
+
+  CPU memory usage per node - used/allocated
+      c003.curta.zedat.fu-berlin.de: 6.5GB/12GB 
+
+                                     Notes                                      
+================================================================================
+  * The overall CPU utilization of this job is 6.7%. This value is low
+    compared to the target range of 90% and above. Please investigate the
+    reason for the low efficiency. For more info:
+      https://www.fu-berlin.de/en/sites/high-performance-computing/Dokumentation/Ressourcennutzung
+
+  * This job only used 54% of the 12GB of total allocated CPU memory. For
+    future jobs, please allocate less memory by using a Slurm directive such
+    as --mem-per-cpu=8G or --mem=8G. This will reduce your queue times and
+    make the resources available to other users. For more info:
+      https://www.fu-berlin.de/en/sites/high-performance-computing/Dokumentation/Ressourcen-Manager/Hauptspeicher/
+
+  * Have a nice day!
+
+

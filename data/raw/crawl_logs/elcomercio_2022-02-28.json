@@ -1,9 +1,9 @@
 {
   "newspaper": "elcomercio",
   "date": "2022-02-28",
-  "status": "failed",
-  "pages_downloaded": 1,
-  "pages_expected": 60,
-  "error": "rate_limited_403",
-  "timestamp": "2026-07-01T02:41:00"
+  "status": "success",
+  "pages_downloaded": 43,
+  "pages_expected": 1000,
+  "error": null,
+  "timestamp": "2026-07-06T03:07:00"
 }

@@ -82,7 +82,7 @@ class CorpusDownloader:
         config: dict,
         start_date: datetime,
         end_date: datetime | None = None,
-        scale: int = 195,
+        scale: int = 200,
         skip_existing: bool = True,
         resume: bool = True,
     ) -> list[Page]:
@@ -141,7 +141,7 @@ class CorpusDownloader:
         newspaper: str,
         config: dict,
         date: datetime,
-        scale: int = 195,
+        scale: int = 200,
         skip_existing: bool = True,
     ) -> list[Page]:
         """Crawl and download every page of a single newspaper issue.

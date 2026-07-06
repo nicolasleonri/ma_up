@@ -54,7 +54,7 @@ class ArchiveCrawler:
 
         return output_file
 
-    def build_page_url(self, base_url, scale=195):
+    def build_page_url(self, base_url, scale=200):
 
         parsed = urlparse(base_url)
 

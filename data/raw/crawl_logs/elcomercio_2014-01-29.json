@@ -1,0 +1,9 @@
+{
+  "newspaper": "elcomercio",
+  "date": "2014-01-29",
+  "status": "failed",
+  "pages_downloaded": 0,
+  "pages_expected": null,
+  "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://visor.peruquiosco.pe/diario-el-comercio/20140129\", waiting until \"load\"\n",
+  "timestamp": "2026-07-06T12:52:49"
+}

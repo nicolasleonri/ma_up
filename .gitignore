@@ -228,6 +228,13 @@ config/corpus_acquisition/
 .venv/
 venv/
 
+# Json and Parquet in data
+data/*.json
+data/*.parquet
+data/**/*.json
+data/**/*.parquet
+
+
 # Image files
 *.png
 *.jpg
@@ -236,3 +243,4 @@ venv/
 *.bmp
 *.svg
 *.tiff
+

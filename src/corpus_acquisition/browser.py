@@ -68,3 +68,34 @@ class BrowserSession:
             selector,
             timeout=timeout
         )
+
+    def tab_and_enter(self):
+        self.page.keyboard.press("Tab")
+        self.page.keyboard.press("Enter")
+
+    def enter(self):
+        self.page.keyboard.press("Enter")
+
+    def switch_to_new_page(self, timeout=10000):
+        """Switch focus to the most recently opened tab."""
+        self.page.wait_for_timeout(2000)  # brief wait for the new tab to open
+        pages = self.context.pages
+        if len(pages) > 1:
+            self.page = pages[-1]  # switch to the last opened tab
+            self.page.wait_for_load_state("load")
+            return True
+        return False
+    
+    def switch_to_first_page(self):
+        """Switch focus back to the original/first tab."""
+        pages = self.context.pages
+        if pages:
+            self.page = pages[0]
+            self.page.wait_for_load_state("load")
+
+    def debug_pages(self):
+        """Log all currently open tabs and their URLs."""
+        pages = self.context.pages
+        for i, p in enumerate(pages):
+            print(f"Tab {i}: {p.url}")
+        return pages

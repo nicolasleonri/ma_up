@@ -1,23 +1,20 @@
 import argparse
 import logging
+import sys
 from datetime import datetime
 from pathlib import Path
-import sys
-import threading
-import os
 
 from src.corpus_acquisition.browser import BrowserSession
-from src.corpus_acquisition.crawl_registry import NEWSPAPERS, PORTAL_LOGIN_URL
-from src.utils.config_loader import load_yaml
-from datetime import datetime
-from src.corpus_acquisition.downloader import CorpusDownloader
+from src.corpus_acquisition.crawl_registry import NEWSPAPERS, PORTAL_LOGIN_URL, PORTAL_PRESSREADER_URL
 from src.corpus_acquisition.crawler import RateLimitedError
-from src.corpus_acquisition.downloader import BrowserCrashedError
+from src.corpus_acquisition.downloader import BrowserCrashedError, CorpusDownloader
+from src.utils.config_loader import load_yaml
 
 RATE_LIMIT_EXIT_CODE = 75
 BROWSER_CRASHED_EXIT_CODE = 76
 
 logger = logging.getLogger(__name__)
+
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Acquire a newspaper corpus.")
@@ -61,8 +58,9 @@ def parse_args():
     )
     return parser.parse_args()
 
+
 def login(browser: BrowserSession, credentials: dict, newspaper_config: dict) -> None:
-    """Log in to the newspaper portal and open the requested newspaper section."""
+    """Log in to PeruQuiosco and open the requested newspaper section."""
     browser.goto(PORTAL_LOGIN_URL)
     browser.wait_for_selector("button[class='sc-dkzDqf xFTNr']")  # "Iniciar Sesión"
     browser.click("button[class='sc-dkzDqf xFTNr']")
@@ -75,10 +73,62 @@ def login(browser: BrowserSession, credentials: dict, newspaper_config: dict) ->
     browser.wait_for_selector("button[class='sc-dkzDqf kwFoJp']", timeout=30000)  # "Cerrar Sesión"
     browser.wait(5)
 
-    browser.locator("div[class='sc-iIPllB bUkgIR']", has_text=newspaper_config.get("selector_text", "")).first.click()
+    browser.locator(
+        "div[class='sc-iIPllB bUkgIR']",
+        has_text=newspaper_config.get("selector_text", ""),
+    ).first.click()
     browser.wait(5)
 
+
+def login_pressreader(browser: BrowserSession, credentials: dict, newspaper_config: dict) -> None:
+    """Log in to PressReader using library (bib) credentials and open the newspaper section."""
+    browser.goto(PORTAL_PRESSREADER_URL)
+
+    browser.wait_for_selector("button[class='btn btn-login ']")
+    browser.click("button[class='btn btn-login ']")
+
+    browser.wait_for_selector("button[id='CybotCookiebotDialogBodyButtonDecline']")
+    browser.click("button[id='CybotCookiebotDialogBodyButtonDecline']")
+
+    browser.wait_for_selector("a[class='btn btn-library']")
+    browser.click("a[class='btn btn-library']")
+
+    browser.wait_for_selector("input[class='search-input']")
+    browser.locator("input[class='search-input']").fill("verbund")
     
+    browser.wait(1)
+    browser.tab_and_enter()
+
+    browser.wait_for_selector("button[class='btn btn-action']")
+    browser.click("button[class='btn btn-action']")
+
+    browser.wait(1)
+
+    browser.switch_to_new_page()
+
+    browser.wait_for_selector("input[id='L#AUSW']")
+    browser.locator("input[id='L#AUSW']").fill(str(credentials["pressreader_username"]))
+    browser.wait_for_selector("input[id='L#AUSW']")
+    browser.locator("input[id='LPASSW']").fill(credentials["pressreader_password"])
+
+    browser.wait_for_selector("input[name='LLOGIN']")
+    browser.click("input[name='LLOGIN']")
+
+    browser.switch_to_first_page()
+    # browser.wait_for_selector("a[class='alert-close']")
+    # browser.click("a[class='alert-close']")
+
+def dispatch_login(browser: BrowserSession, credentials: dict, newspaper_config: dict) -> None:
+    """Route to the correct login function based on the newspaper's portal."""
+    portal = newspaper_config.get("portal", "peruquiosco")
+    if portal == "pressreader":
+        # login_pressreader(browser, credentials, newspaper_config)
+        logger.warning("PressReader login is currently disabled. Proceeding without login.")
+    else:
+        login(browser, credentials, newspaper_config)
+        logger.info("Login successful!")
+
+
 def main():
     args = parse_args()
 
@@ -93,20 +143,20 @@ def main():
     )
 
     newspaper_config = NEWSPAPERS[args.newspaper]
-
     browser = BrowserSession(headless=not args.headed)
     credentials = load_yaml(args.credentials)
-    
+
     exit_code = 0
     try:
         browser.start()
         logger.info("Logging in to portal...")
+        dispatch_login(browser, credentials, newspaper_config)
 
-        login(browser, credentials, newspaper_config)
-
-        logger.info("Login successful!")
-
-        downloader = CorpusDownloader(browser=browser, credentials=credentials)
+        downloader = CorpusDownloader(
+            browser=browser,
+            credentials=credentials,
+            # log_dir=Path(args.log_dir) / "crawl_logs",
+        )
 
         pages = downloader.download_range(
             newspaper=args.newspaper,
@@ -117,26 +167,24 @@ def main():
         )
 
         logger.info("Finished. Downloaded %d page(s) across the requested date range.", len(pages))
+
     except BrowserCrashedError as exc:
         logger.error("Browser/driver connection died: %s", exc)
-        sys.exit(BROWSER_CRASHED_EXIT_CODE)
+        exit_code = BROWSER_CRASHED_EXIT_CODE
     except RateLimitedError as exc:
         logger.error("Stopped due to rate limiting (403): %s", exc)
-        sys.exit(RATE_LIMIT_EXIT_CODE)
+        exit_code = RATE_LIMIT_EXIT_CODE
     except Exception as exc:
         logger.error("An error occurred: %s", exc)
+        exit_code = 1
     finally:
-        close_thread = threading.Thread(target=browser.close, daemon=True)
-        close_thread.start()
-        close_thread.join(timeout=15)
-
-        if close_thread.is_alive():
-            logger.error("Browser close() hung (dead connection); forcing process exit with code %d.", exit_code)
-            os._exit(exit_code)
-
-    sys.exit(exit_code)
-
+        try:
+            browser.close()
+        except Exception as exc:
+            logger.error("Error occurred while closing browser: %s", exc)
+            logger.warning("Forcing process exit with code %d.", exit_code)
+            sys.exit(exit_code)
+ 
 
 if __name__ == "__main__":
-
     main()

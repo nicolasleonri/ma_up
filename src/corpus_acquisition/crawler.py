@@ -19,6 +19,11 @@ class ArchiveCrawler:
         url = f"{self.config['archive_url']}{date:%Y%m%d}"
         self.browser.goto(url)
 
+        # Interaction with Pressreader (not used anymore, but leaving it here in case we need to re-enable it later)
+        # self.browser.wait(5)
+        # self.browser.wait_for_selector("button[class='btn-icon has-bg has-label-right']")
+        # self.browser.locator("button.btn-icon.has-bg.has-label-right").last.click()
+
     def get_urls(self):
         images = self.browser.page.locator("img")
         urls = set()
@@ -35,7 +40,6 @@ class ArchiveCrawler:
         output_dir = output_file.parent
         output_dir.mkdir(parents=True, exist_ok=True)
 
-        # print(f"Downloading -> {output_file}")
         logger.info("Downloading -> %s", output_file)
 
         response = self.browser.page.request.get(url)

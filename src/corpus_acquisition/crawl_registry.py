@@ -1,4 +1,5 @@
 PORTAL_LOGIN_URL = "https://web.peruquiosco.pe/"
+PORTAL_PRESSREADER_URL = "https://www.pressreader.com/de"
 
 NEWSPAPERS = {
     "elcomercio": {
@@ -6,5 +7,57 @@ NEWSPAPERS = {
         "length": "1000",
         "selector_text": "El Comercio",
         "edition": "default",
-    }
+        "portal": "peruquiosco",
+        "download_method": "crawl",
+    },
+    "trome": {
+        "archive_url": "https://www.pressreader.com/de/newspapers/n/diario-trome/",
+        "length": "1000",
+        "selector_text": "Trome",
+        "edition": "default",
+        "portal": "pressreader",
+        "download_method": "direct",
+        "file_prefix": "eag8",
+        "file_suffix": "00000000001001",
+    },
+    "correo": {
+        "archive_url": "https://www.pressreader.com/de/newspapers/n/diario-correo/",
+        "length": "1000",
+        "selector_text": "Correo",
+        "edition": "default",
+        "portal": "pressreader",
+        "download_method": "direct",
+        "file_prefix": "eagb",
+        "file_suffix": "00000000001001",
+    },
+    "ojo": {
+        "archive_url": "https://www.pressreader.com/de/newspapers/n/diario-ojo/",
+        "length": "1000",
+        "selector_text": "Ojo",
+        "edition": "default",
+        "portal": "pressreader",
+        "download_method": "direct",
+        "file_prefix": "eags",
+        "file_suffix": "00000000001001",
+    },
+    "peru21": {
+        "archive_url": "https://www.pressreader.com/de/newspapers/n/diario-peru21/",
+        "length": "1000",
+        "selector_text": "Peru21",
+        "edition": "default",
+        "portal": "pressreader",
+        "download_method": "direct",
+        "file_prefix": "eag1",
+        "file_suffix": "00000000001001",
+    },
+    "gestion": {
+        "archive_url": "https://www.pressreader.com/de/newspapers/n/diario-gestion/",
+        "length": "1000",
+        "selector_text": "Gestion",
+        "edition": "default",
+        "portal": "pressreader",
+        "download_method": "direct",
+        "file_prefix": "eag6",
+        "file_suffix": "00000000001001",
+    },
 }

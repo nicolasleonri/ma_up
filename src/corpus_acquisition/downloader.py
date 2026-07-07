@@ -157,6 +157,16 @@ class CorpusDownloader:
         expected_pages = int(config.get("length", 0)) or None
         date_str = date.strftime("%Y-%m-%d")
 
+        if config.get("download_method") == "direct":
+            return self._download_direct(
+                newspaper=newspaper,
+                config=config,
+                date=date,
+                expected_pages=expected_pages,
+                scale=80,
+                skip_existing=skip_existing,
+            )
+
         if skip_existing and self._date_already_downloaded(newspaper, date, expected_pages):
             logger.info("All pages for %s on %s already exist on disk, skipping navigation.", newspaper, date_str)
             return []
@@ -179,13 +189,11 @@ class CorpusDownloader:
                 logger.error("Navigation failed for %s on %s: %s (screenshot also failed: %s)", newspaper, date_str, exc, shot_exc)
             raise
 
-            try:
-                self.browser.goto("about:blank")  # cancel any dangling in-flight navigation
-            except Exception:
-                pass
-            raise
-
-        self.browser.wait(5)
+            # try:
+            #     self.browser.goto("about:blank")  # cancel any dangling in-flight navigation
+            # except Exception:
+            #     pass
+            # raise
 
         try:
             urls_by_page = self._collect_page_urls(crawler, expected_pages)
@@ -295,7 +303,14 @@ class CorpusDownloader:
                 )
                 break
 
-            self.browser.locator("div[class='readingnav rn-right']").click()
+            self.browser.locator("div[class='readingnav rn-right']").click() 
+            
+            # Interaction with Pressreader (not used anymore, but leaving it here in case we need to re-enable it later)
+            # try:
+            #     self.browser.locator("button[class='scroller-paddle scroller-paddle-right no-swiper-tap']").click()
+            # except Exception as e:
+            #     logger.warning("Failed to click scroller paddle: %s", e)
+
             self.browser.wait(2)
 
         pages_by_number: dict[int, str] = {}
@@ -338,3 +353,165 @@ class CorpusDownloader:
 
         # No expected count to compare against; treat any existing files as "already done".
         return True
+    
+    
+    def _download_direct(
+        self,
+        newspaper: str,
+        config: dict,
+        date: datetime,
+        expected_pages: int | None,
+        scale: int = 80,
+        skip_existing: bool = True,
+    ) -> list[Page]:
+
+        if expected_pages is None:
+            raise ValueError(
+                f"{newspaper} uses direct downloads but has no page count ('length')."
+            )
+
+        file_id = (
+            f"{config['file_prefix']}"
+            f"{date:%Y%m%d}"
+            f"{config['file_suffix']}"
+        )
+
+        crawler = self.crawler_cls(
+            browser=self.browser,
+            config=config,
+            credentials=self.credentials,
+        )
+
+        already_done = (
+            meta.load_existing_page_numbers(
+                newspaper,
+                date,
+                self.metadata_path,
+            )
+            if skip_existing
+            else set()
+        )
+
+        pages: list[Page] = []
+        failures = 0
+
+        stall_rounds = 0
+        max_stall_rounds = 3
+
+        for page_number in range(1, expected_pages + 1):
+
+            output_path = self._build_output_path(
+                newspaper,
+                date,
+                page_number,
+            )
+
+            if skip_existing and (
+                page_number in already_done or output_path.exists()
+            ):
+                logger.info("Page %d already downloaded, skipping.", page_number)
+                continue
+
+            page_url = (
+                "https://t.prcdn.co/img"
+                f"?file={file_id}"
+                f"&page={page_number}"
+                f"&scale={scale}"
+            )
+
+            logger.info("Downloading page %d from %s", page_number, page_url)
+
+            try:
+                crawler.download_page(
+                    page_url,
+                    page_number,
+                    path=str(output_path),
+                )
+
+                # Just like _collect_page_urls():
+                # a successful page resets the stall counter.
+                stall_rounds = 0
+
+            except RateLimitedError:
+                logger.error(
+                    "Rate-limited (403) on page %d for %s on %s; aborting run.",
+                    page_number,
+                    newspaper,
+                    date.strftime("%Y-%m-%d"),
+                )
+                meta.save_crawl_log(
+                    newspaper,
+                    date,
+                    status="failed",
+                    pages_downloaded=len(pages),
+                    pages_expected=expected_pages,
+                    error="rate_limited_403",
+                    log_dir=self.log_dir,
+                )
+                raise
+
+            except Exception as exc:
+
+                if "404" in str(exc):
+                    stall_rounds += 1
+
+                    logger.warning(
+                        "Page %d not found (%d/%d).",
+                        page_number,
+                        stall_rounds,
+                        max_stall_rounds,
+                    )
+
+                    if stall_rounds >= max_stall_rounds:
+                        logger.warning(
+                            "No new pages found after %d attempts; stopping with %d page(s).",
+                            stall_rounds,
+                            len(pages),
+                        )
+                        break
+
+                    continue
+
+                logger.error("Failed to download page %d: %s", page_number, exc)
+                failures += 1
+                continue
+
+            time.sleep(random.uniform(1, 2))
+
+            pages.append(
+                meta.build_page(
+                    newspaper=newspaper,
+                    date=date,
+                    edition=config.get("edition", "default"),
+                    page_number=page_number,
+                    page_url=page_url,
+                    image_url=page_url,
+                    image_path=output_path,
+                )
+            )
+
+            time.sleep(random.uniform(0.5, 1.0))
+
+        if pages:
+            meta.save_pages_metadata(
+                pages,
+                self.metadata_path,
+            )
+
+        status = (
+            "success"
+            if failures == 0 and pages
+            else ("partial" if pages else "failed")
+        )
+
+        meta.save_crawl_log(
+            newspaper,
+            date,
+            status=status,
+            pages_downloaded=len(pages),
+            pages_expected=expected_pages,
+            error=None if status == "success" else f"{failures} page(s) failed",
+            log_dir=self.log_dir,
+        )
+
+        return pages

@@ -155,6 +155,7 @@ def main():
         downloader = CorpusDownloader(
             browser=browser,
             credentials=credentials,
+            metadata_path=Path(f"data/raw/metadata/{args.newspaper}_metadata.parquet"),
             # log_dir=Path(args.log_dir) / "crawl_logs",
         )
 

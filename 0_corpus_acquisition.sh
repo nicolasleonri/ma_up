@@ -7,8 +7,8 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
-#SBATCH --mem-per-cpu=8GB
-#SBATCH --time=48:00:00
+#SBATCH --mem-per-cpu=1GB
+#SBATCH --time=40:00:00
 
 module purge
 module add virtualenv/20.32.0-GCCcore-14.3.0
@@ -16,10 +16,18 @@ module add Python/3.13.5-GCCcore-14.3.0
 
 source venv/corpus_acquisition/bin/activate
 
+##### EL COMERCIO #####
+# python3 -m src.workflows.acquire_corpus \
+#     --newspaper elcomercio \
+#     --start-date 2015-01-01 \
+#     --end-date 2019-12-31 # Final date
+
+##### TODO LO DEMAS #####
+# newspaper = trome, elcomercio, peru21, gestion, ojo
 python3 -m src.workflows.acquire_corpus \
-    --newspaper elcomercio \
-    --start-date 2015-01-01 \
-    --end-date 2019-12-31 # Final date
+    --newspaper trome \
+    --start-date 2022-07-01 \
+    --end-date 2026-06-30 # Final date
 
 exit_code=$?
 

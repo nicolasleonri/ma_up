@@ -66,14 +66,15 @@ class CorpusDownloader:
         crawler_cls=ArchiveCrawler,
         credentials: dict | None = None,
         output_root: str | Path = "data/raw/images",
-        metadata_path: str | Path = "data/raw/metadata/raw_metadata.parquet",
+        # metadata_path: str | Path = "data/raw/metadata/raw_metadata.parquet",
+        metadata_path: str | Path | None = None,
         log_dir: str | Path = "data/raw/crawl_logs",
     ):
         self.browser = browser
         self.crawler_cls = crawler_cls
         self.credentials = credentials
         self.output_root = Path(output_root)
-        self.metadata_path = Path(metadata_path)
+        self.metadata_path = Path(metadata_path) if metadata_path else None
         self.log_dir = Path(log_dir)
 
     def download_range(
@@ -112,7 +113,7 @@ class CorpusDownloader:
                         skip_existing=skip_existing,
                     )
                     all_pages.extend(pages)
-                    time.sleep(random.uniform(2, 3))  # Delay to prevent overwhelming the server
+                    time.sleep(random.uniform(0.5, 1.5))  # Delay to prevent overwhelming the server
                 except BrowserCrashedError:
                     raise
                 except RateLimitedError:
@@ -239,7 +240,7 @@ class CorpusDownloader:
                 failures += 1
                 continue
 
-            time.sleep(random.uniform(1, 2))  # Delay to prevent overwhelming the server
+            time.sleep(random.uniform(0.5, 1.5))  # Delay to prevent overwhelming the server
 
             pages.append(
                 meta.build_page(
@@ -428,8 +429,6 @@ class CorpusDownloader:
                     path=str(output_path),
                 )
 
-                # Just like _collect_page_urls():
-                # a successful page resets the stall counter.
                 stall_rounds = 0
 
             except RateLimitedError:
@@ -476,7 +475,7 @@ class CorpusDownloader:
                 failures += 1
                 continue
 
-            time.sleep(random.uniform(1, 2))
+            time.sleep(random.uniform(0.5, 1.5))
 
             pages.append(
                 meta.build_page(

@@ -1,0 +1,600 @@
+2026-07-15 18:36:35,887 [INFO] __main__: Logging in to portal...
+2026-07-15 18:37:00,145 [INFO] __main__: Login successful!
+2026-07-15 18:37:00,154 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2016-04-01: already crawled successfully.
+2026-07-15 18:37:00,155 [INFO] src.corpus_acquisition.downloader: Skipping elcomercio on 2016-04-02: already crawled successfully.
+2026-07-15 18:37:00,158 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2016-04-03
+2026-07-15 18:37:03,915 [INFO] src.corpus_acquisition.downloader: Collected 1 / 1000 pages
+2026-07-15 18:37:06,013 [INFO] src.corpus_acquisition.downloader: Collected 6 / 1000 pages
+2026-07-15 18:37:08,125 [INFO] src.corpus_acquisition.downloader: Collected 9 / 1000 pages
+2026-07-15 18:37:10,239 [INFO] src.corpus_acquisition.downloader: Collected 11 / 1000 pages
+2026-07-15 18:37:12,356 [INFO] src.corpus_acquisition.downloader: Collected 13 / 1000 pages
+2026-07-15 18:37:14,476 [INFO] src.corpus_acquisition.downloader: Collected 15 / 1000 pages
+2026-07-15 18:37:16,589 [INFO] src.corpus_acquisition.downloader: Collected 16 / 1000 pages
+2026-07-15 18:37:18,717 [INFO] src.corpus_acquisition.downloader: Collected 19 / 1000 pages
+2026-07-15 18:37:20,847 [INFO] src.corpus_acquisition.downloader: Collected 21 / 1000 pages
+2026-07-15 18:37:22,973 [INFO] src.corpus_acquisition.downloader: Collected 23 / 1000 pages
+2026-07-15 18:37:25,105 [INFO] src.corpus_acquisition.downloader: Collected 25 / 1000 pages
+2026-07-15 18:37:27,237 [INFO] src.corpus_acquisition.downloader: Collected 26 / 1000 pages
+2026-07-15 18:37:29,345 [INFO] src.corpus_acquisition.downloader: Collected 29 / 1000 pages
+2026-07-15 18:37:31,503 [INFO] src.corpus_acquisition.downloader: Collected 31 / 1000 pages
+2026-07-15 18:37:33,617 [INFO] src.corpus_acquisition.downloader: Collected 33 / 1000 pages
+2026-07-15 18:37:35,730 [INFO] src.corpus_acquisition.downloader: Collected 34 / 1000 pages
+2026-07-15 18:37:37,836 [INFO] src.corpus_acquisition.downloader: Collected 37 / 1000 pages
+2026-07-15 18:37:39,957 [INFO] src.corpus_acquisition.downloader: Collected 39 / 1000 pages
+2026-07-15 18:37:42,060 [INFO] src.corpus_acquisition.downloader: Collected 41 / 1000 pages
+2026-07-15 18:37:44,166 [INFO] src.corpus_acquisition.downloader: Collected 42 / 1000 pages
+2026-07-15 18:37:46,278 [INFO] src.corpus_acquisition.downloader: Collected 44 / 1000 pages
+2026-07-15 18:37:48,376 [INFO] src.corpus_acquisition.downloader: Collected 47 / 1000 pages
+2026-07-15 18:37:50,482 [INFO] src.corpus_acquisition.downloader: Collected 49 / 1000 pages
+2026-07-15 18:37:52,589 [INFO] src.corpus_acquisition.downloader: Collected 50 / 1000 pages
+2026-07-15 18:37:54,695 [INFO] src.corpus_acquisition.downloader: Collected 53 / 1000 pages
+2026-07-15 18:37:56,796 [INFO] src.corpus_acquisition.downloader: Collected 54 / 1000 pages
+2026-07-15 18:38:03,176 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 54 page(s).
+2026-07-15 18:38:13,863 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eaaj2016040300000000001001&page=1&scale=200
+2026-07-15 18:38:13,867 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_1.jpg
+2026-07-15 18:38:16,520 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=2&scale=200&ticket=AIEjyG4qaComGC22SQU7Jho%3D
+2026-07-15 18:38:16,520 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_2.jpg
+2026-07-15 18:38:18,389 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=3&scale=200&ticket=AJ8VXDIbNODmSjEUYQGg42I%3D
+2026-07-15 18:38:18,389 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_3.jpg
+2026-07-15 18:38:20,351 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=4&scale=200&ticket=ALB%2FXNcdzgn9qqLH2%2Bjr%2FIA%3D
+2026-07-15 18:38:20,351 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_4.jpg
+2026-07-15 18:38:22,527 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=5&scale=200&ticket=ALck8gUAIWW2dU4B4b1TbtI%3D
+2026-07-15 18:38:22,537 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_5.jpg
+2026-07-15 18:38:23,873 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=6&scale=200&ticket=AMozfnRDFWHpDPYdHUXAxMI%3D
+2026-07-15 18:38:23,873 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_6.jpg
+2026-07-15 18:38:26,134 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=7&scale=200&ticket=APkt2LyIZqLvfbn6uljtsLQ%3D
+2026-07-15 18:38:26,134 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_7.jpg
+2026-07-15 18:38:27,686 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=8&scale=200&ticket=APh627HDvpHOrOUysk2s3VU%3D
+2026-07-15 18:38:27,687 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_8.jpg
+2026-07-15 18:38:29,475 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=9&scale=200&ticket=AN8j5JItneb0huJatyzdZoc%3D
+2026-07-15 18:38:29,484 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_9.jpg
+2026-07-15 18:38:30,974 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=10&scale=200&ticket=AMT4SVkKCwoY%2BRRTJN3JqBw%3D
+2026-07-15 18:38:30,984 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_10.jpg
+2026-07-15 18:38:32,554 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=11&scale=200&ticket=ANxP5kCXKpKw%2B%2FBx9vHn4h4%3D
+2026-07-15 18:38:32,554 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_11.jpg
+2026-07-15 18:38:34,128 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=12&scale=200&ticket=ABDUl%2B4tCFRf95J1p7bY6K4%3D
+2026-07-15 18:38:34,129 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_12.jpg
+2026-07-15 18:38:35,911 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=13&scale=200&ticket=AD%2FSWZ%2ByOADETRyvNQ8ieQo%3D
+2026-07-15 18:38:35,912 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_13.jpg
+2026-07-15 18:38:37,234 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=14&scale=200&ticket=AHx8MGPHpx25DryW7C9Cx9k%3D
+2026-07-15 18:38:37,234 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_14.jpg
+2026-07-15 18:38:39,894 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=15&scale=200&ticket=AOJvSPFDAN9MAGWdnKfmS%2Bg%3D
+2026-07-15 18:38:39,894 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_15.jpg
+2026-07-15 18:38:41,178 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=16&scale=200&ticket=ADYDPD2kp4s2uzXBEko0C6Y%3D
+2026-07-15 18:38:41,187 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_16.jpg
+2026-07-15 18:38:43,130 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=17&scale=200&ticket=ALuEETdxUc3WdZHIWTNWEMk%3D
+2026-07-15 18:38:43,130 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_17.jpg
+2026-07-15 18:38:44,737 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=18&scale=200&ticket=AP1CvyoN0q47Evi%2BttUhBuc%3D
+2026-07-15 18:38:44,738 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_18.jpg
+2026-07-15 18:38:47,407 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=19&scale=200&ticket=AH9gsF1xPZZpQ%2FIdkXtvKfs%3D
+2026-07-15 18:38:47,413 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_19.jpg
+2026-07-15 18:38:49,500 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=20&scale=200&ticket=AMdmkwsV3VEp%2BsKc42LuG0I%3D
+2026-07-15 18:38:49,500 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_20.jpg
+2026-07-15 18:38:51,967 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=21&scale=200&ticket=AHvso1g%2BxnUJ7xxqd06VlXM%3D
+2026-07-15 18:38:51,968 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_21.jpg
+2026-07-15 18:38:53,210 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=22&scale=200&ticket=AFajre8wMN5eOybXVsOJNbU%3D
+2026-07-15 18:38:53,210 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_22.jpg
+2026-07-15 18:38:55,143 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=23&scale=200&ticket=AA8f%2BFkuTu0RbD0vObfqp5c%3D
+2026-07-15 18:38:55,143 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_23.jpg
+2026-07-15 18:38:56,968 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=24&scale=200&ticket=AKqxS5Fq%2B2Io%2FmoCGG7rjJQ%3D
+2026-07-15 18:38:56,969 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_24.jpg
+2026-07-15 18:38:59,425 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=25&scale=200&ticket=ACMIM2RkU8z6DLJFixmP%2BKY%3D
+2026-07-15 18:38:59,426 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_25.jpg
+2026-07-15 18:39:01,844 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=26&scale=200&ticket=AOIQKNqgVDtFOGiptZwqBtQ%3D
+2026-07-15 18:39:01,844 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_26.jpg
+2026-07-15 18:39:03,802 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=27&scale=200&ticket=AOBqkxrBEzowPwDqB7HhMxE%3D
+2026-07-15 18:39:03,802 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_27.jpg
+2026-07-15 18:39:06,087 [INFO] src.corpus_acquisition.downloader: Downloading page 28 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=28&scale=200&ticket=APj9fQeLE4wl%2FSqpyxAvzoo%3D
+2026-07-15 18:39:06,087 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_28.jpg
+2026-07-15 18:39:08,298 [INFO] src.corpus_acquisition.downloader: Downloading page 29 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=29&scale=200&ticket=AKGGptzs%2BOVkxoUwW3x6lhg%3D
+2026-07-15 18:39:08,298 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_29.jpg
+2026-07-15 18:39:09,850 [INFO] src.corpus_acquisition.downloader: Downloading page 30 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=30&scale=200&ticket=APtwCJThaIul8rvp9t%2F%2BcDo%3D
+2026-07-15 18:39:09,851 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_30.jpg
+2026-07-15 18:39:11,781 [INFO] src.corpus_acquisition.downloader: Downloading page 31 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=31&scale=200&ticket=AB6sGJQicPfqfJ2zGWRUiGU%3D
+2026-07-15 18:39:11,781 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_31.jpg
+2026-07-15 18:39:13,764 [INFO] src.corpus_acquisition.downloader: Downloading page 32 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=32&scale=200&ticket=AFXq2NC%2B4bCh%2B%2FYlUOwFias%3D
+2026-07-15 18:39:13,764 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_32.jpg
+2026-07-15 18:39:15,360 [INFO] src.corpus_acquisition.downloader: Downloading page 33 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=33&scale=200&ticket=ADzAuQ2T8r%2FwocE%2FagVaAVA%3D
+2026-07-15 18:39:15,360 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_33.jpg
+2026-07-15 18:39:16,853 [INFO] src.corpus_acquisition.downloader: Downloading page 34 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=34&scale=200&ticket=AKDSWQUzKGjzmLP5xu%2FFz8M%3D
+2026-07-15 18:39:16,853 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_34.jpg
+2026-07-15 18:39:18,692 [INFO] src.corpus_acquisition.downloader: Downloading page 35 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=35&scale=200&ticket=AHS9RVkFRy2isgTGoeUA6rY%3D
+2026-07-15 18:39:18,692 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_35.jpg
+2026-07-15 18:39:20,880 [INFO] src.corpus_acquisition.downloader: Downloading page 36 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=36&scale=200&ticket=ANIHUBDchc4THpx2SNitw0M%3D
+2026-07-15 18:39:20,880 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_36.jpg
+2026-07-15 18:39:23,171 [INFO] src.corpus_acquisition.downloader: Downloading page 37 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=37&scale=200&ticket=AH%2FL1v2q%2Bf8ukDGwimaTy%2F0%3D
+2026-07-15 18:39:23,172 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_37.jpg
+2026-07-15 18:39:25,179 [INFO] src.corpus_acquisition.downloader: Downloading page 38 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=38&scale=200&ticket=ACnInRz77jk7hpw8nNijFKI%3D
+2026-07-15 18:39:25,184 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_38.jpg
+2026-07-15 18:39:26,642 [INFO] src.corpus_acquisition.downloader: Downloading page 39 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=39&scale=200&ticket=AILK6EvKnv7Z6X2Np8SclPo%3D
+2026-07-15 18:39:26,642 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_39.jpg
+2026-07-15 18:39:28,817 [INFO] src.corpus_acquisition.downloader: Downloading page 40 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=40&scale=200&ticket=ACQnl1wr%2Ft90QdLGx7VKcU8%3D
+2026-07-15 18:39:28,818 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_40.jpg
+2026-07-15 18:39:30,991 [INFO] src.corpus_acquisition.downloader: Downloading page 41 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=41&scale=200&ticket=AD%2BdMsKshjTmct4%2Bxvr0tck%3D
+2026-07-15 18:39:30,991 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_41.jpg
+2026-07-15 18:39:32,255 [INFO] src.corpus_acquisition.downloader: Downloading page 42 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=42&scale=200&ticket=ALNkWDQp54j2XHoTdnXErMI%3D
+2026-07-15 18:39:32,255 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_42.jpg
+2026-07-15 18:39:34,845 [INFO] src.corpus_acquisition.downloader: Downloading page 43 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=43&scale=200&ticket=AB1CkEaXI7qxbL7vQ5ezrI0%3D
+2026-07-15 18:39:34,845 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_43.jpg
+2026-07-15 18:39:37,387 [INFO] src.corpus_acquisition.downloader: Downloading page 44 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=44&scale=200&ticket=AOQOSR3qE%2B%2B%2FxHoMR79%2FZVM%3D
+2026-07-15 18:39:37,388 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_44.jpg
+2026-07-15 18:39:39,347 [INFO] src.corpus_acquisition.downloader: Downloading page 45 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=45&scale=200&ticket=AK9I0LGF7WQFhN1IMKjfD%2B8%3D
+2026-07-15 18:39:39,348 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_45.jpg
+2026-07-15 18:39:40,741 [INFO] src.corpus_acquisition.downloader: Downloading page 46 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=46&scale=200&ticket=AG7oFUjAJOhdrxxRDYT4Dy4%3D
+2026-07-15 18:39:40,742 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_46.jpg
+2026-07-15 18:39:43,017 [INFO] src.corpus_acquisition.downloader: Downloading page 47 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=47&scale=200&ticket=AJIPiLJvNjrNfC9OwzmeaEI%3D
+2026-07-15 18:39:43,027 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_47.jpg
+2026-07-15 18:39:45,409 [INFO] src.corpus_acquisition.downloader: Downloading page 48 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=48&scale=200&ticket=AIvp8gb3idmojG6oC%2FF4njw%3D
+2026-07-15 18:39:45,410 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_48.jpg
+2026-07-15 18:39:47,581 [INFO] src.corpus_acquisition.downloader: Downloading page 49 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=49&scale=200&ticket=AL551KR%2F7pMNmEUL%2FLuA36Q%3D
+2026-07-15 18:39:47,582 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_49.jpg
+2026-07-15 18:39:49,502 [INFO] src.corpus_acquisition.downloader: Downloading page 50 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=50&scale=200&ticket=APcSY%2B1FqbuKEANI3SWXVz8%3D
+2026-07-15 18:39:49,512 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_50.jpg
+2026-07-15 18:39:51,337 [INFO] src.corpus_acquisition.downloader: Downloading page 51 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=51&scale=200&ticket=AD6bZEQ9e2Rz12R9oZCpKDQ%3D
+2026-07-15 18:39:51,337 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_51.jpg
+2026-07-15 18:39:53,381 [INFO] src.corpus_acquisition.downloader: Downloading page 52 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=52&scale=200&ticket=ALoAozkApYDJpxEUX%2Bt7iy4%3D
+2026-07-15 18:39:53,384 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_52.jpg
+2026-07-15 18:39:54,782 [INFO] src.corpus_acquisition.downloader: Downloading page 53 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=53&scale=200&ticket=AHdvztT1UH6lykQ7qUB%2FJEw%3D
+2026-07-15 18:39:54,783 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_53.jpg
+2026-07-15 18:39:57,214 [INFO] src.corpus_acquisition.downloader: Downloading page 54 from https://i.prcdn.co/img?file=eaaj2016040300000000001001&page=54&scale=200&ticket=AAqKkxKEcvqTuVzGwO4bRWA%3D
+2026-07-15 18:39:57,214 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/03/elcomercio_2016-04-03_54.jpg
+2026-07-15 18:39:58,746 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 54 page(s) -> data/raw/metadata/elcomercio_metadata.parquet (total rows: 14027)
+2026-07-15 18:39:58,760 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/elcomercio_2016-04-03.json (status=success)
+2026-07-15 18:39:59,945 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2016-04-04
+2026-07-15 18:40:06,400 [INFO] src.corpus_acquisition.downloader: Collected 6 / 1000 pages
+2026-07-15 18:40:08,524 [INFO] src.corpus_acquisition.downloader: Collected 9 / 1000 pages
+2026-07-15 18:40:10,651 [INFO] src.corpus_acquisition.downloader: Collected 11 / 1000 pages
+2026-07-15 18:40:12,904 [INFO] src.corpus_acquisition.downloader: Collected 13 / 1000 pages
+2026-07-15 18:40:15,035 [INFO] src.corpus_acquisition.downloader: Collected 15 / 1000 pages
+2026-07-15 18:40:17,234 [INFO] src.corpus_acquisition.downloader: Collected 17 / 1000 pages
+2026-07-15 18:40:19,391 [INFO] src.corpus_acquisition.downloader: Collected 19 / 1000 pages
+2026-07-15 18:40:21,545 [INFO] src.corpus_acquisition.downloader: Collected 20 / 1000 pages
+2026-07-15 18:40:23,711 [INFO] src.corpus_acquisition.downloader: Collected 23 / 1000 pages
+2026-07-15 18:40:25,847 [INFO] src.corpus_acquisition.downloader: Collected 25 / 1000 pages
+2026-07-15 18:40:28,029 [INFO] src.corpus_acquisition.downloader: Collected 27 / 1000 pages
+2026-07-15 18:40:30,202 [INFO] src.corpus_acquisition.downloader: Collected 28 / 1000 pages
+2026-07-15 18:40:32,392 [INFO] src.corpus_acquisition.downloader: Collected 31 / 1000 pages
+2026-07-15 18:40:34,546 [INFO] src.corpus_acquisition.downloader: Collected 33 / 1000 pages
+2026-07-15 18:40:36,698 [INFO] src.corpus_acquisition.downloader: Collected 35 / 1000 pages
+2026-07-15 18:40:38,827 [INFO] src.corpus_acquisition.downloader: Collected 37 / 1000 pages
+2026-07-15 18:40:40,975 [INFO] src.corpus_acquisition.downloader: Collected 38 / 1000 pages
+2026-07-15 18:40:43,124 [INFO] src.corpus_acquisition.downloader: Collected 40 / 1000 pages
+2026-07-15 18:40:45,290 [INFO] src.corpus_acquisition.downloader: Collected 42 / 1000 pages
+2026-07-15 18:40:47,431 [INFO] src.corpus_acquisition.downloader: Collected 45 / 1000 pages
+2026-07-15 18:40:49,563 [INFO] src.corpus_acquisition.downloader: Collected 47 / 1000 pages
+2026-07-15 18:40:51,687 [INFO] src.corpus_acquisition.downloader: Collected 49 / 1000 pages
+2026-07-15 18:40:53,847 [INFO] src.corpus_acquisition.downloader: Collected 51 / 1000 pages
+2026-07-15 18:40:55,967 [INFO] src.corpus_acquisition.downloader: Collected 52 / 1000 pages
+2026-07-15 18:40:58,114 [INFO] src.corpus_acquisition.downloader: Collected 55 / 1000 pages
+2026-07-15 18:41:00,249 [INFO] src.corpus_acquisition.downloader: Collected 57 / 1000 pages
+2026-07-15 18:41:02,383 [INFO] src.corpus_acquisition.downloader: Collected 58 / 1000 pages
+2026-07-15 18:41:04,514 [INFO] src.corpus_acquisition.downloader: Collected 61 / 1000 pages
+2026-07-15 18:41:06,643 [INFO] src.corpus_acquisition.downloader: Collected 63 / 1000 pages
+2026-07-15 18:41:08,781 [INFO] src.corpus_acquisition.downloader: Collected 65 / 1000 pages
+2026-07-15 18:41:10,913 [INFO] src.corpus_acquisition.downloader: Collected 67 / 1000 pages
+2026-07-15 18:41:13,055 [INFO] src.corpus_acquisition.downloader: Collected 69 / 1000 pages
+2026-07-15 18:41:15,189 [INFO] src.corpus_acquisition.downloader: Collected 71 / 1000 pages
+2026-07-15 18:41:17,335 [INFO] src.corpus_acquisition.downloader: Collected 73 / 1000 pages
+2026-07-15 18:41:19,473 [INFO] src.corpus_acquisition.downloader: Collected 75 / 1000 pages
+2026-07-15 18:41:21,608 [INFO] src.corpus_acquisition.downloader: Collected 77 / 1000 pages
+2026-07-15 18:41:23,753 [INFO] src.corpus_acquisition.downloader: Collected 79 / 1000 pages
+2026-07-15 18:41:25,892 [INFO] src.corpus_acquisition.downloader: Collected 81 / 1000 pages
+2026-07-15 18:41:28,035 [INFO] src.corpus_acquisition.downloader: Collected 82 / 1000 pages
+2026-07-15 18:41:30,172 [INFO] src.corpus_acquisition.downloader: Collected 83 / 1000 pages
+2026-07-15 18:41:36,654 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 83 page(s).
+2026-07-15 18:41:36,700 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eaaj2016040400000000001001&page=1&scale=200
+2026-07-15 18:41:36,700 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_1.jpg
+2026-07-15 18:41:38,472 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=2&scale=200&ticket=ALHce6HnbiAcaKULKcYALe8%3D
+2026-07-15 18:41:38,472 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_2.jpg
+2026-07-15 18:41:39,927 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=3&scale=200&ticket=AAKw2jU6Bg%2FES6%2Bi5DseYqA%3D
+2026-07-15 18:41:39,927 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_3.jpg
+2026-07-15 18:41:43,767 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=4&scale=200&ticket=APYncHhl1RpDgUKafArX48w%3D
+2026-07-15 18:41:43,767 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_4.jpg
+2026-07-15 18:41:46,339 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=5&scale=200&ticket=AHpKKYDWy7R6zB7FTVbaRVU%3D
+2026-07-15 18:41:46,340 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_5.jpg
+2026-07-15 18:41:48,900 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=6&scale=200&ticket=AMwBXCpXuKKOrvxdBQqRru0%3D
+2026-07-15 18:41:48,900 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_6.jpg
+2026-07-15 18:41:51,882 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=7&scale=200&ticket=AK4GA9V9h7OhBTBqOSio%2BU0%3D
+2026-07-15 18:41:51,882 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_7.jpg
+2026-07-15 18:41:53,734 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=8&scale=200&ticket=AL2QfpxKSPO%2F1Q8u%2BOT7upQ%3D
+2026-07-15 18:41:53,734 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_8.jpg
+2026-07-15 18:41:55,491 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=9&scale=200&ticket=ADw6%2Bma2j%2FYZxtzXqK8ek1A%3D
+2026-07-15 18:41:55,492 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_9.jpg
+2026-07-15 18:41:57,098 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=10&scale=200&ticket=ACQvoqP3%2BzMUIrUGkiM%2BxKo%3D
+2026-07-15 18:41:57,098 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_10.jpg
+2026-07-15 18:41:59,001 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=11&scale=200&ticket=ALQotFtBP9dYLozTJ%2Bb2Htc%3D
+2026-07-15 18:41:59,001 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_11.jpg
+2026-07-15 18:42:00,319 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=12&scale=200&ticket=AIc5b3h0xGi55FPNL6Lna8A%3D
+2026-07-15 18:42:00,319 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_12.jpg
+2026-07-15 18:42:02,580 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=13&scale=200&ticket=AC1kiwAa9QKPHzQRm%2BnBoCc%3D
+2026-07-15 18:42:02,581 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_13.jpg
+2026-07-15 18:42:03,959 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=14&scale=200&ticket=AG1yJFjxDd9GTxpR3wdDJ%2Fg%3D
+2026-07-15 18:42:03,959 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_14.jpg
+2026-07-15 18:42:06,144 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=15&scale=200&ticket=AFL7QVDlOHgpMX0hzkWl3r8%3D
+2026-07-15 18:42:06,144 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_15.jpg
+2026-07-15 18:42:07,605 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=16&scale=200&ticket=AC03BLFtAthdC8Hhn1Ol1RM%3D
+2026-07-15 18:42:07,606 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_16.jpg
+2026-07-15 18:42:09,533 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=17&scale=200&ticket=AFmxlAe8fB93zvZF32e5c24%3D
+2026-07-15 18:42:09,534 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_17.jpg
+2026-07-15 18:42:10,816 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=18&scale=200&ticket=ADCNKm1B6hlq6z0rtjcoaOY%3D
+2026-07-15 18:42:10,817 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_18.jpg
+2026-07-15 18:42:12,832 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=19&scale=200&ticket=AFByJ%2BmBrgC6js07Kep4dgU%3D
+2026-07-15 18:42:12,832 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_19.jpg
+2026-07-15 18:42:15,344 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=20&scale=200&ticket=AL3xNZmESnOuaXBMm8jmKQE%3D
+2026-07-15 18:42:15,344 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_20.jpg
+2026-07-15 18:42:16,459 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=21&scale=200&ticket=ADiSENPcecxyPNWEax3p7jQ%3D
+2026-07-15 18:42:16,459 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_21.jpg
+2026-07-15 18:42:18,368 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=22&scale=200&ticket=AAWlH5iGl1Cz3h9aI0XM%2BdA%3D
+2026-07-15 18:42:18,368 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_22.jpg
+2026-07-15 18:42:20,155 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=23&scale=200&ticket=AG6ftMQsR9Mexq%2FDVTvYqqc%3D
+2026-07-15 18:42:20,155 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_23.jpg
+2026-07-15 18:42:22,427 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=24&scale=200&ticket=ADTGrsfeF0FbyBpSaD%2Bmm0Y%3D
+2026-07-15 18:42:22,434 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_24.jpg
+2026-07-15 18:42:23,729 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=25&scale=200&ticket=AB38dSf37JgFAxMzMSfvd28%3D
+2026-07-15 18:42:23,729 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_25.jpg
+2026-07-15 18:42:25,411 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=26&scale=200&ticket=ANntmAR18LXZ%2FTa8nTbhqn4%3D
+2026-07-15 18:42:25,411 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_26.jpg
+2026-07-15 18:42:27,156 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=27&scale=200&ticket=APmKxzUnLJaMb%2F8Xw3Y4mh4%3D
+2026-07-15 18:42:27,156 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_27.jpg
+2026-07-15 18:42:29,278 [INFO] src.corpus_acquisition.downloader: Downloading page 28 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=28&scale=200&ticket=AIKND%2F%2F9wI%2BCyURGqj2nzTo%3D
+2026-07-15 18:42:29,278 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_28.jpg
+2026-07-15 18:42:31,466 [INFO] src.corpus_acquisition.downloader: Downloading page 29 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=29&scale=200&ticket=APQrn5dfirhG8x%2FdeS6KFJE%3D
+2026-07-15 18:42:31,467 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_29.jpg
+2026-07-15 18:42:33,322 [INFO] src.corpus_acquisition.downloader: Downloading page 30 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=30&scale=200&ticket=ABuvzrpGfXuTado0y%2Bu8lp4%3D
+2026-07-15 18:42:33,322 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_30.jpg
+2026-07-15 18:42:35,419 [INFO] src.corpus_acquisition.downloader: Downloading page 31 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=31&scale=200&ticket=AP5%2BsUOWLwFMumUzgXyty%2Fk%3D
+2026-07-15 18:42:35,429 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_31.jpg
+2026-07-15 18:42:37,055 [INFO] src.corpus_acquisition.downloader: Downloading page 32 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=32&scale=200&ticket=AHgyDKSKaQfL%2BlmLw9xLMIg%3D
+2026-07-15 18:42:37,056 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_32.jpg
+2026-07-15 18:42:39,291 [INFO] src.corpus_acquisition.downloader: Downloading page 33 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=33&scale=200&ticket=AHByDgsFjtxVvfahDhKiHPI%3D
+2026-07-15 18:42:39,292 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_33.jpg
+2026-07-15 18:42:41,460 [INFO] src.corpus_acquisition.downloader: Downloading page 34 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=34&scale=200&ticket=AEcZHdrQ8AXskwTbuxXz98Y%3D
+2026-07-15 18:42:41,461 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_34.jpg
+2026-07-15 18:42:43,139 [INFO] src.corpus_acquisition.downloader: Downloading page 35 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=35&scale=200&ticket=AE%2FAdCw8oywMc6d%2BZ5vfz1Y%3D
+2026-07-15 18:42:43,140 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_35.jpg
+2026-07-15 18:42:44,747 [INFO] src.corpus_acquisition.downloader: Downloading page 36 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=36&scale=200&ticket=ANVRFFINx2Z4GWUnvY0gCmI%3D
+2026-07-15 18:42:44,747 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_36.jpg
+2026-07-15 18:42:46,637 [INFO] src.corpus_acquisition.downloader: Downloading page 37 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=37&scale=200&ticket=AHmfc0MGJFhiS4eXMCmF0Go%3D
+2026-07-15 18:42:46,637 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_37.jpg
+2026-07-15 18:42:48,211 [INFO] src.corpus_acquisition.downloader: Downloading page 38 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=38&scale=200&ticket=AKZPsEoVGfa6TRGRabhM%2B2M%3D
+2026-07-15 18:42:48,217 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_38.jpg
+2026-07-15 18:42:50,152 [INFO] src.corpus_acquisition.downloader: Downloading page 39 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=39&scale=200&ticket=ALtDft9CrzPSqKs6WQfzClw%3D
+2026-07-15 18:42:50,153 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_39.jpg
+2026-07-15 18:42:51,727 [INFO] src.corpus_acquisition.downloader: Downloading page 40 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=40&scale=200&ticket=ACM1qhKkuTZN5Z%2FBawanKvA%3D
+2026-07-15 18:42:51,728 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_40.jpg
+2026-07-15 18:42:53,966 [INFO] src.corpus_acquisition.downloader: Downloading page 41 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=41&scale=200&ticket=AEgGwCek8y2pINbCeP%2BTYaA%3D
+2026-07-15 18:42:53,966 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_41.jpg
+2026-07-15 18:42:55,576 [INFO] src.corpus_acquisition.downloader: Downloading page 42 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=42&scale=200&ticket=AC%2FmCdRX1izeul5naSq52XI%3D
+2026-07-15 18:42:55,577 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_42.jpg
+2026-07-15 18:42:57,947 [INFO] src.corpus_acquisition.downloader: Downloading page 43 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=43&scale=200&ticket=AA98W4CV4izu2xwE0lhJiZE%3D
+2026-07-15 18:42:57,947 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_43.jpg
+2026-07-15 18:42:59,875 [INFO] src.corpus_acquisition.downloader: Downloading page 44 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=44&scale=200&ticket=AKBdChLW9%2FcnN1eIGV16QnU%3D
+2026-07-15 18:42:59,876 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_44.jpg
+2026-07-15 18:43:02,619 [INFO] src.corpus_acquisition.downloader: Downloading page 45 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=45&scale=200&ticket=APnADbEFQ8QTdRhcYewgbdk%3D
+2026-07-15 18:43:02,619 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_45.jpg
+2026-07-15 18:43:04,551 [INFO] src.corpus_acquisition.downloader: Downloading page 46 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=46&scale=200&ticket=AJ1ZsRlygXXp9YzqkGOeMfA%3D
+2026-07-15 18:43:04,551 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_46.jpg
+2026-07-15 18:43:06,390 [INFO] src.corpus_acquisition.downloader: Downloading page 47 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=47&scale=200&ticket=AKWpvSu650x2iG64NPxGbeA%3D
+2026-07-15 18:43:06,391 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_47.jpg
+2026-07-15 18:43:07,675 [INFO] src.corpus_acquisition.downloader: Downloading page 48 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=48&scale=200&ticket=AIrK4dwYZkiWz23WQqIDa4M%3D
+2026-07-15 18:43:07,676 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_48.jpg
+2026-07-15 18:43:09,282 [INFO] src.corpus_acquisition.downloader: Downloading page 49 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=49&scale=200&ticket=AIAePJPlZIsiF6cjKD0nEY8%3D
+2026-07-15 18:43:09,282 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_49.jpg
+2026-07-15 18:43:11,493 [INFO] src.corpus_acquisition.downloader: Downloading page 50 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=50&scale=200&ticket=AMvLOc%2FcRTi6HDEI1qydXPQ%3D
+2026-07-15 18:43:11,503 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_50.jpg
+2026-07-15 18:43:13,718 [INFO] src.corpus_acquisition.downloader: Downloading page 51 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=51&scale=200&ticket=AA1lO0Uhd5e361SKH9iJlYk%3D
+2026-07-15 18:43:13,721 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_51.jpg
+2026-07-15 18:43:15,820 [INFO] src.corpus_acquisition.downloader: Downloading page 52 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=52&scale=200&ticket=ALnSgv9GWMqLt5yVuPgZ%2FDM%3D
+2026-07-15 18:43:15,820 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_52.jpg
+2026-07-15 18:43:18,019 [INFO] src.corpus_acquisition.downloader: Downloading page 53 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=53&scale=200&ticket=AIG6BY6zfePMEoPqekQP0jY%3D
+2026-07-15 18:43:18,019 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_53.jpg
+2026-07-15 18:43:19,566 [INFO] src.corpus_acquisition.downloader: Downloading page 54 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=54&scale=200&ticket=AOFWUD4nS10%2BCdJEwtf4B50%3D
+2026-07-15 18:43:19,566 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_54.jpg
+2026-07-15 18:43:21,560 [INFO] src.corpus_acquisition.downloader: Downloading page 55 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=55&scale=200&ticket=ANqI0f1GeD3xj2zHns6ssaw%3D
+2026-07-15 18:43:21,560 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_55.jpg
+2026-07-15 18:43:23,003 [INFO] src.corpus_acquisition.downloader: Downloading page 56 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=56&scale=200&ticket=AK%2FLzsF3XzHBUfh%2Fh1kyLr4%3D
+2026-07-15 18:43:23,003 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_56.jpg
+2026-07-15 18:43:25,132 [INFO] src.corpus_acquisition.downloader: Downloading page 57 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=57&scale=200&ticket=AN1FLC5R5aiWQNlDthmAQuo%3D
+2026-07-15 18:43:25,132 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_57.jpg
+2026-07-15 18:43:27,517 [INFO] src.corpus_acquisition.downloader: Downloading page 58 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=58&scale=200&ticket=AG3x7GqvWqTFFAdld3LkI8I%3D
+2026-07-15 18:43:27,518 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_58.jpg
+2026-07-15 18:43:29,824 [INFO] src.corpus_acquisition.downloader: Downloading page 59 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=59&scale=200&ticket=AGJrdm1YLX%2B1bMCxrogCPoE%3D
+2026-07-15 18:43:29,824 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_59.jpg
+2026-07-15 18:43:31,462 [INFO] src.corpus_acquisition.downloader: Downloading page 60 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=60&scale=200&ticket=ACA1dij6r3hyXAx%2BdlNXtnM%3D
+2026-07-15 18:43:31,463 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_60.jpg
+2026-07-15 18:43:34,225 [INFO] src.corpus_acquisition.downloader: Downloading page 61 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=61&scale=200&ticket=ANaH3lXcnb1kzIkL3uJJFuc%3D
+2026-07-15 18:43:34,225 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_61.jpg
+2026-07-15 18:43:35,993 [INFO] src.corpus_acquisition.downloader: Downloading page 62 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=62&scale=200&ticket=APLTDFnb6A1Yv8M4xq6Zr98%3D
+2026-07-15 18:43:36,003 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_62.jpg
+2026-07-15 18:43:37,709 [INFO] src.corpus_acquisition.downloader: Downloading page 63 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=63&scale=200&ticket=ADv46b9JWadh4o36VExOt7k%3D
+2026-07-15 18:43:37,709 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_63.jpg
+2026-07-15 18:43:39,494 [INFO] src.corpus_acquisition.downloader: Downloading page 64 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=64&scale=200&ticket=AP0XVnKsL3TnxLic0sYR9y0%3D
+2026-07-15 18:43:39,495 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_64.jpg
+2026-07-15 18:43:41,190 [INFO] src.corpus_acquisition.downloader: Downloading page 65 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=65&scale=200&ticket=AEZ5FESBHgCLjoBqzEId7s0%3D
+2026-07-15 18:43:41,191 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_65.jpg
+2026-07-15 18:43:42,947 [INFO] src.corpus_acquisition.downloader: Downloading page 66 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=66&scale=200&ticket=AKjat62aBHHsiEscsjUKm%2Bc%3D
+2026-07-15 18:43:42,947 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_66.jpg
+2026-07-15 18:43:44,901 [INFO] src.corpus_acquisition.downloader: Downloading page 67 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=67&scale=200&ticket=AP5D4EP3kJWwN9o7xVNTEk0%3D
+2026-07-15 18:43:44,907 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_67.jpg
+2026-07-15 18:43:46,195 [INFO] src.corpus_acquisition.downloader: Downloading page 68 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=68&scale=200&ticket=AAeMvDEuC7y0XoiLVc6DBhI%3D
+2026-07-15 18:43:46,196 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_68.jpg
+2026-07-15 18:43:48,488 [INFO] src.corpus_acquisition.downloader: Downloading page 69 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=69&scale=200&ticket=AJVYzGYib7zbSCtvz47xfls%3D
+2026-07-15 18:43:48,489 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_69.jpg
+2026-07-15 18:43:50,355 [INFO] src.corpus_acquisition.downloader: Downloading page 70 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=70&scale=200&ticket=AMqAvyn8xvxQVOSJQGxSctM%3D
+2026-07-15 18:43:50,356 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_70.jpg
+2026-07-15 18:43:52,490 [INFO] src.corpus_acquisition.downloader: Downloading page 71 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=71&scale=200&ticket=ACNNpMoozj0FugHx3aJHkQc%3D
+2026-07-15 18:43:52,490 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_71.jpg
+2026-07-15 18:43:54,145 [INFO] src.corpus_acquisition.downloader: Downloading page 72 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=72&scale=200&ticket=AJKix0%2FoFI0j2sONwLX52VU%3D
+2026-07-15 18:43:54,145 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_72.jpg
+2026-07-15 18:43:55,893 [INFO] src.corpus_acquisition.downloader: Downloading page 73 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=73&scale=200&ticket=ACDXh7G6DJvDjz6YHzpCCxw%3D
+2026-07-15 18:43:55,893 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_73.jpg
+2026-07-15 18:43:57,719 [INFO] src.corpus_acquisition.downloader: Downloading page 74 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=74&scale=200&ticket=AJcPMCY4r3ll9CeisIdT2YA%3D
+2026-07-15 18:43:57,720 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_74.jpg
+2026-07-15 18:43:59,195 [INFO] src.corpus_acquisition.downloader: Downloading page 75 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=75&scale=200&ticket=ACn9g7nYmzQNeUopAw%2F%2FIAQ%3D
+2026-07-15 18:43:59,195 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_75.jpg
+2026-07-15 18:44:01,280 [INFO] src.corpus_acquisition.downloader: Downloading page 76 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=76&scale=200&ticket=AAvqgMYVuW8GNSiwl4PM3Zs%3D
+2026-07-15 18:44:01,280 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_76.jpg
+2026-07-15 18:44:03,507 [INFO] src.corpus_acquisition.downloader: Downloading page 77 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=77&scale=200&ticket=AKKkk0CJVHLP9BAEGZA0Mk8%3D
+2026-07-15 18:44:03,517 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_77.jpg
+2026-07-15 18:44:05,310 [INFO] src.corpus_acquisition.downloader: Downloading page 78 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=78&scale=200&ticket=ABNgYYn0tqxOymk%2FCqncZNI%3D
+2026-07-15 18:44:05,310 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_78.jpg
+2026-07-15 18:44:07,516 [INFO] src.corpus_acquisition.downloader: Downloading page 79 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=79&scale=200&ticket=ALo%2BGh9uaG1T8SEOB%2B9Vwmk%3D
+2026-07-15 18:44:07,516 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_79.jpg
+2026-07-15 18:44:08,715 [INFO] src.corpus_acquisition.downloader: Downloading page 80 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=80&scale=200&ticket=AK65x7s8K4iQKFdrNtCEHzY%3D
+2026-07-15 18:44:08,716 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_80.jpg
+2026-07-15 18:44:10,690 [INFO] src.corpus_acquisition.downloader: Downloading page 81 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=81&scale=200&ticket=ANDNRhCOeMN26Cs7FeqIEg0%3D
+2026-07-15 18:44:10,700 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_81.jpg
+2026-07-15 18:44:12,796 [INFO] src.corpus_acquisition.downloader: Downloading page 83 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=83&scale=200&ticket=AAXaj2tBNcLQZZVcmPUB5ZI%3D
+2026-07-15 18:44:12,797 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_83.jpg
+2026-07-15 18:44:14,304 [INFO] src.corpus_acquisition.downloader: Downloading page 84 from https://i.prcdn.co/img?file=eaaj2016040400000000001001&page=84&scale=200&ticket=AB066PHeYnZ%2B%2Fb9z%2BYzgtfk%3D
+2026-07-15 18:44:14,305 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/04/elcomercio_2016-04-04_84.jpg
+2026-07-15 18:44:15,721 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 83 page(s) -> data/raw/metadata/elcomercio_metadata.parquet (total rows: 14110)
+2026-07-15 18:44:15,737 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/elcomercio_2016-04-04.json (status=success)
+2026-07-15 18:44:17,026 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2016-04-05
+2026-07-15 18:44:24,344 [INFO] src.corpus_acquisition.downloader: Collected 7 / 1000 pages
+2026-07-15 18:44:26,466 [INFO] src.corpus_acquisition.downloader: Collected 9 / 1000 pages
+2026-07-15 18:44:28,618 [INFO] src.corpus_acquisition.downloader: Collected 11 / 1000 pages
+2026-07-15 18:44:30,897 [INFO] src.corpus_acquisition.downloader: Collected 13 / 1000 pages
+2026-07-15 18:44:33,053 [INFO] src.corpus_acquisition.downloader: Collected 15 / 1000 pages
+2026-07-15 18:44:35,215 [INFO] src.corpus_acquisition.downloader: Collected 17 / 1000 pages
+2026-07-15 18:44:37,372 [INFO] src.corpus_acquisition.downloader: Collected 19 / 1000 pages
+2026-07-15 18:44:39,501 [INFO] src.corpus_acquisition.downloader: Collected 21 / 1000 pages
+2026-07-15 18:44:41,659 [INFO] src.corpus_acquisition.downloader: Collected 22 / 1000 pages
+2026-07-15 18:44:43,779 [INFO] src.corpus_acquisition.downloader: Collected 25 / 1000 pages
+2026-07-15 18:44:45,930 [INFO] src.corpus_acquisition.downloader: Collected 26 / 1000 pages
+2026-07-15 18:44:48,086 [INFO] src.corpus_acquisition.downloader: Collected 28 / 1000 pages
+2026-07-15 18:44:50,235 [INFO] src.corpus_acquisition.downloader: Collected 31 / 1000 pages
+2026-07-15 18:44:52,412 [INFO] src.corpus_acquisition.downloader: Collected 33 / 1000 pages
+2026-07-15 18:44:54,554 [INFO] src.corpus_acquisition.downloader: Collected 34 / 1000 pages
+2026-07-15 18:44:56,679 [INFO] src.corpus_acquisition.downloader: Collected 37 / 1000 pages
+2026-07-15 18:44:58,809 [INFO] src.corpus_acquisition.downloader: Collected 39 / 1000 pages
+2026-07-15 18:45:00,950 [INFO] src.corpus_acquisition.downloader: Collected 41 / 1000 pages
+2026-07-15 18:45:03,095 [INFO] src.corpus_acquisition.downloader: Collected 43 / 1000 pages
+2026-07-15 18:45:05,242 [INFO] src.corpus_acquisition.downloader: Collected 45 / 1000 pages
+2026-07-15 18:45:07,372 [INFO] src.corpus_acquisition.downloader: Collected 47 / 1000 pages
+2026-07-15 18:45:09,512 [INFO] src.corpus_acquisition.downloader: Collected 48 / 1000 pages
+2026-07-15 18:45:15,960 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 48 page(s).
+2026-07-15 18:45:16,012 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eaaj2016040500000000001001&page=1&scale=200
+2026-07-15 18:45:16,012 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_1.jpg
+2026-07-15 18:45:17,800 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=2&scale=200&ticket=AJPk%2FWv3Cvk6FEW2zhsM0eI%3D
+2026-07-15 18:45:17,807 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_2.jpg
+2026-07-15 18:45:19,373 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=3&scale=200&ticket=AG7BwuDVc5c5DNl1QGcFzHQ%3D
+2026-07-15 18:45:19,383 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_3.jpg
+2026-07-15 18:45:21,637 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=4&scale=200&ticket=AKdxzwDFScAiE5C%2F0dmp0ZM%3D
+2026-07-15 18:45:21,637 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_4.jpg
+2026-07-15 18:45:23,840 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=5&scale=200&ticket=AIIomiCt32gfmQKbG7d72zY%3D
+2026-07-15 18:45:23,850 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_5.jpg
+2026-07-15 18:45:25,573 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=6&scale=200&ticket=AAGKGbaCu6IVwEd4i0J5Ook%3D
+2026-07-15 18:45:25,573 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_6.jpg
+2026-07-15 18:45:28,007 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=7&scale=200&ticket=AIn6NXAuuGxs8Li0L%2FpQ36g%3D
+2026-07-15 18:45:28,007 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_7.jpg
+2026-07-15 18:45:30,143 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=8&scale=200&ticket=AFWantw7H62DH0cbNf6aLgE%3D
+2026-07-15 18:45:30,144 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_8.jpg
+2026-07-15 18:45:32,290 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=9&scale=200&ticket=AERDDEdvDzYZA6LUiFERjNs%3D
+2026-07-15 18:45:32,290 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_9.jpg
+2026-07-15 18:45:34,046 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=10&scale=200&ticket=AKQVSLW1k55%2BKHCszfBqg8c%3D
+2026-07-15 18:45:34,056 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_10.jpg
+2026-07-15 18:45:36,543 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=11&scale=200&ticket=AE%2FLmZ1xP9o56vsK60vvstM%3D
+2026-07-15 18:45:36,548 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_11.jpg
+2026-07-15 18:45:38,311 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=12&scale=200&ticket=AOnDTsM7GwLwfZUJDguIqZA%3D
+2026-07-15 18:45:38,312 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_12.jpg
+2026-07-15 18:45:40,143 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=13&scale=200&ticket=ADpHJ%2Bc4kJ%2BdeNoC4GJMMe0%3D
+2026-07-15 18:45:40,143 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_13.jpg
+2026-07-15 18:45:42,168 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=14&scale=200&ticket=AM0LPUapH%2B0pzmcw8LOD%2B7o%3D
+2026-07-15 18:45:42,169 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_14.jpg
+2026-07-15 18:45:44,173 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=15&scale=200&ticket=AOqtKLcU70I5v0jFw0UpQfQ%3D
+2026-07-15 18:45:44,173 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_15.jpg
+2026-07-15 18:45:46,473 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=16&scale=200&ticket=AGXZmmuGEfPtjEt9aV7eIAk%3D
+2026-07-15 18:45:46,481 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_16.jpg
+2026-07-15 18:45:48,617 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=17&scale=200&ticket=AIAy485nR3CnFAcLI0B8hDQ%3D
+2026-07-15 18:45:48,617 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_17.jpg
+2026-07-15 18:45:50,085 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=18&scale=200&ticket=AMWXe%2B2O94OqTkzZmEfE3og%3D
+2026-07-15 18:45:50,085 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_18.jpg
+2026-07-15 18:45:51,581 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=19&scale=200&ticket=AMF4Ant%2B4V4TM8rYhhPeP84%3D
+2026-07-15 18:45:51,581 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_19.jpg
+2026-07-15 18:45:53,143 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=20&scale=200&ticket=AMeknGr50ApKXsDgUbruYNQ%3D
+2026-07-15 18:45:53,144 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_20.jpg
+2026-07-15 18:45:54,469 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=21&scale=200&ticket=AGQXjpLqUhmYHmQT5%2FgZ7TI%3D
+2026-07-15 18:45:54,476 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_21.jpg
+2026-07-15 18:45:56,433 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=22&scale=200&ticket=AEBfvodGyuMg8%2FVJBsLt0s0%3D
+2026-07-15 18:45:56,434 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_22.jpg
+2026-07-15 18:45:58,255 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=23&scale=200&ticket=AEXq6ZYioE%2F7lWt1yTUkn%2Fs%3D
+2026-07-15 18:45:58,257 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_23.jpg
+2026-07-15 18:45:59,876 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=24&scale=200&ticket=AHWlTRockn1xqMF9ffzL4ZA%3D
+2026-07-15 18:45:59,886 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_24.jpg
+2026-07-15 18:46:02,207 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=25&scale=200&ticket=ANiTC%2BOSrLDRkd7OOF1Y5y0%3D
+2026-07-15 18:46:02,207 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_25.jpg
+2026-07-15 18:46:03,422 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=26&scale=200&ticket=AJ%2FO5a3dAv0O%2BUAignOYlfE%3D
+2026-07-15 18:46:03,426 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_26.jpg
+2026-07-15 18:46:05,534 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=27&scale=200&ticket=AA3w2g6pOM0%2F%2BEGSWU0rpco%3D
+2026-07-15 18:46:05,538 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_27.jpg
+2026-07-15 18:46:06,918 [INFO] src.corpus_acquisition.downloader: Downloading page 28 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=28&scale=200&ticket=AHnc2LFZ%2FkMIKOjmZPij7oE%3D
+2026-07-15 18:46:06,919 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_28.jpg
+2026-07-15 18:46:09,116 [INFO] src.corpus_acquisition.downloader: Downloading page 29 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=29&scale=200&ticket=AG%2FWldveJrwL4xOppvOGbGQ%3D
+2026-07-15 18:46:09,126 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_29.jpg
+2026-07-15 18:46:10,904 [INFO] src.corpus_acquisition.downloader: Downloading page 30 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=30&scale=200&ticket=ANwCAUl7G7Twu0Tihd9AwHc%3D
+2026-07-15 18:46:10,905 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_30.jpg
+2026-07-15 18:46:13,098 [INFO] src.corpus_acquisition.downloader: Downloading page 31 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=31&scale=200&ticket=AMgtIGXT5Rx%2FVhIDbGfs%2BjQ%3D
+2026-07-15 18:46:13,098 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_31.jpg
+2026-07-15 18:46:15,053 [INFO] src.corpus_acquisition.downloader: Downloading page 32 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=32&scale=200&ticket=APy4TfnMnMIUywY%2Fi0NiXJg%3D
+2026-07-15 18:46:15,054 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_32.jpg
+2026-07-15 18:46:17,351 [INFO] src.corpus_acquisition.downloader: Downloading page 33 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=33&scale=200&ticket=AEG1fr0GQxetUsWdKc0%2F8Mg%3D
+2026-07-15 18:46:17,362 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_33.jpg
+2026-07-15 18:46:19,058 [INFO] src.corpus_acquisition.downloader: Downloading page 34 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=34&scale=200&ticket=AA7pKvvbs%2BPznryTGoTUvlE%3D
+2026-07-15 18:46:19,058 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_34.jpg
+2026-07-15 18:46:20,463 [INFO] src.corpus_acquisition.downloader: Downloading page 35 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=35&scale=200&ticket=AM81POpSnlUo6A9We9OjrBA%3D
+2026-07-15 18:46:20,463 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_35.jpg
+2026-07-15 18:46:23,312 [INFO] src.corpus_acquisition.downloader: Downloading page 36 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=36&scale=200&ticket=AN2BBXybCCqnlhjYPK8I%2F10%3D
+2026-07-15 18:46:23,322 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_36.jpg
+2026-07-15 18:46:24,809 [INFO] src.corpus_acquisition.downloader: Downloading page 37 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=37&scale=200&ticket=AN1na4f29KpfafD%2BbQhuKSI%3D
+2026-07-15 18:46:24,809 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_37.jpg
+2026-07-15 18:46:26,883 [INFO] src.corpus_acquisition.downloader: Downloading page 38 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=38&scale=200&ticket=APgoALBmrszyYnc%2F%2Bf1IEmA%3D
+2026-07-15 18:46:26,887 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_38.jpg
+2026-07-15 18:46:28,934 [INFO] src.corpus_acquisition.downloader: Downloading page 39 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=39&scale=200&ticket=ANlsSnHaF6Z7kcP5SIC48CM%3D
+2026-07-15 18:46:28,934 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_39.jpg
+2026-07-15 18:46:30,448 [INFO] src.corpus_acquisition.downloader: Downloading page 40 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=40&scale=200&ticket=AA%2BldQO0e2FbfmHwYByv34E%3D
+2026-07-15 18:46:30,456 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_40.jpg
+2026-07-15 18:46:32,229 [INFO] src.corpus_acquisition.downloader: Downloading page 41 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=41&scale=200&ticket=AFUQNjLSnkVyyp3%2Bz2Am4mI%3D
+2026-07-15 18:46:32,230 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_41.jpg
+2026-07-15 18:46:34,108 [INFO] src.corpus_acquisition.downloader: Downloading page 42 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=42&scale=200&ticket=AGoPo1LTdjefbY7rKE87QIU%3D
+2026-07-15 18:46:34,109 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_42.jpg
+2026-07-15 18:46:36,668 [INFO] src.corpus_acquisition.downloader: Downloading page 43 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=43&scale=200&ticket=ABlN6Fu0q9%2FijrxYA2oVVCQ%3D
+2026-07-15 18:46:36,668 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_43.jpg
+2026-07-15 18:46:38,381 [INFO] src.corpus_acquisition.downloader: Downloading page 44 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=44&scale=200&ticket=ANGqjbilJlglExcK%2FxN%2Bgqc%3D
+2026-07-15 18:46:38,383 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_44.jpg
+2026-07-15 18:46:40,014 [INFO] src.corpus_acquisition.downloader: Downloading page 45 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=45&scale=200&ticket=ANpBuH5Qe6QSSnTL4fmITuc%3D
+2026-07-15 18:46:40,015 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_45.jpg
+2026-07-15 18:46:42,474 [INFO] src.corpus_acquisition.downloader: Downloading page 46 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=46&scale=200&ticket=AMX4y9jmB4Z%2Fh3OCG2AScx8%3D
+2026-07-15 18:46:42,474 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_46.jpg
+2026-07-15 18:46:45,025 [INFO] src.corpus_acquisition.downloader: Downloading page 47 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=47&scale=200&ticket=ALKg%2FBoy7pRhVBvWf3sR220%3D
+2026-07-15 18:46:45,025 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_47.jpg
+2026-07-15 18:46:47,144 [INFO] src.corpus_acquisition.downloader: Downloading page 48 from https://i.prcdn.co/img?file=eaaj2016040500000000001001&page=48&scale=200&ticket=AEMWSZxoH8nPNISawaXFhMc%3D
+2026-07-15 18:46:47,145 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/05/elcomercio_2016-04-05_48.jpg
+2026-07-15 18:46:49,091 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 48 page(s) -> data/raw/metadata/elcomercio_metadata.parquet (total rows: 14158)
+2026-07-15 18:46:49,103 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/elcomercio_2016-04-05.json (status=success)
+2026-07-15 18:46:50,308 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2016-04-06
+2026-07-15 18:46:54,862 [INFO] src.corpus_acquisition.downloader: Collected 1 / 1000 pages
+2026-07-15 18:46:56,975 [INFO] src.corpus_acquisition.downloader: Collected 7 / 1000 pages
+2026-07-15 18:46:59,109 [INFO] src.corpus_acquisition.downloader: Collected 9 / 1000 pages
+2026-07-15 18:47:01,245 [INFO] src.corpus_acquisition.downloader: Collected 11 / 1000 pages
+2026-07-15 18:47:03,519 [INFO] src.corpus_acquisition.downloader: Collected 13 / 1000 pages
+2026-07-15 18:47:05,742 [INFO] src.corpus_acquisition.downloader: Collected 15 / 1000 pages
+2026-07-15 18:47:07,906 [INFO] src.corpus_acquisition.downloader: Collected 17 / 1000 pages
+2026-07-15 18:47:10,056 [INFO] src.corpus_acquisition.downloader: Collected 18 / 1000 pages
+2026-07-15 18:47:12,211 [INFO] src.corpus_acquisition.downloader: Collected 19 / 1000 pages
+2026-07-15 18:47:14,363 [INFO] src.corpus_acquisition.downloader: Collected 23 / 1000 pages
+2026-07-15 18:47:18,674 [INFO] src.corpus_acquisition.downloader: Collected 27 / 1000 pages
+2026-07-15 18:47:20,811 [INFO] src.corpus_acquisition.downloader: Collected 28 / 1000 pages
+2026-07-15 18:47:23,005 [INFO] src.corpus_acquisition.downloader: Collected 31 / 1000 pages
+2026-07-15 18:47:25,144 [INFO] src.corpus_acquisition.downloader: Collected 33 / 1000 pages
+2026-07-15 18:47:27,282 [INFO] src.corpus_acquisition.downloader: Collected 35 / 1000 pages
+2026-07-15 18:47:29,442 [INFO] src.corpus_acquisition.downloader: Collected 36 / 1000 pages
+2026-07-15 18:47:31,589 [INFO] src.corpus_acquisition.downloader: Collected 39 / 1000 pages
+2026-07-15 18:47:33,718 [INFO] src.corpus_acquisition.downloader: Collected 41 / 1000 pages
+2026-07-15 18:47:35,865 [INFO] src.corpus_acquisition.downloader: Collected 43 / 1000 pages
+2026-07-15 18:47:37,990 [INFO] src.corpus_acquisition.downloader: Collected 45 / 1000 pages
+2026-07-15 18:47:40,143 [INFO] src.corpus_acquisition.downloader: Collected 47 / 1000 pages
+2026-07-15 18:47:42,279 [INFO] src.corpus_acquisition.downloader: Collected 48 / 1000 pages
+2026-07-15 18:47:48,701 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 48 page(s).
+2026-07-15 18:47:48,721 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eaaj2016040600000000001001&page=1&scale=200
+2026-07-15 18:47:48,722 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_1.jpg
+2026-07-15 18:47:50,658 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=2&scale=200&ticket=ANbcrxSdQWeYYJcTceZ33Rw%3D
+2026-07-15 18:47:50,658 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_2.jpg
+2026-07-15 18:47:52,760 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=3&scale=200&ticket=AJ2T5wttaiTV6nRjdrKyQ3Y%3D
+2026-07-15 18:47:52,761 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_3.jpg
+2026-07-15 18:47:55,091 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=4&scale=200&ticket=AAzqt7AylaEG64b5qC%2BkpJE%3D
+2026-07-15 18:47:55,092 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_4.jpg
+2026-07-15 18:47:56,565 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=5&scale=200&ticket=ALbDFRMG7%2FF%2FyvzAS2FvO8U%3D
+2026-07-15 18:47:56,565 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_5.jpg
+2026-07-15 18:47:58,248 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=6&scale=200&ticket=AOag1llu18e5xiG2DL2Bnm4%3D
+2026-07-15 18:47:58,248 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_6.jpg
+2026-07-15 18:48:01,581 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=7&scale=200&ticket=ABpz4y0b7Aj7Lh1bAf4ZXTg%3D
+2026-07-15 18:48:01,582 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_7.jpg
+2026-07-15 18:48:03,722 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=8&scale=200&ticket=AMtncO0mbkxB5ucKEQqRSpc%3D
+2026-07-15 18:48:03,722 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_8.jpg
+2026-07-15 18:48:05,158 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=9&scale=200&ticket=AG55U1Rz2FXQnA0EYpxvBP4%3D
+2026-07-15 18:48:05,168 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_9.jpg
+2026-07-15 18:48:07,347 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=10&scale=200&ticket=AL8lgbw%2BJTl8qEVQTJ9Z4zA%3D
+2026-07-15 18:48:07,347 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_10.jpg
+2026-07-15 18:48:09,601 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=11&scale=200&ticket=AC7HGtqQR8BoTxzId5Czy%2BM%3D
+2026-07-15 18:48:09,602 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_11.jpg
+2026-07-15 18:48:11,579 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=12&scale=200&ticket=AEpSATOCOOkwfldZSXGv1Vs%3D
+2026-07-15 18:48:11,580 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_12.jpg
+2026-07-15 18:48:12,878 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=13&scale=200&ticket=ANkcvNOnlfdejvCVR1COzi4%3D
+2026-07-15 18:48:12,879 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_13.jpg
+2026-07-15 18:48:15,049 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=14&scale=200&ticket=AC5dqmDk%2BUBAc%2BIiaCsxZgw%3D
+2026-07-15 18:48:15,049 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_14.jpg
+2026-07-15 18:48:16,563 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=15&scale=200&ticket=AFpziGq9%2FQRS0P7f6B9hiyQ%3D
+2026-07-15 18:48:16,564 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_15.jpg
+2026-07-15 18:48:18,685 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=16&scale=200&ticket=AGNp5oRbJuBYbt%2Bq2d54yIo%3D
+2026-07-15 18:48:18,685 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_16.jpg
+2026-07-15 18:48:21,632 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=17&scale=200&ticket=AF2hviVv8LDkHoohQ%2F%2B6KC8%3D
+2026-07-15 18:48:21,642 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_17.jpg
+2026-07-15 18:48:23,407 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=18&scale=200&ticket=AGdYGUfLjvlk978M%2BSvwIpU%3D
+2026-07-15 18:48:23,408 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_18.jpg
+2026-07-15 18:48:25,543 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=19&scale=200&ticket=ABlUxPkC6iGXhApq0KycHYc%3D&retry=1
+2026-07-15 18:48:25,544 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_19.jpg
+2026-07-15 18:48:27,250 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=20&scale=200&ticket=AG7Gfq4wFX0Kg7eLkbJ7hXY%3D
+2026-07-15 18:48:27,250 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_20.jpg
+2026-07-15 18:48:28,566 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=21&scale=200&ticket=AK28L6loT4ixZi8sff6TUI4%3D
+2026-07-15 18:48:28,576 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_21.jpg
+2026-07-15 18:48:31,121 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=22&scale=200&ticket=AGqIAXQbj946q5JN2nDiafo%3D
+2026-07-15 18:48:31,121 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_22.jpg
+2026-07-15 18:48:33,254 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=23&scale=200&ticket=AAhp5DfjA8rfVJd8tXT%2F6qQ%3D
+2026-07-15 18:48:33,255 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_23.jpg
+2026-07-15 18:48:35,096 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=24&scale=200&ticket=AHbubCsWeyuC9zpeTDk66Fg%3D
+2026-07-15 18:48:35,107 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_24.jpg
+2026-07-15 18:48:36,623 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=25&scale=200&ticket=ADojspwQbAdtQvJGZhoj5WY%3D
+2026-07-15 18:48:36,624 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_25.jpg
+2026-07-15 18:48:38,595 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=26&scale=200&ticket=ABkkQ3LmKSx6FW4KVTYaDZc%3D
+2026-07-15 18:48:38,595 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_26.jpg
+2026-07-15 18:48:40,844 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=27&scale=200&ticket=AB9a2%2Fku%2Bgz555%2BptzjA9gM%3D
+2026-07-15 18:48:40,844 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_27.jpg
+2026-07-15 18:48:43,005 [INFO] src.corpus_acquisition.downloader: Downloading page 28 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=28&scale=200&ticket=ALCauTI3o1VCZKfEX3%2FwJCE%3D
+2026-07-15 18:48:43,005 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_28.jpg
+2026-07-15 18:48:44,884 [INFO] src.corpus_acquisition.downloader: Downloading page 29 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=29&scale=200&ticket=AJ91Ed8bJkpZBdaX8qZvl%2Bg%3D
+2026-07-15 18:48:44,884 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_29.jpg
+2026-07-15 18:48:46,615 [INFO] src.corpus_acquisition.downloader: Downloading page 30 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=30&scale=200&ticket=AMCw882QvdPnk4y8%2FNMLv%2Fc%3D
+2026-07-15 18:48:46,615 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_30.jpg
+2026-07-15 18:48:48,405 [INFO] src.corpus_acquisition.downloader: Downloading page 31 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=31&scale=200&ticket=AHy7vHdDURWzviXjg2XIxWM%3D
+2026-07-15 18:48:48,406 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_31.jpg
+2026-07-15 18:48:50,709 [INFO] src.corpus_acquisition.downloader: Downloading page 32 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=32&scale=200&ticket=AJXFnx8VNptzQeVEEU%2Bx%2B%2Fg%3D
+2026-07-15 18:48:50,709 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_32.jpg
+2026-07-15 18:48:52,555 [INFO] src.corpus_acquisition.downloader: Downloading page 33 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=33&scale=200&ticket=AOHNXnToMr232EvskZXbGMc%3D
+2026-07-15 18:48:52,565 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_33.jpg
+2026-07-15 18:48:54,621 [INFO] src.corpus_acquisition.downloader: Downloading page 34 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=34&scale=200&ticket=ABSIgI4TGvTeuZVL%2FgSEK6Q%3D
+2026-07-15 18:48:54,621 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_34.jpg
+2026-07-15 18:48:57,035 [INFO] src.corpus_acquisition.downloader: Downloading page 35 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=35&scale=200&ticket=ACD2TbknDB3hsTU%2Blbto5E0%3D
+2026-07-15 18:48:57,038 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_35.jpg
+2026-07-15 18:48:58,783 [INFO] src.corpus_acquisition.downloader: Downloading page 36 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=36&scale=200&ticket=AD08Tpx2ijceYo95U4grQOI%3D
+2026-07-15 18:48:58,783 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_36.jpg
+2026-07-15 18:49:00,386 [INFO] src.corpus_acquisition.downloader: Downloading page 37 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=37&scale=200&ticket=AOsJ19IwfH4CDM6PFEmdgDU%3D
+2026-07-15 18:49:00,386 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_37.jpg
+2026-07-15 18:49:01,869 [INFO] src.corpus_acquisition.downloader: Downloading page 38 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=38&scale=200&ticket=ACTNT4MW9%2FiX%2B%2BRXDMrMv5w%3D
+2026-07-15 18:49:01,870 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_38.jpg
+2026-07-15 18:49:03,567 [INFO] src.corpus_acquisition.downloader: Downloading page 39 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=39&scale=200&ticket=AARChaT8KBTFd4DeXTusCnk%3D
+2026-07-15 18:49:03,567 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_39.jpg
+2026-07-15 18:49:05,691 [INFO] src.corpus_acquisition.downloader: Downloading page 40 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=40&scale=200&ticket=AO3DQaBStCTT6AyW5ScjYNg%3D
+2026-07-15 18:49:05,692 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_40.jpg
+2026-07-15 18:49:07,067 [INFO] src.corpus_acquisition.downloader: Downloading page 41 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=41&scale=200&ticket=AKb4UO59VxzmBxtmRp2DyT8%3D
+2026-07-15 18:49:07,067 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_41.jpg
+2026-07-15 18:49:08,668 [INFO] src.corpus_acquisition.downloader: Downloading page 42 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=42&scale=200&ticket=ABCXWgRgjyLMNKswNQWgjBY%3D
+2026-07-15 18:49:08,668 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_42.jpg
+2026-07-15 18:49:11,089 [INFO] src.corpus_acquisition.downloader: Downloading page 43 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=43&scale=200&ticket=AKbGukB0CsL2GpbXWECdAxg%3D
+2026-07-15 18:49:11,090 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_43.jpg
+2026-07-15 18:49:12,412 [INFO] src.corpus_acquisition.downloader: Downloading page 44 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=44&scale=200&ticket=APUzO6CuVlKJKpb%2FNpJ0aq0%3D
+2026-07-15 18:49:12,412 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_44.jpg
+2026-07-15 18:49:14,168 [INFO] src.corpus_acquisition.downloader: Downloading page 45 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=45&scale=200&ticket=AG%2F%2B7U9elghzJfKBXmjgsE0%3D
+2026-07-15 18:49:14,169 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_45.jpg
+2026-07-15 18:49:16,447 [INFO] src.corpus_acquisition.downloader: Downloading page 46 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=46&scale=200&ticket=AJSlEHW0nUMOn34%2BNAQE%2BoA%3D
+2026-07-15 18:49:16,447 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_46.jpg
+2026-07-15 18:49:17,995 [INFO] src.corpus_acquisition.downloader: Downloading page 47 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=47&scale=200&ticket=AHfThDrBiISA%2FH7rfWILINI%3D
+2026-07-15 18:49:17,995 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_47.jpg
+2026-07-15 18:49:20,084 [INFO] src.corpus_acquisition.downloader: Downloading page 48 from https://i.prcdn.co/img?file=eaaj2016040600000000001001&page=48&scale=200&ticket=AItuqaDl0ErH4dzh1ZQ7rWY%3D
+2026-07-15 18:49:20,084 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/elcomercio/2016/04/06/elcomercio_2016-04-06_48.jpg
+2026-07-15 18:49:21,680 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 48 page(s) -> data/raw/metadata/elcomercio_metadata.parquet (total rows: 14206)
+2026-07-15 18:49:21,684 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/elcomercio_2016-04-06.json (status=success)
+2026-07-15 18:49:22,855 [INFO] src.corpus_acquisition.downloader: Opening archive for elcomercio on 2016-04-07
+2026-07-15 18:49:29,547 [INFO] src.corpus_acquisition.downloader: Collected 7 / 1000 pages
+2026-07-15 18:49:31,653 [INFO] src.corpus_acquisition.downloader: Collected 9 / 1000 pages
+2026-07-15 18:49:33,797 [INFO] src.corpus_acquisition.downloader: Collected 11 / 1000 pages

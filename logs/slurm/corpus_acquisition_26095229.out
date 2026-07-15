@@ -1,0 +1,361 @@
+2026-07-15 18:43:10,985 [INFO] __main__: Logging in to portal...
+2026-07-15 18:43:10,985 [WARNING] __main__: PressReader login is currently disabled. Proceeding without login.
+2026-07-15 18:43:11,009 [INFO] src.corpus_acquisition.downloader: Skipping peru21 on 2021-11-01: already crawled successfully.
+2026-07-15 18:43:11,013 [INFO] src.corpus_acquisition.downloader: Skipping peru21 on 2021-11-02: already crawled successfully.
+2026-07-15 18:43:12,197 [INFO] src.corpus_acquisition.downloader: Page 1 already downloaded, skipping.
+2026-07-15 18:43:12,198 [INFO] src.corpus_acquisition.downloader: Page 2 already downloaded, skipping.
+2026-07-15 18:43:12,199 [INFO] src.corpus_acquisition.downloader: Page 3 already downloaded, skipping.
+2026-07-15 18:43:12,200 [INFO] src.corpus_acquisition.downloader: Page 4 already downloaded, skipping.
+2026-07-15 18:43:12,202 [INFO] src.corpus_acquisition.downloader: Page 5 already downloaded, skipping.
+2026-07-15 18:43:12,204 [INFO] src.corpus_acquisition.downloader: Page 6 already downloaded, skipping.
+2026-07-15 18:43:12,204 [INFO] src.corpus_acquisition.downloader: Page 7 already downloaded, skipping.
+2026-07-15 18:43:12,205 [INFO] src.corpus_acquisition.downloader: Page 8 already downloaded, skipping.
+2026-07-15 18:43:12,205 [INFO] src.corpus_acquisition.downloader: Page 9 already downloaded, skipping.
+2026-07-15 18:43:12,205 [INFO] src.corpus_acquisition.downloader: Page 10 already downloaded, skipping.
+2026-07-15 18:43:12,206 [INFO] src.corpus_acquisition.downloader: Page 11 already downloaded, skipping.
+2026-07-15 18:43:12,206 [INFO] src.corpus_acquisition.downloader: Page 12 already downloaded, skipping.
+2026-07-15 18:43:12,206 [INFO] src.corpus_acquisition.downloader: Page 13 already downloaded, skipping.
+2026-07-15 18:43:12,207 [INFO] src.corpus_acquisition.downloader: Page 14 already downloaded, skipping.
+2026-07-15 18:43:12,207 [INFO] src.corpus_acquisition.downloader: Page 15 already downloaded, skipping.
+2026-07-15 18:43:12,207 [INFO] src.corpus_acquisition.downloader: Page 16 already downloaded, skipping.
+2026-07-15 18:43:12,208 [INFO] src.corpus_acquisition.downloader: Page 17 already downloaded, skipping.
+2026-07-15 18:43:12,208 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag12021110300000000001001&page=18&scale=80
+2026-07-15 18:43:12,208 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/03/peru21_2021-11-03_18.jpg
+2026-07-15 18:43:14,954 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag12021110300000000001001&page=19&scale=80
+2026-07-15 18:43:14,954 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/03/peru21_2021-11-03_19.jpg
+2026-07-15 18:43:17,247 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag12021110300000000001001&page=20&scale=80
+2026-07-15 18:43:17,247 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/03/peru21_2021-11-03_20.jpg
+2026-07-15 18:43:20,240 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag12021110300000000001001&page=21&scale=80
+2026-07-15 18:43:20,251 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/03/peru21_2021-11-03_21.jpg
+2026-07-15 18:43:20,480 [WARNING] src.corpus_acquisition.downloader: Page 21 not found (1/3).
+2026-07-15 18:43:20,481 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag12021110300000000001001&page=22&scale=80
+2026-07-15 18:43:20,481 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/03/peru21_2021-11-03_22.jpg
+2026-07-15 18:43:20,705 [WARNING] src.corpus_acquisition.downloader: Page 22 not found (2/3).
+2026-07-15 18:43:20,705 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag12021110300000000001001&page=23&scale=80
+2026-07-15 18:43:20,706 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/03/peru21_2021-11-03_23.jpg
+2026-07-15 18:43:20,967 [WARNING] src.corpus_acquisition.downloader: Page 23 not found (3/3).
+2026-07-15 18:43:20,967 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 3 page(s).
+2026-07-15 18:43:21,024 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 3 page(s) -> data/raw/metadata/peru21_metadata.parquet (total rows: 10901)
+2026-07-15 18:43:21,052 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/peru21_2021-11-03.json (status=success)
+2026-07-15 18:43:21,772 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=1&scale=80
+2026-07-15 18:43:21,777 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_1.jpg
+2026-07-15 18:43:23,945 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=2&scale=80
+2026-07-15 18:43:23,945 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_2.jpg
+2026-07-15 18:43:27,776 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=3&scale=80
+2026-07-15 18:43:27,776 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_3.jpg
+2026-07-15 18:43:30,799 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=4&scale=80
+2026-07-15 18:43:30,800 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_4.jpg
+2026-07-15 18:43:32,917 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=5&scale=80
+2026-07-15 18:43:32,917 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_5.jpg
+2026-07-15 18:43:35,309 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=6&scale=80
+2026-07-15 18:43:35,320 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_6.jpg
+2026-07-15 18:43:37,779 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=7&scale=80
+2026-07-15 18:43:37,780 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_7.jpg
+2026-07-15 18:43:40,050 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=8&scale=80
+2026-07-15 18:43:40,051 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_8.jpg
+2026-07-15 18:43:42,682 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=9&scale=80
+2026-07-15 18:43:42,682 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_9.jpg
+2026-07-15 18:43:44,890 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=10&scale=80
+2026-07-15 18:43:44,890 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_10.jpg
+2026-07-15 18:43:48,812 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=11&scale=80
+2026-07-15 18:43:48,813 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_11.jpg
+2026-07-15 18:43:51,228 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=12&scale=80
+2026-07-15 18:43:51,228 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_12.jpg
+2026-07-15 18:43:54,486 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=13&scale=80
+2026-07-15 18:43:54,486 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_13.jpg
+2026-07-15 18:43:56,556 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=14&scale=80
+2026-07-15 18:43:56,567 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_14.jpg
+2026-07-15 18:43:59,135 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=15&scale=80
+2026-07-15 18:43:59,135 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_15.jpg
+2026-07-15 18:44:02,099 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=16&scale=80
+2026-07-15 18:44:02,110 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_16.jpg
+2026-07-15 18:44:04,914 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=17&scale=80
+2026-07-15 18:44:04,924 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_17.jpg
+2026-07-15 18:44:07,225 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=18&scale=80
+2026-07-15 18:44:07,236 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_18.jpg
+2026-07-15 18:44:09,692 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=19&scale=80
+2026-07-15 18:44:09,692 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_19.jpg
+2026-07-15 18:44:12,631 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=20&scale=80
+2026-07-15 18:44:12,632 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_20.jpg
+2026-07-15 18:44:15,682 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=21&scale=80
+2026-07-15 18:44:15,683 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_21.jpg
+2026-07-15 18:44:15,897 [WARNING] src.corpus_acquisition.downloader: Page 21 not found (1/3).
+2026-07-15 18:44:15,898 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=22&scale=80
+2026-07-15 18:44:15,909 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_22.jpg
+2026-07-15 18:44:16,207 [WARNING] src.corpus_acquisition.downloader: Page 22 not found (2/3).
+2026-07-15 18:44:16,208 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag12021110400000000001001&page=23&scale=80
+2026-07-15 18:44:16,209 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/04/peru21_2021-11-04_23.jpg
+2026-07-15 18:44:16,475 [WARNING] src.corpus_acquisition.downloader: Page 23 not found (3/3).
+2026-07-15 18:44:16,475 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 20 page(s).
+2026-07-15 18:44:16,511 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 20 page(s) -> data/raw/metadata/peru21_metadata.parquet (total rows: 10921)
+2026-07-15 18:44:16,519 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/peru21_2021-11-04.json (status=success)
+2026-07-15 18:44:18,033 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=1&scale=80
+2026-07-15 18:44:18,035 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_1.jpg
+2026-07-15 18:44:20,848 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=2&scale=80
+2026-07-15 18:44:20,859 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_2.jpg
+2026-07-15 18:44:24,274 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=3&scale=80
+2026-07-15 18:44:24,274 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_3.jpg
+2026-07-15 18:44:27,389 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=4&scale=80
+2026-07-15 18:44:27,390 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_4.jpg
+2026-07-15 18:44:29,931 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=5&scale=80
+2026-07-15 18:44:29,931 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_5.jpg
+2026-07-15 18:44:33,031 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=6&scale=80
+2026-07-15 18:44:33,040 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_6.jpg
+2026-07-15 18:44:36,403 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=7&scale=80
+2026-07-15 18:44:36,403 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_7.jpg
+2026-07-15 18:44:38,491 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=8&scale=80
+2026-07-15 18:44:38,492 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_8.jpg
+2026-07-15 18:44:41,647 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=9&scale=80
+2026-07-15 18:44:41,647 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_9.jpg
+2026-07-15 18:44:44,701 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=10&scale=80
+2026-07-15 18:44:44,701 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_10.jpg
+2026-07-15 18:44:47,908 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=11&scale=80
+2026-07-15 18:44:47,908 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_11.jpg
+2026-07-15 18:44:51,135 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=12&scale=80
+2026-07-15 18:44:51,136 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_12.jpg
+2026-07-15 18:44:53,982 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=13&scale=80
+2026-07-15 18:44:53,983 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_13.jpg
+2026-07-15 18:44:56,563 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=14&scale=80
+2026-07-15 18:44:56,564 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_14.jpg
+2026-07-15 18:44:59,608 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=15&scale=80
+2026-07-15 18:44:59,615 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_15.jpg
+2026-07-15 18:45:03,516 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=16&scale=80
+2026-07-15 18:45:03,517 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_16.jpg
+2026-07-15 18:45:06,053 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=17&scale=80
+2026-07-15 18:45:06,053 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_17.jpg
+2026-07-15 18:45:09,187 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=18&scale=80
+2026-07-15 18:45:09,187 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_18.jpg
+2026-07-15 18:45:12,373 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=19&scale=80
+2026-07-15 18:45:12,383 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_19.jpg
+2026-07-15 18:45:14,856 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=20&scale=80
+2026-07-15 18:45:14,856 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_20.jpg
+2026-07-15 18:45:17,455 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=21&scale=80
+2026-07-15 18:45:17,456 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_21.jpg
+2026-07-15 18:45:17,709 [WARNING] src.corpus_acquisition.downloader: Page 21 not found (1/3).
+2026-07-15 18:45:17,710 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=22&scale=80
+2026-07-15 18:45:17,712 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_22.jpg
+2026-07-15 18:45:17,960 [WARNING] src.corpus_acquisition.downloader: Page 22 not found (2/3).
+2026-07-15 18:45:17,961 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag12021110500000000001001&page=23&scale=80
+2026-07-15 18:45:17,961 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/05/peru21_2021-11-05_23.jpg
+2026-07-15 18:45:18,222 [WARNING] src.corpus_acquisition.downloader: Page 23 not found (3/3).
+2026-07-15 18:45:18,222 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 20 page(s).
+2026-07-15 18:45:18,258 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 20 page(s) -> data/raw/metadata/peru21_metadata.parquet (total rows: 10941)
+2026-07-15 18:45:18,279 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/peru21_2021-11-05.json (status=success)
+2026-07-15 18:45:19,292 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=1&scale=80
+2026-07-15 18:45:19,294 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_1.jpg
+2026-07-15 18:45:21,655 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=2&scale=80
+2026-07-15 18:45:21,656 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_2.jpg
+2026-07-15 18:45:24,824 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=3&scale=80
+2026-07-15 18:45:24,825 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_3.jpg
+2026-07-15 18:45:27,700 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=4&scale=80
+2026-07-15 18:45:27,700 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_4.jpg
+2026-07-15 18:45:30,734 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=5&scale=80
+2026-07-15 18:45:30,734 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_5.jpg
+2026-07-15 18:45:33,400 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=6&scale=80
+2026-07-15 18:45:33,411 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_6.jpg
+2026-07-15 18:45:37,255 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=7&scale=80
+2026-07-15 18:45:37,255 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_7.jpg
+2026-07-15 18:45:39,940 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=8&scale=80
+2026-07-15 18:45:39,940 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_8.jpg
+2026-07-15 18:45:42,885 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=9&scale=80
+2026-07-15 18:45:42,896 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_9.jpg
+2026-07-15 18:45:45,401 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=10&scale=80
+2026-07-15 18:45:45,402 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_10.jpg
+2026-07-15 18:45:48,351 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=11&scale=80
+2026-07-15 18:45:48,351 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_11.jpg
+2026-07-15 18:45:50,956 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=12&scale=80
+2026-07-15 18:45:50,967 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_12.jpg
+2026-07-15 18:45:53,606 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=13&scale=80
+2026-07-15 18:45:53,606 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_13.jpg
+2026-07-15 18:45:56,340 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=14&scale=80
+2026-07-15 18:45:56,351 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_14.jpg
+2026-07-15 18:45:59,256 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=15&scale=80
+2026-07-15 18:45:59,256 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_15.jpg
+2026-07-15 18:46:02,219 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=16&scale=80
+2026-07-15 18:46:02,220 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_16.jpg
+2026-07-15 18:46:05,035 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=17&scale=80
+2026-07-15 18:46:05,036 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_17.jpg
+2026-07-15 18:46:07,727 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=18&scale=80
+2026-07-15 18:46:07,738 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_18.jpg
+2026-07-15 18:46:10,945 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=19&scale=80
+2026-07-15 18:46:10,945 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_19.jpg
+2026-07-15 18:46:13,817 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=20&scale=80
+2026-07-15 18:46:13,817 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_20.jpg
+2026-07-15 18:46:16,484 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=21&scale=80
+2026-07-15 18:46:16,485 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_21.jpg
+2026-07-15 18:46:16,749 [WARNING] src.corpus_acquisition.downloader: Page 21 not found (1/3).
+2026-07-15 18:46:16,750 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=22&scale=80
+2026-07-15 18:46:16,750 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_22.jpg
+2026-07-15 18:46:16,994 [WARNING] src.corpus_acquisition.downloader: Page 22 not found (2/3).
+2026-07-15 18:46:16,995 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag12021110600000000001001&page=23&scale=80
+2026-07-15 18:46:16,995 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/06/peru21_2021-11-06_23.jpg
+2026-07-15 18:46:17,282 [WARNING] src.corpus_acquisition.downloader: Page 23 not found (3/3).
+2026-07-15 18:46:17,282 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 20 page(s).
+2026-07-15 18:46:17,327 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 20 page(s) -> data/raw/metadata/peru21_metadata.parquet (total rows: 10961)
+2026-07-15 18:46:17,330 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/peru21_2021-11-06.json (status=success)
+2026-07-15 18:46:17,965 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=1&scale=80
+2026-07-15 18:46:17,977 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_1.jpg
+2026-07-15 18:46:21,017 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=2&scale=80
+2026-07-15 18:46:21,017 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_2.jpg
+2026-07-15 18:46:25,319 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=3&scale=80
+2026-07-15 18:46:25,330 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_3.jpg
+2026-07-15 18:46:28,066 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=4&scale=80
+2026-07-15 18:46:28,067 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_4.jpg
+2026-07-15 18:46:30,728 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=5&scale=80
+2026-07-15 18:46:30,739 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_5.jpg
+2026-07-15 18:46:33,458 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=6&scale=80
+2026-07-15 18:46:33,458 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_6.jpg
+2026-07-15 18:46:35,552 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=7&scale=80
+2026-07-15 18:46:35,553 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_7.jpg
+2026-07-15 18:46:38,432 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=8&scale=80
+2026-07-15 18:46:38,433 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_8.jpg
+2026-07-15 18:46:40,840 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=9&scale=80
+2026-07-15 18:46:40,841 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_9.jpg
+2026-07-15 18:46:43,916 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=10&scale=80
+2026-07-15 18:46:43,917 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_10.jpg
+2026-07-15 18:46:46,485 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=11&scale=80
+2026-07-15 18:46:46,496 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_11.jpg
+2026-07-15 18:46:49,174 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=12&scale=80
+2026-07-15 18:46:49,184 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_12.jpg
+2026-07-15 18:46:51,596 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=13&scale=80
+2026-07-15 18:46:51,596 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_13.jpg
+2026-07-15 18:46:54,429 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=14&scale=80
+2026-07-15 18:46:54,429 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_14.jpg
+2026-07-15 18:46:57,080 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=15&scale=80
+2026-07-15 18:46:57,080 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_15.jpg
+2026-07-15 18:47:00,301 [ERROR] src.corpus_acquisition.downloader: Failed to download page 15: Failed to download page 15: 520
+2026-07-15 18:47:00,302 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=16&scale=80
+2026-07-15 18:47:00,302 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_16.jpg
+2026-07-15 18:47:16,566 [ERROR] src.corpus_acquisition.downloader: Failed to download page 16: Failed to download page 16: 520
+2026-07-15 18:47:16,566 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=17&scale=80
+2026-07-15 18:47:16,567 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_17.jpg
+2026-07-15 18:47:20,039 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=18&scale=80
+2026-07-15 18:47:20,041 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_18.jpg
+2026-07-15 18:47:23,173 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=19&scale=80
+2026-07-15 18:47:23,174 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_19.jpg
+2026-07-15 18:47:26,450 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=20&scale=80
+2026-07-15 18:47:26,461 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_20.jpg
+2026-07-15 18:47:29,341 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=21&scale=80
+2026-07-15 18:47:29,342 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_21.jpg
+2026-07-15 18:47:29,557 [WARNING] src.corpus_acquisition.downloader: Page 21 not found (1/3).
+2026-07-15 18:47:29,558 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=22&scale=80
+2026-07-15 18:47:29,558 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_22.jpg
+2026-07-15 18:47:29,778 [WARNING] src.corpus_acquisition.downloader: Page 22 not found (2/3).
+2026-07-15 18:47:29,779 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag12021110700000000001001&page=23&scale=80
+2026-07-15 18:47:29,779 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/07/peru21_2021-11-07_23.jpg
+2026-07-15 18:47:30,026 [WARNING] src.corpus_acquisition.downloader: Page 23 not found (3/3).
+2026-07-15 18:47:30,026 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 18 page(s).
+2026-07-15 18:47:30,095 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 18 page(s) -> data/raw/metadata/peru21_metadata.parquet (total rows: 10979)
+2026-07-15 18:47:30,131 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/peru21_2021-11-07.json (status=partial)
+2026-07-15 18:47:31,741 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=1&scale=80
+2026-07-15 18:47:31,742 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_1.jpg
+2026-07-15 18:47:34,097 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=2&scale=80
+2026-07-15 18:47:34,108 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_2.jpg
+2026-07-15 18:47:37,584 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=3&scale=80
+2026-07-15 18:47:37,595 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_3.jpg
+2026-07-15 18:47:39,840 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=4&scale=80
+2026-07-15 18:47:39,840 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_4.jpg
+2026-07-15 18:47:42,823 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=5&scale=80
+2026-07-15 18:47:42,834 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_5.jpg
+2026-07-15 18:47:45,394 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=6&scale=80
+2026-07-15 18:47:45,394 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_6.jpg
+2026-07-15 18:47:48,522 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=7&scale=80
+2026-07-15 18:47:48,522 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_7.jpg
+2026-07-15 18:47:51,046 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=8&scale=80
+2026-07-15 18:47:51,047 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_8.jpg
+2026-07-15 18:47:53,703 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=9&scale=80
+2026-07-15 18:47:53,703 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_9.jpg
+2026-07-15 18:47:56,766 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=10&scale=80
+2026-07-15 18:47:56,768 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_10.jpg
+2026-07-15 18:47:59,580 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=11&scale=80
+2026-07-15 18:47:59,580 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_11.jpg
+2026-07-15 18:48:02,270 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=12&scale=80
+2026-07-15 18:48:02,281 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_12.jpg
+2026-07-15 18:48:04,961 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=13&scale=80
+2026-07-15 18:48:04,961 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_13.jpg
+2026-07-15 18:48:08,870 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=14&scale=80
+2026-07-15 18:48:08,871 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_14.jpg
+2026-07-15 18:48:11,717 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=15&scale=80
+2026-07-15 18:48:11,717 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_15.jpg
+2026-07-15 18:48:14,384 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=16&scale=80
+2026-07-15 18:48:14,384 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_16.jpg
+2026-07-15 18:48:17,630 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=17&scale=80
+2026-07-15 18:48:17,630 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_17.jpg
+2026-07-15 18:48:20,327 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=18&scale=80
+2026-07-15 18:48:20,338 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_18.jpg
+2026-07-15 18:48:23,039 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=19&scale=80
+2026-07-15 18:48:23,039 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_19.jpg
+2026-07-15 18:48:25,968 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=20&scale=80
+2026-07-15 18:48:25,979 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_20.jpg
+2026-07-15 18:48:28,720 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=21&scale=80
+2026-07-15 18:48:28,729 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_21.jpg
+2026-07-15 18:48:29,022 [WARNING] src.corpus_acquisition.downloader: Page 21 not found (1/3).
+2026-07-15 18:48:29,023 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=22&scale=80
+2026-07-15 18:48:29,023 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_22.jpg
+2026-07-15 18:48:29,338 [WARNING] src.corpus_acquisition.downloader: Page 22 not found (2/3).
+2026-07-15 18:48:29,339 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag12021110800000000001001&page=23&scale=80
+2026-07-15 18:48:29,339 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/08/peru21_2021-11-08_23.jpg
+2026-07-15 18:48:29,587 [WARNING] src.corpus_acquisition.downloader: Page 23 not found (3/3).
+2026-07-15 18:48:29,587 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 20 page(s).
+2026-07-15 18:48:29,616 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 20 page(s) -> data/raw/metadata/peru21_metadata.parquet (total rows: 10999)
+2026-07-15 18:48:29,619 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/peru21_2021-11-08.json (status=success)
+2026-07-15 18:48:30,977 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=1&scale=80
+2026-07-15 18:48:30,978 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_1.jpg
+2026-07-15 18:48:33,503 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=2&scale=80
+2026-07-15 18:48:33,504 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_2.jpg
+2026-07-15 18:48:36,103 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=3&scale=80
+2026-07-15 18:48:36,103 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_3.jpg
+2026-07-15 18:48:38,765 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=4&scale=80
+2026-07-15 18:48:38,765 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_4.jpg
+2026-07-15 18:48:41,630 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=5&scale=80
+2026-07-15 18:48:41,630 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_5.jpg
+2026-07-15 18:48:44,186 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=6&scale=80
+2026-07-15 18:48:44,186 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_6.jpg
+2026-07-15 18:48:46,699 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=7&scale=80
+2026-07-15 18:48:46,699 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_7.jpg
+2026-07-15 18:48:50,041 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=8&scale=80
+2026-07-15 18:48:50,041 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_8.jpg
+2026-07-15 18:48:52,677 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=9&scale=80
+2026-07-15 18:48:52,682 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_9.jpg
+2026-07-15 18:48:55,556 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=10&scale=80
+2026-07-15 18:48:55,557 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_10.jpg
+2026-07-15 18:48:57,880 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=11&scale=80
+2026-07-15 18:48:57,880 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_11.jpg
+2026-07-15 18:49:01,295 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=12&scale=80
+2026-07-15 18:49:01,295 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_12.jpg
+2026-07-15 18:49:04,111 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=13&scale=80
+2026-07-15 18:49:04,111 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_13.jpg
+2026-07-15 18:49:07,138 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=14&scale=80
+2026-07-15 18:49:07,138 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_14.jpg
+2026-07-15 18:49:09,895 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=15&scale=80
+2026-07-15 18:49:09,895 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_15.jpg
+2026-07-15 18:49:12,596 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=16&scale=80
+2026-07-15 18:49:12,600 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_16.jpg
+2026-07-15 18:49:15,628 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=17&scale=80
+2026-07-15 18:49:15,629 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_17.jpg
+2026-07-15 18:49:18,526 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=18&scale=80
+2026-07-15 18:49:18,537 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_18.jpg
+2026-07-15 18:49:20,647 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=19&scale=80
+2026-07-15 18:49:20,647 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_19.jpg
+2026-07-15 18:49:23,378 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=20&scale=80
+2026-07-15 18:49:23,388 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_20.jpg
+2026-07-15 18:49:26,085 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=21&scale=80
+2026-07-15 18:49:26,092 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_21.jpg
+2026-07-15 18:49:26,320 [WARNING] src.corpus_acquisition.downloader: Page 21 not found (1/3).
+2026-07-15 18:49:26,329 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=22&scale=80
+2026-07-15 18:49:26,340 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_22.jpg
+2026-07-15 18:49:26,590 [WARNING] src.corpus_acquisition.downloader: Page 22 not found (2/3).
+2026-07-15 18:49:26,591 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag12021110900000000001001&page=23&scale=80
+2026-07-15 18:49:26,591 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/09/peru21_2021-11-09_23.jpg
+2026-07-15 18:49:26,830 [WARNING] src.corpus_acquisition.downloader: Page 23 not found (3/3).
+2026-07-15 18:49:26,830 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 20 page(s).
+2026-07-15 18:49:26,858 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 20 page(s) -> data/raw/metadata/peru21_metadata.parquet (total rows: 11019)
+2026-07-15 18:49:26,890 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/peru21_2021-11-09.json (status=success)
+2026-07-15 18:49:28,034 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag12021111000000000001001&page=1&scale=80
+2026-07-15 18:49:28,036 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/10/peru21_2021-11-10_1.jpg
+2026-07-15 18:49:30,978 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag12021111000000000001001&page=2&scale=80
+2026-07-15 18:49:30,989 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/10/peru21_2021-11-10_2.jpg
+2026-07-15 18:49:34,614 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag12021111000000000001001&page=3&scale=80
+2026-07-15 18:49:34,615 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/10/peru21_2021-11-10_3.jpg
+2026-07-15 18:49:37,734 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag12021111000000000001001&page=4&scale=80
+2026-07-15 18:49:37,734 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/peru21/2021/11/10/peru21_2021-11-10_4.jpg

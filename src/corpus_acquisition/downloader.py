@@ -159,6 +159,27 @@ class CorpusDownloader:
         date_str = date.strftime("%Y-%m-%d")
 
         if config.get("download_method") == "direct":
+            # print(config.get("download_method"))
+            # print(config)
+            if config.get("selector_text") == "Trome":
+                return self._download_direct(
+                newspaper=newspaper,
+                config=config,
+                date=date,
+                expected_pages=expected_pages,
+                scale=78,
+                skip_existing=skip_existing,
+            )
+            elif config.get("selector_text") == "Correo":
+                return self._download_direct(
+                newspaper=newspaper,
+                config=config,
+                date=date,
+                expected_pages=expected_pages,
+                scale=78,
+                skip_existing=skip_existing,
+            )
+
             return self._download_direct(
                 newspaper=newspaper,
                 config=config,

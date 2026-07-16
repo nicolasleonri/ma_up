@@ -1,0 +1,52 @@
+
+================================================================================
+                              Slurm Job Statistics                              
+================================================================================
+         Job ID: 26095228
+   User/Account: nicolasal97/agfritz
+       Job Name: corpus_acquisition
+          State: COMPLETED
+          Nodes: 1
+      CPU Cores: 1
+     CPU Memory: 2GB
+  QOS/Partition: standard/scavenger
+        Cluster: curta
+     Start Time: Wed Jul 15, 2026 at 6:41 PM
+       Run Time: 03:12:18
+     Time Limit: 2-00:00:00
+
+                              Overall Utilization                               
+================================================================================
+  CPU utilization  [                                                0%]
+  CPU memory usage [|||||||||||||                                  26%]
+
+                              Detailed Utilization                              
+================================================================================
+  CPU utilization per node (CPU time used/run time)
+      b002.curta.zedat.fu-berlin.de: 00:00:47/03:12:18 (efficiency=0.4%)
+
+  CPU memory usage per node - used/allocated
+      b002.curta.zedat.fu-berlin.de: 539.5MB/2GB 
+
+                                     Notes                                      
+================================================================================
+  * The overall CPU utilization of this job is 0.4%. This value is low
+    compared to the target range of 90% and above. Please investigate the
+    reason for the low efficiency. For more info:
+      https://www.fu-berlin.de/en/sites/high-performance-computing/Dokumentation/Ressourcennutzung
+
+  * This job only needed 7% of the requested time, which was 2-00:00:00. For
+    future jobs, please request less time by modifying the --time Slurm
+    directive. This will lower your queue times and allow the Slurm job
+    scheduler to work more effectively for all users. For more info:
+      https://www.fu-berlin.de/en/sites/high-performance-computing/Dokumentation/Ressourcen-Manager/Zeitlimit
+
+  * This job only used 26% of the 2GB of total allocated CPU memory. For
+    future jobs, please allocate less memory by using a Slurm directive such
+    as --mem-per-cpu=1G or --mem=1G. This will reduce your queue times and
+    make the resources available to other users. For more info:
+      https://www.fu-berlin.de/en/sites/high-performance-computing/Dokumentation/Ressourcen-Manager/Hauptspeicher/
+
+  * Have a nice day!
+
+

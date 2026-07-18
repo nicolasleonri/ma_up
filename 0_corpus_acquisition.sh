@@ -7,7 +7,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
-#SBATCH --mem-per-cpu=2GB
+#SBATCH --mem-per-cpu=3GB
 #SBATCH --time=48:00:00
 
 module purge
@@ -19,14 +19,14 @@ source venv/corpus_acquisition/bin/activate
 ##### EL COMERCIO #####
 # python3 -m src.workflows.acquire_corpus \
 #     --newspaper elcomercio \
-#     --start-date 2016-04-01 \
+#     --start-date 2018-05-18 \
 #     --end-date 2019-12-31 # Final date
 
 ##### TODO LO DEMAS #####
 # newspaper = trome, elcomercio, peru21, gestion, ojo, correo
 python3 -m src.workflows.acquire_corpus \
     --newspaper correo \
-    --start-date 2021-07-05 \
+    --start-date 2024-08-29 \
     --end-date 2026-06-30 # Final date
 
 exit_code=$?

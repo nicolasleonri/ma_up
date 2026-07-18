@@ -1,0 +1,505 @@
+2026-07-18 12:54:48,760 [INFO] __main__: Logging in to portal...
+2026-07-18 12:54:48,760 [WARNING] __main__: PressReader login is currently disabled. Proceeding without login.
+2026-07-18 12:54:48,764 [INFO] src.corpus_acquisition.downloader: Skipping ojo on 2025-04-18: already crawled successfully.
+2026-07-18 12:54:48,770 [INFO] src.corpus_acquisition.downloader: Skipping ojo on 2025-04-19: already crawled successfully.
+2026-07-18 12:54:49,409 [INFO] src.corpus_acquisition.downloader: Page 1 already downloaded, skipping.
+2026-07-18 12:54:49,409 [INFO] src.corpus_acquisition.downloader: Page 2 already downloaded, skipping.
+2026-07-18 12:54:49,410 [INFO] src.corpus_acquisition.downloader: Page 3 already downloaded, skipping.
+2026-07-18 12:54:49,410 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=4&scale=80
+2026-07-18 12:54:49,410 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_4.jpg
+2026-07-18 12:54:53,142 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=5&scale=80
+2026-07-18 12:54:53,142 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_5.jpg
+2026-07-18 12:54:56,024 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=6&scale=80
+2026-07-18 12:54:56,025 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_6.jpg
+2026-07-18 12:54:58,351 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=7&scale=80
+2026-07-18 12:54:58,351 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_7.jpg
+2026-07-18 12:55:00,935 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=8&scale=80
+2026-07-18 12:55:00,936 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_8.jpg
+2026-07-18 12:55:03,910 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=9&scale=80
+2026-07-18 12:55:03,910 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_9.jpg
+2026-07-18 12:55:06,887 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=10&scale=80
+2026-07-18 12:55:06,888 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_10.jpg
+2026-07-18 12:55:09,411 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=11&scale=80
+2026-07-18 12:55:09,411 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_11.jpg
+2026-07-18 12:55:12,163 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=12&scale=80
+2026-07-18 12:55:12,163 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_12.jpg
+2026-07-18 12:55:14,662 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=13&scale=80
+2026-07-18 12:55:14,663 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_13.jpg
+2026-07-18 12:55:17,455 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=14&scale=80
+2026-07-18 12:55:17,455 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_14.jpg
+2026-07-18 12:55:19,453 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=15&scale=80
+2026-07-18 12:55:19,453 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_15.jpg
+2026-07-18 12:55:21,612 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=16&scale=80
+2026-07-18 12:55:21,612 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_16.jpg
+2026-07-18 12:55:24,331 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=17&scale=80
+2026-07-18 12:55:24,332 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_17.jpg
+2026-07-18 12:55:26,943 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=18&scale=80
+2026-07-18 12:55:26,943 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_18.jpg
+2026-07-18 12:55:29,462 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=19&scale=80
+2026-07-18 12:55:29,462 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_19.jpg
+2026-07-18 12:55:31,916 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=20&scale=80
+2026-07-18 12:55:31,916 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_20.jpg
+2026-07-18 12:55:34,158 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=21&scale=80
+2026-07-18 12:55:34,158 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_21.jpg
+2026-07-18 12:55:34,358 [WARNING] src.corpus_acquisition.downloader: Page 21 not found (1/3).
+2026-07-18 12:55:34,359 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=22&scale=80
+2026-07-18 12:55:34,359 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_22.jpg
+2026-07-18 12:55:34,591 [WARNING] src.corpus_acquisition.downloader: Page 22 not found (2/3).
+2026-07-18 12:55:34,591 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=23&scale=80
+2026-07-18 12:55:34,592 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_23.jpg
+2026-07-18 12:55:34,797 [WARNING] src.corpus_acquisition.downloader: Page 23 not found (3/3).
+2026-07-18 12:55:34,797 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 17 page(s).
+2026-07-18 12:55:34,939 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 17 page(s) -> data/raw/metadata/ojo_metadata.parquet (total rows: 36959)
+2026-07-18 12:55:34,944 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/ojo_2025-04-20.json (status=success)
+2026-07-18 12:55:35,835 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=1&scale=80
+2026-07-18 12:55:35,836 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_1.jpg
+2026-07-18 12:55:38,155 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=2&scale=80
+2026-07-18 12:55:38,155 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_2.jpg
+2026-07-18 12:55:41,631 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=3&scale=80
+2026-07-18 12:55:41,631 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_3.jpg
+2026-07-18 12:55:45,004 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=4&scale=80
+2026-07-18 12:55:45,004 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_4.jpg
+2026-07-18 12:55:48,077 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=5&scale=80
+2026-07-18 12:55:48,077 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_5.jpg
+2026-07-18 12:55:50,806 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=6&scale=80
+2026-07-18 12:55:50,806 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_6.jpg
+2026-07-18 12:55:53,723 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=7&scale=80
+2026-07-18 12:55:53,723 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_7.jpg
+2026-07-18 12:55:56,964 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=8&scale=80
+2026-07-18 12:55:56,964 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_8.jpg
+2026-07-18 12:55:59,815 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=9&scale=80
+2026-07-18 12:55:59,816 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_9.jpg
+2026-07-18 12:56:02,035 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=10&scale=80
+2026-07-18 12:56:02,035 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_10.jpg
+2026-07-18 12:56:04,796 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=11&scale=80
+2026-07-18 12:56:04,796 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_11.jpg
+2026-07-18 12:56:07,762 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=12&scale=80
+2026-07-18 12:56:07,763 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_12.jpg
+2026-07-18 12:56:10,018 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=13&scale=80
+2026-07-18 12:56:10,018 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_13.jpg
+2026-07-18 12:56:12,504 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=14&scale=80
+2026-07-18 12:56:12,505 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_14.jpg
+2026-07-18 12:56:15,870 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=15&scale=80
+2026-07-18 12:56:15,870 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_15.jpg
+2026-07-18 12:56:18,592 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=16&scale=80
+2026-07-18 12:56:18,592 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_16.jpg
+2026-07-18 12:56:20,994 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=17&scale=80
+2026-07-18 12:56:20,994 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_17.jpg
+2026-07-18 12:56:23,718 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=18&scale=80
+2026-07-18 12:56:23,718 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_18.jpg
+2026-07-18 12:56:26,086 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=19&scale=80
+2026-07-18 12:56:26,086 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_19.jpg
+2026-07-18 12:56:28,777 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=20&scale=80
+2026-07-18 12:56:28,777 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_20.jpg
+2026-07-18 12:56:31,297 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=21&scale=80
+2026-07-18 12:56:31,297 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_21.jpg
+2026-07-18 12:56:31,511 [WARNING] src.corpus_acquisition.downloader: Page 21 not found (1/3).
+2026-07-18 12:56:31,512 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=22&scale=80
+2026-07-18 12:56:31,512 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_22.jpg
+2026-07-18 12:56:31,724 [WARNING] src.corpus_acquisition.downloader: Page 22 not found (2/3).
+2026-07-18 12:56:31,725 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eags2025042100000000001001&page=23&scale=80
+2026-07-18 12:56:31,725 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/21/ojo_2025-04-21_23.jpg
+2026-07-18 12:56:32,020 [WARNING] src.corpus_acquisition.downloader: Page 23 not found (3/3).
+2026-07-18 12:56:32,020 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 20 page(s).
+2026-07-18 12:56:32,067 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 20 page(s) -> data/raw/metadata/ojo_metadata.parquet (total rows: 36979)
+2026-07-18 12:56:32,069 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/ojo_2025-04-21.json (status=success)
+2026-07-18 12:56:32,692 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=1&scale=80
+2026-07-18 12:56:32,693 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_1.jpg
+2026-07-18 12:56:35,156 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=2&scale=80
+2026-07-18 12:56:35,157 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_2.jpg
+2026-07-18 12:56:38,622 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=3&scale=80
+2026-07-18 12:56:38,622 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_3.jpg
+2026-07-18 12:56:41,703 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=4&scale=80
+2026-07-18 12:56:41,704 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_4.jpg
+2026-07-18 12:56:44,678 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=5&scale=80
+2026-07-18 12:56:44,678 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_5.jpg
+2026-07-18 12:56:46,920 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=6&scale=80
+2026-07-18 12:56:46,921 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_6.jpg
+2026-07-18 12:56:49,524 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=7&scale=80
+2026-07-18 12:56:49,524 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_7.jpg
+2026-07-18 12:56:51,897 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=8&scale=80
+2026-07-18 12:56:51,897 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_8.jpg
+2026-07-18 12:56:54,352 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=9&scale=80
+2026-07-18 12:56:54,352 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_9.jpg
+2026-07-18 12:56:57,276 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=10&scale=80
+2026-07-18 12:56:57,276 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_10.jpg
+2026-07-18 12:57:00,951 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=11&scale=80
+2026-07-18 12:57:00,951 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_11.jpg
+2026-07-18 12:57:04,133 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=12&scale=80
+2026-07-18 12:57:04,133 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_12.jpg
+2026-07-18 12:57:06,602 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=13&scale=80
+2026-07-18 12:57:06,602 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_13.jpg
+2026-07-18 12:57:09,345 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=14&scale=80
+2026-07-18 12:57:09,345 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_14.jpg
+2026-07-18 12:57:11,862 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=15&scale=80
+2026-07-18 12:57:11,862 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_15.jpg
+2026-07-18 12:57:14,229 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=16&scale=80
+2026-07-18 12:57:14,229 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_16.jpg
+2026-07-18 12:57:17,036 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=17&scale=80
+2026-07-18 12:57:17,037 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_17.jpg
+2026-07-18 12:57:19,992 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=18&scale=80
+2026-07-18 12:57:19,992 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_18.jpg
+2026-07-18 12:57:22,793 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=19&scale=80
+2026-07-18 12:57:22,793 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_19.jpg
+2026-07-18 12:57:24,889 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=20&scale=80
+2026-07-18 12:57:24,889 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_20.jpg
+2026-07-18 12:57:27,282 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=21&scale=80
+2026-07-18 12:57:27,282 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_21.jpg
+2026-07-18 12:57:27,505 [WARNING] src.corpus_acquisition.downloader: Page 21 not found (1/3).
+2026-07-18 12:57:27,505 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=22&scale=80
+2026-07-18 12:57:27,505 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_22.jpg
+2026-07-18 12:57:27,727 [WARNING] src.corpus_acquisition.downloader: Page 22 not found (2/3).
+2026-07-18 12:57:27,727 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eags2025042200000000001001&page=23&scale=80
+2026-07-18 12:57:27,727 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/22/ojo_2025-04-22_23.jpg
+2026-07-18 12:57:27,951 [WARNING] src.corpus_acquisition.downloader: Page 23 not found (3/3).
+2026-07-18 12:57:27,951 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 20 page(s).
+2026-07-18 12:57:27,999 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 20 page(s) -> data/raw/metadata/ojo_metadata.parquet (total rows: 36999)
+2026-07-18 12:57:28,002 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/ojo_2025-04-22.json (status=success)
+2026-07-18 12:57:28,718 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=1&scale=80
+2026-07-18 12:57:28,719 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_1.jpg
+2026-07-18 12:57:30,835 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=2&scale=80
+2026-07-18 12:57:30,835 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_2.jpg
+2026-07-18 12:57:34,660 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=3&scale=80
+2026-07-18 12:57:34,660 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_3.jpg
+2026-07-18 12:57:36,798 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=4&scale=80
+2026-07-18 12:57:36,798 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_4.jpg
+2026-07-18 12:57:39,505 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=5&scale=80
+2026-07-18 12:57:39,506 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_5.jpg
+2026-07-18 12:57:44,317 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=6&scale=80
+2026-07-18 12:57:44,317 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_6.jpg
+2026-07-18 12:57:47,447 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=7&scale=80
+2026-07-18 12:57:47,448 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_7.jpg
+2026-07-18 12:57:49,800 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=8&scale=80
+2026-07-18 12:57:49,800 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_8.jpg
+2026-07-18 12:57:52,227 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=9&scale=80
+2026-07-18 12:57:52,227 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_9.jpg
+2026-07-18 12:57:55,302 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=10&scale=80
+2026-07-18 12:57:55,302 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_10.jpg
+2026-07-18 12:57:58,190 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=11&scale=80
+2026-07-18 12:57:58,190 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_11.jpg
+2026-07-18 12:58:00,882 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=12&scale=80
+2026-07-18 12:58:00,883 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_12.jpg
+2026-07-18 12:58:03,576 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=13&scale=80
+2026-07-18 12:58:03,576 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_13.jpg
+2026-07-18 12:58:06,244 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=14&scale=80
+2026-07-18 12:58:06,245 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_14.jpg
+2026-07-18 12:58:09,257 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=15&scale=80
+2026-07-18 12:58:09,257 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_15.jpg
+2026-07-18 12:58:11,566 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=16&scale=80
+2026-07-18 12:58:11,566 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_16.jpg
+2026-07-18 12:58:14,557 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=17&scale=80
+2026-07-18 12:58:14,558 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_17.jpg
+2026-07-18 12:58:17,238 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=18&scale=80
+2026-07-18 12:58:17,238 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_18.jpg
+2026-07-18 12:58:19,191 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=19&scale=80
+2026-07-18 12:58:19,191 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_19.jpg
+2026-07-18 12:58:21,127 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=20&scale=80
+2026-07-18 12:58:21,127 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_20.jpg
+2026-07-18 12:58:24,367 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=21&scale=80
+2026-07-18 12:58:24,367 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_21.jpg
+2026-07-18 12:58:24,606 [WARNING] src.corpus_acquisition.downloader: Page 21 not found (1/3).
+2026-07-18 12:58:24,606 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=22&scale=80
+2026-07-18 12:58:24,606 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_22.jpg
+2026-07-18 12:58:24,822 [WARNING] src.corpus_acquisition.downloader: Page 22 not found (2/3).
+2026-07-18 12:58:24,823 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eags2025042300000000001001&page=23&scale=80
+2026-07-18 12:58:24,823 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/23/ojo_2025-04-23_23.jpg
+2026-07-18 12:58:25,120 [WARNING] src.corpus_acquisition.downloader: Page 23 not found (3/3).
+2026-07-18 12:58:25,120 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 20 page(s).
+2026-07-18 12:58:25,168 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 20 page(s) -> data/raw/metadata/ojo_metadata.parquet (total rows: 37019)
+2026-07-18 12:58:25,170 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/ojo_2025-04-23.json (status=success)
+2026-07-18 12:58:25,978 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=1&scale=80
+2026-07-18 12:58:25,979 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_1.jpg
+2026-07-18 12:58:27,801 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=2&scale=80
+2026-07-18 12:58:27,801 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_2.jpg
+2026-07-18 12:58:30,827 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=3&scale=80
+2026-07-18 12:58:30,828 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_3.jpg
+2026-07-18 12:58:33,387 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=4&scale=80
+2026-07-18 12:58:33,387 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_4.jpg
+2026-07-18 12:58:35,832 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=5&scale=80
+2026-07-18 12:58:35,832 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_5.jpg
+2026-07-18 12:58:37,968 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=6&scale=80
+2026-07-18 12:58:37,968 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_6.jpg
+2026-07-18 12:58:41,462 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=7&scale=80
+2026-07-18 12:58:41,462 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_7.jpg
+2026-07-18 12:58:44,623 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=8&scale=80
+2026-07-18 12:58:44,623 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_8.jpg
+2026-07-18 12:58:47,733 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=9&scale=80
+2026-07-18 12:58:47,733 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_9.jpg
+2026-07-18 12:58:51,942 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=10&scale=80
+2026-07-18 12:58:51,942 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_10.jpg
+2026-07-18 12:58:54,628 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=11&scale=80
+2026-07-18 12:58:54,628 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_11.jpg
+2026-07-18 12:58:56,917 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=12&scale=80
+2026-07-18 12:58:56,917 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_12.jpg
+2026-07-18 12:59:00,477 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=13&scale=80
+2026-07-18 12:59:00,477 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_13.jpg
+2026-07-18 12:59:02,843 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=14&scale=80
+2026-07-18 12:59:02,843 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_14.jpg
+2026-07-18 12:59:05,492 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=15&scale=80
+2026-07-18 12:59:05,493 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_15.jpg
+2026-07-18 12:59:08,342 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=16&scale=80
+2026-07-18 12:59:08,342 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_16.jpg
+2026-07-18 12:59:11,251 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=17&scale=80
+2026-07-18 12:59:11,252 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_17.jpg
+2026-07-18 12:59:13,276 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=18&scale=80
+2026-07-18 12:59:13,276 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_18.jpg
+2026-07-18 12:59:15,572 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=19&scale=80
+2026-07-18 12:59:15,573 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_19.jpg
+2026-07-18 12:59:18,304 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=20&scale=80
+2026-07-18 12:59:18,304 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_20.jpg
+2026-07-18 12:59:21,357 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=21&scale=80
+2026-07-18 12:59:21,358 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_21.jpg
+2026-07-18 12:59:21,582 [WARNING] src.corpus_acquisition.downloader: Page 21 not found (1/3).
+2026-07-18 12:59:21,582 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=22&scale=80
+2026-07-18 12:59:21,583 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_22.jpg
+2026-07-18 12:59:21,791 [WARNING] src.corpus_acquisition.downloader: Page 22 not found (2/3).
+2026-07-18 12:59:21,792 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eags2025042400000000001001&page=23&scale=80
+2026-07-18 12:59:21,792 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/24/ojo_2025-04-24_23.jpg
+2026-07-18 12:59:22,114 [WARNING] src.corpus_acquisition.downloader: Page 23 not found (3/3).
+2026-07-18 12:59:22,114 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 20 page(s).
+2026-07-18 12:59:22,166 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 20 page(s) -> data/raw/metadata/ojo_metadata.parquet (total rows: 37039)
+2026-07-18 12:59:22,169 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/ojo_2025-04-24.json (status=success)
+2026-07-18 12:59:22,987 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=1&scale=80
+2026-07-18 12:59:22,988 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_1.jpg
+2026-07-18 12:59:25,793 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=2&scale=80
+2026-07-18 12:59:25,793 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_2.jpg
+2026-07-18 12:59:28,442 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=3&scale=80
+2026-07-18 12:59:28,443 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_3.jpg
+2026-07-18 12:59:31,744 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=4&scale=80
+2026-07-18 12:59:31,744 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_4.jpg
+2026-07-18 12:59:34,414 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=5&scale=80
+2026-07-18 12:59:34,414 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_5.jpg
+2026-07-18 12:59:36,656 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=6&scale=80
+2026-07-18 12:59:36,657 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_6.jpg
+2026-07-18 12:59:39,507 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=7&scale=80
+2026-07-18 12:59:39,507 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_7.jpg
+2026-07-18 12:59:42,073 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=8&scale=80
+2026-07-18 12:59:42,073 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_8.jpg
+2026-07-18 12:59:44,931 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=9&scale=80
+2026-07-18 12:59:44,931 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_9.jpg
+2026-07-18 12:59:47,534 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=10&scale=80
+2026-07-18 12:59:47,534 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_10.jpg
+2026-07-18 12:59:50,646 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=11&scale=80
+2026-07-18 12:59:50,646 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_11.jpg
+2026-07-18 12:59:52,586 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=12&scale=80
+2026-07-18 12:59:52,586 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_12.jpg
+2026-07-18 12:59:55,736 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=13&scale=80
+2026-07-18 12:59:55,736 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_13.jpg
+2026-07-18 12:59:58,535 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=14&scale=80
+2026-07-18 12:59:58,536 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_14.jpg
+2026-07-18 13:00:00,971 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=15&scale=80
+2026-07-18 13:00:00,971 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_15.jpg
+2026-07-18 13:00:03,991 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=16&scale=80
+2026-07-18 13:00:03,991 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_16.jpg
+2026-07-18 13:00:05,882 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=17&scale=80
+2026-07-18 13:00:05,882 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_17.jpg
+2026-07-18 13:00:08,887 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=18&scale=80
+2026-07-18 13:00:09,179 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_18.jpg
+2026-07-18 13:00:11,902 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=19&scale=80
+2026-07-18 13:00:11,902 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_19.jpg
+2026-07-18 13:00:15,119 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=20&scale=80
+2026-07-18 13:00:15,119 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_20.jpg
+2026-07-18 13:00:17,883 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=21&scale=80
+2026-07-18 13:00:17,883 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_21.jpg
+2026-07-18 13:00:18,200 [WARNING] src.corpus_acquisition.downloader: Page 21 not found (1/3).
+2026-07-18 13:00:18,201 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=22&scale=80
+2026-07-18 13:00:18,201 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_22.jpg
+2026-07-18 13:00:18,409 [WARNING] src.corpus_acquisition.downloader: Page 22 not found (2/3).
+2026-07-18 13:00:18,410 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eags2025042500000000001001&page=23&scale=80
+2026-07-18 13:00:18,410 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/25/ojo_2025-04-25_23.jpg
+2026-07-18 13:00:18,611 [WARNING] src.corpus_acquisition.downloader: Page 23 not found (3/3).
+2026-07-18 13:00:18,611 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 20 page(s).
+2026-07-18 13:00:18,661 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 20 page(s) -> data/raw/metadata/ojo_metadata.parquet (total rows: 37059)
+2026-07-18 13:00:18,663 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/ojo_2025-04-25.json (status=success)
+2026-07-18 13:00:19,580 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=1&scale=80
+2026-07-18 13:00:19,581 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_1.jpg
+2026-07-18 13:00:22,274 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=2&scale=80
+2026-07-18 13:00:22,274 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_2.jpg
+2026-07-18 13:00:26,087 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=3&scale=80
+2026-07-18 13:00:26,088 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_3.jpg
+2026-07-18 13:00:28,306 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=4&scale=80
+2026-07-18 13:00:28,306 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_4.jpg
+2026-07-18 13:00:31,539 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=5&scale=80
+2026-07-18 13:00:31,540 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_5.jpg
+2026-07-18 13:00:34,180 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=6&scale=80
+2026-07-18 13:00:34,180 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_6.jpg
+2026-07-18 13:00:36,872 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=7&scale=80
+2026-07-18 13:00:36,872 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_7.jpg
+2026-07-18 13:00:39,375 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=8&scale=80
+2026-07-18 13:00:39,376 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_8.jpg
+2026-07-18 13:00:42,482 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=9&scale=80
+2026-07-18 13:00:42,482 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_9.jpg
+2026-07-18 13:00:45,034 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=10&scale=80
+2026-07-18 13:00:45,035 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_10.jpg
+2026-07-18 13:00:47,427 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=11&scale=80
+2026-07-18 13:00:47,428 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_11.jpg
+2026-07-18 13:00:49,965 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=12&scale=80
+2026-07-18 13:00:49,966 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_12.jpg
+2026-07-18 13:00:52,263 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=13&scale=80
+2026-07-18 13:00:52,263 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_13.jpg
+2026-07-18 13:00:54,864 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=14&scale=80
+2026-07-18 13:00:54,865 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_14.jpg
+2026-07-18 13:00:57,836 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=15&scale=80
+2026-07-18 13:00:57,836 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_15.jpg
+2026-07-18 13:01:00,430 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=16&scale=80
+2026-07-18 13:01:00,430 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_16.jpg
+2026-07-18 13:01:02,654 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=17&scale=80
+2026-07-18 13:01:02,655 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_17.jpg
+2026-07-18 13:01:05,472 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=18&scale=80
+2026-07-18 13:01:05,472 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_18.jpg
+2026-07-18 13:01:08,247 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=19&scale=80
+2026-07-18 13:01:08,248 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_19.jpg
+2026-07-18 13:01:10,670 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=20&scale=80
+2026-07-18 13:01:10,670 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_20.jpg
+2026-07-18 13:01:12,945 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=21&scale=80
+2026-07-18 13:01:12,945 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_21.jpg
+2026-07-18 13:01:13,158 [WARNING] src.corpus_acquisition.downloader: Page 21 not found (1/3).
+2026-07-18 13:01:13,159 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=22&scale=80
+2026-07-18 13:01:13,159 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_22.jpg
+2026-07-18 13:01:13,477 [WARNING] src.corpus_acquisition.downloader: Page 22 not found (2/3).
+2026-07-18 13:01:13,477 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eags2025042600000000001001&page=23&scale=80
+2026-07-18 13:01:13,478 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/26/ojo_2025-04-26_23.jpg
+2026-07-18 13:01:13,696 [WARNING] src.corpus_acquisition.downloader: Page 23 not found (3/3).
+2026-07-18 13:01:13,696 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 20 page(s).
+2026-07-18 13:01:13,744 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 20 page(s) -> data/raw/metadata/ojo_metadata.parquet (total rows: 37079)
+2026-07-18 13:01:13,746 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/ojo_2025-04-26.json (status=success)
+2026-07-18 13:01:14,663 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=1&scale=80
+2026-07-18 13:01:14,665 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_1.jpg
+2026-07-18 13:01:16,899 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=2&scale=80
+2026-07-18 13:01:16,899 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_2.jpg
+2026-07-18 13:01:20,392 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=3&scale=80
+2026-07-18 13:01:20,393 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_3.jpg
+2026-07-18 13:01:22,576 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=4&scale=80
+2026-07-18 13:01:22,576 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_4.jpg
+2026-07-18 13:01:25,276 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=5&scale=80
+2026-07-18 13:01:25,277 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_5.jpg
+2026-07-18 13:01:28,063 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=6&scale=80
+2026-07-18 13:01:28,064 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_6.jpg
+2026-07-18 13:01:30,387 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=7&scale=80
+2026-07-18 13:01:30,388 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_7.jpg
+2026-07-18 13:01:32,683 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=8&scale=80
+2026-07-18 13:01:32,683 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_8.jpg
+2026-07-18 13:01:35,592 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=9&scale=80
+2026-07-18 13:01:35,593 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_9.jpg
+2026-07-18 13:01:38,375 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=10&scale=80
+2026-07-18 13:01:38,376 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_10.jpg
+2026-07-18 13:01:41,120 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=11&scale=80
+2026-07-18 13:01:41,120 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_11.jpg
+2026-07-18 13:01:43,899 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=12&scale=80
+2026-07-18 13:01:43,900 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_12.jpg
+2026-07-18 13:01:45,998 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=13&scale=80
+2026-07-18 13:01:45,998 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_13.jpg
+2026-07-18 13:01:49,159 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=14&scale=80
+2026-07-18 13:01:49,159 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_14.jpg
+2026-07-18 13:01:52,149 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=15&scale=80
+2026-07-18 13:01:52,149 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_15.jpg
+2026-07-18 13:01:54,677 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=16&scale=80
+2026-07-18 13:01:54,678 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_16.jpg
+2026-07-18 13:01:56,982 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=17&scale=80
+2026-07-18 13:01:56,982 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_17.jpg
+2026-07-18 13:02:01,115 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=18&scale=80
+2026-07-18 13:02:01,115 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_18.jpg
+2026-07-18 13:02:04,550 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=19&scale=80
+2026-07-18 13:02:04,551 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_19.jpg
+2026-07-18 13:02:07,216 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=20&scale=80
+2026-07-18 13:02:07,217 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_20.jpg
+2026-07-18 13:02:09,890 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=21&scale=80
+2026-07-18 13:02:09,890 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_21.jpg
+2026-07-18 13:02:10,116 [WARNING] src.corpus_acquisition.downloader: Page 21 not found (1/3).
+2026-07-18 13:02:10,117 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=22&scale=80
+2026-07-18 13:02:10,117 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_22.jpg
+2026-07-18 13:02:10,339 [WARNING] src.corpus_acquisition.downloader: Page 22 not found (2/3).
+2026-07-18 13:02:10,339 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eags2025042700000000001001&page=23&scale=80
+2026-07-18 13:02:10,339 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/27/ojo_2025-04-27_23.jpg
+2026-07-18 13:02:10,561 [WARNING] src.corpus_acquisition.downloader: Page 23 not found (3/3).
+2026-07-18 13:02:10,561 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 20 page(s).
+2026-07-18 13:02:10,611 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 20 page(s) -> data/raw/metadata/ojo_metadata.parquet (total rows: 37099)
+2026-07-18 13:02:10,615 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/ojo_2025-04-27.json (status=success)
+2026-07-18 13:02:11,821 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=1&scale=80
+2026-07-18 13:02:11,822 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_1.jpg
+2026-07-18 13:02:14,606 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=2&scale=80
+2026-07-18 13:02:14,607 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_2.jpg
+2026-07-18 13:02:17,947 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=3&scale=80
+2026-07-18 13:02:17,948 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_3.jpg
+2026-07-18 13:02:20,460 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=4&scale=80
+2026-07-18 13:02:20,461 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_4.jpg
+2026-07-18 13:02:23,553 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=5&scale=80
+2026-07-18 13:02:23,553 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_5.jpg
+2026-07-18 13:02:26,139 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=6&scale=80
+2026-07-18 13:02:26,139 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_6.jpg
+2026-07-18 13:02:28,951 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=7&scale=80
+2026-07-18 13:02:28,951 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_7.jpg
+2026-07-18 13:02:32,225 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=8&scale=80
+2026-07-18 13:02:32,226 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_8.jpg
+2026-07-18 13:02:34,810 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=9&scale=80
+2026-07-18 13:02:34,810 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_9.jpg
+2026-07-18 13:02:37,949 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=10&scale=80
+2026-07-18 13:02:37,949 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_10.jpg
+2026-07-18 13:02:41,288 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=11&scale=80
+2026-07-18 13:02:41,288 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_11.jpg
+2026-07-18 13:02:44,160 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=12&scale=80
+2026-07-18 13:02:44,160 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_12.jpg
+2026-07-18 13:02:46,597 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=13&scale=80
+2026-07-18 13:02:46,598 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_13.jpg
+2026-07-18 13:02:49,349 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=14&scale=80
+2026-07-18 13:02:49,349 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_14.jpg
+2026-07-18 13:02:51,926 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=15&scale=80
+2026-07-18 13:02:51,926 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_15.jpg
+2026-07-18 13:02:54,577 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=16&scale=80
+2026-07-18 13:02:54,578 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_16.jpg
+2026-07-18 13:02:57,292 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=17&scale=80
+2026-07-18 13:02:57,293 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_17.jpg
+2026-07-18 13:03:00,160 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=18&scale=80
+2026-07-18 13:03:00,160 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_18.jpg
+2026-07-18 13:03:02,667 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=19&scale=80
+2026-07-18 13:03:02,668 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_19.jpg
+2026-07-18 13:03:05,330 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=20&scale=80
+2026-07-18 13:03:05,330 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_20.jpg
+2026-07-18 13:03:07,701 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=21&scale=80
+2026-07-18 13:03:07,701 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_21.jpg
+2026-07-18 13:03:08,005 [WARNING] src.corpus_acquisition.downloader: Page 21 not found (1/3).
+2026-07-18 13:03:08,006 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=22&scale=80
+2026-07-18 13:03:08,006 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_22.jpg
+2026-07-18 13:03:08,220 [WARNING] src.corpus_acquisition.downloader: Page 22 not found (2/3).
+2026-07-18 13:03:08,221 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eags2025042800000000001001&page=23&scale=80
+2026-07-18 13:03:08,221 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/28/ojo_2025-04-28_23.jpg
+2026-07-18 13:03:08,432 [WARNING] src.corpus_acquisition.downloader: Page 23 not found (3/3).
+2026-07-18 13:03:08,432 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 20 page(s).
+2026-07-18 13:03:08,480 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 20 page(s) -> data/raw/metadata/ojo_metadata.parquet (total rows: 37119)
+2026-07-18 13:03:08,483 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/ojo_2025-04-28.json (status=success)
+2026-07-18 13:03:09,963 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eags2025042900000000001001&page=1&scale=80
+2026-07-18 13:03:09,964 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/29/ojo_2025-04-29_1.jpg
+2026-07-18 13:03:12,370 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eags2025042900000000001001&page=2&scale=80
+2026-07-18 13:03:12,370 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/29/ojo_2025-04-29_2.jpg
+2026-07-18 13:03:16,220 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eags2025042900000000001001&page=3&scale=80
+2026-07-18 13:03:16,221 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/29/ojo_2025-04-29_3.jpg
+2026-07-18 13:03:19,146 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eags2025042900000000001001&page=4&scale=80
+2026-07-18 13:03:19,146 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/29/ojo_2025-04-29_4.jpg
+2026-07-18 13:03:21,889 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eags2025042900000000001001&page=5&scale=80
+2026-07-18 13:03:21,890 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/29/ojo_2025-04-29_5.jpg
+2026-07-18 13:03:23,815 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eags2025042900000000001001&page=6&scale=80
+2026-07-18 13:03:23,815 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/29/ojo_2025-04-29_6.jpg
+2026-07-18 13:03:26,874 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eags2025042900000000001001&page=7&scale=80
+2026-07-18 13:03:26,874 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/29/ojo_2025-04-29_7.jpg
+2026-07-18 13:03:29,995 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eags2025042900000000001001&page=8&scale=80
+2026-07-18 13:03:29,995 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/29/ojo_2025-04-29_8.jpg
+2026-07-18 13:03:32,254 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eags2025042900000000001001&page=9&scale=80
+2026-07-18 13:03:32,254 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/29/ojo_2025-04-29_9.jpg
+2026-07-18 13:03:34,887 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eags2025042900000000001001&page=10&scale=80
+2026-07-18 13:03:34,888 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/29/ojo_2025-04-29_10.jpg
+2026-07-18 13:03:38,022 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eags2025042900000000001001&page=11&scale=80
+2026-07-18 13:03:38,023 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/29/ojo_2025-04-29_11.jpg
+2026-07-18 13:03:41,130 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eags2025042900000000001001&page=12&scale=80
+2026-07-18 13:03:41,130 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/29/ojo_2025-04-29_12.jpg
+2026-07-18 13:03:43,812 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eags2025042900000000001001&page=13&scale=80
+2026-07-18 13:03:43,812 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/29/ojo_2025-04-29_13.jpg
+2026-07-18 13:03:45,906 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eags2025042900000000001001&page=14&scale=80
+2026-07-18 13:03:45,906 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/29/ojo_2025-04-29_14.jpg
+2026-07-18 13:03:48,229 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eags2025042900000000001001&page=15&scale=80
+2026-07-18 13:03:48,230 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/29/ojo_2025-04-29_15.jpg
+2026-07-18 13:03:52,270 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eags2025042900000000001001&page=16&scale=80
+2026-07-18 13:03:52,271 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/29/ojo_2025-04-29_16.jpg
+2026-07-18 13:03:55,420 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eags2025042900000000001001&page=17&scale=80
+2026-07-18 13:03:55,421 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/29/ojo_2025-04-29_17.jpg
+2026-07-18 13:03:58,516 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eags2025042900000000001001&page=18&scale=80
+2026-07-18 13:03:58,516 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/29/ojo_2025-04-29_18.jpg

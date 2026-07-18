@@ -1,0 +1,48 @@
+2026-07-18 13:03:32,631 [INFO] __main__: Logging in to portal...
+2026-07-18 13:03:32,632 [WARNING] __main__: PressReader login is currently disabled. Proceeding without login.
+2026-07-18 13:03:32,637 [INFO] src.corpus_acquisition.downloader: Skipping correo on 2024-08-29: already crawled successfully.
+2026-07-18 13:03:33,502 [INFO] src.corpus_acquisition.downloader: Page 1 already downloaded, skipping.
+2026-07-18 13:03:33,503 [INFO] src.corpus_acquisition.downloader: Page 2 already downloaded, skipping.
+2026-07-18 13:03:33,509 [INFO] src.corpus_acquisition.downloader: Page 3 already downloaded, skipping.
+2026-07-18 13:03:33,510 [INFO] src.corpus_acquisition.downloader: Page 4 already downloaded, skipping.
+2026-07-18 13:03:33,510 [INFO] src.corpus_acquisition.downloader: Page 5 already downloaded, skipping.
+2026-07-18 13:03:33,511 [INFO] src.corpus_acquisition.downloader: Page 6 already downloaded, skipping.
+2026-07-18 13:03:33,511 [INFO] src.corpus_acquisition.downloader: Page 7 already downloaded, skipping.
+2026-07-18 13:03:33,512 [INFO] src.corpus_acquisition.downloader: Page 8 already downloaded, skipping.
+2026-07-18 13:03:33,512 [INFO] src.corpus_acquisition.downloader: Page 9 already downloaded, skipping.
+2026-07-18 13:03:33,512 [INFO] src.corpus_acquisition.downloader: Page 10 already downloaded, skipping.
+2026-07-18 13:03:33,513 [INFO] src.corpus_acquisition.downloader: Page 11 already downloaded, skipping.
+2026-07-18 13:03:33,513 [INFO] src.corpus_acquisition.downloader: Page 12 already downloaded, skipping.
+2026-07-18 13:03:33,514 [INFO] src.corpus_acquisition.downloader: Page 13 already downloaded, skipping.
+2026-07-18 13:03:33,514 [INFO] src.corpus_acquisition.downloader: Page 14 already downloaded, skipping.
+2026-07-18 13:03:33,515 [INFO] src.corpus_acquisition.downloader: Page 15 already downloaded, skipping.
+2026-07-18 13:03:33,515 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eagb2024083000000000001001&page=16&scale=78
+2026-07-18 13:03:33,515 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/correo/2024/08/30/correo_2024-08-30_16.jpg
+2026-07-18 13:03:37,551 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eagb2024083000000000001001&page=17&scale=78
+2026-07-18 13:03:37,551 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/correo/2024/08/30/correo_2024-08-30_17.jpg
+2026-07-18 13:03:40,589 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eagb2024083000000000001001&page=18&scale=78
+2026-07-18 13:03:40,590 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/correo/2024/08/30/correo_2024-08-30_18.jpg
+2026-07-18 13:03:42,790 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eagb2024083000000000001001&page=19&scale=78
+2026-07-18 13:03:42,791 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/correo/2024/08/30/correo_2024-08-30_19.jpg
+2026-07-18 13:03:45,572 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eagb2024083000000000001001&page=20&scale=78
+2026-07-18 13:03:45,572 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/correo/2024/08/30/correo_2024-08-30_20.jpg
+2026-07-18 13:03:47,737 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eagb2024083000000000001001&page=21&scale=78
+2026-07-18 13:03:47,737 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/correo/2024/08/30/correo_2024-08-30_21.jpg
+2026-07-18 13:03:47,990 [WARNING] src.corpus_acquisition.downloader: Page 21 not found (1/3).
+2026-07-18 13:03:47,991 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eagb2024083000000000001001&page=22&scale=78
+2026-07-18 13:03:47,991 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/correo/2024/08/30/correo_2024-08-30_22.jpg
+2026-07-18 13:03:48,218 [WARNING] src.corpus_acquisition.downloader: Page 22 not found (2/3).
+2026-07-18 13:03:48,218 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eagb2024083000000000001001&page=23&scale=78
+2026-07-18 13:03:48,218 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/correo/2024/08/30/correo_2024-08-30_23.jpg
+2026-07-18 13:03:48,420 [WARNING] src.corpus_acquisition.downloader: Page 23 not found (3/3).
+2026-07-18 13:03:48,420 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 5 page(s).
+2026-07-18 13:03:48,473 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 5 page(s) -> data/raw/metadata/correo_metadata.parquet (total rows: 33798)
+2026-07-18 13:03:48,479 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/correo_2024-08-30.json (status=success)
+2026-07-18 13:03:48,998 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eagb2024083100000000001001&page=1&scale=78
+2026-07-18 13:03:49,003 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/correo/2024/08/31/correo_2024-08-31_1.jpg
+2026-07-18 13:03:51,140 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eagb2024083100000000001001&page=2&scale=78
+2026-07-18 13:03:51,141 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/correo/2024/08/31/correo_2024-08-31_2.jpg
+2026-07-18 13:03:54,501 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eagb2024083100000000001001&page=3&scale=78
+2026-07-18 13:03:54,501 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/correo/2024/08/31/correo_2024-08-31_3.jpg
+2026-07-18 13:03:57,371 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eagb2024083100000000001001&page=4&scale=78
+2026-07-18 13:03:57,372 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/correo/2024/08/31/correo_2024-08-31_4.jpg

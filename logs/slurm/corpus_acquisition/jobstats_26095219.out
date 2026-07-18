@@ -1,0 +1,45 @@
+
+================================================================================
+                              Slurm Job Statistics                              
+================================================================================
+         Job ID: 26095219
+   User/Account: nicolasal97/agfritz
+       Job Name: corpus_acquisition
+          State: TIMEOUT
+          Nodes: 1
+      CPU Cores: 1
+     CPU Memory: 10GB
+  QOS/Partition: standard/scavenger
+        Cluster: curta
+     Start Time: Thu Jul 16, 2026 at 6:16 PM
+       Run Time: 1-00:00:10
+     Time Limit: 1-00:00:00
+
+                              Overall Utilization                               
+================================================================================
+  CPU utilization  [||||||||||||                                   25%]
+  CPU memory usage [|||||||||||||||||||||||||||||||||||||||||||||||99%]
+
+                              Detailed Utilization                              
+================================================================================
+  CPU utilization per node (CPU time used/run time)
+      c003.curta.zedat.fu-berlin.de: 06:05:10/1-00:00:10 (efficiency=25.4%)
+
+  CPU memory usage per node - used/allocated
+      c003.curta.zedat.fu-berlin.de: 9.9GB/10GB 
+
+                                     Notes                                      
+================================================================================
+  * The overall CPU utilization of this job is 25.4%. This value is low
+    compared to the target range of 90% and above. Please investigate the
+    reason for the low efficiency. For more info:
+      https://www.fu-berlin.de/en/sites/high-performance-computing/Dokumentation/Ressourcennutzung
+
+  * This job failed because it exceeded the time limit. If there are no other
+    problems then the solution is to increase the value of the --time Slurm
+    directive and resubmit the job. For more info:
+      https://www.fu-berlin.de/en/sites/high-performance-computing/Dokumentation/Ressourcen-Manager/Zeitlimit
+
+  * Have a nice day!
+
+

@@ -59824,3 +59824,7 @@ Call log:
 2026-07-16 18:25:05,271 [ERROR] src.corpus_acquisition.downloader: Failed to download page 4: APIRequestContext.get: Connection closed while reading from the driver
 2026-07-16 18:25:05,292 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eags2025042000000000001001&page=5&scale=80
 2026-07-16 18:25:05,297 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/ojo/2025/04/20/ojo_2025-04-20_5.jpg
+[2026-07-17T10:01:55.118] error: slurm_get_node_energy: Socket timed out on send/recv operation
+[2026-07-17T10:01:55.129] error: _get_joules_task: can't get info from slurmd
+[2026-07-17T23:21:32.066] error: *** JOB 26096000 ON c003 CANCELLED AT 2026-07-17T23:21:32 DUE TO TIME LIMIT ***
+[2026-07-17T23:21:32.576] error: Detected 1 oom_kill event in StepId=26096000.batch. Some of the step tasks have been OOM Killed.

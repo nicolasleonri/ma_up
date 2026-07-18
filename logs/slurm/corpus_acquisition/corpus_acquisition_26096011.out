@@ -54178,3 +54178,7 @@ Call log:
 2026-07-16 18:07:08,029 [ERROR] src.corpus_acquisition.downloader: Failed to download page 13: APIRequestContext.get: Connection closed while reading from the driver
 2026-07-16 18:07:08,030 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag82023111200000000001001&page=14&scale=78
 2026-07-16 18:07:08,030 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/12/trome_2023-11-12_14.jpg
+[2026-07-17T10:02:01.118] error: slurm_get_node_energy: Socket timed out on send/recv operation
+[2026-07-17T10:02:01.129] error: _get_joules_task: can't get info from slurmd
+[2026-07-18T12:59:42.040] error: *** JOB 26096011 ON c003 CANCELLED AT 2026-07-18T12:59:42 DUE to SIGNAL Terminated ***
+[2026-07-18T12:59:42.348] error: Detected 1 oom_kill event in StepId=26096011.batch. Some of the step tasks have been OOM Killed.

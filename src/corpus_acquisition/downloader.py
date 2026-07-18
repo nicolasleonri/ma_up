@@ -116,8 +116,8 @@ class CorpusDownloader:
                     time.sleep(random.uniform(0.5, 1.5))  # Delay to prevent overwhelming the server
                 except BrowserCrashedError:
                     raise
-                except RateLimitedError:
-                    raise   # stop the whole range immediately, don't try the next date
+                # except RateLimitedError:
+                #     raise   # stop the whole range immediately, don't try the next date
                 except Exception as exc:
                     logger.error(
                         "Skipping %s on %s due to unrecoverable error: %s",
@@ -161,24 +161,24 @@ class CorpusDownloader:
         if config.get("download_method") == "direct":
             # print(config.get("download_method"))
             # print(config)
-            if config.get("selector_text") == "Trome":
-                return self._download_direct(
-                newspaper=newspaper,
-                config=config,
-                date=date,
-                expected_pages=expected_pages,
-                scale=78,
-                skip_existing=skip_existing,
-            )
-            elif config.get("selector_text") == "Correo":
-                return self._download_direct(
-                newspaper=newspaper,
-                config=config,
-                date=date,
-                expected_pages=expected_pages,
-                scale=78,
-                skip_existing=skip_existing,
-            )
+            # if config.get("selector_text") == "Trome":
+            #     return self._download_direct(
+            #     newspaper=newspaper,
+            #     config=config,
+            #     date=date,
+            #     expected_pages=expected_pages,
+            #     scale=78,
+            #     skip_existing=skip_existing,
+            # )
+            # elif config.get("selector_text") == "Correo":
+            #     return self._download_direct(
+            #     newspaper=newspaper,
+            #     config=config,
+            #     date=date,
+            #     expected_pages=expected_pages,
+            #     scale=78,
+            #     skip_existing=skip_existing,
+            # )
 
             return self._download_direct(
                 newspaper=newspaper,
@@ -249,13 +249,14 @@ class CorpusDownloader:
             try:
                 crawler.download_page(page_url, page_number, path=str(output_path))
             except RateLimitedError:
-                logger.error("Rate-limited (403) on page %d for %s on %s; aborting run.", page_number, newspaper, date_str)
-                meta.save_crawl_log(
-                    newspaper, date, status="failed", pages_downloaded=len(pages),
-                    pages_expected=expected_pages, error="rate_limited_403",
-                    log_dir=self.log_dir,
+                logger.warning(
+                    "Rate-limited (403) on page %d for %s on %s; skipping page.",
+                    page_number,
+                    newspaper,
+                    date_str,
                 )
-                raise
+                failures += 1
+                continue
             except Exception as exc:
                 logger.error("Failed to download page %d: %s", page_number, exc)
                 failures += 1
@@ -453,22 +454,14 @@ class CorpusDownloader:
                 stall_rounds = 0
 
             except RateLimitedError:
-                logger.error(
-                    "Rate-limited (403) on page %d for %s on %s; aborting run.",
+                logger.warning(
+                    "Rate-limited (403) on page %d for %s on %s; skipping page.",
                     page_number,
                     newspaper,
                     date.strftime("%Y-%m-%d"),
                 )
-                meta.save_crawl_log(
-                    newspaper,
-                    date,
-                    status="failed",
-                    pages_downloaded=len(pages),
-                    pages_expected=expected_pages,
-                    error="rate_limited_403",
-                    log_dir=self.log_dir,
-                )
-                raise
+                failures += 1
+                continue
 
             except Exception as exc:
 

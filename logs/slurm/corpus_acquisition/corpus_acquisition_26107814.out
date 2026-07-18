@@ -1,0 +1,1115 @@
+2026-07-18 12:55:32,254 [INFO] __main__: Logging in to portal...
+2026-07-18 12:55:32,254 [WARNING] __main__: PressReader login is currently disabled. Proceeding without login.
+2026-07-18 12:55:32,260 [INFO] src.corpus_acquisition.downloader: Skipping trome on 2023-11-10: already crawled successfully.
+2026-07-18 12:55:32,264 [INFO] src.corpus_acquisition.downloader: Skipping trome on 2023-11-11: already crawled successfully.
+2026-07-18 12:55:32,780 [INFO] src.corpus_acquisition.downloader: Page 1 already downloaded, skipping.
+2026-07-18 12:55:32,780 [INFO] src.corpus_acquisition.downloader: Page 2 already downloaded, skipping.
+2026-07-18 12:55:32,780 [INFO] src.corpus_acquisition.downloader: Page 3 already downloaded, skipping.
+2026-07-18 12:55:32,781 [INFO] src.corpus_acquisition.downloader: Page 4 already downloaded, skipping.
+2026-07-18 12:55:32,781 [INFO] src.corpus_acquisition.downloader: Page 5 already downloaded, skipping.
+2026-07-18 12:55:32,781 [INFO] src.corpus_acquisition.downloader: Page 6 already downloaded, skipping.
+2026-07-18 12:55:32,781 [INFO] src.corpus_acquisition.downloader: Page 7 already downloaded, skipping.
+2026-07-18 12:55:32,782 [INFO] src.corpus_acquisition.downloader: Page 8 already downloaded, skipping.
+2026-07-18 12:55:32,782 [INFO] src.corpus_acquisition.downloader: Page 9 already downloaded, skipping.
+2026-07-18 12:55:32,782 [INFO] src.corpus_acquisition.downloader: Page 10 already downloaded, skipping.
+2026-07-18 12:55:32,782 [INFO] src.corpus_acquisition.downloader: Page 11 already downloaded, skipping.
+2026-07-18 12:55:32,783 [INFO] src.corpus_acquisition.downloader: Page 12 already downloaded, skipping.
+2026-07-18 12:55:32,783 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag82023111200000000001001&page=13&scale=78
+2026-07-18 12:55:32,783 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/12/trome_2023-11-12_13.jpg
+2026-07-18 12:55:36,207 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag82023111200000000001001&page=14&scale=78
+2026-07-18 12:55:36,207 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/12/trome_2023-11-12_14.jpg
+2026-07-18 12:55:38,545 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag82023111200000000001001&page=15&scale=78
+2026-07-18 12:55:38,545 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/12/trome_2023-11-12_15.jpg
+2026-07-18 12:55:41,331 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag82023111200000000001001&page=16&scale=78
+2026-07-18 12:55:41,331 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/12/trome_2023-11-12_16.jpg
+2026-07-18 12:55:44,256 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag82023111200000000001001&page=17&scale=78
+2026-07-18 12:55:44,256 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/12/trome_2023-11-12_17.jpg
+2026-07-18 12:55:46,607 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag82023111200000000001001&page=18&scale=78
+2026-07-18 12:55:46,607 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/12/trome_2023-11-12_18.jpg
+2026-07-18 12:55:49,643 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag82023111200000000001001&page=19&scale=78
+2026-07-18 12:55:49,643 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/12/trome_2023-11-12_19.jpg
+2026-07-18 12:55:51,959 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag82023111200000000001001&page=20&scale=78
+2026-07-18 12:55:51,959 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/12/trome_2023-11-12_20.jpg
+2026-07-18 12:55:54,559 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag82023111200000000001001&page=21&scale=78
+2026-07-18 12:55:54,559 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/12/trome_2023-11-12_21.jpg
+2026-07-18 12:55:57,614 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag82023111200000000001001&page=22&scale=78
+2026-07-18 12:55:57,614 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/12/trome_2023-11-12_22.jpg
+2026-07-18 12:55:59,777 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag82023111200000000001001&page=23&scale=78
+2026-07-18 12:55:59,778 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/12/trome_2023-11-12_23.jpg
+2026-07-18 12:56:02,701 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://t.prcdn.co/img?file=eag82023111200000000001001&page=24&scale=78
+2026-07-18 12:56:02,702 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/12/trome_2023-11-12_24.jpg
+2026-07-18 12:56:05,423 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://t.prcdn.co/img?file=eag82023111200000000001001&page=25&scale=78
+2026-07-18 12:56:05,423 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/12/trome_2023-11-12_25.jpg
+2026-07-18 12:56:07,784 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://t.prcdn.co/img?file=eag82023111200000000001001&page=26&scale=78
+2026-07-18 12:56:07,784 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/12/trome_2023-11-12_26.jpg
+2026-07-18 12:56:10,781 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://t.prcdn.co/img?file=eag82023111200000000001001&page=27&scale=78
+2026-07-18 12:56:10,781 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/12/trome_2023-11-12_27.jpg
+2026-07-18 12:56:13,748 [INFO] src.corpus_acquisition.downloader: Downloading page 28 from https://t.prcdn.co/img?file=eag82023111200000000001001&page=28&scale=78
+2026-07-18 12:56:13,748 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/12/trome_2023-11-12_28.jpg
+2026-07-18 12:56:16,799 [INFO] src.corpus_acquisition.downloader: Downloading page 29 from https://t.prcdn.co/img?file=eag82023111200000000001001&page=29&scale=78
+2026-07-18 12:56:16,799 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/12/trome_2023-11-12_29.jpg
+2026-07-18 12:56:17,124 [WARNING] src.corpus_acquisition.downloader: Page 29 not found (1/3).
+2026-07-18 12:56:17,124 [INFO] src.corpus_acquisition.downloader: Downloading page 30 from https://t.prcdn.co/img?file=eag82023111200000000001001&page=30&scale=78
+2026-07-18 12:56:17,125 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/12/trome_2023-11-12_30.jpg
+2026-07-18 12:56:17,334 [WARNING] src.corpus_acquisition.downloader: Page 30 not found (2/3).
+2026-07-18 12:56:17,335 [INFO] src.corpus_acquisition.downloader: Downloading page 31 from https://t.prcdn.co/img?file=eag82023111200000000001001&page=31&scale=78
+2026-07-18 12:56:17,335 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/12/trome_2023-11-12_31.jpg
+2026-07-18 12:56:17,542 [WARNING] src.corpus_acquisition.downloader: Page 31 not found (3/3).
+2026-07-18 12:56:17,542 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 16 page(s).
+2026-07-18 12:56:17,593 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 16 page(s) -> data/raw/metadata/trome_metadata.parquet (total rows: 35507)
+2026-07-18 12:56:17,600 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/trome_2023-11-12.json (status=success)
+2026-07-18 12:56:19,055 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=1&scale=78
+2026-07-18 12:56:19,062 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_1.jpg
+2026-07-18 12:56:20,834 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=2&scale=78
+2026-07-18 12:56:20,834 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_2.jpg
+2026-07-18 12:56:23,860 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=3&scale=78
+2026-07-18 12:56:23,860 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_3.jpg
+2026-07-18 12:56:26,405 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=4&scale=78
+2026-07-18 12:56:26,406 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_4.jpg
+2026-07-18 12:56:29,710 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=5&scale=78
+2026-07-18 12:56:29,710 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_5.jpg
+2026-07-18 12:56:32,829 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=6&scale=78
+2026-07-18 12:56:32,830 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_6.jpg
+2026-07-18 12:56:35,544 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=7&scale=78
+2026-07-18 12:56:35,544 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_7.jpg
+2026-07-18 12:56:38,286 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=8&scale=78
+2026-07-18 12:56:38,287 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_8.jpg
+2026-07-18 12:56:41,157 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=9&scale=78
+2026-07-18 12:56:41,157 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_9.jpg
+2026-07-18 12:56:44,448 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=10&scale=78
+2026-07-18 12:56:44,449 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_10.jpg
+2026-07-18 12:56:47,212 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=11&scale=78
+2026-07-18 12:56:47,212 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_11.jpg
+2026-07-18 12:56:49,280 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=12&scale=78
+2026-07-18 12:56:49,280 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_12.jpg
+2026-07-18 12:56:51,835 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=13&scale=78
+2026-07-18 12:56:51,836 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_13.jpg
+2026-07-18 12:56:54,947 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=14&scale=78
+2026-07-18 12:56:54,948 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_14.jpg
+2026-07-18 12:56:58,066 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=15&scale=78
+2026-07-18 12:56:58,066 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_15.jpg
+2026-07-18 12:57:01,080 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=16&scale=78
+2026-07-18 12:57:01,080 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_16.jpg
+2026-07-18 12:57:03,853 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=17&scale=78
+2026-07-18 12:57:03,853 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_17.jpg
+2026-07-18 12:57:05,945 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=18&scale=78
+2026-07-18 12:57:05,945 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_18.jpg
+2026-07-18 12:57:09,327 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=19&scale=78
+2026-07-18 12:57:09,327 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_19.jpg
+2026-07-18 12:57:11,893 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=20&scale=78
+2026-07-18 12:57:11,893 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_20.jpg
+2026-07-18 12:57:15,807 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=21&scale=78
+2026-07-18 12:57:15,807 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_21.jpg
+2026-07-18 12:57:17,697 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=22&scale=78
+2026-07-18 12:57:17,697 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_22.jpg
+2026-07-18 12:57:21,112 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=23&scale=78
+2026-07-18 12:57:21,112 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_23.jpg
+2026-07-18 12:57:23,793 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=24&scale=78
+2026-07-18 12:57:23,793 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_24.jpg
+2026-07-18 12:57:24,071 [WARNING] src.corpus_acquisition.downloader: Page 24 not found (1/3).
+2026-07-18 12:57:24,072 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=25&scale=78
+2026-07-18 12:57:24,072 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_25.jpg
+2026-07-18 12:57:24,379 [WARNING] src.corpus_acquisition.downloader: Page 25 not found (2/3).
+2026-07-18 12:57:24,379 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://t.prcdn.co/img?file=eag82023111300000000001001&page=26&scale=78
+2026-07-18 12:57:24,379 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/13/trome_2023-11-13_26.jpg
+2026-07-18 12:57:24,622 [WARNING] src.corpus_acquisition.downloader: Page 26 not found (3/3).
+2026-07-18 12:57:24,622 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 23 page(s).
+2026-07-18 12:57:24,666 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 23 page(s) -> data/raw/metadata/trome_metadata.parquet (total rows: 35530)
+2026-07-18 12:57:24,684 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/trome_2023-11-13.json (status=success)
+2026-07-18 12:57:25,619 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=1&scale=78
+2026-07-18 12:57:25,620 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_1.jpg
+2026-07-18 12:57:29,142 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=2&scale=78
+2026-07-18 12:57:29,143 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_2.jpg
+2026-07-18 12:57:31,800 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=3&scale=78
+2026-07-18 12:57:31,800 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_3.jpg
+2026-07-18 12:57:34,029 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=4&scale=78
+2026-07-18 12:57:34,029 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_4.jpg
+2026-07-18 12:57:37,206 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=5&scale=78
+2026-07-18 12:57:37,206 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_5.jpg
+2026-07-18 12:57:39,517 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=6&scale=78
+2026-07-18 12:57:39,517 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_6.jpg
+2026-07-18 12:57:41,804 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=7&scale=78
+2026-07-18 12:57:41,804 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_7.jpg
+2026-07-18 12:57:44,074 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=8&scale=78
+2026-07-18 12:57:44,075 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_8.jpg
+2026-07-18 12:57:46,690 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=9&scale=78
+2026-07-18 12:57:46,690 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_9.jpg
+2026-07-18 12:57:50,450 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=10&scale=78
+2026-07-18 12:57:50,451 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_10.jpg
+2026-07-18 12:57:52,766 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=11&scale=78
+2026-07-18 12:57:52,766 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_11.jpg
+2026-07-18 12:57:55,452 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=12&scale=78
+2026-07-18 12:57:55,452 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_12.jpg
+2026-07-18 12:57:59,247 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=13&scale=78
+2026-07-18 12:57:59,247 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_13.jpg
+2026-07-18 12:58:01,970 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=14&scale=78
+2026-07-18 12:58:01,970 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_14.jpg
+2026-07-18 12:58:05,473 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=15&scale=78
+2026-07-18 12:58:05,474 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_15.jpg
+2026-07-18 12:58:08,416 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=16&scale=78
+2026-07-18 12:58:08,416 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_16.jpg
+2026-07-18 12:58:10,971 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=17&scale=78
+2026-07-18 12:58:10,972 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_17.jpg
+2026-07-18 12:58:14,414 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=18&scale=78
+2026-07-18 12:58:14,414 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_18.jpg
+2026-07-18 12:58:16,681 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=19&scale=78
+2026-07-18 12:58:16,682 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_19.jpg
+2026-07-18 12:58:19,121 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=20&scale=78
+2026-07-18 12:58:19,122 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_20.jpg
+2026-07-18 12:58:22,419 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=21&scale=78
+2026-07-18 12:58:22,419 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_21.jpg
+2026-07-18 12:58:24,833 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=22&scale=78
+2026-07-18 12:58:24,833 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_22.jpg
+2026-07-18 12:58:26,874 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=23&scale=78
+2026-07-18 12:58:26,874 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_23.jpg
+2026-07-18 12:58:29,468 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=24&scale=78
+2026-07-18 12:58:29,468 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_24.jpg
+2026-07-18 12:58:32,483 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=25&scale=78
+2026-07-18 12:58:32,483 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_25.jpg
+2026-07-18 12:58:32,716 [WARNING] src.corpus_acquisition.downloader: Page 25 not found (1/3).
+2026-07-18 12:58:32,716 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=26&scale=78
+2026-07-18 12:58:32,716 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_26.jpg
+2026-07-18 12:58:32,935 [WARNING] src.corpus_acquisition.downloader: Page 26 not found (2/3).
+2026-07-18 12:58:32,935 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://t.prcdn.co/img?file=eag82023111400000000001001&page=27&scale=78
+2026-07-18 12:58:32,935 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/14/trome_2023-11-14_27.jpg
+2026-07-18 12:58:33,153 [WARNING] src.corpus_acquisition.downloader: Page 27 not found (3/3).
+2026-07-18 12:58:33,153 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 24 page(s).
+2026-07-18 12:58:33,195 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 24 page(s) -> data/raw/metadata/trome_metadata.parquet (total rows: 35554)
+2026-07-18 12:58:33,197 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/trome_2023-11-14.json (status=success)
+2026-07-18 12:58:34,509 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=1&scale=78
+2026-07-18 12:58:34,510 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_1.jpg
+2026-07-18 12:58:36,721 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=2&scale=78
+2026-07-18 12:58:36,722 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_2.jpg
+2026-07-18 12:58:39,672 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=3&scale=78
+2026-07-18 12:58:39,672 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_3.jpg
+2026-07-18 12:58:43,093 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=4&scale=78
+2026-07-18 12:58:43,093 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_4.jpg
+2026-07-18 12:58:46,736 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=5&scale=78
+2026-07-18 12:58:46,736 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_5.jpg
+2026-07-18 12:58:50,137 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=6&scale=78
+2026-07-18 12:58:50,137 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_6.jpg
+2026-07-18 12:58:53,151 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=7&scale=78
+2026-07-18 12:58:53,151 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_7.jpg
+2026-07-18 12:58:55,637 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=8&scale=78
+2026-07-18 12:58:55,637 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_8.jpg
+2026-07-18 12:58:58,004 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=9&scale=78
+2026-07-18 12:58:58,005 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_9.jpg
+2026-07-18 12:59:00,872 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=10&scale=78
+2026-07-18 12:59:00,872 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_10.jpg
+2026-07-18 12:59:03,425 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=11&scale=78
+2026-07-18 12:59:03,425 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_11.jpg
+2026-07-18 12:59:05,647 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=12&scale=78
+2026-07-18 12:59:05,647 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_12.jpg
+2026-07-18 12:59:08,824 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=13&scale=78
+2026-07-18 12:59:08,825 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_13.jpg
+2026-07-18 12:59:11,977 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=14&scale=78
+2026-07-18 12:59:11,977 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_14.jpg
+2026-07-18 12:59:14,694 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=15&scale=78
+2026-07-18 12:59:14,694 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_15.jpg
+2026-07-18 12:59:17,673 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=16&scale=78
+2026-07-18 12:59:17,673 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_16.jpg
+2026-07-18 12:59:21,941 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=17&scale=78
+2026-07-18 12:59:21,941 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_17.jpg
+2026-07-18 12:59:25,512 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=18&scale=78
+2026-07-18 12:59:25,512 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_18.jpg
+2026-07-18 12:59:28,244 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=19&scale=78
+2026-07-18 12:59:28,245 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_19.jpg
+2026-07-18 12:59:30,667 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=20&scale=78
+2026-07-18 12:59:30,667 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_20.jpg
+2026-07-18 12:59:33,248 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=21&scale=78
+2026-07-18 12:59:33,248 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_21.jpg
+2026-07-18 12:59:35,676 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=22&scale=78
+2026-07-18 12:59:35,676 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_22.jpg
+2026-07-18 12:59:38,706 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=23&scale=78
+2026-07-18 12:59:38,707 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_23.jpg
+2026-07-18 12:59:41,746 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=24&scale=78
+2026-07-18 12:59:41,746 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_24.jpg
+2026-07-18 12:59:44,021 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=25&scale=78
+2026-07-18 12:59:44,022 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_25.jpg
+2026-07-18 12:59:44,283 [WARNING] src.corpus_acquisition.downloader: Page 25 not found (1/3).
+2026-07-18 12:59:44,284 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=26&scale=78
+2026-07-18 12:59:44,284 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_26.jpg
+2026-07-18 12:59:44,519 [WARNING] src.corpus_acquisition.downloader: Page 26 not found (2/3).
+2026-07-18 12:59:44,519 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://t.prcdn.co/img?file=eag82023111500000000001001&page=27&scale=78
+2026-07-18 12:59:44,519 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/15/trome_2023-11-15_27.jpg
+2026-07-18 12:59:44,740 [WARNING] src.corpus_acquisition.downloader: Page 27 not found (3/3).
+2026-07-18 12:59:44,740 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 24 page(s).
+2026-07-18 12:59:44,786 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 24 page(s) -> data/raw/metadata/trome_metadata.parquet (total rows: 35578)
+2026-07-18 12:59:44,790 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/trome_2023-11-15.json (status=success)
+2026-07-18 12:59:45,988 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=1&scale=78
+2026-07-18 12:59:45,989 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_1.jpg
+2026-07-18 12:59:48,522 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=2&scale=78
+2026-07-18 12:59:48,523 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_2.jpg
+2026-07-18 12:59:52,681 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=3&scale=78
+2026-07-18 12:59:52,681 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_3.jpg
+2026-07-18 12:59:54,987 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=4&scale=78
+2026-07-18 12:59:54,987 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_4.jpg
+2026-07-18 12:59:57,827 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=5&scale=78
+2026-07-18 12:59:57,828 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_5.jpg
+2026-07-18 12:59:59,913 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=6&scale=78
+2026-07-18 12:59:59,914 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_6.jpg
+2026-07-18 13:00:03,730 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=7&scale=78
+2026-07-18 13:00:03,731 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_7.jpg
+2026-07-18 13:00:06,703 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=8&scale=78
+2026-07-18 13:00:06,703 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_8.jpg
+2026-07-18 13:00:09,290 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=9&scale=78
+2026-07-18 13:00:09,290 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_9.jpg
+2026-07-18 13:00:12,231 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=10&scale=78
+2026-07-18 13:00:12,231 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_10.jpg
+2026-07-18 13:00:14,591 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=11&scale=78
+2026-07-18 13:00:14,591 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_11.jpg
+2026-07-18 13:00:17,609 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=12&scale=78
+2026-07-18 13:00:17,609 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_12.jpg
+2026-07-18 13:00:20,155 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=13&scale=78
+2026-07-18 13:00:20,155 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_13.jpg
+2026-07-18 13:00:23,492 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=14&scale=78
+2026-07-18 13:00:23,492 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_14.jpg
+2026-07-18 13:00:26,591 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=15&scale=78
+2026-07-18 13:00:26,591 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_15.jpg
+2026-07-18 13:00:29,115 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=16&scale=78
+2026-07-18 13:00:29,115 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_16.jpg
+2026-07-18 13:00:32,424 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=17&scale=78
+2026-07-18 13:00:32,424 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_17.jpg
+2026-07-18 13:00:35,187 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=18&scale=78
+2026-07-18 13:00:35,188 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_18.jpg
+2026-07-18 13:00:37,982 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=19&scale=78
+2026-07-18 13:00:37,982 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_19.jpg
+2026-07-18 13:00:40,647 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=20&scale=78
+2026-07-18 13:00:40,648 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_20.jpg
+2026-07-18 13:00:42,986 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=21&scale=78
+2026-07-18 13:00:42,986 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_21.jpg
+2026-07-18 13:00:45,148 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=22&scale=78
+2026-07-18 13:00:45,148 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_22.jpg
+2026-07-18 13:00:48,632 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=23&scale=78
+2026-07-18 13:00:48,632 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_23.jpg
+2026-07-18 13:00:51,189 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=24&scale=78
+2026-07-18 13:00:51,189 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_24.jpg
+2026-07-18 13:00:53,664 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=25&scale=78
+2026-07-18 13:00:53,665 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_25.jpg
+2026-07-18 13:00:53,930 [WARNING] src.corpus_acquisition.downloader: Page 25 not found (1/3).
+2026-07-18 13:00:53,931 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=26&scale=78
+2026-07-18 13:00:53,931 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_26.jpg
+2026-07-18 13:00:54,173 [WARNING] src.corpus_acquisition.downloader: Page 26 not found (2/3).
+2026-07-18 13:00:54,173 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://t.prcdn.co/img?file=eag82023111600000000001001&page=27&scale=78
+2026-07-18 13:00:54,173 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/16/trome_2023-11-16_27.jpg
+2026-07-18 13:00:54,388 [WARNING] src.corpus_acquisition.downloader: Page 27 not found (3/3).
+2026-07-18 13:00:54,388 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 24 page(s).
+2026-07-18 13:00:54,436 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 24 page(s) -> data/raw/metadata/trome_metadata.parquet (total rows: 35602)
+2026-07-18 13:00:54,455 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/trome_2023-11-16.json (status=success)
+2026-07-18 13:00:55,829 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=1&scale=78
+2026-07-18 13:00:55,830 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_1.jpg
+2026-07-18 13:00:58,703 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=2&scale=78
+2026-07-18 13:00:58,703 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_2.jpg
+2026-07-18 13:01:04,194 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=3&scale=78
+2026-07-18 13:01:04,194 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_3.jpg
+2026-07-18 13:01:07,168 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=4&scale=78
+2026-07-18 13:01:07,169 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_4.jpg
+2026-07-18 13:01:10,032 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=5&scale=78
+2026-07-18 13:01:10,032 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_5.jpg
+2026-07-18 13:01:12,298 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=6&scale=78
+2026-07-18 13:01:12,299 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_6.jpg
+2026-07-18 13:01:15,314 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=7&scale=78
+2026-07-18 13:01:15,315 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_7.jpg
+2026-07-18 13:01:17,858 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=8&scale=78
+2026-07-18 13:01:17,858 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_8.jpg
+2026-07-18 13:01:20,575 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=9&scale=78
+2026-07-18 13:01:20,575 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_9.jpg
+2026-07-18 13:01:23,036 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=10&scale=78
+2026-07-18 13:01:23,037 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_10.jpg
+2026-07-18 13:01:26,237 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=11&scale=78
+2026-07-18 13:01:26,238 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_11.jpg
+2026-07-18 13:01:29,473 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=12&scale=78
+2026-07-18 13:01:29,473 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_12.jpg
+2026-07-18 13:01:32,788 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=13&scale=78
+2026-07-18 13:01:32,788 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_13.jpg
+2026-07-18 13:01:36,018 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=14&scale=78
+2026-07-18 13:01:36,018 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_14.jpg
+2026-07-18 13:01:40,212 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=15&scale=78
+2026-07-18 13:01:40,213 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_15.jpg
+2026-07-18 13:01:42,395 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=16&scale=78
+2026-07-18 13:01:42,396 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_16.jpg
+2026-07-18 13:01:44,974 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=17&scale=78
+2026-07-18 13:01:44,975 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_17.jpg
+2026-07-18 13:01:47,595 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=18&scale=78
+2026-07-18 13:01:47,596 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_18.jpg
+2026-07-18 13:01:50,124 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=19&scale=78
+2026-07-18 13:01:50,125 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_19.jpg
+2026-07-18 13:01:52,669 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=20&scale=78
+2026-07-18 13:01:52,669 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_20.jpg
+2026-07-18 13:01:55,907 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=21&scale=78
+2026-07-18 13:01:55,907 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_21.jpg
+2026-07-18 13:01:58,294 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=22&scale=78
+2026-07-18 13:01:58,295 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_22.jpg
+2026-07-18 13:02:02,318 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=23&scale=78
+2026-07-18 13:02:02,318 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_23.jpg
+2026-07-18 13:02:04,471 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=24&scale=78
+2026-07-18 13:02:04,472 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_24.jpg
+2026-07-18 13:02:07,047 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=25&scale=78
+2026-07-18 13:02:07,047 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_25.jpg
+2026-07-18 13:02:07,273 [WARNING] src.corpus_acquisition.downloader: Page 25 not found (1/3).
+2026-07-18 13:02:07,274 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=26&scale=78
+2026-07-18 13:02:07,274 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_26.jpg
+2026-07-18 13:02:07,486 [WARNING] src.corpus_acquisition.downloader: Page 26 not found (2/3).
+2026-07-18 13:02:07,486 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://t.prcdn.co/img?file=eag82023111700000000001001&page=27&scale=78
+2026-07-18 13:02:07,486 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/17/trome_2023-11-17_27.jpg
+2026-07-18 13:02:07,710 [WARNING] src.corpus_acquisition.downloader: Page 27 not found (3/3).
+2026-07-18 13:02:07,710 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 24 page(s).
+2026-07-18 13:02:07,752 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 24 page(s) -> data/raw/metadata/trome_metadata.parquet (total rows: 35626)
+2026-07-18 13:02:07,756 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/trome_2023-11-17.json (status=success)
+2026-07-18 13:02:09,090 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=1&scale=78
+2026-07-18 13:02:09,090 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_1.jpg
+2026-07-18 13:02:11,940 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=2&scale=78
+2026-07-18 13:02:11,941 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_2.jpg
+2026-07-18 13:02:15,675 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=3&scale=78
+2026-07-18 13:02:15,675 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_3.jpg
+2026-07-18 13:02:18,702 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=4&scale=78
+2026-07-18 13:02:18,703 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_4.jpg
+2026-07-18 13:02:22,158 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=5&scale=78
+2026-07-18 13:02:22,159 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_5.jpg
+2026-07-18 13:02:25,163 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=6&scale=78
+2026-07-18 13:02:25,164 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_6.jpg
+2026-07-18 13:02:27,518 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=7&scale=78
+2026-07-18 13:02:27,518 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_7.jpg
+2026-07-18 13:02:29,842 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=8&scale=78
+2026-07-18 13:02:29,842 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_8.jpg
+2026-07-18 13:02:32,402 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=9&scale=78
+2026-07-18 13:02:32,402 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_9.jpg
+2026-07-18 13:02:35,461 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=10&scale=78
+2026-07-18 13:02:35,461 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_10.jpg
+2026-07-18 13:02:38,348 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=11&scale=78
+2026-07-18 13:02:38,348 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_11.jpg
+2026-07-18 13:02:40,829 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=12&scale=78
+2026-07-18 13:02:40,830 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_12.jpg
+2026-07-18 13:02:42,806 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=13&scale=78
+2026-07-18 13:02:42,807 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_13.jpg
+2026-07-18 13:02:45,846 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=14&scale=78
+2026-07-18 13:02:45,846 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_14.jpg
+2026-07-18 13:02:48,876 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=15&scale=78
+2026-07-18 13:02:48,876 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_15.jpg
+2026-07-18 13:02:51,566 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=16&scale=78
+2026-07-18 13:02:51,566 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_16.jpg
+2026-07-18 13:02:54,857 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=17&scale=78
+2026-07-18 13:02:54,858 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_17.jpg
+2026-07-18 13:02:57,479 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=18&scale=78
+2026-07-18 13:02:57,479 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_18.jpg
+2026-07-18 13:03:00,187 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=19&scale=78
+2026-07-18 13:03:00,187 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_19.jpg
+2026-07-18 13:03:03,377 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=20&scale=78
+2026-07-18 13:03:03,377 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_20.jpg
+2026-07-18 13:03:06,180 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=21&scale=78
+2026-07-18 13:03:06,181 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_21.jpg
+2026-07-18 13:03:08,201 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=22&scale=78
+2026-07-18 13:03:08,201 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_22.jpg
+2026-07-18 13:03:11,328 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=23&scale=78
+2026-07-18 13:03:11,328 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_23.jpg
+2026-07-18 13:03:13,773 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=24&scale=78
+2026-07-18 13:03:13,773 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_24.jpg
+2026-07-18 13:03:17,249 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=25&scale=78
+2026-07-18 13:03:17,250 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_25.jpg
+2026-07-18 13:03:17,475 [WARNING] src.corpus_acquisition.downloader: Page 25 not found (1/3).
+2026-07-18 13:03:17,475 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=26&scale=78
+2026-07-18 13:03:17,476 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_26.jpg
+2026-07-18 13:03:17,709 [WARNING] src.corpus_acquisition.downloader: Page 26 not found (2/3).
+2026-07-18 13:03:17,709 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://t.prcdn.co/img?file=eag82023111800000000001001&page=27&scale=78
+2026-07-18 13:03:17,709 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/18/trome_2023-11-18_27.jpg
+2026-07-18 13:03:17,916 [WARNING] src.corpus_acquisition.downloader: Page 27 not found (3/3).
+2026-07-18 13:03:17,917 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 24 page(s).
+2026-07-18 13:03:17,960 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 24 page(s) -> data/raw/metadata/trome_metadata.parquet (total rows: 35650)
+2026-07-18 13:03:17,963 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/trome_2023-11-18.json (status=success)
+2026-07-18 13:03:19,176 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=1&scale=78
+2026-07-18 13:03:19,177 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_1.jpg
+2026-07-18 13:03:21,330 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=2&scale=78
+2026-07-18 13:03:21,330 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_2.jpg
+2026-07-18 13:03:24,493 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=3&scale=78
+2026-07-18 13:03:24,494 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_3.jpg
+2026-07-18 13:03:27,345 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=4&scale=78
+2026-07-18 13:03:27,345 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_4.jpg
+2026-07-18 13:03:30,525 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=5&scale=78
+2026-07-18 13:03:30,525 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_5.jpg
+2026-07-18 13:03:33,202 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=6&scale=78
+2026-07-18 13:03:33,203 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_6.jpg
+2026-07-18 13:03:36,117 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=7&scale=78
+2026-07-18 13:03:36,117 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_7.jpg
+2026-07-18 13:03:38,608 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=8&scale=78
+2026-07-18 13:03:38,608 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_8.jpg
+2026-07-18 13:03:42,038 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=9&scale=78
+2026-07-18 13:03:42,038 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_9.jpg
+2026-07-18 13:03:45,981 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=10&scale=78
+2026-07-18 13:03:45,981 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_10.jpg
+2026-07-18 13:03:49,824 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=11&scale=78
+2026-07-18 13:03:49,824 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_11.jpg
+2026-07-18 13:03:52,631 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=12&scale=78
+2026-07-18 13:03:52,631 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_12.jpg
+2026-07-18 13:03:55,861 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=13&scale=78
+2026-07-18 13:03:55,862 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_13.jpg
+2026-07-18 13:03:58,802 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=14&scale=78
+2026-07-18 13:03:58,802 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_14.jpg
+2026-07-18 13:04:01,241 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=15&scale=78
+2026-07-18 13:04:01,242 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_15.jpg
+2026-07-18 13:04:03,963 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=16&scale=78
+2026-07-18 13:04:03,964 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_16.jpg
+2026-07-18 13:04:06,830 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=17&scale=78
+2026-07-18 13:04:06,831 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_17.jpg
+2026-07-18 13:04:09,497 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=18&scale=78
+2026-07-18 13:04:09,497 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_18.jpg
+2026-07-18 13:04:12,353 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=19&scale=78
+2026-07-18 13:04:12,354 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_19.jpg
+2026-07-18 13:04:15,700 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=20&scale=78
+2026-07-18 13:04:15,700 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_20.jpg
+2026-07-18 13:04:18,817 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=21&scale=78
+2026-07-18 13:04:18,817 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_21.jpg
+2026-07-18 13:04:21,712 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=22&scale=78
+2026-07-18 13:04:21,713 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_22.jpg
+2026-07-18 13:04:23,945 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=23&scale=78
+2026-07-18 13:04:23,946 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_23.jpg
+2026-07-18 13:04:27,056 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=24&scale=78
+2026-07-18 13:04:27,057 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_24.jpg
+2026-07-18 13:04:30,249 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=25&scale=78
+2026-07-18 13:04:30,249 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_25.jpg
+2026-07-18 13:04:33,460 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=26&scale=78
+2026-07-18 13:04:33,461 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_26.jpg
+2026-07-18 13:04:35,644 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=27&scale=78
+2026-07-18 13:04:35,645 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_27.jpg
+2026-07-18 13:04:38,158 [INFO] src.corpus_acquisition.downloader: Downloading page 28 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=28&scale=78
+2026-07-18 13:04:38,158 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_28.jpg
+2026-07-18 13:04:40,119 [INFO] src.corpus_acquisition.downloader: Downloading page 29 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=29&scale=78
+2026-07-18 13:04:40,119 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_29.jpg
+2026-07-18 13:04:40,377 [WARNING] src.corpus_acquisition.downloader: Page 29 not found (1/3).
+2026-07-18 13:04:40,378 [INFO] src.corpus_acquisition.downloader: Downloading page 30 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=30&scale=78
+2026-07-18 13:04:40,378 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_30.jpg
+2026-07-18 13:04:40,581 [WARNING] src.corpus_acquisition.downloader: Page 30 not found (2/3).
+2026-07-18 13:04:40,582 [INFO] src.corpus_acquisition.downloader: Downloading page 31 from https://t.prcdn.co/img?file=eag82023111900000000001001&page=31&scale=78
+2026-07-18 13:04:40,582 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/19/trome_2023-11-19_31.jpg
+2026-07-18 13:04:40,811 [WARNING] src.corpus_acquisition.downloader: Page 31 not found (3/3).
+2026-07-18 13:04:40,811 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 28 page(s).
+2026-07-18 13:04:40,852 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 28 page(s) -> data/raw/metadata/trome_metadata.parquet (total rows: 35678)
+2026-07-18 13:04:40,854 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/trome_2023-11-19.json (status=success)
+2026-07-18 13:04:41,935 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=1&scale=78
+2026-07-18 13:04:41,936 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_1.jpg
+2026-07-18 13:04:44,349 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=2&scale=78
+2026-07-18 13:04:44,349 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_2.jpg
+2026-07-18 13:04:48,002 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=3&scale=78
+2026-07-18 13:04:48,003 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_3.jpg
+2026-07-18 13:04:50,375 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=4&scale=78
+2026-07-18 13:04:50,375 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_4.jpg
+2026-07-18 13:04:53,066 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=5&scale=78
+2026-07-18 13:04:53,067 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_5.jpg
+2026-07-18 13:04:55,951 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=6&scale=78
+2026-07-18 13:04:55,952 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_6.jpg
+2026-07-18 13:04:58,863 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=7&scale=78
+2026-07-18 13:04:58,863 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_7.jpg
+2026-07-18 13:05:01,151 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=8&scale=78
+2026-07-18 13:05:01,152 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_8.jpg
+2026-07-18 13:05:04,367 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=9&scale=78
+2026-07-18 13:05:04,367 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_9.jpg
+2026-07-18 13:05:07,418 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=10&scale=78
+2026-07-18 13:05:07,418 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_10.jpg
+2026-07-18 13:05:09,821 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=11&scale=78
+2026-07-18 13:05:09,821 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_11.jpg
+2026-07-18 13:05:12,843 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=12&scale=78
+2026-07-18 13:05:12,843 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_12.jpg
+2026-07-18 13:05:15,776 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=13&scale=78
+2026-07-18 13:05:15,776 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_13.jpg
+2026-07-18 13:05:18,914 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=14&scale=78
+2026-07-18 13:05:18,914 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_14.jpg
+2026-07-18 13:05:22,184 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=15&scale=78
+2026-07-18 13:05:22,185 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_15.jpg
+2026-07-18 13:05:24,414 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=16&scale=78
+2026-07-18 13:05:24,415 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_16.jpg
+2026-07-18 13:05:26,921 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=17&scale=78
+2026-07-18 13:05:26,921 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_17.jpg
+2026-07-18 13:05:29,454 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=18&scale=78
+2026-07-18 13:05:29,454 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_18.jpg
+2026-07-18 13:05:32,539 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=19&scale=78
+2026-07-18 13:05:32,540 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_19.jpg
+2026-07-18 13:05:35,089 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=20&scale=78
+2026-07-18 13:05:35,090 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_20.jpg
+2026-07-18 13:05:38,936 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=21&scale=78
+2026-07-18 13:05:38,936 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_21.jpg
+2026-07-18 13:05:42,127 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=22&scale=78
+2026-07-18 13:05:42,127 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_22.jpg
+2026-07-18 13:05:44,892 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=23&scale=78
+2026-07-18 13:05:44,893 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_23.jpg
+2026-07-18 13:05:47,400 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=24&scale=78
+2026-07-18 13:05:47,400 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_24.jpg
+2026-07-18 13:05:50,484 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=25&scale=78
+2026-07-18 13:05:50,484 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_25.jpg
+2026-07-18 13:05:50,793 [WARNING] src.corpus_acquisition.downloader: Page 25 not found (1/3).
+2026-07-18 13:05:50,793 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=26&scale=78
+2026-07-18 13:05:50,794 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_26.jpg
+2026-07-18 13:05:51,008 [WARNING] src.corpus_acquisition.downloader: Page 26 not found (2/3).
+2026-07-18 13:05:51,008 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://t.prcdn.co/img?file=eag82023112000000000001001&page=27&scale=78
+2026-07-18 13:05:51,009 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/20/trome_2023-11-20_27.jpg
+2026-07-18 13:05:51,264 [WARNING] src.corpus_acquisition.downloader: Page 27 not found (3/3).
+2026-07-18 13:05:51,264 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 24 page(s).
+2026-07-18 13:05:51,307 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 24 page(s) -> data/raw/metadata/trome_metadata.parquet (total rows: 35702)
+2026-07-18 13:05:51,310 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/trome_2023-11-20.json (status=success)
+2026-07-18 13:05:52,329 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=1&scale=78
+2026-07-18 13:05:52,330 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_1.jpg
+2026-07-18 13:05:54,762 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=2&scale=78
+2026-07-18 13:05:54,762 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_2.jpg
+2026-07-18 13:05:59,779 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=3&scale=78
+2026-07-18 13:05:59,780 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_3.jpg
+2026-07-18 13:06:02,548 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=4&scale=78
+2026-07-18 13:06:02,549 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_4.jpg
+2026-07-18 13:06:06,043 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=5&scale=78
+2026-07-18 13:06:06,044 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_5.jpg
+2026-07-18 13:06:09,170 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=6&scale=78
+2026-07-18 13:06:09,170 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_6.jpg
+2026-07-18 13:06:12,057 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=7&scale=78
+2026-07-18 13:06:12,058 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_7.jpg
+2026-07-18 13:06:14,768 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=8&scale=78
+2026-07-18 13:06:14,769 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_8.jpg
+2026-07-18 13:06:17,933 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=9&scale=78
+2026-07-18 13:06:17,933 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_9.jpg
+2026-07-18 13:06:21,276 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=10&scale=78
+2026-07-18 13:06:21,276 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_10.jpg
+2026-07-18 13:06:24,039 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=11&scale=78
+2026-07-18 13:06:24,039 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_11.jpg
+2026-07-18 13:06:27,358 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=12&scale=78
+2026-07-18 13:06:27,358 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_12.jpg
+2026-07-18 13:06:30,038 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=13&scale=78
+2026-07-18 13:06:30,038 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_13.jpg
+2026-07-18 13:06:32,313 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=14&scale=78
+2026-07-18 13:06:32,313 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_14.jpg
+2026-07-18 13:06:36,036 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=15&scale=78
+2026-07-18 13:06:36,037 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_15.jpg
+2026-07-18 13:06:39,173 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=16&scale=78
+2026-07-18 13:06:39,174 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_16.jpg
+2026-07-18 13:06:41,909 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=17&scale=78
+2026-07-18 13:06:41,910 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_17.jpg
+2026-07-18 13:06:44,476 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=18&scale=78
+2026-07-18 13:06:44,477 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_18.jpg
+2026-07-18 13:06:47,576 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=19&scale=78
+2026-07-18 13:06:47,576 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_19.jpg
+2026-07-18 13:06:50,277 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=20&scale=78
+2026-07-18 13:06:50,277 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_20.jpg
+2026-07-18 13:06:53,293 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=21&scale=78
+2026-07-18 13:06:53,294 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_21.jpg
+2026-07-18 13:06:56,403 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=22&scale=78
+2026-07-18 13:06:56,403 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_22.jpg
+2026-07-18 13:06:58,650 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=23&scale=78
+2026-07-18 13:06:58,650 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_23.jpg
+2026-07-18 13:07:03,196 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=24&scale=78
+2026-07-18 13:07:03,197 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_24.jpg
+2026-07-18 13:07:05,643 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=25&scale=78
+2026-07-18 13:07:05,644 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_25.jpg
+2026-07-18 13:07:05,949 [WARNING] src.corpus_acquisition.downloader: Page 25 not found (1/3).
+2026-07-18 13:07:05,949 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=26&scale=78
+2026-07-18 13:07:05,950 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_26.jpg
+2026-07-18 13:07:06,238 [WARNING] src.corpus_acquisition.downloader: Page 26 not found (2/3).
+2026-07-18 13:07:06,239 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://t.prcdn.co/img?file=eag82023112100000000001001&page=27&scale=78
+2026-07-18 13:07:06,239 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/21/trome_2023-11-21_27.jpg
+2026-07-18 13:07:06,521 [WARNING] src.corpus_acquisition.downloader: Page 27 not found (3/3).
+2026-07-18 13:07:06,521 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 24 page(s).
+2026-07-18 13:07:06,563 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 24 page(s) -> data/raw/metadata/trome_metadata.parquet (total rows: 35726)
+2026-07-18 13:07:06,566 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/trome_2023-11-21.json (status=success)
+2026-07-18 13:07:07,330 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=1&scale=78
+2026-07-18 13:07:07,331 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_1.jpg
+2026-07-18 13:07:10,248 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=2&scale=78
+2026-07-18 13:07:10,249 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_2.jpg
+2026-07-18 13:07:14,052 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=3&scale=78
+2026-07-18 13:07:14,052 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_3.jpg
+2026-07-18 13:07:16,616 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=4&scale=78
+2026-07-18 13:07:16,616 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_4.jpg
+2026-07-18 13:07:21,685 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=5&scale=78
+2026-07-18 13:07:21,685 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_5.jpg
+2026-07-18 13:07:24,617 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=6&scale=78
+2026-07-18 13:07:24,617 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_6.jpg
+2026-07-18 13:07:27,654 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=7&scale=78
+2026-07-18 13:07:27,654 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_7.jpg
+2026-07-18 13:07:30,943 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=8&scale=78
+2026-07-18 13:07:30,943 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_8.jpg
+2026-07-18 13:07:33,907 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=9&scale=78
+2026-07-18 13:07:33,908 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_9.jpg
+2026-07-18 13:07:37,060 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=10&scale=78
+2026-07-18 13:07:37,060 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_10.jpg
+2026-07-18 13:07:39,799 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=11&scale=78
+2026-07-18 13:07:39,800 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_11.jpg
+2026-07-18 13:07:43,064 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=12&scale=78
+2026-07-18 13:07:43,065 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_12.jpg
+2026-07-18 13:07:45,454 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=13&scale=78
+2026-07-18 13:07:45,454 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_13.jpg
+2026-07-18 13:07:47,725 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=14&scale=78
+2026-07-18 13:07:47,725 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_14.jpg
+2026-07-18 13:07:50,472 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=15&scale=78
+2026-07-18 13:07:50,472 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_15.jpg
+2026-07-18 13:07:53,223 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=16&scale=78
+2026-07-18 13:07:53,223 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_16.jpg
+2026-07-18 13:07:56,038 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=17&scale=78
+2026-07-18 13:07:56,038 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_17.jpg
+2026-07-18 13:07:58,414 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=18&scale=78
+2026-07-18 13:07:58,415 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_18.jpg
+2026-07-18 13:08:01,546 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=19&scale=78
+2026-07-18 13:08:01,546 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_19.jpg
+2026-07-18 13:08:07,276 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=20&scale=78
+2026-07-18 13:08:07,276 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_20.jpg
+2026-07-18 13:08:10,745 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=21&scale=78
+2026-07-18 13:08:10,746 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_21.jpg
+2026-07-18 13:08:13,305 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=22&scale=78
+2026-07-18 13:08:13,305 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_22.jpg
+2026-07-18 13:08:16,022 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=23&scale=78
+2026-07-18 13:08:16,022 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_23.jpg
+2026-07-18 13:08:18,532 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=24&scale=78
+2026-07-18 13:08:18,532 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_24.jpg
+2026-07-18 13:08:21,375 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=25&scale=78
+2026-07-18 13:08:21,375 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_25.jpg
+2026-07-18 13:08:21,654 [WARNING] src.corpus_acquisition.downloader: Page 25 not found (1/3).
+2026-07-18 13:08:21,654 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=26&scale=78
+2026-07-18 13:08:21,655 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_26.jpg
+2026-07-18 13:08:21,888 [WARNING] src.corpus_acquisition.downloader: Page 26 not found (2/3).
+2026-07-18 13:08:21,889 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://t.prcdn.co/img?file=eag82023112200000000001001&page=27&scale=78
+2026-07-18 13:08:21,889 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/22/trome_2023-11-22_27.jpg
+2026-07-18 13:08:22,121 [WARNING] src.corpus_acquisition.downloader: Page 27 not found (3/3).
+2026-07-18 13:08:22,121 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 24 page(s).
+2026-07-18 13:08:22,163 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 24 page(s) -> data/raw/metadata/trome_metadata.parquet (total rows: 35750)
+2026-07-18 13:08:22,169 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/trome_2023-11-22.json (status=success)
+2026-07-18 13:08:23,500 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=1&scale=78
+2026-07-18 13:08:23,501 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_1.jpg
+2026-07-18 13:08:26,634 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=2&scale=78
+2026-07-18 13:08:26,635 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_2.jpg
+2026-07-18 13:08:30,483 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=3&scale=78
+2026-07-18 13:08:30,483 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_3.jpg
+2026-07-18 13:08:33,661 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=4&scale=78
+2026-07-18 13:08:33,661 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_4.jpg
+2026-07-18 13:08:38,515 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=5&scale=78
+2026-07-18 13:08:38,515 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_5.jpg
+2026-07-18 13:08:41,367 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=6&scale=78
+2026-07-18 13:08:41,368 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_6.jpg
+2026-07-18 13:08:43,988 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=7&scale=78
+2026-07-18 13:08:43,988 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_7.jpg
+2026-07-18 13:08:46,688 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=8&scale=78
+2026-07-18 13:08:46,688 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_8.jpg
+2026-07-18 13:08:49,125 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=9&scale=78
+2026-07-18 13:08:49,126 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_9.jpg
+2026-07-18 13:08:52,417 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=10&scale=78
+2026-07-18 13:08:52,417 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_10.jpg
+2026-07-18 13:08:55,400 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=11&scale=78
+2026-07-18 13:08:55,400 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_11.jpg
+2026-07-18 13:08:58,262 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=12&scale=78
+2026-07-18 13:08:58,262 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_12.jpg
+2026-07-18 13:09:01,588 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=13&scale=78
+2026-07-18 13:09:01,589 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_13.jpg
+2026-07-18 13:09:04,529 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=14&scale=78
+2026-07-18 13:09:04,529 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_14.jpg
+2026-07-18 13:09:06,859 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=15&scale=78
+2026-07-18 13:09:06,859 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_15.jpg
+2026-07-18 13:09:09,335 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=16&scale=78
+2026-07-18 13:09:09,335 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_16.jpg
+2026-07-18 13:09:11,982 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=17&scale=78
+2026-07-18 13:09:11,982 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_17.jpg
+2026-07-18 13:09:15,406 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=18&scale=78
+2026-07-18 13:09:15,407 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_18.jpg
+2026-07-18 13:09:18,282 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=19&scale=78
+2026-07-18 13:09:18,282 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_19.jpg
+2026-07-18 13:09:21,137 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=20&scale=78
+2026-07-18 13:09:21,137 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_20.jpg
+2026-07-18 13:09:24,422 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=21&scale=78
+2026-07-18 13:09:24,422 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_21.jpg
+2026-07-18 13:09:27,669 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=22&scale=78
+2026-07-18 13:09:27,669 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_22.jpg
+2026-07-18 13:09:30,872 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=23&scale=78
+2026-07-18 13:09:30,873 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_23.jpg
+2026-07-18 13:09:33,865 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=24&scale=78
+2026-07-18 13:09:33,866 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_24.jpg
+2026-07-18 13:09:36,833 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=25&scale=78
+2026-07-18 13:09:36,834 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_25.jpg
+2026-07-18 13:09:37,174 [WARNING] src.corpus_acquisition.downloader: Page 25 not found (1/3).
+2026-07-18 13:09:37,174 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=26&scale=78
+2026-07-18 13:09:37,175 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_26.jpg
+2026-07-18 13:09:37,415 [WARNING] src.corpus_acquisition.downloader: Page 26 not found (2/3).
+2026-07-18 13:09:37,415 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://t.prcdn.co/img?file=eag82023112300000000001001&page=27&scale=78
+2026-07-18 13:09:37,416 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/23/trome_2023-11-23_27.jpg
+2026-07-18 13:09:37,656 [WARNING] src.corpus_acquisition.downloader: Page 27 not found (3/3).
+2026-07-18 13:09:37,657 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 24 page(s).
+2026-07-18 13:09:37,699 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 24 page(s) -> data/raw/metadata/trome_metadata.parquet (total rows: 35774)
+2026-07-18 13:09:37,702 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/trome_2023-11-23.json (status=success)
+2026-07-18 13:09:38,294 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=1&scale=78
+2026-07-18 13:09:38,295 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_1.jpg
+2026-07-18 13:09:40,174 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=2&scale=78
+2026-07-18 13:09:40,174 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_2.jpg
+2026-07-18 13:09:42,838 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=3&scale=78
+2026-07-18 13:09:42,838 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_3.jpg
+2026-07-18 13:09:45,040 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=4&scale=78
+2026-07-18 13:09:45,040 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_4.jpg
+2026-07-18 13:09:48,169 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=5&scale=78
+2026-07-18 13:09:48,170 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_5.jpg
+2026-07-18 13:09:51,000 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=6&scale=78
+2026-07-18 13:09:51,001 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_6.jpg
+2026-07-18 13:09:54,089 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=7&scale=78
+2026-07-18 13:09:54,089 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_7.jpg
+2026-07-18 13:09:56,699 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=8&scale=78
+2026-07-18 13:09:56,699 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_8.jpg
+2026-07-18 13:09:59,407 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=9&scale=78
+2026-07-18 13:09:59,407 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_9.jpg
+2026-07-18 13:10:01,964 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=10&scale=78
+2026-07-18 13:10:01,965 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_10.jpg
+2026-07-18 13:10:05,081 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=11&scale=78
+2026-07-18 13:10:05,082 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_11.jpg
+2026-07-18 13:10:08,472 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=12&scale=78
+2026-07-18 13:10:08,472 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_12.jpg
+2026-07-18 13:10:11,004 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=13&scale=78
+2026-07-18 13:10:11,005 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_13.jpg
+2026-07-18 13:10:13,844 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=14&scale=78
+2026-07-18 13:10:13,844 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_14.jpg
+2026-07-18 13:10:16,266 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=15&scale=78
+2026-07-18 13:10:16,267 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_15.jpg
+2026-07-18 13:10:19,278 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=16&scale=78
+2026-07-18 13:10:19,279 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_16.jpg
+2026-07-18 13:10:22,556 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=17&scale=78
+2026-07-18 13:10:22,556 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_17.jpg
+2026-07-18 13:10:26,578 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=18&scale=78
+2026-07-18 13:10:26,579 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_18.jpg
+2026-07-18 13:10:28,695 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=19&scale=78
+2026-07-18 13:10:28,695 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_19.jpg
+2026-07-18 13:10:32,328 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=20&scale=78
+2026-07-18 13:10:32,329 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_20.jpg
+2026-07-18 13:10:35,049 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=21&scale=78
+2026-07-18 13:10:35,050 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_21.jpg
+2026-07-18 13:10:38,164 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=22&scale=78
+2026-07-18 13:10:38,164 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_22.jpg
+2026-07-18 13:10:41,511 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=23&scale=78
+2026-07-18 13:10:41,511 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_23.jpg
+2026-07-18 13:10:44,132 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=24&scale=78
+2026-07-18 13:10:44,132 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_24.jpg
+2026-07-18 13:10:47,426 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=25&scale=78
+2026-07-18 13:10:47,426 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_25.jpg
+2026-07-18 13:10:50,328 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=26&scale=78
+2026-07-18 13:10:50,329 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_26.jpg
+2026-07-18 13:10:52,956 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=27&scale=78
+2026-07-18 13:10:52,956 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_27.jpg
+2026-07-18 13:10:56,158 [INFO] src.corpus_acquisition.downloader: Downloading page 28 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=28&scale=78
+2026-07-18 13:10:56,158 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_28.jpg
+2026-07-18 13:10:59,603 [INFO] src.corpus_acquisition.downloader: Downloading page 29 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=29&scale=78
+2026-07-18 13:10:59,603 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_29.jpg
+2026-07-18 13:10:59,833 [WARNING] src.corpus_acquisition.downloader: Page 29 not found (1/3).
+2026-07-18 13:10:59,834 [INFO] src.corpus_acquisition.downloader: Downloading page 30 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=30&scale=78
+2026-07-18 13:10:59,834 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_30.jpg
+2026-07-18 13:11:00,042 [WARNING] src.corpus_acquisition.downloader: Page 30 not found (2/3).
+2026-07-18 13:11:00,042 [INFO] src.corpus_acquisition.downloader: Downloading page 31 from https://t.prcdn.co/img?file=eag82023112400000000001001&page=31&scale=78
+2026-07-18 13:11:00,043 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/24/trome_2023-11-24_31.jpg
+2026-07-18 13:11:00,281 [WARNING] src.corpus_acquisition.downloader: Page 31 not found (3/3).
+2026-07-18 13:11:00,281 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 28 page(s).
+2026-07-18 13:11:00,324 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 28 page(s) -> data/raw/metadata/trome_metadata.parquet (total rows: 35802)
+2026-07-18 13:11:00,328 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/trome_2023-11-24.json (status=success)
+2026-07-18 13:11:01,117 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=1&scale=78
+2026-07-18 13:11:01,117 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_1.jpg
+2026-07-18 13:11:04,125 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=2&scale=78
+2026-07-18 13:11:04,125 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_2.jpg
+2026-07-18 13:11:07,866 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=3&scale=78
+2026-07-18 13:11:07,867 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_3.jpg
+2026-07-18 13:11:10,814 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=4&scale=78
+2026-07-18 13:11:10,814 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_4.jpg
+2026-07-18 13:11:14,086 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=5&scale=78
+2026-07-18 13:11:14,086 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_5.jpg
+2026-07-18 13:11:16,692 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=6&scale=78
+2026-07-18 13:11:16,693 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_6.jpg
+2026-07-18 13:11:20,434 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=7&scale=78
+2026-07-18 13:11:20,434 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_7.jpg
+2026-07-18 13:11:22,958 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=8&scale=78
+2026-07-18 13:11:22,958 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_8.jpg
+2026-07-18 13:11:26,037 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=9&scale=78
+2026-07-18 13:11:26,038 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_9.jpg
+2026-07-18 13:11:28,686 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=10&scale=78
+2026-07-18 13:11:28,686 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_10.jpg
+2026-07-18 13:11:31,699 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=11&scale=78
+2026-07-18 13:11:31,699 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_11.jpg
+2026-07-18 13:11:33,955 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=12&scale=78
+2026-07-18 13:11:33,956 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_12.jpg
+2026-07-18 13:11:37,883 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=13&scale=78
+2026-07-18 13:11:37,883 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_13.jpg
+2026-07-18 13:11:40,526 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=14&scale=78
+2026-07-18 13:11:40,526 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_14.jpg
+2026-07-18 13:11:43,874 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=15&scale=78
+2026-07-18 13:11:43,874 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_15.jpg
+2026-07-18 13:11:46,899 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=16&scale=78
+2026-07-18 13:11:46,899 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_16.jpg
+2026-07-18 13:11:49,373 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=17&scale=78
+2026-07-18 13:11:49,374 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_17.jpg
+2026-07-18 13:11:51,845 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=18&scale=78
+2026-07-18 13:11:51,845 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_18.jpg
+2026-07-18 13:11:54,883 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=19&scale=78
+2026-07-18 13:11:54,884 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_19.jpg
+2026-07-18 13:11:57,737 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=20&scale=78
+2026-07-18 13:11:57,738 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_20.jpg
+2026-07-18 13:12:02,599 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=21&scale=78
+2026-07-18 13:12:02,599 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_21.jpg
+2026-07-18 13:12:04,630 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=22&scale=78
+2026-07-18 13:12:04,630 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_22.jpg
+2026-07-18 13:12:09,583 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=23&scale=78
+2026-07-18 13:12:09,584 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_23.jpg
+2026-07-18 13:12:12,010 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=24&scale=78
+2026-07-18 13:12:12,011 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_24.jpg
+2026-07-18 13:12:15,227 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=25&scale=78
+2026-07-18 13:12:15,227 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_25.jpg
+2026-07-18 13:12:15,459 [WARNING] src.corpus_acquisition.downloader: Page 25 not found (1/3).
+2026-07-18 13:12:15,460 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=26&scale=78
+2026-07-18 13:12:15,460 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_26.jpg
+2026-07-18 13:12:15,661 [WARNING] src.corpus_acquisition.downloader: Page 26 not found (2/3).
+2026-07-18 13:12:15,661 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://t.prcdn.co/img?file=eag82023112500000000001001&page=27&scale=78
+2026-07-18 13:12:15,661 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/25/trome_2023-11-25_27.jpg
+2026-07-18 13:12:16,070 [WARNING] src.corpus_acquisition.downloader: Page 27 not found (3/3).
+2026-07-18 13:12:16,070 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 24 page(s).
+2026-07-18 13:12:16,115 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 24 page(s) -> data/raw/metadata/trome_metadata.parquet (total rows: 35826)
+2026-07-18 13:12:16,118 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/trome_2023-11-25.json (status=success)
+2026-07-18 13:12:16,902 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=1&scale=78
+2026-07-18 13:12:16,903 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_1.jpg
+2026-07-18 13:12:19,350 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=2&scale=78
+2026-07-18 13:12:19,351 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_2.jpg
+2026-07-18 13:12:22,715 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=3&scale=78
+2026-07-18 13:12:22,716 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_3.jpg
+2026-07-18 13:12:25,332 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=4&scale=78
+2026-07-18 13:12:25,332 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_4.jpg
+2026-07-18 13:12:28,126 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=5&scale=78
+2026-07-18 13:12:28,127 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_5.jpg
+2026-07-18 13:12:30,309 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=6&scale=78
+2026-07-18 13:12:30,309 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_6.jpg
+2026-07-18 13:12:33,136 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=7&scale=78
+2026-07-18 13:12:33,137 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_7.jpg
+2026-07-18 13:12:36,176 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=8&scale=78
+2026-07-18 13:12:36,176 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_8.jpg
+2026-07-18 13:12:38,472 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=9&scale=78
+2026-07-18 13:12:38,473 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_9.jpg
+2026-07-18 13:12:41,158 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=10&scale=78
+2026-07-18 13:12:41,158 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_10.jpg
+2026-07-18 13:12:43,382 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=11&scale=78
+2026-07-18 13:12:43,382 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_11.jpg
+2026-07-18 13:12:46,134 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=12&scale=78
+2026-07-18 13:12:46,135 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_12.jpg
+2026-07-18 13:12:49,479 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=13&scale=78
+2026-07-18 13:12:49,479 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_13.jpg
+2026-07-18 13:12:51,867 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=14&scale=78
+2026-07-18 13:12:51,867 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_14.jpg
+2026-07-18 13:12:54,851 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=15&scale=78
+2026-07-18 13:12:54,852 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_15.jpg
+2026-07-18 13:12:57,685 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=16&scale=78
+2026-07-18 13:12:57,686 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_16.jpg
+2026-07-18 13:13:00,036 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=17&scale=78
+2026-07-18 13:13:00,036 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_17.jpg
+2026-07-18 13:13:02,866 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=18&scale=78
+2026-07-18 13:13:02,867 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_18.jpg
+2026-07-18 13:13:05,778 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=19&scale=78
+2026-07-18 13:13:05,779 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_19.jpg
+2026-07-18 13:13:08,410 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=20&scale=78
+2026-07-18 13:13:08,410 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_20.jpg
+2026-07-18 13:13:12,188 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=21&scale=78
+2026-07-18 13:13:12,188 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_21.jpg
+2026-07-18 13:13:14,979 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=22&scale=78
+2026-07-18 13:13:14,979 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_22.jpg
+2026-07-18 13:13:17,187 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=23&scale=78
+2026-07-18 13:13:17,188 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_23.jpg
+2026-07-18 13:13:20,123 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=24&scale=78
+2026-07-18 13:13:20,123 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_24.jpg
+2026-07-18 13:13:23,346 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=25&scale=78
+2026-07-18 13:13:23,346 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_25.jpg
+2026-07-18 13:13:26,104 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=26&scale=78
+2026-07-18 13:13:26,105 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_26.jpg
+2026-07-18 13:13:28,540 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=27&scale=78
+2026-07-18 13:13:28,540 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_27.jpg
+2026-07-18 13:13:31,282 [INFO] src.corpus_acquisition.downloader: Downloading page 28 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=28&scale=78
+2026-07-18 13:13:31,282 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_28.jpg
+2026-07-18 13:13:33,304 [INFO] src.corpus_acquisition.downloader: Downloading page 29 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=29&scale=78
+2026-07-18 13:13:33,305 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_29.jpg
+2026-07-18 13:13:33,512 [WARNING] src.corpus_acquisition.downloader: Page 29 not found (1/3).
+2026-07-18 13:13:33,513 [INFO] src.corpus_acquisition.downloader: Downloading page 30 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=30&scale=78
+2026-07-18 13:13:33,513 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_30.jpg
+2026-07-18 13:13:33,796 [WARNING] src.corpus_acquisition.downloader: Page 30 not found (2/3).
+2026-07-18 13:13:33,796 [INFO] src.corpus_acquisition.downloader: Downloading page 31 from https://t.prcdn.co/img?file=eag82023112600000000001001&page=31&scale=78
+2026-07-18 13:13:33,796 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/26/trome_2023-11-26_31.jpg
+2026-07-18 13:13:34,073 [WARNING] src.corpus_acquisition.downloader: Page 31 not found (3/3).
+2026-07-18 13:13:34,073 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 28 page(s).
+2026-07-18 13:13:34,117 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 28 page(s) -> data/raw/metadata/trome_metadata.parquet (total rows: 35854)
+2026-07-18 13:13:34,120 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/trome_2023-11-26.json (status=success)
+2026-07-18 13:13:34,734 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=1&scale=78
+2026-07-18 13:13:34,736 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_1.jpg
+2026-07-18 13:13:36,906 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=2&scale=78
+2026-07-18 13:13:36,907 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_2.jpg
+2026-07-18 13:13:39,856 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=3&scale=78
+2026-07-18 13:13:39,857 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_3.jpg
+2026-07-18 13:13:42,361 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=4&scale=78
+2026-07-18 13:13:42,361 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_4.jpg
+2026-07-18 13:13:44,974 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=5&scale=78
+2026-07-18 13:13:44,975 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_5.jpg
+2026-07-18 13:13:47,814 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=6&scale=78
+2026-07-18 13:13:47,814 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_6.jpg
+2026-07-18 13:13:50,963 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=7&scale=78
+2026-07-18 13:13:50,963 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_7.jpg
+2026-07-18 13:13:54,127 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=8&scale=78
+2026-07-18 13:13:54,127 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_8.jpg
+2026-07-18 13:13:57,449 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=9&scale=78
+2026-07-18 13:13:57,450 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_9.jpg
+2026-07-18 13:14:00,039 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=10&scale=78
+2026-07-18 13:14:00,039 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_10.jpg
+2026-07-18 13:14:02,622 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=11&scale=78
+2026-07-18 13:14:02,623 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_11.jpg
+2026-07-18 13:14:05,513 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=12&scale=78
+2026-07-18 13:14:05,514 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_12.jpg
+2026-07-18 13:14:08,264 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=13&scale=78
+2026-07-18 13:14:08,264 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_13.jpg
+2026-07-18 13:14:11,079 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=14&scale=78
+2026-07-18 13:14:11,079 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_14.jpg
+2026-07-18 13:14:13,973 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=15&scale=78
+2026-07-18 13:14:13,974 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_15.jpg
+2026-07-18 13:14:17,167 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=16&scale=78
+2026-07-18 13:14:17,168 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_16.jpg
+2026-07-18 13:14:20,604 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=17&scale=78
+2026-07-18 13:14:20,605 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_17.jpg
+2026-07-18 13:14:23,392 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=18&scale=78
+2026-07-18 13:14:23,392 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_18.jpg
+2026-07-18 13:14:26,220 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=19&scale=78
+2026-07-18 13:14:26,220 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_19.jpg
+2026-07-18 13:14:29,358 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=20&scale=78
+2026-07-18 13:14:29,359 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_20.jpg
+2026-07-18 13:14:32,021 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=21&scale=78
+2026-07-18 13:14:32,021 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_21.jpg
+2026-07-18 13:14:34,478 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=22&scale=78
+2026-07-18 13:14:34,479 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_22.jpg
+2026-07-18 13:14:37,705 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=23&scale=78
+2026-07-18 13:14:37,706 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_23.jpg
+2026-07-18 13:14:40,713 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=24&scale=78
+2026-07-18 13:14:40,713 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_24.jpg
+2026-07-18 13:14:44,033 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=25&scale=78
+2026-07-18 13:14:44,033 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_25.jpg
+2026-07-18 13:14:44,288 [WARNING] src.corpus_acquisition.downloader: Page 25 not found (1/3).
+2026-07-18 13:14:44,289 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=26&scale=78
+2026-07-18 13:14:44,289 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_26.jpg
+2026-07-18 13:14:44,625 [WARNING] src.corpus_acquisition.downloader: Page 26 not found (2/3).
+2026-07-18 13:14:44,625 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://t.prcdn.co/img?file=eag82023112700000000001001&page=27&scale=78
+2026-07-18 13:14:44,625 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/27/trome_2023-11-27_27.jpg
+2026-07-18 13:14:44,859 [WARNING] src.corpus_acquisition.downloader: Page 27 not found (3/3).
+2026-07-18 13:14:44,859 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 24 page(s).
+2026-07-18 13:14:44,902 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 24 page(s) -> data/raw/metadata/trome_metadata.parquet (total rows: 35878)
+2026-07-18 13:14:44,904 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/trome_2023-11-27.json (status=success)
+2026-07-18 13:14:45,945 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=1&scale=78
+2026-07-18 13:14:45,946 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_1.jpg
+2026-07-18 13:14:48,583 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=2&scale=78
+2026-07-18 13:14:48,584 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_2.jpg
+2026-07-18 13:14:51,757 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=3&scale=78
+2026-07-18 13:14:51,757 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_3.jpg
+2026-07-18 13:14:54,665 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=4&scale=78
+2026-07-18 13:14:54,665 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_4.jpg
+2026-07-18 13:14:57,304 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=5&scale=78
+2026-07-18 13:14:57,305 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_5.jpg
+2026-07-18 13:14:59,879 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=6&scale=78
+2026-07-18 13:14:59,880 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_6.jpg
+2026-07-18 13:15:03,389 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=7&scale=78
+2026-07-18 13:15:03,389 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_7.jpg
+2026-07-18 13:15:05,942 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=8&scale=78
+2026-07-18 13:15:05,942 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_8.jpg
+2026-07-18 13:15:09,679 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=9&scale=78
+2026-07-18 13:15:09,680 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_9.jpg
+2026-07-18 13:15:12,809 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=10&scale=78
+2026-07-18 13:15:12,809 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_10.jpg
+2026-07-18 13:15:16,011 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=11&scale=78
+2026-07-18 13:15:16,011 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_11.jpg
+2026-07-18 13:15:18,162 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=12&scale=78
+2026-07-18 13:15:18,163 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_12.jpg
+2026-07-18 13:15:21,346 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=13&scale=78
+2026-07-18 13:15:21,347 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_13.jpg
+2026-07-18 13:15:24,534 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=14&scale=78
+2026-07-18 13:15:24,534 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_14.jpg
+2026-07-18 13:15:27,111 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=15&scale=78
+2026-07-18 13:15:27,111 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_15.jpg
+2026-07-18 13:15:30,843 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=16&scale=78
+2026-07-18 13:15:30,843 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_16.jpg
+2026-07-18 13:15:34,882 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=17&scale=78
+2026-07-18 13:15:34,882 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_17.jpg
+2026-07-18 13:15:38,071 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=18&scale=78
+2026-07-18 13:15:38,071 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_18.jpg
+2026-07-18 13:15:41,517 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=19&scale=78
+2026-07-18 13:15:41,518 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_19.jpg
+2026-07-18 13:15:44,619 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=20&scale=78
+2026-07-18 13:15:44,627 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_20.jpg
+2026-07-18 13:15:47,182 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=21&scale=78
+2026-07-18 13:15:47,182 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_21.jpg
+2026-07-18 13:15:50,267 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=22&scale=78
+2026-07-18 13:15:50,271 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_22.jpg
+2026-07-18 13:15:52,503 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=23&scale=78
+2026-07-18 13:15:52,509 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_23.jpg
+2026-07-18 13:15:55,594 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=24&scale=78
+2026-07-18 13:15:55,602 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_24.jpg
+2026-07-18 13:15:58,299 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=25&scale=78
+2026-07-18 13:15:58,303 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_25.jpg
+2026-07-18 13:15:58,551 [WARNING] src.corpus_acquisition.downloader: Page 25 not found (1/3).
+2026-07-18 13:15:58,559 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=26&scale=78
+2026-07-18 13:15:58,561 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_26.jpg
+2026-07-18 13:15:58,793 [WARNING] src.corpus_acquisition.downloader: Page 26 not found (2/3).
+2026-07-18 13:15:58,795 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://t.prcdn.co/img?file=eag82023112800000000001001&page=27&scale=78
+2026-07-18 13:15:58,797 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/28/trome_2023-11-28_27.jpg
+2026-07-18 13:15:59,028 [WARNING] src.corpus_acquisition.downloader: Page 27 not found (3/3).
+2026-07-18 13:15:59,028 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 24 page(s).
+2026-07-18 13:15:59,110 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 24 page(s) -> data/raw/metadata/trome_metadata.parquet (total rows: 35902)
+2026-07-18 13:15:59,141 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/trome_2023-11-28.json (status=success)
+2026-07-18 13:16:00,523 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=1&scale=78
+2026-07-18 13:16:00,528 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_1.jpg
+2026-07-18 13:16:02,922 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=2&scale=78
+2026-07-18 13:16:02,925 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_2.jpg
+2026-07-18 13:16:07,407 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=3&scale=78
+2026-07-18 13:16:07,408 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_3.jpg
+2026-07-18 13:16:11,210 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=4&scale=78
+2026-07-18 13:16:11,214 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_4.jpg
+2026-07-18 13:16:14,269 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=5&scale=78
+2026-07-18 13:16:14,271 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_5.jpg
+2026-07-18 13:16:16,946 [INFO] src.corpus_acquisition.downloader: Downloading page 6 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=6&scale=78
+2026-07-18 13:16:16,947 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_6.jpg
+2026-07-18 13:16:19,696 [INFO] src.corpus_acquisition.downloader: Downloading page 7 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=7&scale=78
+2026-07-18 13:16:19,702 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_7.jpg
+2026-07-18 13:16:21,957 [INFO] src.corpus_acquisition.downloader: Downloading page 8 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=8&scale=78
+2026-07-18 13:16:21,958 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_8.jpg
+2026-07-18 13:16:24,827 [INFO] src.corpus_acquisition.downloader: Downloading page 9 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=9&scale=78
+2026-07-18 13:16:24,835 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_9.jpg
+2026-07-18 13:16:27,567 [INFO] src.corpus_acquisition.downloader: Downloading page 10 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=10&scale=78
+2026-07-18 13:16:27,574 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_10.jpg
+2026-07-18 13:16:29,781 [INFO] src.corpus_acquisition.downloader: Downloading page 11 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=11&scale=78
+2026-07-18 13:16:29,786 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_11.jpg
+2026-07-18 13:16:32,564 [INFO] src.corpus_acquisition.downloader: Downloading page 12 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=12&scale=78
+2026-07-18 13:16:32,566 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_12.jpg
+2026-07-18 13:16:35,005 [INFO] src.corpus_acquisition.downloader: Downloading page 13 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=13&scale=78
+2026-07-18 13:16:35,012 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_13.jpg
+2026-07-18 13:16:37,294 [INFO] src.corpus_acquisition.downloader: Downloading page 14 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=14&scale=78
+2026-07-18 13:16:37,301 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_14.jpg
+2026-07-18 13:16:40,861 [INFO] src.corpus_acquisition.downloader: Downloading page 15 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=15&scale=78
+2026-07-18 13:16:40,863 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_15.jpg
+2026-07-18 13:16:43,630 [INFO] src.corpus_acquisition.downloader: Downloading page 16 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=16&scale=78
+2026-07-18 13:16:43,634 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_16.jpg
+2026-07-18 13:16:46,789 [INFO] src.corpus_acquisition.downloader: Downloading page 17 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=17&scale=78
+2026-07-18 13:16:46,789 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_17.jpg
+2026-07-18 13:16:49,824 [INFO] src.corpus_acquisition.downloader: Downloading page 18 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=18&scale=78
+2026-07-18 13:16:49,830 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_18.jpg
+2026-07-18 13:16:52,647 [INFO] src.corpus_acquisition.downloader: Downloading page 19 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=19&scale=78
+2026-07-18 13:16:52,652 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_19.jpg
+2026-07-18 13:16:55,020 [INFO] src.corpus_acquisition.downloader: Downloading page 20 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=20&scale=78
+2026-07-18 13:16:55,026 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_20.jpg
+2026-07-18 13:16:58,223 [INFO] src.corpus_acquisition.downloader: Downloading page 21 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=21&scale=78
+2026-07-18 13:16:58,235 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_21.jpg
+2026-07-18 13:17:00,775 [INFO] src.corpus_acquisition.downloader: Downloading page 22 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=22&scale=78
+2026-07-18 13:17:00,778 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_22.jpg
+2026-07-18 13:17:03,007 [INFO] src.corpus_acquisition.downloader: Downloading page 23 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=23&scale=78
+2026-07-18 13:17:03,011 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_23.jpg
+2026-07-18 13:17:05,754 [INFO] src.corpus_acquisition.downloader: Downloading page 24 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=24&scale=78
+2026-07-18 13:17:05,754 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_24.jpg
+2026-07-18 13:17:08,109 [INFO] src.corpus_acquisition.downloader: Downloading page 25 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=25&scale=78
+2026-07-18 13:17:08,110 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_25.jpg
+2026-07-18 13:17:08,355 [WARNING] src.corpus_acquisition.downloader: Page 25 not found (1/3).
+2026-07-18 13:17:08,356 [INFO] src.corpus_acquisition.downloader: Downloading page 26 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=26&scale=78
+2026-07-18 13:17:08,356 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_26.jpg
+2026-07-18 13:17:08,703 [WARNING] src.corpus_acquisition.downloader: Page 26 not found (2/3).
+2026-07-18 13:17:08,703 [INFO] src.corpus_acquisition.downloader: Downloading page 27 from https://t.prcdn.co/img?file=eag82023112900000000001001&page=27&scale=78
+2026-07-18 13:17:08,704 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/29/trome_2023-11-29_27.jpg
+2026-07-18 13:17:08,934 [WARNING] src.corpus_acquisition.downloader: Page 27 not found (3/3).
+2026-07-18 13:17:08,934 [WARNING] src.corpus_acquisition.downloader: No new pages found after 3 attempts; stopping with 24 page(s).
+2026-07-18 13:17:08,977 [INFO] src.corpus_acquisition.metadata_extractor: Saved metadata for 24 page(s) -> data/raw/metadata/trome_metadata.parquet (total rows: 35926)
+2026-07-18 13:17:08,979 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/trome_2023-11-29.json (status=success)
+2026-07-18 13:17:10,334 [INFO] src.corpus_acquisition.downloader: Downloading page 1 from https://t.prcdn.co/img?file=eag82023113000000000001001&page=1&scale=78
+2026-07-18 13:17:10,335 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/30/trome_2023-11-30_1.jpg
+2026-07-18 13:17:13,163 [INFO] src.corpus_acquisition.downloader: Downloading page 2 from https://t.prcdn.co/img?file=eag82023113000000000001001&page=2&scale=78
+2026-07-18 13:17:13,163 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/30/trome_2023-11-30_2.jpg
+2026-07-18 13:17:16,905 [INFO] src.corpus_acquisition.downloader: Downloading page 3 from https://t.prcdn.co/img?file=eag82023113000000000001001&page=3&scale=78
+2026-07-18 13:17:16,905 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/30/trome_2023-11-30_3.jpg
+2026-07-18 13:17:19,267 [INFO] src.corpus_acquisition.downloader: Downloading page 4 from https://t.prcdn.co/img?file=eag82023113000000000001001&page=4&scale=78
+2026-07-18 13:17:19,267 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/30/trome_2023-11-30_4.jpg
+2026-07-18 13:17:22,075 [INFO] src.corpus_acquisition.downloader: Downloading page 5 from https://t.prcdn.co/img?file=eag82023113000000000001001&page=5&scale=78
+2026-07-18 13:17:22,075 [INFO] src.corpus_acquisition.crawler: Downloading -> data/raw/images/trome/2023/11/30/trome_2023-11-30_5.jpg
+2026-07-18 13:17:22,362 [ERROR] src.corpus_acquisition.downloader: Rate-limited (403) on page 5 for trome on 2023-11-30; aborting run.
+2026-07-18 13:17:22,365 [INFO] src.corpus_acquisition.metadata_extractor: Saved crawl log -> data/raw/crawl_logs/trome_2023-11-30.json (status=failed)
+2026-07-18 13:17:22,365 [ERROR] __main__: Stopped due to rate limiting (403): Received 403 while downloading page 5 from https://t.prcdn.co/img?file=eag82023113000000000001001&page=5&scale=78

@@ -25,8 +25,8 @@ source venv/corpus_acquisition/bin/activate
 ##### TODO LO DEMAS #####
 # newspaper = trome, elcomercio, peru21, gestion, ojo, correo
 python3 -m src.workflows.acquire_corpus \
-    --newspaper correo \
-    --start-date 2024-08-29 \
+    --newspaper trome \
+    --start-date 2023-11-29 \
     --end-date 2026-06-30 # Final date
 
 exit_code=$?

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DST="./data/raw/images/peru21"
+DST="./data/raw/images/ojo"
 
 find "$DST" -name "*#*.jpg" | while read -r file; do
     filename=$(basename "$file")
@@ -12,7 +12,7 @@ find "$DST" -name "*#*.jpg" | while read -r file; do
     day=$(echo "$date_part" | cut -d'-' -f3)
 
     new_dir="$DST/$year/$month/$day"
-    new_file="peru21_${date_part}_${page}.jpg"
+    new_file="ojo_${date_part}_${page}.jpg"
 
     mkdir -p "$new_dir"
     mv "$file" "$new_dir/$new_file"

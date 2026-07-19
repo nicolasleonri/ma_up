@@ -1,0 +1,46 @@
+
+================================================================================
+                              Slurm Job Statistics                              
+================================================================================
+         Job ID: 26107956
+   User/Account: nicolasal97/agfritz
+       Job Name: corpus_acquisition
+          State: COMPLETED
+          Nodes: 1
+      CPU Cores: 1
+     CPU Memory: 3GB
+  QOS/Partition: standard/scavenger
+        Cluster: curta
+     Start Time: Sat Jul 18, 2026 at 3:15 PM
+       Run Time: 18:15:05
+     Time Limit: 2-00:00:00
+
+                              Overall Utilization                               
+================================================================================
+  CPU utilization  [                                                0%]
+  CPU memory usage [|||||||||||||||||||||||||||||||||||            70%]
+
+                              Detailed Utilization                              
+================================================================================
+  CPU utilization per node (CPU time used/run time)
+      c003.curta.zedat.fu-berlin.de: 00:05:20/18:15:05 (efficiency=0.5%)
+
+  CPU memory usage per node - used/allocated
+      c003.curta.zedat.fu-berlin.de: 2.1GB/3GB 
+
+                                     Notes                                      
+================================================================================
+  * The overall CPU utilization of this job is 0.5%. This value is low
+    compared to the target range of 90% and above. Please investigate the
+    reason for the low efficiency. For more info:
+      https://www.fu-berlin.de/en/sites/high-performance-computing/Dokumentation/Ressourcennutzung
+
+  * This job only needed 38% of the requested time, which was 2-00:00:00. For
+    future jobs, please request less time by modifying the --time Slurm
+    directive. This will lower your queue times and allow the Slurm job
+    scheduler to work more effectively for all users. For more info:
+      https://www.fu-berlin.de/en/sites/high-performance-computing/Dokumentation/Ressourcen-Manager/Zeitlimit
+
+  * Have a nice day!
+
+

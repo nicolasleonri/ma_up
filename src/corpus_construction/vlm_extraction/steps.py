@@ -1,20 +1,27 @@
 """
-vlm_steps.py — VLM extractor classes for offline batch text extraction.
+vlm_steps.py
 
-All extractors run fully offline using vLLM's in-process LLM API.
+Offline VLM extraction using in-process vLLM.
 
-Each extraction attempts to return four structured fields:
+Architecture:
 
-    - title
-    - subheadline
-    - author
-    - body
+    image
+      ↓
+    local VLM
+      ↓
+    generated text
+      ↓
+    DSPy structured extraction
+      ↓
+    title
+    subheadline
+    author
+    body
 
-The original model response is also preserved in raw_text so that
-failed parsing or unexpected model behavior can be inspected later.
+No vLLM server is used.
 
-Models are loaded lazily and reused for all batches handled by one
-extractor instance.
+DSPy is currently used without optimization/fine-tuning.
+Later, a DSPy optimizer can be added using the gold-standard dataset.
 """
 
 import gc
@@ -30,7 +37,7 @@ from PIL import Image
 
 
 # ----------------------------------------------------------------------
-# Shared result container
+# Result container
 # ----------------------------------------------------------------------
 
 @dataclass
@@ -43,10 +50,14 @@ class ExtractionResult:
     elapsed_s: float = 0.0
     status: str = "failed"
     error: Optional[str] = None
-    metadata: Dict[str, Any] = field(default_factory=dict)
+    metadata: Dict[str, Any] = field(
+        default_factory=dict
+    )
 
     def to_dict(self) -> Dict[str, Any]:
+
         out = dict(self.metadata)
+
         out.update(
             {
                 "title": self.title,
@@ -59,51 +70,168 @@ class ExtractionResult:
                 "error": self.error,
             }
         )
+
         return out
 
 
 # ----------------------------------------------------------------------
-# Shared extraction prompt
+# DSPy structured extraction
 # ----------------------------------------------------------------------
 
-EXTRACTION_PROMPT = (
-    "You are transcribing a scanned newspaper article. "
-    "Read the image and return ONLY a JSON object with four keys: "
-    '"title" (the article headline, or empty string if none is visible), '
-    '"subheadline" (the article subheadline or standfirst, or empty string '
-    "if none is visible), "
-    '"author" (the author or byline, or empty string if none is visible), '
-    '"body" (the full article body text, preserving paragraph breaks as \\n). '
-    "Do not include any commentary outside the JSON object."
-)
+class DSPyArticleExtraction:
 
+    """
+    DSPy module responsible for converting raw OCR/VLM text into
+    structured article fields.
 
-def _parse_extraction(raw_text: str):
-    """Best-effort parse of model output."""
-    text = (raw_text or "").strip()
-    text = re.sub(r"^```(json)?", "", text).strip()
-    text = re.sub(r"```$", "", text).strip()
+    This is intentionally NOT optimized yet.
 
-    try:
-        obj = json.loads(text)
-        return (
-            str(obj.get("title", "")).strip(),
-            str(obj.get("subheadline", "")).strip(),
-            str(obj.get("author", "")).strip(),
-            str(obj.get("body", "")).strip(),
+    Later we can optimize this module against the gold-standard
+    dataset using DSPy optimizers.
+    """
+
+    def __init__(self):
+
+        import dspy
+
+        self.dspy = dspy
+
+        class ArticleExtraction(
+            dspy.Signature
+        ):
+            """
+            Extract structured newspaper article metadata
+            from OCR text.
+
+            Return empty strings when a field is not present.
+            Do not invent information.
+            """
+
+            ocr_text = dspy.InputField(
+                desc=(
+                    "Raw OCR or VLM transcription "
+                    "of a scanned newspaper article."
+                )
+            )
+
+            title = dspy.OutputField(
+                desc=(
+                    "The article headline. "
+                    "Return an empty string if "
+                    "no headline is visible."
+                )
+            )
+
+            subheadline = dspy.OutputField(
+                desc=(
+                    "The article subheadline, "
+                    "standfirst, or deck. "
+                    "Return an empty string if absent."
+                )
+            )
+
+            author = dspy.OutputField(
+                desc=(
+                    "The article author or byline. "
+                    "Return an empty string if absent."
+                )
+            )
+
+            body = dspy.OutputField(
+                desc=(
+                    "The full article body text. "
+                    "Preserve paragraph breaks."
+                )
+            )
+
+        self.predictor = dspy.Predict(
+            ArticleExtraction
         )
-    except (json.JSONDecodeError, AttributeError):
-        return "", "", "", text
 
+    def extract(
+        self,
+        raw_text: str,
+    ):
+
+        if not raw_text:
+            return (
+                "",
+                "",
+                "",
+                "",
+            )
+
+        try:
+
+            result = self.predictor(
+                ocr_text=raw_text
+            )
+
+            return (
+                self._clean(
+                    getattr(
+                        result,
+                        "title",
+                        "",
+                    )
+                ),
+                self._clean(
+                    getattr(
+                        result,
+                        "subheadline",
+                        "",
+                    )
+                ),
+                self._clean(
+                    getattr(
+                        result,
+                        "author",
+                        "",
+                    )
+                ),
+                self._clean(
+                    getattr(
+                        result,
+                        "body",
+                        "",
+                    )
+                ),
+            )
+
+        except Exception:
+
+            # If DSPy parsing fails, preserve the
+            # raw VLM output as body text.
+            return (
+                "",
+                "",
+                "",
+                raw_text.strip(),
+            )
+
+    @staticmethod
+    def _clean(
+        value: Any,
+    ) -> str:
+
+        if value is None:
+            return ""
+
+        return str(
+            value
+        ).strip()
+
+
+# ----------------------------------------------------------------------
+# Image conversion
+# ----------------------------------------------------------------------
 
 def _to_pil(
     image: np.ndarray,
 ) -> Image.Image:
-    """
-    Convert a BGR OpenCV image to an RGB PIL image.
-    """
 
     if image.ndim == 2:
+
         return Image.fromarray(
             image
         )
@@ -114,15 +242,19 @@ def _to_pil(
 
 
 # ----------------------------------------------------------------------
-# Base vLLM extractor
+# Base VLM extractor
 # ----------------------------------------------------------------------
 
 class _BaseVLLMExtractor:
-    """
-    Base class for offline vLLM inference.
 
-    Models are loaded lazily on first extraction and reused for
-    subsequent batches.
+    """
+    Base class for local in-process VLM inference.
+
+    Important:
+    - No vLLM server.
+    - Models are loaded locally.
+    - Uses LLM.generate().
+    - DSPy performs structured extraction after generation.
     """
 
     model_id: str = ""
@@ -138,6 +270,7 @@ class _BaseVLLMExtractor:
         dtype: str = "bfloat16",
         **engine_kwargs: Any,
     ):
+
         self.max_new_tokens = (
             max_new_tokens
         )
@@ -163,10 +296,16 @@ class _BaseVLLMExtractor:
         self._llm = None
         self._sampling_params = None
 
+        # DSPy structured extraction.
+        self._dspy_extractor = (
+            DSPyArticleExtraction()
+        )
+
+    # ------------------------------------------------------------------
+    # Load model
+    # ------------------------------------------------------------------
+
     def _ensure_loaded(self):
-        """
-        Lazily load the vLLM model.
-        """
 
         if self._llm is not None:
             return
@@ -177,21 +316,26 @@ class _BaseVLLMExtractor:
         )
 
         llm_kwargs = {
+
             "model": self.model_id,
+
             "trust_remote_code": True,
+
             "dtype": self.dtype,
-            "tensor_parallel_size": (
-                self.tensor_parallel_size
-            ),
-            "gpu_memory_utilization": (
-                self.gpu_memory_utilization
-            ),
+
+            "tensor_parallel_size":
+                self.tensor_parallel_size,
+
+            "gpu_memory_utilization":
+                self.gpu_memory_utilization,
+
             "limit_mm_per_prompt": {
                 "image": 1
             },
         }
 
         if self.max_model_len is not None:
+
             llm_kwargs[
                 "max_model_len"
             ] = self.max_model_len
@@ -213,15 +357,17 @@ class _BaseVLLMExtractor:
             )
         )
 
+    # ------------------------------------------------------------------
+    # Unload
+    # ------------------------------------------------------------------
+
     def unload(self):
-        """
-        Free GPU memory before loading another VLM.
-        """
 
         if self._llm is None:
             return
 
         try:
+
             engine = getattr(
                 self._llm,
                 "llm_engine",
@@ -235,6 +381,7 @@ class _BaseVLLMExtractor:
                     "shutdown",
                 )
             ):
+
                 engine.shutdown()
 
         except Exception:
@@ -246,15 +393,18 @@ class _BaseVLLMExtractor:
         gc.collect()
 
         try:
+
             import torch
 
             torch.cuda.empty_cache()
+
             torch.cuda.synchronize()
 
         except Exception:
             pass
 
         try:
+
             from vllm.distributed.parallel_state import (
                 destroy_model_parallel,
             )
@@ -263,6 +413,10 @@ class _BaseVLLMExtractor:
 
         except Exception:
             pass
+
+    # ------------------------------------------------------------------
+    # Single image
+    # ------------------------------------------------------------------
 
     def extract(
         self,
@@ -275,6 +429,10 @@ class _BaseVLLMExtractor:
             [metadata],
         )[0]
 
+    # ------------------------------------------------------------------
+    # Batch extraction
+    # ------------------------------------------------------------------
+
     def extract_batch(
         self,
         images: List[np.ndarray],
@@ -282,61 +440,58 @@ class _BaseVLLMExtractor:
             Dict[str, Any]
         ],
     ) -> List[ExtractionResult]:
-        """
-        Run one offline vLLM batch.
-
-        The elapsed_s value is the average wall-clock batch
-        time per image. The original raw model response is
-        always retained.
-        """
 
         self._ensure_loaded()
 
-        conversations = []
+        prompts = []
 
         for image in images:
+
             pil_image = _to_pil(
                 image
             )
 
-            conversations.append(
-                [
-                    {
-                        "role": "user",
-                        "content": [
-                            {
-                                "type": "image_pil",
-                                "image_pil": (
-                                    pil_image
-                                ),
-                            },
-                            {
-                                "type": "text",
-                                "text": (
-                                    EXTRACTION_PROMPT
-                                ),
-                            },
-                        ],
-                    }
-                ]
+            prompts.append(
+                {
+                    "prompt": (
+                        "<|user|>\n"
+                        "You are transcribing a scanned "
+                        "newspaper article.\n\n"
+                        "Read the provided newspaper image "
+                        "and transcribe the article as accurately "
+                        "as possible.\n\n"
+                        "Include the headline, subheadline, "
+                        "author/byline, and complete article body "
+                        "when visible.\n\n"
+                        "Do not summarize.\n"
+                        "Do not invent missing information.\n"
+                        "Preserve the original article text.\n"
+                        "<|assistant|>\n"
+                    ),
+                    "multi_modal_data": {
+                        "image": pil_image
+                    },
+                }
             )
 
         start = time.time()
 
         try:
-            outputs = self._llm.chat(
-                conversations,
+
+            outputs = self._llm.generate(
+                prompts,
                 self._sampling_params,
             )
 
             elapsed_total = (
-                time.time() - start
+                time.time()
+                - start
             )
 
             per_item = (
                 elapsed_total
                 / max(
-                    len(conversations),
+                    len(outputs),
                     1,
                 )
             )
@@ -350,40 +505,66 @@ class _BaseVLLMExtractor:
                 outputs,
                 metadata_list,
             ):
-                raw_text = (
-                    output.outputs[0].text
-                    if output.outputs
-                    else ""
-                )
+
+                raw_text = ""
+
+                if output.outputs:
+
+                    raw_text = (
+                        output
+                        .outputs[0]
+                        .text
+                    )
+
+                # --------------------------------------------------
+                # DSPy structured extraction
+                # --------------------------------------------------
 
                 (
                     title,
                     subheadline,
                     author,
                     body,
-                ) = _parse_extraction(
-                    raw_text
+                ) = (
+                    self._dspy_extractor.extract(
+                        raw_text
+                    )
                 )
 
                 results.append(
                     ExtractionResult(
-                    title=title,
-                    subheadline=subheadline,
-                    author=author,
-                    body=body,
-                    raw_text=raw_text,
-                    elapsed_s=per_item,
-                    status="ok",
-                    error=None,
-                    metadata=metadata,
+
+                        title=title,
+
+                        subheadline=(
+                            subheadline
+                        ),
+
+                        author=author,
+
+                        body=body,
+
+                        raw_text=raw_text,
+
+                        elapsed_s=(
+                            per_item
+                        ),
+
+                        status="success",
+
+                        error=None,
+
+                        metadata=metadata,
                     )
                 )
 
             return results
 
         except Exception as exc:
+
             elapsed_total = (
-                time.time() - start
+                time.time()
+                - start
             )
 
             per_item = (
@@ -395,18 +576,34 @@ class _BaseVLLMExtractor:
             )
 
             return [
+
                 ExtractionResult(
+
                     title="",
+
                     subheadline="",
+
                     author="",
+
                     body="",
+
                     raw_text="",
-                    elapsed_s=per_item,
+
+                    elapsed_s=(
+                        per_item
+                    ),
+
                     status="failed",
-                    error=str(exc),
+
+                    error=str(
+                        exc
+                    ),
+
                     metadata=metadata,
                 )
-                for metadata in metadata_list
+
+                for metadata
+                in metadata_list
             ]
 
 
@@ -417,6 +614,7 @@ class _BaseVLLMExtractor:
 class OlmOCRExtractor(
     _BaseVLLMExtractor
 ):
+
     model_id = (
         "allenai/olmOCR-2-7B-1025-FP8"
     )
@@ -425,6 +623,7 @@ class OlmOCRExtractor(
 class RolmOCRExtractor(
     _BaseVLLMExtractor
 ):
+
     model_id = (
         "AccsoAndreBuesgen/RolmOCR-bnb-4bit"
     )
@@ -433,13 +632,20 @@ class RolmOCRExtractor(
 class NanonetsOCRExtractor(
     _BaseVLLMExtractor
 ):
+
     model_id = (
         "sayed0am/Nanonets-OCR2-3B-FP8-Dynamic"
     )
 
 
 VLM_EXTRACTORS = {
-    "olmocr": OlmOCRExtractor,
-    "rolmocr": RolmOCRExtractor,
-    "nanonets": NanonetsOCRExtractor,
+
+    "olmocr":
+        OlmOCRExtractor,
+
+    "rolmocr":
+        RolmOCRExtractor,
+
+    "nanonets":
+        NanonetsOCRExtractor,
 }

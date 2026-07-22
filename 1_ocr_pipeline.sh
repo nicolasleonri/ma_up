@@ -8,8 +8,8 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2
 #SBATCH --gres=gpu:h100:1
-#SBATCH --mem-per-cpu=15GB
-#SBATCH --time=01:00:00
+#SBATCH --mem-per-cpu=5GB
+#SBATCH --time=00:20:00
 
 # set -euo pipefail
 
@@ -58,6 +58,7 @@ python -m src.workflows.vlm_extraction \
 #     --binarized-dir data/corpus_construction/binarize/cropped \
 #     --binarization-parquet data/corpus_construction/binarize/cropped/binarization.parquet \
 #     --gpu-memory-utilization 0.85
+# # ####### Specs (1 image): 2x5GB; 1xh100 and 20min
 
 # ## 4. Evaluate
 # module purge

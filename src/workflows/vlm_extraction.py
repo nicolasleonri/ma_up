@@ -1,19 +1,25 @@
 """
-vlm_extraction.py — CLI entry point for the VLM text extraction step.
+vlm_extraction.py — CLI entry point for local VLM text extraction.
 
 Runs one or more VLMs fully offline using vLLM's in-process LLM API.
 
-The pipeline consumes the successful outputs recorded in the binarization
-Parquet and extracts structured article metadata:
+DSPy is used as the structured extraction layer. No DSPy optimization
+or fine-tuning is performed yet.
 
-    - title
-    - subheadline
-    - author
-    - body
+Architecture:
 
-The final output is one global Parquet file containing one row per:
+    image
+        ↓
+    local VLM / vLLM
+        ↓
+    DSPy structured extraction
+        ↓
+    title
+    subheadline
+    author
+    body
 
-    binarized image × VLM
+No VLM server is required.
 
 Typical usage
 -------------
@@ -43,13 +49,14 @@ before loading the next model.
 
 import argparse
 import logging
-from pathlib import Path
 
 from src.corpus_construction.vlm_extraction.pipeline import (
     VLMExtractionPipeline,
 )
 
+
 logger = logging.getLogger(__name__)
+
 
 AVAILABLE_VLMS = [
     "olmocr",
@@ -59,10 +66,11 @@ AVAILABLE_VLMS = [
 
 
 def parse_args():
+
     parser = argparse.ArgumentParser(
         description=(
-            "Run offline VLM text extraction on binarized "
-            "newspaper article images."
+            "Run local in-process VLM extraction "
+            "with DSPy structured output."
         )
     )
 
@@ -80,8 +88,8 @@ def parse_args():
         required=True,
         help=(
             "Root directory containing the binarized TIFF files. "
-            "Paths stored in binarize_file are resolved relative to "
-            "this directory."
+            "Paths stored in binarize_file are resolved relative "
+            "to this directory."
         ),
     )
 
@@ -91,7 +99,9 @@ def parse_args():
             "data/corpus_construction/"
             "vlm_extraction/results.parquet"
         ),
-        help="Output Parquet path for VLM extraction results.",
+        help=(
+            "Output Parquet path for VLM extraction results."
+        ),
     )
 
     parser.add_argument(
@@ -120,7 +130,7 @@ def parse_args():
         type=int,
         default=16,
         help=(
-            "Number of images per offline vLLM batch call "
+            "Number of images per local VLM batch "
             "(default: 16)."
         ),
     )
@@ -157,7 +167,9 @@ def parse_args():
     parser.add_argument(
         "--dtype",
         default="bfloat16",
-        help="Model dtype (default: bfloat16).",
+        help=(
+            "Model dtype (default: bfloat16)."
+        ),
     )
 
     parser.add_argument(
@@ -165,8 +177,7 @@ def parse_args():
         action="store_true",
         help=(
             "Re-run extractions that previously failed. "
-            "Default behavior is to skip successful results "
-            "but retry failed results."
+            "Default behavior is to retry failed results."
         ),
     )
 
@@ -174,12 +185,26 @@ def parse_args():
 
 
 def main():
+
     args = parse_args()
 
     logging.basicConfig(
         level=logging.INFO,
-        format="%(asctime)s %(levelname)s %(message)s",
+        format=(
+            "%(asctime)s "
+            "%(levelname)s "
+            "%(message)s"
+        ),
     )
+
+    # --------------------------------------------------------------
+    # Engine configuration.
+    #
+    # These parameters are passed directly to the local vLLM LLM
+    # constructor inside steps.py.
+    #
+    # There is intentionally NO server_url and NO HTTP endpoint.
+    # --------------------------------------------------------------
 
     engine_kwargs = {
         "gpu_memory_utilization": (
@@ -192,14 +217,23 @@ def main():
     }
 
     if args.max_model_len is not None:
-        engine_kwargs["max_model_len"] = (
-            args.max_model_len
-        )
 
+        engine_kwargs[
+            "max_model_len"
+        ] = args.max_model_len
+
+    # Each VLM gets the same local engine configuration.
+    #
+    # This remains configurable per model because later we may want
+    # different settings for RolmOCR, OLMOCR, and Nanonets.
     vlm_engine_kwargs = {
-        vlm: engine_kwargs
+        vlm: dict(engine_kwargs)
         for vlm in args.vlms
     }
+
+    # --------------------------------------------------------------
+    # Create pipeline.
+    # --------------------------------------------------------------
 
     pipeline = VLMExtractionPipeline(
         logger=logger,
@@ -227,7 +261,12 @@ def main():
         ),
     )
 
+    # --------------------------------------------------------------
+    # Run extraction.
+    # --------------------------------------------------------------
+
     try:
+
         processed = pipeline.run()
 
         logger.info(
@@ -237,6 +276,7 @@ def main():
         )
 
     except Exception as exc:
+
         logger.exception(
             "VLM extraction failed: %s",
             exc,

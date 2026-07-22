@@ -2,16 +2,30 @@
 VLM extraction pipeline.
 
 Reads successful binarized TIFFs listed in the binarization Parquet
-and runs one or more VLMs over each image.
+and runs one or more local VLMs over each image.
+
+Architecture:
+
+    binarized image
+        ↓
+    local in-process VLM via vLLM
+        ↓
+    DSPy structured extraction
+        ↓
+    title / subheadline / author / body
+        ↓
+    global Parquet
+
+No VLM server is required.
 
 Each VLM receives every successful binarization variant as a separate
-input. This allows the final evaluation to compare:
+input. This allows evaluation across:
 
-    enhancement configuration
+    config_id
         ×
     detector
         ×
-    binarization method
+    binarization
         ×
     VLM
 
@@ -32,8 +46,6 @@ raw_text
 elapsed_s
 status
 error
-
-The output is stored in one global Parquet file.
 """
 
 import logging
@@ -59,12 +71,6 @@ DEFAULT_PARQUET = (
 # Unique extraction key
 # ----------------------------------------------------------------------
 
-# One unique extraction corresponds to one VLM run over one specific
-# binarized image.
-#
-# binarization and binarize_file MUST be included here because the same
-# image_stem/config_id/detector combination can have multiple binarized
-# variants.
 _KEY_COLS = [
     "image_stem",
     "config_id",
@@ -77,13 +83,14 @@ _KEY_COLS = [
 
 class VLMExtractionPipeline:
     """
-    Run offline VLM extraction over successful binarization outputs.
+    Run local in-process VLM extraction over successful binarization
+    outputs.
 
     The binarization Parquet is the metadata contract between the
     binarization and VLM stages.
 
-    Each successful row in the binarization Parquet represents one
-    unique input image for VLM extraction.
+    Each successful row represents one unique image input for VLM
+    extraction.
     """
 
     def __init__(
@@ -149,6 +156,9 @@ class VLMExtractionPipeline:
     ):
         """
         Load a VLM lazily and cache it.
+
+        VLM inference is performed locally in-process.
+        No HTTP/server endpoint is used.
         """
 
         if name not in self._loaded_vlms:
@@ -161,7 +171,7 @@ class VLMExtractionPipeline:
                 )
 
             self.logger.info(
-                "Loading VLM extractor: %s",
+                "Loading local VLM extractor: %s",
                 name,
             )
 
@@ -195,11 +205,56 @@ class VLMExtractionPipeline:
         """
         Return successfully completed extraction keys.
 
-        Failed rows are intentionally excluded when
+        Failed rows are excluded when
         skip_failed_extractions=True so they can be retried.
         """
 
         if not self.parquet_path.exists():
+            return set()
+
+        # --------------------------------------------------------------
+        # Important:
+        #
+        # The output Parquet may have been created by an older version
+        # of the pipeline. Do not assume that it contains all expected
+        # columns. This avoids the ArrowInvalid error:
+        #
+        #   No match for FieldRef.Name(config_id)
+        #
+        # We inspect the schema first.
+        # --------------------------------------------------------------
+
+        try:
+            available_columns = set(
+                pd.read_parquet(
+                    self.parquet_path,
+                    engine="pyarrow",
+                ).columns
+            )
+        except Exception as exc:
+            self.logger.warning(
+                "Could not inspect existing VLM Parquet %s: %s",
+                self.parquet_path,
+                exc,
+            )
+            return set()
+
+        required_columns = set(
+            _KEY_COLS + ["status"]
+        )
+
+        missing = (
+            required_columns
+            - available_columns
+        )
+
+        if missing:
+            self.logger.warning(
+                "Existing VLM Parquet is incompatible "
+                "with the current schema. Missing columns: %s. "
+                "Existing results will not be used for resume.",
+                sorted(missing),
+            )
             return set()
 
         df = pd.read_parquet(
@@ -212,7 +267,7 @@ class VLMExtractionPipeline:
 
         if self.skip_failed_extractions:
             df = df[
-                df["status"] == "ok"
+                df["status"] == "success"
             ]
 
         return set(
@@ -234,19 +289,6 @@ class VLMExtractionPipeline:
         """
         Read the binarization Parquet and return all successful
         binarized images that exist on disk.
-
-        The binarization Parquet is treated as the authoritative
-        metadata source.
-
-        Expected columns:
-
-            image_stem
-            detector
-            config_id
-            binarization
-            binarize_file
-            elapsed_s
-            status
         """
 
         df = pd.read_parquet(
@@ -273,7 +315,6 @@ class VLMExtractionPipeline:
                 f"required columns: {sorted(missing)}"
             )
 
-        # Only successfully produced TIFFs are sent to VLMs.
         df = df[
             df["status"] == "success"
         ].copy()
@@ -302,7 +343,6 @@ class VLMExtractionPipeline:
 
             detector = row["detector"]
 
-            # Normalize missing detectors to None.
             if pd.isna(detector):
                 detector = None
 
@@ -333,7 +373,8 @@ class VLMExtractionPipeline:
 
     def run(self) -> int:
         """
-        Run all requested VLMs over all successful binarization outputs.
+        Run all requested local VLMs over all successful binarization
+        outputs.
 
         Returns
         -------
@@ -460,8 +501,6 @@ class VLMExtractionPipeline:
 
                         continue
 
-                    # Only metadata needed in the final VLM Parquet
-                    # is passed to the extractor.
                     metadata = {
                         "image_stem": (
                             item["image_stem"]
@@ -482,6 +521,7 @@ class VLMExtractionPipeline:
                     }
 
                     images.append(image)
+
                     metadata_list.append(
                         metadata
                     )
@@ -551,6 +591,23 @@ class VLMExtractionPipeline:
                     results
                 )
 
+                # Add newly completed successful rows to the in-memory
+                # resume set so duplicate work is avoided during the
+                # same run.
+                for result in results:
+
+                    if result.status != "success":
+                        continue
+
+                    key = tuple(
+                        result.metadata.get(
+                            col
+                        )
+                        for col in _KEY_COLS
+                    )
+
+                    done_keys.add(key)
+
             # ----------------------------------------------------------
             # Free GPU memory before loading next VLM.
             # ----------------------------------------------------------
@@ -586,8 +643,7 @@ class VLMExtractionPipeline:
         Append extraction results to the global Parquet.
 
         Existing rows with the same unique extraction key are replaced
-        by the newest result. This allows failed extractions to be
-        retried safely.
+        by the newest result.
         """
 
         if not rows:
@@ -599,9 +655,32 @@ class VLMExtractionPipeline:
 
         if self.parquet_path.exists():
 
-            existing = pd.read_parquet(
-                self.parquet_path
-            )
+            try:
+                existing = pd.read_parquet(
+                    self.parquet_path
+                )
+
+                # If the existing file comes from an incompatible
+                # previous schema, discard it rather than allowing
+                # concat/drop_duplicates to silently produce corruption.
+                if not set(_KEY_COLS).issubset(
+                    existing.columns
+                ):
+                    self.logger.warning(
+                        "Existing VLM Parquet has an incompatible "
+                        "schema. Replacing it with the current schema."
+                    )
+                    existing = pd.DataFrame()
+
+            except Exception as exc:
+
+                self.logger.warning(
+                    "Could not read existing VLM Parquet: %s. "
+                    "Replacing it.",
+                    exc,
+                )
+
+                existing = pd.DataFrame()
 
             combined = pd.concat(
                 [
@@ -622,11 +701,6 @@ class VLMExtractionPipeline:
 
             combined = new_df
 
-        # Stable sorting.
-        #
-        # Detector can be None for full-page images, so we create
-        # a temporary sorting column without changing the actual
-        # detector values stored in the Parquet.
         combined["_detector_sort"] = (
             combined["detector"]
             .fillna("")

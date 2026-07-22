@@ -209,30 +209,31 @@ class LayoutAnalysisPipeline:
 
                         row = {
                             # Provenance
-                            "newspaper": meta["newspaper"],
-                            "date": meta["date"],
-                            "page": meta["page"],
+                            # "newspaper": meta["newspaper"],
+                            # "date": meta["date"],
+                            # "page": meta["page"],
                             "image_stem": image_stem,
-                            "preprocessing_config": config_id,
+                            "config_id": config_id,
                             "detector": detector_name,
-                            "article_idx": article_idx,
+                            # "article_idx": article_idx,
                             # Output
                             "crop_file": crop_path.name,
-                            "crop_path": str(crop_path),
+                            # "crop_path": str(crop_path),
                             # Geometry
-                            "x1": article.x1,
-                            "y1": article.y1,
-                            "x2": article.x2,
-                            "y2": article.y2,
-                            "grid_row": article.grid_row,
-                            "grid_col": article.grid_col,
-                            "num_regions": len(article.regions),
+                            # "x1": article.x1,
+                            # "y1": article.y1,
+                            # "x2": article.x2,
+                            # "y2": article.y2,
+                            # "grid_row": article.grid_row,
+                            # "grid_col": article.grid_col,
+                            # "num_regions": len(article.regions),
                             # Timing
                             "elapsed_s": round(elapsed, 3),
                             # Status
-                            "status": "ok",
+                            "status": "success",
                             "error": None,
                         }
+
                         all_rows.append(row)
 
                         record = article.to_dict()
@@ -240,13 +241,13 @@ class LayoutAnalysisPipeline:
                         article_records.append(record)
 
                     all_results.append({
-                        "image": image_stem,
-                        "preprocessing_config": config_id,
+                        "image_stem": image_stem,
+                        "config_id": config_id,
                         "detector": detector_name,
-                        "num_regions_detected": len(regions),
-                        "num_articles": len(articles),
+                        # "num_regions_detected": len(regions),
+                        # "num_articles": len(articles),
                         "elapsed_s": round(elapsed, 3),
-                        "articles": article_records,
+                        # "articles": article_records,
                     })
 
                     self.logger.info(
@@ -262,18 +263,17 @@ class LayoutAnalysisPipeline:
                         image_stem, config_id, detector_name, e,
                     )
                     all_rows.append({
-                        "newspaper": meta["newspaper"],
-                        "date": meta["date"],
-                        "page": meta["page"],
+                        # "newspaper": meta["newspaper"],
+                        # "date": meta["date"],
+                        # "page": meta["page"],
                         "image_stem": image_stem,
-                        "preprocessing_config": config_id,
+                        "config_id": config_id,
                         "detector": detector_name,
-                        "article_idx": None,
                         "crop_file": None,
-                        "crop_path": None,
-                        "x1": None, "y1": None, "x2": None, "y2": None,
-                        "grid_row": None, "grid_col": None,
-                        "num_regions": None,
+                        # "crop_path": None,
+                        # "x1": None, "y1": None, "x2": None, "y2": None,
+                        # "grid_row": None, "grid_col": None,
+                        # "num_regions": None,
                         "elapsed_s": round(elapsed, 3),
                         "status": "failed",
                         "error": str(e),
@@ -398,7 +398,7 @@ class LayoutAnalysisPipeline:
 
         new_df = pd.DataFrame(rows)
 
-        key_cols = ["image_stem", "preprocessing_config", "detector", "article_idx"]
+        key_cols = ["image_stem", "config_id", "detector"]
 
         if parquet_path.exists():
             existing_df = pd.read_parquet(parquet_path)
@@ -408,7 +408,7 @@ class LayoutAnalysisPipeline:
             combined = new_df
 
         combined = combined.sort_values(
-            ["newspaper", "date", "page", "preprocessing_config", "detector", "article_idx"]
+            ["image_stem", "config_id", "detector"]
         ).reset_index(drop=True)
         combined.to_parquet(parquet_path, index=False)
 

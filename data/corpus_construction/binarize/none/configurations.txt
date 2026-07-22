@@ -1,0 +1,26 @@
+BINARIZATION CONFIGURATIONS
+===========================
+
+Total configurations: 7
+
+binarization_000
+  binarization: none
+
+binarization_001
+  binarization: basic
+
+binarization_002
+  binarization: otsu
+
+binarization_003
+  binarization: adaptive_mean
+
+binarization_004
+  binarization: adaptive_gaussian
+
+binarization_005
+  binarization: yannihorne
+
+binarization_006
+  binarization: niblack
+

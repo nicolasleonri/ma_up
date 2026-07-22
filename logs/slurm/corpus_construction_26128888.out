@@ -1,0 +1,6 @@
+2026-07-22 18:41:06,095 INFO Binarized images available: 378
+2026-07-22 18:41:06,095 INFO Already completed extractions: 0
+2026-07-22 18:41:06,095 INFO [olmocr] 378 images pending.
+2026-07-22 18:41:06,095 INFO Loading VLM extractor: olmocr
+2026-07-22 18:41:06,464 INFO [olmocr] Batch 0-16 / 378
+INFO 07-22 18:42:33 [api_utils.py:273] non-default args: {'trust_remote_code': True, 'dtype': 'bfloat16', 'gpu_memory_utilization': 0.85, 'disable_log_stats': True, 'limit_mm_per_prompt': {'image': 1}, 'model': 'allenai/olmOCR-2-7B-1025-FP8'}

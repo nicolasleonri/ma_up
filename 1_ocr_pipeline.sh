@@ -6,21 +6,21 @@
 #SBATCH --qos=standard
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=4
-#SBATCH --gres=gpu:h100:1
-#SBATCH --mem-per-cpu=3GB
-#SBATCH --time=00:30:00
+#SBATCH --cpus-per-task=1
+#SBATCH --mem-per-cpu=200mB
+#SBATCH --time=00:03:00
 
 # set -euo pipefail
 
 mkdir -p logs/slurm
 
 # ### 0. Enhancement
-# module add virtualenv/20.32.0-GCCcore-14.3.0
-# module add Python/3.13.5-GCCcore-14.3.0
-# source venv/corpus_construction/enhance_images/bin/activate
-# python3 -m src.workflows.enhance_images --input-dir data/corpus_construction/enhance_images/test/ --output-dir data/corpus_construction/enhance_images/results/
-# module purge
+module purge
+module add virtualenv/20.32.0-GCCcore-14.3.0
+module add Python/3.13.5-GCCcore-14.3.0
+source venv/corpus_construction/enhance_images/bin/activate
+python3 -m src.workflows.enhance_images --input-dir data/corpus_construction/enhance_images/test/ --output-dir data/corpus_construction/enhance_images/results/gestion/ --newspaper gestion
+module purge
 
 # ### 1. PP
 # module add virtualenv/20.32.0-GCCcore-14.3.0

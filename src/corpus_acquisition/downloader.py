@@ -367,7 +367,8 @@ class CorpusDownloader:
         if not date_dir.exists():
             return False
 
-        existing = list(date_dir.glob(f"{newspaper}_{date:%Y-%m-%d}_page*.jpg"))
+        # existing = list(date_dir.glob(f"{newspaper}_{date:%Y-%m-%d}_page*.jpg"))
+        existing = list(date_dir.glob(f"{newspaper}_{date:%Y-%m-%d}_*.jpg"))
         if not existing:
             return False
 

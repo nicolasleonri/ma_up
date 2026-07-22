@@ -55,8 +55,7 @@ DETECTORS = {
     "histogram": HistogramColumnDetector,
 }
 
-# Parquet output path (relative to project root, mirrors preprocessing convention)
-DEFAULT_PARQUET = "data/corpus_construction/layout_detection/results.parquet"
+CHECKPOINT_FILENAME = ".layout_checkpoint.txt"
 
 
 def _parse_image_stem(stem: str) -> Dict[str, str]:
@@ -96,7 +95,6 @@ class LayoutAnalysisPipeline:
         col_overlap_threshold: float = 0.5,
         vertical_gap_ratio: float = 0.04,
         detectors: List[str] = None,
-        parquet_path: str = DEFAULT_PARQUET,
     ):
         self.logger = logger
         self.grid_rows = grid_rows
@@ -105,7 +103,6 @@ class LayoutAnalysisPipeline:
         self.col_overlap_threshold = col_overlap_threshold
         self.vertical_gap_ratio = vertical_gap_ratio
         self.detector_names = detectors or list(DETECTORS.keys())
-        self.parquet_path = Path(parquet_path)
         self._loaded_detectors: Dict[str, Any] = {}
 
     # ------------------------------------------------------------------
@@ -119,6 +116,20 @@ class LayoutAnalysisPipeline:
                 score_threshold=self.score_threshold
             )
         return self._loaded_detectors[name]
+
+    # ------------------------------------------------------------------
+    # Checkpoint
+    # ------------------------------------------------------------------
+
+    def _load_checkpoint(self, checkpoint_path: Path) -> set:
+        if not checkpoint_path.exists():
+            return set()
+        with open(checkpoint_path, "r") as f:
+            return {line.strip() for line in f if line.strip()}
+
+    def _save_checkpoint(self, checkpoint_path: Path, stem: str) -> None:
+        with open(checkpoint_path, "a") as f:
+            f.write(stem + "\n")
 
     # ------------------------------------------------------------------
     # Core processing
@@ -277,14 +288,25 @@ class LayoutAnalysisPipeline:
     # Run over a full directory
     # ------------------------------------------------------------------
 
-    def run(self, preprocessed_dir: Path, output_dir: Path) -> int:
+    def run(
+        self,
+        preprocessed_dir: Path,
+        output_dir: Path,
+        resume: bool = True,
+    ) -> int:
         """
         Run layout analysis on all preprocessed images in preprocessed_dir.
-        Appends results to the shared Parquet file after each image.
+        Appends results to a Parquet file saved inside output_dir after each
+        image. Supports resuming interrupted runs via a checkpoint file.
 
         Returns the number of original images processed.
         """
         output_dir.mkdir(parents=True, exist_ok=True)
+
+        checkpoint_path = output_dir / CHECKPOINT_FILENAME
+        parquet_path = output_dir / "layout_detection.parquet"
+
+        done = self._load_checkpoint(checkpoint_path) if resume else set()
 
         stems = set()
         for f in preprocessed_dir.glob("*_config_*.tiff"):
@@ -303,15 +325,25 @@ class LayoutAnalysisPipeline:
         )
 
         processed = 0
+        skipped = 0
+
         for stem in sorted(stems):
+            if resume and stem in done:
+                skipped += 1
+                continue
+
             self.logger.info("Starting layout analysis: %s", stem)
             rows = self.process(preprocessed_dir, stem, output_dir)
+
             if rows:
-                self._append_to_parquet(rows)
-                processed += 1
+                self._append_to_parquet(rows, parquet_path)
+
+            self._save_checkpoint(checkpoint_path, stem)
+            processed += 1
 
         self.logger.info(
-            "Layout analysis complete. Images processed: %d", processed
+            "Layout analysis complete. Processed: %d, Skipped: %d, Total: %d",
+            processed, skipped, len(stems),
         )
         return processed
 
@@ -347,15 +379,15 @@ class LayoutAnalysisPipeline:
             f"{image_stem}"
             f"_config_{config_id}"
             f"_{detector_name}"
-            f"_{article_idx:1d}"
+            f"_article_{article_idx:03d}"
             ".tiff"
         )
         out_path = crops_dir / filename
         cv2.imwrite(str(out_path), crop)
         return out_path
 
-    def _append_to_parquet(self, rows: List[Dict]) -> None:
-        """Append rows to the shared Parquet results file (upsert by key cols)."""
+    def _append_to_parquet(self, rows: List[Dict], parquet_path: Path) -> None:
+        """Append rows to the Parquet results file (upsert by key cols)."""
         try:
             import pandas as pd
         except ImportError as exc:
@@ -364,13 +396,12 @@ class LayoutAnalysisPipeline:
                 "Install with: pip install pandas pyarrow"
             ) from exc
 
-        self.parquet_path.parent.mkdir(parents=True, exist_ok=True)
         new_df = pd.DataFrame(rows)
 
         key_cols = ["image_stem", "preprocessing_config", "detector", "article_idx"]
 
-        if self.parquet_path.exists():
-            existing_df = pd.read_parquet(self.parquet_path)
+        if parquet_path.exists():
+            existing_df = pd.read_parquet(parquet_path)
             combined = pd.concat([existing_df, new_df], ignore_index=True)
             combined = combined.drop_duplicates(subset=key_cols, keep="last")
         else:
@@ -379,11 +410,11 @@ class LayoutAnalysisPipeline:
         combined = combined.sort_values(
             ["newspaper", "date", "page", "preprocessing_config", "detector", "article_idx"]
         ).reset_index(drop=True)
-        combined.to_parquet(self.parquet_path, index=False)
+        combined.to_parquet(parquet_path, index=False)
 
         self.logger.info(
             "Appended %d row(s) to %s (total rows: %d)",
-            len(new_df), self.parquet_path, len(combined),
+            len(new_df), parquet_path, len(combined),
         )
 
     def _save_index(self, results: List[Dict], image_output_dir: Path) -> None:

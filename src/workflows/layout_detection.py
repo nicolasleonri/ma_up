@@ -54,6 +54,15 @@ def parse_args():
         help="Minimum confidence score for a detection (default: 0.5).",
     )
 
+    parser.add_argument(
+        "--no-resume",
+        action="store_true",
+        help=(
+            "Re-process all images even if "
+            "they were already processed."
+        ),
+    )
+
     return parser.parse_args()
 
 
@@ -77,6 +86,7 @@ def main():
         processed = pipeline.run(
             preprocessed_dir=Path(args.preprocessed_dir),
             output_dir=Path(args.output_dir),
+            resume=not args.no_resume,
         )
         logger.info("Layout analysis finished. Images processed: %s", processed)
     except Exception as e:

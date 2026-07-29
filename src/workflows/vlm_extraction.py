@@ -79,7 +79,7 @@ def parse_args():
         required=True,
         help=(
             "Parquet produced by the binarization step. "
-            "Only rows with status='success' are processed."
+            "Only rows with status='ok' are processed."
         ),
     )
 
@@ -177,7 +177,7 @@ def parse_args():
         action="store_true",
         help=(
             "Re-run extractions that previously failed. "
-            "Default behavior is to retry failed results."
+            "Default behavior is to skip failed results."
         ),
     )
 

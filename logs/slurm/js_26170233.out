@@ -1,0 +1,44 @@
+
+================================================================================
+                              Slurm Job Statistics                              
+================================================================================
+         Job ID: 26170233
+   User/Account: nicolasal97/agfritz
+       Job Name: corpus_construction
+          State: COMPLETED
+          Nodes: 1
+      CPU Cores: 1
+     CPU Memory: 2GB
+           GPUs: 1
+  QOS/Partition: hiprio/scavenger
+        Cluster: curta
+     Start Time: Wed Jul 29, 2026 at 1:48 PM
+       Run Time: 00:03:30
+     Time Limit: 00:05:00
+
+                              Overall Utilization                               
+================================================================================
+  CPU utilization  [||||||||||||||||||||||||                       49%]
+  CPU memory usage [|||||||||||||||||||||||||||||||||||||||||      83%]
+  GPU utilization  [                                                0%]
+  GPU memory usage [||                                              4%]
+
+                              Detailed Utilization                              
+================================================================================
+  CPU utilization per node (CPU time used/run time)
+      g009.curta.zedat.fu-berlin.de: 00:01:43/00:03:30 (efficiency=49.0%)
+
+  CPU memory usage per node - used/allocated
+      g009.curta.zedat.fu-berlin.de: 1.7GB/2GB 
+
+  GPU utilization per node
+      g009.curta.zedat.fu-berlin.de (GPU 3): 0% <-- GPU was not used
+
+  GPU memory usage per node - maximum used/total
+      g009.curta.zedat.fu-berlin.de (GPU 3): 1.0GB/24GB (4.3%)
+
+                                     Notes                                      
+================================================================================
+  * Have a nice day!
+
+

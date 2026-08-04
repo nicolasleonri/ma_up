@@ -1,0 +1,10 @@
+Job ID: 26172833
+Cluster: curta
+User/Group: nicolasal97/agfritz
+State: COMPLETED (exit code 0)
+Cores: 1
+CPU Utilized: 00:00:03
+CPU Efficiency: 23.08% of 00:00:13 core-walltime
+Job Wall-clock time: 00:00:13
+Memory Utilized: 133.85 MB
+Memory Efficiency: 66.93% of 200.00 MB (200.00 MB/core)

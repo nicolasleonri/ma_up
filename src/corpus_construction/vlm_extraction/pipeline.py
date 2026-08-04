@@ -548,47 +548,67 @@ class VLMExtractionPipeline:
                 )
 
                 for result in results:
-
                     self.logger.info(
-                        (
-                            "  → status=%s | "
-                            "title=%r | "
-                            "subheadline=%r | "
-                            "author=%r | "
-                            "body_chars=%d | "
-                            "%.3fs"
-                        ),
+                        "status=%s | articles=%d | %.3fs",
                         result.status,
-                        (
-                            result.title[:60]
-                            if result.title
-                            else ""
-                        ),
-                        (
-                            result.subheadline[:60]
-                            if result.subheadline
-                            else ""
-                        ),
-                        (
-                            result.author[:60]
-                            if result.author
-                            else ""
-                        ),
-                        len(result.body),
+                        len(result.articles),
                         result.elapsed_s,
                     )
 
-                rows = [
-                    result.to_dict()
-                    for result in results
-                ]
+                    for article in result.articles:
+                        self.logger.info(
+                            "    [%d] %s",
+                            article.article_index,
+                            article.title[:80],
+                        )
+
+                rows = []
+
+                for result in results:
+
+                    if result.status != "success":
+                        row = dict(result.metadata)
+
+                        row.update({
+                            "article_index": -1,
+                            "title": "",
+                            "subheadline": "",
+                            "author": "",
+                            "body": "",
+                            "raw_text": result.raw_text,
+                            "elapsed_s": result.elapsed_s,
+                            "status": result.status,
+                            "error": result.error,
+                        })
+
+                        rows.append(row)
+                        continue
+
+                    for article in result.articles:
+
+                        row = dict(result.metadata)
+
+                        row.update({
+                            "article_index": article.article_index,
+                            "title": article.title,
+                            "subheadline": article.subheadline,
+                            "author": article.author,
+                            "body": article.body,
+                            "raw_text": result.raw_text,
+                            "elapsed_s": result.elapsed_s,
+                            "status": result.status,
+                            "error": result.error,
+                        })
+
+                        rows.append(row)
 
                 self._append_to_parquet(
                     rows
                 )
 
-                processed += len(
-                    results
+                processed += sum(
+                    max(1, len(r.articles))
+                    for r in results
                 )
 
                 # Add newly completed successful rows to the in-memory
@@ -692,7 +712,7 @@ class VLMExtractionPipeline:
 
             combined = (
                 combined.drop_duplicates(
-                    subset=_KEY_COLS,
+                    subset=_KEY_COLS + ["article_index"],
                     keep="last",
                 )
             )

@@ -38,15 +38,27 @@ def _to_grayscale(
 class Binarization:
     """Collection of image binarization techniques."""
 
+    # @staticmethod
+    # def none(
+    #     image: np.ndarray,
+    # ) -> np.ndarray:
+    #     """Return a grayscale version of the input.
+
+    #     This is the non-binarized grayscale baseline and is included
+    #     as a reference configuration for OCR evaluation.
+    #     """
+    #     return _to_grayscale(image)
+
     @staticmethod
-    def none(
+    def none_color(
         image: np.ndarray,
     ) -> np.ndarray:
-        """Return a grayscale version of the input.
+        return image  # pass through unchanged
 
-        This is the non-binarized grayscale baseline and is included
-        as a reference configuration for OCR evaluation.
-        """
+    @staticmethod
+    def none_grayscale(
+        image: np.ndarray,
+    ) -> np.ndarray:
         return _to_grayscale(image)
 
     @staticmethod

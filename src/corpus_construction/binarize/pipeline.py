@@ -76,7 +76,8 @@ SUPPORTED_EXTENSIONS = {
 }
 
 BINARIZATION_METHODS = [
-    "none",
+    "none_color",
+    "none_grayscale",
     "basic",
     "otsu",
     "adaptive_mean",

@@ -51,7 +51,7 @@ error
 import logging
 from pathlib import Path
 from typing import Any, Dict, List
-
+import time
 import cv2
 import pandas as pd
 
@@ -638,10 +638,8 @@ class VLMExtractionPipeline:
             )
 
             extractor.unload()
-
-            del self._loaded_vlms[
-                vlm_name
-            ]
+            del self._loaded_vlms[vlm_name]
+            time.sleep(5)  # give GPU memory time to actually free before loading next model
 
         self.logger.info(
             "VLM extraction complete. "

@@ -90,6 +90,10 @@ def conditional_error_metric(
 # ---------------------------------------------------------
 
 def normalize_text(text):
+    if text is None or (isinstance(text, float) and pd.isna(text)):
+        return ""
+    
+    text = str(text)
 
     text = unicodedata.normalize("NFKD", text)
 
@@ -621,7 +625,10 @@ def add_timing(
     """
 
     enhance_df = enhance_df.copy()
-    enhance_df["image_stem"] = enhance_df["image_path"].str.replace(".jpg", "")
+    enhance_df["image_stem"] = (
+        enhance_df["image_path"]
+        .apply(lambda p: Path(p).stem)
+    )
 
     # --- enhance ---
     enhance_agg = (
@@ -752,7 +759,7 @@ def main():
         else None
     )
 
-    article_df, page_df = evaluate(
+    article_df, _ = evaluate(
         results_df,
         gold_df,
     )
@@ -764,12 +771,12 @@ def main():
         layout_df,
     )
 
-    page_df = add_timing(
-        page_df,
-        enhance_df,
-        binarize_df,
-        layout_df,
-    )
+    # page_df = add_timing(
+    #     page_df,
+    #     enhance_df,
+    #     binarize_df,
+    #     layout_df,
+    # )
 
     article_df.to_csv(
         args.output_csv,

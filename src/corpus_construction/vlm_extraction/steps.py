@@ -233,7 +233,7 @@ class DSPyArticleExtraction:
 
     def extract(self, raw_text: str):
         if not raw_text:
-            return "", "", "", ""
+            return []
 
         try:
             result = self.predictor(ocr_text=raw_text)
@@ -242,35 +242,6 @@ class DSPyArticleExtraction:
             )
         except Exception:
             return self._parse_dspy_articles(raw_text)
-
-
-# ----------------------------------------------------------------------
-# JSON fallback parser
-# ----------------------------------------------------------------------
-
-def _parse_fields(raw_text: str):
-    """Parse model output into (title, subheadline, author, body).
-
-    Tries JSON first, falls back to treating the first line as title
-    and the rest as body.
-    """
-    text = (raw_text or "").strip()
-    text = re.sub(r"^```(json)?", "", text).strip()
-    text = re.sub(r"```$", "", text).strip()
-    try:
-        obj = json.loads(text)
-        return (
-            str(obj.get("title", "")).strip(),
-            str(obj.get("subheadline", "")).strip(),
-            str(obj.get("author", "")).strip(),
-            str(obj.get("body", "")).strip(),
-        )
-    except (json.JSONDecodeError, AttributeError):
-        lines = text.splitlines()
-        if not lines:
-            return "", "", "", ""
-        return lines[0].strip(), "", "", "\n".join(lines[1:]).strip()
-
 
 # ----------------------------------------------------------------------
 # Image conversion

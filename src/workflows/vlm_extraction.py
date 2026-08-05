@@ -60,7 +60,7 @@ logger = logging.getLogger(__name__)
 
 AVAILABLE_VLMS = [
     "olmocr",
-    "rolmocr",
+    "deepseek",
     "nanonets",
 ]
 
@@ -118,10 +118,10 @@ def parse_args():
     parser.add_argument(
         "--max-new-tokens",
         type=int,
-        default=2048,
+        default=4096,
         help=(
             "Maximum tokens to generate per image "
-            "(default: 2048)."
+            "(default: 4096)."
         ),
     )
 

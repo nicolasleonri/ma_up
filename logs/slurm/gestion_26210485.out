@@ -1,0 +1,212 @@
+2026-08-05 16:36:51,130 [INFO] src.corpus_construction.enhance_images.pipeline: Saved 54 configurations to data/corpus_construction/enhance_images/results/gestion/configurations.txt
+2026-08-05 16:36:51,131 [INFO] src.corpus_construction.enhance_images.pipeline: Found 10 image(s) under data/corpus_construction/enhance_images/gestion
+2026-08-05 16:36:51,159 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 1/54 | contrast=none | denoising=none | sharpening=none
+2026-08-05 16:36:51,167 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 0 finished in 0.008s
+2026-08-05 16:36:51,167 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 2/54 | contrast=none | denoising=none | sharpening=unsharp_masking
+2026-08-05 16:36:51,185 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 1 finished in 0.018s
+2026-08-05 16:36:51,185 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 3/54 | contrast=none | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 16:36:51,205 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 2 finished in 0.020s
+2026-08-05 16:36:51,205 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 4/54 | contrast=none | denoising=mean_filter | sharpening=none
+2026-08-05 16:36:51,212 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 3 finished in 0.007s
+2026-08-05 16:36:51,212 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 5/54 | contrast=none | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 16:36:51,227 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 4 finished in 0.015s
+2026-08-05 16:36:51,227 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 6/54 | contrast=none | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:36:51,244 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 5 finished in 0.017s
+2026-08-05 16:36:51,244 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 7/54 | contrast=none | denoising=gaussian_filter | sharpening=none
+2026-08-05 16:36:51,254 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 6 finished in 0.010s
+2026-08-05 16:36:51,254 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 8/54 | contrast=none | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 16:36:51,273 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 7 finished in 0.018s
+2026-08-05 16:36:51,273 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 9/54 | contrast=none | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:36:51,291 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 8 finished in 0.018s
+2026-08-05 16:36:51,291 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 10/54 | contrast=none | denoising=median_filter | sharpening=none
+2026-08-05 16:36:51,296 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 9 finished in 0.005s
+2026-08-05 16:36:51,297 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 11/54 | contrast=none | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 16:36:51,311 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 10 finished in 0.014s
+2026-08-05 16:36:51,311 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 12/54 | contrast=none | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:36:51,325 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 11 finished in 0.014s
+2026-08-05 16:36:51,325 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 13/54 | contrast=none | denoising=conservative_filter | sharpening=none
+2026-08-05 16:37:30,081 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 12 finished in 38.755s
+2026-08-05 16:37:30,081 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 14/54 | contrast=none | denoising=conservative_filter | sharpening=unsharp_masking
+2026-08-05 16:38:09,949 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 13 finished in 39.868s
+2026-08-05 16:38:09,950 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 15/54 | contrast=none | denoising=conservative_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:38:49,936 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 14 finished in 39.986s
+2026-08-05 16:38:49,936 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 16/54 | contrast=none | denoising=laplacian_filter | sharpening=none
+2026-08-05 16:38:49,948 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 15 finished in 0.012s
+2026-08-05 16:38:49,948 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 17/54 | contrast=none | denoising=laplacian_filter | sharpening=unsharp_masking
+2026-08-05 16:38:49,965 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 16 finished in 0.017s
+2026-08-05 16:38:49,965 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 18/54 | contrast=none | denoising=laplacian_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:38:49,985 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 17 finished in 0.019s
+2026-08-05 16:38:49,985 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 19/54 | contrast=none | denoising=frequency_filter | sharpening=none
+2026-08-05 16:38:51,009 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 18 finished in 1.024s
+2026-08-05 16:38:51,009 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 20/54 | contrast=none | denoising=frequency_filter | sharpening=unsharp_masking
+2026-08-05 16:38:51,927 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 19 finished in 0.917s
+2026-08-05 16:38:51,927 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 21/54 | contrast=none | denoising=frequency_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:38:52,851 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 20 finished in 0.924s
+2026-08-05 16:38:52,851 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 22/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=none
+2026-08-05 16:40:51,214 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 21 finished in 118.363s
+2026-08-05 16:40:51,215 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 23/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=unsharp_masking
+2026-08-05 16:42:49,066 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 22 finished in 117.851s
+2026-08-05 16:42:49,067 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 24/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=stroke_width_enhancement
+2026-08-05 16:44:47,184 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 23 finished in 118.117s
+2026-08-05 16:44:47,184 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 25/54 | contrast=none | denoising=unsharp_filter | sharpening=none
+2026-08-05 16:44:47,264 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 24 finished in 0.080s
+2026-08-05 16:44:47,264 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 26/54 | contrast=none | denoising=unsharp_filter | sharpening=unsharp_masking
+2026-08-05 16:44:47,350 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 25 finished in 0.086s
+2026-08-05 16:44:47,350 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 27/54 | contrast=none | denoising=unsharp_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:44:47,441 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 26 finished in 0.091s
+2026-08-05 16:44:47,441 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 28/54 | contrast=clahe | denoising=none | sharpening=none
+2026-08-05 16:44:47,646 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 27 finished in 0.204s
+2026-08-05 16:44:47,646 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 29/54 | contrast=clahe | denoising=none | sharpening=unsharp_masking
+2026-08-05 16:44:47,711 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 28 finished in 0.065s
+2026-08-05 16:44:47,711 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 30/54 | contrast=clahe | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 16:44:47,776 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 29 finished in 0.064s
+2026-08-05 16:44:47,776 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 31/54 | contrast=clahe | denoising=mean_filter | sharpening=none
+2026-08-05 16:44:47,834 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 30 finished in 0.058s
+2026-08-05 16:44:47,834 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 32/54 | contrast=clahe | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 16:44:47,902 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 31 finished in 0.068s
+2026-08-05 16:44:47,902 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 33/54 | contrast=clahe | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:44:47,980 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 32 finished in 0.077s
+2026-08-05 16:44:47,980 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 34/54 | contrast=clahe | denoising=gaussian_filter | sharpening=none
+2026-08-05 16:44:48,051 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 33 finished in 0.071s
+2026-08-05 16:44:48,051 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 35/54 | contrast=clahe | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 16:44:48,127 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 34 finished in 0.076s
+2026-08-05 16:44:48,127 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 36/54 | contrast=clahe | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:44:48,195 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 35 finished in 0.068s
+2026-08-05 16:44:48,195 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 37/54 | contrast=clahe | denoising=median_filter | sharpening=none
+2026-08-05 16:44:48,254 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 36 finished in 0.058s
+2026-08-05 16:44:48,254 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 38/54 | contrast=clahe | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 16:44:48,317 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 37 finished in 0.063s
+2026-08-05 16:44:48,317 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 39/54 | contrast=clahe | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:44:48,382 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 38 finished in 0.065s
+2026-08-05 16:44:48,382 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 40/54 | contrast=clahe | denoising=conservative_filter | sharpening=none
+2026-08-05 16:45:28,029 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 39 finished in 39.646s
+2026-08-05 16:45:28,029 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 41/54 | contrast=clahe | denoising=conservative_filter | sharpening=unsharp_masking
+2026-08-05 16:46:08,279 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 40 finished in 40.250s
+2026-08-05 16:46:08,279 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 42/54 | contrast=clahe | denoising=conservative_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:46:47,989 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 41 finished in 39.709s
+2026-08-05 16:46:47,989 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 43/54 | contrast=clahe | denoising=laplacian_filter | sharpening=none
+2026-08-05 16:46:48,051 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 42 finished in 0.061s
+2026-08-05 16:46:48,051 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 44/54 | contrast=clahe | denoising=laplacian_filter | sharpening=unsharp_masking
+2026-08-05 16:46:48,116 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 43 finished in 0.065s
+2026-08-05 16:46:48,116 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 45/54 | contrast=clahe | denoising=laplacian_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:46:48,186 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 44 finished in 0.070s
+2026-08-05 16:46:48,187 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 46/54 | contrast=clahe | denoising=frequency_filter | sharpening=none
+2026-08-05 16:46:49,160 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 45 finished in 0.974s
+2026-08-05 16:46:49,160 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 47/54 | contrast=clahe | denoising=frequency_filter | sharpening=unsharp_masking
+2026-08-05 16:46:50,147 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 46 finished in 0.987s
+2026-08-05 16:46:50,147 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 48/54 | contrast=clahe | denoising=frequency_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:46:51,131 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 47 finished in 0.983s
+2026-08-05 16:46:51,131 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 49/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=none
+2026-08-05 16:48:48,804 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 48 finished in 117.673s
+2026-08-05 16:48:48,805 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 50/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=unsharp_masking
+2026-08-05 16:50:46,533 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 49 finished in 117.728s
+2026-08-05 16:50:46,533 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 51/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=stroke_width_enhancement
+2026-08-05 16:52:45,051 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 50 finished in 118.517s
+2026-08-05 16:52:45,051 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 52/54 | contrast=clahe | denoising=unsharp_filter | sharpening=none
+2026-08-05 16:52:45,188 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 51 finished in 0.136s
+2026-08-05 16:52:45,188 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 53/54 | contrast=clahe | denoising=unsharp_filter | sharpening=unsharp_masking
+2026-08-05 16:52:45,328 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 52 finished in 0.140s
+2026-08-05 16:52:45,328 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 54/54 | contrast=clahe | denoising=unsharp_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:52:45,467 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2013-08-22_32.jpg] Config 53 finished in 0.138s
+2026-08-05 16:52:45,557 [INFO] src.corpus_construction.enhance_images.pipeline: Saved 108 metadata records to data/corpus_construction/enhance_images/results/gestion/enhance_images.parquet
+2026-08-05 16:52:48,942 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 1/54 | contrast=none | denoising=none | sharpening=none
+2026-08-05 16:52:48,947 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 0 finished in 0.005s
+2026-08-05 16:52:48,947 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 2/54 | contrast=none | denoising=none | sharpening=unsharp_masking
+2026-08-05 16:52:48,961 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 1 finished in 0.014s
+2026-08-05 16:52:48,961 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 3/54 | contrast=none | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 16:52:48,974 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 2 finished in 0.013s
+2026-08-05 16:52:48,974 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 4/54 | contrast=none | denoising=mean_filter | sharpening=none
+2026-08-05 16:52:48,980 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 3 finished in 0.006s
+2026-08-05 16:52:48,980 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 5/54 | contrast=none | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 16:52:48,996 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 4 finished in 0.016s
+2026-08-05 16:52:48,996 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 6/54 | contrast=none | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:52:49,009 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 5 finished in 0.013s
+2026-08-05 16:52:49,009 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 7/54 | contrast=none | denoising=gaussian_filter | sharpening=none
+2026-08-05 16:52:49,017 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 6 finished in 0.008s
+2026-08-05 16:52:49,017 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 8/54 | contrast=none | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 16:52:49,032 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 7 finished in 0.015s
+2026-08-05 16:52:49,033 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 9/54 | contrast=none | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:52:49,046 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 8 finished in 0.014s
+2026-08-05 16:52:49,046 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 10/54 | contrast=none | denoising=median_filter | sharpening=none
+2026-08-05 16:52:49,051 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 9 finished in 0.004s
+2026-08-05 16:52:49,051 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 11/54 | contrast=none | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 16:52:49,065 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 10 finished in 0.014s
+2026-08-05 16:52:49,065 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 12/54 | contrast=none | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:52:49,078 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 11 finished in 0.013s
+2026-08-05 16:52:49,078 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 13/54 | contrast=none | denoising=conservative_filter | sharpening=none
+2026-08-05 16:53:25,346 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 12 finished in 36.268s
+2026-08-05 16:53:25,346 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 14/54 | contrast=none | denoising=conservative_filter | sharpening=unsharp_masking
+2026-08-05 16:54:01,825 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 13 finished in 36.478s
+2026-08-05 16:54:01,825 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 15/54 | contrast=none | denoising=conservative_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:54:37,957 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 14 finished in 36.132s
+2026-08-05 16:54:37,957 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 16/54 | contrast=none | denoising=laplacian_filter | sharpening=none
+2026-08-05 16:54:37,966 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 15 finished in 0.009s
+2026-08-05 16:54:37,966 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 17/54 | contrast=none | denoising=laplacian_filter | sharpening=unsharp_masking
+2026-08-05 16:54:37,981 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 16 finished in 0.015s
+2026-08-05 16:54:37,981 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 18/54 | contrast=none | denoising=laplacian_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:54:37,999 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 17 finished in 0.018s
+2026-08-05 16:54:37,999 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 19/54 | contrast=none | denoising=frequency_filter | sharpening=none
+2026-08-05 16:54:38,226 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 18 finished in 0.227s
+2026-08-05 16:54:38,226 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 20/54 | contrast=none | denoising=frequency_filter | sharpening=unsharp_masking
+2026-08-05 16:54:38,446 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 19 finished in 0.220s
+2026-08-05 16:54:38,446 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 21/54 | contrast=none | denoising=frequency_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:54:38,667 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 20 finished in 0.221s
+2026-08-05 16:54:38,667 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 22/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=none
+2026-08-05 16:56:27,320 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 21 finished in 108.652s
+2026-08-05 16:56:27,320 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 23/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=unsharp_masking
+2026-08-05 16:58:19,719 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 22 finished in 112.399s
+2026-08-05 16:58:19,720 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 24/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=stroke_width_enhancement
+2026-08-05 17:00:12,592 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 23 finished in 112.872s
+2026-08-05 17:00:12,592 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 25/54 | contrast=none | denoising=unsharp_filter | sharpening=none
+2026-08-05 17:00:12,664 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 24 finished in 0.072s
+2026-08-05 17:00:12,665 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 26/54 | contrast=none | denoising=unsharp_filter | sharpening=unsharp_masking
+2026-08-05 17:00:12,739 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 25 finished in 0.075s
+2026-08-05 17:00:12,740 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 27/54 | contrast=none | denoising=unsharp_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:00:12,817 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 26 finished in 0.077s
+2026-08-05 17:00:12,817 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 28/54 | contrast=clahe | denoising=none | sharpening=none
+2026-08-05 17:00:12,870 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 27 finished in 0.053s
+2026-08-05 17:00:12,870 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 29/54 | contrast=clahe | denoising=none | sharpening=unsharp_masking
+2026-08-05 17:00:12,927 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 28 finished in 0.057s
+2026-08-05 17:00:12,927 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 30/54 | contrast=clahe | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 17:00:12,986 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 29 finished in 0.059s
+2026-08-05 17:00:12,986 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 31/54 | contrast=clahe | denoising=mean_filter | sharpening=none
+2026-08-05 17:00:13,039 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 30 finished in 0.053s
+2026-08-05 17:00:13,039 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 32/54 | contrast=clahe | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 17:00:13,100 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 31 finished in 0.061s
+2026-08-05 17:00:13,100 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 33/54 | contrast=clahe | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:00:13,167 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 32 finished in 0.066s
+2026-08-05 17:00:13,167 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 34/54 | contrast=clahe | denoising=gaussian_filter | sharpening=none
+2026-08-05 17:00:13,223 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 33 finished in 0.056s
+2026-08-05 17:00:13,223 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 35/54 | contrast=clahe | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 17:00:13,289 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 34 finished in 0.065s
+2026-08-05 17:00:13,289 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 36/54 | contrast=clahe | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:00:13,360 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 35 finished in 0.071s
+2026-08-05 17:00:13,361 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 37/54 | contrast=clahe | denoising=median_filter | sharpening=none
+2026-08-05 17:00:13,413 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 36 finished in 0.052s
+2026-08-05 17:00:13,413 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 38/54 | contrast=clahe | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 17:00:13,470 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 37 finished in 0.057s
+2026-08-05 17:00:13,471 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 39/54 | contrast=clahe | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:00:13,531 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 38 finished in 0.060s
+2026-08-05 17:00:13,531 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 40/54 | contrast=clahe | denoising=conservative_filter | sharpening=none
+2026-08-05 17:00:49,725 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 39 finished in 36.194s
+2026-08-05 17:00:49,725 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 41/54 | contrast=clahe | denoising=conservative_filter | sharpening=unsharp_masking
+2026-08-05 17:01:26,254 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 40 finished in 36.529s
+2026-08-05 17:01:26,255 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 42/54 | contrast=clahe | denoising=conservative_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:02:02,576 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 41 finished in 36.321s
+2026-08-05 17:02:02,576 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 43/54 | contrast=clahe | denoising=laplacian_filter | sharpening=none
+2026-08-05 17:02:02,631 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 42 finished in 0.056s
+2026-08-05 17:02:02,631 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 44/54 | contrast=clahe | denoising=laplacian_filter | sharpening=unsharp_masking
+2026-08-05 17:02:02,692 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 43 finished in 0.061s
+2026-08-05 17:02:02,692 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 45/54 | contrast=clahe | denoising=laplacian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:02:02,756 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 44 finished in 0.063s
+2026-08-05 17:02:02,756 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 46/54 | contrast=clahe | denoising=frequency_filter | sharpening=none
+2026-08-05 17:02:03,013 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 45 finished in 0.257s
+2026-08-05 17:02:03,013 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 47/54 | contrast=clahe | denoising=frequency_filter | sharpening=unsharp_masking
+2026-08-05 17:02:03,283 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 46 finished in 0.270s
+2026-08-05 17:02:03,283 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 48/54 | contrast=clahe | denoising=frequency_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:02:03,553 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 47 finished in 0.270s
+2026-08-05 17:02:03,553 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 49/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=none
+2026-08-05 17:03:49,313 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 48 finished in 105.760s
+2026-08-05 17:03:49,314 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 50/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=unsharp_masking
+2026-08-05 17:05:35,742 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 49 finished in 106.428s
+2026-08-05 17:05:35,743 [INFO] src.corpus_construction.enhance_images.pipeline: [gestion_2015-01-30_1.jpg] Config 51/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=stroke_width_enhancement

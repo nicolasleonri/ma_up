@@ -1,0 +1,40 @@
+
+================================================================================
+                              Slurm Job Statistics                              
+================================================================================
+         Job ID: 26210511
+   User/Account: nicolasal97/agfritz
+       Job Name: correo
+          State: COMPLETED
+          Nodes: 1
+      CPU Cores: 1
+     CPU Memory: 1GB
+  QOS/Partition: standard/scavenger
+        Cluster: curta
+     Start Time: Wed Aug 5, 2026 at 4:57 PM
+       Run Time: 00:01:42
+     Time Limit: 00:10:00
+
+                              Overall Utilization                               
+================================================================================
+  CPU utilization  [||||||||||||||||||||||||||||||||||||||         77%]
+  CPU memory usage [||||||||                                       16%]
+
+                              Detailed Utilization                              
+================================================================================
+  CPU utilization per node (CPU time used/run time)
+      c003.curta.zedat.fu-berlin.de: 00:01:18/00:01:42 (efficiency=77.3%)
+
+  CPU memory usage per node - used/allocated
+      c003.curta.zedat.fu-berlin.de: 167.4MB/1GB 
+
+                                     Notes                                      
+================================================================================
+  * The overall CPU utilization of this job is 77.3%. This value is somewhat
+    low compared to the target range of 90% and above. Please investigate the
+    reason for the low efficiency. For more info:
+      https://www.fu-berlin.de/en/sites/high-performance-computing/Dokumentation/Ressourcennutzung
+
+  * Have a nice day!
+
+

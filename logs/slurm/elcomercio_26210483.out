@@ -1,0 +1,154 @@
+2026-08-05 16:36:35,455 [INFO] src.corpus_construction.enhance_images.pipeline: Saved 54 configurations to data/corpus_construction/enhance_images/results/elcomercio/configurations.txt
+2026-08-05 16:36:35,456 [INFO] src.corpus_construction.enhance_images.pipeline: Found 10 image(s) under data/corpus_construction/enhance_images/elcomercio
+2026-08-05 16:36:35,515 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 1/54 | contrast=none | denoising=none | sharpening=none
+2026-08-05 16:36:35,526 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 0 finished in 0.011s
+2026-08-05 16:36:35,526 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 2/54 | contrast=none | denoising=none | sharpening=unsharp_masking
+2026-08-05 16:36:35,546 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 1 finished in 0.021s
+2026-08-05 16:36:35,546 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 3/54 | contrast=none | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 16:36:35,571 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 2 finished in 0.025s
+2026-08-05 16:36:35,571 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 4/54 | contrast=none | denoising=mean_filter | sharpening=none
+2026-08-05 16:36:35,581 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 3 finished in 0.009s
+2026-08-05 16:36:35,581 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 5/54 | contrast=none | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 16:36:35,600 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 4 finished in 0.019s
+2026-08-05 16:36:35,600 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 6/54 | contrast=none | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:36:35,623 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 5 finished in 0.023s
+2026-08-05 16:36:35,623 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 7/54 | contrast=none | denoising=gaussian_filter | sharpening=none
+2026-08-05 16:36:35,637 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 6 finished in 0.013s
+2026-08-05 16:36:35,637 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 8/54 | contrast=none | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 16:36:35,663 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 7 finished in 0.026s
+2026-08-05 16:36:35,663 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 9/54 | contrast=none | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:36:35,691 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 8 finished in 0.028s
+2026-08-05 16:36:35,691 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 10/54 | contrast=none | denoising=median_filter | sharpening=none
+2026-08-05 16:36:35,699 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 9 finished in 0.008s
+2026-08-05 16:36:35,699 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 11/54 | contrast=none | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 16:36:35,721 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 10 finished in 0.021s
+2026-08-05 16:36:35,721 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 12/54 | contrast=none | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:36:35,742 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 11 finished in 0.021s
+2026-08-05 16:36:35,742 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 13/54 | contrast=none | denoising=conservative_filter | sharpening=none
+2026-08-05 16:37:32,924 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 12 finished in 57.181s
+2026-08-05 16:37:32,924 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 14/54 | contrast=none | denoising=conservative_filter | sharpening=unsharp_masking
+2026-08-05 16:38:32,416 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 13 finished in 59.492s
+2026-08-05 16:38:32,417 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 15/54 | contrast=none | denoising=conservative_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:39:31,790 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 14 finished in 59.373s
+2026-08-05 16:39:31,790 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 16/54 | contrast=none | denoising=laplacian_filter | sharpening=none
+2026-08-05 16:39:31,807 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 15 finished in 0.017s
+2026-08-05 16:39:31,807 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 17/54 | contrast=none | denoising=laplacian_filter | sharpening=unsharp_masking
+2026-08-05 16:39:31,832 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 16 finished in 0.025s
+2026-08-05 16:39:31,832 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 18/54 | contrast=none | denoising=laplacian_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:39:31,861 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 17 finished in 0.029s
+2026-08-05 16:39:31,861 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 19/54 | contrast=none | denoising=frequency_filter | sharpening=none
+2026-08-05 16:39:32,546 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 18 finished in 0.685s
+2026-08-05 16:39:32,546 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 20/54 | contrast=none | denoising=frequency_filter | sharpening=unsharp_masking
+2026-08-05 16:39:33,219 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 19 finished in 0.672s
+2026-08-05 16:39:33,219 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 21/54 | contrast=none | denoising=frequency_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:39:33,901 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 20 finished in 0.682s
+2026-08-05 16:39:33,901 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 22/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=none
+2026-08-05 16:42:28,466 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 21 finished in 174.565s
+2026-08-05 16:42:28,467 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 23/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=unsharp_masking
+2026-08-05 16:45:23,450 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 22 finished in 174.983s
+2026-08-05 16:45:23,450 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 24/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=stroke_width_enhancement
+2026-08-05 16:48:18,420 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 23 finished in 174.969s
+2026-08-05 16:48:18,421 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 25/54 | contrast=none | denoising=unsharp_filter | sharpening=none
+2026-08-05 16:48:18,540 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 24 finished in 0.120s
+2026-08-05 16:48:18,541 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 26/54 | contrast=none | denoising=unsharp_filter | sharpening=unsharp_masking
+2026-08-05 16:48:18,671 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 25 finished in 0.130s
+2026-08-05 16:48:18,671 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 27/54 | contrast=none | denoising=unsharp_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:48:18,808 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 26 finished in 0.136s
+2026-08-05 16:48:18,808 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 28/54 | contrast=clahe | denoising=none | sharpening=none
+2026-08-05 16:48:19,007 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 27 finished in 0.199s
+2026-08-05 16:48:19,007 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 29/54 | contrast=clahe | denoising=none | sharpening=unsharp_masking
+2026-08-05 16:48:19,102 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 28 finished in 0.095s
+2026-08-05 16:48:19,102 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 30/54 | contrast=clahe | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 16:48:19,205 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 29 finished in 0.102s
+2026-08-05 16:48:19,205 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 31/54 | contrast=clahe | denoising=mean_filter | sharpening=none
+2026-08-05 16:48:19,290 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 30 finished in 0.085s
+2026-08-05 16:48:19,290 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 32/54 | contrast=clahe | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 16:48:19,385 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 31 finished in 0.094s
+2026-08-05 16:48:19,385 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 33/54 | contrast=clahe | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:48:19,484 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 32 finished in 0.099s
+2026-08-05 16:48:19,484 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 34/54 | contrast=clahe | denoising=gaussian_filter | sharpening=none
+2026-08-05 16:48:19,571 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 33 finished in 0.087s
+2026-08-05 16:48:19,571 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 35/54 | contrast=clahe | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 16:48:19,674 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 34 finished in 0.102s
+2026-08-05 16:48:19,674 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 36/54 | contrast=clahe | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:48:19,781 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 35 finished in 0.107s
+2026-08-05 16:48:19,782 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 37/54 | contrast=clahe | denoising=median_filter | sharpening=none
+2026-08-05 16:48:19,871 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 36 finished in 0.089s
+2026-08-05 16:48:19,871 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 38/54 | contrast=clahe | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 16:48:19,964 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 37 finished in 0.093s
+2026-08-05 16:48:19,965 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 39/54 | contrast=clahe | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:48:20,062 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 38 finished in 0.098s
+2026-08-05 16:48:20,062 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 40/54 | contrast=clahe | denoising=conservative_filter | sharpening=none
+2026-08-05 16:49:18,859 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 39 finished in 58.796s
+2026-08-05 16:49:18,859 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 41/54 | contrast=clahe | denoising=conservative_filter | sharpening=unsharp_masking
+2026-08-05 16:50:17,716 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 40 finished in 58.856s
+2026-08-05 16:50:17,716 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 42/54 | contrast=clahe | denoising=conservative_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:51:16,747 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 41 finished in 59.031s
+2026-08-05 16:51:16,747 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 43/54 | contrast=clahe | denoising=laplacian_filter | sharpening=none
+2026-08-05 16:51:16,837 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 42 finished in 0.090s
+2026-08-05 16:51:16,837 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 44/54 | contrast=clahe | denoising=laplacian_filter | sharpening=unsharp_masking
+2026-08-05 16:51:16,936 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 43 finished in 0.099s
+2026-08-05 16:51:16,936 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 45/54 | contrast=clahe | denoising=laplacian_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:51:17,040 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 44 finished in 0.103s
+2026-08-05 16:51:17,040 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 46/54 | contrast=clahe | denoising=frequency_filter | sharpening=none
+2026-08-05 16:51:17,781 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 45 finished in 0.741s
+2026-08-05 16:51:17,781 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 47/54 | contrast=clahe | denoising=frequency_filter | sharpening=unsharp_masking
+2026-08-05 16:51:18,513 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 46 finished in 0.732s
+2026-08-05 16:51:18,513 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 48/54 | contrast=clahe | denoising=frequency_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:51:19,275 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 47 finished in 0.762s
+2026-08-05 16:51:19,275 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 49/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=none
+2026-08-05 16:54:14,538 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 48 finished in 175.263s
+2026-08-05 16:54:14,539 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 50/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=unsharp_masking
+2026-08-05 16:57:10,150 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 49 finished in 175.611s
+2026-08-05 16:57:10,150 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 51/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=stroke_width_enhancement
+2026-08-05 17:00:15,514 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 50 finished in 185.363s
+2026-08-05 17:00:15,514 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 52/54 | contrast=clahe | denoising=unsharp_filter | sharpening=none
+2026-08-05 17:00:15,711 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 51 finished in 0.197s
+2026-08-05 17:00:15,712 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 53/54 | contrast=clahe | denoising=unsharp_filter | sharpening=unsharp_masking
+2026-08-05 17:00:15,921 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 52 finished in 0.210s
+2026-08-05 17:00:15,921 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 54/54 | contrast=clahe | denoising=unsharp_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:00:16,126 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-04-23_1.jpg] Config 53 finished in 0.204s
+2026-08-05 17:00:16,166 [INFO] src.corpus_construction.enhance_images.pipeline: Saved 54 metadata records to data/corpus_construction/enhance_images/results/elcomercio/enhance_images.parquet
+2026-08-05 17:00:20,845 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 1/54 | contrast=none | denoising=none | sharpening=none
+2026-08-05 17:00:20,853 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 0 finished in 0.008s
+2026-08-05 17:00:20,853 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 2/54 | contrast=none | denoising=none | sharpening=unsharp_masking
+2026-08-05 17:00:20,874 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 1 finished in 0.022s
+2026-08-05 17:00:20,875 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 3/54 | contrast=none | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 17:00:20,896 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 2 finished in 0.021s
+2026-08-05 17:00:20,896 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 4/54 | contrast=none | denoising=mean_filter | sharpening=none
+2026-08-05 17:00:20,906 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 3 finished in 0.010s
+2026-08-05 17:00:20,906 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 5/54 | contrast=none | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 17:00:20,930 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 4 finished in 0.024s
+2026-08-05 17:00:20,930 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 6/54 | contrast=none | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:00:20,952 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 5 finished in 0.022s
+2026-08-05 17:00:20,952 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 7/54 | contrast=none | denoising=gaussian_filter | sharpening=none
+2026-08-05 17:00:20,968 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 6 finished in 0.016s
+2026-08-05 17:00:20,968 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 8/54 | contrast=none | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 17:00:20,995 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 7 finished in 0.027s
+2026-08-05 17:00:20,995 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 9/54 | contrast=none | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:00:21,022 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 8 finished in 0.026s
+2026-08-05 17:00:21,022 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 10/54 | contrast=none | denoising=median_filter | sharpening=none
+2026-08-05 17:00:21,030 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 9 finished in 0.008s
+2026-08-05 17:00:21,030 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 11/54 | contrast=none | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 17:00:21,052 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 10 finished in 0.022s
+2026-08-05 17:00:21,052 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 12/54 | contrast=none | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:00:21,072 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 11 finished in 0.020s
+2026-08-05 17:00:21,072 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 13/54 | contrast=none | denoising=conservative_filter | sharpening=none
+2026-08-05 17:01:20,529 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 12 finished in 59.457s
+2026-08-05 17:01:20,529 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 14/54 | contrast=none | denoising=conservative_filter | sharpening=unsharp_masking
+2026-08-05 17:02:19,902 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 13 finished in 59.373s
+2026-08-05 17:02:19,902 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 15/54 | contrast=none | denoising=conservative_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:03:18,916 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 14 finished in 59.013s
+2026-08-05 17:03:18,916 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 16/54 | contrast=none | denoising=laplacian_filter | sharpening=none
+2026-08-05 17:03:18,932 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 15 finished in 0.016s
+2026-08-05 17:03:18,932 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 17/54 | contrast=none | denoising=laplacian_filter | sharpening=unsharp_masking
+2026-08-05 17:03:18,956 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 16 finished in 0.024s
+2026-08-05 17:03:18,956 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 18/54 | contrast=none | denoising=laplacian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:03:18,985 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 17 finished in 0.029s
+2026-08-05 17:03:18,985 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 19/54 | contrast=none | denoising=frequency_filter | sharpening=none
+2026-08-05 17:03:19,661 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 18 finished in 0.675s
+2026-08-05 17:03:19,661 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 20/54 | contrast=none | denoising=frequency_filter | sharpening=unsharp_masking
+2026-08-05 17:03:20,354 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 19 finished in 0.693s
+2026-08-05 17:03:20,355 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 21/54 | contrast=none | denoising=frequency_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:03:21,025 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 20 finished in 0.671s
+2026-08-05 17:03:21,025 [INFO] src.corpus_construction.enhance_images.pipeline: [elcomercio_2015-05-19_38.jpg] Config 22/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=none

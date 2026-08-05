@@ -274,7 +274,7 @@ class _BaseVLLMExtractor:
         self,
         server_url: Optional[str] = None,
         use_local: bool = True,
-        max_new_tokens: int = 2048,
+        max_new_tokens: int = 4096,
         max_model_len: Optional[int] = None,
         gpu_memory_utilization: float = 0.85,
         tensor_parallel_size: int = 1,
@@ -339,7 +339,7 @@ class _BaseVLLMExtractor:
 
             def __init__(self):
                 from vllm import SamplingParams
-                self._params = SamplingParams(temperature=0.0, max_tokens=1024)
+                self._params = SamplingParams(temperature=0.0, max_tokens=4096)
                 self.kwargs = {}
                 self.history = []
 
@@ -497,8 +497,8 @@ class OlmOCRExtractor(_BaseVLLMExtractor):
     model_id = "allenai/olmOCR-2-7B-1025-FP8"
 
 
-class RolmOCRExtractor(_BaseVLLMExtractor):
-    model_id = "AccsoAndreBuesgen/RolmOCR-bnb-4bit"
+class DeepseekOCRExtractor(_BaseVLLMExtractor):
+    model_id = "richarddavison/DeepSeek-OCR-2-FP8"
 
 
 class NanonetsOCRExtractor(_BaseVLLMExtractor):
@@ -507,6 +507,6 @@ class NanonetsOCRExtractor(_BaseVLLMExtractor):
 
 VLM_EXTRACTORS = {
     "olmocr": OlmOCRExtractor,
-    "rolmocr": RolmOCRExtractor,
+    "deepseek": DeepseekOCRExtractor,
     "nanonets": NanonetsOCRExtractor,
 }

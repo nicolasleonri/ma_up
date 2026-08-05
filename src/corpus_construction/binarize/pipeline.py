@@ -135,9 +135,9 @@ class BinarizationPipeline:
             for method in BINARIZATION_METHODS
         ]
 
-        if len(configs) != 7:
+        if len(configs) != 8:
             raise ValueError(
-                "Expected exactly 7 binarization methods, "
+                "Expected exactly 8 binarization methods, "
                 f"found {len(configs)}."
             )
 

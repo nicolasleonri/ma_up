@@ -1,0 +1,736 @@
+2026-08-05 16:37:33,636 [INFO] src.corpus_construction.enhance_images.pipeline: Saved 54 configurations to data/corpus_construction/enhance_images/results/publimetro/configurations.txt
+2026-08-05 16:37:33,637 [INFO] src.corpus_construction.enhance_images.pipeline: Found 10 image(s) under data/corpus_construction/enhance_images/publimetro
+2026-08-05 16:37:33,685 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 1/54 | contrast=none | denoising=none | sharpening=none
+2026-08-05 16:37:33,692 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 0 finished in 0.008s
+2026-08-05 16:37:33,692 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 2/54 | contrast=none | denoising=none | sharpening=unsharp_masking
+2026-08-05 16:37:33,707 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 1 finished in 0.014s
+2026-08-05 16:37:33,707 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 3/54 | contrast=none | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 16:37:33,723 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 2 finished in 0.017s
+2026-08-05 16:37:33,724 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 4/54 | contrast=none | denoising=mean_filter | sharpening=none
+2026-08-05 16:37:33,729 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 3 finished in 0.006s
+2026-08-05 16:37:33,730 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 5/54 | contrast=none | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 16:37:33,742 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 4 finished in 0.012s
+2026-08-05 16:37:33,742 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 6/54 | contrast=none | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:37:33,757 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 5 finished in 0.014s
+2026-08-05 16:37:33,757 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 7/54 | contrast=none | denoising=gaussian_filter | sharpening=none
+2026-08-05 16:37:33,765 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 6 finished in 0.008s
+2026-08-05 16:37:33,765 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 8/54 | contrast=none | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 16:37:33,781 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 7 finished in 0.016s
+2026-08-05 16:37:33,781 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 9/54 | contrast=none | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:37:33,797 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 8 finished in 0.016s
+2026-08-05 16:37:33,797 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 10/54 | contrast=none | denoising=median_filter | sharpening=none
+2026-08-05 16:37:33,802 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 9 finished in 0.005s
+2026-08-05 16:37:33,802 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 11/54 | contrast=none | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 16:37:33,815 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 10 finished in 0.013s
+2026-08-05 16:37:33,815 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 12/54 | contrast=none | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:37:33,828 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 11 finished in 0.012s
+2026-08-05 16:37:33,828 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 13/54 | contrast=none | denoising=conservative_filter | sharpening=none
+2026-08-05 16:38:10,038 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 12 finished in 36.210s
+2026-08-05 16:38:10,038 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 14/54 | contrast=none | denoising=conservative_filter | sharpening=unsharp_masking
+2026-08-05 16:38:46,066 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 13 finished in 36.028s
+2026-08-05 16:38:46,067 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 15/54 | contrast=none | denoising=conservative_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:39:21,805 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 14 finished in 35.738s
+2026-08-05 16:39:21,805 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 16/54 | contrast=none | denoising=laplacian_filter | sharpening=none
+2026-08-05 16:39:21,815 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 15 finished in 0.010s
+2026-08-05 16:39:21,815 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 17/54 | contrast=none | denoising=laplacian_filter | sharpening=unsharp_masking
+2026-08-05 16:39:21,830 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 16 finished in 0.015s
+2026-08-05 16:39:21,830 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 18/54 | contrast=none | denoising=laplacian_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:39:21,847 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 17 finished in 0.017s
+2026-08-05 16:39:21,847 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 19/54 | contrast=none | denoising=frequency_filter | sharpening=none
+2026-08-05 16:39:22,070 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 18 finished in 0.223s
+2026-08-05 16:39:22,070 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 20/54 | contrast=none | denoising=frequency_filter | sharpening=unsharp_masking
+2026-08-05 16:39:22,297 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 19 finished in 0.226s
+2026-08-05 16:39:22,297 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 21/54 | contrast=none | denoising=frequency_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:39:22,519 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 20 finished in 0.222s
+2026-08-05 16:39:22,519 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 22/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=none
+2026-08-05 16:41:10,177 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 21 finished in 107.657s
+2026-08-05 16:41:10,177 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 23/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=unsharp_masking
+2026-08-05 16:42:57,422 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 22 finished in 107.245s
+2026-08-05 16:42:57,423 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 24/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=stroke_width_enhancement
+2026-08-05 16:44:45,016 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 23 finished in 107.593s
+2026-08-05 16:44:45,017 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 25/54 | contrast=none | denoising=unsharp_filter | sharpening=none
+2026-08-05 16:44:45,087 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 24 finished in 0.070s
+2026-08-05 16:44:45,087 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 26/54 | contrast=none | denoising=unsharp_filter | sharpening=unsharp_masking
+2026-08-05 16:44:45,159 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 25 finished in 0.072s
+2026-08-05 16:44:45,159 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 27/54 | contrast=none | denoising=unsharp_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:44:45,237 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 26 finished in 0.078s
+2026-08-05 16:44:45,237 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 28/54 | contrast=clahe | denoising=none | sharpening=none
+2026-08-05 16:44:45,402 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 27 finished in 0.165s
+2026-08-05 16:44:45,402 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 29/54 | contrast=clahe | denoising=none | sharpening=unsharp_masking
+2026-08-05 16:44:45,459 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 28 finished in 0.056s
+2026-08-05 16:44:45,459 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 30/54 | contrast=clahe | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 16:44:45,518 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 29 finished in 0.059s
+2026-08-05 16:44:45,518 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 31/54 | contrast=clahe | denoising=mean_filter | sharpening=none
+2026-08-05 16:44:45,570 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 30 finished in 0.052s
+2026-08-05 16:44:45,570 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 32/54 | contrast=clahe | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 16:44:45,627 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 31 finished in 0.057s
+2026-08-05 16:44:45,627 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 33/54 | contrast=clahe | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:44:45,689 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 32 finished in 0.062s
+2026-08-05 16:44:45,689 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 34/54 | contrast=clahe | denoising=gaussian_filter | sharpening=none
+2026-08-05 16:44:45,745 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 33 finished in 0.056s
+2026-08-05 16:44:45,746 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 35/54 | contrast=clahe | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 16:44:45,814 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 34 finished in 0.069s
+2026-08-05 16:44:45,814 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 36/54 | contrast=clahe | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:44:45,876 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 35 finished in 0.062s
+2026-08-05 16:44:45,876 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 37/54 | contrast=clahe | denoising=median_filter | sharpening=none
+2026-08-05 16:44:45,927 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 36 finished in 0.051s
+2026-08-05 16:44:45,927 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 38/54 | contrast=clahe | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 16:44:45,983 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 37 finished in 0.056s
+2026-08-05 16:44:45,983 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 39/54 | contrast=clahe | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:44:46,042 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 38 finished in 0.059s
+2026-08-05 16:44:46,042 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 40/54 | contrast=clahe | denoising=conservative_filter | sharpening=none
+2026-08-05 16:45:21,767 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 39 finished in 35.724s
+2026-08-05 16:45:21,767 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 41/54 | contrast=clahe | denoising=conservative_filter | sharpening=unsharp_masking
+2026-08-05 16:45:57,236 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 40 finished in 35.469s
+2026-08-05 16:45:57,236 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 42/54 | contrast=clahe | denoising=conservative_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:46:32,866 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 41 finished in 35.629s
+2026-08-05 16:46:32,866 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 43/54 | contrast=clahe | denoising=laplacian_filter | sharpening=none
+2026-08-05 16:46:32,921 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 42 finished in 0.054s
+2026-08-05 16:46:32,921 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 44/54 | contrast=clahe | denoising=laplacian_filter | sharpening=unsharp_masking
+2026-08-05 16:46:32,980 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 43 finished in 0.059s
+2026-08-05 16:46:32,980 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 45/54 | contrast=clahe | denoising=laplacian_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:46:33,041 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 44 finished in 0.061s
+2026-08-05 16:46:33,041 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 46/54 | contrast=clahe | denoising=frequency_filter | sharpening=none
+2026-08-05 16:46:33,321 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 45 finished in 0.280s
+2026-08-05 16:46:33,321 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 47/54 | contrast=clahe | denoising=frequency_filter | sharpening=unsharp_masking
+2026-08-05 16:46:33,583 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 46 finished in 0.262s
+2026-08-05 16:46:33,583 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 48/54 | contrast=clahe | denoising=frequency_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:46:33,848 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 47 finished in 0.264s
+2026-08-05 16:46:33,848 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 49/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=none
+2026-08-05 16:48:20,933 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 48 finished in 107.085s
+2026-08-05 16:48:20,934 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 50/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=unsharp_masking
+2026-08-05 16:50:07,784 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 49 finished in 106.850s
+2026-08-05 16:50:07,785 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 51/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=stroke_width_enhancement
+2026-08-05 16:51:55,301 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 50 finished in 107.516s
+2026-08-05 16:51:55,301 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 52/54 | contrast=clahe | denoising=unsharp_filter | sharpening=none
+2026-08-05 16:51:55,420 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 51 finished in 0.119s
+2026-08-05 16:51:55,420 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 53/54 | contrast=clahe | denoising=unsharp_filter | sharpening=unsharp_masking
+2026-08-05 16:51:55,542 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 52 finished in 0.121s
+2026-08-05 16:51:55,542 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 54/54 | contrast=clahe | denoising=unsharp_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:51:55,664 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2013-08-14_12.jpg] Config 53 finished in 0.122s
+2026-08-05 16:51:55,696 [INFO] src.corpus_construction.enhance_images.pipeline: Saved 54 metadata records to data/corpus_construction/enhance_images/results/publimetro/enhance_images.parquet
+2026-08-05 16:51:59,043 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 1/54 | contrast=none | denoising=none | sharpening=none
+2026-08-05 16:51:59,047 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 0 finished in 0.004s
+2026-08-05 16:51:59,047 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 2/54 | contrast=none | denoising=none | sharpening=unsharp_masking
+2026-08-05 16:51:59,060 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 1 finished in 0.013s
+2026-08-05 16:51:59,060 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 3/54 | contrast=none | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 16:51:59,072 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 2 finished in 0.012s
+2026-08-05 16:51:59,072 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 4/54 | contrast=none | denoising=mean_filter | sharpening=none
+2026-08-05 16:51:59,080 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 3 finished in 0.008s
+2026-08-05 16:51:59,080 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 5/54 | contrast=none | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 16:51:59,097 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 4 finished in 0.017s
+2026-08-05 16:51:59,097 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 6/54 | contrast=none | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:51:59,112 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 5 finished in 0.015s
+2026-08-05 16:51:59,112 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 7/54 | contrast=none | denoising=gaussian_filter | sharpening=none
+2026-08-05 16:51:59,120 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 6 finished in 0.008s
+2026-08-05 16:51:59,120 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 8/54 | contrast=none | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 16:51:59,139 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 7 finished in 0.018s
+2026-08-05 16:51:59,139 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 9/54 | contrast=none | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:51:59,155 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 8 finished in 0.016s
+2026-08-05 16:51:59,156 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 10/54 | contrast=none | denoising=median_filter | sharpening=none
+2026-08-05 16:51:59,163 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 9 finished in 0.007s
+2026-08-05 16:51:59,163 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 11/54 | contrast=none | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 16:51:59,179 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 10 finished in 0.016s
+2026-08-05 16:51:59,179 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 12/54 | contrast=none | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:51:59,192 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 11 finished in 0.013s
+2026-08-05 16:51:59,192 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 13/54 | contrast=none | denoising=conservative_filter | sharpening=none
+2026-08-05 16:52:35,375 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 12 finished in 36.183s
+2026-08-05 16:52:35,375 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 14/54 | contrast=none | denoising=conservative_filter | sharpening=unsharp_masking
+2026-08-05 16:53:11,750 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 13 finished in 36.375s
+2026-08-05 16:53:11,750 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 15/54 | contrast=none | denoising=conservative_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:53:47,793 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 14 finished in 36.043s
+2026-08-05 16:53:47,793 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 16/54 | contrast=none | denoising=laplacian_filter | sharpening=none
+2026-08-05 16:53:47,804 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 15 finished in 0.011s
+2026-08-05 16:53:47,804 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 17/54 | contrast=none | denoising=laplacian_filter | sharpening=unsharp_masking
+2026-08-05 16:53:47,820 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 16 finished in 0.015s
+2026-08-05 16:53:47,820 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 18/54 | contrast=none | denoising=laplacian_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:53:47,838 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 17 finished in 0.018s
+2026-08-05 16:53:47,838 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 19/54 | contrast=none | denoising=frequency_filter | sharpening=none
+2026-08-05 16:53:48,053 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 18 finished in 0.214s
+2026-08-05 16:53:48,053 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 20/54 | contrast=none | denoising=frequency_filter | sharpening=unsharp_masking
+2026-08-05 16:53:48,268 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 19 finished in 0.215s
+2026-08-05 16:53:48,268 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 21/54 | contrast=none | denoising=frequency_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:53:48,489 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 20 finished in 0.221s
+2026-08-05 16:53:48,489 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 22/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=none
+2026-08-05 16:55:37,003 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 21 finished in 108.514s
+2026-08-05 16:55:37,003 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 23/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=unsharp_masking
+2026-08-05 16:57:27,848 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 22 finished in 110.844s
+2026-08-05 16:57:27,848 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 24/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=stroke_width_enhancement
+2026-08-05 16:59:26,892 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 23 finished in 119.044s
+2026-08-05 16:59:26,893 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 25/54 | contrast=none | denoising=unsharp_filter | sharpening=none
+2026-08-05 16:59:26,966 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 24 finished in 0.073s
+2026-08-05 16:59:26,966 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 26/54 | contrast=none | denoising=unsharp_filter | sharpening=unsharp_masking
+2026-08-05 16:59:27,042 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 25 finished in 0.075s
+2026-08-05 16:59:27,042 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 27/54 | contrast=none | denoising=unsharp_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:59:27,121 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 26 finished in 0.080s
+2026-08-05 16:59:27,122 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 28/54 | contrast=clahe | denoising=none | sharpening=none
+2026-08-05 16:59:27,175 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 27 finished in 0.053s
+2026-08-05 16:59:27,175 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 29/54 | contrast=clahe | denoising=none | sharpening=unsharp_masking
+2026-08-05 16:59:27,232 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 28 finished in 0.056s
+2026-08-05 16:59:27,232 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 30/54 | contrast=clahe | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 16:59:27,290 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 29 finished in 0.059s
+2026-08-05 16:59:27,291 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 31/54 | contrast=clahe | denoising=mean_filter | sharpening=none
+2026-08-05 16:59:27,343 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 30 finished in 0.052s
+2026-08-05 16:59:27,343 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 32/54 | contrast=clahe | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 16:59:27,402 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 31 finished in 0.058s
+2026-08-05 16:59:27,402 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 33/54 | contrast=clahe | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:59:27,462 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 32 finished in 0.061s
+2026-08-05 16:59:27,462 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 34/54 | contrast=clahe | denoising=gaussian_filter | sharpening=none
+2026-08-05 16:59:27,514 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 33 finished in 0.052s
+2026-08-05 16:59:27,514 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 35/54 | contrast=clahe | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 16:59:27,573 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 34 finished in 0.059s
+2026-08-05 16:59:27,573 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 36/54 | contrast=clahe | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:59:27,633 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 35 finished in 0.060s
+2026-08-05 16:59:27,633 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 37/54 | contrast=clahe | denoising=median_filter | sharpening=none
+2026-08-05 16:59:27,685 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 36 finished in 0.052s
+2026-08-05 16:59:27,685 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 38/54 | contrast=clahe | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 16:59:27,742 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 37 finished in 0.057s
+2026-08-05 16:59:27,742 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 39/54 | contrast=clahe | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 16:59:27,801 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 38 finished in 0.059s
+2026-08-05 16:59:27,801 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 40/54 | contrast=clahe | denoising=conservative_filter | sharpening=none
+2026-08-05 17:00:03,733 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 39 finished in 35.932s
+2026-08-05 17:00:03,733 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 41/54 | contrast=clahe | denoising=conservative_filter | sharpening=unsharp_masking
+2026-08-05 17:00:39,537 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 40 finished in 35.804s
+2026-08-05 17:00:39,538 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 42/54 | contrast=clahe | denoising=conservative_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:01:15,487 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 41 finished in 35.949s
+2026-08-05 17:01:15,487 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 43/54 | contrast=clahe | denoising=laplacian_filter | sharpening=none
+2026-08-05 17:01:15,542 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 42 finished in 0.055s
+2026-08-05 17:01:15,542 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 44/54 | contrast=clahe | denoising=laplacian_filter | sharpening=unsharp_masking
+2026-08-05 17:01:15,603 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 43 finished in 0.061s
+2026-08-05 17:01:15,603 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 45/54 | contrast=clahe | denoising=laplacian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:01:15,668 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 44 finished in 0.065s
+2026-08-05 17:01:15,668 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 46/54 | contrast=clahe | denoising=frequency_filter | sharpening=none
+2026-08-05 17:01:15,936 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 45 finished in 0.268s
+2026-08-05 17:01:15,936 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 47/54 | contrast=clahe | denoising=frequency_filter | sharpening=unsharp_masking
+2026-08-05 17:01:16,194 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 46 finished in 0.258s
+2026-08-05 17:01:16,194 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 48/54 | contrast=clahe | denoising=frequency_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:01:16,467 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 47 finished in 0.272s
+2026-08-05 17:01:16,467 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 49/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=none
+2026-08-05 17:03:03,264 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 48 finished in 106.797s
+2026-08-05 17:03:03,265 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 50/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=unsharp_masking
+2026-08-05 17:04:50,378 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 49 finished in 107.113s
+2026-08-05 17:04:50,388 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 51/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=stroke_width_enhancement
+2026-08-05 17:06:37,149 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 50 finished in 106.761s
+2026-08-05 17:06:37,150 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 52/54 | contrast=clahe | denoising=unsharp_filter | sharpening=none
+2026-08-05 17:06:37,266 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 51 finished in 0.116s
+2026-08-05 17:06:37,266 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 53/54 | contrast=clahe | denoising=unsharp_filter | sharpening=unsharp_masking
+2026-08-05 17:06:37,386 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 52 finished in 0.120s
+2026-08-05 17:06:37,386 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 54/54 | contrast=clahe | denoising=unsharp_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:06:37,508 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2014-01-20_1.jpg] Config 53 finished in 0.122s
+2026-08-05 17:06:37,535 [INFO] src.corpus_construction.enhance_images.pipeline: Saved 108 metadata records to data/corpus_construction/enhance_images/results/publimetro/enhance_images.parquet
+2026-08-05 17:06:41,252 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 1/54 | contrast=none | denoising=none | sharpening=none
+2026-08-05 17:06:41,256 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 0 finished in 0.004s
+2026-08-05 17:06:41,256 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 2/54 | contrast=none | denoising=none | sharpening=unsharp_masking
+2026-08-05 17:06:41,267 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 1 finished in 0.011s
+2026-08-05 17:06:41,267 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 3/54 | contrast=none | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 17:06:41,278 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 2 finished in 0.011s
+2026-08-05 17:06:41,279 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 4/54 | contrast=none | denoising=mean_filter | sharpening=none
+2026-08-05 17:06:41,284 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 3 finished in 0.006s
+2026-08-05 17:06:41,284 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 5/54 | contrast=none | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 17:06:41,296 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 4 finished in 0.012s
+2026-08-05 17:06:41,296 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 6/54 | contrast=none | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:06:41,309 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 5 finished in 0.013s
+2026-08-05 17:06:41,309 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 7/54 | contrast=none | denoising=gaussian_filter | sharpening=none
+2026-08-05 17:06:41,316 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 6 finished in 0.007s
+2026-08-05 17:06:41,316 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 8/54 | contrast=none | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 17:06:41,331 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 7 finished in 0.015s
+2026-08-05 17:06:41,331 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 9/54 | contrast=none | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:06:41,345 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 8 finished in 0.014s
+2026-08-05 17:06:41,345 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 10/54 | contrast=none | denoising=median_filter | sharpening=none
+2026-08-05 17:06:41,350 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 9 finished in 0.005s
+2026-08-05 17:06:41,350 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 11/54 | contrast=none | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 17:06:41,361 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 10 finished in 0.011s
+2026-08-05 17:06:41,361 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 12/54 | contrast=none | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:06:41,372 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 11 finished in 0.011s
+2026-08-05 17:06:41,372 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 13/54 | contrast=none | denoising=conservative_filter | sharpening=none
+2026-08-05 17:07:17,079 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 12 finished in 35.707s
+2026-08-05 17:07:17,079 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 14/54 | contrast=none | denoising=conservative_filter | sharpening=unsharp_masking
+2026-08-05 17:07:52,944 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 13 finished in 35.864s
+2026-08-05 17:07:52,944 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 15/54 | contrast=none | denoising=conservative_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:08:28,562 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 14 finished in 35.618s
+2026-08-05 17:08:28,563 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 16/54 | contrast=none | denoising=laplacian_filter | sharpening=none
+2026-08-05 17:08:28,572 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 15 finished in 0.009s
+2026-08-05 17:08:28,572 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 17/54 | contrast=none | denoising=laplacian_filter | sharpening=unsharp_masking
+2026-08-05 17:08:28,586 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 16 finished in 0.014s
+2026-08-05 17:08:28,586 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 18/54 | contrast=none | denoising=laplacian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:08:28,603 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 17 finished in 0.017s
+2026-08-05 17:08:28,603 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 19/54 | contrast=none | denoising=frequency_filter | sharpening=none
+2026-08-05 17:08:28,810 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 18 finished in 0.207s
+2026-08-05 17:08:28,810 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 20/54 | contrast=none | denoising=frequency_filter | sharpening=unsharp_masking
+2026-08-05 17:08:29,011 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 19 finished in 0.201s
+2026-08-05 17:08:29,011 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 21/54 | contrast=none | denoising=frequency_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:08:29,224 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 20 finished in 0.213s
+2026-08-05 17:08:29,225 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 22/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=none
+2026-08-05 17:10:15,275 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 21 finished in 106.050s
+2026-08-05 17:10:15,275 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 23/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=unsharp_masking
+2026-08-05 17:12:01,525 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 22 finished in 106.249s
+2026-08-05 17:12:01,525 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 24/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=stroke_width_enhancement
+2026-08-05 17:13:47,325 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 23 finished in 105.799s
+2026-08-05 17:13:47,325 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 25/54 | contrast=none | denoising=unsharp_filter | sharpening=none
+2026-08-05 17:13:47,392 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 24 finished in 0.067s
+2026-08-05 17:13:47,392 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 26/54 | contrast=none | denoising=unsharp_filter | sharpening=unsharp_masking
+2026-08-05 17:13:47,458 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 25 finished in 0.066s
+2026-08-05 17:13:47,458 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 27/54 | contrast=none | denoising=unsharp_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:13:47,526 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 26 finished in 0.068s
+2026-08-05 17:13:47,526 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 28/54 | contrast=clahe | denoising=none | sharpening=none
+2026-08-05 17:13:47,578 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 27 finished in 0.052s
+2026-08-05 17:13:47,578 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 29/54 | contrast=clahe | denoising=none | sharpening=unsharp_masking
+2026-08-05 17:13:47,634 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 28 finished in 0.055s
+2026-08-05 17:13:47,634 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 30/54 | contrast=clahe | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 17:13:47,690 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 29 finished in 0.056s
+2026-08-05 17:13:47,690 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 31/54 | contrast=clahe | denoising=mean_filter | sharpening=none
+2026-08-05 17:13:47,740 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 30 finished in 0.050s
+2026-08-05 17:13:47,741 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 32/54 | contrast=clahe | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 17:13:47,797 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 31 finished in 0.057s
+2026-08-05 17:13:47,797 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 33/54 | contrast=clahe | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:13:47,856 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 32 finished in 0.058s
+2026-08-05 17:13:47,856 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 34/54 | contrast=clahe | denoising=gaussian_filter | sharpening=none
+2026-08-05 17:13:47,907 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 33 finished in 0.051s
+2026-08-05 17:13:47,907 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 35/54 | contrast=clahe | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 17:13:47,964 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 34 finished in 0.057s
+2026-08-05 17:13:47,964 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 36/54 | contrast=clahe | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:13:48,024 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 35 finished in 0.059s
+2026-08-05 17:13:48,024 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 37/54 | contrast=clahe | denoising=median_filter | sharpening=none
+2026-08-05 17:13:48,074 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 36 finished in 0.050s
+2026-08-05 17:13:48,074 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 38/54 | contrast=clahe | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 17:13:48,128 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 37 finished in 0.055s
+2026-08-05 17:13:48,128 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 39/54 | contrast=clahe | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:13:48,188 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 38 finished in 0.059s
+2026-08-05 17:13:48,188 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 40/54 | contrast=clahe | denoising=conservative_filter | sharpening=none
+2026-08-05 17:14:23,536 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 39 finished in 35.348s
+2026-08-05 17:14:23,537 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 41/54 | contrast=clahe | denoising=conservative_filter | sharpening=unsharp_masking
+2026-08-05 17:14:58,899 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 40 finished in 35.363s
+2026-08-05 17:14:58,900 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 42/54 | contrast=clahe | denoising=conservative_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:15:34,220 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 41 finished in 35.320s
+2026-08-05 17:15:34,220 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 43/54 | contrast=clahe | denoising=laplacian_filter | sharpening=none
+2026-08-05 17:15:34,274 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 42 finished in 0.054s
+2026-08-05 17:15:34,274 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 44/54 | contrast=clahe | denoising=laplacian_filter | sharpening=unsharp_masking
+2026-08-05 17:15:34,333 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 43 finished in 0.058s
+2026-08-05 17:15:34,333 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 45/54 | contrast=clahe | denoising=laplacian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:15:34,393 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 44 finished in 0.060s
+2026-08-05 17:15:34,393 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 46/54 | contrast=clahe | denoising=frequency_filter | sharpening=none
+2026-08-05 17:15:34,648 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 45 finished in 0.255s
+2026-08-05 17:15:34,648 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 47/54 | contrast=clahe | denoising=frequency_filter | sharpening=unsharp_masking
+2026-08-05 17:15:34,904 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 46 finished in 0.256s
+2026-08-05 17:15:34,904 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 48/54 | contrast=clahe | denoising=frequency_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:15:35,167 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 47 finished in 0.263s
+2026-08-05 17:15:35,167 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 49/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=none
+2026-08-05 17:17:20,689 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 48 finished in 105.522s
+2026-08-05 17:17:20,689 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 50/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=unsharp_masking
+2026-08-05 17:19:06,831 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 49 finished in 106.142s
+2026-08-05 17:19:06,832 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 51/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=stroke_width_enhancement
+2026-08-05 17:20:52,714 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 50 finished in 105.882s
+2026-08-05 17:20:52,714 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 52/54 | contrast=clahe | denoising=unsharp_filter | sharpening=none
+2026-08-05 17:20:52,833 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 51 finished in 0.119s
+2026-08-05 17:20:52,833 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 53/54 | contrast=clahe | denoising=unsharp_filter | sharpening=unsharp_masking
+2026-08-05 17:20:52,955 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 52 finished in 0.121s
+2026-08-05 17:20:52,955 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 54/54 | contrast=clahe | denoising=unsharp_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:20:53,075 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-04-15_1.jpg] Config 53 finished in 0.120s
+2026-08-05 17:20:53,087 [INFO] src.corpus_construction.enhance_images.pipeline: Saved 162 metadata records to data/corpus_construction/enhance_images/results/publimetro/enhance_images.parquet
+2026-08-05 17:20:56,246 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 1/54 | contrast=none | denoising=none | sharpening=none
+2026-08-05 17:20:56,250 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 0 finished in 0.005s
+2026-08-05 17:20:56,250 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 2/54 | contrast=none | denoising=none | sharpening=unsharp_masking
+2026-08-05 17:20:56,261 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 1 finished in 0.011s
+2026-08-05 17:20:56,261 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 3/54 | contrast=none | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 17:20:56,273 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 2 finished in 0.012s
+2026-08-05 17:20:56,273 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 4/54 | contrast=none | denoising=mean_filter | sharpening=none
+2026-08-05 17:20:56,279 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 3 finished in 0.006s
+2026-08-05 17:20:56,279 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 5/54 | contrast=none | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 17:20:56,292 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 4 finished in 0.012s
+2026-08-05 17:20:56,292 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 6/54 | contrast=none | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:20:56,305 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 5 finished in 0.013s
+2026-08-05 17:20:56,305 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 7/54 | contrast=none | denoising=gaussian_filter | sharpening=none
+2026-08-05 17:20:56,312 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 6 finished in 0.007s
+2026-08-05 17:20:56,313 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 8/54 | contrast=none | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 17:20:56,326 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 7 finished in 0.014s
+2026-08-05 17:20:56,327 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 9/54 | contrast=none | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:20:56,341 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 8 finished in 0.014s
+2026-08-05 17:20:56,341 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 10/54 | contrast=none | denoising=median_filter | sharpening=none
+2026-08-05 17:20:56,345 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 9 finished in 0.004s
+2026-08-05 17:20:56,345 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 11/54 | contrast=none | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 17:20:56,356 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 10 finished in 0.011s
+2026-08-05 17:20:56,356 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 12/54 | contrast=none | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:20:56,368 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 11 finished in 0.012s
+2026-08-05 17:20:56,368 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 13/54 | contrast=none | denoising=conservative_filter | sharpening=none
+2026-08-05 17:21:31,807 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 12 finished in 35.439s
+2026-08-05 17:21:31,807 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 14/54 | contrast=none | denoising=conservative_filter | sharpening=unsharp_masking
+2026-08-05 17:22:07,291 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 13 finished in 35.484s
+2026-08-05 17:22:07,291 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 15/54 | contrast=none | denoising=conservative_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:22:42,664 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 14 finished in 35.372s
+2026-08-05 17:22:42,664 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 16/54 | contrast=none | denoising=laplacian_filter | sharpening=none
+2026-08-05 17:22:42,674 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 15 finished in 0.010s
+2026-08-05 17:22:42,674 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 17/54 | contrast=none | denoising=laplacian_filter | sharpening=unsharp_masking
+2026-08-05 17:22:42,688 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 16 finished in 0.014s
+2026-08-05 17:22:42,688 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 18/54 | contrast=none | denoising=laplacian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:22:42,705 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 17 finished in 0.016s
+2026-08-05 17:22:42,705 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 19/54 | contrast=none | denoising=frequency_filter | sharpening=none
+2026-08-05 17:22:42,909 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 18 finished in 0.204s
+2026-08-05 17:22:42,909 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 20/54 | contrast=none | denoising=frequency_filter | sharpening=unsharp_masking
+2026-08-05 17:22:43,114 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 19 finished in 0.204s
+2026-08-05 17:22:43,114 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 21/54 | contrast=none | denoising=frequency_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:22:43,336 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 20 finished in 0.222s
+2026-08-05 17:22:43,336 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 22/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=none
+2026-08-05 17:24:28,895 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 21 finished in 105.559s
+2026-08-05 17:24:28,895 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 23/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=unsharp_masking
+2026-08-05 17:26:13,367 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 22 finished in 104.472s
+2026-08-05 17:26:13,368 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 24/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=stroke_width_enhancement
+2026-08-05 17:27:55,524 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 23 finished in 102.156s
+2026-08-05 17:27:55,524 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 25/54 | contrast=none | denoising=unsharp_filter | sharpening=none
+2026-08-05 17:27:55,579 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 24 finished in 0.054s
+2026-08-05 17:27:55,579 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 26/54 | contrast=none | denoising=unsharp_filter | sharpening=unsharp_masking
+2026-08-05 17:27:55,631 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 25 finished in 0.052s
+2026-08-05 17:27:55,631 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 27/54 | contrast=none | denoising=unsharp_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:27:55,686 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 26 finished in 0.054s
+2026-08-05 17:27:55,686 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 28/54 | contrast=clahe | denoising=none | sharpening=none
+2026-08-05 17:27:55,735 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 27 finished in 0.049s
+2026-08-05 17:27:55,735 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 29/54 | contrast=clahe | denoising=none | sharpening=unsharp_masking
+2026-08-05 17:27:55,800 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 28 finished in 0.065s
+2026-08-05 17:27:55,800 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 30/54 | contrast=clahe | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 17:27:55,857 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 29 finished in 0.057s
+2026-08-05 17:27:55,857 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 31/54 | contrast=clahe | denoising=mean_filter | sharpening=none
+2026-08-05 17:27:55,907 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 30 finished in 0.050s
+2026-08-05 17:27:55,907 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 32/54 | contrast=clahe | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 17:27:55,962 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 31 finished in 0.055s
+2026-08-05 17:27:55,962 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 33/54 | contrast=clahe | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:27:56,020 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 32 finished in 0.058s
+2026-08-05 17:27:56,020 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 34/54 | contrast=clahe | denoising=gaussian_filter | sharpening=none
+2026-08-05 17:27:56,070 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 33 finished in 0.050s
+2026-08-05 17:27:56,070 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 35/54 | contrast=clahe | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 17:27:56,127 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 34 finished in 0.057s
+2026-08-05 17:27:56,127 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 36/54 | contrast=clahe | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:27:56,185 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 35 finished in 0.057s
+2026-08-05 17:27:56,185 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 37/54 | contrast=clahe | denoising=median_filter | sharpening=none
+2026-08-05 17:27:56,234 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 36 finished in 0.049s
+2026-08-05 17:27:56,234 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 38/54 | contrast=clahe | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 17:27:56,289 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 37 finished in 0.055s
+2026-08-05 17:27:56,289 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 39/54 | contrast=clahe | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:27:56,345 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 38 finished in 0.056s
+2026-08-05 17:27:56,345 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 40/54 | contrast=clahe | denoising=conservative_filter | sharpening=none
+2026-08-05 17:28:31,314 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 39 finished in 34.968s
+2026-08-05 17:28:31,314 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 41/54 | contrast=clahe | denoising=conservative_filter | sharpening=unsharp_masking
+2026-08-05 17:29:06,493 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 40 finished in 35.178s
+2026-08-05 17:29:06,493 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 42/54 | contrast=clahe | denoising=conservative_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:29:41,725 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 41 finished in 35.232s
+2026-08-05 17:29:41,725 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 43/54 | contrast=clahe | denoising=laplacian_filter | sharpening=none
+2026-08-05 17:29:41,779 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 42 finished in 0.054s
+2026-08-05 17:29:41,779 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 44/54 | contrast=clahe | denoising=laplacian_filter | sharpening=unsharp_masking
+2026-08-05 17:29:41,837 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 43 finished in 0.058s
+2026-08-05 17:29:41,837 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 45/54 | contrast=clahe | denoising=laplacian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:29:41,898 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 44 finished in 0.061s
+2026-08-05 17:29:41,898 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 46/54 | contrast=clahe | denoising=frequency_filter | sharpening=none
+2026-08-05 17:29:42,142 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 45 finished in 0.244s
+2026-08-05 17:29:42,142 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 47/54 | contrast=clahe | denoising=frequency_filter | sharpening=unsharp_masking
+2026-08-05 17:29:42,390 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 46 finished in 0.247s
+2026-08-05 17:29:42,390 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 48/54 | contrast=clahe | denoising=frequency_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:29:42,641 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 47 finished in 0.251s
+2026-08-05 17:29:42,641 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 49/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=none
+2026-08-05 17:31:24,952 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 48 finished in 102.311s
+2026-08-05 17:31:24,952 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 50/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=unsharp_masking
+2026-08-05 17:33:06,864 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 49 finished in 101.912s
+2026-08-05 17:33:06,865 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 51/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=stroke_width_enhancement
+2026-08-05 17:34:49,462 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 50 finished in 102.597s
+2026-08-05 17:34:49,463 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 52/54 | contrast=clahe | denoising=unsharp_filter | sharpening=none
+2026-08-05 17:34:49,583 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 51 finished in 0.120s
+2026-08-05 17:34:49,583 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 53/54 | contrast=clahe | denoising=unsharp_filter | sharpening=unsharp_masking
+2026-08-05 17:34:49,711 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 52 finished in 0.128s
+2026-08-05 17:34:49,711 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 54/54 | contrast=clahe | denoising=unsharp_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:34:49,839 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2015-11-13_20.jpg] Config 53 finished in 0.128s
+2026-08-05 17:34:49,852 [INFO] src.corpus_construction.enhance_images.pipeline: Saved 216 metadata records to data/corpus_construction/enhance_images/results/publimetro/enhance_images.parquet
+2026-08-05 17:34:52,813 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 1/54 | contrast=none | denoising=none | sharpening=none
+2026-08-05 17:34:52,817 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 0 finished in 0.004s
+2026-08-05 17:34:52,817 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 2/54 | contrast=none | denoising=none | sharpening=unsharp_masking
+2026-08-05 17:34:52,828 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 1 finished in 0.011s
+2026-08-05 17:34:52,828 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 3/54 | contrast=none | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 17:34:52,840 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 2 finished in 0.012s
+2026-08-05 17:34:52,840 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 4/54 | contrast=none | denoising=mean_filter | sharpening=none
+2026-08-05 17:34:52,846 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 3 finished in 0.005s
+2026-08-05 17:34:52,846 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 5/54 | contrast=none | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 17:34:52,857 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 4 finished in 0.011s
+2026-08-05 17:34:52,857 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 6/54 | contrast=none | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:34:52,870 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 5 finished in 0.012s
+2026-08-05 17:34:52,870 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 7/54 | contrast=none | denoising=gaussian_filter | sharpening=none
+2026-08-05 17:34:52,877 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 6 finished in 0.007s
+2026-08-05 17:34:52,877 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 8/54 | contrast=none | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 17:34:52,891 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 7 finished in 0.014s
+2026-08-05 17:34:52,891 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 9/54 | contrast=none | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:34:52,904 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 8 finished in 0.014s
+2026-08-05 17:34:52,904 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 10/54 | contrast=none | denoising=median_filter | sharpening=none
+2026-08-05 17:34:52,909 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 9 finished in 0.004s
+2026-08-05 17:34:52,909 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 11/54 | contrast=none | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 17:34:52,919 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 10 finished in 0.010s
+2026-08-05 17:34:52,919 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 12/54 | contrast=none | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:34:52,930 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 11 finished in 0.011s
+2026-08-05 17:34:52,930 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 13/54 | contrast=none | denoising=conservative_filter | sharpening=none
+2026-08-05 17:35:27,701 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 12 finished in 34.770s
+2026-08-05 17:35:27,701 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 14/54 | contrast=none | denoising=conservative_filter | sharpening=unsharp_masking
+2026-08-05 17:36:02,389 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 13 finished in 34.688s
+2026-08-05 17:36:02,389 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 15/54 | contrast=none | denoising=conservative_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:36:37,022 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 14 finished in 34.633s
+2026-08-05 17:36:37,022 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 16/54 | contrast=none | denoising=laplacian_filter | sharpening=none
+2026-08-05 17:36:37,032 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 15 finished in 0.009s
+2026-08-05 17:36:37,032 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 17/54 | contrast=none | denoising=laplacian_filter | sharpening=unsharp_masking
+2026-08-05 17:36:37,045 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 16 finished in 0.013s
+2026-08-05 17:36:37,045 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 18/54 | contrast=none | denoising=laplacian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:36:37,061 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 17 finished in 0.016s
+2026-08-05 17:36:37,061 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 19/54 | contrast=none | denoising=frequency_filter | sharpening=none
+2026-08-05 17:36:37,253 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 18 finished in 0.192s
+2026-08-05 17:36:37,254 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 20/54 | contrast=none | denoising=frequency_filter | sharpening=unsharp_masking
+2026-08-05 17:36:37,441 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 19 finished in 0.187s
+2026-08-05 17:36:37,441 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 21/54 | contrast=none | denoising=frequency_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:36:37,632 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 20 finished in 0.191s
+2026-08-05 17:36:37,632 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 22/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=none
+2026-08-05 17:38:15,063 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 21 finished in 97.431s
+2026-08-05 17:38:15,063 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 23/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=unsharp_masking
+2026-08-05 17:39:52,898 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 22 finished in 97.834s
+2026-08-05 17:39:52,898 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 24/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=stroke_width_enhancement
+2026-08-05 17:41:29,733 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 23 finished in 96.834s
+2026-08-05 17:41:29,733 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 25/54 | contrast=none | denoising=unsharp_filter | sharpening=none
+2026-08-05 17:41:29,822 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 24 finished in 0.088s
+2026-08-05 17:41:29,822 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 26/54 | contrast=none | denoising=unsharp_filter | sharpening=unsharp_masking
+2026-08-05 17:41:29,894 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 25 finished in 0.073s
+2026-08-05 17:41:29,895 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 27/54 | contrast=none | denoising=unsharp_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:41:29,967 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 26 finished in 0.072s
+2026-08-05 17:41:29,967 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 28/54 | contrast=clahe | denoising=none | sharpening=none
+2026-08-05 17:41:30,016 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 27 finished in 0.049s
+2026-08-05 17:41:30,016 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 29/54 | contrast=clahe | denoising=none | sharpening=unsharp_masking
+2026-08-05 17:41:30,070 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 28 finished in 0.054s
+2026-08-05 17:41:30,070 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 30/54 | contrast=clahe | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 17:41:30,125 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 29 finished in 0.055s
+2026-08-05 17:41:30,125 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 31/54 | contrast=clahe | denoising=mean_filter | sharpening=none
+2026-08-05 17:41:30,174 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 30 finished in 0.049s
+2026-08-05 17:41:30,174 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 32/54 | contrast=clahe | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 17:41:30,229 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 31 finished in 0.055s
+2026-08-05 17:41:30,229 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 33/54 | contrast=clahe | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:41:30,286 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 32 finished in 0.057s
+2026-08-05 17:41:30,286 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 34/54 | contrast=clahe | denoising=gaussian_filter | sharpening=none
+2026-08-05 17:41:30,337 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 33 finished in 0.051s
+2026-08-05 17:41:30,337 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 35/54 | contrast=clahe | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 17:41:30,394 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 34 finished in 0.057s
+2026-08-05 17:41:30,394 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 36/54 | contrast=clahe | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:41:30,452 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 35 finished in 0.057s
+2026-08-05 17:41:30,452 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 37/54 | contrast=clahe | denoising=median_filter | sharpening=none
+2026-08-05 17:41:30,501 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 36 finished in 0.049s
+2026-08-05 17:41:30,501 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 38/54 | contrast=clahe | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 17:41:30,555 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 37 finished in 0.054s
+2026-08-05 17:41:30,556 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 39/54 | contrast=clahe | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:41:30,612 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 38 finished in 0.056s
+2026-08-05 17:41:30,612 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 40/54 | contrast=clahe | denoising=conservative_filter | sharpening=none
+2026-08-05 17:42:05,060 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 39 finished in 34.448s
+2026-08-05 17:42:05,060 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 41/54 | contrast=clahe | denoising=conservative_filter | sharpening=unsharp_masking
+2026-08-05 17:42:39,545 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 40 finished in 34.485s
+2026-08-05 17:42:39,545 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 42/54 | contrast=clahe | denoising=conservative_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:43:14,029 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 41 finished in 34.483s
+2026-08-05 17:43:14,029 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 43/54 | contrast=clahe | denoising=laplacian_filter | sharpening=none
+2026-08-05 17:43:14,081 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 42 finished in 0.052s
+2026-08-05 17:43:14,081 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 44/54 | contrast=clahe | denoising=laplacian_filter | sharpening=unsharp_masking
+2026-08-05 17:43:14,139 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 43 finished in 0.058s
+2026-08-05 17:43:14,139 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 45/54 | contrast=clahe | denoising=laplacian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:43:14,198 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 44 finished in 0.059s
+2026-08-05 17:43:14,198 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 46/54 | contrast=clahe | denoising=frequency_filter | sharpening=none
+2026-08-05 17:43:14,437 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 45 finished in 0.239s
+2026-08-05 17:43:14,437 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 47/54 | contrast=clahe | denoising=frequency_filter | sharpening=unsharp_masking
+2026-08-05 17:43:14,674 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 46 finished in 0.237s
+2026-08-05 17:43:14,674 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 48/54 | contrast=clahe | denoising=frequency_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:43:14,919 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 47 finished in 0.245s
+2026-08-05 17:43:14,919 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 49/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=none
+2026-08-05 17:44:52,465 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 48 finished in 97.546s
+2026-08-05 17:44:52,466 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 50/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=unsharp_masking
+2026-08-05 17:46:30,231 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 49 finished in 97.765s
+2026-08-05 17:46:30,231 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 51/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=stroke_width_enhancement
+2026-08-05 17:48:07,802 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 50 finished in 97.571s
+2026-08-05 17:48:07,803 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 52/54 | contrast=clahe | denoising=unsharp_filter | sharpening=none
+2026-08-05 17:48:07,918 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 51 finished in 0.115s
+2026-08-05 17:48:07,918 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 53/54 | contrast=clahe | denoising=unsharp_filter | sharpening=unsharp_masking
+2026-08-05 17:48:08,035 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 52 finished in 0.117s
+2026-08-05 17:48:08,036 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 54/54 | contrast=clahe | denoising=unsharp_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:48:08,156 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2016-04-25_5.jpg] Config 53 finished in 0.120s
+2026-08-05 17:48:08,167 [INFO] src.corpus_construction.enhance_images.pipeline: Saved 270 metadata records to data/corpus_construction/enhance_images/results/publimetro/enhance_images.parquet
+2026-08-05 17:48:11,455 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 1/54 | contrast=none | denoising=none | sharpening=none
+2026-08-05 17:48:11,460 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 0 finished in 0.004s
+2026-08-05 17:48:11,460 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 2/54 | contrast=none | denoising=none | sharpening=unsharp_masking
+2026-08-05 17:48:11,470 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 1 finished in 0.010s
+2026-08-05 17:48:11,470 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 3/54 | contrast=none | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 17:48:11,481 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 2 finished in 0.011s
+2026-08-05 17:48:11,481 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 4/54 | contrast=none | denoising=mean_filter | sharpening=none
+2026-08-05 17:48:11,486 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 3 finished in 0.005s
+2026-08-05 17:48:11,486 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 5/54 | contrast=none | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 17:48:11,497 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 4 finished in 0.011s
+2026-08-05 17:48:11,497 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 6/54 | contrast=none | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:48:11,509 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 5 finished in 0.012s
+2026-08-05 17:48:11,510 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 7/54 | contrast=none | denoising=gaussian_filter | sharpening=none
+2026-08-05 17:48:11,517 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 6 finished in 0.007s
+2026-08-05 17:48:11,517 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 8/54 | contrast=none | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 17:48:11,530 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 7 finished in 0.013s
+2026-08-05 17:48:11,530 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 9/54 | contrast=none | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:48:11,543 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 8 finished in 0.013s
+2026-08-05 17:48:11,543 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 10/54 | contrast=none | denoising=median_filter | sharpening=none
+2026-08-05 17:48:11,548 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 9 finished in 0.004s
+2026-08-05 17:48:11,548 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 11/54 | contrast=none | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 17:48:11,557 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 10 finished in 0.009s
+2026-08-05 17:48:11,557 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 12/54 | contrast=none | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:48:11,568 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 11 finished in 0.011s
+2026-08-05 17:48:11,568 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 13/54 | contrast=none | denoising=conservative_filter | sharpening=none
+2026-08-05 17:48:44,698 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 12 finished in 33.131s
+2026-08-05 17:48:44,698 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 14/54 | contrast=none | denoising=conservative_filter | sharpening=unsharp_masking
+2026-08-05 17:49:17,829 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 13 finished in 33.130s
+2026-08-05 17:49:17,829 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 15/54 | contrast=none | denoising=conservative_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:49:50,785 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 14 finished in 32.956s
+2026-08-05 17:49:50,785 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 16/54 | contrast=none | denoising=laplacian_filter | sharpening=none
+2026-08-05 17:49:50,794 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 15 finished in 0.008s
+2026-08-05 17:49:50,794 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 17/54 | contrast=none | denoising=laplacian_filter | sharpening=unsharp_masking
+2026-08-05 17:49:50,806 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 16 finished in 0.013s
+2026-08-05 17:49:50,807 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 18/54 | contrast=none | denoising=laplacian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:49:50,822 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 17 finished in 0.015s
+2026-08-05 17:49:50,822 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 19/54 | contrast=none | denoising=frequency_filter | sharpening=none
+2026-08-05 17:49:51,324 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 18 finished in 0.502s
+2026-08-05 17:49:51,324 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 20/54 | contrast=none | denoising=frequency_filter | sharpening=unsharp_masking
+2026-08-05 17:49:51,810 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 19 finished in 0.486s
+2026-08-05 17:49:51,810 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 21/54 | contrast=none | denoising=frequency_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:49:52,301 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 20 finished in 0.491s
+2026-08-05 17:49:52,301 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 22/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=none
+2026-08-05 17:51:25,500 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 21 finished in 93.199s
+2026-08-05 17:51:25,501 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 23/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=unsharp_masking
+2026-08-05 17:52:58,545 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 22 finished in 93.044s
+2026-08-05 17:52:58,545 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 24/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=stroke_width_enhancement
+2026-08-05 17:54:31,743 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 23 finished in 93.197s
+2026-08-05 17:54:31,743 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 25/54 | contrast=none | denoising=unsharp_filter | sharpening=none
+2026-08-05 17:54:31,796 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 24 finished in 0.053s
+2026-08-05 17:54:31,796 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 26/54 | contrast=none | denoising=unsharp_filter | sharpening=unsharp_masking
+2026-08-05 17:54:31,847 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 25 finished in 0.051s
+2026-08-05 17:54:31,847 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 27/54 | contrast=none | denoising=unsharp_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:54:31,898 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 26 finished in 0.051s
+2026-08-05 17:54:31,898 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 28/54 | contrast=clahe | denoising=none | sharpening=none
+2026-08-05 17:54:31,944 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 27 finished in 0.046s
+2026-08-05 17:54:31,944 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 29/54 | contrast=clahe | denoising=none | sharpening=unsharp_masking
+2026-08-05 17:54:31,995 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 28 finished in 0.050s
+2026-08-05 17:54:31,995 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 30/54 | contrast=clahe | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 17:54:32,048 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 29 finished in 0.053s
+2026-08-05 17:54:32,048 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 31/54 | contrast=clahe | denoising=mean_filter | sharpening=none
+2026-08-05 17:54:32,095 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 30 finished in 0.047s
+2026-08-05 17:54:32,095 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 32/54 | contrast=clahe | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 17:54:32,147 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 31 finished in 0.052s
+2026-08-05 17:54:32,147 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 33/54 | contrast=clahe | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:54:32,201 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 32 finished in 0.054s
+2026-08-05 17:54:32,201 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 34/54 | contrast=clahe | denoising=gaussian_filter | sharpening=none
+2026-08-05 17:54:32,248 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 33 finished in 0.047s
+2026-08-05 17:54:32,248 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 35/54 | contrast=clahe | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 17:54:32,301 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 34 finished in 0.053s
+2026-08-05 17:54:32,301 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 36/54 | contrast=clahe | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:54:32,356 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 35 finished in 0.054s
+2026-08-05 17:54:32,356 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 37/54 | contrast=clahe | denoising=median_filter | sharpening=none
+2026-08-05 17:54:32,402 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 36 finished in 0.046s
+2026-08-05 17:54:32,402 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 38/54 | contrast=clahe | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 17:54:32,453 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 37 finished in 0.051s
+2026-08-05 17:54:32,453 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 39/54 | contrast=clahe | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:54:32,506 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 38 finished in 0.053s
+2026-08-05 17:54:32,506 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 40/54 | contrast=clahe | denoising=conservative_filter | sharpening=none
+2026-08-05 17:55:05,563 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 39 finished in 33.057s
+2026-08-05 17:55:05,563 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 41/54 | contrast=clahe | denoising=conservative_filter | sharpening=unsharp_masking
+2026-08-05 17:55:38,662 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 40 finished in 33.099s
+2026-08-05 17:55:38,663 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 42/54 | contrast=clahe | denoising=conservative_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:56:11,871 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 41 finished in 33.209s
+2026-08-05 17:56:11,872 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 43/54 | contrast=clahe | denoising=laplacian_filter | sharpening=none
+2026-08-05 17:56:11,923 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 42 finished in 0.051s
+2026-08-05 17:56:11,923 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 44/54 | contrast=clahe | denoising=laplacian_filter | sharpening=unsharp_masking
+2026-08-05 17:56:11,977 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 43 finished in 0.055s
+2026-08-05 17:56:11,978 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 45/54 | contrast=clahe | denoising=laplacian_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:56:12,034 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 44 finished in 0.056s
+2026-08-05 17:56:12,034 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 46/54 | contrast=clahe | denoising=frequency_filter | sharpening=none
+2026-08-05 17:56:12,583 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 45 finished in 0.549s
+2026-08-05 17:56:12,583 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 47/54 | contrast=clahe | denoising=frequency_filter | sharpening=unsharp_masking
+2026-08-05 17:56:13,132 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 46 finished in 0.550s
+2026-08-05 17:56:13,133 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 48/54 | contrast=clahe | denoising=frequency_filter | sharpening=stroke_width_enhancement
+2026-08-05 17:56:13,693 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 47 finished in 0.560s
+2026-08-05 17:56:13,693 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 49/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=none
+2026-08-05 17:57:47,071 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 48 finished in 93.378s
+2026-08-05 17:57:47,072 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 50/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=unsharp_masking
+2026-08-05 17:59:20,683 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 49 finished in 93.611s
+2026-08-05 17:59:20,684 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 51/54 | contrast=clahe | denoising=crimmins_speckle_removal | sharpening=stroke_width_enhancement
+2026-08-05 18:00:54,194 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 50 finished in 93.510s
+2026-08-05 18:00:54,194 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 52/54 | contrast=clahe | denoising=unsharp_filter | sharpening=none
+2026-08-05 18:00:54,313 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 51 finished in 0.119s
+2026-08-05 18:00:54,313 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 53/54 | contrast=clahe | denoising=unsharp_filter | sharpening=unsharp_masking
+2026-08-05 18:00:54,424 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 52 finished in 0.111s
+2026-08-05 18:00:54,424 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 54/54 | contrast=clahe | denoising=unsharp_filter | sharpening=stroke_width_enhancement
+2026-08-05 18:00:54,537 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2017-07-27_16.jpg] Config 53 finished in 0.113s
+2026-08-05 18:01:00,285 [INFO] src.corpus_construction.enhance_images.pipeline: Saved 324 metadata records to data/corpus_construction/enhance_images/results/publimetro/enhance_images.parquet
+2026-08-05 18:01:03,290 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 1/54 | contrast=none | denoising=none | sharpening=none
+2026-08-05 18:01:03,294 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 0 finished in 0.005s
+2026-08-05 18:01:03,294 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 2/54 | contrast=none | denoising=none | sharpening=unsharp_masking
+2026-08-05 18:01:03,306 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 1 finished in 0.011s
+2026-08-05 18:01:03,306 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 3/54 | contrast=none | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 18:01:03,319 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 2 finished in 0.013s
+2026-08-05 18:01:03,319 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 4/54 | contrast=none | denoising=mean_filter | sharpening=none
+2026-08-05 18:01:03,325 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 3 finished in 0.006s
+2026-08-05 18:01:03,325 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 5/54 | contrast=none | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 18:01:03,338 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 4 finished in 0.013s
+2026-08-05 18:01:03,338 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 6/54 | contrast=none | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 18:01:03,353 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 5 finished in 0.015s
+2026-08-05 18:01:03,353 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 7/54 | contrast=none | denoising=gaussian_filter | sharpening=none
+2026-08-05 18:01:03,361 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 6 finished in 0.007s
+2026-08-05 18:01:03,361 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 8/54 | contrast=none | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 18:01:03,376 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 7 finished in 0.015s
+2026-08-05 18:01:03,376 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 9/54 | contrast=none | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 18:01:03,391 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 8 finished in 0.015s
+2026-08-05 18:01:03,391 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 10/54 | contrast=none | denoising=median_filter | sharpening=none
+2026-08-05 18:01:03,396 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 9 finished in 0.005s
+2026-08-05 18:01:03,396 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 11/54 | contrast=none | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 18:01:03,408 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 10 finished in 0.013s
+2026-08-05 18:01:03,409 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 12/54 | contrast=none | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 18:01:03,421 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 11 finished in 0.012s
+2026-08-05 18:01:03,421 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 13/54 | contrast=none | denoising=conservative_filter | sharpening=none
+2026-08-05 18:01:36,602 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 12 finished in 33.181s
+2026-08-05 18:01:36,602 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 14/54 | contrast=none | denoising=conservative_filter | sharpening=unsharp_masking
+2026-08-05 18:02:09,864 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 13 finished in 33.262s
+2026-08-05 18:02:09,865 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 15/54 | contrast=none | denoising=conservative_filter | sharpening=stroke_width_enhancement
+2026-08-05 18:02:42,884 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 14 finished in 33.019s
+2026-08-05 18:02:42,884 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 16/54 | contrast=none | denoising=laplacian_filter | sharpening=none
+2026-08-05 18:02:42,892 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 15 finished in 0.008s
+2026-08-05 18:02:42,892 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 17/54 | contrast=none | denoising=laplacian_filter | sharpening=unsharp_masking
+2026-08-05 18:02:42,905 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 16 finished in 0.013s
+2026-08-05 18:02:42,905 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 18/54 | contrast=none | denoising=laplacian_filter | sharpening=stroke_width_enhancement
+2026-08-05 18:02:42,920 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 17 finished in 0.014s
+2026-08-05 18:02:42,920 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 19/54 | contrast=none | denoising=frequency_filter | sharpening=none
+2026-08-05 18:02:43,427 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 18 finished in 0.507s
+2026-08-05 18:02:43,427 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 20/54 | contrast=none | denoising=frequency_filter | sharpening=unsharp_masking
+2026-08-05 18:02:43,914 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 19 finished in 0.487s
+2026-08-05 18:02:43,914 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 21/54 | contrast=none | denoising=frequency_filter | sharpening=stroke_width_enhancement
+2026-08-05 18:02:44,411 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 20 finished in 0.497s
+2026-08-05 18:02:44,411 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 22/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=none
+2026-08-05 18:04:17,561 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 21 finished in 93.150s
+2026-08-05 18:04:17,562 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 23/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=unsharp_masking
+2026-08-05 18:05:50,675 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 22 finished in 93.113s
+2026-08-05 18:05:50,675 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 24/54 | contrast=none | denoising=crimmins_speckle_removal | sharpening=stroke_width_enhancement
+2026-08-05 18:07:23,462 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 23 finished in 92.787s
+2026-08-05 18:07:23,463 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 25/54 | contrast=none | denoising=unsharp_filter | sharpening=none
+2026-08-05 18:07:23,545 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 24 finished in 0.082s
+2026-08-05 18:07:23,545 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 26/54 | contrast=none | denoising=unsharp_filter | sharpening=unsharp_masking
+2026-08-05 18:07:23,612 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 25 finished in 0.066s
+2026-08-05 18:07:23,612 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 27/54 | contrast=none | denoising=unsharp_filter | sharpening=stroke_width_enhancement
+2026-08-05 18:07:23,681 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 26 finished in 0.069s
+2026-08-05 18:07:23,681 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 28/54 | contrast=clahe | denoising=none | sharpening=none
+2026-08-05 18:07:23,727 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 27 finished in 0.046s
+2026-08-05 18:07:23,727 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 29/54 | contrast=clahe | denoising=none | sharpening=unsharp_masking
+2026-08-05 18:07:23,778 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 28 finished in 0.051s
+2026-08-05 18:07:23,778 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 30/54 | contrast=clahe | denoising=none | sharpening=stroke_width_enhancement
+2026-08-05 18:07:23,830 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 29 finished in 0.051s
+2026-08-05 18:07:23,830 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 31/54 | contrast=clahe | denoising=mean_filter | sharpening=none
+2026-08-05 18:07:23,877 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 30 finished in 0.047s
+2026-08-05 18:07:23,877 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 32/54 | contrast=clahe | denoising=mean_filter | sharpening=unsharp_masking
+2026-08-05 18:07:23,927 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 31 finished in 0.050s
+2026-08-05 18:07:23,928 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 33/54 | contrast=clahe | denoising=mean_filter | sharpening=stroke_width_enhancement
+2026-08-05 18:07:23,981 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 32 finished in 0.053s
+2026-08-05 18:07:23,981 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 34/54 | contrast=clahe | denoising=gaussian_filter | sharpening=none
+2026-08-05 18:07:24,028 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 33 finished in 0.047s
+2026-08-05 18:07:24,029 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 35/54 | contrast=clahe | denoising=gaussian_filter | sharpening=unsharp_masking
+2026-08-05 18:07:24,082 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 34 finished in 0.053s
+2026-08-05 18:07:24,082 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 36/54 | contrast=clahe | denoising=gaussian_filter | sharpening=stroke_width_enhancement
+2026-08-05 18:07:24,137 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 35 finished in 0.056s
+2026-08-05 18:07:24,137 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 37/54 | contrast=clahe | denoising=median_filter | sharpening=none
+2026-08-05 18:07:24,183 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 36 finished in 0.046s
+2026-08-05 18:07:24,183 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 38/54 | contrast=clahe | denoising=median_filter | sharpening=unsharp_masking
+2026-08-05 18:07:24,235 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 37 finished in 0.051s
+2026-08-05 18:07:24,235 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 39/54 | contrast=clahe | denoising=median_filter | sharpening=stroke_width_enhancement
+2026-08-05 18:07:24,288 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 38 finished in 0.053s
+2026-08-05 18:07:24,288 [INFO] src.corpus_construction.enhance_images.pipeline: [publimetro_2018-03-08_16.jpg] Config 40/54 | contrast=clahe | denoising=conservative_filter | sharpening=none
+[2026-08-05T18:07:42.016] error: *** JOB 26210489 ON c003 CANCELLED AT 2026-08-05T18:07:42 DUE TO TIME LIMIT ***

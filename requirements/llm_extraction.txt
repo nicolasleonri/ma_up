@@ -1,0 +1,4 @@
+# Local text-only LLM inference
+vllm>=0.23
+pandas>=2
+pyarrow>=14

@@ -1,0 +1,6 @@
+# OCR backends
+opendataloader-pdf>=2.4,<3
+docling>=2.96,<3
+Pillow>=10
+pandas>=2
+pyarrow>=14

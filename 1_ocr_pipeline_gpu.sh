@@ -7,9 +7,9 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
-#SBATCH --gres=gpu:a5000:1
-#SBATCH --mem-per-cpu=30GB
-#SBATCH --time=24:00:00
+#SBATCH --gres=gpu:h100:1
+#SBATCH --mem-per-cpu=20GB
+#SBATCH --time=05:00:00
 
 # set -euo pipefail
 
@@ -25,12 +25,23 @@ mkdir -p logs/slurm
 ############# Specs (1 image): 2x2GB; 1xa5000 and 30min
 
 ####### 4. OCR-Extractor #######
+# module purge
+# module add virtualenv/20.32.0-GCCcore-14.3.0
+# module add Python/3.13.5-GCCcore-14.3.0
+# source venv/corpus_construction/ocr_extraction/bin/activate
+# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/test_run/none/binarization.parquet --binarized-dir data/corpus_construction/binarize/test_run/none/ --output-dir data/corpus_construction/ocr_extraction/test_run/none/
+# ############# Specs (1 image): 
+
+####### 5. LLM Extractor #######
 module purge
 module add virtualenv/20.32.0-GCCcore-14.3.0
 module add Python/3.13.5-GCCcore-14.3.0
-source venv/corpus_construction/ocr_extraction/bin/activate
-python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/test_run/none/binarization.parquet --binarized-dir data/corpus_construction/binarize/test_run/none/ --output-dir data/corpus_construction/ocr_extraction/test_run/none/
-############# Specs (1 image): 
+export HF_HOME=/scratch/nicolasal97/.cache/huggingface
+source venv/corpus_construction/llm_extraction/bin/activate
+python3 -m src.workflows.llm_extraction \
+    --ocr-parquet data/corpus_construction/ocr_extraction/test_run/none/ocr.parquet \
+    --output-parquet data/corpus_construction/llm_extraction/test_run/none/results.parquet
+############# Specs (1 image): 2x2GB; 1xa5000 and 30min
 
 # ####### 4. VLM #######
 # module purge

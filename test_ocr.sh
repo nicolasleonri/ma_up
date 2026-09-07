@@ -24,14 +24,14 @@ mkdir -p logs/slurm
 # python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/correo --output-dir data/corpus_construction/layout_detection/results/correo
 ############# Specs (1 image): 2x2GB; 1xa5000 and 30min
 
-####### 2. Layout #######
-# module purge
-# module add virtualenv/20.32.0-GCCcore-14.3.0
-# module add Python/3.13.5-GCCcore-14.3.0
-# export HF_HOME=/scratch/nicolasal97/.cache/huggingface
-# source venv/corpus_construction/layout_detection/bin/activate
-# python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/correo --output-dir data/corpus_construction/layout_detection/results/correo
-############# Specs (1 image): 2x2GB; 1xa5000 and 30min
+####### 4. OCR-Extractor #######
+module purge
+module add virtualenv/20.32.0-GCCcore-14.3.0
+module add Python/3.13.5-GCCcore-14.3.0
+source venv/corpus_construction/ocr_extraction/bin/activate
+python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/test_run/none/binarization.parquet --binarized-dir data/corpus_construction/binarize/test_run/none/ --output-dir data/corpus_construction/ocr_extraction/test_run/none/
+# opendataloader-pdf-hybrid --port 5002
+############# Specs (1 image): 
 
 
 ####### 4. VLM #######

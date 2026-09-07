@@ -1,0 +1,149 @@
+2026-09-07 10:50:05,033 INFO Running docling_easyocr OCR on 432 images using 32 workers
+2026-09-07 10:50:05,990 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:06,074 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:06,074 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:06,207 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:06,257 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:06,308 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:06,344 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:06,501 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:06,626 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:06,631 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:06,652 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:06,709 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:06,719 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:06,891 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:07,032 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:07,053 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:07,181 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:07,211 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:07,295 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:07,367 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:07,631 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:07,796 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:07,801 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:07,958 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:07,999 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:08,005 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:08,018 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:08,026 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:08,026 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:08,029 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:08,029 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:08,029 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-07 10:50:08,118 INFO Going to convert document batch...
+2026-09-07 10:50:08,118 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-07 10:50:08,120 INFO Going to convert document batch...
+2026-09-07 10:50:08,126 INFO Going to convert document batch...
+2026-09-07 10:50:08,124 INFO Going to convert document batch...
+2026-09-07 10:50:08,136 INFO Going to convert document batch...
+2026-09-07 10:50:08,140 INFO Going to convert document batch...
+2026-09-07 10:50:08,144 INFO Going to convert document batch...
+2026-09-07 10:50:08,155 INFO Going to convert document batch...
+2026-09-07 10:50:08,169 INFO Going to convert document batch...
+2026-09-07 10:50:08,172 INFO Going to convert document batch...
+2026-09-07 10:50:08,173 INFO Going to convert document batch...
+2026-09-07 10:50:08,182 INFO Going to convert document batch...
+2026-09-07 10:50:08,185 INFO Going to convert document batch...
+2026-09-07 10:50:08,191 INFO Going to convert document batch...
+2026-09-07 10:50:08,199 INFO Going to convert document batch...
+2026-09-07 10:50:08,206 INFO Going to convert document batch...
+2026-09-07 10:50:08,210 INFO Going to convert document batch...
+2026-09-07 10:50:08,211 INFO Loading plugin 'docling_defaults'
+2026-09-07 10:50:08,215 INFO Registered picture descriptions: ['picture_description_vlm_engine', 'vlm', 'api']
+2026-09-07 10:50:08,236 INFO Going to convert document batch...
+2026-09-07 10:50:08,236 INFO Going to convert document batch...
+2026-09-07 10:50:08,241 INFO Going to convert document batch...
+2026-09-07 10:50:08,264 INFO Going to convert document batch...
+2026-09-07 10:50:08,265 INFO Going to convert document batch...
+2026-09-07 10:50:08,271 INFO Going to convert document batch...
+2026-09-07 10:50:08,286 INFO Going to convert document batch...
+2026-09-07 10:50:08,291 INFO Going to convert document batch...
+2026-09-07 10:50:08,304 INFO Going to convert document batch...
+2026-09-07 10:50:08,309 INFO Going to convert document batch...
+2026-09-07 10:50:08,315 INFO Going to convert document batch...
+2026-09-07 10:50:08,316 INFO Going to convert document batch...
+2026-09-07 10:50:08,329 INFO Going to convert document batch...
+2026-09-07 10:50:08,335 INFO Going to convert document batch...
+2026-09-07 10:50:08,338 INFO Going to convert document batch...
+2026-09-07 10:50:08,350 INFO Loading plugin 'docling_defaults'
+2026-09-07 10:50:08,374 INFO Registered ocr engines: ['auto', 'easyocr', 'kserve_v2_ocr', 'nemotron-ocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
+2026-09-07 10:50:10,537 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+2026-09-07 10:50:12,308 INFO Loading plugin 'docling_defaults'
+2026-09-07 10:50:12,316 INFO Registered layout engines: ['layout_object_detection', 'docling_layout_default', 'docling_experimental_table_crops_layout']
+2026-09-07 10:50:13,937 INFO Initializing Transformers object-detection engine
+2026-09-07 10:50:13,937 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-07 10:50:13,937 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+2026-09-07 10:50:14,093 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-07 10:50:14,102 INFO Model docling-project/docling-layout-heron already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8
+2026-09-07 10:50:14,102 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 9659.41it/s]
+2026-09-07 10:50:15,287 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-07 10:50:15,315 INFO Loading plugin 'docling_defaults'
+2026-09-07 10:50:15,320 INFO Registered table structure engines: ['docling_tableformer', 'docling_tableformer_v2', 'granite_vision_table']
+2026-09-07 10:50:15,320 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-07 10:50:15,445 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-07 10:50:15,454 INFO Model docling-project/docling-models already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23
+2026-09-07 10:50:15,486 INFO Accelerator device: 'cpu'
+2026-09-07 10:50:15,813 INFO Processing document correo_2016-10-11_16_config_001_bin_007.tiff
+2026-09-07 10:50:15,813 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-07 10:50:15,813 INFO Accelerator device: 'cpu'
+2026-09-07 10:50:17,831 INFO Initializing Transformers object-detection engine
+2026-09-07 10:50:17,831 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-07 10:50:17,831 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+2026-09-07 10:50:17,964 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-07 10:50:17,988 INFO Model docling-project/docling-layout-heron already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8
+2026-09-07 10:50:17,988 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 10590.70it/s]
+2026-09-07 10:50:18,602 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-07 10:50:18,602 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-07 10:50:18,753 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-07 10:50:18,985 INFO Model docling-project/docling-models already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23
+2026-09-07 10:50:18,986 INFO Accelerator device: 'cpu'
+2026-09-07 10:50:19,444 INFO Processing document correo_2016-10-11_16_config_003_bin_003.tiff
+2026-09-07 10:50:19,444 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-07 10:50:19,445 INFO Accelerator device: 'cpu'
+2026-09-07 10:50:21,675 INFO Initializing Transformers object-detection engine
+2026-09-07 10:50:21,676 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-07 10:50:21,676 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+2026-09-07 10:50:21,811 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-07 10:50:22,058 INFO Model docling-project/docling-layout-heron already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8
+2026-09-07 10:50:22,058 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 13154.13it/s]
+2026-09-07 10:50:22,602 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-07 10:50:22,602 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-07 10:50:22,742 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-07 10:50:22,918 INFO Model docling-project/docling-models already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23
+2026-09-07 10:50:22,919 INFO Accelerator device: 'cpu'
+2026-09-07 10:50:24,463 INFO Processing document correo_2016-10-11_16_config_003_bin_006.tiff
+2026-09-07 10:50:24,473 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-07 10:50:24,474 INFO Accelerator device: 'cpu'
+2026-09-07 10:50:29,908 INFO Initializing Transformers object-detection engine
+2026-09-07 10:50:29,908 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-07 10:50:29,908 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+2026-09-07 10:50:30,094 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-07 10:50:30,523 INFO Model docling-project/docling-layout-heron already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8
+2026-09-07 10:50:30,524 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  25%|██▌       | 196/770 [00:00<00:00, 1632.32it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 4519.28it/s]
+2026-09-07 10:50:32,137 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-07 10:50:32,137 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-07 10:50:32,291 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-07 10:50:32,471 INFO Model docling-project/docling-models already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23
+2026-09-07 10:50:32,471 INFO Accelerator device: 'cpu'
+2026-09-07 10:50:34,708 INFO Processing document correo_2016-10-11_16_config_000_bin_003.tiff
+2026-09-07 10:50:34,709 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-07 10:50:34,710 INFO Accelerator device: 'cpu'
+2026-09-07 10:50:41,766 INFO Initializing Transformers object-detection engine
+2026-09-07 10:50:41,766 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-07 10:50:41,766 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+2026-09-07 10:50:41,948 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-07 10:50:42,693 INFO Model docling-project/docling-layout-heron already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8
+2026-09-07 10:50:42,693 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 9534.73it/s]
+2026-09-07 10:50:45,471 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-07 10:50:45,471 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-07 10:50:45,625 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-07 10:50:46,120 INFO Model docling-project/docling-models already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23
+2026-09-07 10:50:46,121 INFO Accelerator device: 'cpu'

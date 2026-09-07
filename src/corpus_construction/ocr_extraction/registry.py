@@ -1,3 +1,15 @@
-from .docling import DoclingOCRExtractor
-from .opendataloader import OpenDataLoaderOCRExtractor
-OCR_EXTRACTORS = {"docling": DoclingOCRExtractor, "opendataloader": OpenDataLoaderOCRExtractor}
+"""OCR extractor registry."""
+
+from .docling import (
+    DoclingEasyOCRExtractor,
+    DoclingOCRExtractor,
+    DoclingRapidOCRExtractor,
+    DoclingNemotronOCRExtractor,
+)
+
+OCR_EXTRACTORS = {
+    "docling": DoclingOCRExtractor,
+    "docling_easyocr": DoclingEasyOCRExtractor,
+    "docling_rapidocr": DoclingRapidOCRExtractor,
+    "docling_nemotron-ocr": DoclingNemotronOCRExtractor,
+}

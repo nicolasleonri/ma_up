@@ -1,29 +1,76 @@
-"""Docling OCR adapter for TIFF/PNG/JPEG newspaper images."""
-from pathlib import Path
-from typing import Any
-class DoclingOCRExtractor:
-    name = "docling"
-    def __init__(self, languages=None, ocr_backend="auto"):
-        self.languages = languages or ["spa"]
-        self.ocr_backend = ocr_backend
-        self._converter = None
-    def _ensure_converter(self):
-        if self._converter is not None:
-            return
-        from docling.datamodel.base_models import InputFormat
-        from docling.datamodel.pipeline_options import PipelineOptions, RapidOcrOptions, TesseractOcrOptions
-        from docling.document_converter import DocumentConverter, ImageFormatOption
-        ocr_options = TesseractOcrOptions(lang=self.languages) if self.ocr_backend == "tesseract" else RapidOcrOptions(lang=self.languages)
-        options = PipelineOptions(do_ocr=True, ocr_options=ocr_options)
-        self._converter = DocumentConverter(
-            allowed_formats=[InputFormat.IMAGE],
-            format_options={InputFormat.IMAGE: ImageFormatOption(pipeline_options=options)},
+from docling.datamodel.base_models import InputFormat
+from docling.datamodel.pipeline_options import (
+    EasyOcrOptions,
+    NemotronOcrOptions,
+    OcrMode,
+    PdfPipelineOptions,
+    RapidOcrOptions,
+)
+from docling.document_converter import DocumentConverter, PdfFormatOption
+
+
+class BaseDoclingOCRExtractor:
+    """Base class for Docling OCR extractors."""
+
+    ocr_options = None
+
+    def __init__(self):
+        pipeline_options = PdfPipelineOptions(
+            do_ocr=True,
         )
-    def extract(self, image_path: Path, metadata: dict[str, Any]) -> str:
-        self._ensure_converter()
-        result = self._converter.convert(str(image_path))
-        if result.document is None:
-            return ""
-        return result.document.export_to_markdown().strip()
-    def close(self):
-        self._converter = None
+
+        if self.ocr_options is not None:
+            pipeline_options.ocr_options = self.ocr_options
+
+        self.converter = DocumentConverter(
+            format_options={
+                InputFormat.IMAGE: PdfFormatOption(
+                    pipeline_options=pipeline_options,
+                )
+            }
+        )
+
+    def extract(
+        self,
+        image_path: str,
+        metadata: dict | None = None,
+    ) -> str:
+        result = self.converter.convert(image_path)
+        return result.document.export_to_markdown()
+
+    def close(self) -> None:
+        """Release extractor resources."""
+        self.converter = None
+
+
+class DoclingOCRExtractor(BaseDoclingOCRExtractor):
+    """Docling's default OCR configuration."""
+
+    ocr_options = None
+
+
+class DoclingEasyOCRExtractor(BaseDoclingOCRExtractor):
+    """Docling using EasyOCR."""
+
+    ocr_options = EasyOcrOptions(
+        lang=["es"],
+        mode=OcrMode.FULL_PAGE,
+    )
+
+
+class DoclingRapidOCRExtractor(BaseDoclingOCRExtractor):
+    """Docling using RapidOCR."""
+
+    ocr_options = RapidOcrOptions(
+        lang=["es"],
+        mode=OcrMode.FULL_PAGE,
+    )
+
+
+class DoclingNemotronOCRExtractor(BaseDoclingOCRExtractor):
+    """Docling using NVIDIA Nemotron OCR."""
+
+    ocr_options = NemotronOcrOptions(
+        lang=["es"],
+        mode=OcrMode.FULL_PAGE,
+    )

@@ -6,9 +6,9 @@
 #SBATCH --qos=standard
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=1
-#SBATCH --mem-per-cpu=500MB
-#SBATCH --time=00:10:00
+#SBATCH --cpus-per-task=3
+#SBATCH --mem-per-cpu=10GB
+#SBATCH --time=24:00:00
 
 # set -euo pipefail
 
@@ -19,17 +19,25 @@ mkdir -p logs/slurm
 # module add virtualenv/20.32.0-GCCcore-14.3.0
 # module add Python/3.13.5-GCCcore-14.3.0
 # source venv/corpus_construction/enhance_images/bin/activate
-# python3 -m src.workflows.enhance_images --input-dir data/corpus_construction/enhance_images/ --output-dir data/corpus_construction/enhance_images/results/ --newspaper correo
+# python3 -m src.workflows.enhance_images --input-dir data/corpus_construction/enhance_images/test_run --output-dir data/corpus_construction/enhance_images/results/test_run
 # ############# Specs (10 image): 1x1GB and 1h30min
 
 ####### 3. Binarization #######
+# module purge
+# module add virtualenv/20.32.0-GCCcore-14.3.0
+# module add Python/3.13.5-GCCcore-14.3.0
+# source venv/corpus_construction/binarize/bin/activate
+# python3 -m src.workflows.binarize --input-dir data/corpus_construction/enhance_images/results/test_run --output-dir data/corpus_construction/binarize/test_run/none/
+# python3 -m src.workflows.binarize --input-dir data/corpus_construction/layout_detection/results/correo --output-dir data/corpus_construction/binarize/correo/cropped/
+############# Specs (10 image): 1x1GB and 5min
+
+####### 4. OCR-Extractor #######
 module purge
 module add virtualenv/20.32.0-GCCcore-14.3.0
 module add Python/3.13.5-GCCcore-14.3.0
-source venv/corpus_construction/binarize/bin/activate
-python3 -m src.workflows.binarize --input-dir data/corpus_construction/enhance_images/results/correo --output-dir data/corpus_construction/binarize/correo/none/
-# python3 -m src.workflows.binarize --input-dir data/corpus_construction/layout_detection/results/correo --output-dir data/corpus_construction/binarize/correo/cropped/
-############# Specs (10 image): 1x1GB and 5min
+source venv/corpus_construction/ocr_extraction/bin/activate
+python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/test_run/none/binarization.parquet --binarized-dir data/corpus_construction/binarize/test_run/none/ --output-dir data/corpus_construction/ocr_extraction/test_run/none/
+############# Specs (1 image): 
 
 # ## 5. Evaluate
 # module purge

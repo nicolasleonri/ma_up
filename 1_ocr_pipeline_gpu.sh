@@ -1,14 +1,14 @@
 #!/bin/bash
 #SBATCH --job-name=correo
-#SBATCH --output=logs/slurm/correo_%j.out
+#SBATCH --output=logs/slurm/correo_a5000_%j.out
 #SBATCH --partition=scavenger
 #SBATCH --account=agfritz
 #SBATCH --qos=prio
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
-#SBATCH --gres=gpu:h100:1
-#SBATCH --mem-per-cpu=20GB
+#SBATCH --gres=gpu:a5000:1
+#SBATCH --mem-per-cpu=30GB
 #SBATCH --time=05:00:00
 
 # set -euo pipefail
@@ -34,10 +34,42 @@ mkdir -p logs/slurm
 
 ####### 5. LLM Extractor #######
 module purge
-module add virtualenv/20.32.0-GCCcore-14.3.0
-module add Python/3.13.5-GCCcore-14.3.0
+
+module load CUDA/12.1.1
+module load cuDNN/8.9.2.26-CUDA-12.1.1
+module load virtualenv/20.26.2-GCCcore-13.3.0
+
+# module add virtualenv/20.32.0-GCCcore-14.3.0
+# module add Python/3.13.5-GCCcore-14.3.0
+
+# module add GCC/12.3.0
+# module add virtualenv/20.23.1-GCCcore-12.3.0
+# module add Python/3.11.3-GCCcore-12.3.0
+# module load CUDA/12.1.1
+# module load cuDNN/8.9.2.26-CUDA-12.1.1
+
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 export HF_HOME=/scratch/nicolasal97/.cache/huggingface
 source venv/corpus_construction/llm_extraction/bin/activate
+
+echo "===== COMPILERS ====="
+which gcc
+gcc --version
+which g++
+g++ --version
+which nvcc
+nvcc --version
+
+echo "===== PYTHON ====="
+which python3
+python3 --version
+pip freeze
+
+echo "===== PACKAGES ====="
+python3 -c "import torch; print('torch', torch.__version__, 'CUDA', torch.version.cuda)"
+python3 -c "import vllm; print('vllm', vllm.__version__)"
+python3 -c "import flashinfer; print('flashinfer', flashinfer.__version__)"
+
 python3 -m src.workflows.llm_extraction \
     --ocr-parquet data/corpus_construction/ocr_extraction/test_run/none/ocr.parquet \
     --output-parquet data/corpus_construction/llm_extraction/test_run/none/results.parquet

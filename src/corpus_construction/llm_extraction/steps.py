@@ -22,9 +22,7 @@ import re
 import time
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional
-from vllm import SamplingParams
 import dspy
-from vllm import LLM
 
 # ----------------------------------------------------------------------
 # Result containers
@@ -75,11 +73,7 @@ class VLLMInProcessLM:
     This class satisfies both contracts without starting a server.
     """
 
-    def __init__(
-        self,
-        llm,
-        max_new_tokens: int = 4096,
-    ):
+    def __init__(self, llm, max_new_tokens=4096):
         """
         Parameters
         ----------
@@ -88,6 +82,7 @@ class VLLMInProcessLM:
         max_new_tokens:
             Default generation length passed to SamplingParams.
         """
+        from vllm import SamplingParams
 
         self._llm = llm
         self._params = SamplingParams(
@@ -375,6 +370,8 @@ class _BaseLLMExtractor:
         if self._llm is not None:
             return
 
+        from vllm import LLM, SamplingParams
+
         llm_kwargs = dict(
             model=self.model_id,
             trust_remote_code=True,
@@ -547,6 +544,17 @@ class LlamaExtractor(_BaseLLMExtractor):
 
 class DeepSeekExtractor(_BaseLLMExtractor):
     model_id = "RedHatAI/DeepSeek-R1-Distill-Qwen-7B-FP8-dynamic"
+
+    def _ensure_loaded(self):
+        super()._ensure_loaded()
+        # Override sampling params to stop at end of thinking block
+        from vllm import SamplingParams
+        self._lm._params = SamplingParams(
+            temperature=0.0,
+            max_tokens=self.max_new_tokens,
+            stop=["</think>"],
+            include_stop_str_in_output=False,
+        )
 
 
 LLM_EXTRACTORS = {

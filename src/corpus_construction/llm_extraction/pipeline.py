@@ -51,7 +51,9 @@ status
 error
 """
 
+import gc
 import logging
+import subprocess
 import time
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -60,6 +62,103 @@ import pandas as pd
 
 from .steps import ExtractionResult, LLM_EXTRACTORS
 
+def _compute_batch_size(
+    max_batch_size: int = 64,
+    min_batch_size: int = 1,
+    tokens_per_item: int = 4096,
+    bytes_per_token: int = 2,  # bfloat16
+) -> int:
+    """Estimate a safe batch size from available GPU memory.
+    
+    Falls back to min_batch_size if nvidia-smi is unavailable.
+    """
+    try:
+        import subprocess
+        result = subprocess.run(
+            ["nvidia-smi", "--query-gpu=memory.free",
+             "--format=csv,noheader,nounits"],
+            capture_output=True, text=True, check=True,
+        )
+        free_mib = int(result.stdout.strip().splitlines()[0])
+        free_bytes = free_mib * 1024 * 1024
+
+        # Reserve 20% as safety margin
+        usable_bytes = free_bytes * 0.8
+        bytes_per_item = tokens_per_item * bytes_per_token
+        batch_size = max(min_batch_size, int(usable_bytes / bytes_per_item))
+        return min(batch_size, max_batch_size)
+
+    except Exception:
+        return min_batch_size
+
+def _wait_for_gpu_memory(
+    logger: logging.Logger,
+    min_free_gib: float = 60.0,
+    poll_interval_s: float = 5.0,
+    timeout_s: float = 120.0,
+) -> None:
+    """
+    Wait until enough GPU memory is free before loading the next LLM.
+
+    This is intentionally based on nvidia-smi rather than PyTorch's
+    memory accounting, because the latter only describes allocations
+    visible to the current process.
+    """
+    min_free_mib = int(min_free_gib * 1024)
+    deadline = time.monotonic() + timeout_s
+
+    while True:
+        try:
+            result = subprocess.run(
+                [
+                    "nvidia-smi",
+                    "--query-gpu=memory.free",
+                    "--format=csv,noheader,nounits",
+                ],
+                capture_output=True,
+                text=True,
+                check=True,
+            )
+
+            free_mib = int(result.stdout.strip().splitlines()[0])
+        except (subprocess.SubprocessError, ValueError, IndexError) as exc:
+            logger.warning(
+                "Could not query GPU memory with nvidia-smi: %s",
+                exc,
+            )
+
+            if time.monotonic() >= deadline:
+                raise RuntimeError(
+                    "Timed out while waiting for GPU memory."
+                ) from exc
+
+            time.sleep(poll_interval_s)
+            continue
+
+        logger.info(
+            "GPU free memory: %.2f GiB / %.2f GiB required",
+            free_mib / 1024,
+            min_free_mib / 1024,
+        )
+
+        if free_mib >= min_free_mib:
+            logger.info("GPU has enough free memory.")
+            return
+        else:
+            logger.info(
+                "Waiting for GPU memory to free up. "
+                "Currently %.2f GiB free; %.2f GiB required.",
+                free_mib / 1024,
+                min_free_mib / 1024,
+            )
+            time.sleep(poll_interval_s)
+
+        # if time.monotonic() >= deadline:
+        #     raise RuntimeError(
+        #         f"Timed out waiting for GPU memory. "
+        #         f"Only {free_mib / 1024:.2f} GiB is free; "
+        #         f"{min_free_mib / 1024:.2f} GiB required."
+        #     )
 
 DEFAULT_PARQUET = (
     "data/corpus_construction/llm_extraction/results.parquet"
@@ -95,7 +194,7 @@ class LLMExtractionPipeline:
         ocr_parquet: str = "",
         parquet_path: str = DEFAULT_PARQUET,
         max_new_tokens: int = 4096,
-        batch_size: int = 32,
+        min_free_gib: float = 60.0,
         skip_failed_extractions: bool = True,
         llm_engine_kwargs: Optional[Dict[str, Dict[str, Any]]] = None,
     ):
@@ -104,7 +203,7 @@ class LLMExtractionPipeline:
         self.ocr_parquet = Path(ocr_parquet)
         self.parquet_path = Path(parquet_path)
         self.max_new_tokens = max_new_tokens
-        self.batch_size = batch_size
+        self.min_free_gib = min_free_gib
         self.skip_failed_extractions = skip_failed_extractions
         self.llm_engine_kwargs = llm_engine_kwargs or {}
         self._loaded_llms: Dict[str, Any] = {}
@@ -328,11 +427,18 @@ class LLMExtractionPipeline:
             # Process in batches.
             # ----------------------------------------------------------
 
+            batch_size = _compute_batch_size(
+                max_batch_size=64,
+                tokens_per_item=self.max_new_tokens,
+                bytes_per_token=1,  # FP8 models use 1 byte/token for KV cache
+            )
+            self.logger.info("[%s] Dynamic batch size: %d", llm_name, batch_size)
+
             for chunk_start in range(
-                0, len(pending), self.batch_size
+                0, len(pending), batch_size
             ):
                 chunk = pending[
-                    chunk_start: chunk_start + self.batch_size
+                    chunk_start: chunk_start + batch_size
                 ]
 
                 ocr_texts = [item["ocr_text"] for item in chunk]
@@ -407,7 +513,21 @@ class LLMExtractionPipeline:
 
             extractor.unload()
             del self._loaded_llms[llm_name]
-            time.sleep(5)  # give GPU memory time to free
+
+            gc.collect()
+
+            try:
+                import torch
+                if torch.cuda.is_available():
+                    torch.cuda.empty_cache()
+                    torch.cuda.ipc_collect()
+            except ImportError:
+                self.logger.warning("PyTorch not available for CUDA cache cleanup.")
+
+            _wait_for_gpu_memory(
+                logger=self.logger,
+                min_free_gib=self.min_free_gib,
+            )
 
         self.logger.info(
             "LLM extraction complete. Extractions run: %d",

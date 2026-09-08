@@ -65,6 +65,13 @@ def parse_args():
     )
 
     parser.add_argument(
+        "--min-free-gib",
+        type=float,
+        default=60.0,
+        help="Minimum free GPU memory (GiB) required before loading the next model (default: 60.0).",
+    )
+
+    parser.add_argument(
         "--ocr-parquet",
         required=True,
         help=(
@@ -98,16 +105,6 @@ def parse_args():
         type=int,
         default=4096,
         help="Maximum tokens to generate per extraction (default: 4096).",
-    )
-
-    parser.add_argument(
-        "--batch-size",
-        type=int,
-        default=32,
-        help=(
-            "Number of OCR texts per LLM batch (default: 32). "
-            "Text-only batches can be larger than VLM batches."
-        ),
     )
 
     parser.add_argument(
@@ -184,7 +181,7 @@ def main():
         ocr_parquet=args.ocr_parquet,
         parquet_path=args.output_parquet,
         max_new_tokens=args.max_new_tokens,
-        batch_size=args.batch_size,
+        min_free_gib=args.min_free_gib,
         skip_failed_extractions=not args.no_skip_failed,
         llm_engine_kwargs=llm_engine_kwargs,
     )

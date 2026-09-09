@@ -246,7 +246,11 @@ data/**/*.parquet
 
 # Data
 data/*
-!data/enhance_images/
-!data/evaluate_extraction/
-!data/crawl_logs/
-!data/metadata/
+!data/corpus_construction/enhance_images/
+!data/corpus_construction/enhance_images/**
+!data/corpus_construction/evaluate_extraction/
+!data/corpus_construction/evaluate_extraction/**
+!data/raw/crawl_logs/
+!data/raw/crawl_logs/**
+!data/raw/metadata/
+!data/raw/metadata/**

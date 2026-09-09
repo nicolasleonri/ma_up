@@ -402,13 +402,28 @@ class _BaseLLMExtractor:
     # ------------------------------------------------------------------
 
     def unload(self):
+        print("Unloading?")
         if self._llm is None:
             return
 
+        # Shut down the engine and kill the EngineCore subprocess explicitly.
         try:
             engine = getattr(self._llm, "llm_engine", None)
-            if engine is not None and hasattr(engine, "shutdown"):
-                engine.shutdown()
+            if engine is not None:
+                # Shutdown the engine core client (sends SIGTERM to subprocess)
+                engine_core = getattr(engine, "engine_core", None)
+                if engine_core is not None:
+                    proc = getattr(engine_core, "_process", None)
+                    if proc is not None:
+                        proc.terminate()
+                        try:
+                            proc.wait(timeout=10)
+                        except Exception:
+                            proc.kill()
+                            proc.wait()
+                if hasattr(engine, "shutdown"):
+                    engine.shutdown()
+            print("1/3")
         except Exception:
             pass
 
@@ -418,24 +433,33 @@ class _BaseLLMExtractor:
         self._dspy_extractor = None
 
         gc.collect()
+        print("2/3")
 
         try:
             import torch
-            torch.cuda.synchronize()
-            torch.cuda.empty_cache()
-            torch.cuda.ipc_collect()
+            import torch.distributed as dist
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
+                torch.cuda.synchronize()
+                torch.cuda.empty_cache()
+                torch.cuda.synchronize()
+                torch.cuda.ipc_collect()
+            if dist.is_initialized():
+                dist.destroy_process_group()
         except Exception:
             pass
 
+        print("3/3")
+
         try:
-            from vllm.distributed.parallel_state import (
-                destroy_model_parallel,
-            )
+            from vllm.distributed.parallel_state import destroy_model_parallel
             destroy_model_parallel()
         except Exception:
             pass
 
         gc.collect()
+
+        print("4/3")
 
     # ------------------------------------------------------------------
     # Single item
@@ -452,68 +476,60 @@ class _BaseLLMExtractor:
     # Batch extraction
     # ------------------------------------------------------------------
 
+    EXTRACTION_PROMPT_TEMPLATE = """You are a structured extraction assistant.
+
+    Given the following OCR text from a scanned newspaper page, extract all articles.
+
+    Return ONLY a JSON array. Each element must have exactly these keys:
+    - title        : main headline (empty string if absent)
+    - subheadline  : secondary headline (empty string if absent)
+    - author       : byline (empty string if absent)
+    - body         : full article body text
+
+    Rules:
+    - Preserve reading order.
+    - Do not invent or complete missing fields.
+    - Return [] if no articles are present.
+    - Return only the JSON array. No explanation or markdown fences.
+
+    OCR TEXT:
+    {ocr_text}
+
+    JSON ARRAY:"""
+
     def extract_batch(
         self,
         ocr_texts: List[str],
         metadata_list: List[Dict[str, Any]],
     ) -> List[ExtractionResult]:
-        """
-        Run DSPy structured extraction over a batch of OCR texts.
-
-        Each text is processed through dspy.Predict so that DSPy's
-        call history, token tracking, and prompt management are all
-        populated correctly. This is required for MIPROv2 and
-        BootstrapFewShot to work when optimizing against gold standards.
-
-        Items are processed sequentially. vLLM handles its own internal
-        batching when __call__ is invoked, so throughput on an H100
-        remains high even without explicit batching here.
-        """
         self._ensure_loaded()
 
+        start = time.time()
+
+        prompts = [
+            EXTRACTION_PROMPT_TEMPLATE.format(ocr_text=t) if t else ""
+            for t in ocr_texts
+        ]
+
+        # Call vLLM directly in one batch — bypasses DSPy's broken LM dispatch
+        batch_outputs = self._lm.batch(prompts)
+
+        elapsed_total = time.time() - start
+        per_item = elapsed_total / max(len(prompts), 1)
+
         results = []
-
-        for ocr_text, metadata in zip(ocr_texts, metadata_list):
-            start = time.time()
-
-            try:
-                # Route through dspy.Predict — this is the call that
-                # DSPy's optimizer sees and can rewrite during
-                # BootstrapFewShot / MIPROv2 runs.
-                articles = self._dspy_extractor.extract(ocr_text)
-
-                # Retrieve the raw LLM output from history so it can
-                # be stored in the parquet for debugging.
-                raw_text = (
-                    self._lm.history[-1]["response"]
-                    if self._lm.history
-                    else ""
-                )
-
-                results.append(
-                    ExtractionResult(
-                        articles=articles,
-                        raw_text=raw_text,
-                        elapsed_s=time.time() - start,
-                        status="success",
-                        metadata=metadata,
-                    )
-                )
-
-            except Exception as exc:
-                results.append(
-                    ExtractionResult(
-                        articles=[],
-                        raw_text="",
-                        elapsed_s=time.time() - start,
-                        status="failed",
-                        error=str(exc),
-                        metadata=metadata,
-                    )
-                )
+        for raw_list, metadata in zip(batch_outputs, metadata_list):
+            raw_text = raw_list[0] if raw_list else ""
+            articles = self._dspy_extractor._parse_articles(raw_text)
+            results.append(ExtractionResult(
+                articles=articles,
+                raw_text=raw_text,
+                elapsed_s=per_item,
+                status="success",
+                metadata=metadata,
+            ))
 
         return results
-
 
 # ----------------------------------------------------------------------
 # Concrete extractors

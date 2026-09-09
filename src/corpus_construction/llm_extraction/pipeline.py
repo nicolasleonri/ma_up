@@ -144,21 +144,26 @@ def _wait_for_gpu_memory(
         if free_mib >= min_free_mib:
             logger.info("GPU has enough free memory.")
             return
-        else:
-            logger.info(
-                "Waiting for GPU memory to free up. "
-                "Currently %.2f GiB free; %.2f GiB required.",
-                free_mib / 1024,
-                min_free_mib / 1024,
+            
+        if time.monotonic() >= deadline:
+            raise RuntimeError(
+                f"Timed out waiting for GPU memory. "
+                f"Only {free_mib / 1024:.2f} GiB is free; "
+                f"{min_free_mib / 1024:.2f} GiB required."
             )
-            time.sleep(poll_interval_s)
+        
+        time.sleep(poll_interval_s)
 
-        # if time.monotonic() >= deadline:
-        #     raise RuntimeError(
-        #         f"Timed out waiting for GPU memory. "
-        #         f"Only {free_mib / 1024:.2f} GiB is free; "
-        #         f"{min_free_mib / 1024:.2f} GiB required."
+        # else:
+        #     logger.info(
+        #         "Waiting for GPU memory to free up. "
+        #         "Currently %.2f GiB free; %.2f GiB required.",
+        #         free_mib / 1024,
+        #         min_free_mib / 1024,
         #     )
+        #     
+
+        
 
 DEFAULT_PARQUET = (
     "data/corpus_construction/llm_extraction/results.parquet"
@@ -510,23 +515,18 @@ class LLMExtractionPipeline:
                 "[%s] Done. Unloading model.",
                 llm_name,
             )
-
+            
             extractor.unload()
             del self._loaded_llms[llm_name]
-
-            gc.collect()
-
-            try:
-                import torch
-                if torch.cuda.is_available():
-                    torch.cuda.empty_cache()
-                    torch.cuda.ipc_collect()
-            except ImportError:
-                self.logger.warning("PyTorch not available for CUDA cache cleanup.")
-
+            
             _wait_for_gpu_memory(
                 logger=self.logger,
                 min_free_gib=self.min_free_gib,
+            )
+
+            self.logger.info(
+                "[%s] Model unloaded.",
+                llm_name,
             )
 
         self.logger.info(

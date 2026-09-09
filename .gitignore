@@ -228,14 +228,7 @@ config/corpus_acquisition/
 .venv/
 venv/
 
-# Json and Parquet in data
-data/*.json
-data/*.parquet
-data/**/*.json
-data/**/*.parquet
-
-
-# Image files
+# Image files (everywhere except tracked data folders)
 *.png
 *.jpg
 *.jpeg
@@ -244,13 +237,30 @@ data/**/*.parquet
 *.svg
 *.tiff
 
+# Json and Parquet in data (scoped, not global)
+data/*.json
+data/*.parquet
+data/**/*.json
+data/**/*.parquet
+
 # Data
 data/*
+# !data/corpus_construction/
 !data/corpus_construction/enhance_images/
 !data/corpus_construction/enhance_images/**
 !data/corpus_construction/evaluate_extraction/
 !data/corpus_construction/evaluate_extraction/**
+# !data/raw/
 !data/raw/crawl_logs/
 !data/raw/crawl_logs/**
 !data/raw/metadata/
 !data/raw/metadata/**
+
+# Re-allow images and data files inside tracked folders
+!data/corpus_construction/enhance_images/**/*.png
+!data/corpus_construction/enhance_images/**/*.jpg
+!data/corpus_construction/enhance_images/**/*.jpeg
+!data/corpus_construction/enhance_images/**/*.tiff
+!data/corpus_construction/evaluate_extraction/**/*.csv
+!data/raw/crawl_logs/**/*.json
+!data/raw/metadata/**/*.parquet

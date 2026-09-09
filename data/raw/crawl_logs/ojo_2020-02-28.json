@@ -1,0 +1,9 @@
+{
+  "newspaper": "ojo",
+  "date": "2020-02-28",
+  "status": "partial",
+  "pages_downloaded": 23,
+  "pages_expected": 1000,
+  "error": "1 page(s) failed",
+  "timestamp": "2026-07-07T23:39:07"
+}

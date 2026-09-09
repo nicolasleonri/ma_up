@@ -1,0 +1,9 @@
+{
+  "newspaper": "ojo",
+  "date": "2022-02-23",
+  "status": "failed",
+  "pages_downloaded": 0,
+  "pages_expected": 1000,
+  "error": "rate_limited_403",
+  "timestamp": "2026-07-15T23:20:55"
+}

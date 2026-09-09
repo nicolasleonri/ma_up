@@ -1,0 +1,9 @@
+{
+  "newspaper": "elcomercio",
+  "date": "2015-02-21",
+  "status": "success",
+  "pages_downloaded": 42,
+  "pages_expected": 1000,
+  "error": null,
+  "timestamp": "2026-07-07T20:27:43"
+}

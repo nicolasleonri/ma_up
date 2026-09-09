@@ -1,0 +1,9 @@
+{
+  "newspaper": "ojo",
+  "date": "2022-02-28",
+  "status": "failed",
+  "pages_downloaded": 0,
+  "pages_expected": null,
+  "error": "Could not open Parquet input source '<Buffer>': Couldn't deserialize thrift: TProtocolException: Invalid data\n",
+  "timestamp": "2026-07-07T22:02:29"
+}

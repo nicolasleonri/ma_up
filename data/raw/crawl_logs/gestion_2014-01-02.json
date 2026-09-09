@@ -1,0 +1,9 @@
+{
+  "newspaper": "gestion",
+  "date": "2014-01-02",
+  "status": "failed",
+  "pages_downloaded": 1,
+  "pages_expected": 1000,
+  "error": "rate_limited_403",
+  "timestamp": "2026-07-07T23:29:26"
+}

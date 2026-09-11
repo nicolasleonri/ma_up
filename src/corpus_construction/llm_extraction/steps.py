@@ -402,7 +402,6 @@ class _BaseLLMExtractor:
     # ------------------------------------------------------------------
 
     def unload(self):
-        print("Unloading?")
         if self._llm is None:
             return
 
@@ -423,7 +422,6 @@ class _BaseLLMExtractor:
                             proc.wait()
                 if hasattr(engine, "shutdown"):
                     engine.shutdown()
-            print("1/3")
         except Exception:
             pass
 
@@ -433,7 +431,6 @@ class _BaseLLMExtractor:
         self._dspy_extractor = None
 
         gc.collect()
-        print("2/3")
 
         try:
             import torch
@@ -449,8 +446,6 @@ class _BaseLLMExtractor:
         except Exception:
             pass
 
-        print("3/3")
-
         try:
             from vllm.distributed.parallel_state import destroy_model_parallel
             destroy_model_parallel()
@@ -458,8 +453,6 @@ class _BaseLLMExtractor:
             pass
 
         gc.collect()
-
-        print("4/3")
 
     # ------------------------------------------------------------------
     # Single item
@@ -575,32 +568,54 @@ class _BaseLLMExtractor:
         ocr_texts: List[str],
         metadata_list: List[Dict[str, Any]],
     ) -> List[ExtractionResult]:
+
         self._ensure_loaded()
 
-        start = time.time()
-
         prompts = [
-            self.EXTRACTION_PROMPT_TEMPLATE.format(ocr_text=t) if t else ""
+            self.EXTRACTION_PROMPT_TEMPLATE.format(ocr_text=t)
+            if t and t.strip()
+            else None
             for t in ocr_texts
         ]
 
-        # Call vLLM directly in one batch — bypasses DSPy's broken LM dispatch
-        batch_outputs = self._lm.batch(prompts)
+        # Separate valid prompts from empty ones
+        valid_indices = [i for i, p in enumerate(prompts) if p is not None]
+        valid_prompts = [prompts[i] for i in valid_indices]
+
+        start = time.time()
+
+        if valid_prompts:
+            batch_outputs_valid = self._lm.batch(valid_prompts)
+        else:
+            batch_outputs_valid = []
 
         elapsed_total = time.time() - start
-        per_item = elapsed_total / max(len(prompts), 1)
+        per_item = elapsed_total / max(len(valid_prompts), 1)
 
+        # Reconstruct full results list, inserting empty results for skipped items
+        valid_iter = iter(batch_outputs_valid)
         results = []
-        for raw_list, metadata in zip(batch_outputs, metadata_list):
-            raw_text = raw_list[0] if raw_list else ""
-            articles = self._dspy_extractor._parse_articles(raw_text)
-            results.append(ExtractionResult(
-                articles=articles,
-                raw_text=raw_text,
-                elapsed_s=per_item,
-                status="success",
-                metadata=metadata,
-            ))
+        for i, (ocr_text, metadata) in enumerate(zip(ocr_texts, metadata_list)):
+            if i in valid_indices:
+                raw_list = next(valid_iter)
+                raw_text = raw_list[0] if raw_list else ""
+                articles = self._dspy_extractor._parse_articles(raw_text)
+                results.append(ExtractionResult(
+                    articles=articles,
+                    raw_text=raw_text,
+                    elapsed_s=per_item,
+                    status="success",
+                    metadata=metadata,
+                ))
+            else:
+                results.append(ExtractionResult(
+                    articles=[],
+                    raw_text="",
+                    elapsed_s=0.0,
+                    status="failed",
+                    error="empty OCR text",
+                    metadata=metadata,
+                ))
 
         return results
 

@@ -246,8 +246,20 @@ data/**/*.parquet
 # Data
 data/*
 !data/corpus_construction/
-!data/corpus_construction/enhance_images/
-!data/corpus_construction/enhance_images/**
+!data/corpus_construction/enhance_images/correo/
+!data/corpus_construction/enhance_images/correo/**
+!data/corpus_construction/enhance_images/elcomercio/
+!data/corpus_construction/enhance_images/elcomercio/**
+!data/corpus_construction/enhance_images/gestion/
+!data/corpus_construction/enhance_images/gestion/**
+!data/corpus_construction/enhance_images/ojo/
+!data/corpus_construction/enhance_images/ojo/**
+!data/corpus_construction/enhance_images/peru21/
+!data/corpus_construction/enhance_images/peru21/**
+!data/corpus_construction/enhance_images/publimetro/
+!data/corpus_construction/enhance_images/publimetro/**
+!data/corpus_construction/enhance_images/trome/
+!data/corpus_construction/enhance_images/trome/**
 !data/corpus_construction/evaluate_extraction/
 !data/corpus_construction/evaluate_extraction/**
 !data/raw/

@@ -95,7 +95,7 @@ def _wait_for_gpu_memory(
     logger: logging.Logger,
     min_free_gib: float = 60.0,
     poll_interval_s: float = 5.0,
-    timeout_s: float = 120.0,
+    timeout_s: float = 20.0,
 ) -> None:
     """
     Wait until enough GPU memory is free before loading the next LLM.

@@ -31,7 +31,7 @@ depyf==0.20.0
 detect-installer==0.2.1
 dill==0.4.1
 diskcache==5.6.3
-distlib @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/distlib/distlib-0.4.0
+distlib @ file:///trinity/shared/easybuild/build/virtualenv/20.23.1/GCCcore-12.3.0/distlib/distlib-0.3.6
 distro==1.9.0
 dnspython==2.8.0
 docstring_parser==0.18.0
@@ -44,7 +44,7 @@ fastapi-cloud-cli==0.25.0
 fastar==0.12.0
 fastsafetensors==0.4.0
 fastuuid==0.14.0
-filelock @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/filelock/filelock-3.18.0
+filelock @ file:///trinity/shared/easybuild/build/virtualenv/20.23.1/GCCcore-12.3.0/filelock/filelock-3.12.2
 flashinfer-python==0.6.16.post3
 frozenlist==1.8.0
 fsspec==2026.7.0
@@ -138,7 +138,7 @@ packaging==26.3
 pandas==3.0.5
 partial-json-parser==0.2.1.1.post7
 pillow==12.3.0
-platformdirs @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/platformdirs/platformdirs-4.3.8
+platformdirs @ file:///trinity/shared/easybuild/build/virtualenv/20.23.1/GCCcore-12.3.0/platformdirs/platformdirs-3.8.0
 prometheus-fastapi-instrumentator==8.1.0
 prometheus_client==0.26.0
 propcache==0.5.2
@@ -205,7 +205,7 @@ typing_extensions==4.16.0
 urllib3==2.7.0
 uvicorn==0.52.4
 uvloop==0.22.1
-virtualenv @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/virtualenv/virtualenv-20.32.0
+virtualenv @ file:///trinity/shared/easybuild/build/virtualenv/20.23.1/GCCcore-12.3.0/virtualenv/virtualenv-20.23.1
 vllm==0.28.0
 watchfiles==1.2.0
 websockets==17.1

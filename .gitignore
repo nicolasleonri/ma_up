@@ -246,6 +246,10 @@ data/**/*.parquet
 # Data
 data/*
 !data/corpus_construction/
+data/corpus_construction/binarize/
+data/corpus_construction/binarize/**
+data/corpus_construction/enhance_images/results/
+data/corpus_construction/enhance_images/results/**
 !data/corpus_construction/enhance_images/correo/
 !data/corpus_construction/enhance_images/correo/**
 !data/corpus_construction/enhance_images/elcomercio/

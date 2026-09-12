@@ -1,15 +1,15 @@
 #!/bin/bash
-#SBATCH --job-name=llm_extraction_none_gpu
-#SBATCH --output=logs/slurm/llm_extraction_none_gpu_%j.out
+#SBATCH --job-name=llm_extraction_gpu
+#SBATCH --output=logs/slurm/llm_extraction_gpu_%j.out
 #SBATCH --partition=scavenger
 #SBATCH --account=agfritz
 #SBATCH --qos=prio
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=2
+#SBATCH --cpus-per-task=1
 #SBATCH --gres=gpu:h100:1
 #SBATCH --mem-per-cpu=5GB
-#SBATCH --time=00:60:00
+#SBATCH --time=01:30:00
 
 # set -euo pipefail
 
@@ -31,27 +31,27 @@ mkdir -p logs/slurm
 ############# Specs (1 image): 2x2GB; 1xa5000 and 30min
 
 ####### 5. LLM Extractor #######
-# module purge
-# module add GCC/12.3.0
-# module add virtualenv/20.23.1-GCCcore-12.3.0
-# module add Python/3.11.3-GCCcore-12.3.0
-# module load CUDA/12.1.1
-# module load cuDNN/8.9.2.26-CUDA-12.1.1
-# export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
-# export HF_HOME=/scratch/nicolasal97/.cache/huggingface
-# source venv/corpus_construction/llm_extraction/bin/activate
+module purge
+module add GCC/12.3.0
+module add virtualenv/20.23.1-GCCcore-12.3.0
+module add Python/3.11.3-GCCcore-12.3.0
+module load CUDA/12.1.1
+module load cuDNN/8.9.2.26-CUDA-12.1.1
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+export HF_HOME=/scratch/nicolasal97/.cache/huggingface
+source venv/corpus_construction/llm_extraction/bin/activate
 
-# for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
-#     echo "===== NEWSPAPER: ${newspaper} ====="
-#     for llm in qwen mistral llama deepseek; do
-#         echo "===== LLM: ${llm} ====="
-#         python3 -m src.workflows.llm_extraction \
-#             --ocr-parquet data/corpus_construction/ocr_extraction/${newspaper}/cropped/ocr.parquet \
-#             --output-parquet data/corpus_construction/llm_extraction/${newspaper}/cropped/results_${llm}.parquet \
-#             --llms ${llm}
-#         echo ""
-#     done
-# done
+for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
+    echo "===== NEWSPAPER: ${newspaper} ====="
+    for llm in qwen mistral llama deepseek; do
+        echo "===== LLM: ${llm} ====="
+        python3 -m src.workflows.llm_extraction \
+            --ocr-parquet data/corpus_construction/ocr_extraction/${newspaper}/cropped/ocr.parquet \
+            --output-parquet data/corpus_construction/llm_extraction/${newspaper}/cropped/results_${llm}.parquet \
+            --llms ${llm}
+        echo ""
+    done
+done
 
 ############# Specs (1 image): 1x5GB; 1xh100 and 10min
 

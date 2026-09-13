@@ -1,15 +1,15 @@
 #!/bin/bash
-#SBATCH --job-name=correo_llm_extraction_all
-#SBATCH --output=logs/slurm/correo_llm_extraction_all_%j.out
+#SBATCH --job-name=llm_extraction_all
+#SBATCH --output=logs/slurm/llm_extraction_all_%j.out
 #SBATCH --partition=scavenger
 #SBATCH --account=agfritz
 #SBATCH --qos=prio
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=2
+#SBATCH --cpus-per-task=5
 #SBATCH --gres=gpu:h100:1
-#SBATCH --mem-per-cpu=10GB
-#SBATCH --time=01:00:00
+#SBATCH --mem-per-cpu=5GB
+#SBATCH --time=12:00:00
 
 # set -euo pipefail
 
@@ -26,8 +26,8 @@ export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 export HF_HOME=/scratch/nicolasal97/.cache/huggingface
 source venv/corpus_construction/llm_extraction/bin/activate
 
-# for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
-for newspaper in correo; do
+for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
+# for newspaper in correo; do
     echo "===== NEWSPAPER: ${newspaper} ====="
     for llm in qwen mistral llama deepseek; do
         echo "===== LLM: ${llm} ====="
@@ -39,8 +39,8 @@ for newspaper in correo; do
     done
 done
 
-# for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
-for newspaper in correo; do
+for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
+# for newspaper in correo; do
     echo "===== NEWSPAPER: ${newspaper} ====="
     for llm in qwen mistral llama deepseek; do
         echo "===== LLM: ${llm} ====="

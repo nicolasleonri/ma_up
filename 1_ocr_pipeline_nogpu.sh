@@ -8,14 +8,14 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=64
-#SBATCH --mem-per-cpu=5GB
-#SBATCH --time=06:00:00
+#SBATCH --mem-per-cpu=6GB
+#SBATCH --time=12:00:00
 
 # set -euo pipefail
 
 mkdir -p logs/slurm
 
-####### 4. OCR-Extractor #######
+# ###### 4. OCR-Extractor #######
 # module purge
 # module add virtualenv/20.32.0-GCCcore-14.3.0
 # module add Python/3.13.5-GCCcore-14.3.0
@@ -46,7 +46,7 @@ mkdir -p logs/slurm
 
 # python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/trome/none/binarization.parquet --binarized-dir data/corpus_construction/binarize/trome/none/ --output-dir data/corpus_construction/ocr_extraction/trome/none/ --workers 64
 # python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/trome/cropped/binarization.parquet --binarized-dir data/corpus_construction/binarize/trome/cropped/ --output-dir data/corpus_construction/ocr_extraction/trome/cropped/ --workers 64
-############# Specs (1 image): 64x5GB and 120min
+############# Specs (1 image): 64x6GB and 12h
 
 # ## 6. Evaluate
 # module purge

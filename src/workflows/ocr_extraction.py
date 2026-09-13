@@ -2,8 +2,8 @@
 
 import argparse
 import logging
-from pathlib import Path
 import os
+from pathlib import Path
 
 from src.corpus_construction.ocr_extraction.pipeline import (
     OCRExtractionPipeline,
@@ -15,11 +15,16 @@ AVAILABLE_OCR_EXTRACTORS = [
     "docling_easyocr",
     "docling_rapidocr",
     # "docling_nemotron-ocr",
-    # "docling_kserve_v2_ocr",    
 ]
 
 
 def parse_args():
+    slurm_cpus = os.environ.get(
+        "SLURM_CPUS_PER_TASK"
+    )
+
+    default_workers = int(slurm_cpus) if slurm_cpus else 1
+
     parser = argparse.ArgumentParser(
         description=(
             "Run OCR extractors over successful "
@@ -59,10 +64,10 @@ def parse_args():
     parser.add_argument(
         "--workers",
         type=int,
-        default=os.cpu_count(),
+        default=default_workers,
         help=(
-            "Number of parallel OCR workers. "
-            "Keep this at 1 for GPU or memory-heavy OCR."
+            "Number of parallel OCR worker processes. "
+            "Defaults to SLURM_CPUS_PER_TASK when available."
         ),
     )
 
@@ -84,6 +89,7 @@ def main():
     )
 
     output_dir = Path(args.output_dir)
+
     output_dir.mkdir(
         parents=True,
         exist_ok=True,

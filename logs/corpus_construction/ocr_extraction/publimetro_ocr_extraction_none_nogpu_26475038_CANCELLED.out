@@ -1,0 +1,531 @@
+2026-09-13 19:14:15,232 INFO Running docling_easyocr OCR on 4320 images (model loads ONCE)
+2026-09-13 19:14:15,361 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:14:15,557 INFO Going to convert document batch...
+2026-09-13 19:14:15,558 INFO Initializing pipeline for StandardPdfPipeline with options hash cd5a96c5e805595d56d8548c906fef27
+2026-09-13 19:14:15,618 INFO Loading plugin 'docling_defaults'
+2026-09-13 19:14:15,626 INFO Registered picture descriptions: ['picture_description_vlm_engine', 'vlm', 'api']
+2026-09-13 19:14:15,689 INFO Loading plugin 'docling_defaults'
+2026-09-13 19:14:15,726 INFO Registered ocr engines: ['auto', 'easyocr', 'kserve_v2_ocr', 'nemotron-ocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
+2026-09-13 19:14:18,811 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+2026-09-13 19:14:21,095 INFO Loading plugin 'docling_defaults'
+2026-09-13 19:14:21,108 INFO Registered layout engines: ['layout_object_detection', 'docling_layout_default', 'docling_experimental_table_crops_layout']
+2026-09-13 19:14:24,926 INFO Initializing Transformers object-detection engine
+2026-09-13 19:14:24,926 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 19:14:24,926 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+2026-09-13 19:14:25,079 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-13 19:14:25,092 INFO Model docling-project/docling-layout-heron already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8
+2026-09-13 19:14:25,092 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 11546.05it/s]
+2026-09-13 19:14:27,000 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 19:14:27,100 INFO Loading plugin 'docling_defaults'
+2026-09-13 19:14:27,110 INFO Registered table structure engines: ['docling_tableformer', 'docling_tableformer_v2', 'granite_vision_table']
+2026-09-13 19:14:27,110 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 19:14:27,238 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 19:14:27,249 INFO Model docling-project/docling-models already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23
+2026-09-13 19:14:27,294 INFO Accelerator device: 'cpu'
+2026-09-13 19:14:27,763 INFO Processing document publimetro_2013-08-14_12_config_000_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:15:31,818 INFO Finished converting document publimetro_2013-08-14_12_config_000_bin_000.tiff in 76.48 sec.
+2026-09-13 19:15:31,862 INFO [docling_easyocr] 1/4320 done in 76.5s: publimetro_2013-08-14_12
+2026-09-13 19:15:31,887 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:15:31,921 INFO Going to convert document batch...
+2026-09-13 19:15:31,922 INFO Processing document publimetro_2013-08-14_12_config_000_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:16:34,491 INFO Finished converting document publimetro_2013-08-14_12_config_000_bin_001.tiff in 62.63 sec.
+2026-09-13 19:16:34,498 INFO [docling_easyocr] 2/4320 done in 62.6s: publimetro_2013-08-14_12
+2026-09-13 19:16:34,513 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:16:34,530 INFO Going to convert document batch...
+2026-09-13 19:16:34,531 INFO Processing document publimetro_2013-08-14_12_config_000_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:17:32,841 INFO Finished converting document publimetro_2013-08-14_12_config_000_bin_002.tiff in 58.34 sec.
+2026-09-13 19:17:32,856 INFO [docling_easyocr] 3/4320 done in 58.4s: publimetro_2013-08-14_12
+2026-09-13 19:17:32,878 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:17:32,897 INFO Going to convert document batch...
+2026-09-13 19:17:32,898 INFO Processing document publimetro_2013-08-14_12_config_000_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:18:31,165 INFO Finished converting document publimetro_2013-08-14_12_config_000_bin_003.tiff in 58.31 sec.
+2026-09-13 19:18:31,170 INFO [docling_easyocr] 4/4320 done in 58.3s: publimetro_2013-08-14_12
+2026-09-13 19:18:31,193 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:18:31,214 INFO Going to convert document batch...
+2026-09-13 19:18:31,215 INFO Processing document publimetro_2013-08-14_12_config_000_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:19:46,106 INFO Finished converting document publimetro_2013-08-14_12_config_000_bin_004.tiff in 74.94 sec.
+2026-09-13 19:19:46,110 INFO [docling_easyocr] 5/4320 done in 74.9s: publimetro_2013-08-14_12
+2026-09-13 19:19:46,171 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:19:46,190 INFO Going to convert document batch...
+2026-09-13 19:19:46,191 INFO Processing document publimetro_2013-08-14_12_config_000_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:20:58,490 INFO Finished converting document publimetro_2013-08-14_12_config_000_bin_005.tiff in 72.38 sec.
+2026-09-13 19:20:58,494 INFO [docling_easyocr] 6/4320 done in 72.4s: publimetro_2013-08-14_12
+2026-09-13 19:20:58,516 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:20:58,529 INFO Going to convert document batch...
+2026-09-13 19:20:58,530 INFO Processing document publimetro_2013-08-14_12_config_000_bin_006.tiff
+2026-09-13 19:21:27,542 INFO Finished converting document publimetro_2013-08-14_12_config_000_bin_006.tiff in 29.05 sec.
+2026-09-13 19:21:27,543 INFO [docling_easyocr] 7/4320 done in 29.0s: publimetro_2013-08-14_12
+2026-09-13 19:21:27,561 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:21:27,577 INFO Going to convert document batch...
+2026-09-13 19:21:27,578 INFO Processing document publimetro_2013-08-14_12_config_000_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:21:58,326 INFO Finished converting document publimetro_2013-08-14_12_config_000_bin_007.tiff in 30.78 sec.
+2026-09-13 19:21:58,328 INFO [docling_easyocr] 8/4320 done in 30.8s: publimetro_2013-08-14_12
+2026-09-13 19:21:58,361 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:21:58,437 INFO Going to convert document batch...
+2026-09-13 19:21:58,438 INFO Processing document publimetro_2013-08-14_12_config_001_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:22:57,386 INFO Finished converting document publimetro_2013-08-14_12_config_001_bin_000.tiff in 59.06 sec.
+2026-09-13 19:22:57,393 INFO [docling_easyocr] 9/4320 done in 59.1s: publimetro_2013-08-14_12
+2026-09-13 19:22:57,420 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:22:57,455 INFO Going to convert document batch...
+2026-09-13 19:22:57,457 INFO Processing document publimetro_2013-08-14_12_config_001_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:23:56,808 INFO Finished converting document publimetro_2013-08-14_12_config_001_bin_001.tiff in 59.41 sec.
+2026-09-13 19:23:56,815 INFO [docling_easyocr] 10/4320 done in 59.4s: publimetro_2013-08-14_12
+2026-09-13 19:23:56,829 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:23:56,846 INFO Going to convert document batch...
+2026-09-13 19:23:56,848 INFO Processing document publimetro_2013-08-14_12_config_001_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:24:54,113 INFO Finished converting document publimetro_2013-08-14_12_config_001_bin_002.tiff in 57.30 sec.
+2026-09-13 19:24:54,118 INFO [docling_easyocr] 11/4320 done in 57.3s: publimetro_2013-08-14_12
+2026-09-13 19:24:54,129 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:24:54,146 INFO Going to convert document batch...
+2026-09-13 19:24:54,147 INFO Processing document publimetro_2013-08-14_12_config_001_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:25:53,784 INFO Finished converting document publimetro_2013-08-14_12_config_001_bin_003.tiff in 59.67 sec.
+2026-09-13 19:25:53,790 INFO [docling_easyocr] 12/4320 done in 59.7s: publimetro_2013-08-14_12
+2026-09-13 19:25:53,801 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:25:53,819 INFO Going to convert document batch...
+2026-09-13 19:25:53,820 INFO Processing document publimetro_2013-08-14_12_config_001_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:27:13,031 INFO Finished converting document publimetro_2013-08-14_12_config_001_bin_004.tiff in 79.24 sec.
+2026-09-13 19:27:13,036 INFO [docling_easyocr] 13/4320 done in 79.2s: publimetro_2013-08-14_12
+2026-09-13 19:27:13,063 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:27:13,083 INFO Going to convert document batch...
+2026-09-13 19:27:13,084 INFO Processing document publimetro_2013-08-14_12_config_001_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:28:31,592 INFO Finished converting document publimetro_2013-08-14_12_config_001_bin_005.tiff in 78.56 sec.
+2026-09-13 19:28:31,597 INFO [docling_easyocr] 14/4320 done in 78.6s: publimetro_2013-08-14_12
+2026-09-13 19:28:31,614 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:28:31,627 INFO Going to convert document batch...
+2026-09-13 19:28:31,628 INFO Processing document publimetro_2013-08-14_12_config_001_bin_006.tiff
+2026-09-13 19:29:02,889 INFO Finished converting document publimetro_2013-08-14_12_config_001_bin_006.tiff in 31.29 sec.
+2026-09-13 19:29:02,890 INFO [docling_easyocr] 15/4320 done in 31.3s: publimetro_2013-08-14_12
+2026-09-13 19:29:02,908 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:29:02,927 INFO Going to convert document batch...
+2026-09-13 19:29:02,928 INFO Processing document publimetro_2013-08-14_12_config_001_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:29:35,084 INFO Finished converting document publimetro_2013-08-14_12_config_001_bin_007.tiff in 32.19 sec.
+2026-09-13 19:29:35,087 INFO [docling_easyocr] 16/4320 done in 32.2s: publimetro_2013-08-14_12
+2026-09-13 19:29:35,109 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:29:35,140 INFO Going to convert document batch...
+2026-09-13 19:29:35,141 INFO Processing document publimetro_2013-08-14_12_config_002_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:30:34,918 INFO Finished converting document publimetro_2013-08-14_12_config_002_bin_000.tiff in 59.83 sec.
+2026-09-13 19:30:34,925 INFO [docling_easyocr] 17/4320 done in 59.8s: publimetro_2013-08-14_12
+2026-09-13 19:30:34,947 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:30:34,977 INFO Going to convert document batch...
+2026-09-13 19:30:34,977 INFO Processing document publimetro_2013-08-14_12_config_002_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:31:35,132 INFO Finished converting document publimetro_2013-08-14_12_config_002_bin_001.tiff in 60.21 sec.
+2026-09-13 19:31:35,137 INFO [docling_easyocr] 18/4320 done in 60.2s: publimetro_2013-08-14_12
+2026-09-13 19:31:35,149 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:31:35,166 INFO Going to convert document batch...
+2026-09-13 19:31:35,167 INFO Processing document publimetro_2013-08-14_12_config_002_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:32:47,877 INFO Finished converting document publimetro_2013-08-14_12_config_002_bin_002.tiff in 72.74 sec.
+2026-09-13 19:32:47,882 INFO [docling_easyocr] 19/4320 done in 72.7s: publimetro_2013-08-14_12
+2026-09-13 19:32:47,905 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:32:47,921 INFO Going to convert document batch...
+2026-09-13 19:32:47,922 INFO Processing document publimetro_2013-08-14_12_config_002_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:33:47,223 INFO Finished converting document publimetro_2013-08-14_12_config_002_bin_003.tiff in 59.34 sec.
+2026-09-13 19:33:47,228 INFO [docling_easyocr] 20/4320 done in 59.3s: publimetro_2013-08-14_12
+2026-09-13 19:33:47,242 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:33:47,260 INFO Going to convert document batch...
+2026-09-13 19:33:47,261 INFO Processing document publimetro_2013-08-14_12_config_002_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:35:08,195 INFO Finished converting document publimetro_2013-08-14_12_config_002_bin_004.tiff in 80.97 sec.
+2026-09-13 19:35:08,199 INFO [docling_easyocr] 21/4320 done in 81.0s: publimetro_2013-08-14_12
+2026-09-13 19:35:08,217 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:35:08,237 INFO Going to convert document batch...
+2026-09-13 19:35:08,238 INFO Processing document publimetro_2013-08-14_12_config_002_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:36:26,924 INFO Finished converting document publimetro_2013-08-14_12_config_002_bin_005.tiff in 78.72 sec.
+2026-09-13 19:36:26,928 INFO [docling_easyocr] 22/4320 done in 78.7s: publimetro_2013-08-14_12
+2026-09-13 19:36:26,944 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:36:26,957 INFO Going to convert document batch...
+2026-09-13 19:36:26,958 INFO Processing document publimetro_2013-08-14_12_config_002_bin_006.tiff
+2026-09-13 19:36:58,832 INFO Finished converting document publimetro_2013-08-14_12_config_002_bin_006.tiff in 31.90 sec.
+2026-09-13 19:36:58,833 INFO [docling_easyocr] 23/4320 done in 31.9s: publimetro_2013-08-14_12
+2026-09-13 19:36:58,870 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:36:58,885 INFO Going to convert document batch...
+2026-09-13 19:36:58,886 INFO Processing document publimetro_2013-08-14_12_config_002_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:37:31,519 INFO Finished converting document publimetro_2013-08-14_12_config_002_bin_007.tiff in 32.69 sec.
+2026-09-13 19:37:31,521 INFO [docling_easyocr] 24/4320 done in 32.7s: publimetro_2013-08-14_12
+2026-09-13 19:37:31,544 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:37:31,616 INFO Going to convert document batch...
+2026-09-13 19:37:31,617 INFO Processing document publimetro_2013-08-14_12_config_003_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:38:33,906 INFO Finished converting document publimetro_2013-08-14_12_config_003_bin_000.tiff in 62.38 sec.
+2026-09-13 19:38:33,912 INFO [docling_easyocr] 25/4320 done in 62.4s: publimetro_2013-08-14_12
+2026-09-13 19:38:34,027 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:38:34,056 INFO Going to convert document batch...
+2026-09-13 19:38:34,057 INFO Processing document publimetro_2013-08-14_12_config_003_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:39:36,826 INFO Finished converting document publimetro_2013-08-14_12_config_003_bin_001.tiff in 62.91 sec.
+2026-09-13 19:39:36,832 INFO [docling_easyocr] 26/4320 done in 62.9s: publimetro_2013-08-14_12
+2026-09-13 19:39:36,852 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:39:36,869 INFO Going to convert document batch...
+2026-09-13 19:39:36,870 INFO Processing document publimetro_2013-08-14_12_config_003_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:40:17,315 INFO Finished converting document publimetro_2013-08-14_12_config_003_bin_002.tiff in 40.48 sec.
+2026-09-13 19:40:17,319 INFO [docling_easyocr] 27/4320 done in 40.5s: publimetro_2013-08-14_12
+2026-09-13 19:40:17,330 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:40:17,347 INFO Going to convert document batch...
+2026-09-13 19:40:17,348 INFO Processing document publimetro_2013-08-14_12_config_003_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:41:28,577 INFO Finished converting document publimetro_2013-08-14_12_config_003_bin_003.tiff in 71.26 sec.
+2026-09-13 19:41:28,582 INFO [docling_easyocr] 28/4320 done in 71.3s: publimetro_2013-08-14_12
+2026-09-13 19:41:28,597 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:41:28,616 INFO Going to convert document batch...
+2026-09-13 19:41:28,617 INFO Processing document publimetro_2013-08-14_12_config_003_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:42:20,572 INFO Finished converting document publimetro_2013-08-14_12_config_003_bin_004.tiff in 51.99 sec.
+2026-09-13 19:42:20,575 INFO [docling_easyocr] 29/4320 done in 52.0s: publimetro_2013-08-14_12
+2026-09-13 19:42:20,584 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:42:20,604 INFO Going to convert document batch...
+2026-09-13 19:42:20,605 INFO Processing document publimetro_2013-08-14_12_config_003_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:43:34,467 INFO Finished converting document publimetro_2013-08-14_12_config_003_bin_005.tiff in 73.89 sec.
+2026-09-13 19:43:34,471 INFO [docling_easyocr] 30/4320 done in 73.9s: publimetro_2013-08-14_12
+2026-09-13 19:43:34,496 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:43:34,508 INFO Going to convert document batch...
+2026-09-13 19:43:34,509 INFO Processing document publimetro_2013-08-14_12_config_003_bin_006.tiff
+2026-09-13 19:44:05,701 INFO Finished converting document publimetro_2013-08-14_12_config_003_bin_006.tiff in 31.23 sec.
+2026-09-13 19:44:05,702 INFO [docling_easyocr] 31/4320 done in 31.2s: publimetro_2013-08-14_12
+2026-09-13 19:44:05,717 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:44:05,735 INFO Going to convert document batch...
+2026-09-13 19:44:05,735 INFO Processing document publimetro_2013-08-14_12_config_003_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:44:40,403 INFO Finished converting document publimetro_2013-08-14_12_config_003_bin_007.tiff in 34.70 sec.
+2026-09-13 19:44:40,405 INFO [docling_easyocr] 32/4320 done in 34.7s: publimetro_2013-08-14_12
+2026-09-13 19:44:40,430 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:44:40,504 INFO Going to convert document batch...
+2026-09-13 19:44:40,505 INFO Processing document publimetro_2013-08-14_12_config_004_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:45:41,317 INFO Finished converting document publimetro_2013-08-14_12_config_004_bin_000.tiff in 60.91 sec.
+2026-09-13 19:45:41,323 INFO [docling_easyocr] 33/4320 done in 60.9s: publimetro_2013-08-14_12
+2026-09-13 19:45:41,350 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:45:41,382 INFO Going to convert document batch...
+2026-09-13 19:45:41,383 INFO Processing document publimetro_2013-08-14_12_config_004_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:46:44,895 INFO Finished converting document publimetro_2013-08-14_12_config_004_bin_001.tiff in 63.57 sec.
+2026-09-13 19:46:44,902 INFO [docling_easyocr] 34/4320 done in 63.6s: publimetro_2013-08-14_12
+2026-09-13 19:46:44,924 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:46:44,940 INFO Going to convert document batch...
+2026-09-13 19:46:44,941 INFO Processing document publimetro_2013-08-14_12_config_004_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:47:58,601 INFO Finished converting document publimetro_2013-08-14_12_config_004_bin_002.tiff in 73.70 sec.
+2026-09-13 19:47:58,606 INFO [docling_easyocr] 35/4320 done in 73.7s: publimetro_2013-08-14_12
+2026-09-13 19:47:58,619 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:47:58,634 INFO Going to convert document batch...
+2026-09-13 19:47:58,635 INFO Processing document publimetro_2013-08-14_12_config_004_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:48:59,476 INFO Finished converting document publimetro_2013-08-14_12_config_004_bin_003.tiff in 60.87 sec.
+2026-09-13 19:48:59,481 INFO [docling_easyocr] 36/4320 done in 60.9s: publimetro_2013-08-14_12
+2026-09-13 19:48:59,499 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:48:59,517 INFO Going to convert document batch...
+2026-09-13 19:48:59,517 INFO Processing document publimetro_2013-08-14_12_config_004_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:50:08,261 INFO Finished converting document publimetro_2013-08-14_12_config_004_bin_004.tiff in 68.78 sec.
+2026-09-13 19:50:08,263 INFO [docling_easyocr] 37/4320 done in 68.8s: publimetro_2013-08-14_12
+2026-09-13 19:50:08,282 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:50:08,300 INFO Going to convert document batch...
+2026-09-13 19:50:08,301 INFO Processing document publimetro_2013-08-14_12_config_004_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:51:22,311 INFO Finished converting document publimetro_2013-08-14_12_config_004_bin_005.tiff in 74.05 sec.
+2026-09-13 19:51:22,314 INFO [docling_easyocr] 38/4320 done in 74.1s: publimetro_2013-08-14_12
+2026-09-13 19:51:22,335 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:51:22,346 INFO Going to convert document batch...
+2026-09-13 19:51:22,347 INFO Processing document publimetro_2013-08-14_12_config_004_bin_006.tiff
+2026-09-13 19:51:55,945 INFO Finished converting document publimetro_2013-08-14_12_config_004_bin_006.tiff in 33.63 sec.
+2026-09-13 19:51:55,946 INFO [docling_easyocr] 39/4320 done in 33.6s: publimetro_2013-08-14_12
+2026-09-13 19:51:55,966 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:51:55,984 INFO Going to convert document batch...
+2026-09-13 19:51:55,985 INFO Processing document publimetro_2013-08-14_12_config_004_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:52:28,811 INFO Finished converting document publimetro_2013-08-14_12_config_004_bin_007.tiff in 32.86 sec.
+2026-09-13 19:52:28,812 INFO [docling_easyocr] 40/4320 done in 32.9s: publimetro_2013-08-14_12
+2026-09-13 19:52:28,847 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:52:28,876 INFO Going to convert document batch...
+2026-09-13 19:52:28,877 INFO Processing document publimetro_2013-08-14_12_config_005_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:53:30,900 INFO Finished converting document publimetro_2013-08-14_12_config_005_bin_000.tiff in 62.09 sec.
+2026-09-13 19:53:30,906 INFO [docling_easyocr] 41/4320 done in 62.1s: publimetro_2013-08-14_12
+2026-09-13 19:53:30,928 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:53:30,957 INFO Going to convert document batch...
+2026-09-13 19:53:30,958 INFO Processing document publimetro_2013-08-14_12_config_005_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:54:34,829 INFO Finished converting document publimetro_2013-08-14_12_config_005_bin_001.tiff in 63.92 sec.
+2026-09-13 19:54:34,836 INFO [docling_easyocr] 42/4320 done in 63.9s: publimetro_2013-08-14_12
+2026-09-13 19:54:34,857 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:54:34,871 INFO Going to convert document batch...
+2026-09-13 19:54:34,872 INFO Processing document publimetro_2013-08-14_12_config_005_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:55:17,169 INFO Finished converting document publimetro_2013-08-14_12_config_005_bin_002.tiff in 42.33 sec.
+2026-09-13 19:55:17,174 INFO [docling_easyocr] 43/4320 done in 42.3s: publimetro_2013-08-14_12
+2026-09-13 19:55:17,185 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:55:17,200 INFO Going to convert document batch...
+2026-09-13 19:55:17,201 INFO Processing document publimetro_2013-08-14_12_config_005_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:56:30,273 INFO Finished converting document publimetro_2013-08-14_12_config_005_bin_003.tiff in 73.10 sec.
+2026-09-13 19:56:30,278 INFO [docling_easyocr] 44/4320 done in 73.1s: publimetro_2013-08-14_12
+2026-09-13 19:56:30,298 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:56:30,316 INFO Going to convert document batch...
+2026-09-13 19:56:30,317 INFO Processing document publimetro_2013-08-14_12_config_005_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:57:19,860 INFO Finished converting document publimetro_2013-08-14_12_config_005_bin_004.tiff in 49.58 sec.
+2026-09-13 19:57:19,863 INFO [docling_easyocr] 45/4320 done in 49.6s: publimetro_2013-08-14_12
+2026-09-13 19:57:19,881 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:57:19,899 INFO Going to convert document batch...
+2026-09-13 19:57:19,900 INFO Processing document publimetro_2013-08-14_12_config_005_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:58:33,338 INFO Finished converting document publimetro_2013-08-14_12_config_005_bin_005.tiff in 73.48 sec.
+2026-09-13 19:58:33,341 INFO [docling_easyocr] 46/4320 done in 73.5s: publimetro_2013-08-14_12
+2026-09-13 19:58:33,363 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:58:33,375 INFO Going to convert document batch...
+2026-09-13 19:58:33,375 INFO Processing document publimetro_2013-08-14_12_config_005_bin_006.tiff
+2026-09-13 19:59:03,634 INFO Finished converting document publimetro_2013-08-14_12_config_005_bin_006.tiff in 30.29 sec.
+2026-09-13 19:59:03,635 INFO [docling_easyocr] 47/4320 done in 30.3s: publimetro_2013-08-14_12
+2026-09-13 19:59:03,789 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:59:03,806 INFO Going to convert document batch...
+2026-09-13 19:59:03,807 INFO Processing document publimetro_2013-08-14_12_config_005_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:59:39,058 INFO Finished converting document publimetro_2013-08-14_12_config_005_bin_007.tiff in 35.42 sec.
+2026-09-13 19:59:39,060 INFO [docling_easyocr] 48/4320 done in 35.4s: publimetro_2013-08-14_12
+2026-09-13 19:59:39,093 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:59:39,179 INFO Going to convert document batch...
+2026-09-13 19:59:39,180 INFO Processing document publimetro_2013-08-14_12_config_006_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:00:39,978 INFO Finished converting document publimetro_2013-08-14_12_config_006_bin_000.tiff in 60.92 sec.
+2026-09-13 20:00:39,984 INFO [docling_easyocr] 49/4320 done in 60.9s: publimetro_2013-08-14_12
+2026-09-13 20:00:40,006 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:00:40,036 INFO Going to convert document batch...
+2026-09-13 20:00:40,036 INFO Processing document publimetro_2013-08-14_12_config_006_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:01:40,392 INFO Finished converting document publimetro_2013-08-14_12_config_006_bin_001.tiff in 60.41 sec.
+2026-09-13 20:01:40,398 INFO [docling_easyocr] 50/4320 done in 60.4s: publimetro_2013-08-14_12
+2026-09-13 20:01:40,433 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:01:40,448 INFO Going to convert document batch...
+2026-09-13 20:01:40,449 INFO Processing document publimetro_2013-08-14_12_config_006_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:02:59,473 INFO Finished converting document publimetro_2013-08-14_12_config_006_bin_002.tiff in 79.06 sec.
+2026-09-13 20:02:59,479 INFO [docling_easyocr] 51/4320 done in 79.1s: publimetro_2013-08-14_12
+2026-09-13 20:02:59,492 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:02:59,508 INFO Going to convert document batch...
+2026-09-13 20:02:59,509 INFO Processing document publimetro_2013-08-14_12_config_006_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:03:58,125 INFO Finished converting document publimetro_2013-08-14_12_config_006_bin_003.tiff in 58.65 sec.
+2026-09-13 20:03:58,130 INFO [docling_easyocr] 52/4320 done in 58.7s: publimetro_2013-08-14_12
+2026-09-13 20:03:58,152 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:03:58,170 INFO Going to convert document batch...
+2026-09-13 20:03:58,171 INFO Processing document publimetro_2013-08-14_12_config_006_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:05:08,591 INFO Finished converting document publimetro_2013-08-14_12_config_006_bin_004.tiff in 70.46 sec.
+2026-09-13 20:05:08,593 INFO [docling_easyocr] 53/4320 done in 70.5s: publimetro_2013-08-14_12
+2026-09-13 20:05:08,611 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:05:08,629 INFO Going to convert document batch...
+2026-09-13 20:05:08,630 INFO Processing document publimetro_2013-08-14_12_config_006_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:06:23,699 INFO Finished converting document publimetro_2013-08-14_12_config_006_bin_005.tiff in 75.11 sec.
+2026-09-13 20:06:23,702 INFO [docling_easyocr] 54/4320 done in 75.1s: publimetro_2013-08-14_12
+2026-09-13 20:06:23,720 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:06:23,731 INFO Going to convert document batch...
+2026-09-13 20:06:23,732 INFO Processing document publimetro_2013-08-14_12_config_006_bin_006.tiff
+2026-09-13 20:06:54,197 INFO Finished converting document publimetro_2013-08-14_12_config_006_bin_006.tiff in 30.49 sec.
+2026-09-13 20:06:54,198 INFO [docling_easyocr] 55/4320 done in 30.5s: publimetro_2013-08-14_12
+2026-09-13 20:06:54,216 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:06:54,233 INFO Going to convert document batch...
+2026-09-13 20:06:54,234 INFO Processing document publimetro_2013-08-14_12_config_006_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:07:27,120 INFO Finished converting document publimetro_2013-08-14_12_config_006_bin_007.tiff in 32.92 sec.
+2026-09-13 20:07:27,122 INFO [docling_easyocr] 56/4320 done in 32.9s: publimetro_2013-08-14_12
+2026-09-13 20:07:27,155 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:07:27,227 INFO Going to convert document batch...
+2026-09-13 20:07:27,227 INFO Processing document publimetro_2013-08-14_12_config_007_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:08:26,688 INFO Finished converting document publimetro_2013-08-14_12_config_007_bin_000.tiff in 59.56 sec.
+2026-09-13 20:08:26,693 INFO [docling_easyocr] 57/4320 done in 59.6s: publimetro_2013-08-14_12
+2026-09-13 20:08:26,715 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:08:26,745 INFO Going to convert document batch...
+2026-09-13 20:08:26,745 INFO Processing document publimetro_2013-08-14_12_config_007_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:09:26,198 INFO Finished converting document publimetro_2013-08-14_12_config_007_bin_001.tiff in 59.50 sec.
+2026-09-13 20:09:26,203 INFO [docling_easyocr] 58/4320 done in 59.5s: publimetro_2013-08-14_12
+2026-09-13 20:09:26,223 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:09:26,238 INFO Going to convert document batch...
+2026-09-13 20:09:26,239 INFO Processing document publimetro_2013-08-14_12_config_007_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:10:27,976 INFO Finished converting document publimetro_2013-08-14_12_config_007_bin_002.tiff in 61.77 sec.
+2026-09-13 20:10:27,982 INFO [docling_easyocr] 59/4320 done in 61.8s: publimetro_2013-08-14_12
+2026-09-13 20:10:28,011 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:10:28,027 INFO Going to convert document batch...
+2026-09-13 20:10:28,028 INFO Processing document publimetro_2013-08-14_12_config_007_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:11:26,886 INFO Finished converting document publimetro_2013-08-14_12_config_007_bin_003.tiff in 58.90 sec.
+2026-09-13 20:11:26,891 INFO [docling_easyocr] 60/4320 done in 58.9s: publimetro_2013-08-14_12
+2026-09-13 20:11:26,916 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:11:26,934 INFO Going to convert document batch...
+2026-09-13 20:11:26,935 INFO Processing document publimetro_2013-08-14_12_config_007_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:12:40,259 INFO Finished converting document publimetro_2013-08-14_12_config_007_bin_004.tiff in 73.37 sec.
+2026-09-13 20:12:40,261 INFO [docling_easyocr] 61/4320 done in 73.4s: publimetro_2013-08-14_12
+2026-09-13 20:12:40,281 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:12:40,299 INFO Going to convert document batch...
+2026-09-13 20:12:40,299 INFO Processing document publimetro_2013-08-14_12_config_007_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:13:53,934 INFO Finished converting document publimetro_2013-08-14_12_config_007_bin_005.tiff in 73.67 sec.
+2026-09-13 20:13:53,937 INFO [docling_easyocr] 62/4320 done in 73.7s: publimetro_2013-08-14_12
+2026-09-13 20:13:53,955 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:13:53,966 INFO Going to convert document batch...
+2026-09-13 20:13:53,967 INFO Processing document publimetro_2013-08-14_12_config_007_bin_006.tiff
+2026-09-13 20:14:23,682 INFO Finished converting document publimetro_2013-08-14_12_config_007_bin_006.tiff in 29.74 sec.
+2026-09-13 20:14:23,683 INFO [docling_easyocr] 63/4320 done in 29.7s: publimetro_2013-08-14_12
+2026-09-13 20:14:23,698 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:14:23,713 INFO Going to convert document batch...
+2026-09-13 20:14:23,714 INFO Processing document publimetro_2013-08-14_12_config_007_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:14:54,219 INFO Finished converting document publimetro_2013-08-14_12_config_007_bin_007.tiff in 30.54 sec.
+2026-09-13 20:14:54,220 INFO [docling_easyocr] 64/4320 done in 30.5s: publimetro_2013-08-14_12
+2026-09-13 20:14:54,246 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:14:54,274 INFO Going to convert document batch...
+2026-09-13 20:14:54,275 INFO Processing document publimetro_2013-08-14_12_config_008_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:15:49,792 INFO Finished converting document publimetro_2013-08-14_12_config_008_bin_000.tiff in 55.57 sec.
+2026-09-13 20:15:49,798 INFO [docling_easyocr] 65/4320 done in 55.6s: publimetro_2013-08-14_12
+2026-09-13 20:15:49,818 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:15:49,846 INFO Going to convert document batch...
+2026-09-13 20:15:49,847 INFO Processing document publimetro_2013-08-14_12_config_008_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:16:45,993 INFO Finished converting document publimetro_2013-08-14_12_config_008_bin_001.tiff in 56.19 sec.
+2026-09-13 20:16:45,998 INFO [docling_easyocr] 66/4320 done in 56.2s: publimetro_2013-08-14_12
+2026-09-13 20:16:46,012 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:16:46,036 INFO Going to convert document batch...
+2026-09-13 20:16:46,037 INFO Processing document publimetro_2013-08-14_12_config_008_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:17:19,248 INFO Finished converting document publimetro_2013-08-14_12_config_008_bin_002.tiff in 33.25 sec.
+2026-09-13 20:17:19,251 INFO [docling_easyocr] 67/4320 done in 33.3s: publimetro_2013-08-14_12
+2026-09-13 20:17:19,272 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:17:19,286 INFO Going to convert document batch...
+2026-09-13 20:17:19,287 INFO Processing document publimetro_2013-08-14_12_config_008_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:18:16,604 INFO Finished converting document publimetro_2013-08-14_12_config_008_bin_003.tiff in 57.35 sec.
+2026-09-13 20:18:16,609 INFO [docling_easyocr] 68/4320 done in 57.4s: publimetro_2013-08-14_12
+2026-09-13 20:18:16,621 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:18:16,637 INFO Going to convert document batch...
+2026-09-13 20:18:16,638 INFO Processing document publimetro_2013-08-14_12_config_008_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:19:06,520 INFO Finished converting document publimetro_2013-08-14_12_config_008_bin_004.tiff in 49.91 sec.
+2026-09-13 20:19:06,523 INFO [docling_easyocr] 69/4320 done in 49.9s: publimetro_2013-08-14_12
+2026-09-13 20:19:06,536 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:19:06,553 INFO Going to convert document batch...
+2026-09-13 20:19:06,554 INFO Processing document publimetro_2013-08-14_12_config_008_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:20:03,566 INFO Finished converting document publimetro_2013-08-14_12_config_008_bin_005.tiff in 57.04 sec.
+2026-09-13 20:20:03,568 INFO [docling_easyocr] 70/4320 done in 57.0s: publimetro_2013-08-14_12
+2026-09-13 20:20:03,583 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:20:03,593 INFO Going to convert document batch...
+2026-09-13 20:20:03,594 INFO Processing document publimetro_2013-08-14_12_config_008_bin_006.tiff
+2026-09-13 20:20:30,737 INFO Finished converting document publimetro_2013-08-14_12_config_008_bin_006.tiff in 27.17 sec.
+2026-09-13 20:20:30,738 INFO [docling_easyocr] 71/4320 done in 27.2s: publimetro_2013-08-14_12
+2026-09-13 20:20:30,755 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:20:30,770 INFO Going to convert document batch...
+2026-09-13 20:20:30,770 INFO Processing document publimetro_2013-08-14_12_config_008_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:20:59,347 INFO Finished converting document publimetro_2013-08-14_12_config_008_bin_007.tiff in 28.61 sec.
+2026-09-13 20:20:59,349 INFO [docling_easyocr] 72/4320 done in 28.6s: publimetro_2013-08-14_12
+2026-09-13 20:20:59,392 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:20:59,459 INFO Going to convert document batch...
+2026-09-13 20:20:59,459 INFO Processing document publimetro_2013-08-14_12_config_009_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:21:50,418 INFO Finished converting document publimetro_2013-08-14_12_config_009_bin_000.tiff in 51.07 sec.
+2026-09-13 20:21:50,422 INFO [docling_easyocr] 73/4320 done in 51.1s: publimetro_2013-08-14_12
+2026-09-13 20:21:50,445 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:21:50,469 INFO Going to convert document batch...
+2026-09-13 20:21:50,470 INFO Processing document publimetro_2013-08-14_12_config_009_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:22:41,080 INFO Finished converting document publimetro_2013-08-14_12_config_009_bin_001.tiff in 50.66 sec.
+2026-09-13 20:22:41,085 INFO [docling_easyocr] 74/4320 done in 50.7s: publimetro_2013-08-14_12
+2026-09-13 20:22:41,101 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:22:41,115 INFO Going to convert document batch...
+2026-09-13 20:22:41,116 INFO Processing document publimetro_2013-08-14_12_config_009_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+[2026-09-13T20:23:28.441] error: *** JOB 26475038 ON b001 CANCELLED AT 2026-09-13T20:23:28 DUE to SIGNAL Terminated ***

@@ -12870,3 +12870,577 @@
 2026-09-13 18:44:29,652 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
 2026-09-13 18:44:30,999 INFO Downloaded model docling-project/docling-models to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23 in 1.75 sec.
 2026-09-13 18:44:30,999 INFO Accelerator device: 'cpu'
+2026-09-13 18:44:45,006 INFO Processing document correo_2016-10-11_16_config_007_bin_006.tiff
+2026-09-13 18:44:45,008 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-13 18:44:45,008 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:44:48,595 INFO Finished converting document correo_2016-10-11_16_config_005_bin_003.tiff in 1427.54 sec.
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:44:50,112 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 18:44:50,741 INFO Going to convert document batch...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:45:05,590 INFO Initializing Transformers object-detection engine
+2026-09-13 18:45:05,590 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 18:45:05,590 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:45:06,462 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:45:07,399 INFO Finished converting document correo_2016-10-11_16_config_005_bin_002.tiff in 1461.55 sec.
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:45:07,955 INFO Downloaded model docling-project/docling-layout-heron to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8 in 2.36 sec.
+2026-09-13 18:45:07,955 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:45:09,759 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 18:45:10,106 INFO Going to convert document batch...
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  60%|█████▉    | 461/770 [00:00<00:00, 3087.58it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 2862.02it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 2898.25it/s]
+2026-09-13 18:45:13,857 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 18:45:13,857 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 18:45:14,267 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 18:45:14,973 INFO Downloaded model docling-project/docling-models to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23 in 1.12 sec.
+2026-09-13 18:45:14,973 INFO Accelerator device: 'cpu'
+2026-09-13 18:45:22,683 INFO Processing document correo_2016-10-11_16_config_007_bin_007.tiff
+2026-09-13 18:45:22,726 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-13 18:45:22,727 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:45:39,641 INFO Initializing Transformers object-detection engine
+2026-09-13 18:45:39,641 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 18:45:39,641 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:45:40,564 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-13 18:45:41,575 INFO Downloaded model docling-project/docling-layout-heron to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8 in 1.93 sec.
+2026-09-13 18:45:41,576 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  76%|███████▌  | 585/770 [00:00<00:00, 3275.03it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 2774.63it/s]
+2026-09-13 18:45:46,997 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 18:45:46,997 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 18:45:47,227 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 18:45:47,505 INFO Model docling-project/docling-models already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23
+2026-09-13 18:45:47,506 INFO Accelerator device: 'cpu'
+2026-09-13 18:45:50,971 INFO Processing document correo_2016-10-11_16_config_008_bin_000.tiff
+2026-09-13 18:45:50,972 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-13 18:45:50,972 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:46:08,834 INFO Initializing Transformers object-detection engine
+2026-09-13 18:46:08,834 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 18:46:08,834 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:46:09,526 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-13 18:46:10,825 INFO Downloaded model docling-project/docling-layout-heron to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8 in 1.99 sec.
+2026-09-13 18:46:10,825 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  61%|██████    | 468/770 [00:00<00:00, 1336.15it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 1877.82it/s]
+2026-09-13 18:46:17,773 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 18:46:17,773 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 18:46:18,131 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 18:46:19,492 INFO Downloaded model docling-project/docling-models to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23 in 1.72 sec.
+2026-09-13 18:46:19,492 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:46:22,576 INFO Finished converting document correo_2016-10-11_16_config_006_bin_000.tiff in 1275.54 sec.
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:46:24,662 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 18:46:24,822 INFO Going to convert document batch...
+2026-09-13 18:46:28,703 INFO Processing document correo_2016-10-11_16_config_008_bin_001.tiff
+2026-09-13 18:46:28,703 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-13 18:46:28,703 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:46:41,570 INFO Finished converting document correo_2016-10-11_16_config_007_bin_006.tiff in 801.31 sec.
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:46:43,686 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 18:46:43,756 INFO Going to convert document batch...
+2026-09-13 18:46:46,851 INFO Initializing Transformers object-detection engine
+2026-09-13 18:46:46,851 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 18:46:46,851 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:46:47,198 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:46:48,514 INFO Downloaded model docling-project/docling-layout-heron to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8 in 1.66 sec.
+2026-09-13 18:46:48,525 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:46:50,148 INFO Finished converting document correo_2016-10-11_16_config_006_bin_001.tiff in 1267.72 sec.
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:46:52,148 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 18:46:52,250 INFO Going to convert document batch...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:46:53,373 INFO Finished converting document correo_2016-10-11_16_config_006_bin_004.tiff in 1220.61 sec.
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  23%|██▎       | 176/770 [00:00<00:01, 507.14it/s]Loading weights:  49%|████▉     | 380/770 [00:00<00:00, 517.99it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 1019.39it/s]
+2026-09-13 18:46:56,066 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 18:46:56,147 INFO Going to convert document batch...
+2026-09-13 18:46:56,952 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 18:46:56,952 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 18:46:57,169 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 18:46:58,192 INFO Downloaded model docling-project/docling-models to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23 in 1.24 sec.
+2026-09-13 18:46:58,192 INFO Accelerator device: 'cpu'
+2026-09-13 18:47:02,916 INFO Processing document correo_2016-10-11_16_config_008_bin_002.tiff
+2026-09-13 18:47:02,916 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-13 18:47:02,916 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:47:05,101 INFO Finished converting document correo_2016-10-11_16_config_006_bin_003.tiff in 1269.34 sec.
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:47:07,066 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 18:47:07,074 INFO Going to convert document batch...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:47:21,415 INFO Initializing Transformers object-detection engine
+2026-09-13 18:47:21,415 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 18:47:21,415 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:47:21,966 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-13 18:47:22,914 INFO Downloaded model docling-project/docling-layout-heron to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8 in 1.50 sec.
+2026-09-13 18:47:22,914 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  15%|█▍        | 112/770 [00:00<00:00, 815.64it/s]Loading weights:  25%|██▌       | 194/770 [00:00<00:00, 578.36it/s]Loading weights:  47%|████▋     | 362/770 [00:00<00:00, 870.87it/s]Loading weights:  77%|███████▋  | 591/770 [00:00<00:00, 885.59it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 1084.90it/s]
+2026-09-13 18:47:31,539 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 18:47:31,539 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 18:47:31,972 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 18:47:33,125 INFO Downloaded model docling-project/docling-models to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23 in 1.59 sec.
+2026-09-13 18:47:33,125 INFO Accelerator device: 'cpu'
+2026-09-13 18:47:37,644 INFO Processing document correo_2016-10-11_16_config_008_bin_003.tiff
+2026-09-13 18:47:37,644 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-13 18:47:37,770 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:47:54,926 INFO Initializing Transformers object-detection engine
+2026-09-13 18:47:54,926 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 18:47:54,926 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:47:55,413 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-13 18:47:56,852 INFO Downloaded model docling-project/docling-layout-heron to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8 in 1.93 sec.
+2026-09-13 18:47:56,852 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  17%|█▋        | 134/770 [00:00<00:00, 751.86it/s]Loading weights:  42%|████▏     | 320/770 [00:00<00:00, 633.68it/s]Loading weights:  56%|█████▌    | 432/770 [00:00<00:00, 678.30it/s]Loading weights:  90%|████████▉ | 690/770 [00:00<00:00, 747.66it/s]Loading weights: 100%|██████████| 770/770 [00:01<00:00, 742.78it/s]
+2026-09-13 18:48:04,722 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 18:48:04,849 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 18:48:05,347 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 18:48:06,656 INFO Downloaded model docling-project/docling-models to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23 in 1.81 sec.
+2026-09-13 18:48:06,657 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:48:10,040 INFO Finished converting document correo_2016-10-11_16_config_006_bin_002.tiff in 1343.21 sec.
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:48:12,379 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 18:48:12,702 INFO Going to convert document batch...
+2026-09-13 18:48:13,112 INFO Processing document correo_2016-10-11_16_config_008_bin_004.tiff
+2026-09-13 18:48:13,112 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-13 18:48:13,113 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:48:32,169 INFO Initializing Transformers object-detection engine
+2026-09-13 18:48:32,169 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 18:48:32,169 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:48:32,514 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-13 18:48:33,862 INFO Downloaded model docling-project/docling-layout-heron to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8 in 1.69 sec.
+2026-09-13 18:48:33,874 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  42%|████▏     | 325/770 [00:00<00:00, 1071.92it/s]Loading weights:  61%|██████    | 470/770 [00:00<00:00, 938.01it/s] Loading weights: 100%|██████████| 770/770 [00:00<00:00, 1529.72it/s]
+2026-09-13 18:48:41,688 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 18:48:41,688 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 18:48:42,216 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 18:48:43,460 INFO Downloaded model docling-project/docling-models to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23 in 1.77 sec.
+2026-09-13 18:48:43,460 INFO Accelerator device: 'cpu'
+2026-09-13 18:48:49,937 INFO Processing document correo_2016-10-11_16_config_008_bin_005.tiff
+2026-09-13 18:48:49,942 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-13 18:48:49,943 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:48:51,491 INFO Finished converting document correo_2016-10-11_16_config_007_bin_007.tiff in 843.30 sec.
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:48:53,375 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 18:48:53,755 INFO Going to convert document batch...
+2026-09-13 18:49:12,573 INFO Initializing Transformers object-detection engine
+2026-09-13 18:49:12,573 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 18:49:12,573 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:49:12,933 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:49:13,531 INFO Model docling-project/docling-layout-heron already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8
+2026-09-13 18:49:13,531 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  18%|█▊        | 138/770 [00:00<00:01, 351.97it/s]Loading weights:  43%|████▎     | 334/770 [00:00<00:00, 472.51it/s]Loading weights:  79%|███████▊  | 606/770 [00:01<00:00, 648.05it/s]Loading weights: 100%|██████████| 770/770 [00:01<00:00, 735.13it/s]
+2026-09-13 18:49:21,038 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 18:49:21,143 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 18:49:21,368 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 18:49:22,545 INFO Downloaded model docling-project/docling-models to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23 in 1.40 sec.
+2026-09-13 18:49:22,545 INFO Accelerator device: 'cpu'
+2026-09-13 18:49:31,536 INFO Processing document correo_2016-10-11_16_config_008_bin_006.tiff
+2026-09-13 18:49:31,576 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-13 18:49:31,577 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:49:51,000 INFO Initializing Transformers object-detection engine
+2026-09-13 18:49:51,000 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 18:49:51,000 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:49:51,323 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-13 18:49:52,514 INFO Downloaded model docling-project/docling-layout-heron to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8 in 1.51 sec.
+2026-09-13 18:49:52,514 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  16%|█▌        | 120/770 [00:00<00:01, 389.98it/s]Loading weights:  68%|██████▊   | 520/770 [00:00<00:00, 972.92it/s]Loading weights:  97%|█████████▋| 748/770 [00:00<00:00, 1028.21it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 969.77it/s] 
+2026-09-13 18:50:00,002 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 18:50:00,002 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 18:50:00,509 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:50:02,011 INFO Downloaded model docling-project/docling-models to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23 in 2.01 sec.
+2026-09-13 18:50:02,012 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:50:09,961 INFO Finished converting document correo_2016-10-11_16_config_006_bin_005.tiff in 1360.37 sec.
+2026-09-13 18:50:10,460 INFO Processing document correo_2016-10-11_16_config_008_bin_007.tiff
+2026-09-13 18:50:10,472 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-13 18:50:10,472 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:50:11,929 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 18:50:12,072 INFO Going to convert document batch...
+2026-09-13 18:50:27,787 INFO Initializing Transformers object-detection engine
+2026-09-13 18:50:27,787 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 18:50:27,788 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:50:27,952 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:50:29,078 INFO Downloaded model docling-project/docling-layout-heron to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8 in 1.29 sec.
+2026-09-13 18:50:29,078 INFO Accelerator device: 'cpu'
+2026-09-13 18:50:30,578 INFO Finished converting document correo_2016-10-11_16_config_007_bin_002.tiff in 1124.65 sec.
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:50:32,431 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 18:50:32,680 INFO Going to convert document batch...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:50:33,775 INFO Finished converting document correo_2016-10-11_16_config_007_bin_000.tiff in 1264.77 sec.
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:   9%|▊         | 67/770 [00:00<00:01, 504.90it/s]Loading weights:  15%|█▌        | 118/770 [00:00<00:01, 429.17it/s]Loading weights:  49%|████▉     | 377/770 [00:00<00:00, 736.76it/s]/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Loading weights:  78%|███████▊  | 597/770 [00:00<00:00, 819.67it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 964.51it/s]
+2026-09-13 18:50:35,544 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 18:50:35,544 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 18:50:35,962 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 18:50:36,084 INFO Going to convert document batch...
+2026-09-13 18:50:36,131 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 18:50:37,336 INFO Downloaded model docling-project/docling-models to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23 in 1.79 sec.
+2026-09-13 18:50:37,336 INFO Accelerator device: 'cpu'
+2026-09-13 18:50:39,067 INFO Finished converting document correo_2016-10-11_16_config_007_bin_003.tiff in 1126.25 sec.
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:50:41,011 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 18:50:41,027 INFO Going to convert document batch...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:50:41,423 INFO Processing document correo_2016-10-11_16_config_009_bin_000.tiff
+2026-09-13 18:50:41,424 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-13 18:50:41,424 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:50:56,071 INFO Initializing Transformers object-detection engine
+2026-09-13 18:50:56,071 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 18:50:56,071 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+2026-09-13 18:50:56,224 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:50:56,745 INFO Model docling-project/docling-layout-heron already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8
+2026-09-13 18:50:56,746 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  14%|█▍        | 106/770 [00:00<00:01, 548.78it/s]Loading weights:  41%|████      | 315/770 [00:00<00:00, 1102.59it/s]Loading weights:  71%|███████   | 547/770 [00:00<00:00, 1272.76it/s]Loading weights:  98%|█████████▊| 755/770 [00:00<00:00, 1354.51it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 1242.04it/s]
+2026-09-13 18:51:02,525 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 18:51:02,525 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 18:51:02,860 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 18:51:04,241 INFO Downloaded model docling-project/docling-models to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23 in 1.72 sec.
+2026-09-13 18:51:04,241 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:51:06,781 INFO Finished converting document correo_2016-10-11_16_config_007_bin_001.tiff in 1259.37 sec.
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:51:09,239 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 18:51:09,419 INFO Going to convert document batch...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:51:11,784 INFO Processing document correo_2016-10-11_16_config_009_bin_001.tiff
+2026-09-13 18:51:11,784 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-13 18:51:11,785 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:51:27,557 INFO Initializing Transformers object-detection engine
+2026-09-13 18:51:27,557 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 18:51:27,557 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:51:27,708 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-13 18:51:28,557 INFO Model docling-project/docling-layout-heron already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8
+2026-09-13 18:51:28,557 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  27%|██▋       | 209/770 [00:00<00:00, 791.73it/s]Loading weights:  90%|████████▉ | 690/770 [00:00<00:00, 1813.17it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 1733.95it/s]
+2026-09-13 18:51:34,757 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 18:51:34,757 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 18:51:35,224 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 18:51:36,150 INFO Downloaded model docling-project/docling-models to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23 in 1.39 sec.
+2026-09-13 18:51:36,150 INFO Accelerator device: 'cpu'
+2026-09-13 18:51:41,476 INFO Finished converting document correo_2016-10-11_16_config_008_bin_006.tiff in 829.13 sec.
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:51:43,773 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 18:51:43,782 INFO Going to convert document batch...
+2026-09-13 18:51:45,348 INFO Processing document correo_2016-10-11_16_config_009_bin_002.tiff
+2026-09-13 18:51:45,349 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-13 18:51:45,349 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:52:01,911 INFO Initializing Transformers object-detection engine
+2026-09-13 18:52:01,911 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 18:52:01,912 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:52:02,347 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-13 18:52:03,587 INFO Downloaded model docling-project/docling-layout-heron to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8 in 1.68 sec.
+2026-09-13 18:52:03,588 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  47%|████▋     | 363/770 [00:00<00:00, 1482.09it/s]Loading weights:  75%|███████▌  | 581/770 [00:00<00:00, 1284.90it/s]Loading weights:  97%|█████████▋| 747/770 [00:00<00:00, 1322.66it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 1374.28it/s]
+2026-09-13 18:52:10,893 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 18:52:10,894 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 18:52:11,254 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 18:52:13,008 INFO Downloaded model docling-project/docling-models to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23 in 2.11 sec.
+2026-09-13 18:52:13,009 INFO Accelerator device: 'cpu'
+2026-09-13 18:52:21,031 INFO Processing document correo_2016-10-11_16_config_009_bin_003.tiff
+2026-09-13 18:52:21,033 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-13 18:52:21,034 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:52:39,619 INFO Initializing Transformers object-detection engine
+2026-09-13 18:52:39,620 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 18:52:39,620 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:52:39,765 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-13 18:52:40,730 INFO Downloaded model docling-project/docling-layout-heron to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8 in 1.11 sec.
+2026-09-13 18:52:40,730 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:   9%|▊         | 67/770 [00:00<00:01, 666.65it/s]Loading weights:  36%|███▌      | 275/770 [00:00<00:00, 858.43it/s]Loading weights:  66%|██████▌   | 509/770 [00:00<00:00, 1322.74it/s]Loading weights:  85%|████████▌ | 657/770 [00:00<00:00, 1002.69it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 1177.35it/s]
+2026-09-13 18:52:47,136 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 18:52:47,136 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 18:52:47,464 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:52:48,795 INFO Downloaded model docling-project/docling-models to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23 in 1.66 sec.
+2026-09-13 18:52:48,795 INFO Accelerator device: 'cpu'
+2026-09-13 18:52:55,544 INFO Processing document correo_2016-10-11_16_config_009_bin_004.tiff
+2026-09-13 18:52:55,560 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-13 18:52:55,704 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:53:15,977 INFO Initializing Transformers object-detection engine
+2026-09-13 18:53:15,977 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 18:53:15,977 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:53:16,256 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-13 18:53:17,126 INFO Downloaded model docling-project/docling-layout-heron to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8 in 1.15 sec.
+2026-09-13 18:53:17,126 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  13%|█▎        | 103/770 [00:00<00:01, 505.72it/s]Loading weights:  22%|██▏       | 172/770 [00:00<00:01, 450.98it/s]Loading weights:  62%|██████▏   | 476/770 [00:00<00:00, 1162.48it/s]Loading weights:  89%|████████▉ | 687/770 [00:00<00:00, 1193.48it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 956.49it/s] 
+2026-09-13 18:53:24,711 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 18:53:24,712 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 18:53:25,555 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 18:53:26,928 INFO Downloaded model docling-project/docling-models to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23 in 2.22 sec.
+2026-09-13 18:53:26,929 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:53:29,864 INFO Finished converting document correo_2016-10-11_16_config_008_bin_007.tiff in 937.02 sec.
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:53:31,569 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 18:53:32,140 INFO Going to convert document batch...
+2026-09-13 18:53:35,985 INFO Processing document correo_2016-10-11_16_config_009_bin_005.tiff
+2026-09-13 18:53:35,985 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-13 18:53:35,986 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:53:52,049 INFO Finished converting document correo_2016-10-11_16_config_007_bin_004.tiff in 1313.01 sec.
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:53:54,742 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 18:53:55,708 INFO Going to convert document batch...
+2026-09-13 18:53:57,780 INFO Initializing Transformers object-detection engine
+2026-09-13 18:53:57,780 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 18:53:57,780 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+2026-09-13 18:53:57,948 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:53:59,626 INFO Downloaded model docling-project/docling-layout-heron to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8 in 1.85 sec.
+2026-09-13 18:53:59,626 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  25%|██▍       | 189/770 [00:00<00:00, 987.93it/s]Loading weights:  51%|█████     | 391/770 [00:00<00:00, 1109.24it/s]Loading weights:  65%|██████▌   | 503/770 [00:00<00:00, 724.77it/s] Loading weights:  76%|███████▌  | 583/770 [00:00<00:00, 731.98it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 1025.16it/s]
+2026-09-13 18:54:05,787 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 18:54:05,787 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 18:54:06,243 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 18:54:07,240 INFO Downloaded model docling-project/docling-models to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23 in 1.45 sec.
+2026-09-13 18:54:07,240 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:54:11,265 INFO Processing document correo_2016-10-11_16_config_009_bin_006.tiff
+2026-09-13 18:54:11,265 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-13 18:54:11,266 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:54:15,339 INFO Finished converting document correo_2016-10-11_16_config_008_bin_000.tiff in 1142.80 sec.
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:54:16,749 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 18:54:17,012 INFO Going to convert document batch...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:54:33,973 INFO Initializing Transformers object-detection engine
+2026-09-13 18:54:33,974 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 18:54:33,974 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:54:34,962 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-13 18:54:35,853 INFO Downloaded model docling-project/docling-layout-heron to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8 in 1.88 sec.
+2026-09-13 18:54:35,854 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:   5%|▌         | 42/770 [00:00<00:06, 118.28it/s]Loading weights:  29%|██▉       | 226/770 [00:00<00:01, 427.66it/s]Loading weights:  66%|██████▌   | 505/770 [00:01<00:00, 566.53it/s]Loading weights:  93%|█████████▎| 717/770 [00:01<00:00, 637.12it/s]Loading weights: 100%|██████████| 770/770 [00:01<00:00, 558.19it/s]
+2026-09-13 18:54:44,815 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 18:54:45,178 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 18:54:45,910 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 18:54:47,020 INFO Downloaded model docling-project/docling-models to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23 in 1.84 sec.
+2026-09-13 18:54:47,020 INFO Accelerator device: 'cpu'
+2026-09-13 18:54:58,235 INFO Processing document correo_2016-10-11_16_config_009_bin_007.tiff
+2026-09-13 18:54:58,239 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-13 18:54:58,240 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:55:00,961 INFO Finished converting document correo_2016-10-11_16_config_007_bin_005.tiff in 1369.87 sec.
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:55:03,969 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:55:04,178 INFO Going to convert document batch...
+2026-09-13 18:55:21,198 INFO Initializing Transformers object-detection engine
+2026-09-13 18:55:21,198 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 18:55:21,198 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+2026-09-13 18:55:21,964 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:55:22,463 INFO Downloaded model docling-project/docling-layout-heron to /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8 in 1.26 sec.
+2026-09-13 18:55:22,463 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  25%|██▌       | 193/770 [00:00<00:00, 651.97it/s]Loading weights:  64%|██████▍   | 493/770 [00:00<00:00, 1322.61it/s]Loading weights:  86%|████████▋ | 665/770 [00:00<00:00, 628.40it/s] Loading weights: 100%|██████████| 770/770 [00:00<00:00, 805.73it/s]
+2026-09-13 18:55:31,480 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 18:55:31,480 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 18:55:31,689 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 18:55:32,463 INFO Model docling-project/docling-models already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23
+2026-09-13 18:55:32,464 INFO Accelerator device: 'cpu'
+2026-09-13 18:55:33,421 INFO Finished converting document correo_2016-10-11_16_config_008_bin_004.tiff in 1124.34 sec.
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:55:35,320 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 18:55:35,460 INFO Going to convert document batch...
+2026-09-13 18:55:37,483 INFO Processing document correo_2016-10-11_16_config_010_bin_000.tiff
+2026-09-13 18:55:37,570 INFO Initializing pipeline for StandardPdfPipeline with options hash 3475aeccc321e2b73bfbd9530b1c7db0
+2026-09-13 18:55:37,571 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+[2026-09-13T18:55:50.395] error: *** JOB 26474557 ON c003 CANCELLED AT 2026-09-13T18:55:50 DUE to SIGNAL Terminated ***

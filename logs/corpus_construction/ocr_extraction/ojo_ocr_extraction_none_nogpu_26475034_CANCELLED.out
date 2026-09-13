@@ -1,0 +1,336 @@
+2026-09-13 19:22:34,448 INFO Running docling_easyocr OCR on 4320 images (model loads ONCE)
+2026-09-13 19:22:34,560 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:22:34,748 INFO Going to convert document batch...
+2026-09-13 19:22:34,748 INFO Initializing pipeline for StandardPdfPipeline with options hash cd5a96c5e805595d56d8548c906fef27
+2026-09-13 19:22:34,780 INFO Loading plugin 'docling_defaults'
+2026-09-13 19:22:34,786 INFO Registered picture descriptions: ['picture_description_vlm_engine', 'vlm', 'api']
+2026-09-13 19:22:34,812 INFO Loading plugin 'docling_defaults'
+2026-09-13 19:22:34,840 INFO Registered ocr engines: ['auto', 'easyocr', 'kserve_v2_ocr', 'nemotron-ocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
+2026-09-13 19:22:38,488 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+2026-09-13 19:22:40,783 INFO Loading plugin 'docling_defaults'
+2026-09-13 19:22:40,791 INFO Registered layout engines: ['layout_object_detection', 'docling_layout_default', 'docling_experimental_table_crops_layout']
+2026-09-13 19:22:42,815 INFO Initializing Transformers object-detection engine
+2026-09-13 19:22:42,815 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 19:22:42,815 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+2026-09-13 19:22:42,995 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-13 19:22:43,025 INFO Model docling-project/docling-layout-heron already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8
+2026-09-13 19:22:43,025 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 11980.04it/s]
+2026-09-13 19:22:44,880 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 19:22:44,906 INFO Loading plugin 'docling_defaults'
+2026-09-13 19:22:44,910 INFO Registered table structure engines: ['docling_tableformer', 'docling_tableformer_v2', 'granite_vision_table']
+2026-09-13 19:22:44,911 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 19:22:45,035 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 19:22:45,049 INFO Model docling-project/docling-models already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23
+2026-09-13 19:22:45,107 INFO Accelerator device: 'cpu'
+2026-09-13 19:22:45,539 INFO Processing document ojo_2016-03-07_22_config_000_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:24:12,075 INFO Finished converting document ojo_2016-03-07_22_config_000_bin_000.tiff in 97.52 sec.
+2026-09-13 19:24:12,128 INFO [docling_easyocr] 1/4320 done in 97.6s: ojo_2016-03-07_22
+2026-09-13 19:24:12,131 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:24:12,165 INFO Going to convert document batch...
+2026-09-13 19:24:12,166 INFO Processing document ojo_2016-03-07_22_config_000_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:25:38,759 INFO Finished converting document ojo_2016-03-07_22_config_000_bin_001.tiff in 86.63 sec.
+2026-09-13 19:25:38,776 INFO [docling_easyocr] 2/4320 done in 86.6s: ojo_2016-03-07_22
+2026-09-13 19:25:38,779 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:25:38,798 INFO Going to convert document batch...
+2026-09-13 19:25:38,799 INFO Processing document ojo_2016-03-07_22_config_000_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:27:04,441 INFO Finished converting document ojo_2016-03-07_22_config_000_bin_002.tiff in 85.67 sec.
+2026-09-13 19:27:04,460 INFO [docling_easyocr] 3/4320 done in 85.7s: ojo_2016-03-07_22
+2026-09-13 19:27:04,463 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:27:04,482 INFO Going to convert document batch...
+2026-09-13 19:27:04,483 INFO Processing document ojo_2016-03-07_22_config_000_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:28:28,871 INFO Finished converting document ojo_2016-03-07_22_config_000_bin_003.tiff in 84.41 sec.
+2026-09-13 19:28:28,891 INFO [docling_easyocr] 4/4320 done in 84.4s: ojo_2016-03-07_22
+2026-09-13 19:28:28,914 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:28:28,933 INFO Going to convert document batch...
+2026-09-13 19:28:28,934 INFO Processing document ojo_2016-03-07_22_config_000_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:30:24,054 INFO Finished converting document ojo_2016-03-07_22_config_000_bin_004.tiff in 115.16 sec.
+2026-09-13 19:30:24,064 INFO [docling_easyocr] 5/4320 done in 115.2s: ojo_2016-03-07_22
+2026-09-13 19:30:24,073 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:30:24,094 INFO Going to convert document batch...
+2026-09-13 19:30:24,095 INFO Processing document ojo_2016-03-07_22_config_000_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:32:24,339 INFO Finished converting document ojo_2016-03-07_22_config_000_bin_005.tiff in 120.27 sec.
+2026-09-13 19:32:24,349 INFO [docling_easyocr] 6/4320 done in 120.3s: ojo_2016-03-07_22
+2026-09-13 19:32:24,362 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:32:24,375 INFO Going to convert document batch...
+2026-09-13 19:32:24,376 INFO Processing document ojo_2016-03-07_22_config_000_bin_006.tiff
+2026-09-13 19:32:56,192 INFO Finished converting document ojo_2016-03-07_22_config_000_bin_006.tiff in 31.84 sec.
+2026-09-13 19:32:56,193 INFO [docling_easyocr] 7/4320 done in 31.8s: ojo_2016-03-07_22
+2026-09-13 19:32:56,209 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:32:56,226 INFO Going to convert document batch...
+2026-09-13 19:32:56,227 INFO Processing document ojo_2016-03-07_22_config_000_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:33:29,871 INFO Finished converting document ojo_2016-03-07_22_config_000_bin_007.tiff in 33.68 sec.
+2026-09-13 19:33:29,873 INFO [docling_easyocr] 8/4320 done in 33.7s: ojo_2016-03-07_22
+2026-09-13 19:33:29,917 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:33:30,005 INFO Going to convert document batch...
+2026-09-13 19:33:30,006 INFO Processing document ojo_2016-03-07_22_config_001_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:34:58,391 INFO Finished converting document ojo_2016-03-07_22_config_001_bin_000.tiff in 88.52 sec.
+2026-09-13 19:34:58,411 INFO [docling_easyocr] 9/4320 done in 88.5s: ojo_2016-03-07_22
+2026-09-13 19:34:58,432 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:34:58,468 INFO Going to convert document batch...
+2026-09-13 19:34:58,469 INFO Processing document ojo_2016-03-07_22_config_001_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:36:24,171 INFO Finished converting document ojo_2016-03-07_22_config_001_bin_001.tiff in 85.76 sec.
+2026-09-13 19:36:24,191 INFO [docling_easyocr] 10/4320 done in 85.8s: ojo_2016-03-07_22
+2026-09-13 19:36:24,215 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:36:24,237 INFO Going to convert document batch...
+2026-09-13 19:36:24,238 INFO Processing document ojo_2016-03-07_22_config_001_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:37:52,548 INFO Finished converting document ojo_2016-03-07_22_config_001_bin_002.tiff in 88.36 sec.
+2026-09-13 19:37:52,567 INFO [docling_easyocr] 11/4320 done in 88.4s: ojo_2016-03-07_22
+2026-09-13 19:37:52,582 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:37:52,602 INFO Going to convert document batch...
+2026-09-13 19:37:52,603 INFO Processing document ojo_2016-03-07_22_config_001_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:39:20,239 INFO Finished converting document ojo_2016-03-07_22_config_001_bin_003.tiff in 87.67 sec.
+2026-09-13 19:39:20,260 INFO [docling_easyocr] 12/4320 done in 87.7s: ojo_2016-03-07_22
+2026-09-13 19:39:20,280 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:39:20,301 INFO Going to convert document batch...
+2026-09-13 19:39:20,302 INFO Processing document ojo_2016-03-07_22_config_001_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:40:55,145 INFO Finished converting document ojo_2016-03-07_22_config_001_bin_004.tiff in 94.88 sec.
+2026-09-13 19:40:55,152 INFO [docling_easyocr] 13/4320 done in 94.9s: ojo_2016-03-07_22
+2026-09-13 19:40:55,170 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:40:55,191 INFO Going to convert document batch...
+2026-09-13 19:40:55,192 INFO Processing document ojo_2016-03-07_22_config_001_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:42:20,443 INFO Finished converting document ojo_2016-03-07_22_config_001_bin_005.tiff in 85.29 sec.
+2026-09-13 19:42:20,452 INFO [docling_easyocr] 14/4320 done in 85.3s: ojo_2016-03-07_22
+2026-09-13 19:42:20,470 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:42:20,483 INFO Going to convert document batch...
+2026-09-13 19:42:20,484 INFO Processing document ojo_2016-03-07_22_config_001_bin_006.tiff
+2026-09-13 19:42:52,299 INFO Finished converting document ojo_2016-03-07_22_config_001_bin_006.tiff in 31.85 sec.
+2026-09-13 19:42:52,300 INFO [docling_easyocr] 15/4320 done in 31.8s: ojo_2016-03-07_22
+2026-09-13 19:42:52,323 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:42:52,339 INFO Going to convert document batch...
+2026-09-13 19:42:52,340 INFO Processing document ojo_2016-03-07_22_config_001_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:43:25,291 INFO Finished converting document ojo_2016-03-07_22_config_001_bin_007.tiff in 32.99 sec.
+2026-09-13 19:43:25,293 INFO [docling_easyocr] 16/4320 done in 33.0s: ojo_2016-03-07_22
+2026-09-13 19:43:25,318 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:43:25,352 INFO Going to convert document batch...
+2026-09-13 19:43:25,352 INFO Processing document ojo_2016-03-07_22_config_002_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:44:54,530 INFO Finished converting document ojo_2016-03-07_22_config_002_bin_000.tiff in 89.24 sec.
+2026-09-13 19:44:54,549 INFO [docling_easyocr] 17/4320 done in 89.3s: ojo_2016-03-07_22
+2026-09-13 19:44:54,576 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:44:54,611 INFO Going to convert document batch...
+2026-09-13 19:44:54,612 INFO Processing document ojo_2016-03-07_22_config_002_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:46:24,233 INFO Finished converting document ojo_2016-03-07_22_config_002_bin_001.tiff in 89.68 sec.
+2026-09-13 19:46:24,253 INFO [docling_easyocr] 18/4320 done in 89.7s: ojo_2016-03-07_22
+2026-09-13 19:46:24,271 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:46:24,290 INFO Going to convert document batch...
+2026-09-13 19:46:24,291 INFO Processing document ojo_2016-03-07_22_config_002_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:47:58,805 INFO Finished converting document ojo_2016-03-07_22_config_002_bin_002.tiff in 94.55 sec.
+2026-09-13 19:47:58,822 INFO [docling_easyocr] 19/4320 done in 94.6s: ojo_2016-03-07_22
+2026-09-13 19:47:58,845 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:47:58,864 INFO Going to convert document batch...
+2026-09-13 19:47:58,865 INFO Processing document ojo_2016-03-07_22_config_002_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:49:28,303 INFO Finished converting document ojo_2016-03-07_22_config_002_bin_003.tiff in 89.48 sec.
+2026-09-13 19:49:28,326 INFO [docling_easyocr] 20/4320 done in 89.5s: ojo_2016-03-07_22
+2026-09-13 19:49:28,342 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:49:28,362 INFO Going to convert document batch...
+2026-09-13 19:49:28,362 INFO Processing document ojo_2016-03-07_22_config_002_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:51:25,735 INFO Finished converting document ojo_2016-03-07_22_config_002_bin_004.tiff in 117.41 sec.
+2026-09-13 19:51:25,745 INFO [docling_easyocr] 21/4320 done in 117.4s: ojo_2016-03-07_22
+2026-09-13 19:51:25,760 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:51:25,780 INFO Going to convert document batch...
+2026-09-13 19:51:25,782 INFO Processing document ojo_2016-03-07_22_config_002_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:53:32,966 INFO Finished converting document ojo_2016-03-07_22_config_002_bin_005.tiff in 127.22 sec.
+2026-09-13 19:53:32,975 INFO [docling_easyocr] 22/4320 done in 127.2s: ojo_2016-03-07_22
+2026-09-13 19:53:32,984 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:53:32,997 INFO Going to convert document batch...
+2026-09-13 19:53:32,998 INFO Processing document ojo_2016-03-07_22_config_002_bin_006.tiff
+2026-09-13 19:54:04,373 INFO Finished converting document ojo_2016-03-07_22_config_002_bin_006.tiff in 31.40 sec.
+2026-09-13 19:54:04,375 INFO [docling_easyocr] 23/4320 done in 31.4s: ojo_2016-03-07_22
+2026-09-13 19:54:04,388 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:54:04,405 INFO Going to convert document batch...
+2026-09-13 19:54:04,406 INFO Processing document ojo_2016-03-07_22_config_002_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:54:39,055 INFO Finished converting document ojo_2016-03-07_22_config_002_bin_007.tiff in 34.68 sec.
+2026-09-13 19:54:39,057 INFO [docling_easyocr] 24/4320 done in 34.7s: ojo_2016-03-07_22
+2026-09-13 19:54:39,084 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:54:39,174 INFO Going to convert document batch...
+2026-09-13 19:54:39,175 INFO Processing document ojo_2016-03-07_22_config_003_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:56:19,263 INFO Finished converting document ojo_2016-03-07_22_config_003_bin_000.tiff in 100.21 sec.
+2026-09-13 19:56:19,278 INFO [docling_easyocr] 25/4320 done in 100.2s: ojo_2016-03-07_22
+2026-09-13 19:56:19,298 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:56:19,332 INFO Going to convert document batch...
+2026-09-13 19:56:19,333 INFO Processing document ojo_2016-03-07_22_config_003_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:57:57,703 INFO Finished converting document ojo_2016-03-07_22_config_003_bin_001.tiff in 98.42 sec.
+2026-09-13 19:57:57,716 INFO [docling_easyocr] 26/4320 done in 98.4s: ojo_2016-03-07_22
+2026-09-13 19:57:57,734 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:57:57,751 INFO Going to convert document batch...
+2026-09-13 19:57:57,752 INFO Processing document ojo_2016-03-07_22_config_003_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:59:57,180 INFO Finished converting document ojo_2016-03-07_22_config_003_bin_002.tiff in 119.46 sec.
+2026-09-13 19:59:57,193 INFO [docling_easyocr] 27/4320 done in 119.5s: ojo_2016-03-07_22
+2026-09-13 19:59:57,214 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:59:57,233 INFO Going to convert document batch...
+2026-09-13 19:59:57,233 INFO Processing document ojo_2016-03-07_22_config_003_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:01:48,516 INFO Finished converting document ojo_2016-03-07_22_config_003_bin_003.tiff in 111.32 sec.
+2026-09-13 20:01:48,526 INFO [docling_easyocr] 28/4320 done in 111.3s: ojo_2016-03-07_22
+2026-09-13 20:01:48,542 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:01:48,562 INFO Going to convert document batch...
+2026-09-13 20:01:48,563 INFO Processing document ojo_2016-03-07_22_config_003_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:02:43,168 INFO Finished converting document ojo_2016-03-07_22_config_003_bin_004.tiff in 54.64 sec.
+2026-09-13 20:02:43,175 INFO [docling_easyocr] 29/4320 done in 54.6s: ojo_2016-03-07_22
+2026-09-13 20:02:43,188 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:02:43,208 INFO Going to convert document batch...
+2026-09-13 20:02:43,209 INFO Processing document ojo_2016-03-07_22_config_003_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:04:29,922 INFO Finished converting document ojo_2016-03-07_22_config_003_bin_005.tiff in 106.75 sec.
+2026-09-13 20:04:29,932 INFO [docling_easyocr] 30/4320 done in 106.8s: ojo_2016-03-07_22
+2026-09-13 20:04:29,950 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:04:29,963 INFO Going to convert document batch...
+2026-09-13 20:04:29,964 INFO Processing document ojo_2016-03-07_22_config_003_bin_006.tiff
+2026-09-13 20:05:00,350 INFO Finished converting document ojo_2016-03-07_22_config_003_bin_006.tiff in 30.42 sec.
+2026-09-13 20:05:00,351 INFO [docling_easyocr] 31/4320 done in 30.4s: ojo_2016-03-07_22
+2026-09-13 20:05:00,371 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:05:00,390 INFO Going to convert document batch...
+2026-09-13 20:05:00,391 INFO Processing document ojo_2016-03-07_22_config_003_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:05:38,921 INFO Finished converting document ojo_2016-03-07_22_config_003_bin_007.tiff in 38.57 sec.
+2026-09-13 20:05:38,922 INFO [docling_easyocr] 32/4320 done in 38.6s: ojo_2016-03-07_22
+2026-09-13 20:05:38,954 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:05:39,039 INFO Going to convert document batch...
+2026-09-13 20:05:39,039 INFO Processing document ojo_2016-03-07_22_config_004_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:07:14,238 INFO Finished converting document ojo_2016-03-07_22_config_004_bin_000.tiff in 95.32 sec.
+2026-09-13 20:07:14,254 INFO [docling_easyocr] 33/4320 done in 95.3s: ojo_2016-03-07_22
+2026-09-13 20:07:14,276 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:07:14,311 INFO Going to convert document batch...
+2026-09-13 20:07:14,312 INFO Processing document ojo_2016-03-07_22_config_004_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:08:46,284 INFO Finished converting document ojo_2016-03-07_22_config_004_bin_001.tiff in 92.03 sec.
+2026-09-13 20:08:46,297 INFO [docling_easyocr] 34/4320 done in 92.0s: ojo_2016-03-07_22
+2026-09-13 20:08:46,326 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:08:46,344 INFO Going to convert document batch...
+2026-09-13 20:08:46,345 INFO Processing document ojo_2016-03-07_22_config_004_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:10:39,609 INFO Finished converting document ojo_2016-03-07_22_config_004_bin_002.tiff in 113.31 sec.
+2026-09-13 20:10:39,623 INFO [docling_easyocr] 35/4320 done in 113.3s: ojo_2016-03-07_22
+2026-09-13 20:10:39,635 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:10:39,653 INFO Going to convert document batch...
+2026-09-13 20:10:39,654 INFO Processing document ojo_2016-03-07_22_config_004_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:12:24,571 INFO Finished converting document ojo_2016-03-07_22_config_004_bin_003.tiff in 104.95 sec.
+2026-09-13 20:12:24,584 INFO [docling_easyocr] 36/4320 done in 105.0s: ojo_2016-03-07_22
+2026-09-13 20:12:24,605 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:12:24,626 INFO Going to convert document batch...
+2026-09-13 20:12:24,627 INFO Processing document ojo_2016-03-07_22_config_004_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:13:31,586 INFO Finished converting document ojo_2016-03-07_22_config_004_bin_004.tiff in 67.00 sec.
+2026-09-13 20:13:31,595 INFO [docling_easyocr] 37/4320 done in 67.0s: ojo_2016-03-07_22
+2026-09-13 20:13:31,617 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:13:31,638 INFO Going to convert document batch...
+2026-09-13 20:13:31,639 INFO Processing document ojo_2016-03-07_22_config_004_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:15:14,428 INFO Finished converting document ojo_2016-03-07_22_config_004_bin_005.tiff in 102.83 sec.
+2026-09-13 20:15:14,437 INFO [docling_easyocr] 38/4320 done in 102.8s: ojo_2016-03-07_22
+2026-09-13 20:15:14,453 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:15:14,465 INFO Going to convert document batch...
+2026-09-13 20:15:14,466 INFO Processing document ojo_2016-03-07_22_config_004_bin_006.tiff
+2026-09-13 20:15:42,738 INFO Finished converting document ojo_2016-03-07_22_config_004_bin_006.tiff in 28.30 sec.
+2026-09-13 20:15:42,739 INFO [docling_easyocr] 39/4320 done in 28.3s: ojo_2016-03-07_22
+2026-09-13 20:15:42,754 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:15:42,772 INFO Going to convert document batch...
+2026-09-13 20:15:42,773 INFO Processing document ojo_2016-03-07_22_config_004_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:16:15,789 INFO Finished converting document ojo_2016-03-07_22_config_004_bin_007.tiff in 33.05 sec.
+2026-09-13 20:16:15,791 INFO [docling_easyocr] 40/4320 done in 33.1s: ojo_2016-03-07_22
+2026-09-13 20:16:15,822 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:16:15,855 INFO Going to convert document batch...
+2026-09-13 20:16:15,855 INFO Processing document ojo_2016-03-07_22_config_005_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:17:36,408 INFO Finished converting document ojo_2016-03-07_22_config_005_bin_000.tiff in 80.62 sec.
+2026-09-13 20:17:36,420 INFO [docling_easyocr] 41/4320 done in 80.6s: ojo_2016-03-07_22
+2026-09-13 20:17:36,440 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:17:36,469 INFO Going to convert document batch...
+2026-09-13 20:17:36,470 INFO Processing document ojo_2016-03-07_22_config_005_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:18:53,539 INFO Finished converting document ojo_2016-03-07_22_config_005_bin_001.tiff in 77.12 sec.
+2026-09-13 20:18:53,553 INFO [docling_easyocr] 42/4320 done in 77.1s: ojo_2016-03-07_22
+2026-09-13 20:18:53,564 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:18:53,579 INFO Going to convert document batch...
+2026-09-13 20:18:53,580 INFO Processing document ojo_2016-03-07_22_config_005_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:20:07,808 INFO Finished converting document ojo_2016-03-07_22_config_005_bin_002.tiff in 74.26 sec.
+2026-09-13 20:20:07,818 INFO [docling_easyocr] 43/4320 done in 74.3s: ojo_2016-03-07_22
+2026-09-13 20:20:07,833 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:20:07,850 INFO Going to convert document batch...
+2026-09-13 20:20:07,851 INFO Processing document ojo_2016-03-07_22_config_005_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:21:34,155 INFO Finished converting document ojo_2016-03-07_22_config_005_bin_003.tiff in 86.34 sec.
+2026-09-13 20:21:34,163 INFO [docling_easyocr] 44/4320 done in 86.3s: ojo_2016-03-07_22
+2026-09-13 20:21:34,185 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:21:34,203 INFO Going to convert document batch...
+2026-09-13 20:21:34,204 INFO Processing document ojo_2016-03-07_22_config_005_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:22:13,593 INFO Finished converting document ojo_2016-03-07_22_config_005_bin_004.tiff in 39.43 sec.
+2026-09-13 20:22:13,600 INFO [docling_easyocr] 45/4320 done in 39.4s: ojo_2016-03-07_22
+2026-09-13 20:22:13,615 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:22:13,634 INFO Going to convert document batch...
+2026-09-13 20:22:13,635 INFO Processing document ojo_2016-03-07_22_config_005_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+[2026-09-13T20:23:28.439] error: *** JOB 26475034 ON b001 CANCELLED AT 2026-09-13T20:23:28 DUE to SIGNAL Terminated ***

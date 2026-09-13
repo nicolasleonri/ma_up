@@ -1,0 +1,36 @@
+2026-09-13 20:18:12,634 INFO Running docling_easyocr OCR on 4270 images (model loads ONCE) with 96 workers.
+2026-09-13 20:18:12,723 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:18:12,844 INFO Going to convert document batch...
+2026-09-13 20:18:12,845 INFO Initializing pipeline for StandardPdfPipeline with options hash cd5a96c5e805595d56d8548c906fef27
+2026-09-13 20:18:12,893 INFO Loading plugin 'docling_defaults'
+2026-09-13 20:18:12,898 INFO Registered picture descriptions: ['picture_description_vlm_engine', 'vlm', 'api']
+2026-09-13 20:18:12,931 INFO Loading plugin 'docling_defaults'
+2026-09-13 20:18:12,967 INFO Registered ocr engines: ['auto', 'easyocr', 'kserve_v2_ocr', 'nemotron-ocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
+2026-09-13 20:18:15,417 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+2026-09-13 20:18:17,394 INFO Loading plugin 'docling_defaults'
+2026-09-13 20:18:17,403 INFO Registered layout engines: ['layout_object_detection', 'docling_layout_default', 'docling_experimental_table_crops_layout']
+2026-09-13 20:18:18,878 INFO Initializing Transformers object-detection engine
+2026-09-13 20:18:18,878 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 20:18:18,878 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+2026-09-13 20:18:19,034 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-13 20:18:19,045 INFO Model docling-project/docling-layout-heron already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8
+2026-09-13 20:18:19,045 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 11871.36it/s]
+2026-09-13 20:18:20,564 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 20:18:20,610 INFO Loading plugin 'docling_defaults'
+2026-09-13 20:18:20,615 INFO Registered table structure engines: ['docling_tableformer', 'docling_tableformer_v2', 'granite_vision_table']
+2026-09-13 20:18:20,615 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 20:18:20,747 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 20:18:20,757 INFO Model docling-project/docling-models already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23
+2026-09-13 20:18:20,791 INFO Accelerator device: 'cpu'
+2026-09-13 20:18:21,120 INFO Processing document elcomercio_2015-04-23_1_config_006_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:18:36,528 INFO Finished converting document elcomercio_2015-04-23_1_config_006_bin_002.tiff in 23.81 sec.
+2026-09-13 20:18:36,564 INFO [docling_easyocr] 1/4270 done in 23.8s: elcomercio_2015-04-23_1
+2026-09-13 20:18:36,565 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:18:36,585 INFO Going to convert document batch...
+2026-09-13 20:18:36,585 INFO Processing document elcomercio_2015-04-23_1_config_006_bin_003.tiff
+[2026-09-13T20:18:43.297] error: *** JOB 26475163 ON b001 CANCELLED AT 2026-09-13T20:18:43 DUE to SIGNAL Terminated ***

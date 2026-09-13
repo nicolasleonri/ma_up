@@ -1,8 +1,10 @@
 """Run OCR backends over successful binarization outputs."""
 
+import atexit
 import logging
+import os
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 
 import pandas as pd
@@ -19,6 +21,101 @@ KEY_COLS = [
     "binarize_file",
     "ocr_extractor",
 ]
+
+FLUSH_EVERY = 50
+
+# Worker-local state. Each process gets exactly one extractor/model.
+_WORKER_EXTRACTOR = None
+_WORKER_EXTRACTOR_NAME = None
+
+
+def _close_worker_extractor():
+    """Close the extractor owned by this worker process."""
+    global _WORKER_EXTRACTOR
+
+    if _WORKER_EXTRACTOR is not None:
+        try:
+            _WORKER_EXTRACTOR.close()
+        except Exception:
+            pass
+
+    _WORKER_EXTRACTOR = None
+
+
+def _init_worker(extractor_name: str):
+    """
+    Initialize exactly one OCR extractor per worker process.
+
+    Each worker gets its own model instance and reuses it for
+    all images assigned to that process.
+    """
+    global _WORKER_EXTRACTOR
+    global _WORKER_EXTRACTOR_NAME
+
+    # Prevent libraries such as MKL/OpenBLAS/PyTorch from creating
+    # additional CPU threads inside each worker.
+    os.environ["OMP_NUM_THREADS"] = "1"
+    os.environ["MKL_NUM_THREADS"] = "1"
+    os.environ["OPENBLAS_NUM_THREADS"] = "1"
+    os.environ["NUMEXPR_NUM_THREADS"] = "1"
+
+    try:
+        import torch
+
+        torch.set_num_threads(1)
+
+        try:
+            torch.set_num_interop_threads(1)
+        except RuntimeError:
+            # Can happen if inter-op threads were already initialized.
+            pass
+    except Exception:
+        pass
+
+    if extractor_name not in OCR_EXTRACTORS:
+        raise ValueError(
+            f"Unknown OCR extractor {extractor_name!r}; "
+            f"choose from {list(OCR_EXTRACTORS)}"
+        )
+
+    _WORKER_EXTRACTOR_NAME = extractor_name
+    _WORKER_EXTRACTOR = OCR_EXTRACTORS[extractor_name]()
+
+    # Ensure cleanup when the worker process exits.
+    atexit.register(_close_worker_extractor)
+
+
+def _process_one(item: dict) -> dict:
+    """Run OCR for one image using the worker-local extractor."""
+    if _WORKER_EXTRACTOR is None:
+        raise RuntimeError("OCR worker extractor has not been initialized.")
+
+    start = time.time()
+
+    row = dict(
+        item,
+        ocr_extractor=_WORKER_EXTRACTOR_NAME,
+    )
+
+    try:
+        text = _WORKER_EXTRACTOR.extract(item["image_path"])
+
+        row.update(
+            text=text,
+            elapsed_s=time.time() - start,
+            status="success",
+            error=None,
+        )
+
+    except Exception as exc:
+        row.update(
+            text="",
+            elapsed_s=time.time() - start,
+            status="failed",
+            error=str(exc),
+        )
+
+    return row
 
 
 class OCRExtractionPipeline:
@@ -38,7 +135,7 @@ class OCRExtractionPipeline:
         self.binarized_dir = Path(binarized_dir)
         self.parquet_path = Path(parquet_path)
         self.skip_failed = skip_failed
-        self.workers = workers
+        self.workers = max(1, int(workers))
 
     def _load_done(self):
         if not self.parquet_path.exists():
@@ -74,10 +171,9 @@ class OCRExtractionPipeline:
         }
 
         missing = required - set(df.columns)
-
         if missing:
             raise ValueError(
-                f"Binarization Parquet is missing required columns: "
+                "Binarization Parquet is missing required columns: "
                 f"{sorted(missing)}"
             )
 
@@ -108,7 +204,9 @@ class OCRExtractionPipeline:
                     "image_stem": str(row.image_stem),
                     "config_id": int(row.config_id),
                     "layout_mode": (
-                        "none" if detector is None else "layout"
+                        "none"
+                        if detector is None
+                        else "layout"
                     ),
                     "detector": detector,
                     "binarization": str(row.binarization),
@@ -118,8 +216,12 @@ class OCRExtractionPipeline:
 
         return inputs
 
-    def _append(self, row):
-        new = pd.DataFrame([row])
+    def _append_batch(self, rows: list):
+        """Write a batch using one read/merge/write cycle."""
+        if not rows:
+            return
+
+        new = pd.DataFrame(rows)
 
         if self.parquet_path.exists():
             try:
@@ -130,13 +232,13 @@ class OCRExtractionPipeline:
 
             except Exception:
                 old = pd.DataFrame()
-
-            df = (
-                pd.concat([old, new], ignore_index=True)
-                .drop_duplicates(KEY_COLS, keep="last")
-            )
         else:
-            df = new
+            old = pd.DataFrame()
+
+        df = (
+            pd.concat([old, new], ignore_index=True)
+            .drop_duplicates(KEY_COLS, keep="last")
+        )
 
         df["_detector_sort"] = (
             df.detector.fillna("").astype(str)
@@ -166,69 +268,108 @@ class OCRExtractionPipeline:
             index=False,
         )
 
-    def _process_one(self, extractor, name, item):
-        start = time.time()
-
-        row = dict(
-            item,
-            ocr_extractor=name,
+    def _run_extractor(self, name, pending):
+        """Run one OCR backend across all pending images."""
+        self.logger.info(
+            "Running %s OCR on %d images with %d worker processes.",
+            name,
+            len(pending),
+            self.workers,
         )
 
-        try:
-            text = extractor.extract(
-                item["image_path"],
-                row,
+        processed = 0
+        pending_rows = []
+
+        # spawn is safer for complex ML libraries than fork.
+        mp_context = __import__(
+            "multiprocessing"
+        ).get_context("spawn")
+
+        with ProcessPoolExecutor(
+            max_workers=self.workers,
+            mp_context=mp_context,
+            initializer=_init_worker,
+            initargs=(name,),
+        ) as executor:
+
+            # chunksize=1 gives good load balancing because OCR
+            # runtimes can vary substantially between pages.
+            results = executor.map(
+                _process_one,
+                pending,
+                chunksize=1,
             )
 
-            row.update(
-                text=text,
-                elapsed_s=time.time() - start,
-                status="success",
-                error=None,
-            )
+            for i, row in enumerate(results, start=1):
+                processed += 1
 
-        except Exception as exc:
-            row.update(
-                text="",
-                elapsed_s=time.time() - start,
-                status="failed",
-                error=str(exc),
-            )
+                pending_rows.append(row)
 
-            self.logger.exception(
-                "[%s] OCR failed for %s",
-                name,
-                item["image_path"],
-            )
+                if row["status"] == "success":
+                    self.logger.info(
+                        "[%s] %d/%d done in %.1fs: %s",
+                        name,
+                        i,
+                        len(pending),
+                        row["elapsed_s"],
+                        row["image_stem"],
+                    )
+                else:
+                    self.logger.error(
+                        "[%s] OCR failed for %s: %s",
+                        name,
+                        row["image_path"],
+                        row["error"],
+                    )
 
-        return row
+                if len(pending_rows) >= FLUSH_EVERY:
+                    self._append_batch(pending_rows)
+                    pending_rows = []
+
+            if pending_rows:
+                self._append_batch(pending_rows)
+
+        return processed
 
     def run(self):
         if not self.binarization_parquet.exists():
-            raise FileNotFoundError(self.binarization_parquet)
+            raise FileNotFoundError(
+                self.binarization_parquet
+            )
+
+        if self.workers < 1:
+            raise ValueError(
+                f"workers must be >= 1, got {self.workers}"
+            )
 
         inputs = self._discover_inputs()
         done = self._load_done()
+
         processed = 0
 
-        for name in self.extractor_names:
+        self.logger.info(
+            "Discovered %d successful binarization outputs.",
+            len(inputs),
+        )
 
+        for name in self.extractor_names:
             if name not in OCR_EXTRACTORS:
                 raise ValueError(
                     f"Unknown OCR extractor {name!r}; "
                     f"choose from {list(OCR_EXTRACTORS)}"
                 )
 
-            pending = []
-
-            for item in inputs:
-                key = (
-                    tuple(item[c] for c in KEY_COLS[:-1])
+            pending = [
+                item
+                for item in inputs
+                if (
+                    tuple(
+                        item[c]
+                        for c in KEY_COLS[:-1]
+                    )
                     + (name,)
-                )
-
-                if key not in done:
-                    pending.append(item)
+                ) not in done
+            ]
 
             if not pending:
                 self.logger.info(
@@ -237,44 +378,9 @@ class OCRExtractionPipeline:
                 )
                 continue
 
-            self.logger.info(
-                "Running %s OCR on %d images using %d workers",
+            processed += self._run_extractor(
                 name,
-                len(pending),
-                self.workers,
+                pending,
             )
-
-            def process(item):
-                extractor = OCR_EXTRACTORS[name]()
-
-                try:
-                    return self._process_one(
-                        extractor,
-                        name,
-                        item,
-                    )
-                finally:
-                    extractor.close()
-
-            with ThreadPoolExecutor(
-                max_workers=self.workers
-            ) as executor:
-
-                futures = [
-                    executor.submit(process, item)
-                    for item in pending
-                ]
-
-                for future in as_completed(futures):
-                    row = future.result()
-
-                    self._append(row)
-                    processed += 1
-
-                    if row["status"] == "success":
-                        key = tuple(
-                            row[c] for c in KEY_COLS
-                        )
-                        done.add(key)
 
         return processed

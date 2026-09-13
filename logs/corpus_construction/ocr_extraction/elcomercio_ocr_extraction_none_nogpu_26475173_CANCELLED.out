@@ -1,0 +1,1467 @@
+2026-09-13 20:27:20,341 INFO Discovered 4320 successful binarization outputs.
+2026-09-13 20:27:20,347 INFO Running docling_easyocr OCR on 4270 images with 16 worker processes.
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 10234.35it/s]
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 8447.15it/s]
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 9165.02it/s]
+Loading weights: 100%|██████████| 770/770 [00:00<00:00, 7958.46it/s]
+Loading weights: 100%|██████████| 770/770 [00:00<00:00, 7940.12it/s]
+Loading weights: 100%|██████████| 770/770 [00:00<00:00, 8092.73it/s]
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 9925.61it/s]
+Loading weights: 100%|██████████| 770/770 [00:00<00:00, 8728.33it/s]
+Loading weights: 100%|██████████| 770/770 [00:00<00:00, 7961.15it/s]
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 9686.82it/s]
+Loading weights: 100%|██████████| 770/770 [00:00<00:00, 8167.84it/s]
+Loading weights: 100%|██████████| 770/770 [00:00<00:00, 8043.53it/s]
+Loading weights: 100%|██████████| 770/770 [00:00<00:00, 9001.33it/s]
+Loading weights: 100%|██████████| 770/770 [00:00<00:00, 8253.23it/s]
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  77%|███████▋  | 590/770 [00:00<00:00, 5895.83it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 6448.42it/s]
+Loading weights:  75%|███████▍  | 574/770 [00:00<00:00, 5733.10it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 6726.01it/s]
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:28:59,320 INFO [docling_easyocr] 1/4270 done in 69.1s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:29:08,801 INFO [docling_easyocr] 2/4270 done in 77.8s: elcomercio_2015-04-23_1
+2026-09-13 20:29:08,801 INFO [docling_easyocr] 3/4270 done in 75.8s: elcomercio_2015-04-23_1
+2026-09-13 20:29:09,432 INFO [docling_easyocr] 4/4270 done in 78.4s: elcomercio_2015-04-23_1
+2026-09-13 20:29:09,432 INFO [docling_easyocr] 5/4270 done in 66.1s: elcomercio_2015-04-23_1
+2026-09-13 20:29:09,432 INFO [docling_easyocr] 6/4270 done in 65.4s: elcomercio_2015-04-23_1
+2026-09-13 20:29:11,320 INFO [docling_easyocr] 7/4270 done in 80.0s: elcomercio_2015-04-23_1
+2026-09-13 20:29:11,320 INFO [docling_easyocr] 8/4270 done in 76.9s: elcomercio_2015-04-23_1
+2026-09-13 20:29:11,320 INFO [docling_easyocr] 9/4270 done in 78.2s: elcomercio_2015-04-23_1
+2026-09-13 20:29:11,320 INFO [docling_easyocr] 10/4270 done in 79.1s: elcomercio_2015-04-23_1
+2026-09-13 20:29:11,320 INFO [docling_easyocr] 11/4270 done in 73.4s: elcomercio_2015-04-23_1
+2026-09-13 20:29:11,320 INFO [docling_easyocr] 12/4270 done in 74.3s: elcomercio_2015-04-23_1
+2026-09-13 20:29:11,320 INFO [docling_easyocr] 13/4270 done in 61.7s: elcomercio_2015-04-23_1
+2026-09-13 20:29:11,320 INFO [docling_easyocr] 14/4270 done in 69.9s: elcomercio_2015-04-23_1
+2026-09-13 20:29:11,320 INFO [docling_easyocr] 15/4270 done in 77.5s: elcomercio_2015-04-23_1
+2026-09-13 20:29:11,320 INFO [docling_easyocr] 16/4270 done in 78.2s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:29:37,227 INFO [docling_easyocr] 17/4270 done in 43.4s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:29:43,661 INFO [docling_easyocr] 18/4270 done in 47.0s: elcomercio_2015-04-23_1
+2026-09-13 20:29:43,661 INFO [docling_easyocr] 19/4270 done in 46.3s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:29:45,943 INFO [docling_easyocr] 20/4270 done in 46.6s: elcomercio_2015-04-23_1
+2026-09-13 20:29:45,943 INFO [docling_easyocr] 21/4270 done in 38.8s: elcomercio_2015-04-23_1
+2026-09-13 20:29:47,627 INFO [docling_easyocr] 22/4270 done in 42.2s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:29:54,661 INFO [docling_easyocr] 23/4270 done in 48.2s: elcomercio_2015-04-23_1
+2026-09-13 20:29:58,707 INFO [docling_easyocr] 24/4270 done in 51.9s: elcomercio_2015-04-23_1
+2026-09-13 20:29:58,708 INFO [docling_easyocr] 25/4270 done in 46.9s: elcomercio_2015-04-23_1
+2026-09-13 20:30:00,882 INFO [docling_easyocr] 26/4270 done in 52.1s: elcomercio_2015-04-23_1
+2026-09-13 20:30:00,883 INFO [docling_easyocr] 27/4270 done in 46.6s: elcomercio_2015-04-23_1
+2026-09-13 20:30:00,883 INFO [docling_easyocr] 28/4270 done in 47.2s: elcomercio_2015-04-23_1
+2026-09-13 20:30:00,883 INFO [docling_easyocr] 29/4270 done in 37.5s: elcomercio_2015-04-23_1
+2026-09-13 20:30:00,883 INFO [docling_easyocr] 30/4270 done in 40.8s: elcomercio_2015-04-23_1
+2026-09-13 20:30:03,328 INFO [docling_easyocr] 31/4270 done in 52.3s: elcomercio_2015-04-23_1
+2026-09-13 20:30:03,373 INFO [docling_easyocr] 32/4270 done in 52.1s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:30:22,312 INFO [docling_easyocr] 33/4270 done in 45.1s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:30:27,918 INFO [docling_easyocr] 34/4270 done in 47.0s: elcomercio_2015-04-23_1
+2026-09-13 20:30:27,918 INFO [docling_easyocr] 35/4270 done in 42.7s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:30:28,732 INFO [docling_easyocr] 36/4270 done in 45.1s: elcomercio_2015-04-23_1
+2026-09-13 20:30:28,733 INFO [docling_easyocr] 37/4270 done in 33.1s: elcomercio_2015-04-23_1
+2026-09-13 20:30:28,733 INFO [docling_easyocr] 38/4270 done in 38.4s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:30:32,045 INFO [docling_easyocr] 39/4270 done in 44.4s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:30:38,434 INFO [docling_easyocr] 40/4270 done in 47.3s: elcomercio_2015-04-23_1
+2026-09-13 20:30:38,435 INFO [docling_easyocr] 41/4270 done in 40.5s: elcomercio_2015-04-23_1
+2026-09-13 20:30:40,307 INFO [docling_easyocr] 42/4270 done in 44.7s: elcomercio_2015-04-23_1
+2026-09-13 20:30:40,307 INFO [docling_easyocr] 43/4270 done in 43.0s: elcomercio_2015-04-23_1
+2026-09-13 20:30:41,306 INFO [docling_easyocr] 44/4270 done in 44.4s: elcomercio_2015-04-23_1
+2026-09-13 20:30:41,306 INFO [docling_easyocr] 45/4270 done in 34.9s: elcomercio_2015-04-23_1
+2026-09-13 20:30:41,306 INFO [docling_easyocr] 46/4270 done in 35.3s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:30:50,319 INFO [docling_easyocr] 47/4270 done in 47.0s: elcomercio_2015-04-23_1
+2026-09-13 20:30:50,915 INFO [docling_easyocr] 48/4270 done in 47.5s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:31:03,883 INFO [docling_easyocr] 49/4270 done in 44.8s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:31:06,500 INFO [docling_easyocr] 50/4270 done in 44.2s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:31:15,147 INFO [docling_easyocr] 51/4270 done in 49.1s: elcomercio_2015-04-23_1
+2026-09-13 20:31:15,147 INFO [docling_easyocr] 52/4270 done in 47.4s: elcomercio_2015-04-23_1
+2026-09-13 20:31:15,147 INFO [docling_easyocr] 53/4270 done in 34.9s: elcomercio_2015-04-23_1
+2026-09-13 20:31:15,147 INFO [docling_easyocr] 54/4270 done in 36.6s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:31:17,203 INFO [docling_easyocr] 55/4270 done in 45.2s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:31:23,470 INFO [docling_easyocr] 56/4270 done in 49.9s: elcomercio_2015-04-23_1
+2026-09-13 20:31:23,471 INFO [docling_easyocr] 57/4270 done in 45.5s: elcomercio_2015-04-23_1
+2026-09-13 20:31:23,471 INFO [docling_easyocr] 58/4270 done in 45.8s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:31:30,818 INFO [docling_easyocr] 59/4270 done in 52.4s: elcomercio_2015-04-23_1
+2026-09-13 20:31:30,818 INFO [docling_easyocr] 60/4270 done in 48.6s: elcomercio_2015-04-23_1
+2026-09-13 20:31:30,818 INFO [docling_easyocr] 61/4270 done in 34.2s: elcomercio_2015-04-23_1
+2026-09-13 20:31:30,818 INFO [docling_easyocr] 62/4270 done in 36.3s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:31:39,527 INFO [docling_easyocr] 63/4270 done in 49.2s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:31:40,025 INFO [docling_easyocr] 64/4270 done in 49.1s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:31:48,890 INFO [docling_easyocr] 65/4270 done in 46.1s: elcomercio_2015-04-23_1
+2026-09-13 20:31:49,406 INFO [docling_easyocr] 66/4270 done in 45.5s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:31:56,209 INFO [docling_easyocr] 67/4270 done in 50.9s: elcomercio_2015-04-23_1
+2026-09-13 20:31:56,209 INFO [docling_easyocr] 68/4270 done in 48.4s: elcomercio_2015-04-23_1
+2026-09-13 20:31:56,209 INFO [docling_easyocr] 69/4270 done in 34.0s: elcomercio_2015-04-23_1
+2026-09-13 20:31:56,209 INFO [docling_easyocr] 70/4270 done in 39.2s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:32:05,802 INFO [docling_easyocr] 71/4270 done in 50.7s: elcomercio_2015-04-23_1
+2026-09-13 20:32:05,803 INFO [docling_easyocr] 72/4270 done in 45.5s: elcomercio_2015-04-23_1
+2026-09-13 20:32:05,803 INFO [docling_easyocr] 73/4270 done in 45.7s: elcomercio_2015-04-23_1
+2026-09-13 20:32:07,055 INFO [docling_easyocr] 74/4270 done in 46.4s: elcomercio_2015-04-23_1
+2026-09-13 20:32:07,055 INFO [docling_easyocr] 75/4270 done in 43.1s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:32:08,864 INFO [docling_easyocr] 76/4270 done in 45.4s: elcomercio_2015-04-23_1
+2026-09-13 20:32:08,864 INFO [docling_easyocr] 77/4270 done in 34.1s: elcomercio_2015-04-23_1
+2026-09-13 20:32:08,864 INFO [docling_easyocr] 78/4270 done in 37.2s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:32:29,873 INFO [docling_easyocr] 79/4270 done in 50.3s: elcomercio_2015-04-23_1
+2026-09-13 20:32:29,873 INFO [docling_easyocr] 80/4270 done in 49.1s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:32:34,293 INFO [docling_easyocr] 81/4270 done in 46.6s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:32:36,263 INFO [docling_easyocr] 82/4270 done in 47.4s: elcomercio_2015-04-23_1
+2026-09-13 20:32:36,263 INFO [docling_easyocr] 83/4270 done in 40.4s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:32:39,523 INFO [docling_easyocr] 84/4270 done in 45.8s: elcomercio_2015-04-23_1
+2026-09-13 20:32:39,523 INFO [docling_easyocr] 85/4270 done in 33.8s: elcomercio_2015-04-23_1
+2026-09-13 20:32:39,523 INFO [docling_easyocr] 86/4270 done in 38.9s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:32:48,681 INFO [docling_easyocr] 87/4270 done in 47.0s: elcomercio_2015-04-23_1
+2026-09-13 20:32:50,221 INFO [docling_easyocr] 88/4270 done in 47.5s: elcomercio_2015-04-23_1
+2026-09-13 20:32:50,221 INFO [docling_easyocr] 89/4270 done in 45.7s: elcomercio_2015-04-23_1
+2026-09-13 20:32:53,344 INFO [docling_easyocr] 90/4270 done in 48.3s: elcomercio_2015-04-23_1
+2026-09-13 20:32:53,344 INFO [docling_easyocr] 91/4270 done in 42.7s: elcomercio_2015-04-23_1
+2026-09-13 20:32:53,344 INFO [docling_easyocr] 92/4270 done in 42.3s: elcomercio_2015-04-23_1
+2026-09-13 20:32:53,344 INFO [docling_easyocr] 93/4270 done in 38.1s: elcomercio_2015-04-23_1
+2026-09-13 20:32:53,344 INFO [docling_easyocr] 94/4270 done in 38.7s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:33:06,637 INFO [docling_easyocr] 95/4270 done in 37.9s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:33:08,979 INFO [docling_easyocr] 96/4270 done in 39.8s: elcomercio_2015-04-23_1
+2026-09-13 20:33:08,979 INFO [docling_easyocr] 97/4270 done in 34.7s: elcomercio_2015-04-23_1
+2026-09-13 20:33:08,979 INFO [docling_easyocr] 98/4270 done in 38.9s: elcomercio_2015-04-23_1
+2026-09-13 20:33:10,602 INFO [docling_easyocr] 99/4270 done in 36.3s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:33:14,073 INFO [docling_easyocr] 100/4270 done in 38.9s: elcomercio_2015-04-23_1
+2026-09-13 20:33:14,104 INFO [docling_easyocr] 101/4270 done in 36.9s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:33:16,484 INFO [docling_easyocr] 102/4270 done in 37.0s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:33:27,009 INFO [docling_easyocr] 103/4270 done in 40.9s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:33:27,672 INFO [docling_easyocr] 104/4270 done in 40.1s: elcomercio_2015-04-23_1
+2026-09-13 20:33:27,673 INFO [docling_easyocr] 105/4270 done in 37.8s: elcomercio_2015-04-23_1
+2026-09-13 20:33:27,673 INFO [docling_easyocr] 106/4270 done in 38.6s: elcomercio_2015-04-23_1
+2026-09-13 20:33:27,673 INFO [docling_easyocr] 107/4270 done in 36.3s: elcomercio_2015-04-23_1
+2026-09-13 20:33:27,673 INFO [docling_easyocr] 108/4270 done in 35.3s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:33:28,776 INFO [docling_easyocr] 109/4270 done in 38.6s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:33:34,629 INFO [docling_easyocr] 110/4270 done in 41.3s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:33:47,804 INFO [docling_easyocr] 111/4270 done in 43.3s: elcomercio_2015-04-23_1
+2026-09-13 20:33:47,804 INFO [docling_easyocr] 112/4270 done in 39.8s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:33:50,208 INFO [docling_easyocr] 113/4270 done in 41.4s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:33:50,719 INFO [docling_easyocr] 114/4270 done in 41.7s: elcomercio_2015-04-23_1
+2026-09-13 20:33:52,009 INFO [docling_easyocr] 115/4270 done in 41.4s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:33:55,342 INFO [docling_easyocr] 116/4270 done in 42.1s: elcomercio_2015-04-23_1
+2026-09-13 20:33:55,342 INFO [docling_easyocr] 117/4270 done in 39.8s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:33:59,428 INFO [docling_easyocr] 118/4270 done in 42.9s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:34:18,637 INFO [docling_easyocr] 119/4270 done in 54.0s: elcomercio_2015-04-23_1
+2026-09-13 20:34:19,554 INFO [docling_easyocr] 120/4270 done in 54.3s: elcomercio_2015-04-23_1
+2026-09-13 20:34:23,875 INFO [docling_easyocr] 121/4270 done in 57.5s: elcomercio_2015-04-23_1
+2026-09-13 20:34:24,621 INFO [docling_easyocr] 122/4270 done in 57.6s: elcomercio_2015-04-23_1
+2026-09-13 20:34:24,622 INFO [docling_easyocr] 123/4270 done in 53.9s: elcomercio_2015-04-23_1
+2026-09-13 20:34:24,622 INFO [docling_easyocr] 124/4270 done in 53.9s: elcomercio_2015-04-23_1
+2026-09-13 20:34:24,622 INFO [docling_easyocr] 125/4270 done in 41.7s: elcomercio_2015-04-23_1
+2026-09-13 20:34:24,622 INFO [docling_easyocr] 126/4270 done in 45.4s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:34:44,979 INFO [docling_easyocr] 127/4270 done in 58.5s: elcomercio_2015-04-23_1
+2026-09-13 20:34:44,979 INFO [docling_easyocr] 128/4270 done in 54.8s: elcomercio_2015-04-23_1
+2026-09-13 20:34:50,656 INFO [docling_easyocr] 129/4270 done in 60.4s: elcomercio_2015-04-23_1
+2026-09-13 20:34:50,657 INFO [docling_easyocr] 130/4270 done in 59.2s: elcomercio_2015-04-23_1
+2026-09-13 20:34:50,657 INFO [docling_easyocr] 131/4270 done in 55.3s: elcomercio_2015-04-23_1
+2026-09-13 20:34:50,657 INFO [docling_easyocr] 132/4270 done in 56.8s: elcomercio_2015-04-23_1
+2026-09-13 20:34:50,657 INFO [docling_easyocr] 133/4270 done in 40.3s: elcomercio_2015-04-23_1
+2026-09-13 20:34:50,657 INFO [docling_easyocr] 134/4270 done in 43.6s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:35:07,194 INFO [docling_easyocr] 135/4270 done in 56.7s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:35:12,667 INFO [docling_easyocr] 136/4270 done in 54.0s: elcomercio_2015-04-23_1
+2026-09-13 20:35:12,667 INFO [docling_easyocr] 137/4270 done in 50.4s: elcomercio_2015-04-23_1
+2026-09-13 20:35:16,763 INFO [docling_easyocr] 138/4270 done in 56.7s: elcomercio_2015-04-23_1
+2026-09-13 20:35:16,764 INFO [docling_easyocr] 139/4270 done in 53.8s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:35:19,672 INFO [docling_easyocr] 140/4270 done in 58.1s: elcomercio_2015-04-23_1
+2026-09-13 20:35:19,673 INFO [docling_easyocr] 141/4270 done in 42.4s: elcomercio_2015-04-23_1
+2026-09-13 20:35:19,673 INFO [docling_easyocr] 142/4270 done in 44.2s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:35:29,033 INFO [docling_easyocr] 143/4270 done in 53.4s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:35:36,882 INFO [docling_easyocr] 144/4270 done in 54.3s: elcomercio_2015-04-23_1
+2026-09-13 20:35:36,956 INFO [docling_easyocr] 145/4270 done in 53.9s: elcomercio_2015-04-23_1
+2026-09-13 20:35:37,495 INFO [docling_easyocr] 146/4270 done in 52.5s: elcomercio_2015-04-23_1
+2026-09-13 20:35:45,725 INFO [docling_easyocr] 147/4270 done in 58.4s: elcomercio_2015-04-23_1
+2026-09-13 20:35:50,788 INFO [docling_easyocr] 148/4270 done in 60.8s: elcomercio_2015-04-23_1
+2026-09-13 20:35:50,788 INFO [docling_easyocr] 149/4270 done in 41.9s: elcomercio_2015-04-23_1
+2026-09-13 20:35:50,788 INFO [docling_easyocr] 150/4270 done in 46.2s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:36:02,039 INFO [docling_easyocr] 151/4270 done in 55.8s: elcomercio_2015-04-23_1
+2026-09-13 20:36:02,121 INFO [docling_easyocr] 152/4270 done in 54.9s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:36:05,287 INFO [docling_easyocr] 153/4270 done in 56.5s: elcomercio_2015-04-23_1
+2026-09-13 20:36:05,287 INFO [docling_easyocr] 154/4270 done in 49.9s: elcomercio_2015-04-23_1
+2026-09-13 20:36:05,287 INFO [docling_easyocr] 155/4270 done in 52.1s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:36:10,862 INFO [docling_easyocr] 156/4270 done in 55.8s: elcomercio_2015-04-23_1
+2026-09-13 20:36:10,862 INFO [docling_easyocr] 157/4270 done in 40.2s: elcomercio_2015-04-23_1
+2026-09-13 20:36:10,862 INFO [docling_easyocr] 158/4270 done in 45.3s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:36:18,734 INFO [docling_easyocr] 159/4270 done in 49.7s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:36:26,503 INFO [docling_easyocr] 160/4270 done in 54.0s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:36:32,861 INFO [docling_easyocr] 161/4270 done in 56.0s: elcomercio_2015-04-23_1
+2026-09-13 20:36:32,862 INFO [docling_easyocr] 162/4270 done in 50.8s: elcomercio_2015-04-23_1
+2026-09-13 20:36:32,955 INFO [docling_easyocr] 163/4270 done in 56.0s: elcomercio_2015-04-23_1
+2026-09-13 20:36:36,703 INFO [docling_easyocr] 164/4270 done in 59.2s: elcomercio_2015-04-23_1
+2026-09-13 20:36:36,704 INFO [docling_easyocr] 165/4270 done in 40.3s: elcomercio_2015-04-23_1
+2026-09-13 20:36:36,704 INFO [docling_easyocr] 166/4270 done in 43.4s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:36:47,019 INFO [docling_easyocr] 167/4270 done in 50.1s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:36:49,114 INFO [docling_easyocr] 168/4270 done in 49.2s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:36:57,841 INFO [docling_easyocr] 169/4270 done in 55.8s: elcomercio_2015-04-23_1
+2026-09-13 20:36:57,841 INFO [docling_easyocr] 170/4270 done in 53.2s: elcomercio_2015-04-23_1
+2026-09-13 20:36:57,841 INFO [docling_easyocr] 171/4270 done in 51.6s: elcomercio_2015-04-23_1
+2026-09-13 20:37:02,027 INFO [docling_easyocr] 172/4270 done in 57.1s: elcomercio_2015-04-23_1
+2026-09-13 20:37:02,028 INFO [docling_easyocr] 173/4270 done in 41.9s: elcomercio_2015-04-23_1
+2026-09-13 20:37:02,028 INFO [docling_easyocr] 174/4270 done in 44.4s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:37:14,341 INFO [docling_easyocr] 175/4270 done in 55.6s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:37:17,825 INFO [docling_easyocr] 176/4270 done in 51.8s: elcomercio_2015-04-23_1
+2026-09-13 20:37:17,825 INFO [docling_easyocr] 177/4270 done in 50.9s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:37:22,964 INFO [docling_easyocr] 178/4270 done in 55.3s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:37:30,393 INFO [docling_easyocr] 179/4270 done in 57.5s: elcomercio_2015-04-23_1
+2026-09-13 20:37:30,958 INFO [docling_easyocr] 180/4270 done in 58.0s: elcomercio_2015-04-23_1
+2026-09-13 20:37:30,958 INFO [docling_easyocr] 181/4270 done in 41.6s: elcomercio_2015-04-23_1
+2026-09-13 20:37:30,958 INFO [docling_easyocr] 182/4270 done in 45.1s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:37:38,359 INFO [docling_easyocr] 183/4270 done in 51.3s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:37:42,433 INFO [docling_easyocr] 184/4270 done in 55.2s: elcomercio_2015-04-23_1
+2026-09-13 20:37:42,433 INFO [docling_easyocr] 185/4270 done in 53.0s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:37:49,798 INFO [docling_easyocr] 186/4270 done in 54.6s: elcomercio_2015-04-23_1
+2026-09-13 20:37:49,798 INFO [docling_easyocr] 187/4270 done in 52.8s: elcomercio_2015-04-23_1
+2026-09-13 20:37:49,798 INFO [docling_easyocr] 188/4270 done in 51.4s: elcomercio_2015-04-23_1
+2026-09-13 20:37:49,798 INFO [docling_easyocr] 189/4270 done in 42.7s: elcomercio_2015-04-23_1
+2026-09-13 20:37:49,798 INFO [docling_easyocr] 190/4270 done in 44.9s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:38:03,977 INFO [docling_easyocr] 191/4270 done in 49.6s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:38:08,657 INFO [docling_easyocr] 192/4270 done in 52.9s: elcomercio_2015-04-23_1
+2026-09-13 20:38:08,657 INFO [docling_easyocr] 193/4270 done in 49.1s: elcomercio_2015-04-23_1
+2026-09-13 20:38:08,658 INFO [docling_easyocr] 194/4270 done in 48.1s: elcomercio_2015-04-23_1
+2026-09-13 20:38:10,376 INFO [docling_easyocr] 195/4270 done in 48.6s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:38:15,504 INFO [docling_easyocr] 196/4270 done in 52.5s: elcomercio_2015-04-23_1
+2026-09-13 20:38:15,505 INFO [docling_easyocr] 197/4270 done in 40.8s: elcomercio_2015-04-23_1
+2026-09-13 20:38:15,505 INFO [docling_easyocr] 198/4270 done in 42.6s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:38:29,486 INFO [docling_easyocr] 199/4270 done in 51.1s: elcomercio_2015-04-23_1
+2026-09-13 20:38:33,408 INFO [docling_easyocr] 200/4270 done in 52.9s: elcomercio_2015-04-23_1
+2026-09-13 20:38:33,506 INFO [docling_easyocr] 201/4270 done in 48.4s: elcomercio_2015-04-23_1
+2026-09-13 20:38:36,264 INFO [docling_easyocr] 202/4270 done in 53.8s: elcomercio_2015-04-23_1
+2026-09-13 20:38:36,877 INFO [docling_easyocr] 203/4270 done in 50.0s: elcomercio_2015-04-23_1
+2026-09-13 20:38:36,877 INFO [docling_easyocr] 204/4270 done in 47.1s: elcomercio_2015-04-23_1
+2026-09-13 20:38:36,877 INFO [docling_easyocr] 205/4270 done in 38.0s: elcomercio_2015-04-23_1
+2026-09-13 20:38:36,877 INFO [docling_easyocr] 206/4270 done in 42.2s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:38:52,580 INFO [docling_easyocr] 207/4270 done in 48.6s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:38:58,413 INFO [docling_easyocr] 208/4270 done in 52.5s: elcomercio_2015-04-23_1
+2026-09-13 20:38:58,414 INFO [docling_easyocr] 209/4270 done in 51.2s: elcomercio_2015-04-23_1
+2026-09-13 20:39:02,445 INFO [docling_easyocr] 210/4270 done in 53.8s: elcomercio_2015-04-23_1
+2026-09-13 20:39:02,445 INFO [docling_easyocr] 211/4270 done in 50.7s: elcomercio_2015-04-23_1
+2026-09-13 20:39:02,445 INFO [docling_easyocr] 212/4270 done in 50.3s: elcomercio_2015-04-23_1
+2026-09-13 20:39:02,445 INFO [docling_easyocr] 213/4270 done in 38.2s: elcomercio_2015-04-23_1
+2026-09-13 20:39:02,445 INFO [docling_easyocr] 214/4270 done in 45.6s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:39:19,825 INFO [docling_easyocr] 215/4270 done in 53.6s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:39:27,506 INFO [docling_easyocr] 216/4270 done in 58.0s: elcomercio_2015-04-23_1
+2026-09-13 20:39:27,506 INFO [docling_easyocr] 217/4270 done in 52.1s: elcomercio_2015-04-23_1
+2026-09-13 20:39:27,506 INFO [docling_easyocr] 218/4270 done in 54.4s: elcomercio_2015-04-23_1
+2026-09-13 20:39:27,506 INFO [docling_easyocr] 219/4270 done in 52.6s: elcomercio_2015-04-23_1
+2026-09-13 20:39:27,506 INFO [docling_easyocr] 220/4270 done in 51.0s: elcomercio_2015-04-23_1
+2026-09-13 20:39:27,506 INFO [docling_easyocr] 221/4270 done in 41.8s: elcomercio_2015-04-23_1
+2026-09-13 20:39:27,506 INFO [docling_easyocr] 222/4270 done in 47.1s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:39:46,514 INFO [docling_easyocr] 223/4270 done in 54.8s: elcomercio_2015-04-23_1
+2026-09-13 20:39:46,514 INFO [docling_easyocr] 224/4270 done in 50.1s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:39:49,843 INFO [docling_easyocr] 225/4270 done in 52.2s: elcomercio_2015-04-23_1
+2026-09-13 20:39:54,075 INFO [docling_easyocr] 226/4270 done in 55.7s: elcomercio_2015-04-23_1
+2026-09-13 20:39:56,479 INFO [docling_easyocr] 227/4270 done in 55.4s: elcomercio_2015-04-23_1
+2026-09-13 20:39:57,295 INFO [docling_easyocr] 228/4270 done in 56.2s: elcomercio_2015-04-23_1
+2026-09-13 20:39:57,295 INFO [docling_easyocr] 229/4270 done in 39.4s: elcomercio_2015-04-23_1
+2026-09-13 20:39:57,295 INFO [docling_easyocr] 230/4270 done in 45.4s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:40:13,572 INFO [docling_easyocr] 231/4270 done in 55.5s: elcomercio_2015-04-23_1
+2026-09-13 20:40:14,343 INFO [docling_easyocr] 232/4270 done in 54.5s: elcomercio_2015-04-23_1
+2026-09-13 20:40:14,343 INFO [docling_easyocr] 233/4270 done in 49.3s: elcomercio_2015-04-23_1
+2026-09-13 20:40:20,314 INFO [docling_easyocr] 234/4270 done in 56.3s: elcomercio_2015-04-23_1
+2026-09-13 20:40:20,314 INFO [docling_easyocr] 235/4270 done in 47.6s: elcomercio_2015-04-23_1
+2026-09-13 20:40:20,461 INFO [docling_easyocr] 236/4270 done in 54.5s: elcomercio_2015-04-23_1
+2026-09-13 20:40:20,461 INFO [docling_easyocr] 237/4270 done in 41.4s: elcomercio_2015-04-23_1
+2026-09-13 20:40:20,461 INFO [docling_easyocr] 238/4270 done in 46.3s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:40:40,041 INFO [docling_easyocr] 239/4270 done in 59.1s: elcomercio_2015-04-23_1
+2026-09-13 20:40:40,041 INFO [docling_easyocr] 240/4270 done in 53.0s: elcomercio_2015-04-23_1
+2026-09-13 20:40:41,917 INFO [docling_easyocr] 241/4270 done in 55.4s: elcomercio_2015-04-23_1
+2026-09-13 20:40:44,185 INFO [docling_easyocr] 242/4270 done in 56.3s: elcomercio_2015-04-23_1
+2026-09-13 20:40:44,185 INFO [docling_easyocr] 243/4270 done in 48.7s: elcomercio_2015-04-23_1
+2026-09-13 20:40:47,043 INFO [docling_easyocr] 244/4270 done in 53.0s: elcomercio_2015-04-23_1
+2026-09-13 20:40:47,043 INFO [docling_easyocr] 245/4270 done in 42.1s: elcomercio_2015-04-23_1
+2026-09-13 20:40:47,043 INFO [docling_easyocr] 246/4270 done in 44.7s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:41:04,962 INFO [docling_easyocr] 247/4270 done in 57.2s: elcomercio_2015-04-23_1
+2026-09-13 20:41:05,744 INFO [docling_easyocr] 248/4270 done in 53.8s: elcomercio_2015-04-23_1
+2026-09-13 20:41:07,756 INFO [docling_easyocr] 249/4270 done in 54.3s: elcomercio_2015-04-23_1
+2026-09-13 20:41:11,047 INFO [docling_easyocr] 250/4270 done in 57.5s: elcomercio_2015-04-23_1
+2026-09-13 20:41:11,070 INFO [docling_easyocr] 251/4270 done in 54.0s: elcomercio_2015-04-23_1
+2026-09-13 20:41:11,070 INFO [docling_easyocr] 252/4270 done in 54.5s: elcomercio_2015-04-23_1
+2026-09-13 20:41:11,070 INFO [docling_easyocr] 253/4270 done in 43.4s: elcomercio_2015-04-23_1
+2026-09-13 20:41:11,070 INFO [docling_easyocr] 254/4270 done in 44.8s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:41:26,243 INFO [docling_easyocr] 255/4270 done in 50.5s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:41:31,608 INFO [docling_easyocr] 256/4270 done in 53.0s: elcomercio_2015-04-23_1
+2026-09-13 20:41:31,608 INFO [docling_easyocr] 257/4270 done in 51.6s: elcomercio_2015-04-23_1
+2026-09-13 20:41:36,699 INFO [docling_easyocr] 258/4270 done in 56.7s: elcomercio_2015-04-23_1
+2026-09-13 20:41:36,700 INFO [docling_easyocr] 259/4270 done in 51.4s: elcomercio_2015-04-23_1
+2026-09-13 20:41:36,700 INFO [docling_easyocr] 260/4270 done in 51.7s: elcomercio_2015-04-23_1
+2026-09-13 20:41:36,700 INFO [docling_easyocr] 261/4270 done in 40.5s: elcomercio_2015-04-23_1
+2026-09-13 20:41:36,700 INFO [docling_easyocr] 262/4270 done in 41.4s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:41:57,620 INFO [docling_easyocr] 263/4270 done in 53.9s: elcomercio_2015-04-23_1
+2026-09-13 20:41:57,763 INFO [docling_easyocr] 264/4270 done in 52.8s: elcomercio_2015-04-23_1
+2026-09-13 20:42:01,093 INFO [docling_easyocr] 265/4270 done in 55.9s: elcomercio_2015-04-23_1
+2026-09-13 20:42:01,093 INFO [docling_easyocr] 266/4270 done in 50.0s: elcomercio_2015-04-23_1
+2026-09-13 20:42:01,093 INFO [docling_easyocr] 267/4270 done in 48.7s: elcomercio_2015-04-23_1
+2026-09-13 20:42:03,117 INFO [docling_easyocr] 268/4270 done in 55.3s: elcomercio_2015-04-23_1
+2026-09-13 20:42:03,117 INFO [docling_easyocr] 269/4270 done in 40.7s: elcomercio_2015-04-23_1
+2026-09-13 20:42:03,117 INFO [docling_easyocr] 270/4270 done in 43.3s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:42:19,763 INFO [docling_easyocr] 271/4270 done in 55.1s: elcomercio_2015-04-23_1
+2026-09-13 20:42:19,763 INFO [docling_easyocr] 272/4270 done in 51.3s: elcomercio_2015-04-23_1
+2026-09-13 20:42:23,332 INFO [docling_easyocr] 273/4270 done in 54.8s: elcomercio_2015-04-23_1
+2026-09-13 20:42:26,679 INFO [docling_easyocr] 274/4270 done in 56.5s: elcomercio_2015-04-23_1
+2026-09-13 20:42:27,179 INFO [docling_easyocr] 275/4270 done in 55.6s: elcomercio_2015-04-23_1
+2026-09-13 20:42:28,745 INFO [docling_easyocr] 276/4270 done in 55.5s: elcomercio_2015-04-23_1
+2026-09-13 20:42:28,745 INFO [docling_easyocr] 277/4270 done in 38.7s: elcomercio_2015-04-23_1
+2026-09-13 20:42:28,745 INFO [docling_easyocr] 278/4270 done in 45.2s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:42:42,333 INFO [docling_easyocr] 279/4270 done in 52.8s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:42:47,337 INFO [docling_easyocr] 280/4270 done in 53.0s: elcomercio_2015-04-23_1
+2026-09-13 20:42:47,338 INFO [docling_easyocr] 281/4270 done in 49.7s: elcomercio_2015-04-23_1
+2026-09-13 20:42:47,338 INFO [docling_easyocr] 282/4270 done in 49.5s: elcomercio_2015-04-23_1
+2026-09-13 20:42:50,131 INFO [docling_easyocr] 283/4270 done in 52.5s: elcomercio_2015-04-23_1
+2026-09-13 20:42:51,492 INFO [docling_easyocr] 284/4270 done in 53.7s: elcomercio_2015-04-23_1
+2026-09-13 20:42:51,492 INFO [docling_easyocr] 285/4270 done in 41.1s: elcomercio_2015-04-23_1
+2026-09-13 20:42:51,492 INFO [docling_easyocr] 286/4270 done in 42.5s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:43:06,406 INFO [docling_easyocr] 287/4270 done in 54.0s: elcomercio_2015-04-23_1
+2026-09-13 20:43:06,406 INFO [docling_easyocr] 288/4270 done in 47.2s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:43:12,100 INFO [docling_easyocr] 289/4270 done in 52.3s: elcomercio_2015-04-23_1
+2026-09-13 20:43:15,254 INFO [docling_easyocr] 290/4270 done in 53.3s: elcomercio_2015-04-23_1
+2026-09-13 20:43:15,254 INFO [docling_easyocr] 291/4270 done in 46.4s: elcomercio_2015-04-23_1
+2026-09-13 20:43:18,974 INFO [docling_easyocr] 292/4270 done in 52.3s: elcomercio_2015-04-23_1
+2026-09-13 20:43:18,974 INFO [docling_easyocr] 293/4270 done in 35.2s: elcomercio_2015-04-23_1
+2026-09-13 20:43:18,975 INFO [docling_easyocr] 294/4270 done in 37.4s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:43:34,633 INFO [docling_easyocr] 295/4270 done in 52.4s: elcomercio_2015-04-23_1
+2026-09-13 20:43:34,634 INFO [docling_easyocr] 296/4270 done in 49.1s: elcomercio_2015-04-23_1
+2026-09-13 20:43:34,634 INFO [docling_easyocr] 297/4270 done in 46.6s: elcomercio_2015-04-23_1
+2026-09-13 20:43:34,634 INFO [docling_easyocr] 298/4270 done in 48.8s: elcomercio_2015-04-23_1
+2026-09-13 20:43:34,634 INFO [docling_easyocr] 299/4270 done in 42.9s: elcomercio_2015-04-23_1
+2026-09-13 20:43:34,634 INFO [docling_easyocr] 300/4270 done in 47.0s: elcomercio_2015-04-23_1
+2026-09-13 20:43:34,658 INFO [docling_easyocr] 301/4270 done in 36.9s: elcomercio_2015-04-23_1
+2026-09-13 20:43:34,658 INFO [docling_easyocr] 302/4270 done in 36.9s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:43:48,896 INFO [docling_easyocr] 303/4270 done in 46.5s: elcomercio_2015-04-23_1
+2026-09-13 20:43:50,680 INFO [docling_easyocr] 304/4270 done in 45.9s: elcomercio_2015-04-23_1
+2026-09-13 20:43:51,775 INFO [docling_easyocr] 305/4270 done in 45.6s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:43:58,093 INFO [docling_easyocr] 306/4270 done in 51.7s: elcomercio_2015-04-23_1
+2026-09-13 20:43:58,093 INFO [docling_easyocr] 307/4270 done in 44.3s: elcomercio_2015-04-23_1
+2026-09-13 20:44:01,962 INFO [docling_easyocr] 308/4270 done in 49.9s: elcomercio_2015-04-23_1
+2026-09-13 20:44:01,962 INFO [docling_easyocr] 309/4270 done in 38.1s: elcomercio_2015-04-23_1
+2026-09-13 20:44:01,962 INFO [docling_easyocr] 310/4270 done in 38.7s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:44:06,016 INFO [docling_easyocr] 311/4270 done in 39.0s: elcomercio_2015-04-23_1
+2026-09-13 20:44:06,016 INFO [docling_easyocr] 312/4270 done in 34.6s: elcomercio_2015-04-23_1
+2026-09-13 20:44:06,016 INFO [docling_easyocr] 313/4270 done in 33.4s: elcomercio_2015-04-23_1
+2026-09-13 20:44:06,016 INFO [docling_easyocr] 314/4270 done in 33.2s: elcomercio_2015-04-23_1
+2026-09-13 20:44:06,016 INFO [docling_easyocr] 315/4270 done in 33.2s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:44:11,224 INFO [docling_easyocr] 316/4270 done in 36.9s: elcomercio_2015-04-23_1
+2026-09-13 20:44:11,225 INFO [docling_easyocr] 317/4270 done in 33.4s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:44:12,571 INFO [docling_easyocr] 318/4270 done in 37.9s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:44:25,474 INFO [docling_easyocr] 319/4270 done in 36.6s: elcomercio_2015-04-23_1
+2026-09-13 20:44:25,475 INFO [docling_easyocr] 320/4270 done in 33.6s: elcomercio_2015-04-23_1
+2026-09-13 20:44:25,475 INFO [docling_easyocr] 321/4270 done in 32.5s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:44:29,580 INFO [docling_easyocr] 322/4270 done in 36.3s: elcomercio_2015-04-23_1
+2026-09-13 20:44:29,581 INFO [docling_easyocr] 323/4270 done in 32.2s: elcomercio_2015-04-23_1
+2026-09-13 20:44:34,037 INFO [docling_easyocr] 324/4270 done in 36.4s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:44:35,565 INFO [docling_easyocr] 325/4270 done in 37.5s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:44:39,812 INFO [docling_easyocr] 326/4270 done in 37.8s: elcomercio_2015-04-23_1
+2026-09-13 20:44:39,812 INFO [docling_easyocr] 327/4270 done in 33.8s: elcomercio_2015-04-23_1
+2026-09-13 20:44:39,812 INFO [docling_easyocr] 328/4270 done in 34.9s: elcomercio_2015-04-23_1
+2026-09-13 20:44:39,812 INFO [docling_easyocr] 329/4270 done in 34.0s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:44:40,082 INFO [docling_easyocr] 330/4270 done in 34.8s: elcomercio_2015-04-23_1
+2026-09-13 20:44:44,080 INFO [docling_easyocr] 331/4270 done in 38.1s: elcomercio_2015-04-23_1
+2026-09-13 20:44:44,081 INFO [docling_easyocr] 332/4270 done in 34.6s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:44:49,514 INFO [docling_easyocr] 333/4270 done in 38.3s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:44:50,520 INFO [docling_easyocr] 334/4270 done in 37.9s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:45:15,835 INFO [docling_easyocr] 335/4270 done in 51.6s: elcomercio_2015-04-23_1
+2026-09-13 20:45:16,374 INFO [docling_easyocr] 336/4270 done in 52.1s: elcomercio_2015-04-23_1
+2026-09-13 20:45:16,485 INFO [docling_easyocr] 337/4270 done in 51.0s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:45:17,965 INFO [docling_easyocr] 338/4270 done in 51.7s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:45:22,141 INFO [docling_easyocr] 339/4270 done in 52.6s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:45:29,367 INFO [docling_easyocr] 340/4270 done in 55.3s: elcomercio_2015-04-23_1
+2026-09-13 20:45:29,367 INFO [docling_easyocr] 341/4270 done in 42.3s: elcomercio_2015-04-23_1
+2026-09-13 20:45:29,367 INFO [docling_easyocr] 342/4270 done in 39.9s: elcomercio_2015-04-23_1
+2026-09-13 20:45:33,629 INFO [docling_easyocr] 343/4270 done in 55.7s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:45:34,196 INFO [docling_easyocr] 344/4270 done in 55.6s: elcomercio_2015-04-23_1
+2026-09-13 20:45:38,369 INFO [docling_easyocr] 345/4270 done in 58.6s: elcomercio_2015-04-23_1
+2026-09-13 20:45:38,369 INFO [docling_easyocr] 346/4270 done in 57.0s: elcomercio_2015-04-23_1
+2026-09-13 20:45:38,369 INFO [docling_easyocr] 347/4270 done in 51.7s: elcomercio_2015-04-23_1
+2026-09-13 20:45:39,351 INFO [docling_easyocr] 348/4270 done in 55.3s: elcomercio_2015-04-23_1
+2026-09-13 20:45:39,351 INFO [docling_easyocr] 349/4270 done in 41.1s: elcomercio_2015-04-23_1
+2026-09-13 20:45:39,351 INFO [docling_easyocr] 350/4270 done in 45.8s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:46:12,522 INFO [docling_easyocr] 351/4270 done in 56.7s: elcomercio_2015-04-23_1
+2026-09-13 20:46:12,522 INFO [docling_easyocr] 352/4270 done in 50.3s: elcomercio_2015-04-23_1
+2026-09-13 20:46:12,522 INFO [docling_easyocr] 353/4270 done in 53.5s: elcomercio_2015-04-23_1
+2026-09-13 20:46:12,522 INFO [docling_easyocr] 354/4270 done in 51.5s: elcomercio_2015-04-23_1
+2026-09-13 20:46:12,522 INFO [docling_easyocr] 355/4270 done in 53.4s: elcomercio_2015-04-23_1
+2026-09-13 20:46:12,522 INFO [docling_easyocr] 356/4270 done in 50.1s: elcomercio_2015-04-23_1
+2026-09-13 20:46:12,522 INFO [docling_easyocr] 357/4270 done in 43.1s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:46:16,169 INFO [docling_easyocr] 358/4270 done in 46.8s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:46:24,871 INFO [docling_easyocr] 359/4270 done in 54.3s: elcomercio_2015-04-23_1
+2026-09-13 20:46:25,539 INFO [docling_easyocr] 360/4270 done in 51.9s: elcomercio_2015-04-23_1
+2026-09-13 20:46:25,539 INFO [docling_easyocr] 361/4270 done in 50.7s: elcomercio_2015-04-23_1
+2026-09-13 20:46:26,031 INFO [docling_easyocr] 362/4270 done in 51.8s: elcomercio_2015-04-23_1
+2026-09-13 20:46:32,626 INFO [docling_easyocr] 363/4270 done in 56.3s: elcomercio_2015-04-23_1
+2026-09-13 20:46:32,626 INFO [docling_easyocr] 364/4270 done in 53.8s: elcomercio_2015-04-23_1
+2026-09-13 20:46:32,626 INFO [docling_easyocr] 365/4270 done in 42.0s: elcomercio_2015-04-23_1
+2026-09-13 20:46:32,626 INFO [docling_easyocr] 366/4270 done in 44.1s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:46:55,576 INFO [docling_easyocr] 367/4270 done in 50.3s: elcomercio_2015-04-23_1
+2026-09-13 20:46:55,576 INFO [docling_easyocr] 368/4270 done in 46.1s: elcomercio_2015-04-23_1
+2026-09-13 20:46:55,576 INFO [docling_easyocr] 369/4270 done in 47.0s: elcomercio_2015-04-23_1
+2026-09-13 20:46:55,576 INFO [docling_easyocr] 370/4270 done in 47.0s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:46:58,335 INFO [docling_easyocr] 371/4270 done in 48.5s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:47:04,426 INFO [docling_easyocr] 372/4270 done in 53.2s: elcomercio_2015-04-23_1
+2026-09-13 20:47:04,426 INFO [docling_easyocr] 373/4270 done in 35.7s: elcomercio_2015-04-23_1
+2026-09-13 20:47:04,426 INFO [docling_easyocr] 374/4270 done in 42.1s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:47:11,931 INFO [docling_easyocr] 375/4270 done in 51.5s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:47:15,129 INFO [docling_easyocr] 376/4270 done in 51.7s: elcomercio_2015-04-23_1
+2026-09-13 20:47:15,130 INFO [docling_easyocr] 377/4270 done in 47.7s: elcomercio_2015-04-23_1
+2026-09-13 20:47:16,428 INFO [docling_easyocr] 378/4270 done in 51.6s: elcomercio_2015-04-23_1
+2026-09-13 20:47:16,429 INFO [docling_easyocr] 379/4270 done in 50.5s: elcomercio_2015-04-23_1
+2026-09-13 20:47:18,546 INFO [docling_easyocr] 380/4270 done in 52.5s: elcomercio_2015-04-23_1
+2026-09-13 20:47:18,547 INFO [docling_easyocr] 381/4270 done in 37.6s: elcomercio_2015-04-23_1
+2026-09-13 20:47:18,547 INFO [docling_easyocr] 382/4270 done in 42.1s: elcomercio_2015-04-23_1
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:47:43,809 INFO [docling_easyocr] 383/4270 done in 55.6s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:47:47,973 INFO [docling_easyocr] 384/4270 done in 55.6s: elcomercio_2015-05-19_38
+2026-09-13 20:47:51,574 INFO [docling_easyocr] 385/4270 done in 56.6s: elcomercio_2015-05-19_38
+2026-09-13 20:47:51,574 INFO [docling_easyocr] 386/4270 done in 54.6s: elcomercio_2015-05-19_38
+2026-09-13 20:47:52,152 INFO [docling_easyocr] 387/4270 done in 56.6s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:47:59,584 INFO [docling_easyocr] 388/4270 done in 61.3s: elcomercio_2015-05-19_38
+2026-09-13 20:47:59,584 INFO [docling_easyocr] 389/4270 done in 38.1s: elcomercio_2015-05-19_38
+2026-09-13 20:47:59,584 INFO [docling_easyocr] 390/4270 done in 41.0s: elcomercio_2015-05-19_38
+2026-09-13 20:48:10,376 INFO [docling_easyocr] 391/4270 done in 61.9s: elcomercio_2015-05-19_38
+2026-09-13 20:48:13,145 INFO [docling_easyocr] 392/4270 done in 61.2s: elcomercio_2015-05-19_38
+2026-09-13 20:48:13,804 INFO [docling_easyocr] 393/4270 done in 61.3s: elcomercio_2015-05-19_38
+2026-09-13 20:48:13,804 INFO [docling_easyocr] 394/4270 done in 57.5s: elcomercio_2015-05-19_38
+2026-09-13 20:48:14,032 INFO [docling_easyocr] 395/4270 done in 58.9s: elcomercio_2015-05-19_38
+2026-09-13 20:48:15,690 INFO [docling_easyocr] 396/4270 done in 59.6s: elcomercio_2015-05-19_38
+2026-09-13 20:48:15,690 INFO [docling_easyocr] 397/4270 done in 39.5s: elcomercio_2015-05-19_38
+2026-09-13 20:48:15,690 INFO [docling_easyocr] 398/4270 done in 40.6s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:48:37,908 INFO [docling_easyocr] 399/4270 done in 61.4s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:48:41,877 INFO [docling_easyocr] 400/4270 done in 58.1s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:48:54,070 INFO [docling_easyocr] 401/4270 done in 68.7s: elcomercio_2015-05-19_38
+2026-09-13 20:48:54,071 INFO [docling_easyocr] 402/4270 done in 60.5s: elcomercio_2015-05-19_38
+2026-09-13 20:48:54,071 INFO [docling_easyocr] 403/4270 done in 49.5s: elcomercio_2015-05-19_38
+2026-09-13 20:48:54,071 INFO [docling_easyocr] 404/4270 done in 54.5s: elcomercio_2015-05-19_38
+2026-09-13 20:48:54,071 INFO [docling_easyocr] 405/4270 done in 40.7s: elcomercio_2015-05-19_38
+2026-09-13 20:48:54,071 INFO [docling_easyocr] 406/4270 done in 41.5s: elcomercio_2015-05-19_38
+2026-09-13 20:48:54,071 INFO [docling_easyocr] 407/4270 done in 53.8s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:48:56,367 INFO [docling_easyocr] 408/4270 done in 56.8s: elcomercio_2015-05-19_38
+2026-09-13 20:48:56,554 INFO [docling_easyocr] 409/4270 done in 46.2s: elcomercio_2015-05-19_38
+2026-09-13 20:48:59,725 INFO [docling_easyocr] 410/4270 done in 47.5s: elcomercio_2015-05-19_38
+2026-09-13 20:48:59,725 INFO [docling_easyocr] 411/4270 done in 45.2s: elcomercio_2015-05-19_38
+2026-09-13 20:49:05,791 INFO [docling_easyocr] 412/4270 done in 52.0s: elcomercio_2015-05-19_38
+2026-09-13 20:49:05,791 INFO [docling_easyocr] 413/4270 done in 39.6s: elcomercio_2015-05-19_38
+2026-09-13 20:49:05,791 INFO [docling_easyocr] 414/4270 done in 39.2s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:49:31,664 INFO [docling_easyocr] 415/4270 done in 58.8s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:49:34,682 INFO [docling_easyocr] 416/4270 done in 57.3s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:49:39,690 INFO [docling_easyocr] 417/4270 done in 61.8s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:49:40,182 INFO [docling_easyocr] 418/4270 done in 61.0s: elcomercio_2015-05-19_38
+2026-09-13 20:49:40,182 INFO [docling_easyocr] 419/4270 done in 47.8s: elcomercio_2015-05-19_38
+2026-09-13 20:49:40,182 INFO [docling_easyocr] 420/4270 done in 53.5s: elcomercio_2015-05-19_38
+2026-09-13 20:49:40,182 INFO [docling_easyocr] 421/4270 done in 36.5s: elcomercio_2015-05-19_38
+2026-09-13 20:49:40,182 INFO [docling_easyocr] 422/4270 done in 41.7s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:49:52,643 INFO [docling_easyocr] 423/4270 done in 59.0s: elcomercio_2015-05-19_38
+2026-09-13 20:49:54,596 INFO [docling_easyocr] 424/4270 done in 60.5s: elcomercio_2015-05-19_38
+2026-09-13 20:49:54,596 INFO [docling_easyocr] 425/4270 done in 48.7s: elcomercio_2015-05-19_38
+2026-09-13 20:49:54,596 INFO [docling_easyocr] 426/4270 done in 51.6s: elcomercio_2015-05-19_38
+2026-09-13 20:49:54,597 INFO [docling_easyocr] 427/4270 done in 45.4s: elcomercio_2015-05-19_38
+2026-09-13 20:49:54,904 INFO [docling_easyocr] 428/4270 done in 56.6s: elcomercio_2015-05-19_38
+2026-09-13 20:49:54,905 INFO [docling_easyocr] 429/4270 done in 39.7s: elcomercio_2015-05-19_38
+2026-09-13 20:49:54,905 INFO [docling_easyocr] 430/4270 done in 43.1s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:50:19,139 INFO [docling_easyocr] 431/4270 done in 54.2s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:50:29,565 INFO [docling_easyocr] 432/4270 done in 59.9s: elcomercio_2015-05-19_38
+2026-09-13 20:50:29,565 INFO [docling_easyocr] 433/4270 done in 53.5s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:50:40,561 INFO [docling_easyocr] 434/4270 done in 66.0s: elcomercio_2015-05-19_38
+2026-09-13 20:50:40,561 INFO [docling_easyocr] 435/4270 done in 49.1s: elcomercio_2015-05-19_38
+2026-09-13 20:50:40,561 INFO [docling_easyocr] 436/4270 done in 60.5s: elcomercio_2015-05-19_38
+2026-09-13 20:50:40,561 INFO [docling_easyocr] 437/4270 done in 39.0s: elcomercio_2015-05-19_38
+2026-09-13 20:50:40,561 INFO [docling_easyocr] 438/4270 done in 43.9s: elcomercio_2015-05-19_38
+2026-09-13 20:50:40,561 INFO [docling_easyocr] 439/4270 done in 58.7s: elcomercio_2015-05-19_38
+2026-09-13 20:50:41,674 INFO [docling_easyocr] 440/4270 done in 59.7s: elcomercio_2015-05-19_38
+2026-09-13 20:50:53,048 INFO [docling_easyocr] 441/4270 done in 69.5s: elcomercio_2015-05-19_38
+2026-09-13 20:50:53,048 INFO [docling_easyocr] 442/4270 done in 64.9s: elcomercio_2015-05-19_38
+2026-09-13 20:50:53,048 INFO [docling_easyocr] 443/4270 done in 51.9s: elcomercio_2015-05-19_38
+2026-09-13 20:50:54,125 INFO [docling_easyocr] 444/4270 done in 61.5s: elcomercio_2015-05-19_38
+2026-09-13 20:50:54,125 INFO [docling_easyocr] 445/4270 done in 41.2s: elcomercio_2015-05-19_38
+2026-09-13 20:50:54,125 INFO [docling_easyocr] 446/4270 done in 42.7s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:51:13,387 INFO [docling_easyocr] 447/4270 done in 54.7s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:51:19,476 INFO [docling_easyocr] 448/4270 done in 60.3s: elcomercio_2015-05-19_38
+2026-09-13 20:51:19,476 INFO [docling_easyocr] 449/4270 done in 50.5s: elcomercio_2015-05-19_38
+2026-09-13 20:51:19,476 INFO [docling_easyocr] 450/4270 done in 47.6s: elcomercio_2015-05-19_38
+2026-09-13 20:51:19,516 INFO [docling_easyocr] 451/4270 done in 48.9s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:51:29,380 INFO [docling_easyocr] 452/4270 done in 59.8s: elcomercio_2015-05-19_38
+2026-09-13 20:51:29,380 INFO [docling_easyocr] 453/4270 done in 41.2s: elcomercio_2015-05-19_38
+2026-09-13 20:51:29,380 INFO [docling_easyocr] 454/4270 done in 43.1s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:51:38,320 INFO [docling_easyocr] 455/4270 done in 59.4s: elcomercio_2015-05-19_38
+2026-09-13 20:51:44,776 INFO [docling_easyocr] 456/4270 done in 64.8s: elcomercio_2015-05-19_38
+2026-09-13 20:51:44,776 INFO [docling_easyocr] 457/4270 done in 48.7s: elcomercio_2015-05-19_38
+2026-09-13 20:51:44,776 INFO [docling_easyocr] 458/4270 done in 62.0s: elcomercio_2015-05-19_38
+2026-09-13 20:51:44,776 INFO [docling_easyocr] 459/4270 done in 48.0s: elcomercio_2015-05-19_38
+2026-09-13 20:51:52,585 INFO [docling_easyocr] 460/4270 done in 59.7s: elcomercio_2015-05-19_38
+2026-09-13 20:51:52,585 INFO [docling_easyocr] 461/4270 done in 41.5s: elcomercio_2015-05-19_38
+2026-09-13 20:51:52,585 INFO [docling_easyocr] 462/4270 done in 43.9s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:52:19,775 INFO [docling_easyocr] 463/4270 done in 68.4s: elcomercio_2015-05-19_38
+2026-09-13 20:52:19,776 INFO [docling_easyocr] 464/4270 done in 62.5s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:52:23,675 INFO [docling_easyocr] 465/4270 done in 69.7s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:52:27,920 INFO [docling_easyocr] 466/4270 done in 73.9s: elcomercio_2015-05-19_38
+2026-09-13 20:52:27,920 INFO [docling_easyocr] 467/4270 done in 50.1s: elcomercio_2015-05-19_38
+2026-09-13 20:52:27,920 INFO [docling_easyocr] 468/4270 done in 56.7s: elcomercio_2015-05-19_38
+2026-09-13 20:52:27,920 INFO [docling_easyocr] 469/4270 done in 43.0s: elcomercio_2015-05-19_38
+2026-09-13 20:52:27,920 INFO [docling_easyocr] 470/4270 done in 43.4s: elcomercio_2015-05-19_38
+2026-09-13 20:52:35,252 INFO [docling_easyocr] 471/4270 done in 65.9s: elcomercio_2015-05-19_38
+2026-09-13 20:52:35,252 INFO [docling_easyocr] 472/4270 done in 60.0s: elcomercio_2015-05-19_38
+2026-09-13 20:52:35,252 INFO [docling_easyocr] 473/4270 done in 49.5s: elcomercio_2015-05-19_38
+2026-09-13 20:52:35,252 INFO [docling_easyocr] 474/4270 done in 52.7s: elcomercio_2015-05-19_38
+2026-09-13 20:52:35,252 INFO [docling_easyocr] 475/4270 done in 45.4s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:52:42,728 INFO [docling_easyocr] 476/4270 done in 60.0s: elcomercio_2015-05-19_38
+2026-09-13 20:52:42,728 INFO [docling_easyocr] 477/4270 done in 41.1s: elcomercio_2015-05-19_38
+2026-09-13 20:52:42,728 INFO [docling_easyocr] 478/4270 done in 44.5s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:53:09,452 INFO [docling_easyocr] 479/4270 done in 65.7s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:53:11,613 INFO [docling_easyocr] 480/4270 done in 64.5s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:53:19,946 INFO [docling_easyocr] 481/4270 done in 67.2s: elcomercio_2015-05-19_38
+2026-09-13 20:53:19,947 INFO [docling_easyocr] 482/4270 done in 59.5s: elcomercio_2015-05-19_38
+2026-09-13 20:53:19,947 INFO [docling_easyocr] 483/4270 done in 55.5s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:53:22,851 INFO [docling_easyocr] 484/4270 done in 63.1s: elcomercio_2015-05-19_38
+2026-09-13 20:53:22,851 INFO [docling_easyocr] 485/4270 done in 39.3s: elcomercio_2015-05-19_38
+2026-09-13 20:53:22,851 INFO [docling_easyocr] 486/4270 done in 39.9s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:53:30,031 INFO [docling_easyocr] 487/4270 done in 65.9s: elcomercio_2015-05-19_38
+2026-09-13 20:53:30,031 INFO [docling_easyocr] 488/4270 done in 62.9s: elcomercio_2015-05-19_38
+2026-09-13 20:53:35,337 INFO [docling_easyocr] 489/4270 done in 67.4s: elcomercio_2015-05-19_38
+2026-09-13 20:53:35,644 INFO [docling_easyocr] 490/4270 done in 66.0s: elcomercio_2015-05-19_38
+2026-09-13 20:53:35,644 INFO [docling_easyocr] 491/4270 done in 62.4s: elcomercio_2015-05-19_38
+2026-09-13 20:53:39,996 INFO [docling_easyocr] 492/4270 done in 64.7s: elcomercio_2015-05-19_38
+2026-09-13 20:53:39,996 INFO [docling_easyocr] 493/4270 done in 41.4s: elcomercio_2015-05-19_38
+2026-09-13 20:53:39,996 INFO [docling_easyocr] 494/4270 done in 43.1s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:54:04,284 INFO [docling_easyocr] 495/4270 done in 61.3s: elcomercio_2015-05-19_38
+2026-09-13 20:54:05,402 INFO [docling_easyocr] 496/4270 done in 61.8s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:54:21,747 INFO [docling_easyocr] 497/4270 done in 72.3s: elcomercio_2015-05-19_38
+2026-09-13 20:54:21,748 INFO [docling_easyocr] 498/4270 done in 65.8s: elcomercio_2015-05-19_38
+2026-09-13 20:54:21,748 INFO [docling_easyocr] 499/4270 done in 57.6s: elcomercio_2015-05-19_38
+2026-09-13 20:54:21,748 INFO [docling_easyocr] 500/4270 done in 59.4s: elcomercio_2015-05-19_38
+2026-09-13 20:54:21,775 INFO [docling_easyocr] 501/4270 done in 41.1s: elcomercio_2015-05-19_38
+2026-09-13 20:54:21,775 INFO [docling_easyocr] 502/4270 done in 42.3s: elcomercio_2015-05-19_38
+2026-09-13 20:54:28,483 INFO [docling_easyocr] 503/4270 done in 65.6s: elcomercio_2015-05-19_38
+2026-09-13 20:54:30,149 INFO [docling_easyocr] 504/4270 done in 64.3s: elcomercio_2015-05-19_38
+2026-09-13 20:54:30,149 INFO [docling_easyocr] 505/4270 done in 58.3s: elcomercio_2015-05-19_38
+2026-09-13 20:54:30,939 INFO [docling_easyocr] 506/4270 done in 60.9s: elcomercio_2015-05-19_38
+2026-09-13 20:54:30,939 INFO [docling_easyocr] 507/4270 done in 54.9s: elcomercio_2015-05-19_38
+2026-09-13 20:54:30,939 INFO [docling_easyocr] 508/4270 done in 53.4s: elcomercio_2015-05-19_38
+2026-09-13 20:54:30,939 INFO [docling_easyocr] 509/4270 done in 40.0s: elcomercio_2015-05-19_38
+2026-09-13 20:54:30,939 INFO [docling_easyocr] 510/4270 done in 41.8s: elcomercio_2015-05-19_38
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:55:01,684 INFO [docling_easyocr] 511/4270 done in 62.1s: elcomercio_2015-05-19_38
+2026-09-13 20:55:04,516 INFO [docling_easyocr] 512/4270 done in 62.2s: elcomercio_2015-05-19_38
+[2026-09-13T20:55:04.957] error: *** JOB 26475173 ON b001 CANCELLED AT 2026-09-13T20:55:04 DUE to SIGNAL Terminated ***

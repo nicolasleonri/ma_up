@@ -1,0 +1,503 @@
+2026-09-13 19:14:15,096 INFO Running docling_easyocr OCR on 4320 images (model loads ONCE)
+2026-09-13 19:14:15,232 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:14:15,375 INFO Going to convert document batch...
+2026-09-13 19:14:15,376 INFO Initializing pipeline for StandardPdfPipeline with options hash cd5a96c5e805595d56d8548c906fef27
+2026-09-13 19:14:15,449 INFO Loading plugin 'docling_defaults'
+2026-09-13 19:14:15,457 INFO Registered picture descriptions: ['picture_description_vlm_engine', 'vlm', 'api']
+2026-09-13 19:14:15,524 INFO Loading plugin 'docling_defaults'
+2026-09-13 19:14:15,553 INFO Registered ocr engines: ['auto', 'easyocr', 'kserve_v2_ocr', 'nemotron-ocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
+2026-09-13 19:14:18,810 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+2026-09-13 19:14:21,115 INFO Loading plugin 'docling_defaults'
+2026-09-13 19:14:21,130 INFO Registered layout engines: ['layout_object_detection', 'docling_layout_default', 'docling_experimental_table_crops_layout']
+2026-09-13 19:14:24,928 INFO Initializing Transformers object-detection engine
+2026-09-13 19:14:24,928 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 19:14:24,928 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+2026-09-13 19:14:25,085 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-13 19:14:25,099 INFO Model docling-project/docling-layout-heron already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8
+2026-09-13 19:14:25,099 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 8580.36it/s]
+2026-09-13 19:14:27,036 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 19:14:27,125 INFO Loading plugin 'docling_defaults'
+2026-09-13 19:14:27,130 INFO Registered table structure engines: ['docling_tableformer', 'docling_tableformer_v2', 'granite_vision_table']
+2026-09-13 19:14:27,130 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 19:14:27,287 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 19:14:27,298 INFO Model docling-project/docling-models already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23
+2026-09-13 19:14:27,318 INFO Accelerator device: 'cpu'
+2026-09-13 19:14:27,800 INFO Processing document gestion_2013-08-22_32_config_000_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:15:36,459 INFO Finished converting document gestion_2013-08-22_32_config_000_bin_000.tiff in 81.25 sec.
+2026-09-13 19:15:36,510 INFO [docling_easyocr] 1/4320 done in 81.3s: gestion_2013-08-22_32
+2026-09-13 19:15:36,526 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:15:36,560 INFO Going to convert document batch...
+2026-09-13 19:15:36,561 INFO Processing document gestion_2013-08-22_32_config_000_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:16:42,660 INFO Finished converting document gestion_2013-08-22_32_config_000_bin_001.tiff in 66.15 sec.
+2026-09-13 19:16:42,668 INFO [docling_easyocr] 2/4320 done in 66.2s: gestion_2013-08-22_32
+2026-09-13 19:16:42,682 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:16:42,701 INFO Going to convert document batch...
+2026-09-13 19:16:42,702 INFO Processing document gestion_2013-08-22_32_config_000_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:17:47,504 INFO Finished converting document gestion_2013-08-22_32_config_000_bin_002.tiff in 64.84 sec.
+2026-09-13 19:17:47,512 INFO [docling_easyocr] 3/4320 done in 64.8s: gestion_2013-08-22_32
+2026-09-13 19:17:47,523 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:17:47,542 INFO Going to convert document batch...
+2026-09-13 19:17:47,543 INFO Processing document gestion_2013-08-22_32_config_000_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:18:54,053 INFO Finished converting document gestion_2013-08-22_32_config_000_bin_003.tiff in 66.54 sec.
+2026-09-13 19:18:54,061 INFO [docling_easyocr] 4/4320 done in 66.5s: gestion_2013-08-22_32
+2026-09-13 19:18:54,081 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:18:54,101 INFO Going to convert document batch...
+2026-09-13 19:18:54,102 INFO Processing document gestion_2013-08-22_32_config_000_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:20:13,277 INFO Finished converting document gestion_2013-08-22_32_config_000_bin_004.tiff in 79.22 sec.
+2026-09-13 19:20:13,280 INFO [docling_easyocr] 5/4320 done in 79.2s: gestion_2013-08-22_32
+2026-09-13 19:20:13,292 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:20:13,313 INFO Going to convert document batch...
+2026-09-13 19:20:13,314 INFO Processing document gestion_2013-08-22_32_config_000_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:21:31,788 INFO Finished converting document gestion_2013-08-22_32_config_000_bin_005.tiff in 78.51 sec.
+2026-09-13 19:21:31,791 INFO [docling_easyocr] 6/4320 done in 78.5s: gestion_2013-08-22_32
+2026-09-13 19:21:31,804 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:21:31,817 INFO Going to convert document batch...
+2026-09-13 19:21:31,818 INFO Processing document gestion_2013-08-22_32_config_000_bin_006.tiff
+2026-09-13 19:21:59,570 INFO Finished converting document gestion_2013-08-22_32_config_000_bin_006.tiff in 27.78 sec.
+2026-09-13 19:21:59,571 INFO [docling_easyocr] 7/4320 done in 27.8s: gestion_2013-08-22_32
+2026-09-13 19:21:59,592 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:21:59,609 INFO Going to convert document batch...
+2026-09-13 19:21:59,610 INFO Processing document gestion_2013-08-22_32_config_000_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:22:29,472 INFO Finished converting document gestion_2013-08-22_32_config_000_bin_007.tiff in 29.90 sec.
+2026-09-13 19:22:29,474 INFO [docling_easyocr] 8/4320 done in 29.9s: gestion_2013-08-22_32
+2026-09-13 19:22:29,498 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:22:29,572 INFO Going to convert document batch...
+2026-09-13 19:22:29,573 INFO Processing document gestion_2013-08-22_32_config_001_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:23:34,325 INFO Finished converting document gestion_2013-08-22_32_config_001_bin_000.tiff in 64.85 sec.
+2026-09-13 19:23:34,333 INFO [docling_easyocr] 9/4320 done in 64.9s: gestion_2013-08-22_32
+2026-09-13 19:23:34,363 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:23:34,398 INFO Going to convert document batch...
+2026-09-13 19:23:34,399 INFO Processing document gestion_2013-08-22_32_config_001_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:24:37,710 INFO Finished converting document gestion_2013-08-22_32_config_001_bin_001.tiff in 63.38 sec.
+2026-09-13 19:24:37,722 INFO [docling_easyocr] 10/4320 done in 63.4s: gestion_2013-08-22_32
+2026-09-13 19:24:37,738 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:24:37,759 INFO Going to convert document batch...
+2026-09-13 19:24:37,760 INFO Processing document gestion_2013-08-22_32_config_001_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:25:40,226 INFO Finished converting document gestion_2013-08-22_32_config_001_bin_002.tiff in 62.50 sec.
+2026-09-13 19:25:40,234 INFO [docling_easyocr] 11/4320 done in 62.5s: gestion_2013-08-22_32
+2026-09-13 19:25:40,258 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:25:40,277 INFO Going to convert document batch...
+2026-09-13 19:25:40,278 INFO Processing document gestion_2013-08-22_32_config_001_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:26:44,897 INFO Finished converting document gestion_2013-08-22_32_config_001_bin_003.tiff in 64.66 sec.
+2026-09-13 19:26:44,906 INFO [docling_easyocr] 12/4320 done in 64.7s: gestion_2013-08-22_32
+2026-09-13 19:26:44,931 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:26:44,950 INFO Going to convert document batch...
+2026-09-13 19:26:44,951 INFO Processing document gestion_2013-08-22_32_config_001_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:28:05,212 INFO Finished converting document gestion_2013-08-22_32_config_001_bin_004.tiff in 80.31 sec.
+2026-09-13 19:28:05,216 INFO [docling_easyocr] 13/4320 done in 80.3s: gestion_2013-08-22_32
+2026-09-13 19:28:05,231 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:28:05,252 INFO Going to convert document batch...
+2026-09-13 19:28:05,253 INFO Processing document gestion_2013-08-22_32_config_001_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:29:16,584 INFO Finished converting document gestion_2013-08-22_32_config_001_bin_005.tiff in 71.37 sec.
+2026-09-13 19:29:16,588 INFO [docling_easyocr] 14/4320 done in 71.4s: gestion_2013-08-22_32
+2026-09-13 19:29:16,612 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:29:16,628 INFO Going to convert document batch...
+2026-09-13 19:29:16,629 INFO Processing document gestion_2013-08-22_32_config_001_bin_006.tiff
+2026-09-13 19:29:45,833 INFO Finished converting document gestion_2013-08-22_32_config_001_bin_006.tiff in 29.24 sec.
+2026-09-13 19:29:45,834 INFO [docling_easyocr] 15/4320 done in 29.2s: gestion_2013-08-22_32
+2026-09-13 19:29:45,850 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:29:45,867 INFO Going to convert document batch...
+2026-09-13 19:29:45,868 INFO Processing document gestion_2013-08-22_32_config_001_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:30:15,830 INFO Finished converting document gestion_2013-08-22_32_config_001_bin_007.tiff in 30.00 sec.
+2026-09-13 19:30:15,831 INFO [docling_easyocr] 16/4320 done in 30.0s: gestion_2013-08-22_32
+2026-09-13 19:30:15,852 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:30:15,884 INFO Going to convert document batch...
+2026-09-13 19:30:15,885 INFO Processing document gestion_2013-08-22_32_config_002_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:31:19,123 INFO Finished converting document gestion_2013-08-22_32_config_002_bin_000.tiff in 63.29 sec.
+2026-09-13 19:31:19,132 INFO [docling_easyocr] 17/4320 done in 63.3s: gestion_2013-08-22_32
+2026-09-13 19:31:19,151 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:31:19,182 INFO Going to convert document batch...
+2026-09-13 19:31:19,183 INFO Processing document gestion_2013-08-22_32_config_002_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:32:24,467 INFO Finished converting document gestion_2013-08-22_32_config_002_bin_001.tiff in 65.33 sec.
+2026-09-13 19:32:24,477 INFO [docling_easyocr] 18/4320 done in 65.3s: gestion_2013-08-22_32
+2026-09-13 19:32:24,495 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:32:24,514 INFO Going to convert document batch...
+2026-09-13 19:32:24,516 INFO Processing document gestion_2013-08-22_32_config_002_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:33:48,649 INFO Finished converting document gestion_2013-08-22_32_config_002_bin_002.tiff in 84.17 sec.
+2026-09-13 19:33:48,655 INFO [docling_easyocr] 19/4320 done in 84.2s: gestion_2013-08-22_32
+2026-09-13 19:33:48,674 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:33:48,694 INFO Going to convert document batch...
+2026-09-13 19:33:48,695 INFO Processing document gestion_2013-08-22_32_config_002_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:34:58,674 INFO Finished converting document gestion_2013-08-22_32_config_002_bin_003.tiff in 70.02 sec.
+2026-09-13 19:34:58,685 INFO [docling_easyocr] 20/4320 done in 70.0s: gestion_2013-08-22_32
+2026-09-13 19:34:58,700 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:34:58,721 INFO Going to convert document batch...
+2026-09-13 19:34:58,722 INFO Processing document gestion_2013-08-22_32_config_002_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:36:25,881 INFO Finished converting document gestion_2013-08-22_32_config_002_bin_004.tiff in 87.20 sec.
+2026-09-13 19:36:25,885 INFO [docling_easyocr] 21/4320 done in 87.2s: gestion_2013-08-22_32
+2026-09-13 19:36:25,907 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:36:25,930 INFO Going to convert document batch...
+2026-09-13 19:36:25,931 INFO Processing document gestion_2013-08-22_32_config_002_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:37:58,197 INFO Finished converting document gestion_2013-08-22_32_config_002_bin_005.tiff in 92.31 sec.
+2026-09-13 19:37:58,201 INFO [docling_easyocr] 22/4320 done in 92.3s: gestion_2013-08-22_32
+2026-09-13 19:37:58,258 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:37:58,272 INFO Going to convert document batch...
+2026-09-13 19:37:58,273 INFO Processing document gestion_2013-08-22_32_config_002_bin_006.tiff
+2026-09-13 19:38:27,883 INFO Finished converting document gestion_2013-08-22_32_config_002_bin_006.tiff in 29.68 sec.
+2026-09-13 19:38:27,884 INFO [docling_easyocr] 23/4320 done in 29.7s: gestion_2013-08-22_32
+2026-09-13 19:38:27,897 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:38:27,918 INFO Going to convert document batch...
+2026-09-13 19:38:27,919 INFO Processing document gestion_2013-08-22_32_config_002_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:38:59,157 INFO Finished converting document gestion_2013-08-22_32_config_002_bin_007.tiff in 31.27 sec.
+2026-09-13 19:38:59,160 INFO [docling_easyocr] 24/4320 done in 31.3s: gestion_2013-08-22_32
+2026-09-13 19:38:59,186 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:38:59,260 INFO Going to convert document batch...
+2026-09-13 19:38:59,261 INFO Processing document gestion_2013-08-22_32_config_003_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:40:08,157 INFO Finished converting document gestion_2013-08-22_32_config_003_bin_000.tiff in 69.00 sec.
+2026-09-13 19:40:08,164 INFO [docling_easyocr] 25/4320 done in 69.0s: gestion_2013-08-22_32
+2026-09-13 19:40:08,187 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:40:08,223 INFO Going to convert document batch...
+2026-09-13 19:40:08,224 INFO Processing document gestion_2013-08-22_32_config_003_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:41:16,024 INFO Finished converting document gestion_2013-08-22_32_config_003_bin_001.tiff in 67.86 sec.
+2026-09-13 19:41:16,031 INFO [docling_easyocr] 26/4320 done in 67.9s: gestion_2013-08-22_32
+2026-09-13 19:41:16,047 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:41:16,066 INFO Going to convert document batch...
+2026-09-13 19:41:16,067 INFO Processing document gestion_2013-08-22_32_config_003_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:41:56,264 INFO Finished converting document gestion_2013-08-22_32_config_003_bin_002.tiff in 40.23 sec.
+2026-09-13 19:41:56,269 INFO [docling_easyocr] 27/4320 done in 40.2s: gestion_2013-08-22_32
+2026-09-13 19:41:56,288 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:41:56,308 INFO Going to convert document batch...
+2026-09-13 19:41:56,309 INFO Processing document gestion_2013-08-22_32_config_003_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:43:04,409 INFO Finished converting document gestion_2013-08-22_32_config_003_bin_003.tiff in 68.14 sec.
+2026-09-13 19:43:04,413 INFO [docling_easyocr] 28/4320 done in 68.1s: gestion_2013-08-22_32
+2026-09-13 19:43:04,433 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:43:04,452 INFO Going to convert document batch...
+2026-09-13 19:43:04,453 INFO Processing document gestion_2013-08-22_32_config_003_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:44:07,534 INFO Finished converting document gestion_2013-08-22_32_config_003_bin_004.tiff in 63.12 sec.
+2026-09-13 19:44:07,538 INFO [docling_easyocr] 29/4320 done in 63.1s: gestion_2013-08-22_32
+2026-09-13 19:44:07,551 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:44:07,573 INFO Going to convert document batch...
+2026-09-13 19:44:07,574 INFO Processing document gestion_2013-08-22_32_config_003_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:45:30,036 INFO Finished converting document gestion_2013-08-22_32_config_003_bin_005.tiff in 82.50 sec.
+2026-09-13 19:45:30,039 INFO [docling_easyocr] 30/4320 done in 82.5s: gestion_2013-08-22_32
+2026-09-13 19:45:30,057 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:45:30,070 INFO Going to convert document batch...
+2026-09-13 19:45:30,071 INFO Processing document gestion_2013-08-22_32_config_003_bin_006.tiff
+2026-09-13 19:45:59,907 INFO Finished converting document gestion_2013-08-22_32_config_003_bin_006.tiff in 29.87 sec.
+2026-09-13 19:45:59,908 INFO [docling_easyocr] 31/4320 done in 29.9s: gestion_2013-08-22_32
+2026-09-13 19:45:59,929 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:45:59,951 INFO Going to convert document batch...
+2026-09-13 19:45:59,952 INFO Processing document gestion_2013-08-22_32_config_003_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:46:32,659 INFO Finished converting document gestion_2013-08-22_32_config_003_bin_007.tiff in 32.75 sec.
+2026-09-13 19:46:32,661 INFO [docling_easyocr] 32/4320 done in 32.8s: gestion_2013-08-22_32
+2026-09-13 19:46:32,693 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:46:32,771 INFO Going to convert document batch...
+2026-09-13 19:46:32,772 INFO Processing document gestion_2013-08-22_32_config_004_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:47:39,517 INFO Finished converting document gestion_2013-08-22_32_config_004_bin_000.tiff in 66.86 sec.
+2026-09-13 19:47:39,526 INFO [docling_easyocr] 33/4320 done in 66.9s: gestion_2013-08-22_32
+2026-09-13 19:47:39,549 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:47:39,583 INFO Going to convert document batch...
+2026-09-13 19:47:39,584 INFO Processing document gestion_2013-08-22_32_config_004_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:48:47,181 INFO Finished converting document gestion_2013-08-22_32_config_004_bin_001.tiff in 67.65 sec.
+2026-09-13 19:48:47,190 INFO [docling_easyocr] 34/4320 done in 67.7s: gestion_2013-08-22_32
+2026-09-13 19:48:47,211 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:48:47,231 INFO Going to convert document batch...
+2026-09-13 19:48:47,232 INFO Processing document gestion_2013-08-22_32_config_004_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:50:12,858 INFO Finished converting document gestion_2013-08-22_32_config_004_bin_002.tiff in 85.67 sec.
+2026-09-13 19:50:12,862 INFO [docling_easyocr] 35/4320 done in 85.7s: gestion_2013-08-22_32
+2026-09-13 19:50:12,873 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:50:12,894 INFO Going to convert document batch...
+2026-09-13 19:50:12,895 INFO Processing document gestion_2013-08-22_32_config_004_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:51:18,779 INFO Finished converting document gestion_2013-08-22_32_config_004_bin_003.tiff in 65.92 sec.
+2026-09-13 19:51:18,786 INFO [docling_easyocr] 36/4320 done in 65.9s: gestion_2013-08-22_32
+2026-09-13 19:51:18,807 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:51:18,826 INFO Going to convert document batch...
+2026-09-13 19:51:18,826 INFO Processing document gestion_2013-08-22_32_config_004_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:52:40,165 INFO Finished converting document gestion_2013-08-22_32_config_004_bin_004.tiff in 81.38 sec.
+2026-09-13 19:52:40,169 INFO [docling_easyocr] 37/4320 done in 81.4s: gestion_2013-08-22_32
+2026-09-13 19:52:40,184 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:52:40,204 INFO Going to convert document batch...
+2026-09-13 19:52:40,205 INFO Processing document gestion_2013-08-22_32_config_004_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:54:03,500 INFO Finished converting document gestion_2013-08-22_32_config_004_bin_005.tiff in 83.33 sec.
+2026-09-13 19:54:03,503 INFO [docling_easyocr] 38/4320 done in 83.3s: gestion_2013-08-22_32
+2026-09-13 19:54:03,523 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:54:03,538 INFO Going to convert document batch...
+2026-09-13 19:54:03,539 INFO Processing document gestion_2013-08-22_32_config_004_bin_006.tiff
+2026-09-13 19:54:34,010 INFO Finished converting document gestion_2013-08-22_32_config_004_bin_006.tiff in 30.51 sec.
+2026-09-13 19:54:34,011 INFO [docling_easyocr] 39/4320 done in 30.5s: gestion_2013-08-22_32
+2026-09-13 19:54:34,028 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:54:34,047 INFO Going to convert document batch...
+2026-09-13 19:54:34,048 INFO Processing document gestion_2013-08-22_32_config_004_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:55:07,223 INFO Finished converting document gestion_2013-08-22_32_config_004_bin_007.tiff in 33.21 sec.
+2026-09-13 19:55:07,225 INFO [docling_easyocr] 40/4320 done in 33.2s: gestion_2013-08-22_32
+2026-09-13 19:55:07,252 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:55:07,287 INFO Going to convert document batch...
+2026-09-13 19:55:07,289 INFO Processing document gestion_2013-08-22_32_config_005_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:56:13,265 INFO Finished converting document gestion_2013-08-22_32_config_005_bin_000.tiff in 66.04 sec.
+2026-09-13 19:56:13,273 INFO [docling_easyocr] 41/4320 done in 66.0s: gestion_2013-08-22_32
+2026-09-13 19:56:13,294 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:56:13,326 INFO Going to convert document batch...
+2026-09-13 19:56:13,327 INFO Processing document gestion_2013-08-22_32_config_005_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:57:20,775 INFO Finished converting document gestion_2013-08-22_32_config_005_bin_001.tiff in 67.50 sec.
+2026-09-13 19:57:20,784 INFO [docling_easyocr] 42/4320 done in 67.5s: gestion_2013-08-22_32
+2026-09-13 19:57:20,797 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:57:20,815 INFO Going to convert document batch...
+2026-09-13 19:57:20,817 INFO Processing document gestion_2013-08-22_32_config_005_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:57:58,807 INFO Finished converting document gestion_2013-08-22_32_config_005_bin_002.tiff in 38.02 sec.
+2026-09-13 19:57:58,810 INFO [docling_easyocr] 43/4320 done in 38.0s: gestion_2013-08-22_32
+2026-09-13 19:57:58,827 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:57:58,847 INFO Going to convert document batch...
+2026-09-13 19:57:58,849 INFO Processing document gestion_2013-08-22_32_config_005_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:59:08,929 INFO Finished converting document gestion_2013-08-22_32_config_005_bin_003.tiff in 70.12 sec.
+2026-09-13 19:59:08,934 INFO [docling_easyocr] 44/4320 done in 70.1s: gestion_2013-08-22_32
+2026-09-13 19:59:08,951 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:59:08,970 INFO Going to convert document batch...
+2026-09-13 19:59:08,971 INFO Processing document gestion_2013-08-22_32_config_005_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:00:06,066 INFO Finished converting document gestion_2013-08-22_32_config_005_bin_004.tiff in 57.13 sec.
+2026-09-13 20:00:06,069 INFO [docling_easyocr] 45/4320 done in 57.1s: gestion_2013-08-22_32
+2026-09-13 20:00:06,087 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:00:06,108 INFO Going to convert document batch...
+2026-09-13 20:00:06,109 INFO Processing document gestion_2013-08-22_32_config_005_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:01:24,753 INFO Finished converting document gestion_2013-08-22_32_config_005_bin_005.tiff in 78.68 sec.
+2026-09-13 20:01:24,756 INFO [docling_easyocr] 46/4320 done in 78.7s: gestion_2013-08-22_32
+2026-09-13 20:01:24,784 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:01:24,797 INFO Going to convert document batch...
+2026-09-13 20:01:24,798 INFO Processing document gestion_2013-08-22_32_config_005_bin_006.tiff
+2026-09-13 20:01:55,309 INFO Finished converting document gestion_2013-08-22_32_config_005_bin_006.tiff in 30.55 sec.
+2026-09-13 20:01:55,310 INFO [docling_easyocr] 47/4320 done in 30.6s: gestion_2013-08-22_32
+2026-09-13 20:01:55,326 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:01:55,345 INFO Going to convert document batch...
+2026-09-13 20:01:55,346 INFO Processing document gestion_2013-08-22_32_config_005_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:02:28,580 INFO Finished converting document gestion_2013-08-22_32_config_005_bin_007.tiff in 33.27 sec.
+2026-09-13 20:02:28,583 INFO [docling_easyocr] 48/4320 done in 33.3s: gestion_2013-08-22_32
+2026-09-13 20:02:28,615 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:02:28,689 INFO Going to convert document batch...
+2026-09-13 20:02:28,690 INFO Processing document gestion_2013-08-22_32_config_006_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:03:34,533 INFO Finished converting document gestion_2013-08-22_32_config_006_bin_000.tiff in 65.95 sec.
+2026-09-13 20:03:34,542 INFO [docling_easyocr] 49/4320 done in 66.0s: gestion_2013-08-22_32
+2026-09-13 20:03:34,560 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:03:34,597 INFO Going to convert document batch...
+2026-09-13 20:03:34,598 INFO Processing document gestion_2013-08-22_32_config_006_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:04:40,075 INFO Finished converting document gestion_2013-08-22_32_config_006_bin_001.tiff in 65.53 sec.
+2026-09-13 20:04:40,084 INFO [docling_easyocr] 50/4320 done in 65.5s: gestion_2013-08-22_32
+2026-09-13 20:04:40,120 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:04:40,138 INFO Going to convert document batch...
+2026-09-13 20:04:40,139 INFO Processing document gestion_2013-08-22_32_config_006_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:06:09,906 INFO Finished converting document gestion_2013-08-22_32_config_006_bin_002.tiff in 89.80 sec.
+2026-09-13 20:06:09,911 INFO [docling_easyocr] 51/4320 done in 89.8s: gestion_2013-08-22_32
+2026-09-13 20:06:09,934 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:06:09,953 INFO Going to convert document batch...
+2026-09-13 20:06:09,954 INFO Processing document gestion_2013-08-22_32_config_006_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:07:14,942 INFO Finished converting document gestion_2013-08-22_32_config_006_bin_003.tiff in 65.03 sec.
+2026-09-13 20:07:14,948 INFO [docling_easyocr] 52/4320 done in 65.0s: gestion_2013-08-22_32
+2026-09-13 20:07:14,967 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:07:14,987 INFO Going to convert document batch...
+2026-09-13 20:07:14,988 INFO Processing document gestion_2013-08-22_32_config_006_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:08:30,826 INFO Finished converting document gestion_2013-08-22_32_config_006_bin_004.tiff in 75.88 sec.
+2026-09-13 20:08:30,829 INFO [docling_easyocr] 53/4320 done in 75.9s: gestion_2013-08-22_32
+2026-09-13 20:08:30,861 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:08:30,881 INFO Going to convert document batch...
+2026-09-13 20:08:30,882 INFO Processing document gestion_2013-08-22_32_config_006_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:09:51,662 INFO Finished converting document gestion_2013-08-22_32_config_006_bin_005.tiff in 80.83 sec.
+2026-09-13 20:09:51,665 INFO [docling_easyocr] 54/4320 done in 80.8s: gestion_2013-08-22_32
+2026-09-13 20:09:51,676 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:09:51,692 INFO Going to convert document batch...
+2026-09-13 20:09:51,694 INFO Processing document gestion_2013-08-22_32_config_006_bin_006.tiff
+2026-09-13 20:10:20,530 INFO Finished converting document gestion_2013-08-22_32_config_006_bin_006.tiff in 28.86 sec.
+2026-09-13 20:10:20,531 INFO [docling_easyocr] 55/4320 done in 28.9s: gestion_2013-08-22_32
+2026-09-13 20:10:20,777 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:10:20,796 INFO Going to convert document batch...
+2026-09-13 20:10:20,797 INFO Processing document gestion_2013-08-22_32_config_006_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:10:51,465 INFO Finished converting document gestion_2013-08-22_32_config_006_bin_007.tiff in 30.93 sec.
+2026-09-13 20:10:51,468 INFO [docling_easyocr] 56/4320 done in 30.9s: gestion_2013-08-22_32
+2026-09-13 20:10:51,492 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:10:51,571 INFO Going to convert document batch...
+2026-09-13 20:10:51,572 INFO Processing document gestion_2013-08-22_32_config_007_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:11:55,357 INFO Finished converting document gestion_2013-08-22_32_config_007_bin_000.tiff in 63.89 sec.
+2026-09-13 20:11:55,367 INFO [docling_easyocr] 57/4320 done in 63.9s: gestion_2013-08-22_32
+2026-09-13 20:11:55,422 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:11:55,455 INFO Going to convert document batch...
+2026-09-13 20:11:55,456 INFO Processing document gestion_2013-08-22_32_config_007_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:13:00,181 INFO Finished converting document gestion_2013-08-22_32_config_007_bin_001.tiff in 64.81 sec.
+2026-09-13 20:13:00,191 INFO [docling_easyocr] 58/4320 done in 64.8s: gestion_2013-08-22_32
+2026-09-13 20:13:00,211 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:13:00,230 INFO Going to convert document batch...
+2026-09-13 20:13:00,231 INFO Processing document gestion_2013-08-22_32_config_007_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:14:03,751 INFO Finished converting document gestion_2013-08-22_32_config_007_bin_002.tiff in 63.56 sec.
+2026-09-13 20:14:03,758 INFO [docling_easyocr] 59/4320 done in 63.6s: gestion_2013-08-22_32
+2026-09-13 20:14:03,780 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:14:03,797 INFO Going to convert document batch...
+2026-09-13 20:14:03,798 INFO Processing document gestion_2013-08-22_32_config_007_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:15:01,513 INFO Finished converting document gestion_2013-08-22_32_config_007_bin_003.tiff in 57.75 sec.
+2026-09-13 20:15:01,521 INFO [docling_easyocr] 60/4320 done in 57.8s: gestion_2013-08-22_32
+2026-09-13 20:15:01,536 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:15:01,558 INFO Going to convert document batch...
+2026-09-13 20:15:01,559 INFO Processing document gestion_2013-08-22_32_config_007_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:16:13,708 INFO Finished converting document gestion_2013-08-22_32_config_007_bin_004.tiff in 72.19 sec.
+2026-09-13 20:16:13,711 INFO [docling_easyocr] 61/4320 done in 72.2s: gestion_2013-08-22_32
+2026-09-13 20:16:13,726 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:16:13,744 INFO Going to convert document batch...
+2026-09-13 20:16:13,745 INFO Processing document gestion_2013-08-22_32_config_007_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:17:19,518 INFO Finished converting document gestion_2013-08-22_32_config_007_bin_005.tiff in 65.81 sec.
+2026-09-13 20:17:19,520 INFO [docling_easyocr] 62/4320 done in 65.8s: gestion_2013-08-22_32
+2026-09-13 20:17:19,533 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:17:19,546 INFO Going to convert document batch...
+2026-09-13 20:17:19,547 INFO Processing document gestion_2013-08-22_32_config_007_bin_006.tiff
+2026-09-13 20:17:45,419 INFO Finished converting document gestion_2013-08-22_32_config_007_bin_006.tiff in 25.90 sec.
+2026-09-13 20:17:45,420 INFO [docling_easyocr] 63/4320 done in 25.9s: gestion_2013-08-22_32
+2026-09-13 20:17:45,439 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:17:45,454 INFO Going to convert document batch...
+2026-09-13 20:17:45,455 INFO Processing document gestion_2013-08-22_32_config_007_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:18:11,623 INFO Finished converting document gestion_2013-08-22_32_config_007_bin_007.tiff in 26.20 sec.
+2026-09-13 20:18:11,624 INFO [docling_easyocr] 64/4320 done in 26.2s: gestion_2013-08-22_32
+2026-09-13 20:18:11,658 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:18:11,686 INFO Going to convert document batch...
+2026-09-13 20:18:11,687 INFO Processing document gestion_2013-08-22_32_config_008_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:19:01,523 INFO Finished converting document gestion_2013-08-22_32_config_008_bin_000.tiff in 49.90 sec.
+2026-09-13 20:19:01,531 INFO [docling_easyocr] 65/4320 done in 49.9s: gestion_2013-08-22_32
+2026-09-13 20:19:01,552 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:19:01,580 INFO Going to convert document batch...
+2026-09-13 20:19:01,581 INFO Processing document gestion_2013-08-22_32_config_008_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:19:51,628 INFO Finished converting document gestion_2013-08-22_32_config_008_bin_001.tiff in 50.10 sec.
+2026-09-13 20:19:51,636 INFO [docling_easyocr] 66/4320 done in 50.1s: gestion_2013-08-22_32
+2026-09-13 20:19:51,655 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:19:51,670 INFO Going to convert document batch...
+2026-09-13 20:19:51,670 INFO Processing document gestion_2013-08-22_32_config_008_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:20:22,559 INFO Finished converting document gestion_2013-08-22_32_config_008_bin_002.tiff in 30.92 sec.
+2026-09-13 20:20:22,563 INFO [docling_easyocr] 67/4320 done in 30.9s: gestion_2013-08-22_32
+2026-09-13 20:20:22,579 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:20:22,596 INFO Going to convert document batch...
+2026-09-13 20:20:22,597 INFO Processing document gestion_2013-08-22_32_config_008_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:21:12,721 INFO Finished converting document gestion_2013-08-22_32_config_008_bin_003.tiff in 50.16 sec.
+2026-09-13 20:21:12,726 INFO [docling_easyocr] 68/4320 done in 50.2s: gestion_2013-08-22_32
+2026-09-13 20:21:12,743 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:21:12,760 INFO Going to convert document batch...
+2026-09-13 20:21:12,761 INFO Processing document gestion_2013-08-22_32_config_008_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:22:05,971 INFO Finished converting document gestion_2013-08-22_32_config_008_bin_004.tiff in 53.24 sec.
+2026-09-13 20:22:05,974 INFO [docling_easyocr] 69/4320 done in 53.2s: gestion_2013-08-22_32
+2026-09-13 20:22:05,994 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:22:06,011 INFO Going to convert document batch...
+2026-09-13 20:22:06,012 INFO Processing document gestion_2013-08-22_32_config_008_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:23:11,374 INFO Finished converting document gestion_2013-08-22_32_config_008_bin_005.tiff in 65.40 sec.
+2026-09-13 20:23:11,377 INFO [docling_easyocr] 70/4320 done in 65.4s: gestion_2013-08-22_32
+2026-09-13 20:23:11,391 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:23:11,404 INFO Going to convert document batch...
+2026-09-13 20:23:11,405 INFO Processing document gestion_2013-08-22_32_config_008_bin_006.tiff
+[2026-09-13T20:23:28.492] error: *** JOB 26475036 ON b001 CANCELLED AT 2026-09-13T20:23:28 DUE to SIGNAL Terminated ***

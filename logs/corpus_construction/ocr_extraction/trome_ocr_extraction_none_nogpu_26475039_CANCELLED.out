@@ -1,0 +1,790 @@
+2026-09-13 19:14:15,126 INFO Running docling_easyocr OCR on 4320 images (model loads ONCE)
+2026-09-13 19:14:15,281 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:14:15,450 INFO Going to convert document batch...
+2026-09-13 19:14:15,450 INFO Initializing pipeline for StandardPdfPipeline with options hash cd5a96c5e805595d56d8548c906fef27
+2026-09-13 19:14:15,521 INFO Loading plugin 'docling_defaults'
+2026-09-13 19:14:15,527 INFO Registered picture descriptions: ['picture_description_vlm_engine', 'vlm', 'api']
+2026-09-13 19:14:15,571 INFO Loading plugin 'docling_defaults'
+2026-09-13 19:14:15,606 INFO Registered ocr engines: ['auto', 'easyocr', 'kserve_v2_ocr', 'nemotron-ocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
+2026-09-13 19:14:18,811 INFO Accelerator device: 'cpu'
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/ao/nn/quantized/dynamic/modules/rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  w_ih = torch.quantize_per_tensor(
+2026-09-13 19:14:21,273 INFO Loading plugin 'docling_defaults'
+2026-09-13 19:14:21,291 INFO Registered layout engines: ['layout_object_detection', 'docling_layout_default', 'docling_experimental_table_crops_layout']
+2026-09-13 19:14:25,006 INFO Initializing Transformers object-detection engine
+2026-09-13 19:14:25,006 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-09-13 19:14:25,006 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+2026-09-13 19:14:25,149 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-09-13 19:14:25,159 INFO Model docling-project/docling-layout-heron already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-layout-heron/snapshots/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8
+2026-09-13 19:14:25,159 INFO Accelerator device: 'cpu'
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 11661.36it/s]
+2026-09-13 19:14:27,036 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-09-13 19:14:27,125 INFO Loading plugin 'docling_defaults'
+2026-09-13 19:14:27,129 INFO Registered table structure engines: ['docling_tableformer', 'docling_tableformer_v2', 'granite_vision_table']
+2026-09-13 19:14:27,129 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-09-13 19:14:27,257 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-09-13 19:14:27,268 INFO Model docling-project/docling-models already cached at /home/nicolasal97/.cache/huggingface/hub/models--docling-project--docling-models/snapshots/fc0f2d45e2218ea24bce5045f58a389aed16dc23
+2026-09-13 19:14:27,303 INFO Accelerator device: 'cpu'
+2026-09-13 19:14:27,796 INFO Processing document trome_2014-05-04_1_config_000_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:15:12,619 INFO Finished converting document trome_2014-05-04_1_config_000_bin_000.tiff in 57.37 sec.
+2026-09-13 19:15:12,665 INFO [docling_easyocr] 1/4320 done in 57.4s: trome_2014-05-04_1
+2026-09-13 19:15:12,695 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:15:12,734 INFO Going to convert document batch...
+2026-09-13 19:15:12,735 INFO Processing document trome_2014-05-04_1_config_000_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:15:52,655 INFO Finished converting document trome_2014-05-04_1_config_000_bin_001.tiff in 39.99 sec.
+2026-09-13 19:15:52,658 INFO [docling_easyocr] 2/4320 done in 40.0s: trome_2014-05-04_1
+2026-09-13 19:15:52,676 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:15:52,699 INFO Going to convert document batch...
+2026-09-13 19:15:52,700 INFO Processing document trome_2014-05-04_1_config_000_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:16:32,629 INFO Finished converting document trome_2014-05-04_1_config_000_bin_002.tiff in 39.97 sec.
+2026-09-13 19:16:32,630 INFO [docling_easyocr] 3/4320 done in 40.0s: trome_2014-05-04_1
+2026-09-13 19:16:32,653 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:16:32,673 INFO Going to convert document batch...
+2026-09-13 19:16:32,674 INFO Processing document trome_2014-05-04_1_config_000_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:17:12,928 INFO Finished converting document trome_2014-05-04_1_config_000_bin_003.tiff in 40.30 sec.
+2026-09-13 19:17:12,931 INFO [docling_easyocr] 4/4320 done in 40.3s: trome_2014-05-04_1
+2026-09-13 19:17:12,948 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:17:12,973 INFO Going to convert document batch...
+2026-09-13 19:17:12,974 INFO Processing document trome_2014-05-04_1_config_000_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:17:53,431 INFO Finished converting document trome_2014-05-04_1_config_000_bin_004.tiff in 40.50 sec.
+2026-09-13 19:17:53,432 INFO [docling_easyocr] 5/4320 done in 40.5s: trome_2014-05-04_1
+2026-09-13 19:17:53,459 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:17:53,480 INFO Going to convert document batch...
+2026-09-13 19:17:53,481 INFO Processing document trome_2014-05-04_1_config_000_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:18:35,674 INFO Finished converting document trome_2014-05-04_1_config_000_bin_005.tiff in 42.24 sec.
+2026-09-13 19:18:35,676 INFO [docling_easyocr] 6/4320 done in 42.2s: trome_2014-05-04_1
+2026-09-13 19:18:35,694 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:18:35,711 INFO Going to convert document batch...
+2026-09-13 19:18:35,712 INFO Processing document trome_2014-05-04_1_config_000_bin_006.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:19:08,526 INFO Finished converting document trome_2014-05-04_1_config_000_bin_006.tiff in 32.85 sec.
+2026-09-13 19:19:08,527 INFO [docling_easyocr] 7/4320 done in 32.9s: trome_2014-05-04_1
+2026-09-13 19:19:08,536 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:19:08,554 INFO Going to convert document batch...
+2026-09-13 19:19:08,555 INFO Processing document trome_2014-05-04_1_config_000_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:19:42,699 INFO Finished converting document trome_2014-05-04_1_config_000_bin_007.tiff in 34.17 sec.
+2026-09-13 19:19:42,701 INFO [docling_easyocr] 8/4320 done in 34.2s: trome_2014-05-04_1
+2026-09-13 19:19:42,730 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:19:42,832 INFO Going to convert document batch...
+2026-09-13 19:19:42,833 INFO Processing document trome_2014-05-04_1_config_001_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:20:20,211 INFO Finished converting document trome_2014-05-04_1_config_001_bin_000.tiff in 37.51 sec.
+2026-09-13 19:20:20,213 INFO [docling_easyocr] 9/4320 done in 37.5s: trome_2014-05-04_1
+2026-09-13 19:20:20,235 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:20:20,271 INFO Going to convert document batch...
+2026-09-13 19:20:20,272 INFO Processing document trome_2014-05-04_1_config_001_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:20:57,111 INFO Finished converting document trome_2014-05-04_1_config_001_bin_001.tiff in 36.90 sec.
+2026-09-13 19:20:57,112 INFO [docling_easyocr] 10/4320 done in 36.9s: trome_2014-05-04_1
+2026-09-13 19:20:57,130 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:20:57,152 INFO Going to convert document batch...
+2026-09-13 19:20:57,152 INFO Processing document trome_2014-05-04_1_config_001_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:21:34,492 INFO Finished converting document trome_2014-05-04_1_config_001_bin_002.tiff in 37.38 sec.
+2026-09-13 19:21:34,494 INFO [docling_easyocr] 11/4320 done in 37.4s: trome_2014-05-04_1
+2026-09-13 19:21:34,508 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:21:34,531 INFO Going to convert document batch...
+2026-09-13 19:21:34,532 INFO Processing document trome_2014-05-04_1_config_001_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:22:13,082 INFO Finished converting document trome_2014-05-04_1_config_001_bin_003.tiff in 38.59 sec.
+2026-09-13 19:22:13,084 INFO [docling_easyocr] 12/4320 done in 38.6s: trome_2014-05-04_1
+2026-09-13 19:22:13,101 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:22:13,125 INFO Going to convert document batch...
+2026-09-13 19:22:13,126 INFO Processing document trome_2014-05-04_1_config_001_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:22:53,052 INFO Finished converting document trome_2014-05-04_1_config_001_bin_004.tiff in 39.97 sec.
+2026-09-13 19:22:53,054 INFO [docling_easyocr] 13/4320 done in 40.0s: trome_2014-05-04_1
+2026-09-13 19:22:53,070 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:22:53,097 INFO Going to convert document batch...
+2026-09-13 19:22:53,098 INFO Processing document trome_2014-05-04_1_config_001_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:23:35,356 INFO Finished converting document trome_2014-05-04_1_config_001_bin_005.tiff in 42.30 sec.
+2026-09-13 19:23:35,358 INFO [docling_easyocr] 14/4320 done in 42.3s: trome_2014-05-04_1
+2026-09-13 19:23:35,375 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:23:35,389 INFO Going to convert document batch...
+2026-09-13 19:23:35,390 INFO Processing document trome_2014-05-04_1_config_001_bin_006.tiff
+2026-09-13 19:24:06,906 INFO Finished converting document trome_2014-05-04_1_config_001_bin_006.tiff in 31.55 sec.
+2026-09-13 19:24:06,907 INFO [docling_easyocr] 15/4320 done in 31.5s: trome_2014-05-04_1
+2026-09-13 19:24:06,929 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:24:06,947 INFO Going to convert document batch...
+2026-09-13 19:24:06,948 INFO Processing document trome_2014-05-04_1_config_001_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:24:41,264 INFO Finished converting document trome_2014-05-04_1_config_001_bin_007.tiff in 34.36 sec.
+2026-09-13 19:24:41,266 INFO [docling_easyocr] 16/4320 done in 34.4s: trome_2014-05-04_1
+2026-09-13 19:24:41,294 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:24:41,329 INFO Going to convert document batch...
+2026-09-13 19:24:41,331 INFO Processing document trome_2014-05-04_1_config_002_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:25:21,139 INFO Finished converting document trome_2014-05-04_1_config_002_bin_000.tiff in 39.87 sec.
+2026-09-13 19:25:21,142 INFO [docling_easyocr] 17/4320 done in 39.9s: trome_2014-05-04_1
+2026-09-13 19:25:21,214 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:25:21,254 INFO Going to convert document batch...
+2026-09-13 19:25:21,255 INFO Processing document trome_2014-05-04_1_config_002_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:26:01,241 INFO Finished converting document trome_2014-05-04_1_config_002_bin_001.tiff in 40.10 sec.
+2026-09-13 19:26:01,244 INFO [docling_easyocr] 18/4320 done in 40.1s: trome_2014-05-04_1
+2026-09-13 19:26:01,260 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:26:01,284 INFO Going to convert document batch...
+2026-09-13 19:26:01,286 INFO Processing document trome_2014-05-04_1_config_002_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:26:41,046 INFO Finished converting document trome_2014-05-04_1_config_002_bin_002.tiff in 39.80 sec.
+2026-09-13 19:26:41,048 INFO [docling_easyocr] 19/4320 done in 39.8s: trome_2014-05-04_1
+2026-09-13 19:26:41,091 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:26:41,109 INFO Going to convert document batch...
+2026-09-13 19:26:41,110 INFO Processing document trome_2014-05-04_1_config_002_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:27:21,666 INFO Finished converting document trome_2014-05-04_1_config_002_bin_003.tiff in 40.62 sec.
+2026-09-13 19:27:21,668 INFO [docling_easyocr] 20/4320 done in 40.6s: trome_2014-05-04_1
+2026-09-13 19:27:21,690 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:27:21,715 INFO Going to convert document batch...
+2026-09-13 19:27:21,716 INFO Processing document trome_2014-05-04_1_config_002_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:28:00,431 INFO Finished converting document trome_2014-05-04_1_config_002_bin_004.tiff in 38.76 sec.
+2026-09-13 19:28:00,432 INFO [docling_easyocr] 21/4320 done in 38.8s: trome_2014-05-04_1
+2026-09-13 19:28:00,458 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:28:00,481 INFO Going to convert document batch...
+2026-09-13 19:28:00,482 INFO Processing document trome_2014-05-04_1_config_002_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:28:40,875 INFO Finished converting document trome_2014-05-04_1_config_002_bin_005.tiff in 40.44 sec.
+2026-09-13 19:28:40,877 INFO [docling_easyocr] 22/4320 done in 40.4s: trome_2014-05-04_1
+2026-09-13 19:28:40,891 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:28:40,910 INFO Going to convert document batch...
+2026-09-13 19:28:40,911 INFO Processing document trome_2014-05-04_1_config_002_bin_006.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:29:13,883 INFO Finished converting document trome_2014-05-04_1_config_002_bin_006.tiff in 33.01 sec.
+2026-09-13 19:29:13,884 INFO [docling_easyocr] 23/4320 done in 33.0s: trome_2014-05-04_1
+2026-09-13 19:29:13,899 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:29:13,922 INFO Going to convert document batch...
+2026-09-13 19:29:13,923 INFO Processing document trome_2014-05-04_1_config_002_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:29:49,588 INFO Finished converting document trome_2014-05-04_1_config_002_bin_007.tiff in 35.70 sec.
+2026-09-13 19:29:49,590 INFO [docling_easyocr] 24/4320 done in 35.7s: trome_2014-05-04_1
+2026-09-13 19:29:49,633 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:29:49,731 INFO Going to convert document batch...
+2026-09-13 19:29:49,732 INFO Processing document trome_2014-05-04_1_config_003_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:30:29,190 INFO Finished converting document trome_2014-05-04_1_config_003_bin_000.tiff in 39.60 sec.
+2026-09-13 19:30:29,194 INFO [docling_easyocr] 25/4320 done in 39.6s: trome_2014-05-04_1
+2026-09-13 19:30:29,218 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:30:29,250 INFO Going to convert document batch...
+2026-09-13 19:30:29,251 INFO Processing document trome_2014-05-04_1_config_003_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:31:09,465 INFO Finished converting document trome_2014-05-04_1_config_003_bin_001.tiff in 40.27 sec.
+2026-09-13 19:31:09,469 INFO [docling_easyocr] 26/4320 done in 40.3s: trome_2014-05-04_1
+2026-09-13 19:31:09,484 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:31:09,503 INFO Going to convert document batch...
+2026-09-13 19:31:09,504 INFO Processing document trome_2014-05-04_1_config_003_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:31:47,635 INFO Finished converting document trome_2014-05-04_1_config_003_bin_002.tiff in 38.17 sec.
+2026-09-13 19:31:47,636 INFO [docling_easyocr] 27/4320 done in 38.2s: trome_2014-05-04_1
+2026-09-13 19:31:47,656 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:31:47,674 INFO Going to convert document batch...
+2026-09-13 19:31:47,675 INFO Processing document trome_2014-05-04_1_config_003_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:32:27,370 INFO Finished converting document trome_2014-05-04_1_config_003_bin_003.tiff in 39.73 sec.
+2026-09-13 19:32:27,371 INFO [docling_easyocr] 28/4320 done in 39.7s: trome_2014-05-04_1
+2026-09-13 19:32:27,386 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:32:27,408 INFO Going to convert document batch...
+2026-09-13 19:32:27,409 INFO Processing document trome_2014-05-04_1_config_003_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:33:09,372 INFO Finished converting document trome_2014-05-04_1_config_003_bin_004.tiff in 42.00 sec.
+2026-09-13 19:33:09,374 INFO [docling_easyocr] 29/4320 done in 42.0s: trome_2014-05-04_1
+2026-09-13 19:33:09,394 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:33:09,419 INFO Going to convert document batch...
+2026-09-13 19:33:09,420 INFO Processing document trome_2014-05-04_1_config_003_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:33:49,329 INFO Finished converting document trome_2014-05-04_1_config_003_bin_005.tiff in 39.95 sec.
+2026-09-13 19:33:49,331 INFO [docling_easyocr] 30/4320 done in 40.0s: trome_2014-05-04_1
+2026-09-13 19:33:49,346 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:33:49,364 INFO Going to convert document batch...
+2026-09-13 19:33:49,365 INFO Processing document trome_2014-05-04_1_config_003_bin_006.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:34:25,075 INFO Finished converting document trome_2014-05-04_1_config_003_bin_006.tiff in 35.74 sec.
+2026-09-13 19:34:25,076 INFO [docling_easyocr] 31/4320 done in 35.7s: trome_2014-05-04_1
+2026-09-13 19:34:25,092 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:34:25,111 INFO Going to convert document batch...
+2026-09-13 19:34:25,112 INFO Processing document trome_2014-05-04_1_config_003_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:35:02,363 INFO Finished converting document trome_2014-05-04_1_config_003_bin_007.tiff in 37.29 sec.
+2026-09-13 19:35:02,365 INFO [docling_easyocr] 32/4320 done in 37.3s: trome_2014-05-04_1
+2026-09-13 19:35:02,395 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:35:02,485 INFO Going to convert document batch...
+2026-09-13 19:35:02,487 INFO Processing document trome_2014-05-04_1_config_004_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:35:43,299 INFO Finished converting document trome_2014-05-04_1_config_004_bin_000.tiff in 40.93 sec.
+2026-09-13 19:35:43,300 INFO [docling_easyocr] 33/4320 done in 40.9s: trome_2014-05-04_1
+2026-09-13 19:35:43,331 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:35:43,366 INFO Going to convert document batch...
+2026-09-13 19:35:43,367 INFO Processing document trome_2014-05-04_1_config_004_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:36:22,110 INFO Finished converting document trome_2014-05-04_1_config_004_bin_001.tiff in 38.81 sec.
+2026-09-13 19:36:22,112 INFO [docling_easyocr] 34/4320 done in 38.8s: trome_2014-05-04_1
+2026-09-13 19:36:22,134 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:36:22,152 INFO Going to convert document batch...
+2026-09-13 19:36:22,153 INFO Processing document trome_2014-05-04_1_config_004_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:37:03,588 INFO Finished converting document trome_2014-05-04_1_config_004_bin_002.tiff in 41.48 sec.
+2026-09-13 19:37:03,590 INFO [docling_easyocr] 35/4320 done in 41.5s: trome_2014-05-04_1
+2026-09-13 19:37:03,607 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:37:03,630 INFO Going to convert document batch...
+2026-09-13 19:37:03,631 INFO Processing document trome_2014-05-04_1_config_004_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:37:44,508 INFO Finished converting document trome_2014-05-04_1_config_004_bin_003.tiff in 40.92 sec.
+2026-09-13 19:37:44,510 INFO [docling_easyocr] 36/4320 done in 40.9s: trome_2014-05-04_1
+2026-09-13 19:37:44,522 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:37:44,547 INFO Going to convert document batch...
+2026-09-13 19:37:44,548 INFO Processing document trome_2014-05-04_1_config_004_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:38:24,568 INFO Finished converting document trome_2014-05-04_1_config_004_bin_004.tiff in 40.06 sec.
+2026-09-13 19:38:24,569 INFO [docling_easyocr] 37/4320 done in 40.1s: trome_2014-05-04_1
+2026-09-13 19:38:24,591 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:38:24,611 INFO Going to convert document batch...
+2026-09-13 19:38:24,611 INFO Processing document trome_2014-05-04_1_config_004_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:39:05,991 INFO Finished converting document trome_2014-05-04_1_config_004_bin_005.tiff in 41.42 sec.
+2026-09-13 19:39:05,993 INFO [docling_easyocr] 38/4320 done in 41.4s: trome_2014-05-04_1
+2026-09-13 19:39:06,014 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:39:06,029 INFO Going to convert document batch...
+2026-09-13 19:39:06,030 INFO Processing document trome_2014-05-04_1_config_004_bin_006.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:39:39,624 INFO Finished converting document trome_2014-05-04_1_config_004_bin_006.tiff in 33.63 sec.
+2026-09-13 19:39:39,625 INFO [docling_easyocr] 39/4320 done in 33.6s: trome_2014-05-04_1
+2026-09-13 19:39:39,638 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:39:39,660 INFO Going to convert document batch...
+2026-09-13 19:39:39,661 INFO Processing document trome_2014-05-04_1_config_004_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:40:16,610 INFO Finished converting document trome_2014-05-04_1_config_004_bin_007.tiff in 36.98 sec.
+2026-09-13 19:40:16,612 INFO [docling_easyocr] 40/4320 done in 37.0s: trome_2014-05-04_1
+2026-09-13 19:40:16,640 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:40:16,676 INFO Going to convert document batch...
+2026-09-13 19:40:16,678 INFO Processing document trome_2014-05-04_1_config_005_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:40:57,861 INFO Finished converting document trome_2014-05-04_1_config_005_bin_000.tiff in 41.25 sec.
+2026-09-13 19:40:57,865 INFO [docling_easyocr] 41/4320 done in 41.3s: trome_2014-05-04_1
+2026-09-13 19:40:57,889 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:40:57,926 INFO Going to convert document batch...
+2026-09-13 19:40:57,927 INFO Processing document trome_2014-05-04_1_config_005_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:41:37,531 INFO Finished converting document trome_2014-05-04_1_config_005_bin_001.tiff in 39.67 sec.
+2026-09-13 19:41:37,536 INFO [docling_easyocr] 42/4320 done in 39.7s: trome_2014-05-04_1
+2026-09-13 19:41:37,551 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:41:37,573 INFO Going to convert document batch...
+2026-09-13 19:41:37,574 INFO Processing document trome_2014-05-04_1_config_005_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:42:16,774 INFO Finished converting document trome_2014-05-04_1_config_005_bin_002.tiff in 39.24 sec.
+2026-09-13 19:42:16,776 INFO [docling_easyocr] 43/4320 done in 39.2s: trome_2014-05-04_1
+2026-09-13 19:42:16,805 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:42:16,861 INFO Going to convert document batch...
+2026-09-13 19:42:16,862 INFO Processing document trome_2014-05-04_1_config_005_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:42:57,416 INFO Finished converting document trome_2014-05-04_1_config_005_bin_003.tiff in 40.64 sec.
+2026-09-13 19:42:57,417 INFO [docling_easyocr] 44/4320 done in 40.6s: trome_2014-05-04_1
+2026-09-13 19:42:57,434 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:42:57,455 INFO Going to convert document batch...
+2026-09-13 19:42:57,456 INFO Processing document trome_2014-05-04_1_config_005_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:43:38,638 INFO Finished converting document trome_2014-05-04_1_config_005_bin_004.tiff in 41.22 sec.
+2026-09-13 19:43:38,639 INFO [docling_easyocr] 45/4320 done in 41.2s: trome_2014-05-04_1
+2026-09-13 19:43:38,813 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:43:38,838 INFO Going to convert document batch...
+2026-09-13 19:43:38,839 INFO Processing document trome_2014-05-04_1_config_005_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:44:19,339 INFO Finished converting document trome_2014-05-04_1_config_005_bin_005.tiff in 40.70 sec.
+2026-09-13 19:44:19,340 INFO [docling_easyocr] 46/4320 done in 40.7s: trome_2014-05-04_1
+2026-09-13 19:44:19,357 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:44:19,373 INFO Going to convert document batch...
+2026-09-13 19:44:19,374 INFO Processing document trome_2014-05-04_1_config_005_bin_006.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:44:52,301 INFO Finished converting document trome_2014-05-04_1_config_005_bin_006.tiff in 32.96 sec.
+2026-09-13 19:44:52,302 INFO [docling_easyocr] 47/4320 done in 33.0s: trome_2014-05-04_1
+2026-09-13 19:44:52,316 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:44:52,338 INFO Going to convert document batch...
+2026-09-13 19:44:52,339 INFO Processing document trome_2014-05-04_1_config_005_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:45:29,545 INFO Finished converting document trome_2014-05-04_1_config_005_bin_007.tiff in 37.24 sec.
+2026-09-13 19:45:29,547 INFO [docling_easyocr] 48/4320 done in 37.2s: trome_2014-05-04_1
+2026-09-13 19:45:29,575 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:45:29,660 INFO Going to convert document batch...
+2026-09-13 19:45:29,661 INFO Processing document trome_2014-05-04_1_config_006_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:46:11,137 INFO Finished converting document trome_2014-05-04_1_config_006_bin_000.tiff in 41.59 sec.
+2026-09-13 19:46:11,139 INFO [docling_easyocr] 49/4320 done in 41.6s: trome_2014-05-04_1
+2026-09-13 19:46:11,166 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:46:11,199 INFO Going to convert document batch...
+2026-09-13 19:46:11,200 INFO Processing document trome_2014-05-04_1_config_006_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:46:53,439 INFO Finished converting document trome_2014-05-04_1_config_006_bin_001.tiff in 42.30 sec.
+2026-09-13 19:46:53,441 INFO [docling_easyocr] 50/4320 done in 42.3s: trome_2014-05-04_1
+2026-09-13 19:46:53,810 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:46:53,828 INFO Going to convert document batch...
+2026-09-13 19:46:53,829 INFO Processing document trome_2014-05-04_1_config_006_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:47:33,707 INFO Finished converting document trome_2014-05-04_1_config_006_bin_002.tiff in 39.92 sec.
+2026-09-13 19:47:33,709 INFO [docling_easyocr] 51/4320 done in 39.9s: trome_2014-05-04_1
+2026-09-13 19:47:33,729 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:47:33,749 INFO Going to convert document batch...
+2026-09-13 19:47:33,750 INFO Processing document trome_2014-05-04_1_config_006_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:48:13,864 INFO Finished converting document trome_2014-05-04_1_config_006_bin_003.tiff in 40.16 sec.
+2026-09-13 19:48:13,866 INFO [docling_easyocr] 52/4320 done in 40.2s: trome_2014-05-04_1
+2026-09-13 19:48:13,883 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:48:13,906 INFO Going to convert document batch...
+2026-09-13 19:48:13,907 INFO Processing document trome_2014-05-04_1_config_006_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:48:54,262 INFO Finished converting document trome_2014-05-04_1_config_006_bin_004.tiff in 40.39 sec.
+2026-09-13 19:48:54,263 INFO [docling_easyocr] 53/4320 done in 40.4s: trome_2014-05-04_1
+2026-09-13 19:48:54,293 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:48:54,315 INFO Going to convert document batch...
+2026-09-13 19:48:54,316 INFO Processing document trome_2014-05-04_1_config_006_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:49:33,815 INFO Finished converting document trome_2014-05-04_1_config_006_bin_005.tiff in 39.55 sec.
+2026-09-13 19:49:33,817 INFO [docling_easyocr] 54/4320 done in 39.6s: trome_2014-05-04_1
+2026-09-13 19:49:33,833 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:49:33,849 INFO Going to convert document batch...
+2026-09-13 19:49:33,850 INFO Processing document trome_2014-05-04_1_config_006_bin_006.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:50:06,197 INFO Finished converting document trome_2014-05-04_1_config_006_bin_006.tiff in 32.38 sec.
+2026-09-13 19:50:06,198 INFO [docling_easyocr] 55/4320 done in 32.4s: trome_2014-05-04_1
+2026-09-13 19:50:06,217 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:50:06,239 INFO Going to convert document batch...
+2026-09-13 19:50:06,240 INFO Processing document trome_2014-05-04_1_config_006_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:50:43,286 INFO Finished converting document trome_2014-05-04_1_config_006_bin_007.tiff in 37.09 sec.
+2026-09-13 19:50:43,288 INFO [docling_easyocr] 56/4320 done in 37.1s: trome_2014-05-04_1
+2026-09-13 19:50:43,319 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:50:43,415 INFO Going to convert document batch...
+2026-09-13 19:50:43,416 INFO Processing document trome_2014-05-04_1_config_007_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:51:23,185 INFO Finished converting document trome_2014-05-04_1_config_007_bin_000.tiff in 39.90 sec.
+2026-09-13 19:51:23,187 INFO [docling_easyocr] 57/4320 done in 39.9s: trome_2014-05-04_1
+2026-09-13 19:51:23,210 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:51:23,244 INFO Going to convert document batch...
+2026-09-13 19:51:23,245 INFO Processing document trome_2014-05-04_1_config_007_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:52:06,476 INFO Finished converting document trome_2014-05-04_1_config_007_bin_001.tiff in 43.29 sec.
+2026-09-13 19:52:06,478 INFO [docling_easyocr] 58/4320 done in 43.3s: trome_2014-05-04_1
+2026-09-13 19:52:06,495 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:52:06,515 INFO Going to convert document batch...
+2026-09-13 19:52:06,516 INFO Processing document trome_2014-05-04_1_config_007_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:52:46,221 INFO Finished converting document trome_2014-05-04_1_config_007_bin_002.tiff in 39.74 sec.
+2026-09-13 19:52:46,223 INFO [docling_easyocr] 59/4320 done in 39.7s: trome_2014-05-04_1
+2026-09-13 19:52:46,256 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:52:46,275 INFO Going to convert document batch...
+2026-09-13 19:52:46,276 INFO Processing document trome_2014-05-04_1_config_007_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:53:26,721 INFO Finished converting document trome_2014-05-04_1_config_007_bin_003.tiff in 40.50 sec.
+2026-09-13 19:53:26,723 INFO [docling_easyocr] 60/4320 done in 40.5s: trome_2014-05-04_1
+2026-09-13 19:53:26,752 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:53:26,773 INFO Going to convert document batch...
+2026-09-13 19:53:26,774 INFO Processing document trome_2014-05-04_1_config_007_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:54:08,357 INFO Finished converting document trome_2014-05-04_1_config_007_bin_004.tiff in 41.63 sec.
+2026-09-13 19:54:08,358 INFO [docling_easyocr] 61/4320 done in 41.6s: trome_2014-05-04_1
+2026-09-13 19:54:08,378 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:54:08,401 INFO Going to convert document batch...
+2026-09-13 19:54:08,401 INFO Processing document trome_2014-05-04_1_config_007_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:54:50,192 INFO Finished converting document trome_2014-05-04_1_config_007_bin_005.tiff in 41.83 sec.
+2026-09-13 19:54:50,194 INFO [docling_easyocr] 62/4320 done in 41.8s: trome_2014-05-04_1
+2026-09-13 19:54:50,209 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:54:50,229 INFO Going to convert document batch...
+2026-09-13 19:54:50,230 INFO Processing document trome_2014-05-04_1_config_007_bin_006.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:55:24,240 INFO Finished converting document trome_2014-05-04_1_config_007_bin_006.tiff in 34.05 sec.
+2026-09-13 19:55:24,242 INFO [docling_easyocr] 63/4320 done in 34.0s: trome_2014-05-04_1
+2026-09-13 19:55:24,273 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:55:24,290 INFO Going to convert document batch...
+2026-09-13 19:55:24,291 INFO Processing document trome_2014-05-04_1_config_007_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:55:58,839 INFO Finished converting document trome_2014-05-04_1_config_007_bin_007.tiff in 34.60 sec.
+2026-09-13 19:55:58,841 INFO [docling_easyocr] 64/4320 done in 34.6s: trome_2014-05-04_1
+2026-09-13 19:55:58,866 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:55:58,901 INFO Going to convert document batch...
+2026-09-13 19:55:58,902 INFO Processing document trome_2014-05-04_1_config_008_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:56:39,248 INFO Finished converting document trome_2014-05-04_1_config_008_bin_000.tiff in 40.41 sec.
+2026-09-13 19:56:39,254 INFO [docling_easyocr] 65/4320 done in 40.4s: trome_2014-05-04_1
+2026-09-13 19:56:39,280 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:56:39,318 INFO Going to convert document batch...
+2026-09-13 19:56:39,319 INFO Processing document trome_2014-05-04_1_config_008_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:57:19,769 INFO Finished converting document trome_2014-05-04_1_config_008_bin_001.tiff in 40.51 sec.
+2026-09-13 19:57:19,774 INFO [docling_easyocr] 66/4320 done in 40.5s: trome_2014-05-04_1
+2026-09-13 19:57:19,807 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:57:19,826 INFO Going to convert document batch...
+2026-09-13 19:57:19,827 INFO Processing document trome_2014-05-04_1_config_008_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:57:59,386 INFO Finished converting document trome_2014-05-04_1_config_008_bin_002.tiff in 39.61 sec.
+2026-09-13 19:57:59,388 INFO [docling_easyocr] 67/4320 done in 39.6s: trome_2014-05-04_1
+2026-09-13 19:57:59,411 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:57:59,431 INFO Going to convert document batch...
+2026-09-13 19:57:59,432 INFO Processing document trome_2014-05-04_1_config_008_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:58:41,034 INFO Finished converting document trome_2014-05-04_1_config_008_bin_003.tiff in 41.65 sec.
+2026-09-13 19:58:41,036 INFO [docling_easyocr] 68/4320 done in 41.6s: trome_2014-05-04_1
+2026-09-13 19:58:41,056 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:58:41,079 INFO Going to convert document batch...
+2026-09-13 19:58:41,080 INFO Processing document trome_2014-05-04_1_config_008_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 19:59:20,442 INFO Finished converting document trome_2014-05-04_1_config_008_bin_004.tiff in 39.41 sec.
+2026-09-13 19:59:20,443 INFO [docling_easyocr] 69/4320 done in 39.4s: trome_2014-05-04_1
+2026-09-13 19:59:20,465 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 19:59:20,488 INFO Going to convert document batch...
+2026-09-13 19:59:20,489 INFO Processing document trome_2014-05-04_1_config_008_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:00:01,128 INFO Finished converting document trome_2014-05-04_1_config_008_bin_005.tiff in 40.69 sec.
+2026-09-13 20:00:01,130 INFO [docling_easyocr] 70/4320 done in 40.7s: trome_2014-05-04_1
+2026-09-13 20:00:01,149 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:00:01,163 INFO Going to convert document batch...
+2026-09-13 20:00:01,164 INFO Processing document trome_2014-05-04_1_config_008_bin_006.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:00:34,529 INFO Finished converting document trome_2014-05-04_1_config_008_bin_006.tiff in 33.40 sec.
+2026-09-13 20:00:34,531 INFO [docling_easyocr] 71/4320 done in 33.4s: trome_2014-05-04_1
+2026-09-13 20:00:34,547 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:00:34,569 INFO Going to convert document batch...
+2026-09-13 20:00:34,570 INFO Processing document trome_2014-05-04_1_config_008_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:01:10,645 INFO Finished converting document trome_2014-05-04_1_config_008_bin_007.tiff in 36.11 sec.
+2026-09-13 20:01:10,647 INFO [docling_easyocr] 72/4320 done in 36.1s: trome_2014-05-04_1
+2026-09-13 20:01:10,677 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:01:10,763 INFO Going to convert document batch...
+2026-09-13 20:01:10,763 INFO Processing document trome_2014-05-04_1_config_009_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:01:52,443 INFO Finished converting document trome_2014-05-04_1_config_009_bin_000.tiff in 41.80 sec.
+2026-09-13 20:01:52,446 INFO [docling_easyocr] 73/4320 done in 41.8s: trome_2014-05-04_1
+2026-09-13 20:01:52,467 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:01:52,504 INFO Going to convert document batch...
+2026-09-13 20:01:52,505 INFO Processing document trome_2014-05-04_1_config_009_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:02:34,191 INFO Finished converting document trome_2014-05-04_1_config_009_bin_001.tiff in 41.74 sec.
+2026-09-13 20:02:34,193 INFO [docling_easyocr] 74/4320 done in 41.7s: trome_2014-05-04_1
+2026-09-13 20:02:34,214 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:02:34,234 INFO Going to convert document batch...
+2026-09-13 20:02:34,234 INFO Processing document trome_2014-05-04_1_config_009_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:03:14,941 INFO Finished converting document trome_2014-05-04_1_config_009_bin_002.tiff in 40.75 sec.
+2026-09-13 20:03:14,943 INFO [docling_easyocr] 75/4320 done in 40.7s: trome_2014-05-04_1
+2026-09-13 20:03:14,959 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:03:14,979 INFO Going to convert document batch...
+2026-09-13 20:03:14,980 INFO Processing document trome_2014-05-04_1_config_009_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:03:53,812 INFO Finished converting document trome_2014-05-04_1_config_009_bin_003.tiff in 38.87 sec.
+2026-09-13 20:03:53,814 INFO [docling_easyocr] 76/4320 done in 38.9s: trome_2014-05-04_1
+2026-09-13 20:03:53,829 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:03:53,849 INFO Going to convert document batch...
+2026-09-13 20:03:53,850 INFO Processing document trome_2014-05-04_1_config_009_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:04:34,139 INFO Finished converting document trome_2014-05-04_1_config_009_bin_004.tiff in 40.32 sec.
+2026-09-13 20:04:34,141 INFO [docling_easyocr] 77/4320 done in 40.3s: trome_2014-05-04_1
+2026-09-13 20:04:34,165 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:04:34,187 INFO Going to convert document batch...
+2026-09-13 20:04:34,188 INFO Processing document trome_2014-05-04_1_config_009_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:05:15,282 INFO Finished converting document trome_2014-05-04_1_config_009_bin_005.tiff in 41.14 sec.
+2026-09-13 20:05:15,284 INFO [docling_easyocr] 78/4320 done in 41.1s: trome_2014-05-04_1
+2026-09-13 20:05:15,299 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:05:15,315 INFO Going to convert document batch...
+2026-09-13 20:05:15,316 INFO Processing document trome_2014-05-04_1_config_009_bin_006.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:05:49,832 INFO Finished converting document trome_2014-05-04_1_config_009_bin_006.tiff in 34.55 sec.
+2026-09-13 20:05:49,834 INFO [docling_easyocr] 79/4320 done in 34.5s: trome_2014-05-04_1
+2026-09-13 20:05:49,845 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:05:49,863 INFO Going to convert document batch...
+2026-09-13 20:05:49,864 INFO Processing document trome_2014-05-04_1_config_009_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:06:25,303 INFO Finished converting document trome_2014-05-04_1_config_009_bin_007.tiff in 35.47 sec.
+2026-09-13 20:06:25,304 INFO [docling_easyocr] 80/4320 done in 35.5s: trome_2014-05-04_1
+2026-09-13 20:06:25,335 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:06:25,430 INFO Going to convert document batch...
+2026-09-13 20:06:25,431 INFO Processing document trome_2014-05-04_1_config_010_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:07:05,582 INFO Finished converting document trome_2014-05-04_1_config_010_bin_000.tiff in 40.28 sec.
+2026-09-13 20:07:05,584 INFO [docling_easyocr] 81/4320 done in 40.3s: trome_2014-05-04_1
+2026-09-13 20:07:05,608 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:07:05,643 INFO Going to convert document batch...
+2026-09-13 20:07:05,643 INFO Processing document trome_2014-05-04_1_config_010_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:07:45,783 INFO Finished converting document trome_2014-05-04_1_config_010_bin_001.tiff in 40.20 sec.
+2026-09-13 20:07:45,784 INFO [docling_easyocr] 82/4320 done in 40.2s: trome_2014-05-04_1
+2026-09-13 20:07:45,796 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:07:45,817 INFO Going to convert document batch...
+2026-09-13 20:07:45,818 INFO Processing document trome_2014-05-04_1_config_010_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:08:25,335 INFO Finished converting document trome_2014-05-04_1_config_010_bin_002.tiff in 39.55 sec.
+2026-09-13 20:08:25,337 INFO [docling_easyocr] 83/4320 done in 39.6s: trome_2014-05-04_1
+2026-09-13 20:08:25,360 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:08:25,381 INFO Going to convert document batch...
+2026-09-13 20:08:25,382 INFO Processing document trome_2014-05-04_1_config_010_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:09:05,917 INFO Finished converting document trome_2014-05-04_1_config_010_bin_003.tiff in 40.58 sec.
+2026-09-13 20:09:05,920 INFO [docling_easyocr] 84/4320 done in 40.6s: trome_2014-05-04_1
+2026-09-13 20:09:05,935 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:09:05,959 INFO Going to convert document batch...
+2026-09-13 20:09:05,960 INFO Processing document trome_2014-05-04_1_config_010_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:09:44,880 INFO Finished converting document trome_2014-05-04_1_config_010_bin_004.tiff in 38.96 sec.
+2026-09-13 20:09:44,881 INFO [docling_easyocr] 85/4320 done in 39.0s: trome_2014-05-04_1
+2026-09-13 20:09:44,903 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:09:44,925 INFO Going to convert document batch...
+2026-09-13 20:09:44,926 INFO Processing document trome_2014-05-04_1_config_010_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:10:24,306 INFO Finished converting document trome_2014-05-04_1_config_010_bin_005.tiff in 39.42 sec.
+2026-09-13 20:10:24,308 INFO [docling_easyocr] 86/4320 done in 39.4s: trome_2014-05-04_1
+2026-09-13 20:10:24,325 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:10:24,343 INFO Going to convert document batch...
+2026-09-13 20:10:24,344 INFO Processing document trome_2014-05-04_1_config_010_bin_006.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:10:56,499 INFO Finished converting document trome_2014-05-04_1_config_010_bin_006.tiff in 32.19 sec.
+2026-09-13 20:10:56,501 INFO [docling_easyocr] 87/4320 done in 32.2s: trome_2014-05-04_1
+2026-09-13 20:10:56,521 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:10:56,541 INFO Going to convert document batch...
+2026-09-13 20:10:56,541 INFO Processing document trome_2014-05-04_1_config_010_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:11:30,788 INFO Finished converting document trome_2014-05-04_1_config_010_bin_007.tiff in 34.29 sec.
+2026-09-13 20:11:30,790 INFO [docling_easyocr] 88/4320 done in 34.3s: trome_2014-05-04_1
+2026-09-13 20:11:30,816 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:11:30,851 INFO Going to convert document batch...
+2026-09-13 20:11:30,852 INFO Processing document trome_2014-05-04_1_config_011_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:12:10,500 INFO Finished converting document trome_2014-05-04_1_config_011_bin_000.tiff in 39.71 sec.
+2026-09-13 20:12:10,502 INFO [docling_easyocr] 89/4320 done in 39.7s: trome_2014-05-04_1
+2026-09-13 20:12:10,524 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:12:10,560 INFO Going to convert document batch...
+2026-09-13 20:12:10,561 INFO Processing document trome_2014-05-04_1_config_011_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:12:49,670 INFO Finished converting document trome_2014-05-04_1_config_011_bin_001.tiff in 39.17 sec.
+2026-09-13 20:12:49,672 INFO [docling_easyocr] 90/4320 done in 39.2s: trome_2014-05-04_1
+2026-09-13 20:12:49,687 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:12:49,707 INFO Going to convert document batch...
+2026-09-13 20:12:49,708 INFO Processing document trome_2014-05-04_1_config_011_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:13:28,100 INFO Finished converting document trome_2014-05-04_1_config_011_bin_002.tiff in 38.43 sec.
+2026-09-13 20:13:28,102 INFO [docling_easyocr] 91/4320 done in 38.4s: trome_2014-05-04_1
+2026-09-13 20:13:28,126 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:13:28,142 INFO Going to convert document batch...
+2026-09-13 20:13:28,143 INFO Processing document trome_2014-05-04_1_config_011_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:14:05,755 INFO Finished converting document trome_2014-05-04_1_config_011_bin_003.tiff in 37.65 sec.
+2026-09-13 20:14:05,757 INFO [docling_easyocr] 92/4320 done in 37.7s: trome_2014-05-04_1
+2026-09-13 20:14:05,775 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:14:05,795 INFO Going to convert document batch...
+2026-09-13 20:14:05,796 INFO Processing document trome_2014-05-04_1_config_011_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:14:42,552 INFO Finished converting document trome_2014-05-04_1_config_011_bin_004.tiff in 36.80 sec.
+2026-09-13 20:14:42,553 INFO [docling_easyocr] 93/4320 done in 36.8s: trome_2014-05-04_1
+2026-09-13 20:14:42,567 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:14:42,586 INFO Going to convert document batch...
+2026-09-13 20:14:42,587 INFO Processing document trome_2014-05-04_1_config_011_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:15:17,709 INFO Finished converting document trome_2014-05-04_1_config_011_bin_005.tiff in 35.16 sec.
+2026-09-13 20:15:17,711 INFO [docling_easyocr] 94/4320 done in 35.2s: trome_2014-05-04_1
+2026-09-13 20:15:17,727 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:15:17,742 INFO Going to convert document batch...
+2026-09-13 20:15:17,742 INFO Processing document trome_2014-05-04_1_config_011_bin_006.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:15:47,989 INFO Finished converting document trome_2014-05-04_1_config_011_bin_006.tiff in 30.28 sec.
+2026-09-13 20:15:47,990 INFO [docling_easyocr] 95/4320 done in 30.3s: trome_2014-05-04_1
+2026-09-13 20:15:48,012 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:15:48,032 INFO Going to convert document batch...
+2026-09-13 20:15:48,032 INFO Processing document trome_2014-05-04_1_config_011_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:16:21,235 INFO Finished converting document trome_2014-05-04_1_config_011_bin_007.tiff in 33.25 sec.
+2026-09-13 20:16:21,237 INFO [docling_easyocr] 96/4320 done in 33.2s: trome_2014-05-04_1
+2026-09-13 20:16:21,272 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:16:21,354 INFO Going to convert document batch...
+2026-09-13 20:16:21,355 INFO Processing document trome_2014-05-04_1_config_012_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:16:56,694 INFO Finished converting document trome_2014-05-04_1_config_012_bin_000.tiff in 35.46 sec.
+2026-09-13 20:16:56,696 INFO [docling_easyocr] 97/4320 done in 35.5s: trome_2014-05-04_1
+2026-09-13 20:16:56,730 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:16:56,758 INFO Going to convert document batch...
+2026-09-13 20:16:56,759 INFO Processing document trome_2014-05-04_1_config_012_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:17:30,199 INFO Finished converting document trome_2014-05-04_1_config_012_bin_001.tiff in 33.50 sec.
+2026-09-13 20:17:30,201 INFO [docling_easyocr] 98/4320 done in 33.5s: trome_2014-05-04_1
+2026-09-13 20:17:30,223 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:17:30,240 INFO Going to convert document batch...
+2026-09-13 20:17:30,241 INFO Processing document trome_2014-05-04_1_config_012_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:18:02,295 INFO Finished converting document trome_2014-05-04_1_config_012_bin_002.tiff in 32.09 sec.
+2026-09-13 20:18:02,296 INFO [docling_easyocr] 99/4320 done in 32.1s: trome_2014-05-04_1
+2026-09-13 20:18:02,316 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:18:02,334 INFO Going to convert document batch...
+2026-09-13 20:18:02,334 INFO Processing document trome_2014-05-04_1_config_012_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:18:35,354 INFO Finished converting document trome_2014-05-04_1_config_012_bin_003.tiff in 33.06 sec.
+2026-09-13 20:18:35,356 INFO [docling_easyocr] 100/4320 done in 33.1s: trome_2014-05-04_1
+2026-09-13 20:18:35,445 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:18:35,465 INFO Going to convert document batch...
+2026-09-13 20:18:35,465 INFO Processing document trome_2014-05-04_1_config_012_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:19:07,884 INFO Finished converting document trome_2014-05-04_1_config_012_bin_004.tiff in 32.45 sec.
+2026-09-13 20:19:07,885 INFO [docling_easyocr] 101/4320 done in 32.5s: trome_2014-05-04_1
+2026-09-13 20:19:07,899 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:19:07,916 INFO Going to convert document batch...
+2026-09-13 20:19:07,917 INFO Processing document trome_2014-05-04_1_config_012_bin_005.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:19:40,828 INFO Finished converting document trome_2014-05-04_1_config_012_bin_005.tiff in 32.94 sec.
+2026-09-13 20:19:40,829 INFO [docling_easyocr] 102/4320 done in 32.9s: trome_2014-05-04_1
+2026-09-13 20:19:40,838 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:19:40,852 INFO Going to convert document batch...
+2026-09-13 20:19:40,853 INFO Processing document trome_2014-05-04_1_config_012_bin_006.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:20:07,651 INFO Finished converting document trome_2014-05-04_1_config_012_bin_006.tiff in 26.82 sec.
+2026-09-13 20:20:07,652 INFO [docling_easyocr] 103/4320 done in 26.8s: trome_2014-05-04_1
+2026-09-13 20:20:07,662 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:20:07,680 INFO Going to convert document batch...
+2026-09-13 20:20:07,680 INFO Processing document trome_2014-05-04_1_config_012_bin_007.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:20:37,825 INFO Finished converting document trome_2014-05-04_1_config_012_bin_007.tiff in 30.17 sec.
+2026-09-13 20:20:37,826 INFO [docling_easyocr] 104/4320 done in 30.2s: trome_2014-05-04_1
+2026-09-13 20:20:37,858 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:20:37,933 INFO Going to convert document batch...
+2026-09-13 20:20:37,934 INFO Processing document trome_2014-05-04_1_config_013_bin_000.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:21:10,519 INFO Finished converting document trome_2014-05-04_1_config_013_bin_000.tiff in 32.69 sec.
+2026-09-13 20:21:10,521 INFO [docling_easyocr] 105/4320 done in 32.7s: trome_2014-05-04_1
+2026-09-13 20:21:10,544 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:21:10,577 INFO Going to convert document batch...
+2026-09-13 20:21:10,578 INFO Processing document trome_2014-05-04_1_config_013_bin_001.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:21:43,492 INFO Finished converting document trome_2014-05-04_1_config_013_bin_001.tiff in 32.97 sec.
+2026-09-13 20:21:43,493 INFO [docling_easyocr] 106/4320 done in 33.0s: trome_2014-05-04_1
+2026-09-13 20:21:43,506 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:21:43,522 INFO Going to convert document batch...
+2026-09-13 20:21:43,523 INFO Processing document trome_2014-05-04_1_config_013_bin_002.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:22:16,941 INFO Finished converting document trome_2014-05-04_1_config_013_bin_002.tiff in 33.45 sec.
+2026-09-13 20:22:16,943 INFO [docling_easyocr] 107/4320 done in 33.4s: trome_2014-05-04_1
+2026-09-13 20:22:16,966 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:22:16,985 INFO Going to convert document batch...
+2026-09-13 20:22:16,986 INFO Processing document trome_2014-05-04_1_config_013_bin_003.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:22:48,903 INFO Finished converting document trome_2014-05-04_1_config_013_bin_003.tiff in 31.96 sec.
+2026-09-13 20:22:48,905 INFO [docling_easyocr] 108/4320 done in 32.0s: trome_2014-05-04_1
+2026-09-13 20:22:48,928 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:22:48,947 INFO Going to convert document batch...
+2026-09-13 20:22:48,948 INFO Processing document trome_2014-05-04_1_config_013_bin_004.tiff
+/home/nicolasal97/ma_up/venv/corpus_construction/ocr_extraction/lib/python3.13/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+2026-09-13 20:23:27,389 INFO Finished converting document trome_2014-05-04_1_config_013_bin_004.tiff in 38.48 sec.
+2026-09-13 20:23:27,390 INFO [docling_easyocr] 109/4320 done in 38.5s: trome_2014-05-04_1
+2026-09-13 20:23:27,410 INFO detected formats: [<InputFormat.IMAGE: 'image'>]
+2026-09-13 20:23:27,431 INFO Going to convert document batch...
+2026-09-13 20:23:27,432 INFO Processing document trome_2014-05-04_1_config_013_bin_005.tiff
+[2026-09-13T20:23:28.438] error: *** JOB 26475039 ON b001 CANCELLED AT 2026-09-13T20:23:28 DUE to SIGNAL Terminated ***

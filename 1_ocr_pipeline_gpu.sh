@@ -1,35 +1,57 @@
 #!/bin/bash
-#SBATCH --job-name=layout_detection_all
-#SBATCH --output=logs/slurm/layout_detection_all_%j.out
+#SBATCH --job-name=ocr_extraction_none_gpu
+#SBATCH --output=logs/slurm/ocr_extraction_none_gpu_%j.out
 #SBATCH --partition=scavenger
 #SBATCH --account=agfritz
 #SBATCH --qos=prio
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2
-#SBATCH --gres=gpu:a5000:1
-#SBATCH --mem-per-cpu=2GB
-#SBATCH --time=02:00:00
+#SBATCH --gres=gpu:h100:1
+#SBATCH --mem-per-cpu=15GB
+#SBATCH --time=07:00:00
 
 # set -euo pipefail
 
 mkdir -p logs/slurm
 
 ####### 2. Layout #######
-module purge
-module add virtualenv/20.32.0-GCCcore-14.3.0
-module add Python/3.13.5-GCCcore-14.3.0
-export HF_HOME=/scratch/nicolasal97/.cache/huggingface
-source venv/corpus_construction/layout_detection/bin/activate
+# module purge
+# module add virtualenv/20.32.0-GCCcore-14.3.0
+# module add Python/3.13.5-GCCcore-14.3.0
+# export HF_HOME=/scratch/nicolasal97/.cache/huggingface
+# source venv/corpus_construction/layout_detection/bin/activate
 # python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/correo --output-dir data/corpus_construction/layout_detection/correo
 # python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/elcomercio --output-dir data/corpus_construction/layout_detection/elcomercio
 # python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/gestion --output-dir data/corpus_construction/layout_detection/gestion
 # python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/ojo --output-dir data/corpus_construction/layout_detection/ojo
 # python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/peru21 --output-dir data/corpus_construction/layout_detection/peru21
-
-python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/publimetro --output-dir data/corpus_construction/layout_detection/publimetro
-python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/trome --output-dir data/corpus_construction/layout_detection/trome
+# python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/publimetro --output-dir data/corpus_construction/layout_detection/publimetro
+# python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/trome --output-dir data/corpus_construction/layout_detection/trome
 ############# Specs (1 image): 2x2GB; 1xa5000 and 30min
+
+####### 4. OCR-Extractor #######
+module purge
+module add virtualenv/20.32.0-GCCcore-14.3.0
+module add Python/3.13.5-GCCcore-14.3.0
+source venv/corpus_construction/ocr_extraction/bin/activate
+
+python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/correo/none/binarization.parquet --binarized-dir data/corpus_construction/binarize/correo/none/ --output-dir data/corpus_construction/ocr_extraction/correo/none_gpu/
+python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/ojo/none/binarization.parquet --binarized-dir data/corpus_construction/binarize/ojo/none/ --output-dir data/corpus_construction/ocr_extraction/ojo/none_gpu/
+python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/elcomercio/none/binarization.parquet --binarized-dir data/corpus_construction/binarize/elcomercio/none/ --output-dir data/corpus_construction/ocr_extraction/elcomercio/none_gpu/
+python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/gestion/none/binarization.parquet --binarized-dir data/corpus_construction/binarize/gestion/none/ --output-dir data/corpus_construction/ocr_extraction/gestion/none_gpu/
+python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/peru21/none/binarization.parquet --binarized-dir data/corpus_construction/binarize/peru21/none/ --output-dir data/corpus_construction/ocr_extraction/peru21/none_gpu/
+python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/publimetro/none/binarization.parquet --binarized-dir data/corpus_construction/binarize/publimetro/none/ --output-dir data/corpus_construction/ocr_extraction/publimetro/none_gpu/
+python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/trome/none/binarization.parquet --binarized-dir data/corpus_construction/binarize/trome/none/ --output-dir data/corpus_construction/ocr_extraction/trome/none_gpu/
+
+# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/layout_detection/correo/cropped/binarization.parquet --binarized-dir data/corpus_construction/layout_detection/correo/cropped/ --output-dir data/corpus_construction/ocr_extraction/correo/cropped/
+# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/layout_detection/ojo/cropped/binarization.parquet --binarized-dir data/corpus_construction/layout_detection/ojo/cropped/ --output-dir data/corpus_construction/ocr_extraction/ojo/cropped/
+# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/layout_detection/elcomercio/cropped/binarization.parquet --binarized-dir data/corpus_construction/layout_detection/elcomercio/cropped/ --output-dir data/corpus_construction/ocr_extraction/elcomercio/cropped/
+# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/layout_detection/gestion/cropped/binarization.parquet --binarized-dir data/corpus_construction/layout_detection/gestion/cropped/ --output-dir data/corpus_construction/ocr_extraction/gestion/cropped/
+# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/layout_detection/peru21/cropped/binarization.parquet --binarized-dir data/corpus_construction/layout_detection/peru21/cropped/ --output-dir data/corpus_construction/ocr_extraction/peru21/cropped/
+# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/layout_detection/publimetro/cropped/binarization.parquet --binarized-dir data/corpus_construction/layout_detection/publimetro/cropped/ --output-dir data/corpus_construction/ocr_extraction/publimetro/cropped/
+# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/layout_detection/trome/cropped/binarization.parquet --binarized-dir data/corpus_construction/layout_detection/trome/cropped/ --output-dir data/corpus_construction/ocr_extraction/trome/cropped/
+############# Specs (1 image): TEST: 2x15GB and 60min
 
 ####### 5. LLM Extractor #######
 # module purge

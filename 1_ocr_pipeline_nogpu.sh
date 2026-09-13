@@ -1,14 +1,14 @@
 #!/bin/bash
-#SBATCH --job-name=ocr_extraction_all
-#SBATCH --output=logs/slurm/ocr_extraction_all_%j.out
+#SBATCH --job-name=binarize_cropped
+#SBATCH --output=logs/slurm/binarize_cropped_%j.out
 #SBATCH --partition=scavenger
 #SBATCH --account=agfritz
 #SBATCH --qos=standard
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=2
-#SBATCH --mem-per-cpu=15GB
-#SBATCH --time=20:00:00
+#SBATCH --cpus-per-task=1
+#SBATCH --mem-per-cpu=1GB
+#SBATCH --time=00:30:00
 
 # set -euo pipefail
 
@@ -43,13 +43,13 @@ mkdir -p logs/slurm
 # python3 -m src.workflows.binarize --input-dir data/corpus_construction/enhance_images/results/publimetro --output-dir data/corpus_construction/binarize/publimetro/none/
 # python3 -m src.workflows.binarize --input-dir data/corpus_construction/enhance_images/results/trome --output-dir data/corpus_construction/binarize/trome/none/
 
-# python3 -m src.workflows.binarize --input-dir data/corpus_construction/layout_detection/results/correo --output-dir data/corpus_construction/binarize/correo/cropped/
-# python3 -m src.workflows.binarize --input-dir data/corpus_construction/layout_detection/results/ojo --output-dir data/corpus_construction/binarize/ojo/cropped/
-# python3 -m src.workflows.binarize --input-dir data/corpus_construction/layout_detection/results/elcomercio --output-dir data/corpus_construction/binarize/elcomercio/cropped/
-# python3 -m src.workflows.binarize --input-dir data/corpus_construction/layout_detection/results/gestion --output-dir data/corpus_construction/binarize/gestion/cropped/
-# python3 -m src.workflows.binarize --input-dir data/corpus_construction/layout_detection/results/peru21 --output-dir data/corpus_construction/binarize/peru21/cropped/
-# python3 -m src.workflows.binarize --input-dir data/corpus_construction/layout_detection/results/publimetro --output-dir data/corpus_construction/binarize/publimetro/cropped/
-# python3 -m src.workflows.binarize --input-dir data/corpus_construction/layout_detection/results/trome --output-dir data/corpus_construction/binarize/trome/cropped/
+# python3 -m src.workflows.binarize --input-dir data/corpus_construction/layout_detection/correo --output-dir data/corpus_construction/binarize/correo/cropped/ --layout-parquet data/corpus_construction/layout_detection/correo/layout_detection.parquet
+# python3 -m src.workflows.binarize --input-dir data/corpus_construction/layout_detection/ojo --output-dir data/corpus_construction/binarize/ojo/cropped/ --layout-parquet data/corpus_construction/layout_detection/ojo/layout_detection.parquet
+# python3 -m src.workflows.binarize --input-dir data/corpus_construction/layout_detection/elcomercio --output-dir data/corpus_construction/binarize/elcomercio/cropped/ --layout-parquet data/corpus_construction/layout_detection/elcomercio/layout_detection.parquet
+# python3 -m src.workflows.binarize --input-dir data/corpus_construction/layout_detection/gestion --output-dir data/corpus_construction/binarize/gestion/cropped/ --layout-parquet data/corpus_construction/layout_detection/gestion/layout_detection.parquet
+# python3 -m src.workflows.binarize --input-dir data/corpus_construction/layout_detection/peru21 --output-dir data/corpus_construction/binarize/peru21/cropped/ --layout-parquet data/corpus_construction/layout_detection/peru21/layout_detection.parquet
+# python3 -m src.workflows.binarize --input-dir data/corpus_construction/layout_detection/publimetro --output-dir data/corpus_construction/binarize/publimetro/cropped/ --layout-parquet data/corpus_construction/layout_detection/publimetro/layout_detection.parquet
+# python3 -m src.workflows.binarize --input-dir data/corpus_construction/layout_detection/trome --output-dir data/corpus_construction/binarize/trome/cropped/ --layout-parquet data/corpus_construction/layout_detection/trome/layout_detection.parquet
 ############# Specs (10 image): 1x1GB and 5min
 
 ####### 4. OCR-Extractor #######

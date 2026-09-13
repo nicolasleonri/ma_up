@@ -245,6 +245,8 @@ data/**/*.parquet
 
 # Data
 data/*
+data/corpus_construction/layout_detection/
+data/corpus_construction/layout_detection/**
 !data/corpus_construction/
 data/corpus_construction/binarize/
 data/corpus_construction/binarize/**

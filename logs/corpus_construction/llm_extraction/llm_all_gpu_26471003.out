@@ -1,0 +1,238 @@
+===== NEWSPAPER: correo =====
+===== LLM: qwen =====
+2026-09-12 13:44:46,235 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/correo/none/ocr.parquet
+2026-09-12 13:44:46,236 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: mistral =====
+2026-09-12 13:44:51,414 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/correo/none/ocr.parquet
+2026-09-12 13:44:51,414 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: llama =====
+2026-09-12 13:44:56,577 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/correo/none/ocr.parquet
+2026-09-12 13:44:56,577 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: deepseek =====
+2026-09-12 13:45:01,877 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/correo/none/ocr.parquet
+2026-09-12 13:45:01,877 INFO LLM extraction finished. Extractions run: 0
+
+===== NEWSPAPER: elcomercio =====
+===== LLM: qwen =====
+2026-09-12 13:45:06,805 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/elcomercio/none/ocr.parquet
+2026-09-12 13:45:06,805 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: mistral =====
+2026-09-12 13:45:11,757 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/elcomercio/none/ocr.parquet
+2026-09-12 13:45:11,757 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: llama =====
+2026-09-12 13:45:16,655 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/elcomercio/none/ocr.parquet
+2026-09-12 13:45:16,655 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: deepseek =====
+2026-09-12 13:45:21,573 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/elcomercio/none/ocr.parquet
+2026-09-12 13:45:21,573 INFO LLM extraction finished. Extractions run: 0
+
+===== NEWSPAPER: gestion =====
+===== LLM: qwen =====
+2026-09-12 13:45:26,509 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/gestion/none/ocr.parquet
+2026-09-12 13:45:26,509 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: mistral =====
+2026-09-12 13:45:31,556 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/gestion/none/ocr.parquet
+2026-09-12 13:45:31,556 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: llama =====
+2026-09-12 13:45:36,937 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/gestion/none/ocr.parquet
+2026-09-12 13:45:36,938 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: deepseek =====
+2026-09-12 13:45:42,064 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/gestion/none/ocr.parquet
+2026-09-12 13:45:42,064 INFO LLM extraction finished. Extractions run: 0
+
+===== NEWSPAPER: ojo =====
+===== LLM: qwen =====
+2026-09-12 13:45:46,985 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/ojo/none/ocr.parquet
+2026-09-12 13:45:46,985 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: mistral =====
+2026-09-12 13:45:51,970 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/ojo/none/ocr.parquet
+2026-09-12 13:45:51,970 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: llama =====
+2026-09-12 13:45:57,017 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/ojo/none/ocr.parquet
+2026-09-12 13:45:57,018 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: deepseek =====
+2026-09-12 13:46:02,083 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/ojo/none/ocr.parquet
+2026-09-12 13:46:02,083 INFO LLM extraction finished. Extractions run: 0
+
+===== NEWSPAPER: peru21 =====
+===== LLM: qwen =====
+2026-09-12 13:46:07,039 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/peru21/none/ocr.parquet
+2026-09-12 13:46:07,039 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: mistral =====
+2026-09-12 13:46:12,177 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/peru21/none/ocr.parquet
+2026-09-12 13:46:12,177 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: llama =====
+2026-09-12 13:46:17,158 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/peru21/none/ocr.parquet
+2026-09-12 13:46:17,158 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: deepseek =====
+2026-09-12 13:46:22,322 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/peru21/none/ocr.parquet
+2026-09-12 13:46:22,322 INFO LLM extraction finished. Extractions run: 0
+
+===== NEWSPAPER: publimetro =====
+===== LLM: qwen =====
+2026-09-12 13:46:27,461 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/publimetro/none/ocr.parquet
+2026-09-12 13:46:27,461 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: mistral =====
+2026-09-12 13:46:32,666 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/publimetro/none/ocr.parquet
+2026-09-12 13:46:32,666 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: llama =====
+2026-09-12 13:46:38,005 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/publimetro/none/ocr.parquet
+2026-09-12 13:46:38,006 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: deepseek =====
+2026-09-12 13:46:42,943 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/publimetro/none/ocr.parquet
+2026-09-12 13:46:42,943 INFO LLM extraction finished. Extractions run: 0
+
+===== NEWSPAPER: trome =====
+===== LLM: qwen =====
+2026-09-12 13:46:47,837 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/trome/none/ocr.parquet
+2026-09-12 13:46:47,837 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: mistral =====
+2026-09-12 13:46:52,944 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/trome/none/ocr.parquet
+2026-09-12 13:46:52,944 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: llama =====
+2026-09-12 13:46:57,890 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/trome/none/ocr.parquet
+2026-09-12 13:46:57,890 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: deepseek =====
+2026-09-12 13:47:02,882 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/trome/none/ocr.parquet
+2026-09-12 13:47:02,882 INFO LLM extraction finished. Extractions run: 0
+
+===== NEWSPAPER: correo =====
+===== LLM: qwen =====
+2026-09-12 13:47:07,861 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/correo/cropped/ocr.parquet
+2026-09-12 13:47:07,861 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: mistral =====
+2026-09-12 13:47:12,876 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/correo/cropped/ocr.parquet
+2026-09-12 13:47:12,876 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: llama =====
+2026-09-12 13:47:17,875 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/correo/cropped/ocr.parquet
+2026-09-12 13:47:17,875 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: deepseek =====
+2026-09-12 13:47:22,996 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/correo/cropped/ocr.parquet
+2026-09-12 13:47:22,996 INFO LLM extraction finished. Extractions run: 0
+
+===== NEWSPAPER: elcomercio =====
+===== LLM: qwen =====
+2026-09-12 13:47:28,174 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/elcomercio/cropped/ocr.parquet
+2026-09-12 13:47:28,174 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: mistral =====
+2026-09-12 13:47:33,396 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/elcomercio/cropped/ocr.parquet
+2026-09-12 13:47:33,396 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: llama =====
+2026-09-12 13:47:38,860 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/elcomercio/cropped/ocr.parquet
+2026-09-12 13:47:38,860 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: deepseek =====
+2026-09-12 13:47:43,979 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/elcomercio/cropped/ocr.parquet
+2026-09-12 13:47:43,979 INFO LLM extraction finished. Extractions run: 0
+
+===== NEWSPAPER: gestion =====
+===== LLM: qwen =====
+2026-09-12 13:47:49,043 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/gestion/cropped/ocr.parquet
+2026-09-12 13:47:49,043 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: mistral =====
+2026-09-12 13:47:54,002 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/gestion/cropped/ocr.parquet
+2026-09-12 13:47:54,002 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: llama =====
+2026-09-12 13:47:58,924 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/gestion/cropped/ocr.parquet
+2026-09-12 13:47:58,925 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: deepseek =====
+2026-09-12 13:48:03,943 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/gestion/cropped/ocr.parquet
+2026-09-12 13:48:03,943 INFO LLM extraction finished. Extractions run: 0
+
+===== NEWSPAPER: ojo =====
+===== LLM: qwen =====
+2026-09-12 13:48:08,999 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/ojo/cropped/ocr.parquet
+2026-09-12 13:48:08,999 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: mistral =====
+2026-09-12 13:48:13,942 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/ojo/cropped/ocr.parquet
+2026-09-12 13:48:13,942 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: llama =====
+2026-09-12 13:48:18,862 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/ojo/cropped/ocr.parquet
+2026-09-12 13:48:18,862 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: deepseek =====
+2026-09-12 13:48:23,836 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/ojo/cropped/ocr.parquet
+2026-09-12 13:48:23,836 INFO LLM extraction finished. Extractions run: 0
+
+===== NEWSPAPER: peru21 =====
+===== LLM: qwen =====
+2026-09-12 13:48:28,994 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/peru21/cropped/ocr.parquet
+2026-09-12 13:48:28,994 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: mistral =====
+2026-09-12 13:48:34,007 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/peru21/cropped/ocr.parquet
+2026-09-12 13:48:34,007 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: llama =====
+2026-09-12 13:48:39,121 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/peru21/cropped/ocr.parquet
+2026-09-12 13:48:39,121 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: deepseek =====
+2026-09-12 13:48:44,029 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/peru21/cropped/ocr.parquet
+2026-09-12 13:48:44,029 INFO LLM extraction finished. Extractions run: 0
+
+===== NEWSPAPER: publimetro =====
+===== LLM: qwen =====
+2026-09-12 13:48:49,055 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/publimetro/cropped/ocr.parquet
+2026-09-12 13:48:49,055 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: mistral =====
+2026-09-12 13:48:54,064 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/publimetro/cropped/ocr.parquet
+2026-09-12 13:48:54,064 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: llama =====
+2026-09-12 13:48:59,140 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/publimetro/cropped/ocr.parquet
+2026-09-12 13:48:59,140 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: deepseek =====
+2026-09-12 13:49:04,159 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/publimetro/cropped/ocr.parquet
+2026-09-12 13:49:04,159 INFO LLM extraction finished. Extractions run: 0
+
+===== NEWSPAPER: trome =====
+===== LLM: qwen =====
+2026-09-12 13:49:09,229 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/trome/cropped/ocr.parquet
+2026-09-12 13:49:09,229 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: mistral =====
+2026-09-12 13:49:14,263 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/trome/cropped/ocr.parquet
+2026-09-12 13:49:14,263 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: llama =====
+2026-09-12 13:49:19,261 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/trome/cropped/ocr.parquet
+2026-09-12 13:49:19,261 INFO LLM extraction finished. Extractions run: 0
+
+===== LLM: deepseek =====
+2026-09-12 13:49:24,460 ERROR OCR Parquet not found: data/corpus_construction/ocr_extraction/trome/cropped/ocr.parquet
+2026-09-12 13:49:24,460 INFO LLM extraction finished. Extractions run: 0
+

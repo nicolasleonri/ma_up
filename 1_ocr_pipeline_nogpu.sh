@@ -1,14 +1,14 @@
 #!/bin/bash
-#SBATCH --job-name=ocr_extraction_cpu
-#SBATCH --output=logs/slurm/ocr_extraction_cpu_%j.out
+#SBATCH --job-name=ocr_extraction_all
+#SBATCH --output=logs/slurm/ocr_extraction_all_%j.out
 #SBATCH --partition=scavenger
 #SBATCH --account=agfritz
 #SBATCH --qos=standard
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2
-#SBATCH --mem-per-cpu=5GB
-#SBATCH --time=02:00:00
+#SBATCH --mem-per-cpu=15GB
+#SBATCH --time=20:00:00
 
 # set -euo pipefail
 
@@ -65,14 +65,14 @@ mkdir -p logs/slurm
 # python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/publimetro/none/binarization.parquet --binarized-dir data/corpus_construction/binarize/publimetro/none/ --output-dir data/corpus_construction/ocr_extraction/publimetro/none/
 # python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/trome/none/binarization.parquet --binarized-dir data/corpus_construction/binarize/trome/none/ --output-dir data/corpus_construction/ocr_extraction/trome/none/
 
-# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/correo/cropped/binarization.parquet --binarized-dir data/corpus_construction/binarize/correo/cropped/ --output-dir data/corpus_construction/ocr_extraction/correo/cropped/
-# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/ojo/cropped/binarization.parquet --binarized-dir data/corpus_construction/binarize/ojo/cropped/ --output-dir data/corpus_construction/ocr_extraction/ojo/cropped/
-# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/elcomercio/cropped/binarization.parquet --binarized-dir data/corpus_construction/binarize/elcomercio/cropped/ --output-dir data/corpus_construction/ocr_extraction/elcomercio/cropped/
-# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/gestion/cropped/binarization.parquet --binarized-dir data/corpus_construction/binarize/gestion/cropped/ --output-dir data/corpus_construction/ocr_extraction/gestion/cropped/
-# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/peru21/cropped/binarization.parquet --binarized-dir data/corpus_construction/binarize/peru21/cropped/ --output-dir data/corpus_construction/ocr_extraction/peru21/cropped/
-# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/publimetro/cropped/binarization.parquet --binarized-dir data/corpus_construction/binarize/publimetro/cropped/ --output-dir data/corpus_construction/ocr_extraction/publimetro/cropped/
-# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/trome/cropped/binarization.parquet --binarized-dir data/corpus_construction/binarize/trome/cropped/ --output-dir data/corpus_construction/ocr_extraction/trome/cropped/
-############# Specs (1 image): TEST: 2x5GB and 60min
+# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/layout_detection/correo/cropped/binarization.parquet --binarized-dir data/corpus_construction/layout_detection/correo/cropped/ --output-dir data/corpus_construction/ocr_extraction/correo/cropped/
+# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/layout_detection/ojo/cropped/binarization.parquet --binarized-dir data/corpus_construction/layout_detection/ojo/cropped/ --output-dir data/corpus_construction/ocr_extraction/ojo/cropped/
+# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/layout_detection/elcomercio/cropped/binarization.parquet --binarized-dir data/corpus_construction/layout_detection/elcomercio/cropped/ --output-dir data/corpus_construction/ocr_extraction/elcomercio/cropped/
+# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/layout_detection/gestion/cropped/binarization.parquet --binarized-dir data/corpus_construction/layout_detection/gestion/cropped/ --output-dir data/corpus_construction/ocr_extraction/gestion/cropped/
+# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/layout_detection/peru21/cropped/binarization.parquet --binarized-dir data/corpus_construction/layout_detection/peru21/cropped/ --output-dir data/corpus_construction/ocr_extraction/peru21/cropped/
+# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/layout_detection/publimetro/cropped/binarization.parquet --binarized-dir data/corpus_construction/layout_detection/publimetro/cropped/ --output-dir data/corpus_construction/ocr_extraction/publimetro/cropped/
+# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/layout_detection/trome/cropped/binarization.parquet --binarized-dir data/corpus_construction/layout_detection/trome/cropped/ --output-dir data/corpus_construction/ocr_extraction/trome/cropped/
+############# Specs (1 image): TEST: 2x15GB and 60min
 
 # ## 6. Evaluate
 # module purge

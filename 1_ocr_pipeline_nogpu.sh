@@ -3,7 +3,7 @@
 #SBATCH --output=logs/slurm/trome_ocr_extraction_none_nogpu_%j.out
 #SBATCH --partition=scavenger
 #SBATCH --account=agfritz
-#SBATCH --qos=standard
+#SBATCH --qos=prio
 
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
@@ -16,15 +16,15 @@
 mkdir -p logs/slurm
 
 ####### 4. OCR-Extractor #######
-module purge
-module add virtualenv/20.32.0-GCCcore-14.3.0
-module add Python/3.13.5-GCCcore-14.3.0
-source venv/corpus_construction/ocr_extraction/bin/activate
+# module purge
+# module add virtualenv/20.32.0-GCCcore-14.3.0
+# module add Python/3.13.5-GCCcore-14.3.0
+# source venv/corpus_construction/ocr_extraction/bin/activate
 
-export OMP_NUM_THREADS=1
-export MKL_NUM_THREADS=1
-export OPENBLAS_NUM_THREADS=1
-export NUMEXPR_NUM_THREADS=1
+# export OMP_NUM_THREADS=1
+# export MKL_NUM_THREADS=1
+# export OPENBLAS_NUM_THREADS=1
+# export NUMEXPR_NUM_THREADS=1
 
 # python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/correo/none/binarization.parquet --binarized-dir data/corpus_construction/binarize/correo/none/ --output-dir data/corpus_construction/ocr_extraction/correo/none/ --workers 64
 # python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/correo/cropped/binarization.parquet --binarized-dir data/corpus_construction/binarize/correo/cropped/ --output-dir data/corpus_construction/ocr_extraction/correo/cropped/ --workers 64
@@ -44,9 +44,9 @@ export NUMEXPR_NUM_THREADS=1
 # python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/publimetro/none/binarization.parquet --binarized-dir data/corpus_construction/binarize/publimetro/none/ --output-dir data/corpus_construction/ocr_extraction/publimetro/none/ --workers 64
 # python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/publimetro/cropped/binarization.parquet --binarized-dir data/corpus_construction/binarize/publimetro/cropped/ --output-dir data/corpus_construction/ocr_extraction/publimetro/cropped/ --workers 64
 
-python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/trome/none/binarization.parquet --binarized-dir data/corpus_construction/binarize/trome/none/ --output-dir data/corpus_construction/ocr_extraction/trome/none/ --workers 64
-python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/trome/cropped/binarization.parquet --binarized-dir data/corpus_construction/binarize/trome/cropped/ --output-dir data/corpus_construction/ocr_extraction/trome/cropped/ --workers 64
-############# Specs (1 image): TEST: 2x15GB and 60min
+# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/trome/none/binarization.parquet --binarized-dir data/corpus_construction/binarize/trome/none/ --output-dir data/corpus_construction/ocr_extraction/trome/none/ --workers 64
+# python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/trome/cropped/binarization.parquet --binarized-dir data/corpus_construction/binarize/trome/cropped/ --output-dir data/corpus_construction/ocr_extraction/trome/cropped/ --workers 64
+############# Specs (1 image): 64x5GB and 120min
 
 # ## 6. Evaluate
 # module purge
@@ -56,7 +56,6 @@ python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_const
 # python3 -m src.workflows.evaluate_extraction --results data/corpus_construction/vlm_extraction/results/correo/test.parquet --gold data/corpus_construction/evaluate_extraction/correo.csv --output-csv data/corpus_construction/evaluate_extraction/results/correo/test.csv --enhance-parquet data/corpus_construction/enhance_images/results/correo/enhance_images.parquet --binarize-parquet data/corpus_construction/binarize/correo/none/binarization.parquet 
 
 # ################# DONE ###################
-
 ####### 1. Enhancement #######
 # module purge
 # module add virtualenv/20.32.0-GCCcore-14.3.0

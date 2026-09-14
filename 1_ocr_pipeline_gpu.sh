@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=llm_extraction_all
-#SBATCH --output=logs/slurm/llm_extraction_all_%j.out
+#SBATCH --job-name=correo_llm_extraction
+#SBATCH --output=logs/slurm/correo_llm_extraction_%j.out
 #SBATCH --partition=scavenger
 #SBATCH --account=agfritz
 #SBATCH --qos=prio
@@ -8,8 +8,8 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=5
 #SBATCH --gres=gpu:h100:1
-#SBATCH --mem-per-cpu=5GB
-#SBATCH --time=12:00:00
+#SBATCH --mem-per-cpu=3GB
+#SBATCH --time=10:00:00
 
 # set -euo pipefail
 

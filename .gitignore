@@ -223,7 +223,6 @@ __marimo__/
 config/corpus_acquisition/credentials.yaml
 config/corpus_acquisition/
 
-
 # Venv
 .venv/
 venv/
@@ -237,48 +236,65 @@ venv/
 *.svg
 *.tiff
 
-# Json and Parquet in data (scoped, not global)
-data/*.json
-data/*.parquet
-data/**/*.json
-data/**/*.parquet
-
-# Data
+# Default ignore for data folder (allow specified subfolders)
 data/*
-data/corpus_construction/layout_detection/
-data/corpus_construction/layout_detection/**
 !data/corpus_construction/
-data/corpus_construction/binarize/
-data/corpus_construction/binarize/**
-data/corpus_construction/enhance_images/results/
-data/corpus_construction/enhance_images/results/**
-!data/corpus_construction/enhance_images/correo/
-!data/corpus_construction/enhance_images/correo/**
-!data/corpus_construction/enhance_images/elcomercio/
-!data/corpus_construction/enhance_images/elcomercio/**
-!data/corpus_construction/enhance_images/gestion/
-!data/corpus_construction/enhance_images/gestion/**
-!data/corpus_construction/enhance_images/ojo/
-!data/corpus_construction/enhance_images/ojo/**
-!data/corpus_construction/enhance_images/peru21/
-!data/corpus_construction/enhance_images/peru21/**
-!data/corpus_construction/enhance_images/publimetro/
-!data/corpus_construction/enhance_images/publimetro/**
-!data/corpus_construction/enhance_images/trome/
-!data/corpus_construction/enhance_images/trome/**
-!data/corpus_construction/evaluate_extraction/
-!data/corpus_construction/evaluate_extraction/**
-!data/raw/
+!data/corpus_construction/**
 !data/raw/crawl_logs/
 !data/raw/crawl_logs/**
 !data/raw/metadata/
 !data/raw/metadata/**
+data/raw/images/
+data/raw/images/**
 
-# Re-allow images and data files inside tracked folders
+# Exception rules to allow image files inside tracked evaluation/enhance folders if needed
 !data/corpus_construction/enhance_images/**/*.png
 !data/corpus_construction/enhance_images/**/*.jpg
 !data/corpus_construction/enhance_images/**/*.jpeg
 !data/corpus_construction/enhance_images/**/*.tiff
-!data/corpus_construction/evaluate_extraction/**/*.csv
-!data/raw/crawl_logs/**/*.json
-!data/raw/metadata/**/*.parquet
+
+# # Json and Parquet in data (scoped, not global)
+# data/*.json
+# data/*.parquet
+# data/**/*.json
+# data/**/*.parquet
+
+# # Data
+# data/*
+# data/corpus_construction/layout_detection/
+# data/corpus_construction/layout_detection/**
+# !data/corpus_construction/
+# data/corpus_construction/binarize/
+# data/corpus_construction/binarize/**
+# data/corpus_construction/enhance_images/results/
+# data/corpus_construction/enhance_images/results/**
+# !data/corpus_construction/enhance_images/correo/
+# !data/corpus_construction/enhance_images/correo/**
+# !data/corpus_construction/enhance_images/elcomercio/
+# !data/corpus_construction/enhance_images/elcomercio/**
+# !data/corpus_construction/enhance_images/gestion/
+# !data/corpus_construction/enhance_images/gestion/**
+# !data/corpus_construction/enhance_images/ojo/
+# !data/corpus_construction/enhance_images/ojo/**
+# !data/corpus_construction/enhance_images/peru21/
+# !data/corpus_construction/enhance_images/peru21/**
+# !data/corpus_construction/enhance_images/publimetro/
+# !data/corpus_construction/enhance_images/publimetro/**
+# !data/corpus_construction/enhance_images/trome/
+# !data/corpus_construction/enhance_images/trome/**
+# !data/corpus_construction/evaluate_extraction/
+# !data/corpus_construction/evaluate_extraction/**
+# !data/raw/
+# !data/raw/crawl_logs/
+# !data/raw/crawl_logs/**
+# !data/raw/metadata/
+# !data/raw/metadata/**
+
+# # Re-allow images and data files inside tracked folders
+# !data/corpus_construction/enhance_images/**/*.png
+# !data/corpus_construction/enhance_images/**/*.jpg
+# !data/corpus_construction/enhance_images/**/*.jpeg
+# !data/corpus_construction/enhance_images/**/*.tiff
+# !data/corpus_construction/evaluate_extraction/**/*.csv
+# !data/raw/crawl_logs/**/*.json
+# !data/raw/metadata/**/*.parquet

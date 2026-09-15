@@ -163426,4 +163426,1477 @@ INFO 09-15 11:46:12 [hf.py:551] Detected the chat template content format to be 
 2026-09-15 11:58:57,724 INFO Saved 64 new rows to data/corpus_construction/llm_extraction/gestion/results_none_llama.parquet (total: 1024)
 2026-09-15 11:58:57,725 INFO [llama] Batch 1024-1088 / 8640
 Rendering prompts:   0%|          | 0/56 [00:00<?, ?it/s]Rendering prompts:  71%|███████▏  | 40/56 [00:00<00:00, 394.77it/s]Rendering prompts: 100%|██████████| 56/56 [00:00<00:00, 390.17it/s]
-Processed prompts:   0%|          | 0/56 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/56 [00:05<05:20,  5.82s/it, est. speed input: 239.36 toks/s, output: 122.43 toks/s]Processed prompts:   4%|▎         | 2/56 [00:11<05:16,  5.86s/it, est. speed input: 227.79 toks/s, output: 175.61 toks/s]
+Processed prompts:   0%|          | 0/56 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/56 [00:05<05:20,  5.82s/it, est. speed input: 239.36 toks/s, output: 122.43 toks/s]Processed prompts:   4%|▎         | 2/56 [00:11<05:16,  5.86s/it, est. speed input: 227.79 toks/s, output: 175.61 toks/s]Processed prompts:   5%|▌         | 3/56 [00:48<17:37, 19.96s/it, est. speed input: 81.35 toks/s, output: 126.99 toks/s] Processed prompts: 100%|██████████| 56/56 [00:48<00:00, 19.96s/it, est. speed input: 1856.67 toks/s, output: 4601.23 toks/s]Processed prompts: 100%|██████████| 56/56 [00:48<00:00,  1.15it/s, est. speed input: 1856.67 toks/s, output: 4601.23 toks/s]
+2026-09-15 11:59:46,396 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,396 INFO     [0] 
+2026-09-15 11:59:46,396 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,396 INFO     [0] 
+2026-09-15 11:59:46,396 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,396 INFO     [0] 
+2026-09-15 11:59:46,396 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,396 INFO     [0] 
+2026-09-15 11:59:46,396 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=failed | articles=0 | 0.000s
+2026-09-15 11:59:46,397 INFO status=failed | articles=0 | 0.000s
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=failed | articles=0 | 0.000s
+2026-09-15 11:59:46,397 INFO status=failed | articles=0 | 0.000s
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,397 INFO     [0] 
+2026-09-15 11:59:46,397 INFO status=failed | articles=0 | 0.000s
+2026-09-15 11:59:46,397 INFO status=failed | articles=0 | 0.000s
+2026-09-15 11:59:46,398 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,398 INFO     [0] 
+2026-09-15 11:59:46,398 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,398 INFO     [0] 
+2026-09-15 11:59:46,398 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,398 INFO     [0] 
+2026-09-15 11:59:46,398 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,398 INFO     [0] 
+2026-09-15 11:59:46,398 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,398 INFO     [0] 
+2026-09-15 11:59:46,398 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,398 INFO     [0] 
+2026-09-15 11:59:46,398 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,398 INFO     [0] 
+2026-09-15 11:59:46,398 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,398 INFO     [0] 
+2026-09-15 11:59:46,398 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,398 INFO     [0] 
+2026-09-15 11:59:46,398 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,398 INFO     [0] 
+2026-09-15 11:59:46,398 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,398 INFO     [0] 
+2026-09-15 11:59:46,398 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,398 INFO     [0] 
+2026-09-15 11:59:46,398 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,398 INFO     [0] 
+2026-09-15 11:59:46,398 INFO status=success | articles=1 | 0.869s
+2026-09-15 11:59:46,398 INFO     [0] 
+2026-09-15 11:59:46,398 INFO status=failed | articles=0 | 0.000s
+2026-09-15 11:59:46,398 INFO status=failed | articles=0 | 0.000s
+2026-09-15 11:59:46,496 INFO Saved 64 new rows to data/corpus_construction/llm_extraction/gestion/results_none_llama.parquet (total: 1088)
+2026-09-15 11:59:46,497 INFO [llama] Batch 1088-1152 / 8640
+Rendering prompts:   0%|          | 0/56 [00:00<?, ?it/s]Rendering prompts:  62%|██████▎   | 35/56 [00:00<00:00, 346.52it/s]Rendering prompts: 100%|██████████| 56/56 [00:00<00:00, 370.23it/s]
+Processed prompts:   0%|          | 0/56 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/56 [00:14<13:02, 14.23s/it, est. speed input: 114.54 toks/s, output: 113.69 toks/s]Processed prompts:   4%|▎         | 2/56 [00:47<23:03, 25.63s/it, est. speed input: 61.19 toks/s, output: 119.44 toks/s] Processed prompts: 100%|██████████| 56/56 [00:47<00:00, 25.63s/it, est. speed input: 1812.74 toks/s, output: 4734.85 toks/s]Processed prompts: 100%|██████████| 56/56 [00:47<00:00,  1.17it/s, est. speed input: 1812.74 toks/s, output: 4734.85 toks/s]
+2026-09-15 12:00:34,578 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,578 INFO     [0] 
+2026-09-15 12:00:34,578 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,578 INFO     [0] 
+2026-09-15 12:00:34,578 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,578 INFO     [0] 
+2026-09-15 12:00:34,578 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,578 INFO     [0] 
+2026-09-15 12:00:34,578 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,578 INFO     [0] 
+2026-09-15 12:00:34,578 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,578 INFO     [0] 
+2026-09-15 12:00:34,578 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,578 INFO     [0] 
+2026-09-15 12:00:34,578 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,578 INFO     [0] 
+2026-09-15 12:00:34,578 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,578 INFO     [0] 
+2026-09-15 12:00:34,578 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,578 INFO     [0] 
+2026-09-15 12:00:34,578 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,578 INFO     [0] 
+2026-09-15 12:00:34,578 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,578 INFO     [0] 
+2026-09-15 12:00:34,578 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,578 INFO     [0] 
+2026-09-15 12:00:34,578 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,578 INFO     [0] 
+2026-09-15 12:00:34,578 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:00:34,578 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:00:34,578 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,578 INFO     [0] 
+2026-09-15 12:00:34,578 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,578 INFO     [0] 
+2026-09-15 12:00:34,578 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,578 INFO     [0] 
+2026-09-15 12:00:34,578 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,578 INFO     [0] 
+2026-09-15 12:00:34,578 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:00:34,579 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:00:34,579 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=success | articles=1 | 0.859s
+2026-09-15 12:00:34,579 INFO     [0] 
+2026-09-15 12:00:34,579 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:00:34,579 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:00:34,670 INFO Saved 64 new rows to data/corpus_construction/llm_extraction/gestion/results_none_llama.parquet (total: 1152)
+2026-09-15 12:00:34,670 INFO [llama] Batch 1152-1216 / 8640
+Rendering prompts:   0%|          | 0/47 [00:00<?, ?it/s]Rendering prompts: 100%|██████████| 47/47 [00:00<00:00, 491.64it/s]
+Processed prompts:   0%|          | 0/47 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/47 [00:41<31:55, 41.63s/it, est. speed input: 27.84 toks/s, output: 98.38 toks/s]Processed prompts: 100%|██████████| 47/47 [00:41<00:00, 41.63s/it, est. speed input: 1421.95 toks/s, output: 4613.75 toks/s]Processed prompts: 100%|██████████| 47/47 [00:41<00:00,  1.13it/s, est. speed input: 1421.95 toks/s, output: 4613.75 toks/s]
+2026-09-15 12:01:16,499 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,499 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:01:16,500 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:01:16,500 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:01:16,500 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:01:16,500 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:01:16,500 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:01:16,500 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:01:16,500 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:01:16,500 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:01:16,500 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:01:16,500 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:01:16,500 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:01:16,500 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,500 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,500 INFO     [0] 
+2026-09-15 12:01:16,501 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,501 INFO     [0] 
+2026-09-15 12:01:16,501 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,501 INFO     [0] 
+2026-09-15 12:01:16,501 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,501 INFO     [0] 
+2026-09-15 12:01:16,501 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,501 INFO     [0] 
+2026-09-15 12:01:16,501 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,501 INFO     [0] 
+2026-09-15 12:01:16,501 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,501 INFO     [0] 
+2026-09-15 12:01:16,501 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,501 INFO     [0] 
+2026-09-15 12:01:16,501 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,501 INFO     [0] 
+2026-09-15 12:01:16,501 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,501 INFO     [0] 
+2026-09-15 12:01:16,501 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,501 INFO     [0] 
+2026-09-15 12:01:16,501 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,501 INFO     [0] 
+2026-09-15 12:01:16,501 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,501 INFO     [0] 
+2026-09-15 12:01:16,501 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,501 INFO     [0] 
+2026-09-15 12:01:16,501 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,501 INFO     [0] 
+2026-09-15 12:01:16,501 INFO status=success | articles=1 | 0.890s
+2026-09-15 12:01:16,501 INFO     [0] 
+2026-09-15 12:01:16,501 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:01:16,501 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:01:16,605 INFO Saved 64 new rows to data/corpus_construction/llm_extraction/gestion/results_none_llama.parquet (total: 1216)
+2026-09-15 12:01:16,605 INFO [llama] Batch 1216-1280 / 8640
+Rendering prompts:   0%|          | 0/56 [00:00<?, ?it/s]Rendering prompts:  73%|███████▎  | 41/56 [00:00<00:00, 406.67it/s]Rendering prompts: 100%|██████████| 56/56 [00:00<00:00, 393.32it/s]
+Processed prompts:   0%|          | 0/56 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/56 [00:10<09:45, 10.64s/it, est. speed input: 180.50 toks/s, output: 116.85 toks/s]Processed prompts:   4%|▎         | 2/56 [00:11<04:28,  4.97s/it, est. speed input: 347.19 toks/s, output: 221.92 toks/s]Processed prompts:   5%|▌         | 3/56 [00:23<07:02,  7.97s/it, est. speed input: 236.20 toks/s, output: 213.89 toks/s]Processed prompts:   7%|▋         | 4/56 [00:48<12:42, 14.66s/it, est. speed input: 139.86 toks/s, output: 188.23 toks/s]Processed prompts: 100%|██████████| 56/56 [00:48<00:00, 14.66s/it, est. speed input: 1855.09 toks/s, output: 4609.57 toks/s]Processed prompts: 100%|██████████| 56/56 [00:48<00:00,  1.16it/s, est. speed input: 1855.09 toks/s, output: 4609.57 toks/s]
+2026-09-15 12:02:04,927 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,927 INFO     [0] 
+2026-09-15 12:02:04,927 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,927 INFO     [0] 
+2026-09-15 12:02:04,927 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,927 INFO     [0] 
+2026-09-15 12:02:04,927 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,927 INFO     [0] 
+2026-09-15 12:02:04,927 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,927 INFO     [0] 
+2026-09-15 12:02:04,927 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,927 INFO     [0] 
+2026-09-15 12:02:04,927 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,927 INFO     [0] 
+2026-09-15 12:02:04,927 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,927 INFO     [0] 
+2026-09-15 12:02:04,927 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,927 INFO     [0] 
+2026-09-15 12:02:04,927 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,927 INFO     [0] 
+2026-09-15 12:02:04,927 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,927 INFO     [0] 
+2026-09-15 12:02:04,927 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,927 INFO     [0] 
+2026-09-15 12:02:04,927 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,927 INFO     [0] 
+2026-09-15 12:02:04,927 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,927 INFO     [0] 
+2026-09-15 12:02:04,927 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:02:04,927 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:02:04,927 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,927 INFO     [0] 
+2026-09-15 12:02:04,927 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,927 INFO     [0] 
+2026-09-15 12:02:04,927 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,927 INFO     [0] 
+2026-09-15 12:02:04,927 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,927 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:02:04,928 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:02:04,928 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=success | articles=1 | 0.863s
+2026-09-15 12:02:04,928 INFO     [0] 
+2026-09-15 12:02:04,928 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:02:04,928 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:02:05,031 INFO Saved 64 new rows to data/corpus_construction/llm_extraction/gestion/results_none_llama.parquet (total: 1280)
+2026-09-15 12:02:05,031 INFO [llama] Batch 1280-1344 / 8640
+Rendering prompts:   0%|          | 0/56 [00:00<?, ?it/s]Rendering prompts:  66%|██████▌   | 37/56 [00:00<00:00, 359.17it/s]Rendering prompts: 100%|██████████| 56/56 [00:00<00:00, 357.39it/s]
+Processed prompts:   0%|          | 0/56 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/56 [00:49<45:21, 49.48s/it, est. speed input: 25.42 toks/s, output: 82.78 toks/s]Processed prompts: 100%|██████████| 56/56 [00:49<00:00, 49.48s/it, est. speed input: 1910.37 toks/s, output: 4627.55 toks/s]Processed prompts: 100%|██████████| 56/56 [00:49<00:00,  1.13it/s, est. speed input: 1910.37 toks/s, output: 4627.55 toks/s]
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:02:54,765 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,765 INFO     [0] 
+2026-09-15 12:02:54,765 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:02:54,766 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:02:54,766 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=success | articles=1 | 0.888s
+2026-09-15 12:02:54,766 INFO     [0] 
+2026-09-15 12:02:54,766 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:02:54,766 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:02:54,902 INFO Saved 64 new rows to data/corpus_construction/llm_extraction/gestion/results_none_llama.parquet (total: 1344)
+2026-09-15 12:02:54,902 INFO [llama] Batch 1344-1408 / 8640
+Rendering prompts:   0%|          | 0/56 [00:00<?, ?it/s]Rendering prompts:  70%|██████▉   | 39/56 [00:00<00:00, 384.10it/s]Rendering prompts: 100%|██████████| 56/56 [00:00<00:00, 383.64it/s]
+Processed prompts:   0%|          | 0/56 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/56 [00:48<44:50, 48.91s/it, est. speed input: 25.90 toks/s, output: 83.75 toks/s]Processed prompts: 100%|██████████| 56/56 [00:48<00:00, 48.91s/it, est. speed input: 1834.74 toks/s, output: 4682.47 toks/s]Processed prompts: 100%|██████████| 56/56 [00:48<00:00,  1.14it/s, est. speed input: 1834.74 toks/s, output: 4682.47 toks/s]
+2026-09-15 12:03:44,043 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,043 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:03:44,044 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:03:44,044 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,044 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,044 INFO     [0] 
+2026-09-15 12:03:44,045 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,045 INFO     [0] 
+2026-09-15 12:03:44,045 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,045 INFO     [0] 
+2026-09-15 12:03:44,045 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,045 INFO     [0] 
+2026-09-15 12:03:44,045 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:03:44,045 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:03:44,045 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,045 INFO     [0] 
+2026-09-15 12:03:44,045 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,045 INFO     [0] 
+2026-09-15 12:03:44,045 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,045 INFO     [0] 
+2026-09-15 12:03:44,045 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,045 INFO     [0] 
+2026-09-15 12:03:44,045 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,045 INFO     [0] 
+2026-09-15 12:03:44,045 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,045 INFO     [0] 
+2026-09-15 12:03:44,045 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,045 INFO     [0] 
+2026-09-15 12:03:44,045 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,045 INFO     [0] 
+2026-09-15 12:03:44,045 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,045 INFO     [0] 
+2026-09-15 12:03:44,045 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,045 INFO     [0] 
+2026-09-15 12:03:44,045 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,045 INFO     [0] 
+2026-09-15 12:03:44,045 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,045 INFO     [0] 
+2026-09-15 12:03:44,045 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,045 INFO     [0] 
+2026-09-15 12:03:44,045 INFO status=success | articles=1 | 0.877s
+2026-09-15 12:03:44,045 INFO     [0] 
+2026-09-15 12:03:44,045 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:03:44,045 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:03:44,153 INFO Saved 64 new rows to data/corpus_construction/llm_extraction/gestion/results_none_llama.parquet (total: 1408)
+2026-09-15 12:03:44,153 INFO [llama] Batch 1408-1472 / 8640
+Rendering prompts:   0%|          | 0/56 [00:00<?, ?it/s]Rendering prompts:  71%|███████▏  | 40/56 [00:00<00:00, 388.72it/s]Rendering prompts: 100%|██████████| 56/56 [00:00<00:00, 388.19it/s]
+Processed prompts:   0%|          | 0/56 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/56 [00:48<44:41, 48.75s/it, est. speed input: 25.54 toks/s, output: 84.02 toks/s]Processed prompts: 100%|██████████| 56/56 [00:48<00:00, 48.75s/it, est. speed input: 1832.23 toks/s, output: 4697.63 toks/s]Processed prompts: 100%|██████████| 56/56 [00:48<00:00,  1.15it/s, est. speed input: 1832.23 toks/s, output: 4697.63 toks/s]
+2026-09-15 12:04:33,134 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,134 INFO     [0] 
+2026-09-15 12:04:33,134 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,134 INFO     [0] 
+2026-09-15 12:04:33,134 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,134 INFO     [0] 
+2026-09-15 12:04:33,134 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,134 INFO     [0] 
+2026-09-15 12:04:33,134 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,134 INFO     [0] 
+2026-09-15 12:04:33,134 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,134 INFO     [0] 
+2026-09-15 12:04:33,134 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,134 INFO     [0] 
+2026-09-15 12:04:33,134 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,134 INFO     [0] 
+2026-09-15 12:04:33,134 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,134 INFO     [0] 
+2026-09-15 12:04:33,134 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,134 INFO     [0] 
+2026-09-15 12:04:33,134 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,134 INFO     [0] 
+2026-09-15 12:04:33,134 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,134 INFO     [0] 
+2026-09-15 12:04:33,134 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,134 INFO     [0] 
+2026-09-15 12:04:33,134 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,134 INFO     [0] 
+2026-09-15 12:04:33,134 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:04:33,135 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:04:33,135 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:04:33,135 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,135 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,135 INFO     [0] 
+2026-09-15 12:04:33,136 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,136 INFO     [0] 
+2026-09-15 12:04:33,136 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,136 INFO     [0] 
+2026-09-15 12:04:33,136 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,136 INFO     [0] 
+2026-09-15 12:04:33,136 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:04:33,136 INFO     [0] 
+2026-09-15 12:04:33,136 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:04:33,136 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:04:33,256 INFO Saved 64 new rows to data/corpus_construction/llm_extraction/gestion/results_none_llama.parquet (total: 1472)
+2026-09-15 12:04:33,256 INFO [llama] Batch 1472-1536 / 8640
+Rendering prompts:   0%|          | 0/56 [00:00<?, ?it/s]Rendering prompts:  66%|██████▌   | 37/56 [00:00<00:00, 363.22it/s]Rendering prompts: 100%|██████████| 56/56 [00:00<00:00, 328.98it/s]
+Processed prompts:   0%|          | 0/56 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/56 [00:10<09:40, 10.56s/it, est. speed input: 136.04 toks/s, output: 115.48 toks/s]Processed prompts:   4%|▎         | 2/56 [00:49<24:19, 27.02s/it, est. speed input: 55.37 toks/s, output: 108.24 toks/s] Processed prompts: 100%|██████████| 56/56 [00:49<00:00, 27.02s/it, est. speed input: 1872.66 toks/s, output: 4604.44 toks/s]Processed prompts: 100%|██████████| 56/56 [00:49<00:00,  1.14it/s, est. speed input: 1872.66 toks/s, output: 4604.44 toks/s]
+2026-09-15 12:05:22,627 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,627 INFO     [0] 
+2026-09-15 12:05:22,627 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,627 INFO     [0] 
+2026-09-15 12:05:22,627 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,627 INFO     [0] 
+2026-09-15 12:05:22,627 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,627 INFO     [0] 
+2026-09-15 12:05:22,627 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,627 INFO     [0] 
+2026-09-15 12:05:22,627 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,627 INFO     [0] 
+2026-09-15 12:05:22,627 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,627 INFO     [0] 
+2026-09-15 12:05:22,627 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,627 INFO     [0] 
+2026-09-15 12:05:22,627 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,627 INFO     [0] 
+2026-09-15 12:05:22,627 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,627 INFO     [0] 
+2026-09-15 12:05:22,627 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,627 INFO     [0] 
+2026-09-15 12:05:22,627 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,627 INFO     [0] 
+2026-09-15 12:05:22,627 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,627 INFO     [0] 
+2026-09-15 12:05:22,627 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,627 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:05:22,628 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:05:22,628 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:05:22,628 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,628 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,628 INFO     [0] 
+2026-09-15 12:05:22,629 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,629 INFO     [0] 
+2026-09-15 12:05:22,629 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,629 INFO     [0] 
+2026-09-15 12:05:22,629 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,629 INFO     [0] 
+2026-09-15 12:05:22,629 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,629 INFO     [0] 
+2026-09-15 12:05:22,629 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,629 INFO     [0] 
+2026-09-15 12:05:22,629 INFO status=success | articles=1 | 0.882s
+2026-09-15 12:05:22,629 INFO     [0] 
+2026-09-15 12:05:22,629 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:05:22,629 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:05:22,744 INFO Saved 64 new rows to data/corpus_construction/llm_extraction/gestion/results_none_llama.parquet (total: 1536)
+2026-09-15 12:05:22,744 INFO [llama] Batch 1536-1600 / 8640
+Rendering prompts:   0%|          | 0/54 [00:00<?, ?it/s]Rendering prompts:  93%|█████████▎| 50/54 [00:00<00:00, 498.33it/s]Rendering prompts: 100%|██████████| 54/54 [00:00<00:00, 503.83it/s]
+Processed prompts:   0%|          | 0/54 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/54 [00:02<02:31,  2.85s/it, est. speed input: 537.25 toks/s, output: 146.84 toks/s]Processed prompts:   4%|▎         | 2/54 [00:45<22:31, 26.00s/it, est. speed input: 61.16 toks/s, output: 100.23 toks/s] Processed prompts: 100%|██████████| 54/54 [00:45<00:00, 26.00s/it, est. speed input: 1573.57 toks/s, output: 4820.21 toks/s]Processed prompts: 100%|██████████| 54/54 [00:45<00:00,  1.20it/s, est. speed input: 1573.57 toks/s, output: 4820.21 toks/s]
+2026-09-15 12:06:07,984 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,984 INFO     [0] 
+2026-09-15 12:06:07,984 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,984 INFO     [0] 
+2026-09-15 12:06:07,984 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,984 INFO     [0] 
+2026-09-15 12:06:07,984 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,984 INFO     [0] 
+2026-09-15 12:06:07,984 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,984 INFO     [0] 
+2026-09-15 12:06:07,984 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,984 INFO     [0] 
+2026-09-15 12:06:07,984 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,984 INFO     [0] 
+2026-09-15 12:06:07,984 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,984 INFO     [0] 
+2026-09-15 12:06:07,984 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,984 INFO     [0] 
+2026-09-15 12:06:07,984 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,984 INFO     [0] 
+2026-09-15 12:06:07,984 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,984 INFO     [0] 
+2026-09-15 12:06:07,984 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,984 INFO     [0] 
+2026-09-15 12:06:07,984 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,984 INFO     [0] 
+2026-09-15 12:06:07,984 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,984 INFO     [0] 
+2026-09-15 12:06:07,984 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:07,985 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:07,985 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:07,985 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:07,985 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,985 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:07,985 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,985 INFO     [0] 
+2026-09-15 12:06:07,986 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,986 INFO     [0] 
+2026-09-15 12:06:07,986 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,986 INFO     [0] 
+2026-09-15 12:06:07,986 INFO status=success | articles=1 | 0.838s
+2026-09-15 12:06:07,986 INFO     [0] 
+2026-09-15 12:06:08,108 INFO Saved 64 new rows to data/corpus_construction/llm_extraction/gestion/results_none_llama.parquet (total: 1600)
+2026-09-15 12:06:08,108 INFO [llama] Batch 1600-1664 / 8640
+Rendering prompts:   0%|          | 0/52 [00:00<?, ?it/s]Rendering prompts:  98%|█████████▊| 51/52 [00:00<00:00, 500.59it/s]Rendering prompts: 100%|██████████| 52/52 [00:00<00:00, 494.81it/s]
+Processed prompts:   0%|          | 0/52 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/52 [00:29<24:56, 29.35s/it, est. speed input: 48.25 toks/s, output: 100.00 toks/s]Processed prompts:   4%|▍         | 2/52 [00:46<18:25, 22.11s/it, est. speed input: 55.50 toks/s, output: 151.55 toks/s]Processed prompts: 100%|██████████| 52/52 [00:46<00:00, 22.11s/it, est. speed input: 1524.11 toks/s, output: 4556.54 toks/s]Processed prompts: 100%|██████████| 52/52 [00:46<00:00,  1.12it/s, est. speed input: 1524.11 toks/s, output: 4556.54 toks/s]
+2026-09-15 12:06:54,711 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:54,711 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,711 INFO     [0] 
+2026-09-15 12:06:54,711 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:54,712 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=success | articles=1 | 0.896s
+2026-09-15 12:06:54,712 INFO     [0] 
+2026-09-15 12:06:54,712 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:54,712 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:06:54,843 INFO Saved 64 new rows to data/corpus_construction/llm_extraction/gestion/results_none_llama.parquet (total: 1664)
+2026-09-15 12:06:54,844 INFO [llama] Batch 1664-1728 / 8640
+Rendering prompts:   0%|          | 0/56 [00:00<?, ?it/s]Rendering prompts:  70%|██████▉   | 39/56 [00:00<00:00, 380.47it/s]Rendering prompts: 100%|██████████| 56/56 [00:00<00:00, 370.75it/s]
+Processed prompts:   0%|          | 0/56 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/56 [00:06<05:52,  6.42s/it, est. speed input: 220.34 toks/s, output: 121.70 toks/s]Processed prompts:   4%|▎         | 2/56 [00:48<24:48, 27.56s/it, est. speed input: 55.24 toks/s, output: 100.00 toks/s] Processed prompts: 100%|██████████| 56/56 [00:48<00:00, 27.56s/it, est. speed input: 1847.08 toks/s, output: 4627.13 toks/s]Processed prompts: 100%|██████████| 56/56 [00:48<00:00,  1.15it/s, est. speed input: 1847.08 toks/s, output: 4627.13 toks/s]
+2026-09-15 12:07:43,866 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,866 INFO     [0] 
+2026-09-15 12:07:43,866 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,866 INFO     [0] 
+2026-09-15 12:07:43,866 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,866 INFO     [0] 
+2026-09-15 12:07:43,866 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,866 INFO     [0] 
+2026-09-15 12:07:43,866 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,866 INFO     [0] 
+2026-09-15 12:07:43,866 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,866 INFO     [0] 
+2026-09-15 12:07:43,866 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,866 INFO     [0] 
+2026-09-15 12:07:43,866 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,866 INFO     [0] 
+2026-09-15 12:07:43,866 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,866 INFO     [0] 
+2026-09-15 12:07:43,866 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,866 INFO     [0] 
+2026-09-15 12:07:43,866 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,866 INFO     [0] 
+2026-09-15 12:07:43,866 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,866 INFO     [0] 
+2026-09-15 12:07:43,866 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,866 INFO     [0] 
+2026-09-15 12:07:43,866 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,866 INFO     [0] 
+2026-09-15 12:07:43,866 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:07:43,866 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:07:43,867 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,867 INFO     [0] 
+2026-09-15 12:07:43,867 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,867 INFO     [0] 
+2026-09-15 12:07:43,867 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,867 INFO     [0] 
+2026-09-15 12:07:43,867 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,867 INFO     [0] 
+2026-09-15 12:07:43,867 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,867 INFO     [0] 
+2026-09-15 12:07:43,867 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,867 INFO     [0] 
+2026-09-15 12:07:43,867 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,867 INFO     [0] 
+2026-09-15 12:07:43,867 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,867 INFO     [0] 
+2026-09-15 12:07:43,867 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,867 INFO     [0] 
+2026-09-15 12:07:43,867 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,867 INFO     [0] 
+2026-09-15 12:07:43,867 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,867 INFO     [0] 
+2026-09-15 12:07:43,867 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,867 INFO     [0] 
+2026-09-15 12:07:43,867 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,867 INFO     [0] 
+2026-09-15 12:07:43,867 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,867 INFO     [0] 
+2026-09-15 12:07:43,867 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:07:43,867 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:07:43,867 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,867 INFO     [0] 
+2026-09-15 12:07:43,867 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,867 INFO     [0] 
+2026-09-15 12:07:43,867 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,867 INFO     [0] 
+2026-09-15 12:07:43,867 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,867 INFO     [0] 
+2026-09-15 12:07:43,867 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,867 INFO     [0] 
+2026-09-15 12:07:43,867 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,867 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:07:43,868 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,868 INFO     [0] 
+2026-09-15 12:07:43,868 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:07:43,869 INFO     [0] 
+2026-09-15 12:07:43,869 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:07:43,869 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:07:44,006 INFO Saved 64 new rows to data/corpus_construction/llm_extraction/gestion/results_none_llama.parquet (total: 1728)
+2026-09-15 12:07:44,007 INFO [llama] Batch 1728-1792 / 8640
+Rendering prompts:   0%|          | 0/56 [00:00<?, ?it/s]Rendering prompts:  70%|██████▉   | 39/56 [00:00<00:00, 384.17it/s]Rendering prompts: 100%|██████████| 56/56 [00:00<00:00, 380.00it/s]
+Processed prompts:   0%|          | 0/56 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/56 [00:08<07:29,  8.17s/it, est. speed input: 249.12 toks/s, output: 119.24 toks/s]Processed prompts:   4%|▎         | 2/56 [00:20<09:35, 10.66s/it, est. speed input: 197.75 toks/s, output: 151.13 toks/s]Processed prompts:   5%|▌         | 3/56 [00:48<16:29, 18.66s/it, est. speed input: 107.83 toks/s, output: 147.76 toks/s]Processed prompts: 100%|██████████| 56/56 [00:48<00:00, 18.66s/it, est. speed input: 1873.89 toks/s, output: 4591.88 toks/s]Processed prompts: 100%|██████████| 56/56 [00:48<00:00,  1.15it/s, est. speed input: 1873.89 toks/s, output: 4591.88 toks/s]
+2026-09-15 12:08:33,009 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,009 INFO     [0] 
+2026-09-15 12:08:33,009 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,009 INFO     [0] 
+2026-09-15 12:08:33,009 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,009 INFO     [0] 
+2026-09-15 12:08:33,009 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,009 INFO     [0] 
+2026-09-15 12:08:33,009 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:08:33,010 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:08:33,010 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:08:33,010 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,010 INFO     [0] 
+2026-09-15 12:08:33,010 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,011 INFO     [0] 
+2026-09-15 12:08:33,011 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,011 INFO     [0] 
+2026-09-15 12:08:33,011 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,011 INFO     [0] 
+2026-09-15 12:08:33,011 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,011 INFO     [0] 
+2026-09-15 12:08:33,011 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,011 INFO     [0] 
+2026-09-15 12:08:33,011 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,011 INFO     [0] 
+2026-09-15 12:08:33,011 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,011 INFO     [0] 
+2026-09-15 12:08:33,011 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,011 INFO     [0] 
+2026-09-15 12:08:33,011 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,011 INFO     [0] 
+2026-09-15 12:08:33,011 INFO status=success | articles=1 | 0.875s
+2026-09-15 12:08:33,011 INFO     [0] 
+2026-09-15 12:08:33,011 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:08:33,011 INFO status=failed | articles=0 | 0.000s
+2026-09-15 12:08:33,139 INFO Saved 64 new rows to data/corpus_construction/llm_extraction/gestion/results_none_llama.parquet (total: 1792)
+2026-09-15 12:08:33,140 INFO [llama] Batch 1792-1856 / 8640
+Rendering prompts:   0%|          | 0/56 [00:00<?, ?it/s]Rendering prompts:  71%|███████▏  | 40/56 [00:00<00:00, 397.14it/s]Rendering prompts: 100%|██████████| 56/56 [00:00<00:00, 379.94it/s]
+Processed prompts:   0%|          | 0/56 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]

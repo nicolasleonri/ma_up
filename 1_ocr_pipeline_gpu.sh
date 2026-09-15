@@ -9,7 +9,7 @@
 #SBATCH --cpus-per-task=5
 #SBATCH --gres=gpu:h100:1
 #SBATCH --mem-per-cpu=3GB
-#SBATCH --time=10:00:00
+#SBATCH --time=24:00:00
 
 # set -euo pipefail
 
@@ -26,8 +26,8 @@ export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 export HF_HOME=/scratch/nicolasal97/.cache/huggingface
 source venv/corpus_construction/llm_extraction/bin/activate
 
-for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
-# for newspaper in correo; do
+# for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
+for newspaper in correo; do
     echo "===== NEWSPAPER: ${newspaper} ====="
     for llm in qwen mistral llama deepseek; do
         echo "===== LLM: ${llm} ====="
@@ -39,8 +39,8 @@ for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
     done
 done
 
-for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
-# for newspaper in correo; do
+# for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
+for newspaper in correo; do
     echo "===== NEWSPAPER: ${newspaper} ====="
     for llm in qwen mistral llama deepseek; do
         echo "===== LLM: ${llm} ====="

@@ -1,0 +1,9 @@
+{
+  "newspaper": "peru21",
+  "date": "2020-10-27",
+  "status": "partial",
+  "pages_downloaded": 21,
+  "pages_expected": 1000,
+  "error": "1 page(s) failed",
+  "timestamp": "2026-07-08T02:34:14"
+}

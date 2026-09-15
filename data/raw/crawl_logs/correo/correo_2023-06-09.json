@@ -1,0 +1,9 @@
+{
+  "newspaper": "correo",
+  "date": "2023-06-09",
+  "status": "partial",
+  "pages_downloaded": 18,
+  "pages_expected": 1000,
+  "error": "2 page(s) failed",
+  "timestamp": "2026-07-16T20:23:21"
+}

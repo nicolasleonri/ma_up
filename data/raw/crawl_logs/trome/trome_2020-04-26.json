@@ -1,0 +1,9 @@
+{
+  "newspaper": "trome",
+  "date": "2020-04-26",
+  "status": "partial",
+  "pages_downloaded": 26,
+  "pages_expected": 1000,
+  "error": "2 page(s) failed",
+  "timestamp": "2026-07-08T01:17:13"
+}

@@ -1,0 +1,9 @@
+{
+  "newspaper": "elcomercio",
+  "date": "2019-08-31",
+  "status": "failed",
+  "pages_downloaded": 0,
+  "pages_expected": 1000,
+  "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"div[class='readingnav rn-right']\")\n",
+  "timestamp": "2026-07-19T11:12:32"
+}

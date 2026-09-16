@@ -5860,4 +5860,463 @@ INFO 09-16 14:56:31 [hf.py:551] Detected the chat template content format to be 
 2026-09-16 15:12:26,019 INFO Saved 90 new rows to data/corpus_construction/llm_extraction/trome/results_none_qwen.parquet (total: 3493)
 2026-09-16 15:12:26,020 INFO [qwen] Batch 2432-2496 / 8640
 Rendering prompts:   0%|          | 0/45 [00:00<?, ?it/s]Rendering prompts: 100%|██████████| 45/45 [00:00<00:00, 520.82it/s]
-Processed prompts:   0%|          | 0/45 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/45 [00:00<00:08,  4.91it/s, est. speed input: 5861.71 toks/s, output: 147.40 toks/s]Processed prompts:   9%|▉         | 4/45 [00:00<00:02, 13.71it/s, est. speed input: 14849.52 toks/s, output: 456.30 toks/s]Processed prompts:  13%|█▎        | 6/45 [00:00<00:02, 15.56it/s, est. speed input: 17047.06 toks/s, output: 656.88 toks/s]Processed prompts:  18%|█▊        | 8/45 [00:02<00:13,  2.69it/s, est. speed input: 4510.32 toks/s, output: 346.77 toks/s] Processed prompts:  22%|██▏       | 10/45 [00:03<00:13,  2.51it/s, est. speed input: 3951.51 toks/s, output: 553.55 toks/s]Processed prompts:  24%|██▍       | 11/45 [00:04<00:17,  1.92it/s, est. speed input: 3262.59 toks/s, output: 595.63 toks/s]Processed prompts:  27%|██▋       | 12/45 [00:04<00:18,  1.77it/s, est. speed input: 3014.07 toks/s, output: 683.63 toks/s]Processed prompts:  29%|██▉       | 13/45 [00:05<00:15,  2.07it/s, est. speed input: 3110.47 toks/s, output: 830.40 toks/s]Processed prompts:  33%|███▎      | 15/45 [00:06<00:14,  2.04it/s, est. speed input: 3460.20 toks/s, output: 1017.63 toks/s]Processed prompts:  36%|███▌      | 16/45 [00:06<00:11,  2.49it/s, est. speed input: 3772.76 toks/s, output: 1176.45 toks/s]Processed prompts:  38%|███▊      | 17/45 [00:12<00:50,  1.82s/it, est. speed input: 2052.96 toks/s, output: 755.27 toks/s] 
+Processed prompts:   0%|          | 0/45 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/45 [00:00<00:08,  4.91it/s, est. speed input: 5861.71 toks/s, output: 147.40 toks/s]Processed prompts:   9%|▉         | 4/45 [00:00<00:02, 13.71it/s, est. speed input: 14849.52 toks/s, output: 456.30 toks/s]Processed prompts:  13%|█▎        | 6/45 [00:00<00:02, 15.56it/s, est. speed input: 17047.06 toks/s, output: 656.88 toks/s]Processed prompts:  18%|█▊        | 8/45 [00:02<00:13,  2.69it/s, est. speed input: 4510.32 toks/s, output: 346.77 toks/s] Processed prompts:  22%|██▏       | 10/45 [00:03<00:13,  2.51it/s, est. speed input: 3951.51 toks/s, output: 553.55 toks/s]Processed prompts:  24%|██▍       | 11/45 [00:04<00:17,  1.92it/s, est. speed input: 3262.59 toks/s, output: 595.63 toks/s]Processed prompts:  27%|██▋       | 12/45 [00:04<00:18,  1.77it/s, est. speed input: 3014.07 toks/s, output: 683.63 toks/s]Processed prompts:  29%|██▉       | 13/45 [00:05<00:15,  2.07it/s, est. speed input: 3110.47 toks/s, output: 830.40 toks/s]Processed prompts:  33%|███▎      | 15/45 [00:06<00:14,  2.04it/s, est. speed input: 3460.20 toks/s, output: 1017.63 toks/s]Processed prompts:  36%|███▌      | 16/45 [00:06<00:11,  2.49it/s, est. speed input: 3772.76 toks/s, output: 1176.45 toks/s]Processed prompts:  38%|███▊      | 17/45 [00:12<00:50,  1.82s/it, est. speed input: 2052.96 toks/s, output: 755.27 toks/s] Processed prompts:  40%|████      | 18/45 [00:25<02:08,  4.76s/it, est. speed input: 1037.68 toks/s, output: 525.33 toks/s]Processed prompts: 100%|██████████| 45/45 [00:25<00:00,  4.76s/it, est. speed input: 2463.22 toks/s, output: 4854.05 toks/s]Processed prompts: 100%|██████████| 45/45 [00:25<00:00,  1.76it/s, est. speed input: 2463.22 toks/s, output: 4854.05 toks/s]
+2026-09-16 15:12:51,656 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,656 INFO     [0] 
+2026-09-16 15:12:51,656 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,656 INFO     [0] 
+2026-09-16 15:12:51,656 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,656 INFO     [0] 
+2026-09-16 15:12:51,656 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,656 INFO     [0] 
+2026-09-16 15:12:51,656 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,656 INFO     [0] 
+2026-09-16 15:12:51,656 INFO status=success | articles=12 | 0.570s
+2026-09-16 15:12:51,656 INFO     [0] Messi arribó aycr a Roserio en un avión privado y lueço se fue marejąrdo sélo ha
+2026-09-16 15:12:51,656 INFO     [1] Realpe, fútbolisia ecuatoriano de 23 años dei LDU de Qulio, falleció aver en un 
+2026-09-16 15:12:51,656 INFO     [2] Este vez no hubo vuelo y el aterrizaje fue forzoso. Hace ¿unos días, Cristino Ro
+2026-09-16 15:12:51,656 INFO     [3] El español Liș Alberio adéiartó ai vigente campeón de la Copa ltajia 2018-19, a 
+2026-09-16 15:12:51,656 INFO     [4] La Lazio le ganó 3 a i a la Juventus, en el estadio de la Universidad Rey Saúd, 
+2026-09-16 15:12:51,656 INFO     [5] El Real Madrid [2.° con 37] se cespidió de un 2019 para e. olvido, sin títuiós, 
+2026-09-16 15:12:51,656 INFO     [6] José Mourinho, actual técnico dei Tettenham [7.º con 26], volvió a tener en fren
+2026-09-16 15:12:51,656 INFO     [7] Toni Kroos, Nacho Fernández y Luka Jovic estrenaron sendos remates en el poste, 
+2026-09-16 15:12:51,656 INFO     [8] Un año en blanco. El Real Madrid [2.° con 37] se cespidió de un 2019 para e. olv
+2026-09-16 15:12:51,656 INFO     [9] Un doblete del brasilcño Willian [12' y 45;, de penal) le propinó a Mou' su segu
+2026-09-16 15:12:51,656 INFO     [10] Toni Kroos, Nacho Fernández y Luka Jovic estrenaron sendos remates en el poste, 
+2026-09-16 15:12:51,656 INFO     [11] Un año en blanco. El Real Madrid [2.° con 37] se cespidó de un 2019 para e. olvi
+2026-09-16 15:12:51,656 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:12:51,656 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,656 INFO     [0] 
+2026-09-16 15:12:51,656 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,656 INFO     [0] 
+2026-09-16 15:12:51,656 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,656 INFO     [0] 
+2026-09-16 15:12:51,656 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,656 INFO     [0] 
+2026-09-16 15:12:51,656 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,656 INFO     [0] 
+2026-09-16 15:12:51,656 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,656 INFO     [0] 
+2026-09-16 15:12:51,656 INFO status=success | articles=6 | 0.570s
+2026-09-16 15:12:51,656 INFO     [0] Universidad Rey Saúd, en Arabia Saudita
+2026-09-16 15:12:51,656 INFO     [1] Lionel Messi arribó ayer a Rosario en un avión privado y luego se fue manejando 
+2026-09-16 15:12:51,656 INFO     [2] Edison Realpe futbolista ecuatoriano de 23 años del LDU de Quito, falleció ayer 
+2026-09-16 15:12:51,656 INFO     [3] Renato Tapia parece estar próximo a dejar la liga holandesa, pues al interés de 
+2026-09-16 15:12:51,656 INFO     [4] José Mourinho volvió a tener frente al Chelsea, con el que ganó varios títulos e
+2026-09-16 15:12:51,657 INFO     [5] El Real Madrid se despidió de un 2019 para el olvido, sin títulos, sin la punta 
+2026-09-16 15:12:51,657 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:12:51,657 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:12:51,657 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:12:51,657 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:12:51,657 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:12:51,657 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:12:51,657 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,657 INFO     [0] 
+2026-09-16 15:12:51,657 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,658 INFO     [0] 
+2026-09-16 15:12:51,658 INFO status=success | articles=1 | 0.570s
+2026-09-16 15:12:51,658 INFO     [0] 
+2026-09-16 15:12:51,658 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:12:51,762 INFO Saved 80 new rows to data/corpus_construction/llm_extraction/trome/results_none_qwen.parquet (total: 3573)
+2026-09-16 15:12:51,763 INFO [qwen] Batch 2496-2560 / 8640
+Rendering prompts:   0%|          | 0/56 [00:00<?, ?it/s]Rendering prompts:  68%|██████▊   | 38/56 [00:00<00:00, 360.58it/s]Rendering prompts: 100%|██████████| 56/56 [00:00<00:00, 352.97it/s]
+Processed prompts:   0%|          | 0/56 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/56 [00:00<00:30,  1.81it/s, est. speed input: 2313.74 toks/s, output: 52.42 toks/s]Processed prompts:  11%|█         | 6/56 [00:00<00:04, 11.52it/s, est. speed input: 13028.45 toks/s, output: 354.12 toks/s]Processed prompts:  39%|███▉      | 22/56 [00:00<00:01, 32.26it/s, est. speed input: 34036.25 toks/s, output: 1290.01 toks/s]Processed prompts:  48%|████▊     | 27/56 [00:03<00:05,  5.74it/s, est. speed input: 10758.09 toks/s, output: 820.86 toks/s] Processed prompts:  54%|█████▎    | 30/56 [00:05<00:06,  4.24it/s, est. speed input: 9178.88 toks/s, output: 1006.86 toks/s]Processed prompts:  57%|█████▋    | 32/56 [00:05<00:05,  4.74it/s, est. speed input: 10182.08 toks/s, output: 1297.99 toks/s]Processed prompts:  61%|██████    | 34/56 [00:05<00:04,  5.33it/s, est. speed input: 10796.57 toks/s, output: 1576.56 toks/s]Processed prompts:  64%|██████▍   | 36/56 [00:07<00:06,  2.99it/s, est. speed input: 8765.97 toks/s, output: 1470.88 toks/s] Processed prompts:  66%|██████▌   | 37/56 [00:19<00:06,  2.99it/s, est. speed input: 6813.71 toks/s, output: 1251.77 toks/s]Processed prompts:  68%|██████▊   | 38/56 [00:25<00:40,  2.27s/it, est. speed input: 2749.62 toks/s, output: 656.55 toks/s] Processed prompts: 100%|██████████| 56/56 [00:25<00:00,  2.27s/it, est. speed input: 4042.26 toks/s, output: 3542.45 toks/s]Processed prompts: 100%|██████████| 56/56 [00:25<00:00,  2.19it/s, est. speed input: 4042.26 toks/s, output: 3542.45 toks/s]
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=5 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] Londres.- No pudo con su ex lose Mourinho. actual técnico del Tottenhamn [7 ° co
+2026-09-16 15:13:17,466 INFO     [1] PERDIÓ CLÁSICO CON SU EX CHELSEA SUFRIÓ MOUCHO
+2026-09-16 15:13:17,466 INFO     [2] CRISTIANO RONALDO TERMINO ENTRE LAGRIMAS Y SE QUITO MEDALLA DE PLATA, TRAS PERDE
+2026-09-16 15:13:17,466 INFO     [3] Toni Kroos. Nacho Fernández y Luka lovic estrenaron sendos remates en el poste. 
+2026-09-16 15:13:17,466 INFO     [4] Renato Tapía parece estar próximo à dejar la liga holandesa, pues al interés de 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:17,466 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=6 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] Londres.- No pudo con su ex lose Mourinho. actual técnico del Tottenham [7° con 
+2026-09-16 15:13:17,466 INFO     [1] LIONEL Messi arrojó dyer a Rosano en un avión privado y luego se fue casa, donde
+2026-09-16 15:13:17,466 INFO     [2] EDISON Rea, lutbolicta ecualorano de 23 anos del LDU de Ouito, falleció ayer en 
+2026-09-16 15:13:17,466 INFO     [3] Cristiano Ronaldo terminó entre lagrimas y se quitó medalla de plata, tras perde
+2026-09-16 15:13:17,466 INFO     [4] Madrid- Un año en blanco. El Real Madrid [2.° con 37] se despidió de un 2019 par
+2026-09-16 15:13:17,466 INFO     [5] Renato Tapía parece estar próximamente a dejar la liga holandesa, pues al interé
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=6 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] Londres.- No pudo con su ex lose Mourinho. actual técnico del Tottenham [7° con 
+2026-09-16 15:13:17,466 INFO     [1] LIONEL Messi arrojó dyer a Rosano en un avión privado y luego se fue casa, donde
+2026-09-16 15:13:17,466 INFO     [2] EDISON Rea, lutbolicta ecualorano de 23 anos del LDU de Ouito, falleció ayer en 
+2026-09-16 15:13:17,466 INFO     [3] Cristiano Ronaldo terminó entre lagrimas y se quitó medalla de plata, tras perde
+2026-09-16 15:13:17,466 INFO     [4] Madrid- Un año en blanco. El Real Madrid [2.° con 37] se despidió de un 2019 par
+2026-09-16 15:13:17,466 INFO     [5] Renato Tapía parece estar próximamente a dejar la liga holandesa, pues al interé
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,466 INFO     [0] 
+2026-09-16 15:13:17,466 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:17,467 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:17,467 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=7 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] SALTOR AL VACÍO
+2026-09-16 15:13:17,467 INFO     [1] LIONEL MESSI ARRIBA A ROSARIO
+2026-09-16 15:13:17,467 INFO     [2] CRISTIANO RONALDO TERMINÓ ENTRE LÁGRIMAS Y SE QUITÓ MEDALLA DE SUPERCOPA DE ITAL
+2026-09-16 15:13:17,467 INFO     [3] TAPIA GANÓ
+2026-09-16 15:13:17,467 INFO     [4] MADRID NO GANÓ Y SE QUITÓ DELA PUNIA
+2026-09-16 15:13:17,467 INFO     [5] CHELSEA NO GANÓ CON SU EX
+2026-09-16 15:13:17,467 INFO     [6] FEYENOORD GANÓ
+2026-09-16 15:13:17,467 INFO status=success | articles=7 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] LOS OLIVOS
+2026-09-16 15:13:17,467 INFO     [1] SALTOR VACIO
+2026-09-16 15:13:17,467 INFO     [2] CRISTIANO RONALDO TERMINÓ ENTRE LÁGRIMAS Y SE QUITO MEDALLA DE PLATA, TRAS PERDE
+2026-09-16 15:13:17,467 INFO     [3] MADRID NO PUDO GANAR Y SE ALEJO DE LA PUNTA
+2026-09-16 15:13:17,467 INFO     [4] LIONEL MESSI ARRIBIÓ A ROSARIO EN UN AVIÓN PUNV QUE MANEJANDO SOLO HASTA SU CASA
+2026-09-16 15:13:17,467 INFO     [5] PERDIÓ CLÁSICO
+2026-09-16 15:13:17,467 INFO     [6] TAPIA GANÓ Y LO QUIERE EL XENEIZE
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=4 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] SALTOR ALI
+2026-09-16 15:13:17,467 INFO     [1] PERDIÓ CLÁSICO
+2026-09-16 15:13:17,467 INFO     [2] TAPIA GANÓ A PEDIR DE BOCA
+2026-09-16 15:13:17,467 INFO     [3] SURCO
+2026-09-16 15:13:17,467 INFO status=success | articles=4 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] Esta vez no hubo vuelo y el aterrizaje fue forzoso
+2026-09-16 15:13:17,467 INFO     [1] CRISTIANO RONALDO TERMINÓ ENTRE LÁGRIMAS Y SE QUITÓ MEDALLA DE PLATA, TRAS PERDE
+2026-09-16 15:13:17,467 INFO     [2] Toni Kroos, Nacho Fernández y Luka Jovic estrenaron sendos remates en el poste
+2026-09-16 15:13:17,467 INFO     [3] PERDIÓ CLÁSICO CON SU EX CHELSEA SUFRIÓ MOUCHO
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=success | articles=1 | 0.459s
+2026-09-16 15:13:17,467 INFO     [0] 
+2026-09-16 15:13:17,467 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:17,467 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:17,564 INFO Saved 96 new rows to data/corpus_construction/llm_extraction/trome/results_none_qwen.parquet (total: 3669)
+2026-09-16 15:13:17,565 INFO [qwen] Batch 2560-2624 / 8640
+Rendering prompts:   0%|          | 0/56 [00:00<?, ?it/s]Rendering prompts:  68%|██████▊   | 38/56 [00:00<00:00, 368.68it/s]Rendering prompts: 100%|██████████| 56/56 [00:00<00:00, 391.44it/s]
+Processed prompts:   0%|          | 0/56 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/56 [00:00<00:27,  2.01it/s, est. speed input: 2490.73 toks/s, output: 18.11 toks/s]Processed prompts:   4%|▎         | 2/56 [00:00<00:16,  3.35it/s, est. speed input: 3718.71 toks/s, output: 62.38 toks/s]Processed prompts:  14%|█▍        | 8/56 [00:00<00:03, 15.71it/s, est. speed input: 12961.68 toks/s, output: 366.15 toks/s]Processed prompts:  27%|██▋       | 15/56 [00:00<00:01, 27.43it/s, est. speed input: 21497.64 toks/s, output: 776.03 toks/s]Processed prompts:  36%|███▌      | 20/56 [00:02<00:06,  5.94it/s, est. speed input: 9042.13 toks/s, output: 621.27 toks/s] Processed prompts:  41%|████      | 23/56 [00:05<00:10,  3.14it/s, est. speed input: 6064.81 toks/s, output: 737.20 toks/s]Processed prompts:  45%|████▍     | 25/56 [00:05<00:09,  3.43it/s, est. speed input: 6798.72 toks/s, output: 985.75 toks/s]Processed prompts:  50%|█████     | 28/56 [00:05<00:06,  4.53it/s, est. speed input: 7884.87 toks/s, output: 1406.05 toks/s]Processed prompts:  54%|█████▎    | 30/56 [00:06<00:05,  4.43it/s, est. speed input: 7636.60 toks/s, output: 1598.07 toks/s]Processed prompts:  57%|█████▋    | 32/56 [00:06<00:05,  4.31it/s, est. speed input: 7951.65 toks/s, output: 1782.00 toks/s]Processed prompts:  64%|██████▍   | 36/56 [00:07<00:03,  5.63it/s, est. speed input: 9056.95 toks/s, output: 2273.09 toks/s]Processed prompts:  68%|██████▊   | 38/56 [00:07<00:02,  6.52it/s, est. speed input: 9754.72 toks/s, output: 2537.80 toks/s]Processed prompts:  71%|███████▏  | 40/56 [00:07<00:03,  5.27it/s, est. speed input: 9652.61 toks/s, output: 2641.84 toks/s]Processed prompts:  73%|███████▎  | 41/56 [00:09<00:05,  2.66it/s, est. speed input: 8414.27 toks/s, output: 2388.28 toks/s]Processed prompts:  75%|███████▌  | 42/56 [00:24<00:40,  2.91s/it, est. speed input: 3371.67 toks/s, output: 1082.67 toks/s]Processed prompts: 100%|██████████| 56/56 [00:24<00:00,  2.91s/it, est. speed input: 4321.62 toks/s, output: 3449.86 toks/s]Processed prompts: 100%|██████████| 56/56 [00:24<00:00,  2.31it/s, est. speed input: 4321.62 toks/s, output: 3449.86 toks/s]
+2026-09-16 15:13:41,932 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,932 INFO     [0] 
+2026-09-16 15:13:41,932 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,932 INFO     [0] 
+2026-09-16 15:13:41,932 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,932 INFO     [0] 
+2026-09-16 15:13:41,932 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,932 INFO     [0] 
+2026-09-16 15:13:41,932 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,932 INFO     [0] 
+2026-09-16 15:13:41,932 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,932 INFO     [0] 
+2026-09-16 15:13:41,932 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,932 INFO     [0] 
+2026-09-16 15:13:41,932 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,932 INFO     [0] 
+2026-09-16 15:13:41,932 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,932 INFO     [0] 
+2026-09-16 15:13:41,932 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,932 INFO     [0] 
+2026-09-16 15:13:41,932 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,932 INFO     [0] 
+2026-09-16 15:13:41,932 INFO status=success | articles=5 | 0.435s
+2026-09-16 15:13:41,932 INFO     [0] SALTO VACÍO
+2026-09-16 15:13:41,932 INFO     [1] DATAZOS
+2026-09-16 15:13:41,932 INFO     [2] Londres.-No pudo con su ex. José Mourinho, actual técnico del Tottenham [7.º con
+2026-09-16 15:13:41,932 INFO     [3] Madrid.- Un año en blanco. ElReal Madrid [2.° con 37] se despidió de un 2019 par
+2026-09-16 15:13:41,932 INFO     [4] TAPIA GANÓ YLO QUIERE EL XENEIZE
+2026-09-16 15:13:41,932 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,932 INFO     [0] 
+2026-09-16 15:13:41,932 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,932 INFO     [0] 
+2026-09-16 15:13:41,932 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:41,932 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:41,932 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,932 INFO     [0] 
+2026-09-16 15:13:41,933 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] 
+2026-09-16 15:13:41,933 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] 
+2026-09-16 15:13:41,933 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] 
+2026-09-16 15:13:41,933 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] 
+2026-09-16 15:13:41,933 INFO status=success | articles=5 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] SALTOR VACIO
+2026-09-16 15:13:41,933 INFO     [1] CRISTIANO RONALDO TERMINO ENTRE LAGRIMAS Y SE QUITO MEDALLA DE PLATA, TRAS PERDE
+2026-09-16 15:13:41,933 INFO     [2] MADRID NO PUDO GANAR Y SE ALEJO DE LA PUNTA
+2026-09-16 15:13:41,933 INFO     [3] TAPIA GANÓ Y LO QUIERE EL XENEIZE
+2026-09-16 15:13:41,933 INFO     [4] LONDRES.- NO PUDO CON SU EX CHELSEA
+2026-09-16 15:13:41,933 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] 
+2026-09-16 15:13:41,933 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] 
+2026-09-16 15:13:41,933 INFO status=success | articles=6 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] ALI VACIO
+2026-09-16 15:13:41,933 INFO     [1] DATAZOS
+2026-09-16 15:13:41,933 INFO     [2] MADRID NO PUDO GANAR Y SE LE ESCAPÓ LA PUNIA
+2026-09-16 15:13:41,933 INFO     [3] LIONEL MESSI ARRIBA A ROSARIO
+2026-09-16 15:13:41,933 INFO     [4] TAPIA GANÓ Y LO QUIERE EL XENEIZE
+2026-09-16 15:13:41,933 INFO     [5] CHELSEA SUERIO MOUCHO
+2026-09-16 15:13:41,933 INFO status=success | articles=4 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] Esta vez no hubo vuelo y el aterrizaje fue forzoso. Hace unos días, Cristiano Ro
+2026-09-16 15:13:41,933 INFO     [1] Madrid.- Un año en blanco. El Real Madrid [2.° con 37] se despidió de un 2019 pa
+2026-09-16 15:13:41,933 INFO     [2] TAPIA GANÓ Y LO QUIERE EL XENEIZE
+2026-09-16 15:13:41,933 INFO     [3] Londres.- No pudo con su ex. José Mourinho, actual técnico del Tottenham [7.° co
+2026-09-16 15:13:41,933 INFO status=success | articles=6 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] ALI VACIO
+2026-09-16 15:13:41,933 INFO     [1] DATAZOS
+2026-09-16 15:13:41,933 INFO     [2] MADRID NO PUDO GANAR Y SE LE ESCAPÓ LA PUNIA
+2026-09-16 15:13:41,933 INFO     [3] LIONEL MESSI ARRIBA A ROSARIO
+2026-09-16 15:13:41,933 INFO     [4] TAPIA GANÓ Y LO QUIERE EL XENEIZE
+2026-09-16 15:13:41,933 INFO     [5] CHELSEA SUERIO MOUCHO
+2026-09-16 15:13:41,933 INFO status=success | articles=4 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] Esta vez no hubo vuelo y el aterrizaje fue forzoso. Hace unos días, Cristiano Ro
+2026-09-16 15:13:41,933 INFO     [1] Madrid.- Un año en blanco. El Real Madrid [2.° con 37] se despidió de un 2019 pa
+2026-09-16 15:13:41,933 INFO     [2] TAPIA GANÓ Y LO QUIERE EL XENEIZE
+2026-09-16 15:13:41,933 INFO     [3] Londres.- No pudo con su ex. José Mourinho, actual técnico del Tottenham [7.° co
+2026-09-16 15:13:41,933 INFO status=success | articles=3 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] Cristiano Ronaldo terminó entre lágrimas Supercopa de Italia
+2026-09-16 15:13:41,933 INFO     [1] Madrid no ganaryse
+2026-09-16 15:13:41,933 INFO     [2] #IAPIA GANÓ
+2026-09-16 15:13:41,933 INFO status=success | articles=5 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] SALTOR VACIO
+2026-09-16 15:13:41,933 INFO     [1] CRISTIANO RONALDO TERMINÓ ENTRE LÁGRIMAS Y SE QUITO MEDALLA DE PLATA, TRAS PERDE
+2026-09-16 15:13:41,933 INFO     [2] MADRID NO PUDO GANAR Y SE ALEJÓ DE LA PUNTA
+2026-09-16 15:13:41,933 INFO     [3] TAPIA GANÓ Y LO QUIERE EL XENEIZE
+2026-09-16 15:13:41,933 INFO     [4] CHELSEA
+2026-09-16 15:13:41,933 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:41,933 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:41,933 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] 
+2026-09-16 15:13:41,933 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] 
+2026-09-16 15:13:41,933 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] 
+2026-09-16 15:13:41,933 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] 
+2026-09-16 15:13:41,933 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] 
+2026-09-16 15:13:41,933 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] 
+2026-09-16 15:13:41,933 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] 
+2026-09-16 15:13:41,933 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] 
+2026-09-16 15:13:41,933 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] 
+2026-09-16 15:13:41,933 INFO status=success | articles=6 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] Capturan a miembro de 'Los Federales'
+2026-09-16 15:13:41,933 INFO     [1] Bala perdida le cayó en La Parada
+2026-09-16 15:13:41,933 INFO     [2] Ofrecían 15 mil soles por 'Ojón'
+2026-09-16 15:13:41,933 INFO     [3] CON KATIRI ROBABA A PERSONAS QUE IBA A HACER SUS COMPRAS
+2026-09-16 15:13:41,933 INFO     [4] ARMA ALQUILADA
+2026-09-16 15:13:41,933 INFO     [5] Chapan a 'Cojo Damián' con drogas
+2026-09-16 15:13:41,933 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] 
+2026-09-16 15:13:41,933 INFO status=success | articles=5 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] Capturan a miembro de 'Los Federales'
+2026-09-16 15:13:41,933 INFO     [1] Bala perdida le cae en La Parada
+2026-09-16 15:13:41,933 INFO     [2] Ofrecían 15 mil soles por 'Ojón'
+2026-09-16 15:13:41,933 INFO     [3] El Rafa' asaltaba en mercados
+2026-09-16 15:13:41,933 INFO     [4] Chapan a 'Cojo Damián' con drogas
+2026-09-16 15:13:41,933 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] 
+2026-09-16 15:13:41,933 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,933 INFO     [0] 
+2026-09-16 15:13:41,933 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:41,933 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:41,934 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,934 INFO     [0] 
+2026-09-16 15:13:41,934 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,934 INFO     [0] 
+2026-09-16 15:13:41,934 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,934 INFO     [0] 
+2026-09-16 15:13:41,934 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,934 INFO     [0] 
+2026-09-16 15:13:41,934 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,934 INFO     [0] 
+2026-09-16 15:13:41,934 INFO status=success | articles=6 | 0.435s
+2026-09-16 15:13:41,934 INFO     [0] Capturan a miembro de 'Los Federales'
+2026-09-16 15:13:41,934 INFO     [1] Balaperdida le caé en La Parada
+2026-09-16 15:13:41,934 INFO     [2] Ofrecían 15 mil soles puoo, o
+2026-09-16 15:13:41,934 INFO     [3] XCON IKCATIRP ROBABAA PERSONAS QUE IBAN A HACER SUS COMPRAS
+2026-09-16 15:13:41,934 INFO     [4] Chapan a Cojo Damián condrogas
+2026-09-16 15:13:41,934 INFO     [5] MPOLCÍALO ATRAPÓ CON REVÓLVER Y DOS CELULARES ROBADOS
+2026-09-16 15:13:41,934 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,934 INFO     [0] 
+2026-09-16 15:13:41,934 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,934 INFO     [0] 
+2026-09-16 15:13:41,934 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,934 INFO     [0] 
+2026-09-16 15:13:41,934 INFO status=success | articles=7 | 0.435s
+2026-09-16 15:13:41,934 INFO     [0] Capturan a miembro de 'Los Federales'
+2026-09-16 15:13:41,934 INFO     [1] Bala perdida le cayó en La Parada
+2026-09-16 15:13:41,934 INFO     [2] Ofrecían 15 mil soles por 'Ojón'
+2026-09-16 15:13:41,934 INFO     [3] CON KATIRP ROBABA A PERSONAS QUE IBAN A HACER SUS COMPRAS
+2026-09-16 15:13:41,934 INFO     [4] ARMA ALQUILADA
+2026-09-16 15:13:41,934 INFO     [5] ELRAFA ASALTABA EN MERCADOS
+2026-09-16 15:13:41,934 INFO     [6] Chapan a 'Cojo Damián' con drogas
+2026-09-16 15:13:41,934 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,934 INFO     [0] 
+2026-09-16 15:13:41,934 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,934 INFO     [0] 
+2026-09-16 15:13:41,934 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,934 INFO     [0] 
+2026-09-16 15:13:41,934 INFO status=success | articles=1 | 0.435s
+2026-09-16 15:13:41,934 INFO     [0] 
+2026-09-16 15:13:41,934 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:41,934 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:42,031 INFO Saved 114 new rows to data/corpus_construction/llm_extraction/trome/results_none_qwen.parquet (total: 3783)
+2026-09-16 15:13:42,032 INFO [qwen] Batch 2624-2688 / 8640
+Rendering prompts:   0%|          | 0/57 [00:00<?, ?it/s]Rendering prompts: 100%|██████████| 57/57 [00:00<00:00, 572.53it/s]
+Processed prompts:   0%|          | 0/57 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/57 [00:00<00:08,  6.58it/s, est. speed input: 7878.28 toks/s, output: 184.28 toks/s]Processed prompts:  12%|█▏        | 7/57 [00:00<00:01, 27.23it/s, est. speed input: 28899.18 toks/s, output: 925.69 toks/s]Processed prompts:  21%|██        | 12/57 [00:00<00:01, 22.53it/s, est. speed input: 26464.07 toks/s, output: 1091.89 toks/s]Processed prompts:  26%|██▋       | 15/57 [00:02<00:10,  4.16it/s, est. speed input: 7088.10 toks/s, output: 581.95 toks/s]  Processed prompts:  30%|██▉       | 17/57 [00:02<00:09,  4.41it/s, est. speed input: 7298.77 toks/s, output: 853.09 toks/s]Processed prompts:  33%|███▎      | 19/57 [00:03<00:07,  5.39it/s, est. speed input: 7783.56 toks/s, output: 1179.58 toks/s]Processed prompts:  40%|████      | 23/57 [00:03<00:05,  6.67it/s, est. speed input: 8325.46 toks/s, output: 1699.89 toks/s]Processed prompts:  44%|████▍     | 25/57 [00:03<00:05,  6.00it/s, est. speed input: 8046.71 toks/s, output: 1842.80 toks/s]Processed prompts:  46%|████▌     | 26/57 [00:04<00:06,  5.08it/s, est. speed input: 7713.98 toks/s, output: 1857.42 toks/s]Processed prompts:  47%|████▋     | 27/57 [00:04<00:06,  4.60it/s, est. speed input: 7432.88 toks/s, output: 1907.98 toks/s]Processed prompts:  49%|████▉     | 28/57 [00:05<00:10,  2.77it/s, est. speed input: 6356.74 toks/s, output: 1756.84 toks/s]Processed prompts:  51%|█████     | 29/57 [00:05<00:10,  2.75it/s, est. speed input: 6351.82 toks/s, output: 1825.16 toks/s]Processed prompts:  53%|█████▎    | 30/57 [00:06<00:09,  2.95it/s, est. speed input: 6462.49 toks/s, output: 1927.31 toks/s]

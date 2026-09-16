@@ -7285,4 +7285,390 @@ INFO 09-16 14:56:31 [hf.py:551] Detected the chat template content format to be 
 2026-09-16 15:12:37,329 INFO Saved 71 new rows to data/corpus_construction/llm_extraction/publimetro/results_none_qwen.parquet (total: 4695)
 2026-09-16 15:12:37,330 INFO [qwen] Batch 2752-2816 / 8640
 Rendering prompts:   0%|          | 0/56 [00:00<?, ?it/s]Rendering prompts:  98%|█████████▊| 55/56 [00:00<00:00, 539.47it/s]Rendering prompts: 100%|██████████| 56/56 [00:00<00:00, 536.10it/s]
-Processed prompts:   0%|          | 0/56 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/56 [00:00<00:14,  3.69it/s, est. speed input: 4663.31 toks/s, output: 118.24 toks/s]Processed prompts:   9%|▉         | 5/56 [00:00<00:03, 15.86it/s, est. speed input: 16753.51 toks/s, output: 519.24 toks/s]Processed prompts:  14%|█▍        | 8/56 [00:01<00:13,  3.60it/s, est. speed input: 5462.14 toks/s, output: 345.29 toks/s] Processed prompts:  18%|█▊        | 10/56 [00:02<00:14,  3.14it/s, est. speed input: 5118.60 toks/s, output: 586.76 toks/s]Processed prompts:  20%|█▉        | 11/56 [00:02<00:12,  3.52it/s, est. speed input: 5490.17 toks/s, output: 733.09 toks/s]Processed prompts:  21%|██▏       | 12/56 [00:03<00:12,  3.42it/s, est. speed input: 5296.66 toks/s, output: 831.36 toks/s]Processed prompts:  29%|██▊       | 16/56 [00:03<00:06,  6.61it/s, est. speed input: 6676.10 toks/s, output: 1471.24 toks/s]Processed prompts:  32%|███▏      | 18/56 [00:03<00:06,  6.23it/s, est. speed input: 6941.14 toks/s, output: 1653.76 toks/s]Processed prompts:  36%|███▌      | 20/56 [00:03<00:04,  7.45it/s, est. speed input: 7304.17 toks/s, output: 1942.63 toks/s]Processed prompts:  39%|███▉      | 22/56 [00:03<00:03,  8.63it/s, est. speed input: 7765.15 toks/s, output: 2213.45 toks/s]Processed prompts:  43%|████▎     | 24/56 [00:04<00:04,  7.00it/s, est. speed input: 7817.88 toks/s, output: 2340.31 toks/s]Processed prompts:  46%|████▋     | 26/56 [00:04<00:03,  8.26it/s, est. speed input: 8224.34 toks/s, output: 2611.58 toks/s]Processed prompts:  50%|█████     | 28/56 [00:06<00:12,  2.29it/s, est. speed input: 5889.72 toks/s, output: 2006.46 toks/s]
+Processed prompts:   0%|          | 0/56 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/56 [00:00<00:14,  3.69it/s, est. speed input: 4663.31 toks/s, output: 118.24 toks/s]Processed prompts:   9%|▉         | 5/56 [00:00<00:03, 15.86it/s, est. speed input: 16753.51 toks/s, output: 519.24 toks/s]Processed prompts:  14%|█▍        | 8/56 [00:01<00:13,  3.60it/s, est. speed input: 5462.14 toks/s, output: 345.29 toks/s] Processed prompts:  18%|█▊        | 10/56 [00:02<00:14,  3.14it/s, est. speed input: 5118.60 toks/s, output: 586.76 toks/s]Processed prompts:  20%|█▉        | 11/56 [00:02<00:12,  3.52it/s, est. speed input: 5490.17 toks/s, output: 733.09 toks/s]Processed prompts:  21%|██▏       | 12/56 [00:03<00:12,  3.42it/s, est. speed input: 5296.66 toks/s, output: 831.36 toks/s]Processed prompts:  29%|██▊       | 16/56 [00:03<00:06,  6.61it/s, est. speed input: 6676.10 toks/s, output: 1471.24 toks/s]Processed prompts:  32%|███▏      | 18/56 [00:03<00:06,  6.23it/s, est. speed input: 6941.14 toks/s, output: 1653.76 toks/s]Processed prompts:  36%|███▌      | 20/56 [00:03<00:04,  7.45it/s, est. speed input: 7304.17 toks/s, output: 1942.63 toks/s]Processed prompts:  39%|███▉      | 22/56 [00:03<00:03,  8.63it/s, est. speed input: 7765.15 toks/s, output: 2213.45 toks/s]Processed prompts:  43%|████▎     | 24/56 [00:04<00:04,  7.00it/s, est. speed input: 7817.88 toks/s, output: 2340.31 toks/s]Processed prompts:  46%|████▋     | 26/56 [00:04<00:03,  8.26it/s, est. speed input: 8224.34 toks/s, output: 2611.58 toks/s]Processed prompts:  50%|█████     | 28/56 [00:06<00:12,  2.29it/s, est. speed input: 5889.72 toks/s, output: 2006.46 toks/s]Processed prompts:  52%|█████▏    | 29/56 [00:25<01:37,  3.61s/it, est. speed input: 1638.24 toks/s, output: 703.34 toks/s] Processed prompts: 100%|██████████| 56/56 [00:25<00:00,  3.61s/it, est. speed input: 3012.69 toks/s, output: 5037.65 toks/s]Processed prompts: 100%|██████████| 56/56 [00:25<00:00,  2.20it/s, est. speed input: 3012.69 toks/s, output: 5037.65 toks/s]
+2026-09-16 15:13:02,948 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:02,949 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:02,949 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=4 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] ¿ESTÁS DE ACUERDO CON LA LIBRE DISPOSICIÓN DE LA AFP A LOS 65 AÑOS?
+2026-09-16 15:13:02,949 INFO     [1] ERICK RAMÍREZ
+2026-09-16 15:13:02,949 INFO     [2] LUIS CARNERO
+2026-09-16 15:13:02,949 INFO     [3] ALIK CRISTHIAN VILLENA
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] 
+2026-09-16 15:13:02,949 INFO status=success | articles=4 | 0.457s
+2026-09-16 15:13:02,949 INFO     [0] ¿ESTÁS DE ACUERDO CON LA LIBRE DISPOSICIÓN DE LA AFP A LOS 65 AÑOS?
+2026-09-16 15:13:02,949 INFO     [1] ERICK RAMÍREZ
+2026-09-16 15:13:02,950 INFO     [2] LUIS CARNERO
+2026-09-16 15:13:02,950 INFO     [3] ALIK CRISTHFAN VILLENA
+2026-09-16 15:13:02,950 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:02,950 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:02,950 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,950 INFO     [0] 
+2026-09-16 15:13:02,950 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,950 INFO     [0] 
+2026-09-16 15:13:02,950 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,950 INFO     [0] 
+2026-09-16 15:13:02,950 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,950 INFO     [0] 
+2026-09-16 15:13:02,950 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,950 INFO     [0] 
+2026-09-16 15:13:02,950 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,950 INFO     [0] 
+2026-09-16 15:13:02,950 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,950 INFO     [0] 
+2026-09-16 15:13:02,950 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,950 INFO     [0] 
+2026-09-16 15:13:02,950 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,950 INFO     [0] 
+2026-09-16 15:13:02,950 INFO status=success | articles=3 | 0.457s
+2026-09-16 15:13:02,950 INFO     [0] CRUCImetre
+2026-09-16 15:13:02,950 INFO     [1] Condicionado
+2026-09-16 15:13:02,950 INFO     [2] Los lectores responden
+2026-09-16 15:13:02,950 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,950 INFO     [0] 
+2026-09-16 15:13:02,950 INFO status=success | articles=4 | 0.457s
+2026-09-16 15:13:02,950 INFO     [0] ¿ESTÁS DE ACUERDO CON LA LIBRE DISPOSICIÓN DE LA AFP A LOS 65 AÑOS?
+2026-09-16 15:13:02,950 INFO     [1] ERICK RAMÍREZ
+2026-09-16 15:13:02,950 INFO     [2] LUIS CARNERO
+2026-09-16 15:13:02,950 INFO     [3] ALIK CRISTHIAN VILLENA
+2026-09-16 15:13:02,950 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,950 INFO     [0] 
+2026-09-16 15:13:02,950 INFO status=success | articles=1 | 0.457s
+2026-09-16 15:13:02,950 INFO     [0] 
+2026-09-16 15:13:02,950 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:02,950 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:03,035 INFO Saved 75 new rows to data/corpus_construction/llm_extraction/publimetro/results_none_qwen.parquet (total: 4770)
+2026-09-16 15:13:03,035 INFO [qwen] Batch 2816-2880 / 8640
+Rendering prompts:   0%|          | 0/56 [00:00<?, ?it/s]Rendering prompts:  96%|█████████▋| 54/56 [00:00<00:00, 537.32it/s]Rendering prompts: 100%|██████████| 56/56 [00:00<00:00, 534.72it/s]
+Processed prompts:   0%|          | 0/56 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/56 [00:00<00:17,  3.07it/s, est. speed input: 3775.92 toks/s, output: 107.61 toks/s]Processed prompts:   4%|▎         | 2/56 [00:00<00:10,  5.07it/s, est. speed input: 6483.07 toks/s, output: 212.56 toks/s]Processed prompts:  16%|█▌        | 9/56 [00:03<00:17,  2.72it/s, est. speed input: 3926.19 toks/s, output: 322.61 toks/s]Processed prompts:  27%|██▋       | 15/56 [00:03<00:07,  5.24it/s, est. speed input: 6042.22 toks/s, output: 1306.74 toks/s]Processed prompts:  32%|███▏      | 18/56 [00:03<00:06,  6.21it/s, est. speed input: 7068.72 toks/s, output: 1732.45 toks/s]Processed prompts:  36%|███▌      | 20/56 [00:04<00:07,  5.08it/s, est. speed input: 6766.36 toks/s, output: 1774.47 toks/s]Processed prompts:  39%|███▉      | 22/56 [00:04<00:05,  5.86it/s, est. speed input: 7194.06 toks/s, output: 2050.33 toks/s]Processed prompts:  43%|████▎     | 24/56 [00:04<00:05,  5.64it/s, est. speed input: 7088.34 toks/s, output: 2226.07 toks/s]Processed prompts:  46%|████▋     | 26/56 [00:05<00:05,  5.40it/s, est. speed input: 6969.33 toks/s, output: 2377.46 toks/s]Processed prompts:  50%|█████     | 28/56 [00:05<00:04,  5.77it/s, est. speed input: 7142.60 toks/s, output: 2588.94 toks/s]Processed prompts:  54%|█████▎    | 30/56 [00:06<00:06,  4.30it/s, est. speed input: 6817.21 toks/s, output: 2590.82 toks/s]Processed prompts:  55%|█████▌    | 31/56 [00:25<01:22,  3.31s/it, est. speed input: 1750.97 toks/s, output: 810.88 toks/s] Processed prompts: 100%|██████████| 56/56 [00:25<00:00,  3.31s/it, est. speed input: 3149.17 toks/s, output: 4881.13 toks/s]Processed prompts: 100%|██████████| 56/56 [00:25<00:00,  2.23it/s, est. speed input: 3149.17 toks/s, output: 4881.13 toks/s]
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] 
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] 
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] 
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] 
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] 
+2026-09-16 15:13:28,297 INFO status=success | articles=4 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] ¿ESTÁS DE ACUERDO CON LA LIBRE DISPOSICIÓN DE LA AFP A LOS 65 AÑOS?
+2026-09-16 15:13:28,297 INFO     [1] ERICK RAMÍREZ
+2026-09-16 15:13:28,297 INFO     [2] LUIS CARNERO
+2026-09-16 15:13:28,297 INFO     [3] ALIK CRISTHIAN VILLENA
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] 
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] 
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] 
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] 
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] 
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] 
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] 
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] 
+2026-09-16 15:13:28,297 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:28,297 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] 
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] 
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] 
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] 
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] 
+2026-09-16 15:13:28,297 INFO status=success | articles=4 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] Solo en parte. Creo que si se ha llegado a un monto que pueda asegurar una pensi
+2026-09-16 15:13:28,297 INFO     [1] Creo que deberíase revisar cómo es la cultura de ahorro. Viendo eso, determinar 
+2026-09-16 15:13:28,297 INFO     [2] Sí, así uno podrá tener acceso a ese dinero a los 65 años y usarlo para diversos
+2026-09-16 15:13:28,297 INFO     [3] Estoy de acuerdo con que se entregue mientras el fondo acumulado no te permita t
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] 
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,297 INFO     [0] 
+2026-09-16 15:13:28,297 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=2 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] ¿ESTÁS DE ACUERDO CON LA LIBRE DISPOSICIÓN DE LA AFP A LOS 65 AÑOS?
+2026-09-16 15:13:28,298 INFO     [1] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:28,298 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=4 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] ¿ESTÁS DE ACUERDO CON LA LIBRE DISPOSICION DELA AFP A LOS 65 AÑOS?
+2026-09-16 15:13:28,298 INFO     [1] ¿ESTÁS DE ACUERDO CON LA LIBRE DISPOSICION DELA AFP A LOS 65 AÑOS?
+2026-09-16 15:13:28,298 INFO     [2] ¿ESTÁS DE ACUERDO CON LA LIBRE DISPOSICION DELA AFP A LOS 65 AÑOS?
+2026-09-16 15:13:28,298 INFO     [3] ¿ESTÁS DE ACUERDO CON LA LIBRE DISPOSICION DELA AFP A LOS 65 AÑOS?
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=4 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] ¿ESTÁS DE ACUERDO CON LA LIBRE DISPOSICIÓN DE LA AFP A LOS 65 AÑOS?
+2026-09-16 15:13:28,298 INFO     [1] ERICKRAMÍREZ
+2026-09-16 15:13:28,298 INFO     [2] LUIS CARNERO
+2026-09-16 15:13:28,298 INFO     [3] ALBKCRISTHIANVILLENA
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:28,298 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=success | articles=1 | 0.451s
+2026-09-16 15:13:28,298 INFO     [0] 
+2026-09-16 15:13:28,298 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:28,298 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:28,427 INFO Saved 77 new rows to data/corpus_construction/llm_extraction/publimetro/results_none_qwen.parquet (total: 4847)
+2026-09-16 15:13:28,428 INFO [qwen] Batch 2880-2944 / 8640
+Rendering prompts:   0%|          | 0/46 [00:00<?, ?it/s]Rendering prompts: 100%|██████████| 46/46 [00:00<00:00, 539.58it/s]
+Processed prompts:   0%|          | 0/46 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/46 [00:00<00:06,  6.63it/s, est. speed input: 8565.55 toks/s, output: 198.88 toks/s]Processed prompts:  13%|█▎        | 6/46 [00:00<00:01, 24.50it/s, est. speed input: 27260.81 toks/s, output: 791.72 toks/s]Processed prompts:  20%|█▉        | 9/46 [00:02<00:14,  2.54it/s, est. speed input: 4060.54 toks/s, output: 404.17 toks/s] Processed prompts:  26%|██▌       | 12/46 [00:03<00:09,  3.77it/s, est. speed input: 4993.00 toks/s, output: 912.64 toks/s]Processed prompts:  35%|███▍      | 16/46 [00:03<00:05,  5.07it/s, est. speed input: 5745.07 toks/s, output: 1467.52 toks/s]Processed prompts:  43%|████▎     | 20/46 [00:04<00:05,  4.59it/s, est. speed input: 5491.11 toks/s, output: 1753.77 toks/s]Processed prompts:  48%|████▊     | 22/46 [00:04<00:04,  4.95it/s, est. speed input: 5652.41 toks/s, output: 2007.73 toks/s]Processed prompts:  57%|█████▋    | 26/46 [00:05<00:03,  6.39it/s, est. speed input: 6208.81 toks/s, output: 2584.40 toks/s]Processed prompts:  59%|█████▊    | 27/46 [00:23<00:02,  6.39it/s, est. speed input: 5273.76 toks/s, output: 2302.32 toks/s]Processed prompts:  61%|██████    | 28/46 [00:24<00:38,  2.14s/it, est. speed input: 1400.69 toks/s, output: 760.22 toks/s] Processed prompts: 100%|██████████| 46/46 [00:24<00:00,  2.14s/it, est. speed input: 2270.48 toks/s, output: 3809.60 toks/s]Processed prompts: 100%|██████████| 46/46 [00:24<00:00,  1.90it/s, est. speed input: 2270.48 toks/s, output: 3809.60 toks/s]
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:52,684 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:52,684 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:52,684 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:52,684 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,684 INFO     [0] 
+2026-09-16 15:13:52,684 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:52,685 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:52,685 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:52,685 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:52,685 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=success | articles=1 | 0.527s
+2026-09-16 15:13:52,685 INFO     [0] 
+2026-09-16 15:13:52,685 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:52,685 INFO status=failed | articles=0 | 0.000s
+2026-09-16 15:13:52,783 INFO Saved 64 new rows to data/corpus_construction/llm_extraction/publimetro/results_none_qwen.parquet (total: 4911)
+2026-09-16 15:13:52,783 INFO [qwen] Batch 2944-3008 / 8640
+Rendering prompts:   0%|          | 0/56 [00:00<?, ?it/s]Rendering prompts:  98%|█████████▊| 55/56 [00:00<00:00, 547.52it/s]Rendering prompts: 100%|██████████| 56/56 [00:00<00:00, 541.99it/s]
+Processed prompts:   0%|          | 0/56 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/56 [00:00<00:15,  3.44it/s, est. speed input: 4359.14 toks/s, output: 134.28 toks/s]Processed prompts:   7%|▋         | 4/56 [00:00<00:04, 10.97it/s, est. speed input: 12793.61 toks/s, output: 421.89 toks/s]Processed prompts:  11%|█         | 6/56 [00:01<00:13,  3.79it/s, est. speed input: 5734.64 toks/s, output: 429.85 toks/s] Processed prompts:  14%|█▍        | 8/56 [00:01<00:11,  4.20it/s, est. speed input: 6055.67 toks/s, output: 641.28 toks/s]Processed prompts:  16%|█▌        | 9/56 [00:02<00:13,  3.44it/s, est. speed input: 5509.10 toks/s, output: 677.81 toks/s]Processed prompts:  20%|█▉        | 11/56 [00:02<00:10,  4.13it/s, est. speed input: 6102.02 toks/s, output: 920.07 toks/s]Processed prompts:  25%|██▌       | 14/56 [00:03<00:09,  4.52it/s, est. speed input: 6419.95 toks/s, output: 1211.17 toks/s]Processed prompts:  36%|███▌      | 20/56 [00:03<00:04,  8.84it/s, est. speed input: 8300.74 toks/s, output: 2140.63 toks/s]Processed prompts:  39%|███▉      | 22/56 [00:03<00:03,  9.44it/s, est. speed input: 8906.52 toks/s, output: 2388.39 toks/s]Processed prompts:  45%|████▍     | 25/56 [00:03<00:03,  9.73it/s, est. speed input: 9324.43 toks/s, output: 2710.36 toks/s]Processed prompts:  48%|████▊     | 27/56 [00:04<00:03,  8.99it/s, est. speed input: 9402.86 toks/s, output: 2861.36 toks/s]Processed prompts:  52%|█████▏    | 29/56 [00:04<00:03,  6.92it/s, est. speed input: 9007.86 toks/s, output: 2894.51 toks/s]Processed prompts:  54%|█████▎    | 30/56 [00:04<00:04,  6.09it/s, est. speed input: 8837.11 toks/s, output: 2905.33 toks/s]Processed prompts:  55%|█████▌    | 31/56 [00:05<00:08,  3.09it/s, est. speed input: 7541.90 toks/s, output: 2558.53 toks/s]Processed prompts:  57%|█████▋    | 32/56 [00:07<00:12,  1.90it/s, est. speed input: 6394.27 toks/s, output: 2264.41 toks/s]

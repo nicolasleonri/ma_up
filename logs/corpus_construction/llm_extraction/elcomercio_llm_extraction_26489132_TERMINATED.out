@@ -1,0 +1,16 @@
+===== NEWSPAPER: elcomercio =====
+===== LLM: qwen =====
+2026-09-16 15:38:55,900 INFO OCR rows available: 8640
+2026-09-16 15:38:55,900 INFO Already completed extractions: 7348
+2026-09-16 15:38:55,903 INFO [qwen] 1292 OCR texts pending.
+2026-09-16 15:38:55,903 INFO Loading local LLM extractor: qwen
+2026-09-16 15:38:55,929 INFO [qwen] Dynamic batch size: 64
+2026-09-16 15:38:55,930 INFO [qwen] Batch 0-64 / 1292
+INFO 09-16 15:41:08 [api_utils.py:272] non-default args: {'trust_remote_code': True, 'gpu_memory_utilization': 0.9, 'disable_log_stats': True, 'model': 'RedHatAI/Qwen2.5-7B-Instruct-FP8-dynamic'}
+INFO 09-16 15:41:09 [model.py:672] Resolved architecture: Qwen2ForCausalLM
+INFO 09-16 15:41:09 [model.py:1965] Using max model len 32768
+INFO 09-16 15:41:19 [scheduler.py:242] Chunked prefill is enabled with max_num_batched_tokens=16384.
+INFO 09-16 15:41:19 [kernel.py:308] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+[2026-09-16T15:44:12.024] error: *** JOB 26489132 ON g016 CANCELLED AT 2026-09-16T15:44:12 DUE TO PREEMPTION ***
+[2026-09-16T15:47:14.002] error: *** JOB 26489132 STEPD TERMINATED ON g016 AT 2026-09-16T15:47:12 DUE TO JOB NOT ENDING WITH SIGNALS ***
+[2026-09-16T15:47:23.295] error: Container 39094 in cgroup plugin has 1 processes, giving up after 191 sec

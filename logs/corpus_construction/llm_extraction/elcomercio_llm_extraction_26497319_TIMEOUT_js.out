@@ -1,0 +1,49 @@
+
+================================================================================
+                              Slurm Job Statistics                              
+================================================================================
+         Job ID: 26497319
+   User/Account: nicolasal97/agfritz
+       Job Name: elcomercio_llm_extraction
+          State: TIMEOUT
+          Nodes: 1
+      CPU Cores: 5
+     CPU Memory: 15GB (3GB per CPU-core)
+           GPUs: 1
+  QOS/Partition: prio/scavenger
+        Cluster: curta
+     Start Time: Thu Sep 17, 2026 at 6:12 PM
+       Run Time: 1-00:00:03
+     Time Limit: 1-00:00:00
+
+                              Overall Utilization                               
+================================================================================
+  CPU utilization  [|||                                             7%]
+  CPU memory usage [|||||||||||||||||||||||||||||||||||||||||||    86%]
+  GPU utilization  [|||||||||||||||||||||||||||||||||||||||||||||  91%]
+  GPU memory usage [|||||||||||||||||||||||||||||||||||||||||||||| 93%]
+
+                              Detailed Utilization                              
+================================================================================
+  CPU utilization per node (CPU time used/run time)
+      g016.curta.zedat.fu-berlin.de: 08:40:51/5-00:00:15 (efficiency=7.2%)
+
+  CPU memory usage per node - used/allocated
+      g016.curta.zedat.fu-berlin.de: 13.0GB/15GB (2.6GB/3GB per core of 5)
+
+  GPU utilization per node
+      g016.curta.zedat.fu-berlin.de (GPU 2): 90.8%
+
+  GPU memory usage per node - maximum used/total
+      g016.curta.zedat.fu-berlin.de (GPU 2): 73.9GB/79.6GB (92.8%)
+
+                                     Notes                                      
+================================================================================
+  * This job failed because it exceeded the time limit. If there are no other
+    problems then the solution is to increase the value of the --time Slurm
+    directive and resubmit the job. For more info:
+      https://www.fu-berlin.de/en/sites/high-performance-computing/Dokumentation/Ressourcen-Manager/Zeitlimit
+
+  * Have a nice day!
+
+

@@ -1,0 +1,9 @@
+===== NEWSPAPER: ojo =====
+===== LLM: llama =====
+2026-09-20 13:37:23,382 INFO OCR rows available: 82416
+2026-09-20 13:37:23,382 INFO Already completed extractions: 41561
+2026-09-20 13:37:23,406 INFO [llama] 40855 OCR texts pending.
+2026-09-20 13:37:23,406 INFO Loading local LLM extractor: llama
+2026-09-20 13:37:23,448 INFO [llama] Dynamic batch size: 64
+2026-09-20 13:37:23,448 INFO [llama] Batch 0-64 / 40855
+INFO 09-20 13:38:05 [api_utils.py:272] non-default args: {'trust_remote_code': True, 'gpu_memory_utilization': 0.9, 'disable_log_stats': True, 'model': 'RedHatAI/Meta-Llama-3.1-8B-Instruct-FP8-dynamic'}

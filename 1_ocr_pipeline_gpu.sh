@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=correo_llm_extraction
-#SBATCH --output=logs/slurm/correo_llm_extraction_%j.out
+#SBATCH --job-name=ojo_llm_extraction
+#SBATCH --output=logs/slurm/ojo_llm_extraction_%j.out
 #SBATCH --partition=scavenger
 #SBATCH --account=agfritz
 #SBATCH --qos=prio
@@ -8,8 +8,8 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=5
 #SBATCH --gres=gpu:h100:1
-#SBATCH --mem-per-cpu=3GB
-#SBATCH --time=24:00:00
+#SBATCH --mem-per-cpu=2GB
+#SBATCH --time=12:00:00
 
 # set -euo pipefail
 
@@ -27,22 +27,10 @@ export HF_HOME=/scratch/nicolasal97/.cache/huggingface
 source venv/corpus_construction/llm_extraction/bin/activate
 
 # for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
-for newspaper in correo; do
+for newspaper in ojo; do
     echo "===== NEWSPAPER: ${newspaper} ====="
-    for llm in qwen mistral llama deepseek; do
-        echo "===== LLM: ${llm} ====="
-        python3 -m src.workflows.llm_extraction \
-            --ocr-parquet data/corpus_construction/ocr_extraction/${newspaper}/none/ocr.parquet \
-            --output-parquet data/corpus_construction/llm_extraction/${newspaper}/results_none_${llm}.parquet \
-            --llms ${llm}
-        echo ""
-    done
-done
-
-# for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
-for newspaper in correo; do
-    echo "===== NEWSPAPER: ${newspaper} ====="
-    for llm in qwen mistral llama deepseek; do
+    for llm in llama deepseek; do
+    # for llm in qwen mistral llama deepseek; do
         echo "===== LLM: ${llm} ====="
         python3 -m src.workflows.llm_extraction \
             --ocr-parquet data/corpus_construction/ocr_extraction/${newspaper}/cropped/ocr.parquet \
@@ -51,7 +39,24 @@ for newspaper in correo; do
         echo ""
     done
 done
+
+# # for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
+# for newspaper in elcomercio; do
+#     echo "===== NEWSPAPER: ${newspaper} ====="
+#     for llm in qwen mistral llama deepseek; do
+#         echo "===== LLM: ${llm} ====="
+#         python3 -m src.workflows.llm_extraction \
+#             --ocr-parquet data/corpus_construction/ocr_extraction/${newspaper}/none/ocr.parquet \
+#             --output-parquet data/corpus_construction/llm_extraction/${newspaper}/results_none_${llm}.parquet \
+#             --llms ${llm}
+#         echo ""
+#     done
+# done
+
 ############# Specs (1 image): 1x5GB; 1xh100 and 10min
+# TIME per model per newspaper (min): 40min*4*2=320min (5,33h)
+# TIME per model per newspaper (max): 80min*4*2=640min (10,66h)
+# -type f \( -iname "*.parquet" -o -iname "*.txt" -o -iname "*.csv" \) -exec du -h {} + | sort -hr
 
 # ################# DONE ###################
 ####### VLM #######

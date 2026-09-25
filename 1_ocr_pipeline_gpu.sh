@@ -1,44 +1,44 @@
 #!/bin/bash
-#SBATCH --job-name=ojo_llm_extraction
-#SBATCH --output=logs/slurm/ojo_llm_extraction_%j.out
+#SBATCH --job-name=correo_layout_detection
+#SBATCH --output=logs/slurm/correo_layout_detection_%j.out
 #SBATCH --partition=scavenger
 #SBATCH --account=agfritz
 #SBATCH --qos=prio
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=5
-#SBATCH --gres=gpu:h100:1
+#SBATCH --cpus-per-task=2
+#SBATCH --gres=gpu:a5000:1
 #SBATCH --mem-per-cpu=2GB
-#SBATCH --time=12:00:00
+#SBATCH --time=07:00:00
 
 # set -euo pipefail
 
 mkdir -p logs/slurm
 
 ####### 5. LLM Extractor #######
-module purge
-module add GCC/12.3.0
-module add virtualenv/20.23.1-GCCcore-12.3.0
-module add Python/3.11.3-GCCcore-12.3.0
-module load CUDA/12.1.1
-module load cuDNN/8.9.2.26-CUDA-12.1.1
-export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
-export HF_HOME=/scratch/nicolasal97/.cache/huggingface
-source venv/corpus_construction/llm_extraction/bin/activate
+# module purge
+# module add GCC/12.3.0
+# module add virtualenv/20.23.1-GCCcore-12.3.0
+# module add Python/3.11.3-GCCcore-12.3.0
+# module load CUDA/12.1.1
+# module load cuDNN/8.9.2.26-CUDA-12.1.1
+# export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+# export HF_HOME=/scratch/nicolasal97/.cache/huggingface
+# source venv/corpus_construction/llm_extraction/bin/activate
 
 # for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
-for newspaper in ojo; do
-    echo "===== NEWSPAPER: ${newspaper} ====="
-    for llm in llama deepseek; do
-    # for llm in qwen mistral llama deepseek; do
-        echo "===== LLM: ${llm} ====="
-        python3 -m src.workflows.llm_extraction \
-            --ocr-parquet data/corpus_construction/ocr_extraction/${newspaper}/cropped/ocr.parquet \
-            --output-parquet data/corpus_construction/llm_extraction/${newspaper}/results_cropped_${llm}.parquet \
-            --llms ${llm}
-        echo ""
-    done
-done
+# for newspaper in ojo; do
+#     echo "===== NEWSPAPER: ${newspaper} ====="
+#     for llm in llama deepseek; do
+#     # for llm in qwen mistral llama deepseek; do
+#         echo "===== LLM: ${llm} ====="
+#         python3 -m src.workflows.llm_extraction \
+#             --ocr-parquet data/corpus_construction/ocr_extraction/${newspaper}/cropped/ocr.parquet \
+#             --output-parquet data/corpus_construction/llm_extraction/${newspaper}/results_cropped_${llm}.parquet \
+#             --llms ${llm}
+#         echo ""
+#     done
+# done
 
 # # for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
 # for newspaper in elcomercio; do
@@ -89,12 +89,12 @@ done
 # ############# Specs (1 image): ?
 
 ####### 2. Layout #######
-# module purge
-# module add virtualenv/20.32.0-GCCcore-14.3.0
-# module add Python/3.13.5-GCCcore-14.3.0
-# export HF_HOME=/scratch/nicolasal97/.cache/huggingface
-# source venv/corpus_construction/layout_detection/bin/activate
-# python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/correo --output-dir data/corpus_construction/layout_detection/correo
+module purge
+module add virtualenv/20.32.0-GCCcore-14.3.0
+module add Python/3.13.5-GCCcore-14.3.0
+export HF_HOME=/scratch/nicolasal97/.cache/huggingface
+source venv/corpus_construction/layout_detection/bin/activate
+python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/correo --output-dir data/corpus_construction/layout_detection/correo
 # python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/elcomercio --output-dir data/corpus_construction/layout_detection/elcomercio
 # python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/gestion --output-dir data/corpus_construction/layout_detection/gestion
 # python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/ojo --output-dir data/corpus_construction/layout_detection/ojo

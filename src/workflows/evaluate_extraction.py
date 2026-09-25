@@ -1,47 +1,54 @@
 """
 evaluate_extraction.py
 
-Evaluate OCR/VLM extraction results against a gold-standard CSV.
+Evaluate OCR/LLM extraction results against a gold-standard CSV.
 
-Gold CSV:
+Detection and text quality are measured separately:
 
-    image_stem,title,body
+    Detection metrics
+        - TP / FP / FN
+        - precision / recall / F1
 
-For each available:
+    Text quality metrics
+        - CER / WER for alignable matched article pairs only
+        - arithmetic mean across matched pairs
 
-    (config_id, detector, binarize_file, vlm)
+Matching:
+    score = 0.30 * fuzzy_title + 0.70 * fuzzy_body
+    Hungarian one-to-one assignment
+    score >= 70          -> TP
+    20 <= score < 70     -> FP (alignable, so CER/WER are still measured)
+    score < 20           -> not alignable
+    unmatched prediction -> FP
+    FN count = gold_articles - TP
 
-combination and each gold image:
+Timing:
+    One successful pipeline combination corresponds to one pipeline execution.
+    A single LLM response may contain multiple articles, but its LLM time is
+    counted once. Article-level rows repeat the combo execution time only for
+    traceability; time must be aggregated from page metrics, not article rows.
 
-1. Restrict predictions to the same image_stem.
-2. Consider only rows with status == "success".
-3. Normalize title/body text.
-4. Compute pairwise article similarity:
-       0.3 * title token F1 + 0.7 * body token F1
-5. Find the globally optimal one-to-one assignment using
-   the Hungarian algorithm.
-6. Accept assignments only when similarity >= MIN_MATCH_SCORE.
-7. Compute field-level fuzzy similarity and conditional CER/WER.
-8. Emit one row for every matched gold article, unmatched gold
-   article (FN), and unmatched prediction (FP).
+Outputs:
+    <output stem>_results.csv      article-level TP/FP/FN rows
+    <output stem>_page_metrics.csv page/config-level detection + quality + timing
 
-Page-level detection metrics are also calculated internally.
-
-Important:
-    total_pipeline_seconds is the runtime associated with the
-    image/configuration/pipeline. It is repeated on article rows
-    belonging to the same pipeline execution and therefore should
-    NOT be summed across article rows.
+Example:
+    --output-csv results/correo_results.csv
+    -> results/correo_results.csv
+    -> results/correo_page_metrics.csv
 """
 
 import argparse
 import csv
+import json
+import math
+import random
 import re
 import unicodedata
-from collections import Counter
 from pathlib import Path
-from typing import List, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
+from tqdm import tqdm
 import numpy as np
 import pandas as pd
 from rapidfuzz.fuzz import ratio
@@ -53,104 +60,373 @@ from scipy.optimize import linear_sum_assignment
 # =========================================================
 
 COMBO_COLS = [
+    "image_stem",
     "config_id",
+    "layout_mode",
     "detector",
-    "binarize_file",
-    "vlm",
+    "binarization",
+    "ocr_extractor",
+    "llm_extractor",
 ]
 
-TITLE_FUZZY_THRESHOLD = 75
-BODY_FUZZY_THRESHOLD = 75
-MIN_MATCH_SCORE = 0.20
+MATCH_THRESHOLD = 70.0
+MIN_MATCH_SCORE = 20.0
 
-TITLE_MATCH_WEIGHT = 0.30
-BODY_MATCH_WEIGHT = 0.70
+TITLE_WEIGHT = 0.30
+BODY_WEIGHT = 0.70
+AUDIT_EVERY = 50
 
 DETECTOR_NONE = "__none__"
 
+ARTICLE_FIELDS = [
+    "image_stem",
+    "config_id",
+    "layout_mode",
+    "detector",
+    "binarization",
+    "ocr_extractor",
+    "llm_extractor",
+    "result_type",
+    "pred_title",
+    "pred_body",
+    "gold_title",
+    "gold_body",
+    "matching_score",
+    "title_fuzzy_score",
+    "body_fuzzy_score",
+    "title_cer",
+    "title_wer",
+    "body_cer",
+    "body_wer",
+    "body_len_delta_chars",
+    "total_pipeline_seconds",
+]
+
+PAGE_FIELDS = [
+    "image_stem",
+    "config_id",
+    "layout_mode",
+    "detector",
+    "binarization",
+    "ocr_extractor",
+    "llm_extractor",
+    "gold_articles",
+    "predicted_articles",
+    "tp",
+    "fp",
+    "fn",
+    "detection_precision",
+    "detection_recall",
+    "detection_f1",
+    "matched_pairs_for_error_mean",
+    "matched_title_cer_mean",
+    "matched_title_wer_mean",
+    "matched_body_cer_mean",
+    "matched_body_wer_mean",
+    "total_pipeline_seconds",
+    "parse_failure_rows",
+]
+
 
 # =========================================================
-# Fuzzy matching
+# Generic helpers
 # =========================================================
 
-def fuzzy_score(hyp: str, ref: str) -> float:
+def is_missing(value: Any) -> bool:
+    """Safely test whether a scalar pandas value is missing."""
+    if value is None:
+        return True
+    if isinstance(value, (list, tuple, dict, set, np.ndarray)):
+        return False
+    try:
+        result = pd.isna(value)
+        return bool(result)
+    except (TypeError, ValueError):
+        return False
+
+
+def safe_text(value: Any) -> str:
     """
-    RapidFuzz similarity in the range [0, 100].
+    Convert a pandas value to a safe string.
+
+    NaN / None become "".
     """
-
-    if not hyp and not ref:
-        return 100.0
-
-    if not hyp or not ref:
-        return 0.0
-
-    return float(ratio(hyp, ref))
+    if is_missing(value):
+        return ""
+    return str(value)
 
 
-def conditional_error_metric(
-    hyp: str,
-    ref: str,
-    matched: bool,
-    metric_fn,
-):
+def normalize_text(text: Any) -> str:
     """
-    Compute an error metric only when the corresponding field
-    passes its fuzzy-match threshold.
+    Normalize text for fuzzy matching.
+
+    - Unicode NFKD normalization
+    - remove combining accents
+    - lowercase
+    - punctuation -> spaces
+    - collapse whitespace
     """
+    text = safe_text(text)
 
-    if not matched:
-        return None
-
-    return metric_fn(hyp, ref)
-
-
-# =========================================================
-# Normalization
-# =========================================================
-
-def normalize_text(text) -> str:
-    """
-    Normalize text for evaluation.
-
-    Operations:
-        - null -> ""
-        - Unicode NFKD normalization
-        - remove combining marks
-        - lowercase
-        - remove punctuation
-        - collapse whitespace
-    """
-
-    if text is None or pd.isna(text):
+    if not text:
         return ""
 
-    text = str(text)
-
     text = unicodedata.normalize("NFKD", text)
-
     text = "".join(
         c for c in text
         if not unicodedata.combining(c)
     )
 
     text = text.lower()
-
     text = re.sub(r"[^\w\s]", " ", text)
-
     text = re.sub(r"\s+", " ", text).strip()
 
     return text
 
 
+def csv_value(value: Any) -> Any:
+    """Convert NaN-like values to None for clean CSV output."""
+    if value is None:
+        return None
+    if isinstance(value, float) and math.isnan(value):
+        return None
+    try:
+        if pd.isna(value):
+            return None
+    except (TypeError, ValueError):
+        pass
+    return value
+
+
+def preview(text: Any, max_chars: int = 700) -> str:
+    """Compact one-line preview for console audit output."""
+    text = safe_text(text).replace("\n", " ").replace("\r", " ")
+    text = re.sub(r"\s+", " ", text).strip()
+    if len(text) <= max_chars:
+        return text
+    return text[:max_chars] + " ..."
+
+
+def combo_meta(
+    image_stem: Any,
+    config_id: Any,
+    layout_mode: Any,
+    detector: Any,
+    binarization: Any,
+    ocr_extractor: Any,
+    llm_extractor: Any,
+) -> Dict[str, Any]:
+    """Build user-facing combo metadata."""
+    return {
+        "image_stem": image_stem,
+        "config_id": config_id,
+        "layout_mode": layout_mode,
+        "detector": (
+            None
+            if safe_text(detector) == DETECTOR_NONE
+            else detector
+        ),
+        "binarization": binarization,
+        "ocr_extractor": ocr_extractor,
+        "llm_extractor": llm_extractor,
+    }
+
+
 # =========================================================
-# Levenshtein
+# JSON article parsing
 # =========================================================
 
-def _levenshtein(a: List, b: List) -> int:
-    """
-    Compute Levenshtein edit distance between two sequences.
-    """
+def strip_markdown_fence(text: str) -> str:
+    """Remove a surrounding Markdown code fence, if present."""
+    text = text.strip()
+    text = re.sub(
+        r"^\s*```(?:json|javascript)?\s*",
+        "",
+        text,
+        flags=re.IGNORECASE,
+    )
+    text = re.sub(r"\s*```\s*$", "", text)
+    return text.strip()
 
+
+def repair_json_control_chars(text: str) -> str:
+    """
+    Escape literal control characters that occur inside JSON strings.
+
+    LLM output occasionally contains literal newlines/tabs/etc. inside quoted
+    JSON string values. json.loads() rejects those even though the intended
+    value is clear.
+    """
+    out: List[str] = []
+    in_string = False
+    escaped = False
+
+    for ch in text:
+        code = ord(ch)
+
+        if in_string:
+            if escaped:
+                out.append(ch)
+                escaped = False
+                continue
+
+            if ch == "\\":
+                out.append(ch)
+                escaped = True
+                continue
+
+            if ch == '"':
+                out.append(ch)
+                in_string = False
+                continue
+
+            if code < 32:
+                if ch == "\n":
+                    out.append("\\n")
+                elif ch == "\r":
+                    out.append("\\r")
+                elif ch == "\t":
+                    out.append("\\t")
+                else:
+                    out.append(f"\\u{code:04x}")
+                continue
+
+            out.append(ch)
+            continue
+
+        if ch == '"':
+            in_string = True
+
+        out.append(ch)
+
+    return "".join(out)
+
+
+def try_json_loads(text: str) -> Optional[Any]:
+    """Try direct JSON parsing, repaired JSON parsing, then JSON substring parsing."""
+    candidates = [text, repair_json_control_chars(text)]
+
+    for candidate in candidates:
+        try:
+            data = json.loads(candidate)
+            if isinstance(data, str):
+                try:
+                    data = json.loads(data)
+                except json.JSONDecodeError:
+                    pass
+            return data
+        except json.JSONDecodeError:
+            pass
+
+    # LLMs sometimes add a short prose prefix/suffix around valid JSON.
+    repaired = repair_json_control_chars(text)
+    decoder = json.JSONDecoder()
+
+    first_positions = [
+        pos for pos in (
+            repaired.find("["),
+            repaired.find("{"),
+        )
+        if pos >= 0
+    ]
+
+    for start in sorted(first_positions):
+        try:
+            data, _ = decoder.raw_decode(repaired[start:])
+            return data
+        except json.JSONDecodeError:
+            continue
+
+    return None
+
+
+def parse_articles(value: Any) -> List[Dict[str, str]]:
+    """
+    Parse an LLM response into a list of {title, body} dictionaries.
+
+    Supported top-level forms:
+        [ {"title": ..., "body": ...}, ... ]
+        {"title": ..., "body": ...}
+        {"articles": [ ... ]}
+
+    Invalid/missing values return an empty list.
+    """
+    if value is None:
+        return []
+
+    if isinstance(value, list):
+        data = value
+    elif isinstance(value, dict):
+        data = value
+    elif is_missing(value):
+        return []
+    else:
+        raw = safe_text(value).strip()
+        if not raw:
+            return []
+
+        raw = strip_markdown_fence(raw)
+        data = try_json_loads(raw)
+
+        if data is None:
+            return []
+
+    if isinstance(data, dict) and "articles" in data:
+        data = data["articles"]
+
+    if isinstance(data, dict):
+        data = [data]
+
+    if not isinstance(data, list):
+        return []
+
+    articles: List[Dict[str, str]] = []
+
+    for item in data:
+        if not isinstance(item, dict):
+            continue
+
+        title = item.get("title", "")
+        body = item.get(
+            "body",
+            item.get(
+                "text",
+                item.get("content", ""),
+            ),
+        )
+
+        articles.append({
+            "title": safe_text(title),
+            "body": safe_text(body),
+        })
+
+    return articles
+
+
+def parse_was_failure(value: Any, parsed_articles: List[Dict[str, str]]) -> bool:
+    """Return True when a non-empty response failed to yield any article."""
+    if parsed_articles:
+        return False
+
+    if value is None or is_missing(value):
+        return False
+
+    raw = safe_text(value).strip()
+    if not raw:
+        return False
+
+    stripped = strip_markdown_fence(raw)
+    if stripped in {"[]", "{}", 'null', '""'}:
+        return False
+
+    return True
+
+
+# =========================================================
+# Metrics
+# =========================================================
+
+def _levenshtein(a: List[Any], b: List[Any]) -> int:
     if a == b:
         return 0
 
@@ -163,11 +439,9 @@ def _levenshtein(a: List, b: List) -> int:
     prev = list(range(len(b) + 1))
 
     for i, ca in enumerate(a, start=1):
-
         curr = [i] + [0] * len(b)
 
         for j, cb in enumerate(b, start=1):
-
             cost = 0 if ca == cb else 1
 
             curr[j] = min(
@@ -182,11 +456,9 @@ def _levenshtein(a: List, b: List) -> int:
 
 
 def cer(hyp: str, ref: str) -> float:
-    """
-    Character Error Rate.
-
-    Both strings are expected to already be normalized.
-    """
+    """Character Error Rate."""
+    hyp = safe_text(hyp)
+    ref = safe_text(ref)
 
     if not ref:
         return 0.0 if not hyp else 1.0
@@ -198,11 +470,9 @@ def cer(hyp: str, ref: str) -> float:
 
 
 def wer(hyp: str, ref: str) -> float:
-    """
-    Word Error Rate.
-
-    Both strings are expected to already be normalized.
-    """
+    """Word Error Rate."""
+    hyp = safe_text(hyp)
+    ref = safe_text(ref)
 
     ref_words = ref.split()
     hyp_words = hyp.split()
@@ -216,101 +486,465 @@ def wer(hyp: str, ref: str) -> float:
     ) / len(ref_words)
 
 
-# =========================================================
-# Token F1
-# =========================================================
-
-def token_f1(
-    hyp: str,
-    ref: str,
-) -> Tuple[float, float, float]:
-    """
-    Multiset token precision, recall and F1.
-    """
-
-    hyp_tokens = hyp.split()
-    ref_tokens = ref.split()
-
-    if not hyp_tokens and not ref_tokens:
-        return 1.0, 1.0, 1.0
-
-    if not hyp_tokens or not ref_tokens:
-        return 0.0, 0.0, 0.0
-
-    common = Counter(hyp_tokens) & Counter(ref_tokens)
-
-    overlap = sum(common.values())
-
-    if overlap == 0:
-        return 0.0, 0.0, 0.0
-
-    precision = overlap / len(hyp_tokens)
-    recall = overlap / len(ref_tokens)
-
-    f1 = (
-        2 * precision * recall
-        / (precision + recall)
-    )
-
-    return precision, recall, f1
-
-
-def article_similarity(
+def similarity_score(
     pred_title: str,
     pred_body: str,
     gold_title: str,
     gold_body: str,
 ) -> Tuple[float, float, float]:
     """
-    Calculate article identity similarity.
+    Weighted rapidfuzz similarity (0-100).
 
     Returns:
-        article_score
-        title_f1
-        body_f1
+        combined_score,
+        title_score,
+        body_score
     """
+    pred_title_n = normalize_text(pred_title)
+    pred_body_n = normalize_text(pred_body)
+    gold_title_n = normalize_text(gold_title)
+    gold_body_n = normalize_text(gold_body)
 
-    _, _, title_f1 = token_f1(
-        pred_title,
-        gold_title,
+    title_score = float(
+        ratio(pred_title_n, gold_title_n)
     )
 
-    _, _, body_f1 = token_f1(
-        pred_body,
-        gold_body,
+    body_score = float(
+        ratio(pred_body_n, gold_body_n)
     )
 
-    score = (
-        TITLE_MATCH_WEIGHT * title_f1
-        + BODY_MATCH_WEIGHT * body_f1
+    combined = (
+        TITLE_WEIGHT * title_score
+        + BODY_WEIGHT * body_score
     )
 
-    return score, title_f1, body_f1
+    return combined, title_score, body_score
 
 
 # =========================================================
-# Input validation
+# Timing
 # =========================================================
 
-def validate_columns(
-    df: pd.DataFrame,
-    required: List[str],
-    name: str,
-):
-    """
-    Fail early when expected columns are missing.
-    """
+def _numeric_series(df: pd.DataFrame, column: str) -> pd.Series:
+    """Numeric timing column with invalid values converted to NaN."""
+    return pd.to_numeric(
+        df[column],
+        errors="coerce",
+    ).astype(float)
 
-    missing = [
-        column
-        for column in required
-        if column not in df.columns
-    ]
 
-    if missing:
-        raise ValueError(
-            f"{name} is missing required columns: {missing}"
+def build_timing(
+    results_df: pd.DataFrame,
+    enhance_df: pd.DataFrame,
+    binarize_df: pd.DataFrame,
+    ocr_df: pd.DataFrame,
+    layout_df: Optional[pd.DataFrame] = None,
+) -> pd.DataFrame:
+    """
+    Join per-stage timing onto results_df.
+
+    Stage join keys:
+
+        enhance:
+            image_stem + config_id
+
+        layout:
+            image_stem + config_id + detector
+
+        binarize:
+            image_stem + config_id + detector + binarization
+
+        ocr:
+            image_stem + config_id + layout_mode + detector
+            + binarization + ocr_extractor
+
+        llm:
+            COMBO_COLS; max elapsed_s is used so one LLM execution is
+            counted once even when duplicate result rows exist.
+    """
+    df = results_df.copy()
+
+    if "detector" not in df.columns:
+        df["detector"] = DETECTOR_NONE
+
+    df["detector"] = df["detector"].fillna(DETECTOR_NONE)
+    df["elapsed_s"] = _numeric_series(df, "elapsed_s")
+
+    # -----------------------------------------------------
+    # Enhancement
+    # -----------------------------------------------------
+    enh = enhance_df.copy()
+    enh["image_stem"] = enh["image_path"].apply(
+        lambda p: Path(p).stem
+    )
+    enh["processing_time_seconds"] = _numeric_series(
+        enh,
+        "processing_time_seconds",
+    )
+
+    enh_agg = (
+        enh.groupby(
+            ["image_stem", "config_id"],
+            dropna=False,
+        )["processing_time_seconds"]
+        .sum(min_count=1)
+        .reset_index()
+        .rename(
+            columns={
+                "processing_time_seconds": "_t_enhance",
+            }
         )
+    )
+
+    df = df.merge(
+        enh_agg,
+        on=["image_stem", "config_id"],
+        how="left",
+    )
+
+    # -----------------------------------------------------
+    # Layout
+    # -----------------------------------------------------
+    if layout_df is not None:
+        lay = layout_df.copy()
+        lay["_det"] = lay["detector"].fillna(DETECTOR_NONE)
+        lay["elapsed_s"] = _numeric_series(lay, "elapsed_s")
+
+        lay_agg = (
+            lay.groupby(
+                [
+                    "image_stem",
+                    "config_id",
+                    "_det",
+                ],
+                dropna=False,
+            )["elapsed_s"]
+            .sum(min_count=1)
+            .reset_index()
+            .rename(
+                columns={
+                    "elapsed_s": "_t_layout",
+                }
+            )
+        )
+
+        df = df.merge(
+            lay_agg,
+            left_on=[
+                "image_stem",
+                "config_id",
+                "detector",
+            ],
+            right_on=[
+                "image_stem",
+                "config_id",
+                "_det",
+            ],
+            how="left",
+        )
+        df.drop(columns=["_det"], inplace=True, errors="ignore")
+    else:
+        df["_t_layout"] = 0.0
+
+    # -----------------------------------------------------
+    # Binarization
+    # -----------------------------------------------------
+    bz = binarize_df.copy()
+    bz["_det"] = bz["detector"].fillna(DETECTOR_NONE)
+    bz["elapsed_s"] = _numeric_series(bz, "elapsed_s")
+
+    bz_agg = (
+        bz.groupby(
+            [
+                "image_stem",
+                "config_id",
+                "_det",
+                "binarization",
+            ],
+            dropna=False,
+        )["elapsed_s"]
+        .mean()
+        .reset_index()
+        .rename(
+            columns={
+                "elapsed_s": "_t_binarize",
+            }
+        )
+    )
+
+    df = df.merge(
+        bz_agg,
+        left_on=[
+            "image_stem",
+            "config_id",
+            "detector",
+            "binarization",
+        ],
+        right_on=[
+            "image_stem",
+            "config_id",
+            "_det",
+            "binarization",
+        ],
+        how="left",
+    )
+    df.drop(columns=["_det"], inplace=True, errors="ignore")
+
+    # -----------------------------------------------------
+    # OCR
+    # -----------------------------------------------------
+    ocr = ocr_df.copy()
+    ocr["_det"] = ocr["detector"].fillna(DETECTOR_NONE)
+    ocr["elapsed_s"] = _numeric_series(ocr, "elapsed_s")
+
+    ocr_agg = (
+        ocr.groupby(
+            [
+                "image_stem",
+                "config_id",
+                "layout_mode",
+                "_det",
+                "binarization",
+                "ocr_extractor",
+            ],
+            dropna=False,
+        )["elapsed_s"]
+        .sum(min_count=1)
+        .reset_index()
+        .rename(
+            columns={
+                "elapsed_s": "_t_ocr",
+            }
+        )
+    )
+
+    df = df.merge(
+        ocr_agg,
+        left_on=[
+            "image_stem",
+            "config_id",
+            "layout_mode",
+            "detector",
+            "binarization",
+            "ocr_extractor",
+        ],
+        right_on=[
+            "image_stem",
+            "config_id",
+            "layout_mode",
+            "_det",
+            "binarization",
+            "ocr_extractor",
+        ],
+        how="left",
+    )
+    df.drop(columns=["_det"], inplace=True, errors="ignore")
+
+    # -----------------------------------------------------
+    # LLM: one execution per combo
+    # -----------------------------------------------------
+    llm_agg = (
+        df.groupby(
+            COMBO_COLS,
+            dropna=False,
+        )["elapsed_s"]
+        .max()
+        .reset_index()
+        .rename(
+            columns={
+                "elapsed_s": "_t_llm",
+            }
+        )
+    )
+
+    df.drop(columns=["elapsed_s"], inplace=True, errors="ignore")
+
+    df = df.merge(
+        llm_agg,
+        on=COMBO_COLS,
+        how="left",
+    )
+
+    # -----------------------------------------------------
+    # Total pipeline time
+    # -----------------------------------------------------
+    for col in (
+        "_t_enhance",
+        "_t_layout",
+        "_t_binarize",
+        "_t_ocr",
+        "_t_llm",
+    ):
+        df[col] = pd.to_numeric(
+            df[col],
+            errors="coerce",
+        ).fillna(0.0)
+
+    df["total_pipeline_seconds"] = (
+        df["_t_enhance"]
+        + df["_t_layout"]
+        + df["_t_binarize"]
+        + df["_t_ocr"]
+        + df["_t_llm"]
+    )
+
+    df.drop(
+        columns=[
+            "_t_enhance",
+            "_t_layout",
+            "_t_binarize",
+            "_t_ocr",
+            "_t_llm",
+        ],
+        inplace=True,
+        errors="ignore",
+    )
+
+    return df
+
+
+def page_pipeline_time(combo_df: pd.DataFrame) -> Tuple[float, bool]:
+    """
+    Return one execution time for a combo.
+
+    Normally there is one value. If duplicate rows still contain slightly or
+    substantially different values, use the maximum rather than multiplying
+    the execution time by the number of returned articles/rows.
+
+    Returns:
+        total_seconds,
+        timing_was_ambiguous
+    """
+    values = pd.to_numeric(
+        combo_df["total_pipeline_seconds"],
+        errors="coerce",
+    ).dropna()
+
+    if values.empty:
+        return 0.0, False
+
+    unique_values = np.unique(
+        np.round(values.to_numpy(dtype=float), 9)
+    )
+
+    if len(unique_values) == 1:
+        return float(unique_values[0]), False
+
+    return float(values.max()), True
+
+
+# =========================================================
+# Evaluation helpers
+# =========================================================
+
+def make_gold_lookup(gold_df: pd.DataFrame) -> Dict[Any, List[Dict[str, str]]]:
+    """Pre-group gold articles by image stem."""
+    gold = gold_df.copy()
+    gold["_title"] = gold["title"].map(normalize_text)
+    gold["_body"] = gold["body"].map(normalize_text)
+
+    lookup: Dict[Any, List[Dict[str, str]]] = {}
+
+    for image_stem, group in gold.groupby(
+        "image_stem",
+        dropna=False,
+        sort=False,
+    ):
+        rows: List[Dict[str, str]] = []
+
+        for row in group.itertuples(index=False):
+            rows.append({
+                "title": safe_text(getattr(row, "title", "")),
+                "body": safe_text(getattr(row, "body", "")),
+                "_title": safe_text(getattr(row, "_title", "")),
+                "_body": safe_text(getattr(row, "_body", "")),
+            })
+
+        try:
+            lookup[image_stem] = rows
+        except TypeError:
+            pass
+
+    return lookup
+
+
+def get_gold_for_image(
+    gold_lookup: Dict[Any, List[Dict[str, str]]],
+    image_stem: Any,
+) -> List[Dict[str, str]]:
+    """Fetch gold rows for an image stem."""
+    try:
+        return gold_lookup.get(image_stem, [])
+    except TypeError:
+        return []
+
+
+def write_article_row(
+    writer: csv.DictWriter,
+    row: Dict[str, Any],
+) -> None:
+    """Write one article-level row in the declared column order."""
+    clean = {
+        key: csv_value(row.get(key))
+        for key in ARTICLE_FIELDS
+    }
+    writer.writerow(clean)
+
+
+def write_page_row(
+    writer: csv.DictWriter,
+    row: Dict[str, Any],
+) -> None:
+    """Write one page-level row in the declared column order."""
+    clean = {
+        key: csv_value(row.get(key))
+        for key in PAGE_FIELDS
+    }
+    writer.writerow(clean)
+
+
+def audit_print(
+    combo_count: int,
+    meta: Dict[str, Any],
+    audit_rows: List[Dict[str, Any]],
+) -> None:
+    """Print one random audit sample."""
+    print()
+    print(f"--- random audit after {combo_count:,} successful combinations ---")
+    print(
+        f"[{meta['image_stem']}] "
+        f"config={meta['config_id']} | "
+        f"layout={meta['layout_mode']} | "
+        f"detector={meta['detector']} | "
+        f"binarization={meta['binarization']} | "
+        f"ocr={meta['ocr_extractor']} | "
+        f"llm={meta['llm_extractor']}"
+    )
+
+    if not audit_rows:
+        print("No alignable article pair in this combination.")
+        return
+
+    sample = random.choice(audit_rows)
+
+    print(f"annotation: {sample['result_type']}")
+    print(
+        "matching_score: "
+        f"{sample['matching_score']:.4f}"
+    )
+    print(
+        "title_fuzzy_score: "
+        f"{sample['title_fuzzy_score']:.4f}"
+    )
+    print(
+        "body_fuzzy_score: "
+        f"{sample['body_fuzzy_score']:.4f}"
+    )
+    print(f"pred_title: {preview(sample['pred_title'])}")
+    print(f"pred_body:  {preview(sample['pred_body'])}")
+    print(f"gold_title: {preview(sample['gold_title'])}")
+    print(f"gold_body:  {preview(sample['gold_body'])}")
+    print()
 
 
 # =========================================================
@@ -320,695 +954,544 @@ def validate_columns(
 def evaluate(
     results_df: pd.DataFrame,
     gold_df: pd.DataFrame,
-    image_stem_col: str = "image_stem",
-    title_col: str = "title",
-    body_col: str = "body",
-):
+    article_output_path: Path,
+    page_output_path: Path,
+) -> Tuple[int, int, int, int]:
     """
-    Evaluate predictions against gold articles.
+    Evaluate all successful pipeline combinations and stream both CSVs.
 
     Returns:
-        article_df
-        page_df
+        article_row_count,
+        page_row_count,
+        successful_combo_count,
+        timing_ambiguous_combo_count
     """
-
-    validate_columns(
-        results_df,
-        COMBO_COLS
-        + [
-            "status",
-            "image_stem",
-            "title",
-            "body",
-        ],
-        "results",
+    article_output_path.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+    page_output_path.parent.mkdir(
+        parents=True,
+        exist_ok=True,
     )
 
-    validate_columns(
-        gold_df,
-        [
-            image_stem_col,
-            title_col,
-            body_col,
-        ],
-        "gold",
-    )
-
-    article_rows = []
-    page_rows = []
-
-    gold = gold_df.copy()
-
-    gold["_title"] = gold[title_col].map(normalize_text)
-    gold["_body"] = gold[body_col].map(normalize_text)
-
-    # -----------------------------------------------------
-    # Normalize combo columns consistently.
-    #
-    # NaN values are converted to a sentinel because pandas
-    # groupby/merge handling of NaN can otherwise cause
-    # combinations to disappear.
-    # -----------------------------------------------------
-
+    # ---------------------------------------------------------
+    # Normalize detector and status
+    # ---------------------------------------------------------
     results = results_df.copy()
 
-    for col in ["detector", "binarize_file"]:
-        if col in results.columns:
-            results[col] = results[col].fillna(DETECTOR_NONE)
+    if "detector" not in results.columns:
+        results["detector"] = DETECTOR_NONE
+    results["detector"] = results["detector"].fillna(DETECTOR_NONE)
 
-    # dropna=False is important here.
-    combo_groups = results.groupby(
-        COMBO_COLS,
-        dropna=False,
+    results["_status"] = (
+        results["status"]
+        .astype(str)
+        .str.strip()
+        .str.lower()
     )
 
-    for combo, combo_df in combo_groups:
-
-        (
-            config_id,
-            detector,
-            binarize_file,
-            vlm,
-        ) = combo
-
-        # -------------------------------------------------
-        # Evaluate EVERY gold image for this combination.
-        #
-        # This is important: if there are zero successful
-        # predictions, the image still needs FN rows.
-        # -------------------------------------------------
-
-        for image_stem, image_gold in gold.groupby(
-            image_stem_col,
+    # ---------------------------------------------------------
+    # Console status: exactly one line per unique image stem
+    # ---------------------------------------------------------
+    status_counts = (
+        results.groupby(
+            "image_stem",
             dropna=False,
-        ):
+            sort=True,
+        )["_status"]
+        .value_counts()
+        .unstack(fill_value=0)
+    )
 
-            candidates = combo_df[
-                (combo_df["status"] == "success")
-                &
-                (combo_df["image_stem"] == image_stem)
-            ].copy()
+    all_images = list(status_counts.index)
 
-            candidates["_title"] = candidates["title"].map(
-                normalize_text
+    for image_stem in all_images:
+        row = status_counts.loc[image_stem]
+        n_success = int(row.get("success", 0))
+        n_failure = int(row.get("failure", 0))
+
+        print(
+            f"[{image_stem}] "
+            f"success={n_success:,} | "
+            f"failure={n_failure:,}"
+        )
+
+    # ---------------------------------------------------------
+    # Successful rows only for evaluation
+    # ---------------------------------------------------------
+    successful_results = results[
+        results["_status"] == "success"
+    ].copy()
+
+    successful_combo_count = int(
+        successful_results.groupby(
+            COMBO_COLS,
+            dropna=False,
+        ).ngroups
+    )
+
+    gold_lookup = make_gold_lookup(gold_df)
+
+    # ---------------------------------------------------------
+    # Stream article + page CSVs
+    # ---------------------------------------------------------
+    article_row_count = 0
+    page_row_count = 0
+    timing_ambiguous_combo_count = 0
+    processed_combos = 0
+
+    pbar = tqdm(
+        total=successful_combo_count,
+        desc="Evaluating successful pipeline combinations",
+        leave=True,
+        unit="combo",
+    )
+
+    try:
+        with article_output_path.open(
+            "w",
+            newline="",
+            encoding="utf-8",
+        ) as article_handle, page_output_path.open(
+            "w",
+            newline="",
+            encoding="utf-8",
+        ) as page_handle:
+            article_writer = csv.DictWriter(
+                article_handle,
+                fieldnames=ARTICLE_FIELDS,
+                extrasaction="ignore",
+            )
+            page_writer = csv.DictWriter(
+                page_handle,
+                fieldnames=PAGE_FIELDS,
+                extrasaction="ignore",
             )
 
-            candidates["_body"] = candidates["body"].map(
-                normalize_text
-            )
+            article_writer.writeheader()
+            page_writer.writeheader()
 
-            gold_articles = [
-                (
-                    idx,
-                    row["_title"],
-                    row["_body"],
+            # Iterate image-by-image to keep working memory bounded.
+            for image_stem, image_results in successful_results.groupby(
+                "image_stem",
+                dropna=False,
+                sort=False,
+            ):
+                image_gold = get_gold_for_image(
+                    gold_lookup,
+                    image_stem,
                 )
-                for idx, row in image_gold.iterrows()
-            ]
+                n_gold = len(image_gold)
 
-            pred_articles = [
-                (
-                    idx,
-                    row,
-                )
-                for idx, row in candidates.iterrows()
-            ]
-
-            n_gold = len(gold_articles)
-            n_pred = len(pred_articles)
-
-            matched_predictions = set()
-            matched_gold = set()
-
-            # -------------------------------------------------
-            # Match gold articles to predictions
-            # -------------------------------------------------
-
-            if n_gold > 0 and n_pred > 0:
-
-                similarity = np.zeros(
-                    (n_gold, n_pred),
-                    dtype=float,
+                image_combos = image_results.groupby(
+                    COMBO_COLS,
+                    dropna=False,
+                    sort=False,
                 )
 
-                title_f1_matrix = np.zeros_like(similarity)
-                body_f1_matrix = np.zeros_like(similarity)
+                for combo, combo_df in image_combos:
+                    (
+                        _image_stem,
+                        config_id,
+                        layout_mode,
+                        detector,
+                        binarization,
+                        ocr_extractor,
+                        llm_extractor,
+                    ) = combo
 
-                for gi, (_, gold_title, gold_body) in enumerate(
-                    gold_articles
-                ):
+                    meta = combo_meta(
+                        image_stem=image_stem,
+                        config_id=config_id,
+                        layout_mode=layout_mode,
+                        detector=detector,
+                        binarization=binarization,
+                        ocr_extractor=ocr_extractor,
+                        llm_extractor=llm_extractor,
+                    )
 
-                    for pi, (_, pred_row) in enumerate(
-                        pred_articles
-                    ):
+                    # -------------------------------------------------
+                    # One execution time for the whole combo
+                    # -------------------------------------------------
+                    total_pipeline_seconds, timing_ambiguous = (
+                        page_pipeline_time(combo_df)
+                    )
 
-                        (
-                            score,
-                            title_f1,
-                            body_f1,
-                        ) = article_similarity(
-                            pred_row["_title"],
-                            pred_row["_body"],
-                            gold_title,
-                            gold_body,
+                    if timing_ambiguous:
+                        timing_ambiguous_combo_count += 1
+
+                    # -------------------------------------------------
+                    # Parse all LLM outputs in this successful combo
+                    # -------------------------------------------------
+                    pred_list: List[Dict[str, str]] = []
+                    parse_failure_rows = 0
+
+                    for raw_body in combo_df["body"]:
+                        parsed = parse_articles(raw_body)
+                        if parse_was_failure(raw_body, parsed):
+                            parse_failure_rows += 1
+                        pred_list.extend(parsed)
+
+                    n_pred = len(pred_list)
+
+                    matched_pred = set()
+                    tp = 0
+
+                    # Store only alignable rows for the audit sample.
+                    audit_rows: List[Dict[str, Any]] = []
+
+                    # -------------------------------------------------
+                    # Hungarian matching
+                    # -------------------------------------------------
+                    if n_gold > 0 and n_pred > 0:
+                        sim = np.zeros(
+                            (n_gold, n_pred),
+                            dtype=float,
+                        )
+                        title_sim = np.zeros_like(sim)
+                        body_sim = np.zeros_like(sim)
+
+                        for gi, grow in enumerate(image_gold):
+                            gold_title = grow["title"]
+                            gold_body = grow["body"]
+
+                            for pi, prow in enumerate(pred_list):
+                                score, title_score, body_score = similarity_score(
+                                    prow["title"],
+                                    prow["body"],
+                                    gold_title,
+                                    gold_body,
+                                )
+
+                                sim[gi, pi] = score
+                                title_sim[gi, pi] = title_score
+                                body_sim[gi, pi] = body_score
+
+                        gold_idx, pred_idx = linear_sum_assignment(
+                            100.0 - sim
                         )
 
-                        similarity[gi, pi] = score
-                        title_f1_matrix[gi, pi] = title_f1
-                        body_f1_matrix[gi, pi] = body_f1
+                        for gi, pi in zip(gold_idx, pred_idx):
+                            score = float(sim[gi, pi])
 
-                # Hungarian algorithm minimizes cost.
-                cost = 1.0 - similarity
+                            if score < MIN_MATCH_SCORE:
+                                continue
 
-                assigned_gold, assigned_predictions = (
-                    linear_sum_assignment(cost)
-                )
+                            matched_pred.add(pi)
 
-                for gi, pi in zip(
-                    assigned_gold,
-                    assigned_predictions,
-                ):
+                            grow = image_gold[gi]
+                            prow = pred_list[pi]
 
-                    score = similarity[gi, pi]
+                            pred_title = prow["title"]
+                            pred_body = prow["body"]
+                            gold_title = grow["title"]
+                            gold_body = grow["body"]
 
-                    # Assignment exists, but it is not accepted
-                    # as a true article match unless it clears
-                    # the minimum similarity threshold.
-                    if score < MIN_MATCH_SCORE:
-                        continue
+                            is_tp = score >= MATCH_THRESHOLD
+                            result_type = "TP" if is_tp else "FP"
 
-                    matched_gold.add(gi)
-                    matched_predictions.add(pi)
+                            if is_tp:
+                                tp += 1
 
-                    gold_row = image_gold.iloc[gi]
-                    pred_row = pred_articles[pi][1]
+                            article_row = {
+                                **meta,
+                                "result_type": result_type,
+                                "pred_title": pred_title,
+                                "pred_body": pred_body,
+                                "gold_title": gold_title,
+                                "gold_body": gold_body,
+                                "matching_score": round(score, 4),
+                                "title_fuzzy_score": round(
+                                    float(title_sim[gi, pi]),
+                                    4,
+                                ),
+                                "body_fuzzy_score": round(
+                                    float(body_sim[gi, pi]),
+                                    4,
+                                ),
+                                "title_cer": cer(
+                                    pred_title,
+                                    gold_title,
+                                ),
+                                "title_wer": wer(
+                                    pred_title,
+                                    gold_title,
+                                ),
+                                "body_cer": cer(
+                                    pred_body,
+                                    gold_body,
+                                ),
+                                "body_wer": wer(
+                                    pred_body,
+                                    gold_body,
+                                ),
+                                "body_len_delta_chars": (
+                                    len(pred_body) - len(gold_body)
+                                ),
+                                "total_pipeline_seconds": (
+                                    total_pipeline_seconds
+                                ),
+                            }
 
-                    pred_title = pred_row["_title"]
-                    pred_body = pred_row["_body"]
+                            write_article_row(
+                                article_writer,
+                                article_row,
+                            )
+                            article_row_count += 1
 
-                    gold_title = gold_row["_title"]
-                    gold_body = gold_row["_body"]
+                            audit_rows.append(article_row)
 
-                    title_f1 = title_f1_matrix[gi, pi]
-                    body_f1 = body_f1_matrix[gi, pi]
+                    # -------------------------------------------------
+                    # Unmatched predictions = FP
+                    # -------------------------------------------------
+                    for pi, prow in enumerate(pred_list):
+                        if pi in matched_pred:
+                            continue
 
-                    title_fuzzy = fuzzy_score(
-                        pred_title,
-                        gold_title,
+                        article_row = {
+                            **meta,
+                            "result_type": "FP",
+                            "pred_title": prow["title"],
+                            "pred_body": prow["body"],
+                            "gold_title": None,
+                            "gold_body": None,
+                            "matching_score": None,
+                            "title_fuzzy_score": None,
+                            "body_fuzzy_score": None,
+                            "title_cer": None,
+                            "title_wer": None,
+                            "body_cer": None,
+                            "body_wer": None,
+                            "body_len_delta_chars": None,
+                            "total_pipeline_seconds": (
+                                total_pipeline_seconds
+                            ),
+                        }
+
+                        write_article_row(
+                            article_writer,
+                            article_row,
+                        )
+                        article_row_count += 1
+
+                    # -------------------------------------------------
+                    # FN semantics
+                    # -------------------------------------------------
+                    # Preserve the agreed semantics:
+                    # every gold article not detected as TP counts as FN.
+                    # Thus a borderline alignable match (20-69.999) is both
+                    # an FP prediction and a missed (FN) gold article.
+                    fn = n_gold - tp
+
+                    # A gold article is an FN row whenever it was not assigned
+                    # a true-positive prediction. Borderline matches therefore
+                    # remain present as FN rows, while true TP gold articles do not.
+                    tp_gold = set()
+                    if n_gold > 0 and n_pred > 0:
+                        for gi, pi in zip(gold_idx, pred_idx):
+                            if sim[gi, pi] >= MATCH_THRESHOLD:
+                                tp_gold.add(int(gi))
+
+                    fn_rows_written = 0
+
+                    for gi, grow in enumerate(image_gold):
+                        if gi in tp_gold:
+                            continue
+
+                        article_row = {
+                            **meta,
+                            "result_type": "FN",
+                            "pred_title": None,
+                            "pred_body": None,
+                            "gold_title": grow["title"],
+                            "gold_body": grow["body"],
+                            "matching_score": None,
+                            "title_fuzzy_score": None,
+                            "body_fuzzy_score": None,
+                            "title_cer": None,
+                            "title_wer": None,
+                            "body_cer": None,
+                            "body_wer": None,
+                            "body_len_delta_chars": None,
+                            "total_pipeline_seconds": (
+                                total_pipeline_seconds
+                            ),
+                        }
+
+                        write_article_row(
+                            article_writer,
+                            article_row,
+                        )
+                        article_row_count += 1
+                        fn_rows_written += 1
+
+                    # In the unlikely event there are more FN rows implied by the
+                    # count than unique non-TP gold rows (normally impossible),
+                    # preserve the count without duplicating useful text.
+                    while fn_rows_written < fn:
+                        article_row = {
+                            **meta,
+                            "result_type": "FN",
+                            "pred_title": None,
+                            "pred_body": None,
+                            "gold_title": None,
+                            "gold_body": None,
+                            "matching_score": None,
+                            "title_fuzzy_score": None,
+                            "body_fuzzy_score": None,
+                            "title_cer": None,
+                            "title_wer": None,
+                            "body_cer": None,
+                            "body_wer": None,
+                            "body_len_delta_chars": None,
+                            "total_pipeline_seconds": (
+                                total_pipeline_seconds
+                            ),
+                        }
+
+                        write_article_row(
+                            article_writer,
+                            article_row,
+                        )
+                        article_row_count += 1
+                        fn_rows_written += 1
+
+                    # -------------------------------------------------
+                    # Detection counts
+                    # -------------------------------------------------
+                    # Every prediction that is not a TP is an FP. This makes
+                    # borderline alignable matches (20-69.999) count as FP.
+                    fp = n_pred - tp
+
+                    precision = (
+                        tp / (tp + fp)
+                        if (tp + fp)
+                        else 0.0
                     )
 
-                    body_fuzzy = fuzzy_score(
-                        pred_body,
-                        gold_body,
+                    recall = (
+                        tp / (tp + fn)
+                        if (tp + fn)
+                        else 0.0
                     )
 
-                    title_fuzzy_match = (
-                        title_fuzzy >= TITLE_FUZZY_THRESHOLD
+                    detection_f1 = (
+                        2.0 * precision * recall
+                        / (precision + recall)
+                        if (precision + recall)
+                        else 0.0
                     )
 
-                    body_fuzzy_match = (
-                        body_fuzzy >= BODY_FUZZY_THRESHOLD
-                    )
+                    # -------------------------------------------------
+                    # Text quality: matched/aligned pairs only
+                    # -------------------------------------------------
+                    matched_title_cer: List[float] = []
+                    matched_title_wer: List[float] = []
+                    matched_body_cer: List[float] = []
+                    matched_body_wer: List[float] = []
 
-                    article_rows.append({
+                    if n_gold > 0 and n_pred > 0:
+                        for gi, pi in zip(gold_idx, pred_idx):
+                            score = float(sim[gi, pi])
+                            if score < MIN_MATCH_SCORE:
+                                continue
 
-                        "image_stem": image_stem,
+                            grow = image_gold[gi]
+                            prow = pred_list[pi]
 
-                        "config_id": config_id,
-                        "detector": detector,
-                        "binarize_file": binarize_file,
-                        "vlm": vlm,
+                            matched_title_cer.append(
+                                cer(
+                                    prow["title"],
+                                    grow["title"],
+                                )
+                            )
+                            matched_title_wer.append(
+                                wer(
+                                    prow["title"],
+                                    grow["title"],
+                                )
+                            )
+                            matched_body_cer.append(
+                                cer(
+                                    prow["body"],
+                                    grow["body"],
+                                )
+                            )
+                            matched_body_wer.append(
+                                wer(
+                                    prow["body"],
+                                    grow["body"],
+                                )
+                            )
 
-                        # Identity/matching information
-                        "match_status": "MATCHED",
-                        "matching_score": score,
-
-                        "gold_index": gold_articles[gi][0],
-                        "prediction_index": pred_articles[pi][0],
-
-                        # Field-level similarity
-                        "title_token_f1": title_f1,
-                        "body_token_f1": body_f1,
-
-                        "title_fuzzy_score": title_fuzzy,
-                        "title_fuzzy_match": title_fuzzy_match,
-
-                        "body_fuzzy_score": body_fuzzy,
-                        "body_fuzzy_match": body_fuzzy_match,
-
-                        # Field-level status
-                        "title_match_status": (
-                            "MATCH"
-                            if title_fuzzy_match
-                            else "MISMATCH"
-                        ),
-
-                        "body_match_status": (
-                            "MATCH"
-                            if body_fuzzy_match
-                            else "MISMATCH"
-                        ),
-
-                        # Conditional error metrics
-                        "title_cer": conditional_error_metric(
-                            pred_title,
-                            gold_title,
-                            title_fuzzy_match,
-                            cer,
-                        ),
-
-                        "title_wer": conditional_error_metric(
-                            pred_title,
-                            gold_title,
-                            title_fuzzy_match,
-                            wer,
-                        ),
-
-                        "body_cer": conditional_error_metric(
-                            pred_body,
-                            gold_body,
-                            body_fuzzy_match,
-                            cer,
-                        ),
-
-                        "body_wer": conditional_error_metric(
-                            pred_body,
-                            gold_body,
-                            body_fuzzy_match,
-                            wer,
-                        ),
-
-                        "body_len_delta_chars": (
-                            len(pred_body)
-                            - len(gold_body)
-                        ),
-
-                        # Keep prediction timing if present.
-                        "vlm_elapsed_s": (
-                            pred_row["elapsed_s"]
-                            if "elapsed_s" in pred_row.index
-                            and pd.notna(pred_row["elapsed_s"])
+                    page_row = {
+                        **meta,
+                        "gold_articles": n_gold,
+                        "predicted_articles": n_pred,
+                        "tp": tp,
+                        "fp": fp,
+                        "fn": fn,
+                        "detection_precision": round(precision, 6),
+                        "detection_recall": round(recall, 6),
+                        "detection_f1": round(detection_f1, 6),
+                        "matched_pairs_for_error_mean": len(matched_title_cer),
+                        "matched_title_cer_mean": (
+                            float(np.mean(matched_title_cer))
+                            if matched_title_cer
                             else None
                         ),
-                    })
+                        "matched_title_wer_mean": (
+                            float(np.mean(matched_title_wer))
+                            if matched_title_wer
+                            else None
+                        ),
+                        "matched_body_cer_mean": (
+                            float(np.mean(matched_body_cer))
+                            if matched_body_cer
+                            else None
+                        ),
+                        "matched_body_wer_mean": (
+                            float(np.mean(matched_body_wer))
+                            if matched_body_wer
+                            else None
+                        ),
+                        "total_pipeline_seconds": total_pipeline_seconds,
+                        "parse_failure_rows": parse_failure_rows,
+                    }
 
-            # -------------------------------------------------
-            # False negatives
-            # -------------------------------------------------
+                    write_page_row(
+                        page_writer,
+                        page_row,
+                    )
+                    page_row_count += 1
 
-            for gi, (gold_idx, _, _) in enumerate(
-                gold_articles
-            ):
+                    processed_combos += 1
+                    pbar.update(1)
 
-                if gi in matched_gold:
-                    continue
-
-                article_rows.append({
-
-                    "image_stem": image_stem,
-
-                    "config_id": config_id,
-                    "detector": detector,
-                    "binarize_file": binarize_file,
-                    "vlm": vlm,
-
-                    "match_status": "FN",
-                    "matching_score": 0.0,
-
-                    "gold_index": gold_idx,
-                    "prediction_index": None,
-
-                    "title_token_f1": None,
-                    "body_token_f1": None,
-
-                    "title_fuzzy_score": None,
-                    "title_fuzzy_match": False,
-
-                    "body_fuzzy_score": None,
-                    "body_fuzzy_match": False,
-
-                    "title_match_status": "FN",
-                    "body_match_status": "FN",
-
-                    "title_cer": None,
-                    "title_wer": None,
-                    "body_cer": None,
-                    "body_wer": None,
-
-                    "body_len_delta_chars": None,
-
-                    "vlm_elapsed_s": None,
-                })
-
-            # -------------------------------------------------
-            # False positives
-            # -------------------------------------------------
-
-            for pi, (pred_idx, _) in enumerate(
-                pred_articles
-            ):
-
-                if pi in matched_predictions:
-                    continue
-
-                article_rows.append({
-
-                    "image_stem": image_stem,
-
-                    "config_id": config_id,
-                    "detector": detector,
-                    "binarize_file": binarize_file,
-                    "vlm": vlm,
-
-                    "match_status": "FP",
-                    "matching_score": 0.0,
-
-                    "gold_index": None,
-                    "prediction_index": pred_idx,
-
-                    "title_token_f1": None,
-                    "body_token_f1": None,
-
-                    "title_fuzzy_score": None,
-                    "title_fuzzy_match": False,
-
-                    "body_fuzzy_score": None,
-                    "body_fuzzy_match": False,
-
-                    "title_match_status": "FP",
-                    "body_match_status": "FP",
-
-                    "title_cer": None,
-                    "title_wer": None,
-                    "body_cer": None,
-                    "body_wer": None,
-
-                    "body_len_delta_chars": None,
-
-                    "vlm_elapsed_s": (
-                        candidates.loc[
-                            pred_idx,
-                            "elapsed_s"
-                        ]
-                        if "elapsed_s" in candidates.columns
-                        and pred_idx in candidates.index
-                        and pd.notna(
-                            candidates.loc[pred_idx, "elapsed_s"]
+                    # -------------------------------------------------
+                    # Random audit every N successful combinations
+                    # -------------------------------------------------
+                    if processed_combos % AUDIT_EVERY == 0:
+                        audit_print(
+                            processed_combos,
+                            meta,
+                            audit_rows,
                         )
-                        else None
-                    ),
-                })
 
-            # -------------------------------------------------
-            # Page-level detection metrics
-            # -------------------------------------------------
+                    # Flush regularly without flushing on every row.
+                    if processed_combos % 25 == 0:
+                        article_handle.flush()
+                        page_handle.flush()
+    finally:
+        pbar.close()
 
-            matched = len(matched_gold)
-
-            tp = matched
-            fp = n_pred - matched
-            fn = n_gold - matched
-
-            precision = (
-                tp / (tp + fp)
-                if (tp + fp)
-                else 0.0
-            )
-
-            recall = (
-                tp / (tp + fn)
-                if (tp + fn)
-                else 0.0
-            )
-
-            detection_f1 = (
-                2 * precision * recall
-                / (precision + recall)
-                if (precision + recall)
-                else 0.0
-            )
-
-            page_rows.append({
-
-                "image_stem": image_stem,
-
-                "config_id": config_id,
-                "detector": detector,
-                "binarize_file": binarize_file,
-                "vlm": vlm,
-
-                "gold_articles": n_gold,
-                "predicted_articles": n_pred,
-                "matched_articles": matched,
-
-                "tp_articles": tp,
-                "fp_articles": fp,
-                "fn_articles": fn,
-
-                "detection_precision": precision,
-                "detection_recall": recall,
-                "detection_f1": detection_f1,
-            })
-
-    article_df = pd.DataFrame(article_rows)
-    page_df = pd.DataFrame(page_rows)
-
-    return article_df, page_df
-
-
-# =========================================================
-# Timing
-# =========================================================
-
-def add_timing(
-    df: pd.DataFrame,
-    enhance_df: pd.DataFrame,
-    binarize_df: pd.DataFrame,
-    layout_df: pd.DataFrame = None,
-) -> pd.DataFrame:
-    """
-    Add pipeline timing information.
-
-    Timing keys:
-
-        Enhancement:
-            image_stem + config_id
-
-        Layout:
-            image_stem + config_id + detector
-
-        Binarization:
-            image_stem + config_id + detector + binarize_file
-
-        VLM:
-            already associated with each prediction row
-
-    IMPORTANT:
-        Pipeline timing is image/pipeline-level timing. If the
-        resulting value appears on multiple article rows, it
-        must not be summed across article rows.
-    """
-
-    result = df.copy()
-
-    # -----------------------------------------------------
-    # Enhancement
-    # -----------------------------------------------------
-
-    enhance = enhance_df.copy()
-
-    validate_columns(
-        enhance,
-        [
-            "image_path",
-            "config_id",
-            "processing_time_seconds",
-        ],
-        "enhance parquet",
+    return (
+        article_row_count,
+        page_row_count,
+        processed_combos,
+        timing_ambiguous_combo_count,
     )
-
-    enhance["image_stem"] = enhance["image_path"].apply(
-        lambda path: Path(path).stem
-    )
-
-    enhance_agg = (
-        enhance
-        .groupby(
-            ["image_stem", "config_id"],
-            dropna=False,
-        )["processing_time_seconds"]
-        .sum()
-        .reset_index()
-        .rename(
-            columns={
-                "processing_time_seconds": "_enhance_s"
-            }
-        )
-    )
-
-    result = result.merge(
-        enhance_agg,
-        on=["image_stem", "config_id"],
-        how="left",
-    )
-
-    # -----------------------------------------------------
-    # Detector normalization
-    # -----------------------------------------------------
-
-    result["detector"] = result["detector"].fillna(
-        DETECTOR_NONE
-    )
-
-    # -----------------------------------------------------
-    # Layout
-    # -----------------------------------------------------
-
-    if layout_df is not None:
-
-        layout = layout_df.copy()
-
-        validate_columns(
-            layout,
-            [
-                "image_stem",
-                "config_id",
-                "detector",
-                "elapsed_s",
-            ],
-            "layout parquet",
-        )
-
-        layout["detector"] = layout["detector"].fillna(
-            DETECTOR_NONE
-        )
-
-        layout_agg = (
-            layout
-            .groupby(
-                [
-                    "image_stem",
-                    "config_id",
-                    "detector",
-                ],
-                dropna=False,
-            )["elapsed_s"]
-            .sum()
-            .reset_index()
-            .rename(
-                columns={
-                    "elapsed_s": "_layout_s"
-                }
-            )
-        )
-
-        result = result.merge(
-            layout_agg,
-            on=[
-                "image_stem",
-                "config_id",
-                "detector",
-            ],
-            how="left",
-        )
-
-    else:
-        result["_layout_s"] = 0.0
-
-    result["_layout_s"] = result["_layout_s"].fillna(0.0)
-
-    # -----------------------------------------------------
-    # Binarization
-    # -----------------------------------------------------
-
-    binarize = binarize_df.copy()
-
-    validate_columns(
-        binarize,
-        [
-            "image_stem",
-            "config_id",
-            "detector",
-            "binarize_file",
-            "elapsed_s",
-        ],
-        "binarize parquet",
-    )
-
-    binarize["detector"] = binarize["detector"].fillna(
-        DETECTOR_NONE
-    )
-
-    binarize_agg = (
-        binarize
-        .groupby(
-            [
-                "image_stem",
-                "config_id",
-                "detector",
-                "binarize_file",
-            ],
-            dropna=False,
-        )["elapsed_s"]
-        .sum()
-        .reset_index()
-        .rename(
-            columns={
-                "elapsed_s": "_binarize_s"
-            }
-        )
-    )
-
-    result = result.merge(
-        binarize_agg,
-        on=[
-            "image_stem",
-            "config_id",
-            "detector",
-            "binarize_file",
-        ],
-        how="left",
-    )
-
-    # -----------------------------------------------------
-    # VLM
-    # -----------------------------------------------------
-
-    if "vlm_elapsed_s" in result.columns:
-        result["_vlm_s"] = pd.to_numeric(
-            result["vlm_elapsed_s"],
-            errors="coerce",
-        ).fillna(0.0)
-    else:
-        result["_vlm_s"] = 0.0
-
-    # -----------------------------------------------------
-    # Total
-    # -----------------------------------------------------
-
-    result["total_pipeline_seconds"] = (
-        result["_enhance_s"].fillna(0.0)
-        + result["_layout_s"].fillna(0.0)
-        + result["_binarize_s"].fillna(0.0)
-        + result["_vlm_s"]
-    )
-
-    # Restore missing detector values.
-    result["detector"] = result["detector"].replace(
-        DETECTOR_NONE,
-        None,
-    )
-
-    result = result.drop(
-        columns=[
-            "_enhance_s",
-            "_layout_s",
-            "_binarize_s",
-            "_vlm_s",
-        ],
-    )
-
-    return result
 
 
 # =========================================================
@@ -1016,21 +1499,20 @@ def add_timing(
 # =========================================================
 
 def parse_args():
-
     parser = argparse.ArgumentParser(
-        description="Evaluate OCR/VLM extraction results."
+        description="Evaluate OCR/LLM extraction results."
     )
 
     parser.add_argument(
         "--results",
         required=True,
-        help="Prediction results parquet.",
+        help="LLM extraction results parquet.",
     )
 
     parser.add_argument(
         "--gold",
         required=True,
-        help="Gold-standard CSV.",
+        help="Gold-standard CSV (image_stem, title, body).",
     )
 
     parser.add_argument(
@@ -1042,19 +1524,25 @@ def parse_args():
     parser.add_argument(
         "--enhance-parquet",
         required=True,
-        help="Parquet containing enhancement timing.",
+        help="Enhancement timing parquet.",
     )
 
     parser.add_argument(
         "--binarize-parquet",
         required=True,
-        help="Parquet containing binarization timing.",
+        help="Binarization timing parquet.",
+    )
+
+    parser.add_argument(
+        "--ocr-parquet",
+        required=True,
+        help="OCR extraction timing parquet.",
     )
 
     parser.add_argument(
         "--layout-parquet",
         default=None,
-        help="Optional parquet containing layout-detection timing.",
+        help="Layout detection timing parquet (optional).",
     )
 
     return parser.parse_args()
@@ -1062,19 +1550,15 @@ def parse_args():
 
 # =========================================================
 # Main
-# page-level:
-# TP = correctly matched article
-# FP = prediction with no gold article
-# FN = gold article with no prediction
 # =========================================================
 
 def main():
-
     args = parse_args()
 
-    results_df = pd.read_parquet(
-        args.results
-    )
+    # -----------------------------------------------------
+    # Load data
+    # -----------------------------------------------------
+    results_df = pd.read_parquet(args.results)
 
     gold_df = pd.read_csv(
         args.gold,
@@ -1083,13 +1567,9 @@ def main():
         encoding="utf-8",
     )
 
-    enhance_df = pd.read_parquet(
-        args.enhance_parquet
-    )
-
-    binarize_df = pd.read_parquet(
-        args.binarize_parquet
-    )
+    enhance_df = pd.read_parquet(args.enhance_parquet)
+    binarize_df = pd.read_parquet(args.binarize_parquet)
+    ocr_df = pd.read_parquet(args.ocr_parquet)
 
     layout_df = (
         pd.read_parquet(args.layout_parquet)
@@ -1097,51 +1577,64 @@ def main():
         else None
     )
 
-    article_df, page_df = evaluate(
+    # -----------------------------------------------------
+    # Build timing
+    # -----------------------------------------------------
+    results_df = build_timing(
         results_df,
-        gold_df,
-    )
-
-    article_df = add_timing(
-        article_df,
         enhance_df,
         binarize_df,
+        ocr_df,
         layout_df,
     )
 
     # -----------------------------------------------------
-    # Article-level output
+    # Output paths
     # -----------------------------------------------------
+    output_path = Path(args.output_csv)
 
-    article_df.to_csv(
-        args.output_csv,
-        index=False,
+    page_stem = output_path.stem
+    if page_stem.endswith("_results"):
+        page_stem = page_stem[:-len("_results")]
+
+    page_output = output_path.with_name(
+        f"{page_stem}_page_metrics.csv"
     )
 
     # -----------------------------------------------------
-    # Page-level output
-    #
-    # This is intentionally separate from the article CSV.
+    # Evaluate + stream outputs
     # -----------------------------------------------------
-
-    page_output = Path(
-        args.output_csv
-    ).with_name(
-        "page_metrics.csv"
-    )
-
-    page_df.to_csv(
+    (
+        article_count,
+        page_count,
+        combo_count,
+        timing_ambiguous_count,
+    ) = evaluate(
+        results_df,
+        gold_df,
+        output_path,
         page_output,
-        index=False,
     )
 
+    print()
+    print(f"Article metrics -> {output_path}")
+    print(f"Page metrics    -> {page_output}")
     print(
-        f"Wrote article metrics: {args.output_csv}"
+        f"Total rows: article={article_count:,}, "
+        f"page={page_count:,}"
+    )
+    print(
+        f"Successful pipeline combinations evaluated: "
+        f"{combo_count:,}"
     )
 
-    print(
-        f"Wrote page metrics:    {page_output}"
-    )
+    if timing_ambiguous_count:
+        print(
+            "Timing note: "
+            f"{timing_ambiguous_count:,} combo(s) contained multiple "
+            "different total_pipeline_seconds values; the evaluator used "
+            "the maximum once per combo rather than summing duplicate rows."
+        )
 
 
 if __name__ == "__main__":

@@ -1,44 +1,43 @@
 #!/bin/bash
-#SBATCH --job-name=correo_layout_detection
-#SBATCH --output=logs/slurm/correo_layout_detection_%j.out
+#SBATCH --job-name=deepseek_extraction
+#SBATCH --output=logs/slurm/deepseek_extraction_%j.out
 #SBATCH --partition=scavenger
 #SBATCH --account=agfritz
 #SBATCH --qos=prio
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2
-#SBATCH --gres=gpu:a5000:1
-#SBATCH --mem-per-cpu=2GB
-#SBATCH --time=07:00:00
+#SBATCH --gres=gpu:h100:1
+#SBATCH --mem-per-cpu=5GB
+#SBATCH --time=01:00:00
 
 # set -euo pipefail
 
 mkdir -p logs/slurm
 
 ####### 5. LLM Extractor #######
-# module purge
-# module add GCC/12.3.0
-# module add virtualenv/20.23.1-GCCcore-12.3.0
-# module add Python/3.11.3-GCCcore-12.3.0
-# module load CUDA/12.1.1
-# module load cuDNN/8.9.2.26-CUDA-12.1.1
-# export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
-# export HF_HOME=/scratch/nicolasal97/.cache/huggingface
-# source venv/corpus_construction/llm_extraction/bin/activate
+module purge
+module add GCC/12.3.0
+module add virtualenv/20.23.1-GCCcore-12.3.0
+module add Python/3.11.3-GCCcore-12.3.0
+module load CUDA/12.1.1
+module load cuDNN/8.9.2.26-CUDA-12.1.1
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+export HF_HOME=/scratch/nicolasal97/.cache/huggingface
+source venv/corpus_construction/llm_extraction/bin/activate
 
-# for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
-# for newspaper in ojo; do
-#     echo "===== NEWSPAPER: ${newspaper} ====="
-#     for llm in llama deepseek; do
-#     # for llm in qwen mistral llama deepseek; do
-#         echo "===== LLM: ${llm} ====="
-#         python3 -m src.workflows.llm_extraction \
-#             --ocr-parquet data/corpus_construction/ocr_extraction/${newspaper}/cropped/ocr.parquet \
-#             --output-parquet data/corpus_construction/llm_extraction/${newspaper}/results_cropped_${llm}.parquet \
-#             --llms ${llm}
-#         echo ""
-#     done
-# done
+for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
+    echo "===== NEWSPAPER: ${newspaper} ====="
+    for llm in deepseek; do
+    # for llm in qwen mistral llama deepseek; do
+        echo "===== LLM: ${llm} ====="
+        python3 -m src.workflows.llm_extraction \
+            --ocr-parquet data/corpus_construction/ocr_extraction/${newspaper}/cropped/ocr.parquet \
+            --output-parquet data/corpus_construction/llm_extraction/${newspaper}/results_cropped_${llm}.parquet \
+            --llms ${llm}
+        echo ""
+    done
+done
 
 # # for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
 # for newspaper in elcomercio; do
@@ -56,7 +55,7 @@ mkdir -p logs/slurm
 ############# Specs (1 image): 1x5GB; 1xh100 and 10min
 # TIME per model per newspaper (min): 40min*4*2=320min (5,33h)
 # TIME per model per newspaper (max): 80min*4*2=640min (10,66h)
-# -type f \( -iname "*.parquet" -o -iname "*.txt" -o -iname "*.csv" \) -exec du -h {} + | sort -hr
+# find -type f \( -iname "*.parquet" -o -iname "*.txt" -o -iname "*.csv" \) -exec du -h {} + | sort -hr
 
 # ################# DONE ###################
 ####### VLM #######

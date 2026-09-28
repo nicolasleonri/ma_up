@@ -9,7 +9,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem-per-cpu=1GB
-#SBATCH --time=00:30:00
+#SBATCH --time=20:00:00
 
 # set -euo pipefail
 
@@ -21,15 +21,42 @@ module add virtualenv/20.32.0-GCCcore-14.3.0
 module add Python/3.13.5-GCCcore-14.3.0
 source venv/corpus_construction/evaluate_extraction/bin/activate
 
-python3 -m src.workflows.evaluate_extraction \
-    --results data/corpus_construction/llm_extraction/correo/results_none_mistral.parquet \
-    --gold data/corpus_construction/evaluate_extraction/correo.csv \
-    --output-csv data/corpus_construction/evaluate_extraction/results/correo.csv \
-    --enhance-parquet data/corpus_construction/enhance_images/results/correo/enhance_images.parquet \
-    --binarize-parquet data/corpus_construction/binarize/correo/none/binarization.parquet  \
-    --ocr-parquet data/corpus_construction/ocr_extraction/correo/none/ocr.parquet 
+for newspaper in correo gestion ojo peru21 publimetro trome elcomercio; do
+    echo ""
+    echo "============================================================"
+    echo "NEWSPAPER: ${newspaper}"
+    echo "============================================================"
 
-############# Specs (1 line): 1x1GB and 30min
+    mkdir -p "data/corpus_construction/evaluate_extraction/results/${newspaper}"
+
+    for llm in llama mistral qwen; do
+        echo ""
+        echo "------------------------------------------------------------"
+        echo "LLM: ${llm}"
+        echo "------------------------------------------------------------"
+
+        python3 -m src.workflows.evaluate_extraction \
+            --results "data/corpus_construction/llm_extraction/${newspaper}/results_none_${llm}.parquet" \
+            --gold "data/corpus_construction/evaluate_extraction/${newspaper}.csv" \
+            --output-csv "data/corpus_construction/evaluate_extraction/results/${newspaper}/${llm}.csv" \
+            --enhance-parquet "data/corpus_construction/enhance_images/results/${newspaper}/enhance_images.parquet" \
+            --binarize-parquet "data/corpus_construction/binarize/${newspaper}/none/binarization.parquet" \
+            --ocr-parquet "data/corpus_construction/ocr_extraction/${newspaper}/none/ocr.parquet"
+
+        if [ $? -ne 0 ]; then
+            echo "!!! FAILED: ${newspaper} / ${llm}"
+        else
+            echo ">>> COMPLETED: ${newspaper} / ${llm}"
+        fi
+    done
+done
+
+echo ""
+echo "============================================================"
+echo "ALL EVALUATIONS FINISHED"
+echo "============================================================"
+
+############# Specs (1 line): 1x500mB and 30min
 
 
 # ################# DONE ###################
@@ -39,7 +66,7 @@ python3 -m src.workflows.evaluate_extraction \
 # module add Python/3.13.5-GCCcore-14.3.0
 # source venv/corpus_construction/enhance_images/bin/activate
 
-# python3 -m src.workflows.enhance_images --input-dir data/corpus_construction/enhance_images/correo --output-dir data/corpus_construction/enhance_images/results/correo
+# # python3 -m src.workflows.enhance_images --input-dir data/corpus_construction/enhance_images/correo --output-dir data/corpus_construction/enhance_images/results/correo
 # python3 -m src.workflows.enhance_images --input-dir data/corpus_construction/enhance_images/elcomercio --output-dir data/corpus_construction/enhance_images/results/elcomercio
 # python3 -m src.workflows.enhance_images --input-dir data/corpus_construction/enhance_images/gestion --output-dir data/corpus_construction/enhance_images/results/gestion
 # python3 -m src.workflows.enhance_images --input-dir data/corpus_construction/enhance_images/ojo --output-dir data/corpus_construction/enhance_images/results/ojo

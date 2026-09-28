@@ -1,0 +1,644 @@
+
+============================================================
+NEWSPAPER: correo
+============================================================
+
+------------------------------------------------------------
+LLM: llama
+------------------------------------------------------------
+[correo_2015-09-11_1] success=824 | failure=0
+[correo_2016-10-11_16] success=747 | failure=0
+[correo_2018-03-19_1] success=788 | failure=0
+[correo_2020-04-23_9] success=730 | failure=0
+[correo_2020-08-03_1] success=811 | failure=0
+[correo_2021-04-23_3] success=741 | failure=0
+[correo_2021-05-03_20] success=723 | failure=0
+[correo_2022-11-05_5] success=725 | failure=0
+[correo_2022-11-23_20] success=738 | failure=0
+[correo_2025-08-04_10] success=749 | failure=0
+Evaluating successful pipeline combinations:   0%|          | 0/7576 [00:00<?, ?combo/s]Evaluating successful pipeline combinations:   0%|          | 34/7576 [00:00<00:22, 330.49combo/s]Evaluating successful pipeline combinations:   1%|          | 68/7576 [00:00<00:22, 330.30combo/s]Evaluating successful pipeline combinations:   1%|▏         | 103/7576 [00:00<00:22, 335.37combo/s]Evaluating successful pipeline combinations:   2%|▏         | 137/7576 [00:00<00:22, 334.75combo/s]Evaluating successful pipeline combinations:   2%|▏         | 174/7576 [00:00<00:21, 344.18combo/s]Evaluating successful pipeline combinations:   3%|▎         | 209/7576 [00:00<00:21, 337.73combo/s]Evaluating successful pipeline combinations:   3%|▎         | 245/7576 [00:00<00:21, 344.79combo/s]Evaluating successful pipeline combinations:   4%|▎         | 280/7576 [00:00<00:21, 338.10combo/s]Evaluating successful pipeline combinations:   4%|▍         | 314/7576 [00:00<00:21, 334.43combo/s]Evaluating successful pipeline combinations:   5%|▍         | 348/7576 [00:01<00:21, 330.65combo/s]Evaluating successful pipeline combinations:   5%|▌         | 382/7576 [00:01<00:21, 332.24combo/s]Evaluating successful pipeline combinations:   6%|▌         | 419/7576 [00:01<00:20, 341.44combo/s]Evaluating successful pipeline combinations:   6%|▌         | 454/7576 [00:01<00:20, 341.67combo/s]Evaluating successful pipeline combinations:   6%|▋         | 489/7576 [00:01<00:20, 342.37combo/s]Evaluating successful pipeline combinations:   7%|▋         | 524/7576 [00:01<00:20, 341.64combo/s]Evaluating successful pipeline combinations:   7%|▋         | 559/7576 [00:01<00:22, 317.57combo/s]Evaluating successful pipeline combinations:   8%|▊         | 595/7576 [00:01<00:21, 328.18combo/s]Evaluating successful pipeline combinations:   8%|▊         | 630/7576 [00:01<00:20, 334.19combo/s]Evaluating successful pipeline combinations:   9%|▉         | 664/7576 [00:01<00:21, 328.08combo/s]Evaluating successful pipeline combinations:   9%|▉         | 699/7576 [00:02<00:20, 332.03combo/s]Evaluating successful pipeline combinations:  10%|▉         | 733/7576 [00:02<00:20, 329.45combo/s]Evaluating successful pipeline combinations:  10%|█         | 768/7576 [00:02<00:20, 334.59combo/s]Evaluating successful pipeline combinations:  11%|█         | 802/7576 [00:02<00:20, 334.81combo/s]Evaluating successful pipeline combinations:  11%|█         | 836/7576 [00:02<00:20, 329.45combo/s]Evaluating successful pipeline combinations:  11%|█▏        | 870/7576 [00:02<00:20, 325.78combo/s]Evaluating successful pipeline combinations:  12%|█▏        | 904/7576 [00:02<00:20, 329.74combo/s]Evaluating successful pipeline combinations:  12%|█▏        | 938/7576 [00:02<00:19, 331.90combo/s]Evaluating successful pipeline combinations:  13%|█▎        | 973/7576 [00:02<00:19, 334.70combo/s]Evaluating successful pipeline combinations:  13%|█▎        | 1010/7576 [00:03<00:19, 344.39combo/s]Evaluating successful pipeline combinations:  14%|█▍        | 1045/7576 [00:03<00:18, 344.19combo/s]Evaluating successful pipeline combinations:  14%|█▍        | 1080/7576 [00:03<00:19, 334.56combo/s]Evaluating successful pipeline combinations:  15%|█▍        | 1114/7576 [00:03<00:19, 329.61combo/s]Evaluating successful pipeline combinations:  15%|█▌        | 1149/7576 [00:03<00:19, 334.51combo/s]Evaluating successful pipeline combinations:  16%|█▌        | 1183/7576 [00:03<00:19, 331.41combo/s]Evaluating successful pipeline combinations:  16%|█▌        | 1217/7576 [00:04<01:04, 99.08combo/s] Evaluating successful pipeline combinations:  16%|█▋        | 1250/7576 [00:04<00:50, 124.38combo/s]Evaluating successful pipeline combinations:  17%|█▋        | 1282/7576 [00:04<00:41, 150.72combo/s]Evaluating successful pipeline combinations:  17%|█▋        | 1316/7576 [00:04<00:34, 181.24combo/s]Evaluating successful pipeline combinations:  18%|█▊        | 1352/7576 [00:04<00:29, 214.14combo/s]Evaluating successful pipeline combinations:  18%|█▊        | 1385/7576 [00:04<00:25, 238.28combo/s]Evaluating successful pipeline combinations:  19%|█▊        | 1418/7576 [00:05<00:23, 258.91combo/s]Evaluating successful pipeline combinations:  19%|█▉        | 1451/7576 [00:05<00:22, 272.36combo/s]Evaluating successful pipeline combinations:  20%|█▉        | 1483/7576 [00:05<00:21, 283.34combo/s]Evaluating successful pipeline combinations:  20%|██        | 1522/7576 [00:05<00:19, 310.53combo/s]Evaluating successful pipeline combinations:  21%|██        | 1556/7576 [00:05<00:19, 311.01combo/s]Evaluating successful pipeline combinations:  21%|██        | 1589/7576 [00:05<00:19, 313.12combo/s]Evaluating successful pipeline combinations:  21%|██▏       | 1624/7576 [00:05<00:18, 321.47combo/s]Evaluating successful pipeline combinations:  22%|██▏       | 1659/7576 [00:05<00:18, 328.39combo/s]Evaluating successful pipeline combinations:  22%|██▏       | 1694/7576 [00:05<00:17, 333.80combo/s]Evaluating successful pipeline combinations:  23%|██▎       | 1728/7576 [00:05<00:17, 333.01combo/s]Evaluating successful pipeline combinations:  23%|██▎       | 1764/7576 [00:06<00:17, 340.70combo/s]Evaluating successful pipeline combinations:  24%|██▎       | 1799/7576 [00:06<00:16, 341.05combo/s]Evaluating successful pipeline combinations:  24%|██▍       | 1834/7576 [00:06<00:16, 339.96combo/s]Evaluating successful pipeline combinations:  25%|██▍       | 1869/7576 [00:06<00:16, 341.09combo/s]Evaluating successful pipeline combinations:  25%|██▌       | 1908/7576 [00:06<00:16, 353.84combo/s]Evaluating successful pipeline combinations:  26%|██▌       | 1944/7576 [00:06<00:15, 353.58combo/s]Evaluating successful pipeline combinations:  26%|██▌       | 1980/7576 [00:06<00:15, 353.26combo/s]Evaluating successful pipeline combinations:  27%|██▋       | 2016/7576 [00:06<00:16, 345.44combo/s]Evaluating successful pipeline combinations:  27%|██▋       | 2051/7576 [00:06<00:16, 341.38combo/s]Evaluating successful pipeline combinations:  28%|██▊       | 2086/7576 [00:07<00:16, 342.24combo/s]Evaluating successful pipeline combinations:  28%|██▊       | 2121/7576 [00:07<00:15, 340.95combo/s]Evaluating successful pipeline combinations:  28%|██▊       | 2156/7576 [00:07<00:16, 337.44combo/s]Evaluating successful pipeline combinations:  29%|██▉       | 2190/7576 [00:07<00:16, 336.44combo/s]Evaluating successful pipeline combinations:  29%|██▉       | 2224/7576 [00:07<00:16, 334.18combo/s]Evaluating successful pipeline combinations:  30%|██▉       | 2258/7576 [00:07<00:15, 332.41combo/s]Evaluating successful pipeline combinations:  30%|███       | 2294/7576 [00:07<00:15, 339.25combo/s]Evaluating successful pipeline combinations:  31%|███       | 2328/7576 [00:07<00:15, 337.34combo/s]Evaluating successful pipeline combinations:  31%|███       | 2362/7576 [00:07<00:15, 329.49combo/s]Evaluating successful pipeline combinations:  32%|███▏      | 2395/7576 [00:07<00:15, 327.66combo/s]Evaluating successful pipeline combinations:  32%|███▏      | 2428/7576 [00:08<00:16, 317.65combo/s]Evaluating successful pipeline combinations:  32%|███▏      | 2461/7576 [00:08<00:16, 318.69combo/s]Evaluating successful pipeline combinations:  33%|███▎      | 2493/7576 [00:08<00:16, 317.68combo/s]Evaluating successful pipeline combinations:  33%|███▎      | 2525/7576 [00:08<00:15, 317.93combo/s]Evaluating successful pipeline combinations:  34%|███▍      | 2557/7576 [00:08<00:15, 318.22combo/s]Evaluating successful pipeline combinations:  34%|███▍      | 2590/7576 [00:08<00:15, 319.02combo/s]Evaluating successful pipeline combinations:  35%|███▍      | 2623/7576 [00:08<00:15, 321.19combo/s]Evaluating successful pipeline combinations:  35%|███▌      | 2656/7576 [00:08<00:15, 318.29combo/s]Evaluating successful pipeline combinations:  35%|███▌      | 2689/7576 [00:08<00:15, 318.99combo/s]Evaluating successful pipeline combinations:  36%|███▌      | 2721/7576 [00:08<00:15, 314.31combo/s]Evaluating successful pipeline combinations:  36%|███▋      | 2753/7576 [00:14<04:33, 17.65combo/s] Evaluating successful pipeline combinations:  37%|███▋      | 2784/7576 [00:14<03:17, 24.32combo/s]Evaluating successful pipeline combinations:  37%|███▋      | 2816/7576 [00:15<02:21, 33.64combo/s]Evaluating successful pipeline combinations:  38%|███▊      | 2849/7576 [00:15<01:41, 46.37combo/s]Evaluating successful pipeline combinations:  38%|███▊      | 2881/7576 [00:15<01:15, 62.23combo/s]Evaluating successful pipeline combinations:  38%|███▊      | 2911/7576 [00:23<06:36, 11.76combo/s]Evaluating successful pipeline combinations:  39%|███▊      | 2932/7576 [00:31<11:47,  6.56combo/s]Evaluating successful pipeline combinations:  39%|███▉      | 2964/7576 [00:31<07:58,  9.64combo/s]Evaluating successful pipeline combinations:  40%|███▉      | 2995/7576 [00:31<05:32, 13.79combo/s]Evaluating successful pipeline combinations:  40%|███▉      | 3025/7576 [00:31<03:55, 19.33combo/s]Evaluating successful pipeline combinations:  40%|████      | 3058/7576 [00:31<02:43, 27.68combo/s]Evaluating successful pipeline combinations:  41%|████      | 3090/7576 [00:31<01:56, 38.42combo/s]Evaluating successful pipeline combinations:  41%|████      | 3123/7576 [00:31<01:24, 53.01combo/s]Evaluating successful pipeline combinations:  42%|████▏     | 3157/7576 [00:31<01:01, 72.11combo/s]Evaluating successful pipeline combinations:  42%|████▏     | 3190/7576 [00:31<00:46, 94.28combo/s]Evaluating successful pipeline combinations:  43%|████▎     | 3224/7576 [00:32<00:35, 121.14combo/s]Evaluating successful pipeline combinations:  43%|████▎     | 3256/7576 [00:32<00:29, 148.15combo/s]Evaluating successful pipeline combinations:  43%|████▎     | 3289/7576 [00:32<00:24, 177.27combo/s]Evaluating successful pipeline combinations:  44%|████▍     | 3323/7576 [00:32<00:20, 206.93combo/s]Evaluating successful pipeline combinations:  44%|████▍     | 3357/7576 [00:32<00:18, 234.21combo/s]Evaluating successful pipeline combinations:  45%|████▍     | 3390/7576 [00:32<00:16, 255.94combo/s]Evaluating successful pipeline combinations:  45%|████▌     | 3424/7576 [00:32<00:15, 275.57combo/s]Evaluating successful pipeline combinations:  46%|████▌     | 3457/7576 [00:32<00:14, 286.73combo/s]Evaluating successful pipeline combinations:  46%|████▌     | 3492/7576 [00:32<00:13, 301.83combo/s]Evaluating successful pipeline combinations:  47%|████▋     | 3526/7576 [00:32<00:13, 309.97combo/s]Evaluating successful pipeline combinations:  47%|████▋     | 3560/7576 [00:33<00:12, 314.88combo/s]Evaluating successful pipeline combinations:  47%|████▋     | 3593/7576 [00:33<00:12, 313.24combo/s]Evaluating successful pipeline combinations:  48%|████▊     | 3626/7576 [00:33<00:12, 317.98combo/s]Evaluating successful pipeline combinations:  48%|████▊     | 3659/7576 [00:33<00:12, 317.93combo/s]Evaluating successful pipeline combinations:  49%|████▊     | 3692/7576 [00:33<00:12, 316.40combo/s]Evaluating successful pipeline combinations:  49%|████▉     | 3725/7576 [00:33<00:12, 320.33combo/s]Evaluating successful pipeline combinations:  50%|████▉     | 3758/7576 [00:33<00:11, 320.41combo/s]Evaluating successful pipeline combinations:  50%|█████     | 3791/7576 [00:33<00:11, 322.20combo/s]Evaluating successful pipeline combinations:  50%|█████     | 3824/7576 [00:33<00:11, 321.81combo/s]Evaluating successful pipeline combinations:  51%|█████     | 3857/7576 [00:34<00:12, 300.96combo/s]Evaluating successful pipeline combinations:  51%|█████▏    | 3891/7576 [00:34<00:11, 309.64combo/s]Evaluating successful pipeline combinations:  52%|█████▏    | 3923/7576 [00:34<00:11, 311.29combo/s]Evaluating successful pipeline combinations:  52%|█████▏    | 3955/7576 [00:34<00:11, 310.61combo/s]Evaluating successful pipeline combinations:  53%|█████▎    | 3987/7576 [00:34<00:11, 307.41combo/s]Evaluating successful pipeline combinations:  53%|█████▎    | 4018/7576 [00:34<00:11, 303.97combo/s]Evaluating successful pipeline combinations:  53%|█████▎    | 4050/7576 [00:34<00:11, 307.15combo/s]Evaluating successful pipeline combinations:  54%|█████▍    | 4082/7576 [00:34<00:11, 308.88combo/s]Evaluating successful pipeline combinations:  54%|█████▍    | 4113/7576 [00:34<00:11, 306.63combo/s]Evaluating successful pipeline combinations:  55%|█████▍    | 4144/7576 [00:34<00:11, 307.06combo/s]Evaluating successful pipeline combinations:  55%|█████▌    | 4176/7576 [00:35<00:10, 310.20combo/s]Evaluating successful pipeline combinations:  56%|█████▌    | 4208/7576 [00:35<00:10, 309.82combo/s]Evaluating successful pipeline combinations:  56%|█████▌    | 4240/7576 [00:35<00:10, 310.21combo/s]Evaluating successful pipeline combinations:  56%|█████▋    | 4272/7576 [00:35<00:10, 311.55combo/s]Evaluating successful pipeline combinations:  57%|█████▋    | 4304/7576 [00:35<00:10, 307.72combo/s]Evaluating successful pipeline combinations:  57%|█████▋    | 4335/7576 [00:35<00:10, 307.12combo/s]Evaluating successful pipeline combinations:  58%|█████▊    | 4366/7576 [00:35<00:10, 304.92combo/s]Evaluating successful pipeline combinations:  58%|█████▊    | 4398/7576 [00:35<00:10, 308.78combo/s]Evaluating successful pipeline combinations:  58%|█████▊    | 4430/7576 [00:35<00:10, 310.74combo/s]Evaluating successful pipeline combinations:  59%|█████▉    | 4463/7576 [00:35<00:09, 314.48combo/s]Evaluating successful pipeline combinations:  59%|█████▉    | 4495/7576 [00:36<00:09, 315.79combo/s]Evaluating successful pipeline combinations:  60%|█████▉    | 4527/7576 [00:36<00:09, 311.91combo/s]Evaluating successful pipeline combinations:  60%|██████    | 4560/7576 [00:36<00:09, 316.11combo/s]Evaluating successful pipeline combinations:  61%|██████    | 4592/7576 [00:36<00:09, 315.90combo/s]Evaluating successful pipeline combinations:  61%|██████    | 4625/7576 [00:36<00:09, 318.30combo/s]Evaluating successful pipeline combinations:  61%|██████▏   | 4657/7576 [00:36<00:09, 312.80combo/s]Evaluating successful pipeline combinations:  62%|██████▏   | 4689/7576 [00:36<00:09, 311.40combo/s]Evaluating successful pipeline combinations:  62%|██████▏   | 4721/7576 [00:36<00:09, 310.24combo/s]Evaluating successful pipeline combinations:  63%|██████▎   | 4753/7576 [00:36<00:09, 306.84combo/s]Evaluating successful pipeline combinations:  63%|██████▎   | 4784/7576 [00:37<00:09, 307.48combo/s]Evaluating successful pipeline combinations:  64%|██████▎   | 4815/7576 [00:37<00:09, 306.34combo/s]Evaluating successful pipeline combinations:  64%|██████▍   | 4846/7576 [00:37<00:08, 305.32combo/s]Evaluating successful pipeline combinations:  64%|██████▍   | 4877/7576 [00:37<00:08, 304.97combo/s]Evaluating successful pipeline combinations:  65%|██████▍   | 4910/7576 [00:37<00:08, 310.32combo/s]Evaluating successful pipeline combinations:  65%|██████▌   | 4942/7576 [00:37<00:08, 310.65combo/s]Evaluating successful pipeline combinations:  66%|██████▌   | 4974/7576 [00:37<00:08, 309.87combo/s]Evaluating successful pipeline combinations:  66%|██████▌   | 5007/7576 [00:37<00:08, 314.44combo/s]Evaluating successful pipeline combinations:  67%|██████▋   | 5039/7576 [00:37<00:08, 308.48combo/s]Evaluating successful pipeline combinations:  67%|██████▋   | 5070/7576 [00:37<00:08, 305.12combo/s]Evaluating successful pipeline combinations:  67%|██████▋   | 5101/7576 [00:38<00:08, 304.71combo/s]Evaluating successful pipeline combinations:  68%|██████▊   | 5132/7576 [00:38<00:07, 306.05combo/s]Evaluating successful pipeline combinations:  68%|██████▊   | 5163/7576 [00:38<00:07, 304.96combo/s]Evaluating successful pipeline combinations:  69%|██████▊   | 5195/7576 [00:38<00:07, 308.03combo/s]Evaluating successful pipeline combinations:  69%|██████▉   | 5227/7576 [00:38<00:07, 308.63combo/s]Evaluating successful pipeline combinations:  69%|██████▉   | 5258/7576 [00:38<00:08, 288.42combo/s]Evaluating successful pipeline combinations:  70%|██████▉   | 5290/7576 [00:38<00:07, 296.78combo/s]Evaluating successful pipeline combinations:  70%|███████   | 5321/7576 [00:38<00:07, 300.21combo/s]Evaluating successful pipeline combinations:  71%|███████   | 5352/7576 [00:38<00:07, 296.97combo/s]Evaluating successful pipeline combinations:  71%|███████   | 5383/7576 [00:39<00:07, 300.27combo/s]Evaluating successful pipeline combinations:  71%|███████▏  | 5414/7576 [00:39<00:07, 301.68combo/s]Evaluating successful pipeline combinations:  72%|███████▏  | 5445/7576 [00:39<00:07, 303.16combo/s]Evaluating successful pipeline combinations:  72%|███████▏  | 5476/7576 [00:41<00:56, 37.04combo/s] Evaluating successful pipeline combinations:  73%|███████▎  | 5506/7576 [00:41<00:41, 49.80combo/s]Evaluating successful pipeline combinations:  73%|███████▎  | 5538/7576 [00:41<00:30, 67.31combo/s]Evaluating successful pipeline combinations:  73%|███████▎  | 5568/7576 [00:42<00:23, 86.92combo/s]Evaluating successful pipeline combinations:  74%|███████▍  | 5600/7576 [00:42<00:17, 111.90combo/s]Evaluating successful pipeline combinations:  74%|███████▍  | 5632/7576 [00:42<00:13, 139.61combo/s]Evaluating successful pipeline combinations:  75%|███████▍  | 5663/7576 [00:42<00:11, 166.21combo/s]Evaluating successful pipeline combinations:  75%|███████▌  | 5694/7576 [00:42<00:09, 192.44combo/s]Evaluating successful pipeline combinations:  76%|███████▌  | 5725/7576 [00:42<00:08, 215.80combo/s]Evaluating successful pipeline combinations:  76%|███████▌  | 5757/7576 [00:42<00:07, 238.94combo/s]Evaluating successful pipeline combinations:  76%|███████▋  | 5788/7576 [00:42<00:07, 255.41combo/s]Evaluating successful pipeline combinations:  77%|███████▋  | 5819/7576 [00:42<00:06, 267.96combo/s]Evaluating successful pipeline combinations:  77%|███████▋  | 5850/7576 [00:44<00:23, 72.20combo/s] Evaluating successful pipeline combinations:  78%|███████▊  | 5882/7576 [00:44<00:17, 94.31combo/s]Evaluating successful pipeline combinations:  78%|███████▊  | 5909/7576 [00:52<02:34, 10.78combo/s]Evaluating successful pipeline combinations:  78%|███████▊  | 5942/7576 [00:52<01:44, 15.60combo/s]Evaluating successful pipeline combinations:  79%|███████▉  | 5974/7576 [00:52<01:12, 22.03combo/s]Evaluating successful pipeline combinations:  79%|███████▉  | 6006/7576 [00:52<00:51, 30.76combo/s]Evaluating successful pipeline combinations:  80%|███████▉  | 6037/7576 [00:53<00:36, 41.93combo/s]Evaluating successful pipeline combinations:  80%|████████  | 6070/7576 [00:53<00:26, 57.51combo/s]Evaluating successful pipeline combinations:  81%|████████  | 6102/7576 [00:53<00:19, 76.35combo/s]Evaluating successful pipeline combinations:  81%|████████  | 6134/7576 [00:53<00:14, 99.01combo/s]Evaluating successful pipeline combinations:  81%|████████▏ | 6166/7576 [00:53<00:11, 124.48combo/s]Evaluating successful pipeline combinations:  82%|████████▏ | 6197/7576 [00:53<00:09, 150.89combo/s]Evaluating successful pipeline combinations:  82%|████████▏ | 6228/7576 [00:53<00:07, 176.56combo/s]Evaluating successful pipeline combinations:  83%|████████▎ | 6259/7576 [00:53<00:06, 201.45combo/s]Evaluating successful pipeline combinations:  83%|████████▎ | 6290/7576 [00:53<00:05, 222.94combo/s]Evaluating successful pipeline combinations:  83%|████████▎ | 6321/7576 [00:53<00:05, 243.28combo/s]Evaluating successful pipeline combinations:  84%|████████▍ | 6353/7576 [00:54<00:04, 262.28combo/s]Evaluating successful pipeline combinations:  84%|████████▍ | 6385/7576 [00:54<00:04, 275.34combo/s]Evaluating successful pipeline combinations:  85%|████████▍ | 6417/7576 [00:54<00:04, 284.97combo/s]Evaluating successful pipeline combinations:  85%|████████▌ | 6449/7576 [00:54<00:03, 294.33combo/s]Evaluating successful pipeline combinations:  86%|████████▌ | 6481/7576 [00:54<00:03, 298.14combo/s]Evaluating successful pipeline combinations:  86%|████████▌ | 6513/7576 [00:54<00:03, 302.73combo/s]Evaluating successful pipeline combinations:  86%|████████▋ | 6545/7576 [00:54<00:03, 303.61combo/s]Evaluating successful pipeline combinations:  87%|████████▋ | 6576/7576 [00:54<00:03, 303.69combo/s]Evaluating successful pipeline combinations:  87%|████████▋ | 6607/7576 [00:54<00:03, 304.35combo/s]Evaluating successful pipeline combinations:  88%|████████▊ | 6638/7576 [00:55<00:03, 303.84combo/s]Evaluating successful pipeline combinations:  88%|████████▊ | 6670/7576 [00:55<00:02, 307.35combo/s]Evaluating successful pipeline combinations:  88%|████████▊ | 6703/7576 [00:55<00:02, 312.40combo/s]Evaluating successful pipeline combinations:  89%|████████▉ | 6736/7576 [00:55<00:02, 316.11combo/s]Evaluating successful pipeline combinations:  89%|████████▉ | 6769/7576 [00:55<00:02, 318.41combo/s]Evaluating successful pipeline combinations:  90%|████████▉ | 6801/7576 [00:55<00:02, 313.20combo/s]Evaluating successful pipeline combinations:  90%|█████████ | 6833/7576 [00:55<00:02, 311.34combo/s]Evaluating successful pipeline combinations:  91%|█████████ | 6866/7576 [00:55<00:02, 314.84combo/s]Evaluating successful pipeline combinations:  91%|█████████ | 6898/7576 [00:55<00:02, 314.48combo/s]Evaluating successful pipeline combinations:  91%|█████████▏| 6930/7576 [00:55<00:02, 315.55combo/s]Evaluating successful pipeline combinations:  92%|█████████▏| 6962/7576 [00:56<00:01, 313.23combo/s]Evaluating successful pipeline combinations:  92%|█████████▏| 6995/7576 [00:56<00:01, 316.62combo/s]Evaluating successful pipeline combinations:  93%|█████████▎| 7027/7576 [00:56<00:01, 315.42combo/s]Evaluating successful pipeline combinations:  93%|█████████▎| 7060/7576 [00:56<00:01, 319.31combo/s]Evaluating successful pipeline combinations:  94%|█████████▎| 7092/7576 [00:56<00:01, 316.75combo/s]Evaluating successful pipeline combinations:  94%|█████████▍| 7124/7576 [00:56<00:01, 313.74combo/s]Evaluating successful pipeline combinations:  94%|█████████▍| 7157/7576 [00:56<00:01, 316.96combo/s]Evaluating successful pipeline combinations:  95%|█████████▍| 7189/7576 [00:56<00:01, 315.18combo/s]Evaluating successful pipeline combinations:  95%|█████████▌| 7222/7576 [00:56<00:01, 318.81combo/s]Evaluating successful pipeline combinations:  96%|█████████▌| 7255/7576 [00:56<00:01, 320.99combo/s]Evaluating successful pipeline combinations:  96%|█████████▌| 7288/7576 [00:57<00:00, 318.13combo/s]Evaluating successful pipeline combinations:  97%|█████████▋| 7320/7576 [00:57<00:00, 315.97combo/s]Evaluating successful pipeline combinations:  97%|█████████▋| 7352/7576 [00:57<00:00, 314.94combo/s]Evaluating successful pipeline combinations:  97%|█████████▋| 7384/7576 [00:57<00:00, 314.96combo/s]Evaluating successful pipeline combinations:  98%|█████████▊| 7416/7576 [00:57<00:00, 312.76combo/s]Evaluating successful pipeline combinations:  98%|█████████▊| 7448/7576 [00:57<00:00, 312.53combo/s]Evaluating successful pipeline combinations:  99%|█████████▊| 7480/7576 [00:57<00:00, 313.19combo/s]Evaluating successful pipeline combinations:  99%|█████████▉| 7512/7576 [00:57<00:00, 313.34combo/s]Evaluating successful pipeline combinations: 100%|█████████▉| 7546/7576 [00:57<00:00, 317.70combo/s]Evaluating successful pipeline combinations: 100%|██████████| 7576/7576 [00:58<00:00, 130.61combo/s]
+
+--- random audit after 50 successful combinations ---
+[correo_2015-09-11_1] config=3 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 100 successful combinations ---
+[correo_2015-09-11_1] config=6 | layout=none | detector=None | binarization=adaptive_mean | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 150 successful combinations ---
+[correo_2015-09-11_1] config=9 | layout=none | detector=None | binarization=basic | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 200 successful combinations ---
+[correo_2015-09-11_1] config=12 | layout=none | detector=None | binarization=niblack | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 250 successful combinations ---
+[correo_2015-09-11_1] config=15 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 300 successful combinations ---
+[correo_2015-09-11_1] config=19 | layout=none | detector=None | binarization=otsu | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 350 successful combinations ---
+[correo_2015-09-11_1] config=23 | layout=none | detector=None | binarization=basic | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 400 successful combinations ---
+[correo_2015-09-11_1] config=26 | layout=none | detector=None | binarization=niblack | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 450 successful combinations ---
+[correo_2015-09-11_1] config=29 | layout=none | detector=None | binarization=none_color | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 500 successful combinations ---
+[correo_2015-09-11_1] config=32 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 550 successful combinations ---
+[correo_2015-09-11_1] config=35 | layout=none | detector=None | binarization=otsu | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 600 successful combinations ---
+[correo_2015-09-11_1] config=38 | layout=none | detector=None | binarization=yannihorne | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 650 successful combinations ---
+[correo_2015-09-11_1] config=42 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 700 successful combinations ---
+[correo_2015-09-11_1] config=45 | layout=none | detector=None | binarization=none_color | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 750 successful combinations ---
+[correo_2015-09-11_1] config=49 | layout=none | detector=None | binarization=basic | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 800 successful combinations ---
+[correo_2015-09-11_1] config=52 | layout=none | detector=None | binarization=niblack | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 850 successful combinations ---
+[correo_2016-10-11_16] config=1 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 900 successful combinations ---
+[correo_2016-10-11_16] config=5 | layout=none | detector=None | binarization=basic | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 950 successful combinations ---
+[correo_2016-10-11_16] config=8 | layout=none | detector=None | binarization=otsu | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 1,000 successful combinations ---
+[correo_2016-10-11_16] config=12 | layout=none | detector=None | binarization=niblack | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 1,050 successful combinations ---
+[correo_2016-10-11_16] config=16 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 1,100 successful combinations ---
+[correo_2016-10-11_16] config=20 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 1,150 successful combinations ---
+[correo_2016-10-11_16] config=23 | layout=none | detector=None | binarization=none_color | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 1,200 successful combinations ---
+[correo_2016-10-11_16] config=27 | layout=none | detector=None | binarization=adaptive_mean | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 1,250 successful combinations ---
+[correo_2016-10-11_16] config=30 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 1,300 successful combinations ---
+[correo_2016-10-11_16] config=34 | layout=none | detector=None | binarization=basic | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 1,350 successful combinations ---
+[correo_2016-10-11_16] config=37 | layout=none | detector=None | binarization=otsu | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 1,400 successful combinations ---
+[correo_2016-10-11_16] config=41 | layout=none | detector=None | binarization=niblack | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 1,450 successful combinations ---
+[correo_2016-10-11_16] config=45 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 1,500 successful combinations ---
+[correo_2016-10-11_16] config=48 | layout=none | detector=None | binarization=otsu | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 1,550 successful combinations ---
+[correo_2016-10-11_16] config=52 | layout=none | detector=None | binarization=niblack | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 1,600 successful combinations ---
+[correo_2018-03-19_1] config=2 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 1,650 successful combinations ---
+[correo_2018-03-19_1] config=5 | layout=none | detector=None | binarization=niblack | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 1,700 successful combinations ---
+[correo_2018-03-19_1] config=8 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 1,750 successful combinations ---
+[correo_2018-03-19_1] config=12 | layout=none | detector=None | binarization=adaptive_mean | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 1,800 successful combinations ---
+[correo_2018-03-19_1] config=15 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 1,850 successful combinations ---
+[correo_2018-03-19_1] config=19 | layout=none | detector=None | binarization=otsu | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 1,900 successful combinations ---
+[correo_2018-03-19_1] config=23 | layout=none | detector=None | binarization=niblack | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 1,950 successful combinations ---
+[correo_2018-03-19_1] config=27 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 2,000 successful combinations ---
+[correo_2018-03-19_1] config=30 | layout=none | detector=None | binarization=adaptive_mean | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 2,050 successful combinations ---
+[correo_2018-03-19_1] config=33 | layout=none | detector=None | binarization=basic | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 2,100 successful combinations ---
+[correo_2018-03-19_1] config=36 | layout=none | detector=None | binarization=niblack | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 2,150 successful combinations ---
+[correo_2018-03-19_1] config=39 | layout=none | detector=None | binarization=none_color | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 2,200 successful combinations ---
+[correo_2018-03-19_1] config=42 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 2,250 successful combinations ---
+[correo_2018-03-19_1] config=46 | layout=none | detector=None | binarization=yannihorne | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 2,300 successful combinations ---
+[correo_2018-03-19_1] config=50 | layout=none | detector=None | binarization=basic | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 2,350 successful combinations ---
+[correo_2018-03-19_1] config=53 | layout=none | detector=None | binarization=niblack | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 2,400 successful combinations ---
+[correo_2020-04-23_9] config=2 | layout=none | detector=None | binarization=otsu | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 2,450 successful combinations ---
+[correo_2020-04-23_9] config=6 | layout=none | detector=None | binarization=niblack | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 2,500 successful combinations ---
+[correo_2020-04-23_9] config=10 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 2,550 successful combinations ---
+[correo_2020-04-23_9] config=13 | layout=none | detector=None | binarization=none_color | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 2,600 successful combinations ---
+[correo_2020-04-23_9] config=17 | layout=none | detector=None | binarization=adaptive_mean | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 2,650 successful combinations ---
+[correo_2020-04-23_9] config=21 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 2,700 successful combinations ---
+[correo_2020-04-23_9] config=25 | layout=none | detector=None | binarization=basic | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 2,750 successful combinations ---
+[correo_2020-04-23_9] config=28 | layout=none | detector=None | binarization=otsu | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 2,800 successful combinations ---
+[correo_2020-04-23_9] config=32 | layout=none | detector=None | binarization=niblack | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 2,850 successful combinations ---
+[correo_2020-04-23_9] config=36 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 2,900 successful combinations ---
+[correo_2020-04-23_9] config=39 | layout=none | detector=None | binarization=none_color | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 2,950 successful combinations ---
+[correo_2020-04-23_9] config=43 | layout=none | detector=None | binarization=adaptive_mean | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 3,000 successful combinations ---
+[correo_2020-04-23_9] config=47 | layout=none | detector=None | binarization=basic | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 3,050 successful combinations ---
+[correo_2020-04-23_9] config=51 | layout=none | detector=None | binarization=adaptive_mean | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 3,100 successful combinations ---
+[correo_2020-08-03_1] config=0 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 3,150 successful combinations ---
+[correo_2020-08-03_1] config=3 | layout=none | detector=None | binarization=otsu | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 3,200 successful combinations ---
+[correo_2020-08-03_1] config=6 | layout=none | detector=None | binarization=yannihorne | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 3,250 successful combinations ---
+[correo_2020-08-03_1] config=10 | layout=none | detector=None | binarization=adaptive_mean | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 3,300 successful combinations ---
+[correo_2020-08-03_1] config=13 | layout=none | detector=None | binarization=basic | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 3,350 successful combinations ---
+[correo_2020-08-03_1] config=16 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 3,400 successful combinations ---
+[correo_2020-08-03_1] config=21 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 3,450 successful combinations ---
+[correo_2020-08-03_1] config=24 | layout=none | detector=None | binarization=adaptive_mean | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 3,500 successful combinations ---
+[correo_2020-08-03_1] config=27 | layout=none | detector=None | binarization=basic | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 3,550 successful combinations ---
+[correo_2020-08-03_1] config=30 | layout=none | detector=None | binarization=niblack | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 3,600 successful combinations ---
+[correo_2020-08-03_1] config=33 | layout=none | detector=None | binarization=none_color | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 3,650 successful combinations ---
+[correo_2020-08-03_1] config=36 | layout=none | detector=None | binarization=otsu | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 3,700 successful combinations ---
+[correo_2020-08-03_1] config=40 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 3,750 successful combinations ---
+[correo_2020-08-03_1] config=43 | layout=none | detector=None | binarization=basic | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 3,800 successful combinations ---
+[correo_2020-08-03_1] config=47 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 3,850 successful combinations ---
+[correo_2020-08-03_1] config=50 | layout=none | detector=None | binarization=otsu | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 3,900 successful combinations ---
+[correo_2020-08-03_1] config=53 | layout=none | detector=None | binarization=yannihorne | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 3,950 successful combinations ---
+[correo_2021-04-23_3] config=3 | layout=none | detector=None | binarization=niblack | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 4,000 successful combinations ---
+[correo_2021-04-23_3] config=7 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 4,050 successful combinations ---
+[correo_2021-04-23_3] config=10 | layout=none | detector=None | binarization=none_color | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 4,100 successful combinations ---
+[correo_2021-04-23_3] config=14 | layout=none | detector=None | binarization=adaptive_mean | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 4,150 successful combinations ---
+[correo_2021-04-23_3] config=17 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 4,200 successful combinations ---
+[correo_2021-04-23_3] config=22 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 4,250 successful combinations ---
+[correo_2021-04-23_3] config=25 | layout=none | detector=None | binarization=none_color | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 4,300 successful combinations ---
+[correo_2021-04-23_3] config=29 | layout=none | detector=None | binarization=adaptive_mean | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 4,350 successful combinations ---
+[correo_2021-04-23_3] config=32 | layout=none | detector=None | binarization=none_color | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 4,400 successful combinations ---
+[correo_2021-04-23_3] config=35 | layout=none | detector=None | binarization=otsu | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 4,450 successful combinations ---
+[correo_2021-04-23_3] config=39 | layout=none | detector=None | binarization=basic | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 4,500 successful combinations ---
+[correo_2021-04-23_3] config=42 | layout=none | detector=None | binarization=otsu | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 4,550 successful combinations ---
+[correo_2021-04-23_3] config=47 | layout=none | detector=None | binarization=basic | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 4,600 successful combinations ---
+[correo_2021-04-23_3] config=51 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 4,650 successful combinations ---
+[correo_2021-05-03_20] config=0 | layout=none | detector=None | binarization=none_color | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 4,700 successful combinations ---
+[correo_2021-05-03_20] config=4 | layout=none | detector=None | binarization=adaptive_mean | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 4,750 successful combinations ---
+[correo_2021-05-03_20] config=7 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 4,800 successful combinations ---
+[correo_2021-05-03_20] config=11 | layout=none | detector=None | binarization=basic | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 4,850 successful combinations ---
+[correo_2021-05-03_20] config=14 | layout=none | detector=None | binarization=otsu | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 4,900 successful combinations ---
+[correo_2021-05-03_20] config=18 | layout=none | detector=None | binarization=otsu | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 4,950 successful combinations ---
+[correo_2021-05-03_20] config=23 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 5,000 successful combinations ---
+[correo_2021-05-03_20] config=26 | layout=none | detector=None | binarization=none_color | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 5,050 successful combinations ---
+[correo_2021-05-03_20] config=30 | layout=none | detector=None | binarization=adaptive_mean | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 5,100 successful combinations ---
+[correo_2021-05-03_20] config=33 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 5,150 successful combinations ---
+[correo_2021-05-03_20] config=37 | layout=none | detector=None | binarization=basic | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 5,200 successful combinations ---
+[correo_2021-05-03_20] config=40 | layout=none | detector=None | binarization=otsu | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 5,250 successful combinations ---
+[correo_2021-05-03_20] config=44 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 5,300 successful combinations ---
+[correo_2021-05-03_20] config=49 | layout=none | detector=None | binarization=basic | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 5,350 successful combinations ---
+[correo_2021-05-03_20] config=52 | layout=none | detector=None | binarization=otsu | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 5,400 successful combinations ---
+[correo_2022-11-05_5] config=2 | layout=none | detector=None | binarization=niblack | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 5,450 successful combinations ---
+[correo_2022-11-05_5] config=6 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 5,500 successful combinations ---
+[correo_2022-11-05_5] config=9 | layout=none | detector=None | binarization=none_color | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 5,550 successful combinations ---
+[correo_2022-11-05_5] config=13 | layout=none | detector=None | binarization=adaptive_mean | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 5,600 successful combinations ---
+[correo_2022-11-05_5] config=16 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 5,650 successful combinations ---
+[correo_2022-11-05_5] config=21 | layout=none | detector=None | binarization=adaptive_mean | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 5,700 successful combinations ---
+[correo_2022-11-05_5] config=24 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 5,750 successful combinations ---
+[correo_2022-11-05_5] config=28 | layout=none | detector=None | binarization=basic | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 5,800 successful combinations ---
+[correo_2022-11-05_5] config=31 | layout=none | detector=None | binarization=otsu | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 5,850 successful combinations ---
+[correo_2022-11-05_5] config=35 | layout=none | detector=None | binarization=niblack | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 5,900 successful combinations ---
+[correo_2022-11-05_5] config=39 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 5,950 successful combinations ---
+[correo_2022-11-05_5] config=42 | layout=none | detector=None | binarization=none_color | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 6,000 successful combinations ---
+[correo_2022-11-05_5] config=47 | layout=none | detector=None | binarization=adaptive_mean | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 6,050 successful combinations ---
+[correo_2022-11-05_5] config=51 | layout=none | detector=None | binarization=adaptive_mean | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 6,100 successful combinations ---
+[correo_2022-11-23_20] config=0 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 6,150 successful combinations ---
+[correo_2022-11-23_20] config=4 | layout=none | detector=None | binarization=basic | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 6,200 successful combinations ---
+[correo_2022-11-23_20] config=7 | layout=none | detector=None | binarization=otsu | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 6,250 successful combinations ---
+[correo_2022-11-23_20] config=11 | layout=none | detector=None | binarization=niblack | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 6,300 successful combinations ---
+[correo_2022-11-23_20] config=15 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 6,350 successful combinations ---
+[correo_2022-11-23_20] config=18 | layout=none | detector=None | binarization=yannihorne | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 6,400 successful combinations ---
+[correo_2022-11-23_20] config=22 | layout=none | detector=None | binarization=otsu | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 6,450 successful combinations ---
+[correo_2022-11-23_20] config=26 | layout=none | detector=None | binarization=niblack | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 6,500 successful combinations ---
+[correo_2022-11-23_20] config=30 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 6,550 successful combinations ---
+[correo_2022-11-23_20] config=33 | layout=none | detector=None | binarization=none_color | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 6,600 successful combinations ---
+[correo_2022-11-23_20] config=37 | layout=none | detector=None | binarization=adaptive_mean | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 6,650 successful combinations ---
+[correo_2022-11-23_20] config=40 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 6,700 successful combinations ---
+[correo_2022-11-23_20] config=44 | layout=none | detector=None | binarization=basic | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 6,750 successful combinations ---
+[correo_2022-11-23_20] config=48 | layout=none | detector=None | binarization=niblack | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 6,800 successful combinations ---
+[correo_2022-11-23_20] config=52 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 6,850 successful combinations ---
+[correo_2025-08-04_10] config=1 | layout=none | detector=None | binarization=none_color | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 6,900 successful combinations ---
+[correo_2025-08-04_10] config=5 | layout=none | detector=None | binarization=adaptive_mean | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 6,950 successful combinations ---
+[correo_2025-08-04_10] config=8 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 7,000 successful combinations ---
+[correo_2025-08-04_10] config=12 | layout=none | detector=None | binarization=basic | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 7,050 successful combinations ---
+[correo_2025-08-04_10] config=15 | layout=none | detector=None | binarization=otsu | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 7,100 successful combinations ---
+[correo_2025-08-04_10] config=19 | layout=none | detector=None | binarization=otsu | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 7,150 successful combinations ---
+[correo_2025-08-04_10] config=23 | layout=none | detector=None | binarization=none_color | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 7,200 successful combinations ---
+[correo_2025-08-04_10] config=27 | layout=none | detector=None | binarization=adaptive_mean | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 7,250 successful combinations ---
+[correo_2025-08-04_10] config=30 | layout=none | detector=None | binarization=none_grayscale | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 7,300 successful combinations ---
+[correo_2025-08-04_10] config=33 | layout=none | detector=None | binarization=yannihorne | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 7,350 successful combinations ---
+[correo_2025-08-04_10] config=37 | layout=none | detector=None | binarization=basic | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 7,400 successful combinations ---
+[correo_2025-08-04_10] config=40 | layout=none | detector=None | binarization=otsu | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 7,450 successful combinations ---
+[correo_2025-08-04_10] config=44 | layout=none | detector=None | binarization=niblack | ocr=docling_easyocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 7,500 successful combinations ---
+[correo_2025-08-04_10] config=48 | layout=none | detector=None | binarization=niblack | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+--- random audit after 7,550 successful combinations ---
+[correo_2025-08-04_10] config=52 | layout=none | detector=None | binarization=adaptive_gaussian | ocr=docling_rapidocr | llm=llama
+No alignable article pair in this combination.
+
+Article metrics -> data/corpus_construction/evaluate_extraction/results/correo/results_none_llama.csv
+Page metrics    -> data/corpus_construction/evaluate_extraction/results/correo/results_none_llama_page_metrics.csv
+Total rows: article=26,057, page=7,576
+Successful pipeline combinations evaluated: 7,576
+>>> COMPLETED: correo / llama
+
+------------------------------------------------------------
+LLM: mistral
+------------------------------------------------------------
+[correo_2015-09-11_1] success=320 | failure=0
+[correo_2016-10-11_16] success=1,147 | failure=0
+[correo_2018-03-19_1] success=322 | failure=0
+[correo_2020-04-23_9] success=740 | failure=0
+[correo_2020-08-03_1] success=483 | failure=0
+[correo_2021-04-23_3] success=622 | failure=0
+[correo_2021-05-03_20] success=739 | failure=0
+[correo_2022-11-05_5] success=761 | failure=0
+[correo_2022-11-23_20] success=694 | failure=0
+[correo_2025-08-04_10] success=802 | failure=0
+Evaluating successful pipeline combinations:   0%|          | 0/4517 [00:00<?, ?combo/s]Evaluating successful pipeline combinations:   1%|▏         | 57/4517 [00:00<00:07, 569.96combo/s]Evaluating successful pipeline combinations:   3%|▎         | 135/4517 [00:00<00:06, 683.98combo/s]Evaluating successful pipeline combinations:   5%|▍         | 216/4517 [00:00<00:05, 740.33combo/s]Evaluating successful pipeline combinations:   6%|▋         | 289/4517 [00:20<00:05, 740.33combo/s]Evaluating successful pipeline combinations:   6%|▋         | 290/4517 [00:20<07:26,  9.46combo/s] Evaluating successful pipeline combinations:   6%|▋         | 291/4517 [00:20<07:51,  8.97combo/s]Evaluating successful pipeline combinations:   7%|▋         | 336/4517 [00:31<10:38,  6.55combo/s]Evaluating successful pipeline combinations:   7%|▋         | 337/4517 [00:31<10:45,  6.48combo/s]Evaluating successful pipeline combinations:   8%|▊         | 366/4517 [00:42<14:50,  4.66combo/s]Evaluating successful pipeline combinations:   8%|▊         | 367/4517 [00:42<14:54,  4.64combo/s]Evaluating successful pipeline combinations:   9%|▊         | 387/4517 [00:51<19:04,  3.61combo/s]Evaluating successful pipeline combinations:   9%|▉         | 400/4517 [00:54<18:19,  3.74combo/s]Evaluating successful pipeline combinations:   9%|▉         | 409/4517 [00:56<18:22,  3.73combo/s]Evaluating successful pipeline combinations:   9%|▉         | 416/4517 [00:58<18:49,  3.63combo/s]Evaluating successful pipeline combinations:   9%|▉         | 421/4517 [01:00<20:08,  3.39combo/s]Evaluating successful pipeline combinations:   9%|▉         | 425/4517 [01:05<28:39,  2.38combo/s]Evaluating successful pipeline combinations:   9%|▉         | 428/4517 [01:06<28:27,  2.39combo/s]Evaluating successful pipeline combinations:  10%|▉         | 430/4517 [01:06<25:58,  2.62combo/s]Evaluating successful pipeline combinations:  10%|▉         | 432/4517 [01:09<33:22,  2.04combo/s]Evaluating successful pipeline combinations:  10%|▉         | 435/4517 [01:10<31:09,  2.18combo/s]Evaluating successful pipeline combinations:  10%|▉         | 436/4517 [01:11<34:41,  1.96combo/s]Evaluating successful pipeline combinations:  10%|▉         | 437/4517 [01:12<35:52,  1.90combo/s]Evaluating successful pipeline combinations:  10%|▉         | 439/4517 [01:13<40:02,  1.70combo/s]Evaluating successful pipeline combinations:  10%|▉         | 440/4517 [01:14<47:39,  1.43combo/s]Evaluating successful pipeline combinations:  10%|▉         | 442/4517 [01:15<38:56,  1.74combo/s]Evaluating successful pipeline combinations:  10%|▉         | 444/4517 [01:15<32:03,  2.12combo/s]Evaluating successful pipeline combinations:  10%|▉         | 445/4517 [01:16<28:54,  2.35combo/s]Evaluating successful pipeline combinations:  10%|▉         | 447/4517 [01:17<30:23,  2.23combo/s]Evaluating successful pipeline combinations:  10%|▉         | 448/4517 [01:18<37:12,  1.82combo/s]Evaluating successful pipeline combinations:  10%|▉         | 449/4517 [01:19<43:27,  1.56combo/s]Evaluating successful pipeline combinations:  10%|▉         | 450/4517 [01:19<48:24,  1.40combo/s]Evaluating successful pipeline combinations:  10%|▉         | 451/4517 [01:21<54:22,  1.25combo/s]Evaluating successful pipeline combinations:  10%|█         | 456/4517 [01:22<28:18,  2.39combo/s]Evaluating successful pipeline combinations:  10%|█         | 458/4517 [01:22<27:16,  2.48combo/s]Evaluating successful pipeline combinations:  10%|█         | 465/4517 [01:24<22:37,  2.99combo/s]Evaluating successful pipeline combinations:  10%|█         | 466/4517 [01:25<27:55,  2.42combo/s]Evaluating successful pipeline combinations:  10%|█         | 468/4517 [01:27<30:28,  2.21combo/s]Evaluating successful pipeline combinations:  10%|█         | 470/4517 [01:27<30:47,  2.19combo/s]Evaluating successful pipeline combinations:  10%|█         | 472/4517 [01:28<30:56,  2.18combo/s]Evaluating successful pipeline combinations:  10%|█         | 474/4517 [01:30<36:49,  1.83combo/s]Evaluating successful pipeline combinations:  11%|█         | 478/4517 [01:30<22:32,  2.99combo/s]Evaluating successful pipeline combinations:  11%|█         | 479/4517 [01:30<21:08,  3.18combo/s]

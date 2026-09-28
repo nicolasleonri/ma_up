@@ -599,6 +599,13 @@ class _BaseLLMExtractor:
             if i in valid_indices:
                 raw_list = next(valid_iter)
                 raw_text = raw_list[0] if raw_list else ""
+
+                print("\n" + "=" * 100)
+                print("RAW LLM OUTPUT")
+                print("=" * 100)
+                print(raw_text)
+                print("=" * 100 + "\n")
+
                 articles = self._dspy_extractor._parse_articles(raw_text)
                 results.append(ExtractionResult(
                     articles=articles,
@@ -656,8 +663,9 @@ class DeepSeekExtractor(_BaseLLMExtractor):
         self._lm._params = SamplingParams(
             temperature=0.0,
             max_tokens=self.max_new_tokens,
-            stop=["</think>"],
-            include_stop_str_in_output=False,
+            # stop=["</think>"],
+            # include_stop_str_in_output=False,
+            thinking_token_budget=0, # TODO: Test without
         )
 
 

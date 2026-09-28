@@ -1011,6 +1011,7 @@ def evaluate(
         n_success = int(row.get("success", 0))
         n_failure = int(row.get("failure", 0))
 
+        # TODO: Check if failures is working. So far, only 0.
         print(
             f"[{image_stem}] "
             f"success={n_success:,} | "
@@ -1592,14 +1593,10 @@ def main():
     # Output paths
     # -----------------------------------------------------
     output_path = Path(args.output_csv)
+    results_stem = Path(args.results).stem  # e.g. "results_none_mistral"
 
-    page_stem = output_path.stem
-    if page_stem.endswith("_results"):
-        page_stem = page_stem[:-len("_results")]
-
-    page_output = output_path.with_name(
-        f"{page_stem}_page_metrics.csv"
-    )
+    article_output = output_path.with_name(f"{results_stem}.csv")
+    page_output = output_path.with_name(f"{results_stem}_page_metrics.csv")
 
     # -----------------------------------------------------
     # Evaluate + stream outputs
@@ -1612,12 +1609,12 @@ def main():
     ) = evaluate(
         results_df,
         gold_df,
-        output_path,
+        article_output,
         page_output,
     )
 
     print()
-    print(f"Article metrics -> {output_path}")
+    print(f"Article metrics -> {article_output}")
     print(f"Page metrics    -> {page_output}")
     print(
         f"Total rows: article={article_count:,}, "

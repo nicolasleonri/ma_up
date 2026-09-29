@@ -39,18 +39,18 @@ for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
     done
 done
 
-# # for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
-# for newspaper in elcomercio; do
-#     echo "===== NEWSPAPER: ${newspaper} ====="
-#     for llm in qwen mistral llama deepseek; do
-#         echo "===== LLM: ${llm} ====="
-#         python3 -m src.workflows.llm_extraction \
-#             --ocr-parquet data/corpus_construction/ocr_extraction/${newspaper}/none/ocr.parquet \
-#             --output-parquet data/corpus_construction/llm_extraction/${newspaper}/results_none_${llm}.parquet \
-#             --llms ${llm}
-#         echo ""
-#     done
-# done
+# for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
+for newspaper in elcomercio; do
+    echo "===== NEWSPAPER: ${newspaper} ====="
+    for llm in deepseek; do
+        echo "===== LLM: ${llm} ====="
+        python3 -m src.workflows.llm_extraction \
+            --ocr-parquet data/corpus_construction/ocr_extraction/${newspaper}/none/ocr.parquet \
+            --output-parquet data/corpus_construction/llm_extraction/${newspaper}/results_none_${llm}.parquet \
+            --llms ${llm}
+        echo ""
+    done
+done
 
 ############# Specs (1 image): 1x5GB; 1xh100 and 10min
 # TIME per model per newspaper (min): 40min*4*2=320min (5,33h)
@@ -87,13 +87,13 @@ done
 # python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/test_run/none/binarization.parquet --binarized-dir data/corpus_construction/binarize/test_run/none/ --output-dir data/corpus_construction/ocr_extraction/test_run/none/
 # ############# Specs (1 image): ?
 
-####### 2. Layout #######
-module purge
-module add virtualenv/20.32.0-GCCcore-14.3.0
-module add Python/3.13.5-GCCcore-14.3.0
-export HF_HOME=/scratch/nicolasal97/.cache/huggingface
-source venv/corpus_construction/layout_detection/bin/activate
-python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/correo --output-dir data/corpus_construction/layout_detection/correo
+# ####### 2. Layout #######
+# module purge
+# module add virtualenv/20.32.0-GCCcore-14.3.0
+# module add Python/3.13.5-GCCcore-14.3.0
+# export HF_HOME=/scratch/nicolasal97/.cache/huggingface
+# source venv/corpus_construction/layout_detection/bin/activate
+# python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/correo --output-dir data/corpus_construction/layout_detection/correo
 # python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/elcomercio --output-dir data/corpus_construction/layout_detection/elcomercio
 # python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/gestion --output-dir data/corpus_construction/layout_detection/gestion
 # python3 -m src.workflows.layout_detection --preprocessed-dir data/corpus_construction/enhance_images/results/ojo --output-dir data/corpus_construction/layout_detection/ojo

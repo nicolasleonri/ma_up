@@ -8,8 +8,8 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
-#SBATCH --mem-per-cpu=1GB
-#SBATCH --time=20:00:00
+#SBATCH --mem-per-cpu=10GB
+#SBATCH --time=10:00:00
 
 # set -euo pipefail
 
@@ -21,7 +21,9 @@ module add virtualenv/20.32.0-GCCcore-14.3.0
 module add Python/3.13.5-GCCcore-14.3.0
 source venv/corpus_construction/evaluate_extraction/bin/activate
 
-for newspaper in correo gestion ojo peru21 publimetro trome elcomercio; do
+for newspaper in gestion ojo peru21 publimetro trome elcomercio; do
+# TODO: Redo correo layout parsing ?
+# for newspaper in correo gestion ojo peru21 publimetro trome elcomercio; do
     echo ""
     echo "============================================================"
     echo "NEWSPAPER: ${newspaper}"
@@ -35,13 +37,22 @@ for newspaper in correo gestion ojo peru21 publimetro trome elcomercio; do
         echo "LLM: ${llm}"
         echo "------------------------------------------------------------"
 
+        # python3 -m src.workflows.evaluate_extraction \
+        #     --results "data/corpus_construction/llm_extraction/${newspaper}/results_none_${llm}.parquet" \
+        #     --gold "data/corpus_construction/evaluate_extraction/${newspaper}.csv" \
+        #     --output-csv "data/corpus_construction/evaluate_extraction/results/${newspaper}/${llm}.csv" \
+        #     --enhance-parquet "data/corpus_construction/enhance_images/results/${newspaper}/enhance_images.parquet" \
+        #     --binarize-parquet "data/corpus_construction/binarize/${newspaper}/none/binarization.parquet" \
+        #     --ocr-parquet "data/corpus_construction/ocr_extraction/${newspaper}/none/ocr.parquet" \
+
         python3 -m src.workflows.evaluate_extraction \
-            --results "data/corpus_construction/llm_extraction/${newspaper}/results_none_${llm}.parquet" \
+            --results "data/corpus_construction/llm_extraction/${newspaper}/results_cropped_${llm}.parquet" \
             --gold "data/corpus_construction/evaluate_extraction/${newspaper}.csv" \
             --output-csv "data/corpus_construction/evaluate_extraction/results/${newspaper}/${llm}.csv" \
             --enhance-parquet "data/corpus_construction/enhance_images/results/${newspaper}/enhance_images.parquet" \
             --binarize-parquet "data/corpus_construction/binarize/${newspaper}/none/binarization.parquet" \
-            --ocr-parquet "data/corpus_construction/ocr_extraction/${newspaper}/none/ocr.parquet"
+            --ocr-parquet "data/corpus_construction/ocr_extraction/${newspaper}/none/ocr.parquet" \
+            --layout-parquet "data/corpus_construction/layout_detection/${newspaper}/layout_detection.parquet"
 
         if [ $? -ne 0 ]; then
             echo "!!! FAILED: ${newspaper} / ${llm}"

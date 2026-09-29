@@ -1,0 +1,276 @@
+IMAGE PREPROCESSING CONFIGURATIONS
+=================================
+
+Total configurations: 54
+Pipeline order: Contrast -> Denoising -> Sharpening
+
+config_000
+  contrast:    none
+  denoising:   none
+  sharpening:  none
+
+config_001
+  contrast:    none
+  denoising:   none
+  sharpening:  unsharp_masking
+
+config_002
+  contrast:    none
+  denoising:   none
+  sharpening:  stroke_width_enhancement
+
+config_003
+  contrast:    none
+  denoising:   mean_filter
+  sharpening:  none
+
+config_004
+  contrast:    none
+  denoising:   mean_filter
+  sharpening:  unsharp_masking
+
+config_005
+  contrast:    none
+  denoising:   mean_filter
+  sharpening:  stroke_width_enhancement
+
+config_006
+  contrast:    none
+  denoising:   gaussian_filter
+  sharpening:  none
+
+config_007
+  contrast:    none
+  denoising:   gaussian_filter
+  sharpening:  unsharp_masking
+
+config_008
+  contrast:    none
+  denoising:   gaussian_filter
+  sharpening:  stroke_width_enhancement
+
+config_009
+  contrast:    none
+  denoising:   median_filter
+  sharpening:  none
+
+config_010
+  contrast:    none
+  denoising:   median_filter
+  sharpening:  unsharp_masking
+
+config_011
+  contrast:    none
+  denoising:   median_filter
+  sharpening:  stroke_width_enhancement
+
+config_012
+  contrast:    none
+  denoising:   conservative_filter
+  sharpening:  none
+
+config_013
+  contrast:    none
+  denoising:   conservative_filter
+  sharpening:  unsharp_masking
+
+config_014
+  contrast:    none
+  denoising:   conservative_filter
+  sharpening:  stroke_width_enhancement
+
+config_015
+  contrast:    none
+  denoising:   laplacian_filter
+  sharpening:  none
+
+config_016
+  contrast:    none
+  denoising:   laplacian_filter
+  sharpening:  unsharp_masking
+
+config_017
+  contrast:    none
+  denoising:   laplacian_filter
+  sharpening:  stroke_width_enhancement
+
+config_018
+  contrast:    none
+  denoising:   frequency_filter
+  sharpening:  none
+
+config_019
+  contrast:    none
+  denoising:   frequency_filter
+  sharpening:  unsharp_masking
+
+config_020
+  contrast:    none
+  denoising:   frequency_filter
+  sharpening:  stroke_width_enhancement
+
+config_021
+  contrast:    none
+  denoising:   crimmins_speckle_removal
+  sharpening:  none
+
+config_022
+  contrast:    none
+  denoising:   crimmins_speckle_removal
+  sharpening:  unsharp_masking
+
+config_023
+  contrast:    none
+  denoising:   crimmins_speckle_removal
+  sharpening:  stroke_width_enhancement
+
+config_024
+  contrast:    none
+  denoising:   unsharp_filter
+  sharpening:  none
+
+config_025
+  contrast:    none
+  denoising:   unsharp_filter
+  sharpening:  unsharp_masking
+
+config_026
+  contrast:    none
+  denoising:   unsharp_filter
+  sharpening:  stroke_width_enhancement
+
+config_027
+  contrast:    clahe
+  denoising:   none
+  sharpening:  none
+
+config_028
+  contrast:    clahe
+  denoising:   none
+  sharpening:  unsharp_masking
+
+config_029
+  contrast:    clahe
+  denoising:   none
+  sharpening:  stroke_width_enhancement
+
+config_030
+  contrast:    clahe
+  denoising:   mean_filter
+  sharpening:  none
+
+config_031
+  contrast:    clahe
+  denoising:   mean_filter
+  sharpening:  unsharp_masking
+
+config_032
+  contrast:    clahe
+  denoising:   mean_filter
+  sharpening:  stroke_width_enhancement
+
+config_033
+  contrast:    clahe
+  denoising:   gaussian_filter
+  sharpening:  none
+
+config_034
+  contrast:    clahe
+  denoising:   gaussian_filter
+  sharpening:  unsharp_masking
+
+config_035
+  contrast:    clahe
+  denoising:   gaussian_filter
+  sharpening:  stroke_width_enhancement
+
+config_036
+  contrast:    clahe
+  denoising:   median_filter
+  sharpening:  none
+
+config_037
+  contrast:    clahe
+  denoising:   median_filter
+  sharpening:  unsharp_masking
+
+config_038
+  contrast:    clahe
+  denoising:   median_filter
+  sharpening:  stroke_width_enhancement
+
+config_039
+  contrast:    clahe
+  denoising:   conservative_filter
+  sharpening:  none
+
+config_040
+  contrast:    clahe
+  denoising:   conservative_filter
+  sharpening:  unsharp_masking
+
+config_041
+  contrast:    clahe
+  denoising:   conservative_filter
+  sharpening:  stroke_width_enhancement
+
+config_042
+  contrast:    clahe
+  denoising:   laplacian_filter
+  sharpening:  none
+
+config_043
+  contrast:    clahe
+  denoising:   laplacian_filter
+  sharpening:  unsharp_masking
+
+config_044
+  contrast:    clahe
+  denoising:   laplacian_filter
+  sharpening:  stroke_width_enhancement
+
+config_045
+  contrast:    clahe
+  denoising:   frequency_filter
+  sharpening:  none
+
+config_046
+  contrast:    clahe
+  denoising:   frequency_filter
+  sharpening:  unsharp_masking
+
+config_047
+  contrast:    clahe
+  denoising:   frequency_filter
+  sharpening:  stroke_width_enhancement
+
+config_048
+  contrast:    clahe
+  denoising:   crimmins_speckle_removal
+  sharpening:  none
+
+config_049
+  contrast:    clahe
+  denoising:   crimmins_speckle_removal
+  sharpening:  unsharp_masking
+
+config_050
+  contrast:    clahe
+  denoising:   crimmins_speckle_removal
+  sharpening:  stroke_width_enhancement
+
+config_051
+  contrast:    clahe
+  denoising:   unsharp_filter
+  sharpening:  none
+
+config_052
+  contrast:    clahe
+  denoising:   unsharp_filter
+  sharpening:  unsharp_masking
+
+config_053
+  contrast:    clahe
+  denoising:   unsharp_filter
+  sharpening:  stroke_width_enhancement
+

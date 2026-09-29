@@ -600,11 +600,11 @@ class _BaseLLMExtractor:
                 raw_list = next(valid_iter)
                 raw_text = raw_list[0] if raw_list else ""
 
-                print("\n" + "=" * 100)
-                print("RAW LLM OUTPUT")
-                print("=" * 100)
-                print(raw_text)
-                print("=" * 100 + "\n")
+                # print("\n" + "=" * 100)
+                # print("RAW LLM OUTPUT")
+                # print("=" * 100)
+                # print(raw_text)
+                # print("=" * 100 + "\n")
 
                 articles = self._dspy_extractor._parse_articles(raw_text)
                 results.append(ExtractionResult(
@@ -665,7 +665,7 @@ class DeepSeekExtractor(_BaseLLMExtractor):
             max_tokens=self.max_new_tokens,
             # stop=["</think>"],
             # include_stop_str_in_output=False,
-            thinking_token_budget=0, # TODO: Test without
+            # thinking_token_budget=0, # TODO: Test without
         )
 
 

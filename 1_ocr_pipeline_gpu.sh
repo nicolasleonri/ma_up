@@ -23,7 +23,8 @@ module add Python/3.11.3-GCCcore-12.3.0
 module load CUDA/12.1.1
 module load cuDNN/8.9.2.26-CUDA-12.1.1
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
-export HF_HOME=/scratch/nicolasal97/.cache/huggingface
+export HF_HOME=/cache/leonrios/hf_models
+export VLLM_USE_FLASHINFER_SAMPLER=0
 source venv/corpus_construction/llm_extraction/bin/activate
 
 for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do

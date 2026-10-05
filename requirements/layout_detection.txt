@@ -22,9 +22,9 @@ cuda-pathfinder==1.5.5
 cuda-toolkit==13.0.2
 cycler==0.12.1
 decorator==5.2.1
-distlib @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/distlib/distlib-0.4.0
+distlib 
 doclayout_yolo==0.0.4
-filelock @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/filelock/filelock-3.18.0
+filelock 
 fonttools==4.63.0
 frozenlist==1.8.0
 fsspec==2026.6.0
@@ -72,7 +72,7 @@ paddlepaddle==3.0.0
 paddlex==3.7.1
 pandas==3.0.3
 pillow==12.2.0
-platformdirs @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/platformdirs/platformdirs-4.3.8
+platformdirs 
 prettytable==3.18.0
 propcache==0.5.2
 protobuf==6.33.4
@@ -111,6 +111,6 @@ typing-inspection==0.4.2
 typing_extensions==4.15.0
 ujson==5.13.0
 urllib3==2.7.0
-virtualenv @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/virtualenv/virtualenv-20.32.0
+virtualenv 
 wcwidth==0.8.1
 yarl==1.24.2

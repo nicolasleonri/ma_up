@@ -66,7 +66,11 @@ echo "ALL EVALUATIONS FINISHED"
 echo "============================================================"
 
 ############# Specs (1 line): 1x500mB and 30min
-
+for n in correo elcomercio gestion ojo peru21 publimetro trome; do
+    for m in llama mistral qwen; do
+    pueue add -g nogpu -l "${n}_${m}" -- scripts/run_evaluate_extraction.sh $n $m
+    done
+done
 
 # ################# DONE ###################
 ###### 1. Enhancement #######
@@ -75,7 +79,7 @@ echo "============================================================"
 # module add Python/3.13.5-GCCcore-14.3.0
 # source venv/corpus_construction/enhance_images/bin/activate
 
-# # python3 -m src.workflows.enhance_images --input-dir data/corpus_construction/enhance_images/correo --output-dir data/corpus_construction/enhance_images/results/correo
+# python3 -m src.workflows.enhance_images --input-dir data/corpus_construction/enhance_images/correo --output-dir data/corpus_construction/enhance_images/results/correo
 # python3 -m src.workflows.enhance_images --input-dir data/corpus_construction/enhance_images/elcomercio --output-dir data/corpus_construction/enhance_images/results/elcomercio
 # python3 -m src.workflows.enhance_images --input-dir data/corpus_construction/enhance_images/gestion --output-dir data/corpus_construction/enhance_images/results/gestion
 # python3 -m src.workflows.enhance_images --input-dir data/corpus_construction/enhance_images/ojo --output-dir data/corpus_construction/enhance_images/results/ojo

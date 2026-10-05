@@ -73,11 +73,82 @@ uv pip install pkg --extra-index-url URL
 
 ## Cache
 
+uv keeps downloaded wheels and built packages in a cache. Nothing in it is required by an existing environment, so all of it is safe to delete.
+
+### Inspect
+
 ```bash
-uv cache dir
-uv cache clean
-export UV_CACHE_DIR=~/cache/uv     # move the cache
+# First run
+cd ~
+du -sh .[!.]* 2>/dev/null | sort -h | tail -20
+du -h --max-depth=2 ~/.cache 2>/dev/null | sort -h | tail -20
+du -h --max-depth=2 ~/.local 2>/dev/null | sort -h | tail -10
+
+uv cache dir                          # cache location (default ~/.cache/uv)
+du -sh $(uv cache dir)                # total size
+du -h --max-depth=2 $(uv cache dir) | sort -h | tail -20
 ```
+
+Large folders in `archive-v0/<hash>` are unpacked wheels (torch, `nvidia-*` CUDA libraries, vLLM, paddle). The hash names do not tell you which package is inside.
+
+### Clean
+
+```bash
+uv cache prune             # remove unused entries only (low risk)
+uv cache prune --ci        # also drop pre-built wheels, keep source-built ones
+uv cache clean             # remove everything
+uv cache clean <package>   # remove one package, e.g. torch
+```
+
+Rules:
+- Use the `uv cache` commands. Do not delete `archive-v0/<hash>` folders by hand.
+- Cost of cleaning: the next install downloads the packages again.
+- Existing environments keep working after `uv cache clean`.
+- Space returns only when the environments that hardlink the same files are deleted too.
+
+### Move or bypass
+
+```bash
+export UV_CACHE_DIR=~/cache/uv                  # move the cache
+echo 'export UV_CACHE_DIR=~/cache/uv' >> ~/.bashrc
+uv pip install pkg --no-cache                   # one install without the cache
+uv pip install pkg --refresh                    # revalidate cached metadata
+```
+
+### Hardlink warning
+
+```
+warning: Failed to hardlink files; falling back to full copy.
+```
+
+The cache and the environment are on different filesystems (for example cache on `/home`, venv on `/project`). uv copies the files instead. It works but uses double the space and is slower.
+
+```bash
+export UV_LINK_MODE=copy      # silence the warning
+```
+
+Fix: keep the cache and the venv on the same filesystem, or accept the copy.
+
+### Other caches that grow (not managed by uv)
+
+| Path | Content | Redirect |
+|---|---|---|
+| `~/.cache/huggingface` | HF models, datasets | `HF_HOME=~/cache/huggingface` |
+| `~/.cache/torch` | torch hub weights | `TORCH_HOME=~/cache/torch` |
+| `~/.cache/pip` | pip cache | `PIP_CACHE_DIR=~/cache/pip` |
+| `~/.cache/flashinfer` | compiled FlashInfer kernels | `XDG_CACHE_HOME=~/cache` |
+| `~/.paddlex`, `~/.paddleocr` | PaddleX, PaddleOCR models | none, delete or leave |
+| `~/.cache/datalab` | Surya models | `XDG_CACHE_HOME=~/cache` |
+| `~/.EasyOCR` | EasyOCR models | none, delete or leave |
+| `~/.local/share/uv/python` | uv-managed Python builds | `UV_PYTHON_INSTALL_DIR` |
+
+Check all sizes:
+
+```bash
+du -sh ~/.cache/* ~/.paddlex ~/.paddleocr ~/.EasyOCR ~/.local/share/uv 2>/dev/null | sort -h
+```
+
+A deleted model cache downloads again on the next run (for example 8 GiB for the DeepSeek 7B FP8 model).
 
 ## Maintenance
 

@@ -41,7 +41,7 @@ before loading the next model.
 
 import argparse
 import logging
-
+import os
 from src.corpus_construction.llm_extraction.pipeline import (
     LLMExtractionPipeline,
 )
@@ -110,8 +110,8 @@ def parse_args():
     parser.add_argument(
         "--gpu-memory-utilization",
         type=float,
-        default=0.90,
-        help="Fraction of GPU memory vLLM may reserve (default: 0.90).",
+        default=float(os.environ.get("GPU_MEM_UTIL", 0.4)),
+        help="Fraction of GPU memory vLLM may reserve (default: auto).",
     )
 
     parser.add_argument(

@@ -15,7 +15,7 @@ No vLLM server is required. DSPy receives a proper dspy.LM subclass
 so that optimization (BootstrapFewShot, MIPROv2) works correctly when
 fine-tuning against gold standards later.
 """
-
+import os
 import gc
 import json
 import re
@@ -346,7 +346,7 @@ class _BaseLLMExtractor:
         self,
         max_new_tokens: int = 4096,
         max_model_len: Optional[int] = None,
-        gpu_memory_utilization: float = 0.90,
+        gpu_memory_utilization: float = os.environ.get("GPU_MEM_UTIL", 0.4),
         tensor_parallel_size: int = 1,
         dtype: str = "auto",  # FP8 models carry their own quant config
         **engine_kwargs: Any,

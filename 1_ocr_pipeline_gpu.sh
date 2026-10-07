@@ -1,64 +1,90 @@
 #!/bin/bash
 #SBATCH --job-name=deepseek_extraction
-#SBATCH --output=logs/slurm/deepseek_extraction_%j.out
-#SBATCH --partition=scavenger
-#SBATCH --account=agfritz
-#SBATCH --qos=prio
+#SBATCH --chdir=/work/leonrios/ma_up
+#SBATCH --output=/work/leonrios/ma_up/logs/slurm/%x_%A_%a.out
+#SBATCH --partition=gpu
+#SBATCH --qos=normal
+#SBATCH --gres=gpu:a100_40gb:1
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2
-#SBATCH --gres=gpu:h100:1
-#SBATCH --mem-per-cpu=5GB
-#SBATCH --time=12:00:00
+#SBATCH --mem=10G
+#SBATCH --time=24:00:00
+#SBATCH --array=0-6%4
 
-# set -euo pipefail
-
-mkdir -p logs/slurm
-
-####### 5. LLM Extractor #######
+set -uo pipefail
 module purge
-module add GCC/12.3.0
-module add virtualenv/20.23.1-GCCcore-12.3.0
-module add Python/3.11.3-GCCcore-12.3.0
-module load CUDA/12.1.1
-module load cuDNN/8.9.2.26-CUDA-12.1.1
-export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
-export HF_HOME=/cache/leonrios/hf_models
-export VLLM_USE_FLASHINFER_SAMPLER=0
-source venv/corpus_construction/llm_extraction/bin/activate
 
-for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
-    echo "===== NEWSPAPER: ${newspaper} ====="
-    for llm in deepseek; do
-    # for llm in qwen mistral llama deepseek; do
-        echo "===== LLM: ${llm} ====="
-        python3 -m src.workflows.llm_extraction \
-            --ocr-parquet data/corpus_construction/ocr_extraction/${newspaper}/cropped/ocr.parquet \
-            --output-parquet data/corpus_construction/llm_extraction/${newspaper}/results_cropped_${llm}.parquet \
-            --llms ${llm}
-        echo ""
-    done
-done
+NEWSPAPERS=(correo elcomercio gestion ojo peru21 publimetro trome)
+NEWSPAPER=${NEWSPAPERS[$SLURM_ARRAY_TASK_ID]}
+VARIANT=none
+LLM=deepseek
+
+export HF_HOME=/work/leonrios/hf
+export HF_HUB_OFFLINE=1
+export VLLM_USE_FLASHINFER_SAMPLER=0
+export GPU_MEM_UTIL=0.9
+source /work/leonrios/ma_up/.venv/corpus_construction/llm_extraction/bin/activate
+
+echo "===== ${NEWSPAPER} | ${VARIANT} | ${LLM} | node $(hostname) ====="
+nvidia-smi --query-gpu=name,memory.total --format=csv
+
+python3 -m src.workflows.llm_extraction \
+  --ocr-parquet data/corpus_construction/ocr_extraction/${NEWSPAPER}/${VARIANT}/ocr.parquet \
+  --output-parquet data/corpus_construction/llm_extraction/${NEWSPAPER}/results_${VARIANT}_${LLM}.parquet \
+  --llms ${LLM} \
+  --gpu-memory-utilization 0.9
+
+############################################################################
+################################## DONE ####################################
+############################################################################
+# mkdir -p logs/slurm
+
+# ####### 5. LLM Extractor #######
+# module purge
+# module add GCC/12.3.0
+# module add virtualenv/20.23.1-GCCcore-12.3.0
+# module add Python/3.11.3-GCCcore-12.3.0
+# module load CUDA/12.1.1
+# module load cuDNN/8.9.2.26-CUDA-12.1.1
+# export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+# export HF_HOME=/work/leonrios/hf
+
+# /cache/leonrios/hf_models
+# export VLLM_USE_FLASHINFER_SAMPLER=0
+# source venv/corpus_construction/llm_extraction/bin/activate
 
 # for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
-for newspaper in elcomercio; do
-    echo "===== NEWSPAPER: ${newspaper} ====="
-    for llm in deepseek; do
-        echo "===== LLM: ${llm} ====="
-        python3 -m src.workflows.llm_extraction \
-            --ocr-parquet data/corpus_construction/ocr_extraction/${newspaper}/none/ocr.parquet \
-            --output-parquet data/corpus_construction/llm_extraction/${newspaper}/results_none_${llm}.parquet \
-            --llms ${llm}
-        echo ""
-    done
-done
+#     echo "===== NEWSPAPER: ${newspaper} ====="
+#     for llm in deepseek; do
+#     # for llm in qwen mistral llama deepseek; do
+#         echo "===== LLM: ${llm} ====="
+#         python3 -m src.workflows.llm_extraction \
+#             --ocr-parquet data/corpus_construction/ocr_extraction/${newspaper}/cropped/ocr.parquet \
+#             --output-parquet data/corpus_construction/llm_extraction/${newspaper}/results_cropped_${llm}.parquet \
+#             --llms ${llm}
+#         echo ""
+#     done
+# done
 
-############# Specs (1 image): 1x5GB; 1xh100 and 10min
+# # for newspaper in correo elcomercio gestion ojo peru21 publimetro trome; do
+# for newspaper in elcomercio; do
+#     echo "===== NEWSPAPER: ${newspaper} ====="
+#     for llm in deepseek; do
+#         echo "===== LLM: ${llm} ====="
+#         python3 -m src.workflows.llm_extraction \
+#             --ocr-parquet data/corpus_construction/ocr_extraction/${newspaper}/none/ocr.parquet \
+#             --output-parquet data/corpus_construction/llm_extraction/${newspaper}/results_none_${llm}.parquet \
+#             --llms ${llm}
+#         echo ""
+#     done
+# done
+
+# ############# Specs (1 image): 1x5GB; 1xh100 and 10min
 # TIME per model per newspaper (min): 40min*4*2=320min (5,33h)
 # TIME per model per newspaper (max): 80min*4*2=640min (10,66h)
 # find -type f \( -iname "*.parquet" -o -iname "*.txt" -o -iname "*.csv" \) -exec du -h {} + | sort -hr
 
-# ################# DONE ###################
 ####### VLM #######
 # module purge
 # module add virtualenv/20.23.1-GCCcore-12.3.0

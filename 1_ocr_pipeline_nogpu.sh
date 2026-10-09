@@ -1,78 +1,40 @@
 #!/bin/bash
-#SBATCH --job-name=evaluate_extraction
-#SBATCH --output=logs/slurm/evaluate_extraction_%j.out
-#SBATCH --partition=scavenger
-#SBATCH --account=agfritz
-#SBATCH --qos=prio
-
+#SBATCH --job-name=run_hpc_slow_nogpu
+#SBATCH --chdir=/work/leonrios/ma_up
+#SBATCH --output=/work/leonrios/ma_up/logs/slurm/%x_%A_%a.out
+#SBATCH --qos=normal
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=1
-#SBATCH --mem-per-cpu=8GB
-#SBATCH --time=24:00:00
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=5G
+#SBATCH --time=10:00:00
+#SBATCH --array=0-10%5
 
-# set -euo pipefail
-
-mkdir -p logs/slurm
-
-# ## 6. Evaluate
+set -uo pipefail
 module purge
-module add virtualenv/20.32.0-GCCcore-14.3.0
-module add Python/3.13.5-GCCcore-14.3.0
-source venv/corpus_construction/evaluate_extraction/bin/activate
 
-for newspaper in correo gestion ojo peru21 publimetro trome elcomercio; do
-    echo ""
-    echo "============================================================"
-    echo "NEWSPAPER: ${newspaper}"
-    echo "============================================================"
+NEWSPAPERS=(correo elcomercio gestion ojo peru21 publimetro trome)
+NEWSPAPER=${NEWSPAPERS[$SLURM_ARRAY_TASK_ID]}
+VARIANT=none
+LLM=deepseek
 
-    mkdir -p "data/corpus_construction/evaluate_extraction/results/${newspaper}"
+source /work/leonrios/ma_up/.venv/corpus_construction/../bin/activate
 
-    for llm in llama mistral qwen; do
-        echo ""
-        echo "------------------------------------------------------------"
-        echo "LLM: ${llm}"
-        echo "------------------------------------------------------------"
+echo "===== ${NEWSPAPER} | ${VARIANT} | ${LLM} | node $(hostname) ====="
+nvidia-smi --query-gpu=name,memory.total --format=csv
 
-        python3 -m src.workflows.evaluate_extraction \
-            --results "data/corpus_construction/llm_extraction/${newspaper}/results_none_${llm}.parquet" \
-            --gold "data/corpus_construction/evaluate_extraction/${newspaper}.csv" \
-            --output-csv "data/corpus_construction/evaluate_extraction/results/${newspaper}/${llm}.csv" \
-            --enhance-parquet "data/corpus_construction/enhance_images/results/${newspaper}/enhance_images.parquet" \
-            --binarize-parquet "data/corpus_construction/binarize/${newspaper}/none/binarization.parquet" \
-            --ocr-parquet "data/corpus_construction/ocr_extraction/${newspaper}/none/ocr.parquet" \
+python3 -m src.workflows. \
 
-        python3 -m src.workflows.evaluate_extraction \
-            --results "data/corpus_construction/llm_extraction/${newspaper}/results_cropped_${llm}.parquet" \
-            --gold "data/corpus_construction/evaluate_extraction/${newspaper}.csv" \
-            --output-csv "data/corpus_construction/evaluate_extraction/results/${newspaper}/${llm}.csv" \
-            --enhance-parquet "data/corpus_construction/enhance_images/results/${newspaper}/enhance_images.parquet" \
-            --binarize-parquet "data/corpus_construction/binarize/${newspaper}/none/binarization.parquet" \
-            --ocr-parquet "data/corpus_construction/ocr_extraction/${newspaper}/none/ocr.parquet" \
-            --layout-parquet "data/corpus_construction/layout_detection/${newspaper}/layout_detection.parquet"
+###############################################################################################################
+# ################# PUEUE ###################
+# for n in correo elcomercio gestion ojo peru21 publimetro trome; do
+#     for m in llama mistral qwen deepseek; do
+#     pueue add -g nogpu -l "${n}_${m}" -- scripts/run_evaluate_extraction.sh $n $m
+#     done
+# done
 
-        if [ $? -ne 0 ]; then
-            echo "!!! FAILED: ${newspaper} / ${llm}"
-        else
-            echo ">>> COMPLETED: ${newspaper} / ${llm}"
-        fi
-    done
-done
-
-echo ""
-echo "============================================================"
-echo "ALL EVALUATIONS FINISHED"
-echo "============================================================"
-
-############# Specs (1 line): 1x500mB and 30min
-for n in correo elcomercio gestion ojo peru21 publimetro trome; do
-    for m in llama mistral qwen; do
-    pueue add -g nogpu -l "${n}_${m}" -- scripts/run_evaluate_extraction.sh $n $m
-    done
-done
-
-# ################# DONE ###################
+###############################################################################################################
+# ################# HPC FU Berlin ###################
 ###### 1. Enhancement #######
 # module purge
 # module add virtualenv/20.32.0-GCCcore-14.3.0
@@ -143,3 +105,52 @@ done
 # python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/trome/none/binarization.parquet --binarized-dir data/corpus_construction/binarize/trome/none/ --output-dir data/corpus_construction/ocr_extraction/trome/none/ --workers 64
 # python3 -m src.workflows.ocr_extraction --binarization-parquet data/corpus_construction/binarize/trome/cropped/binarization.parquet --binarized-dir data/corpus_construction/binarize/trome/cropped/ --output-dir data/corpus_construction/ocr_extraction/trome/cropped/ --workers 64
 ############# Specs (1 image): 64x5GB and 8h
+
+####### 6. Evaluate #######
+# module add virtualenv/20.32.0-GCCcore-14.3.0
+# module add Python/3.13.5-GCCcore-14.3.0
+# source venv/corpus_construction/evaluate_extraction/bin/activate
+
+# for newspaper in correo gestion ojo peru21 publimetro trome elcomercio; do
+#     echo ""
+#     echo "============================================================"
+#     echo "NEWSPAPER: ${newspaper}"
+#     echo "============================================================"
+
+#     mkdir -p "data/corpus_construction/evaluate_extraction/results/${newspaper}"
+
+#     for llm in llama mistral qwen; do
+#         echo ""
+#         echo "------------------------------------------------------------"
+#         echo "LLM: ${llm}"
+#         echo "------------------------------------------------------------"
+
+#         python3 -m src.workflows.evaluate_extraction \
+#             --results "data/corpus_construction/llm_extraction/${newspaper}/results_none_${llm}.parquet" \
+#             --gold "data/corpus_construction/evaluate_extraction/${newspaper}.csv" \
+#             --output-csv "data/corpus_construction/evaluate_extraction/results/${newspaper}/${llm}.csv" \
+#             --enhance-parquet "data/corpus_construction/enhance_images/results/${newspaper}/enhance_images.parquet" \
+#             --binarize-parquet "data/corpus_construction/binarize/${newspaper}/none/binarization.parquet" \
+#             --ocr-parquet "data/corpus_construction/ocr_extraction/${newspaper}/none/ocr.parquet" \
+
+#         python3 -m src.workflows.evaluate_extraction \
+#             --results "data/corpus_construction/llm_extraction/${newspaper}/results_cropped_${llm}.parquet" \
+#             --gold "data/corpus_construction/evaluate_extraction/${newspaper}.csv" \
+#             --output-csv "data/corpus_construction/evaluate_extraction/results/${newspaper}/${llm}.csv" \
+#             --enhance-parquet "data/corpus_construction/enhance_images/results/${newspaper}/enhance_images.parquet" \
+#             --binarize-parquet "data/corpus_construction/binarize/${newspaper}/none/binarization.parquet" \
+#             --ocr-parquet "data/corpus_construction/ocr_extraction/${newspaper}/none/ocr.parquet" \
+#             --layout-parquet "data/corpus_construction/layout_detection/${newspaper}/layout_detection.parquet"
+
+#         if [ $? -ne 0 ]; then
+#             echo "!!! FAILED: ${newspaper} / ${llm}"
+#         else
+#             echo ">>> COMPLETED: ${newspaper} / ${llm}"
+#         fi
+#     done
+# done
+
+# echo ""
+# echo "============================================================"
+# echo "ALL EVALUATIONS FINISHED"
+# echo "============================================================"

@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=deepseek_extraction
+#SBATCH --job-name=run_hpc_slow_gpu
 #SBATCH --chdir=/work/leonrios/ma_up
 #SBATCH --output=/work/leonrios/ma_up/logs/slurm/%x_%A_%a.out
 #SBATCH --partition=gpu
@@ -35,11 +35,16 @@ python3 -m src.workflows.llm_extraction \
   --llms ${LLM} \
   --gpu-memory-utilization 0.9
 
-############################################################################
-################################## DONE ####################################
-############################################################################
-# mkdir -p logs/slurm
+###############################################################################################################
+# ################# PUEUE ###################
+# for n in correo elcomercio gestion ojo peru21 publimetro trome; do
+#     for m in llama mistral qwen deepseek; do
+#     pueue add -g gpu -l "${n}_${m}" -- scripts/run_llm_extraction.sh $n $m
+#     done
+# done
 
+###############################################################################################################
+# ################# HPC FU Berlin ###################
 # ####### 5. LLM Extractor #######
 # module purge
 # module add GCC/12.3.0

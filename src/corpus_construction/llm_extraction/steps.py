@@ -654,7 +654,8 @@ class LlamaExtractor(_BaseLLMExtractor):
 
 
 class DeepSeekExtractor(_BaseLLMExtractor):
-    model_id = "RedHatAI/DeepSeek-R1-Distill-Qwen-7B-FP8-dynamic"
+    # model_id = "RedHatAI/DeepSeek-R1-Distill-Qwen-7B-FP8-dynamic"
+    model_id = "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
 
     def _ensure_loaded(self):
         super()._ensure_loaded()

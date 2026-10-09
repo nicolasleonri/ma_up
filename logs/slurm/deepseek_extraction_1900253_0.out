@@ -1849,4 +1849,483 @@ NVIDIA A100-SXM4-40GB, 40960 MiB
 2026-10-09 20:00:45,786 INFO Saved 64 new rows to data/corpus_construction/llm_extraction/publimetro/results_cropped_deepseek.parquet (total: 960)
 2026-10-09 20:00:45,787 INFO [deepseek] Batch 960-1024 / 68738
 Rendering prompts:   0%|          | 0/51 [00:00<?, ?it/s]Rendering prompts:  63%|██████▎   | 32/51 [00:00<00:00, 314.39it/s]Rendering prompts: 100%|██████████| 51/51 [00:00<00:00, 349.70it/s]
-Processed prompts:   0%|          | 0/51 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/51 [00:00<00:33,  1.51it/s, est. speed input: 1787.16 toks/s, output: 13.55 toks/s]Processed prompts:   4%|▍         | 2/51 [00:01<00:37,  1.32it/s, est. speed input: 1582.85 toks/s, output: 46.32 toks/s]Processed prompts:   8%|▊         | 4/51 [00:01<00:16,  2.91it/s, est. speed input: 2814.63 toks/s, output: 124.93 toks/s]Processed prompts:  10%|▉         | 5/51 [00:02<00:18,  2.44it/s, est. speed input: 2678.41 toks/s, output: 142.05 toks/s]Processed prompts:  12%|█▏        | 6/51 [00:03<00:33,  1.36it/s, est. speed input: 1955.99 toks/s, output: 139.00 toks/s]Processed prompts:  20%|█▉        | 10/51 [00:03<00:11,  3.49it/s, est. speed input: 3117.20 toks/s, output: 350.67 toks/s]Processed prompts:  31%|███▏      | 16/51 [00:03<00:04,  7.43it/s, est. speed input: 4793.61 toks/s, output: 656.54 toks/s]Processed prompts:  37%|███▋      | 19/51 [00:04<00:04,  6.91it/s, est. speed input: 5031.27 toks/s, output: 742.85 toks/s]
+Processed prompts:   0%|          | 0/51 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/51 [00:00<00:33,  1.51it/s, est. speed input: 1787.16 toks/s, output: 13.55 toks/s]Processed prompts:   4%|▍         | 2/51 [00:01<00:37,  1.32it/s, est. speed input: 1582.85 toks/s, output: 46.32 toks/s]Processed prompts:   8%|▊         | 4/51 [00:01<00:16,  2.91it/s, est. speed input: 2814.63 toks/s, output: 124.93 toks/s]Processed prompts:  10%|▉         | 5/51 [00:02<00:18,  2.44it/s, est. speed input: 2678.41 toks/s, output: 142.05 toks/s]Processed prompts:  12%|█▏        | 6/51 [00:03<00:33,  1.36it/s, est. speed input: 1955.99 toks/s, output: 139.00 toks/s]Processed prompts:  20%|█▉        | 10/51 [00:03<00:11,  3.49it/s, est. speed input: 3117.20 toks/s, output: 350.67 toks/s]Processed prompts:  31%|███▏      | 16/51 [00:03<00:04,  7.43it/s, est. speed input: 4793.61 toks/s, output: 656.54 toks/s]Processed prompts:  37%|███▋      | 19/51 [00:04<00:04,  6.91it/s, est. speed input: 5031.27 toks/s, output: 742.85 toks/s]Processed prompts:  47%|████▋     | 24/51 [00:04<00:02,  9.48it/s, est. speed input: 6002.36 toks/s, output: 972.11 toks/s]Processed prompts:  51%|█████     | 26/51 [00:05<00:04,  5.87it/s, est. speed input: 5499.70 toks/s, output: 924.29 toks/s]Processed prompts:  55%|█████▍    | 28/51 [00:06<00:05,  4.58it/s, est. speed input: 5280.71 toks/s, output: 923.89 toks/s]Processed prompts:  59%|█████▉    | 30/51 [00:08<00:07,  2.73it/s, est. speed input: 4463.05 toks/s, output: 854.68 toks/s]Processed prompts:  65%|██████▍   | 33/51 [00:08<00:04,  3.74it/s, est. speed input: 4770.79 toks/s, output: 1016.52 toks/s]Processed prompts:  69%|██████▊   | 35/51 [00:09<00:05,  2.84it/s, est. speed input: 4410.90 toks/s, output: 1002.31 toks/s]Processed prompts:  71%|███████   | 36/51 [00:11<00:09,  1.54it/s, est. speed input: 3699.79 toks/s, output: 869.37 toks/s] Processed prompts:  75%|███████▍  | 38/51 [00:13<00:08,  1.53it/s, est. speed input: 3624.06 toks/s, output: 906.98 toks/s]Processed prompts:  76%|███████▋  | 39/51 [00:14<00:09,  1.29it/s, est. speed input: 3418.59 toks/s, output: 889.48 toks/s]Processed prompts:  78%|███████▊  | 40/51 [00:15<00:08,  1.26it/s, est. speed input: 3355.96 toks/s, output: 908.25 toks/s]Processed prompts:  80%|████████  | 41/51 [00:20<00:16,  1.67s/it, est. speed input: 2659.55 toks/s, output: 762.66 toks/s]Processed prompts:  82%|████████▏ | 42/51 [00:31<00:35,  3.99s/it, est. speed input: 1767.43 toks/s, output: 559.54 toks/s]Processed prompts:  84%|████████▍ | 43/51 [00:57<01:17,  9.73s/it, est. speed input: 994.00 toks/s, output: 375.04 toks/s] Processed prompts: 100%|██████████| 51/51 [00:58<00:00,  9.73s/it, est. speed input: 1221.33 toks/s, output: 939.69 toks/s]Processed prompts: 100%|██████████| 51/51 [00:58<00:00,  1.14s/it, est. speed input: 1221.33 toks/s, output: 939.69 toks/s]
+2026-10-09 20:01:43,946 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,947 INFO     [0] 
+2026-10-09 20:01:43,947 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,948 INFO     [0] 
+2026-10-09 20:01:43,948 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,949 INFO     [0] 
+2026-10-09 20:01:43,949 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,950 INFO     [0] 
+2026-10-09 20:01:43,950 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,950 INFO     [0] 
+2026-10-09 20:01:43,951 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,951 INFO     [0] 
+2026-10-09 20:01:43,952 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,952 INFO     [0] 
+2026-10-09 20:01:43,952 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,953 INFO     [0] 
+2026-10-09 20:01:43,953 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,954 INFO     [0] 
+2026-10-09 20:01:43,954 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,954 INFO     [0] 
+2026-10-09 20:01:43,955 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,955 INFO     [0] 
+2026-10-09 20:01:43,955 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,956 INFO     [0] 
+2026-10-09 20:01:43,956 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,956 INFO     [0] 
+2026-10-09 20:01:43,957 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,957 INFO     [0] 
+2026-10-09 20:01:43,958 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:01:43,958 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:01:43,958 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:01:43,959 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:01:43,959 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,959 INFO     [0] 
+2026-10-09 20:01:43,960 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,960 INFO     [0] 
+2026-10-09 20:01:43,960 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:01:43,961 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,961 INFO     [0] 
+2026-10-09 20:01:43,961 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,962 INFO     [0] 
+2026-10-09 20:01:43,962 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,962 INFO     [0] 
+2026-10-09 20:01:43,963 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,963 INFO     [0] 
+2026-10-09 20:01:43,963 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,964 INFO     [0] 
+2026-10-09 20:01:43,964 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,964 INFO     [0] 
+2026-10-09 20:01:43,965 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,965 INFO     [0] 
+2026-10-09 20:01:43,966 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,966 INFO     [0] 
+2026-10-09 20:01:43,966 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,967 INFO     [0] 
+2026-10-09 20:01:43,967 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,967 INFO     [0] 
+2026-10-09 20:01:43,968 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,968 INFO     [0] 
+2026-10-09 20:01:43,968 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:01:43,969 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,969 INFO     [0] 
+2026-10-09 20:01:43,969 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,970 INFO     [0] 
+2026-10-09 20:01:43,970 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:01:43,970 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:01:43,971 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,971 INFO     [0] 
+2026-10-09 20:01:43,971 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,972 INFO     [0] 
+2026-10-09 20:01:43,972 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,972 INFO     [0] 
+2026-10-09 20:01:43,973 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,973 INFO     [0] 
+2026-10-09 20:01:43,973 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:01:43,974 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,974 INFO     [0] 
+2026-10-09 20:01:43,974 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,975 INFO     [0] 
+2026-10-09 20:01:43,975 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,976 INFO     [0] 
+2026-10-09 20:01:43,976 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,976 INFO     [0] 
+2026-10-09 20:01:43,976 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,977 INFO     [0] 
+2026-10-09 20:01:43,977 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,977 INFO     [0] 
+2026-10-09 20:01:43,978 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,978 INFO     [0] 
+2026-10-09 20:01:43,978 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,979 INFO     [0] 
+2026-10-09 20:01:43,979 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,979 INFO     [0] 
+2026-10-09 20:01:43,980 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,980 INFO     [0] 
+2026-10-09 20:01:43,980 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,981 INFO     [0] 
+2026-10-09 20:01:43,981 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,981 INFO     [0] 
+2026-10-09 20:01:43,982 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,982 INFO     [0] 
+2026-10-09 20:01:43,983 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,983 INFO     [0] 
+2026-10-09 20:01:43,983 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,984 INFO     [0] 
+2026-10-09 20:01:43,984 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,984 INFO     [0] 
+2026-10-09 20:01:43,985 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,985 INFO     [0] 
+2026-10-09 20:01:43,985 INFO status=success | articles=1 | 1.140s
+2026-10-09 20:01:43,986 INFO     [0] 
+2026-10-09 20:01:43,986 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:01:43,986 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:01:43,987 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:01:43,987 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:01:44,043 INFO Saved 64 new rows to data/corpus_construction/llm_extraction/publimetro/results_cropped_deepseek.parquet (total: 1024)
+2026-10-09 20:01:44,044 INFO [deepseek] Batch 1024-1088 / 68738
+Rendering prompts:   0%|          | 0/51 [00:00<?, ?it/s]Rendering prompts:  63%|██████▎   | 32/51 [00:00<00:00, 319.06it/s]Rendering prompts: 100%|██████████| 51/51 [00:00<00:00, 342.76it/s]
+Processed prompts:   0%|          | 0/51 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/51 [00:00<00:23,  2.12it/s, est. speed input: 2536.95 toks/s, output: 19.07 toks/s]Processed prompts:  12%|█▏        | 6/51 [00:01<00:07,  5.76it/s, est. speed input: 6337.15 toks/s, output: 83.14 toks/s]Processed prompts:  20%|█▉        | 10/51 [00:01<00:07,  5.38it/s, est. speed input: 6177.17 toks/s, output: 176.29 toks/s]Processed prompts:  22%|██▏       | 11/51 [00:02<00:11,  3.59it/s, est. speed input: 4793.79 toks/s, output: 179.36 toks/s]Processed prompts:  24%|██▎       | 12/51 [00:03<00:11,  3.49it/s, est. speed input: 4667.50 toks/s, output: 215.83 toks/s]Processed prompts:  27%|██▋       | 14/51 [00:03<00:08,  4.57it/s, est. speed input: 5213.87 toks/s, output: 313.23 toks/s]Processed prompts:  31%|███▏      | 16/51 [00:03<00:07,  4.71it/s, est. speed input: 5315.43 toks/s, output: 386.39 toks/s]Processed prompts:  33%|███▎      | 17/51 [00:03<00:07,  4.70it/s, est. speed input: 5367.28 toks/s, output: 422.49 toks/s]Processed prompts:  35%|███▌      | 18/51 [00:04<00:08,  3.73it/s, est. speed input: 5046.75 toks/s, output: 434.99 toks/s]Processed prompts:  39%|███▉      | 20/51 [00:04<00:06,  5.14it/s, est. speed input: 5422.93 toks/s, output: 536.08 toks/s]Processed prompts:  43%|████▎     | 22/51 [00:04<00:04,  6.71it/s, est. speed input: 5841.04 toks/s, output: 636.33 toks/s]Processed prompts:  57%|█████▋    | 29/51 [00:05<00:03,  6.73it/s, est. speed input: 6252.74 toks/s, output: 867.67 toks/s]Processed prompts:  61%|██████    | 31/51 [00:05<00:02,  7.56it/s, est. speed input: 6508.42 toks/s, output: 969.99 toks/s]Processed prompts:  65%|██████▍   | 33/51 [00:05<00:02,  8.71it/s, est. speed input: 6782.03 toks/s, output: 1075.35 toks/s]Processed prompts:  69%|██████▊   | 35/51 [00:07<00:05,  3.16it/s, est. speed input: 5563.61 toks/s, output: 937.48 toks/s] Processed prompts:  71%|███████   | 36/51 [00:08<00:06,  2.38it/s, est. speed input: 5089.23 toks/s, output: 895.07 toks/s]Processed prompts:  75%|███████▍  | 38/51 [00:08<00:04,  3.07it/s, est. speed input: 5237.18 toks/s, output: 1003.36 toks/s]Processed prompts:  76%|███████▋  | 39/51 [00:09<00:05,  2.31it/s, est. speed input: 4901.50 toks/s, output: 975.04 toks/s] Processed prompts:  78%|███████▊  | 40/51 [00:11<00:07,  1.41it/s, est. speed input: 4310.74 toks/s, output: 892.56 toks/s]Processed prompts:  80%|████████  | 41/51 [00:12<00:06,  1.52it/s, est. speed input: 4297.35 toks/s, output: 924.89 toks/s]Processed prompts:  82%|████████▏ | 42/51 [00:12<00:05,  1.56it/s, est. speed input: 4248.60 toks/s, output: 950.34 toks/s]Processed prompts:  84%|████████▍ | 43/51 [00:13<00:04,  1.68it/s, est. speed input: 4248.85 toks/s, output: 985.82 toks/s]Processed prompts:  86%|████████▋ | 44/51 [00:55<01:22, 11.83s/it, est. speed input: 1029.52 toks/s, output: 307.43 toks/s]Processed prompts: 100%|██████████| 51/51 [00:55<00:00, 11.83s/it, est. speed input: 1223.90 toks/s, output: 821.14 toks/s]Processed prompts: 100%|██████████| 51/51 [00:55<00:00,  1.09s/it, est. speed input: 1223.90 toks/s, output: 821.14 toks/s]
+2026-10-09 20:02:39,984 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:02:39,985 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:02:39,985 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:39,986 INFO     [0] 
+2026-10-09 20:02:39,986 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:39,987 INFO     [0] 
+2026-10-09 20:02:39,987 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:39,988 INFO     [0] 
+2026-10-09 20:02:39,988 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:39,989 INFO     [0] 
+2026-10-09 20:02:39,989 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:39,990 INFO     [0] 
+2026-10-09 20:02:39,990 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:39,990 INFO     [0] 
+2026-10-09 20:02:39,991 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:39,991 INFO     [0] 
+2026-10-09 20:02:39,991 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:39,992 INFO     [0] 
+2026-10-09 20:02:39,992 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:39,993 INFO     [0] 
+2026-10-09 20:02:39,993 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:39,993 INFO     [0] 
+2026-10-09 20:02:39,994 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:39,994 INFO     [0] 
+2026-10-09 20:02:39,994 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:39,995 INFO     [0] 
+2026-10-09 20:02:39,995 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:39,996 INFO     [0] 
+2026-10-09 20:02:39,996 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:39,996 INFO     [0] 
+2026-10-09 20:02:39,997 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:39,997 INFO     [0] 
+2026-10-09 20:02:39,997 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:39,998 INFO     [0] 
+2026-10-09 20:02:39,998 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:39,998 INFO     [0] 
+2026-10-09 20:02:39,999 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:39,999 INFO     [0] 
+2026-10-09 20:02:40,000 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:02:40,000 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,000 INFO     [0] 
+2026-10-09 20:02:40,001 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,001 INFO     [0] 
+2026-10-09 20:02:40,001 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:02:40,002 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:02:40,002 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,002 INFO     [0] 
+2026-10-09 20:02:40,003 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,003 INFO     [0] 
+2026-10-09 20:02:40,004 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,004 INFO     [0] 
+2026-10-09 20:02:40,004 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,005 INFO     [0] 
+2026-10-09 20:02:40,005 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:02:40,005 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,006 INFO     [0] 
+2026-10-09 20:02:40,006 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,006 INFO     [0] 
+2026-10-09 20:02:40,007 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,007 INFO     [0] 
+2026-10-09 20:02:40,007 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,008 INFO     [0] 
+2026-10-09 20:02:40,008 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,008 INFO     [0] 
+2026-10-09 20:02:40,009 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:02:40,009 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,009 INFO     [0] 
+2026-10-09 20:02:40,010 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,010 INFO     [0] 
+2026-10-09 20:02:40,010 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,011 INFO     [0] 
+2026-10-09 20:02:40,011 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,011 INFO     [0] 
+2026-10-09 20:02:40,012 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,012 INFO     [0] 
+2026-10-09 20:02:40,012 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,013 INFO     [0] 
+2026-10-09 20:02:40,013 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,013 INFO     [0] 
+2026-10-09 20:02:40,014 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,014 INFO     [0] 
+2026-10-09 20:02:40,015 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:02:40,015 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:02:40,015 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:02:40,016 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:02:40,016 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:02:40,016 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:02:40,017 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,017 INFO     [0] 
+2026-10-09 20:02:40,017 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,018 INFO     [0] 
+2026-10-09 20:02:40,018 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,018 INFO     [0] 
+2026-10-09 20:02:40,019 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,019 INFO     [0] 
+2026-10-09 20:02:40,019 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,020 INFO     [0] 
+2026-10-09 20:02:40,020 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,020 INFO     [0] 
+2026-10-09 20:02:40,021 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,021 INFO     [0] 
+2026-10-09 20:02:40,021 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,022 INFO     [0] 
+2026-10-09 20:02:40,022 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,022 INFO     [0] 
+2026-10-09 20:02:40,023 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,023 INFO     [0] 
+2026-10-09 20:02:40,023 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,024 INFO     [0] 
+2026-10-09 20:02:40,024 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,024 INFO     [0] 
+2026-10-09 20:02:40,025 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,025 INFO     [0] 
+2026-10-09 20:02:40,025 INFO status=success | articles=1 | 1.097s
+2026-10-09 20:02:40,026 INFO     [0] 
+2026-10-09 20:02:40,085 INFO Saved 64 new rows to data/corpus_construction/llm_extraction/publimetro/results_cropped_deepseek.parquet (total: 1088)
+2026-10-09 20:02:40,086 INFO [deepseek] Batch 1088-1152 / 68738
+Rendering prompts:   0%|          | 0/52 [00:00<?, ?it/s]Rendering prompts:  62%|██████▏   | 32/52 [00:00<00:00, 313.87it/s]Rendering prompts: 100%|██████████| 52/52 [00:00<00:00, 351.16it/s]
+Processed prompts:   0%|          | 0/52 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/52 [00:00<00:35,  1.43it/s, est. speed input: 1706.76 toks/s, output: 12.89 toks/s]Processed prompts:  10%|▉         | 5/52 [00:03<00:27,  1.68it/s, est. speed input: 2005.42 toks/s, output: 62.85 toks/s]Processed prompts:  13%|█▎        | 7/52 [00:03<00:17,  2.56it/s, est. speed input: 2820.60 toks/s, output: 162.54 toks/s]Processed prompts:  17%|█▋        | 9/52 [00:03<00:16,  2.61it/s, est. speed input: 2913.93 toks/s, output: 227.88 toks/s]Processed prompts:  31%|███       | 16/52 [00:04<00:06,  5.26it/s, est. speed input: 4428.03 toks/s, output: 538.95 toks/s]Processed prompts:  35%|███▍      | 18/52 [00:04<00:05,  6.00it/s, est. speed input: 4831.03 toks/s, output: 628.96 toks/s]Processed prompts:  46%|████▌     | 24/52 [00:04<00:02,  9.79it/s, est. speed input: 6127.04 toks/s, output: 930.06 toks/s]Processed prompts:  50%|█████     | 26/52 [00:05<00:03,  7.57it/s, est. speed input: 6096.74 toks/s, output: 948.04 toks/s]Processed prompts:  58%|█████▊    | 30/52 [00:05<00:02,  7.35it/s, est. speed input: 6420.77 toks/s, output: 1069.92 toks/s]Processed prompts:  62%|██████▏   | 32/52 [00:06<00:03,  5.14it/s, est. speed input: 5942.96 toks/s, output: 1049.24 toks/s]Processed prompts:  63%|██████▎   | 33/52 [00:07<00:05,  3.47it/s, est. speed input: 5406.31 toks/s, output: 980.38 toks/s] Processed prompts:  67%|██████▋   | 35/52 [00:07<00:04,  4.01it/s, est. speed input: 5518.61 toks/s, output: 1067.25 toks/s]Processed prompts:  75%|███████▌  | 39/52 [00:10<00:05,  2.44it/s, est. speed input: 4715.99 toks/s, output: 1017.42 toks/s]Processed prompts:  77%|███████▋  | 40/52 [00:12<00:06,  1.77it/s, est. speed input: 4261.65 toks/s, output: 950.75 toks/s] Processed prompts:  79%|███████▉  | 41/52 [00:12<00:05,  2.04it/s, est. speed input: 4382.66 toks/s, output: 1008.33 toks/s]Processed prompts:  81%|████████  | 42/52 [00:13<00:07,  1.35it/s, est. speed input: 3945.72 toks/s, output: 943.28 toks/s] Processed prompts:  83%|████████▎ | 43/52 [00:15<00:08,  1.09it/s, est. speed input: 3665.26 toks/s, output: 915.06 toks/s]Processed prompts:  85%|████████▍ | 44/52 [00:15<00:06,  1.27it/s, est. speed input: 3705.20 toks/s, output: 962.58 toks/s]Processed prompts:  87%|████████▋ | 45/52 [00:16<00:04,  1.42it/s, est. speed input: 3722.89 toks/s, output: 1004.25 toks/s]Processed prompts:  88%|████████▊ | 46/52 [00:16<00:03,  1.58it/s, est. speed input: 3742.81 toks/s, output: 1047.23 toks/s]Processed prompts:  90%|█████████ | 47/52 [00:19<00:05,  1.13s/it, est. speed input: 3360.99 toks/s, output: 982.61 toks/s] Processed prompts:  92%|█████████▏| 48/52 [00:55<00:43, 10.98s/it, est. speed input: 1198.39 toks/s, output: 413.87 toks/s]Processed prompts: 100%|██████████| 52/52 [00:55<00:00, 10.98s/it, est. speed input: 1299.40 toks/s, output: 708.23 toks/s]Processed prompts: 100%|██████████| 52/52 [00:55<00:00,  1.07s/it, est. speed input: 1299.40 toks/s, output: 708.23 toks/s]
+2026-10-09 20:03:35,867 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,867 INFO     [0] 
+2026-10-09 20:03:35,867 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,868 INFO     [0] 
+2026-10-09 20:03:35,868 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,869 INFO     [0] 
+2026-10-09 20:03:35,869 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,870 INFO     [0] 
+2026-10-09 20:03:35,870 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,871 INFO     [0] 
+2026-10-09 20:03:35,871 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,872 INFO     [0] 
+2026-10-09 20:03:35,872 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,872 INFO     [0] 
+2026-10-09 20:03:35,873 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,873 INFO     [0] 
+2026-10-09 20:03:35,873 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,874 INFO     [0] 
+2026-10-09 20:03:35,874 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,875 INFO     [0] 
+2026-10-09 20:03:35,875 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,875 INFO     [0] 
+2026-10-09 20:03:35,876 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,876 INFO     [0] 
+2026-10-09 20:03:35,876 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,877 INFO     [0] 
+2026-10-09 20:03:35,877 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,878 INFO     [0] 
+2026-10-09 20:03:35,878 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:03:35,878 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:03:35,879 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:03:35,879 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:03:35,879 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,880 INFO     [0] 
+2026-10-09 20:03:35,880 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,880 INFO     [0] 
+2026-10-09 20:03:35,881 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,881 INFO     [0] 
+2026-10-09 20:03:35,882 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,882 INFO     [0] 
+2026-10-09 20:03:35,882 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,883 INFO     [0] 
+2026-10-09 20:03:35,883 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,883 INFO     [0] 
+2026-10-09 20:03:35,884 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,884 INFO     [0] 
+2026-10-09 20:03:35,884 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,885 INFO     [0] 
+2026-10-09 20:03:35,885 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:03:35,885 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,886 INFO     [0] 
+2026-10-09 20:03:35,886 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,886 INFO     [0] 
+2026-10-09 20:03:35,887 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,887 INFO     [0] 
+2026-10-09 20:03:35,887 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,888 INFO     [0] 
+2026-10-09 20:03:35,888 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,889 INFO     [0] 
+2026-10-09 20:03:35,889 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,889 INFO     [0] 
+2026-10-09 20:03:35,890 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,890 INFO     [0] 
+2026-10-09 20:03:35,890 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,891 INFO     [0] 
+2026-10-09 20:03:35,891 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,891 INFO     [0] 
+2026-10-09 20:03:35,892 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:03:35,892 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,892 INFO     [0] 
+2026-10-09 20:03:35,893 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,893 INFO     [0] 
+2026-10-09 20:03:35,893 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:03:35,894 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,894 INFO     [0] 
+2026-10-09 20:03:35,894 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:03:35,895 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,895 INFO     [0] 
+2026-10-09 20:03:35,895 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,896 INFO     [0] 
+2026-10-09 20:03:35,896 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,896 INFO     [0] 
+2026-10-09 20:03:35,897 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,897 INFO     [0] 
+2026-10-09 20:03:35,897 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,898 INFO     [0] 
+2026-10-09 20:03:35,898 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,899 INFO     [0] 
+2026-10-09 20:03:35,899 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,899 INFO     [0] 
+2026-10-09 20:03:35,900 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,900 INFO     [0] 
+2026-10-09 20:03:35,900 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,901 INFO     [0] 
+2026-10-09 20:03:35,901 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,901 INFO     [0] 
+2026-10-09 20:03:35,902 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,902 INFO     [0] 
+2026-10-09 20:03:35,902 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,903 INFO     [0] 
+2026-10-09 20:03:35,903 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,903 INFO     [0] 
+2026-10-09 20:03:35,904 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,904 INFO     [0] 
+2026-10-09 20:03:35,904 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,905 INFO     [0] 
+2026-10-09 20:03:35,905 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,905 INFO     [0] 
+2026-10-09 20:03:35,906 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,906 INFO     [0] 
+2026-10-09 20:03:35,907 INFO status=success | articles=1 | 1.073s
+2026-10-09 20:03:35,907 INFO     [0] 
+2026-10-09 20:03:35,907 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:03:35,908 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:03:35,908 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:03:35,908 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:03:35,971 INFO Saved 64 new rows to data/corpus_construction/llm_extraction/publimetro/results_cropped_deepseek.parquet (total: 1152)
+2026-10-09 20:03:35,972 INFO [deepseek] Batch 1152-1216 / 68738
+Rendering prompts:   0%|          | 0/53 [00:00<?, ?it/s]Rendering prompts:  60%|██████    | 32/53 [00:00<00:00, 315.53it/s]Rendering prompts: 100%|██████████| 53/53 [00:00<00:00, 341.82it/s]
+Processed prompts:   0%|          | 0/53 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/53 [00:00<00:23,  2.20it/s, est. speed input: 2591.52 toks/s, output: 19.80 toks/s]Processed prompts:  11%|█▏        | 6/53 [00:01<00:11,  4.10it/s, est. speed input: 4614.53 toks/s, output: 77.99 toks/s]Processed prompts:  13%|█▎        | 7/53 [00:01<00:11,  4.02it/s, est. speed input: 4591.55 toks/s, output: 116.44 toks/s]Processed prompts:  15%|█▌        | 8/53 [00:02<00:15,  2.99it/s, est. speed input: 3915.22 toks/s, output: 140.08 toks/s]Processed prompts:  19%|█▉        | 10/53 [00:03<00:13,  3.08it/s, est. speed input: 3947.29 toks/s, output: 210.67 toks/s]Processed prompts:  21%|██        | 11/53 [00:03<00:16,  2.52it/s, est. speed input: 3564.15 toks/s, output: 230.15 toks/s]Processed prompts:  43%|████▎     | 23/53 [00:05<00:05,  5.14it/s, est. speed input: 5068.01 toks/s, output: 648.03 toks/s]Processed prompts:  47%|████▋     | 25/53 [00:05<00:05,  4.93it/s, est. speed input: 5114.16 toks/s, output: 710.56 toks/s]Processed prompts:  49%|████▉     | 26/53 [00:06<00:06,  4.14it/s, est. speed input: 4876.33 toks/s, output: 708.55 toks/s]Processed prompts:  51%|█████     | 27/53 [00:06<00:06,  3.86it/s, est. speed input: 4832.00 toks/s, output: 732.01 toks/s]Processed prompts:  53%|█████▎    | 28/53 [00:07<00:07,  3.22it/s, est. speed input: 4661.28 toks/s, output: 736.34 toks/s]Processed prompts:  57%|█████▋    | 30/53 [00:07<00:05,  3.86it/s, est. speed input: 4818.24 toks/s, output: 833.56 toks/s]Processed prompts:  58%|█████▊    | 31/53 [00:07<00:05,  4.25it/s, est. speed input: 4927.69 toks/s, output: 883.22 toks/s]Processed prompts:  60%|██████    | 32/53 [00:08<00:04,  4.45it/s, est. speed input: 4970.30 toks/s, output: 926.50 toks/s]Processed prompts:  62%|██████▏   | 33/53 [00:08<00:06,  3.09it/s, est. speed input: 4768.26 toks/s, output: 919.89 toks/s]Processed prompts:  64%|██████▍   | 34/53 [00:09<00:06,  2.72it/s, est. speed input: 4637.36 toks/s, output: 933.77 toks/s]Processed prompts:  66%|██████▌   | 35/53 [00:09<00:06,  2.72it/s, est. speed input: 4583.08 toks/s, output: 962.59 toks/s]Processed prompts:  70%|██████▉   | 37/53 [00:11<00:11,  1.40it/s, est. speed input: 3945.06 toks/s, output: 889.47 toks/s]Processed prompts:  74%|███████▎  | 39/53 [00:12<00:07,  1.88it/s, est. speed input: 4112.15 toks/s, output: 986.27 toks/s]Processed prompts:  75%|███████▌  | 40/53 [00:12<00:05,  2.22it/s, est. speed input: 4162.69 toks/s, output: 1040.77 toks/s]Processed prompts:  77%|███████▋  | 41/53 [00:13<00:06,  1.94it/s, est. speed input: 4074.42 toks/s, output: 1050.09 toks/s]Processed prompts:  81%|████████  | 43/53 [00:13<00:03,  2.71it/s, est. speed input: 4264.69 toks/s, output: 1159.27 toks/s]Processed prompts:  83%|████████▎ | 44/53 [00:13<00:03,  2.66it/s, est. speed input: 4280.63 toks/s, output: 1192.99 toks/s]Processed prompts:  85%|████████▍ | 45/53 [00:14<00:04,  1.98it/s, est. speed input: 4097.70 toks/s, output: 1187.24 toks/s]Processed prompts:  87%|████████▋ | 46/53 [00:17<00:07,  1.07s/it, est. speed input: 3542.65 toks/s, output: 1074.93 toks/s]Processed prompts:  89%|████████▊ | 47/53 [00:19<00:08,  1.34s/it, est. speed input: 3226.95 toks/s, output: 1030.76 toks/s]Processed prompts:  91%|█████████ | 48/53 [00:55<00:54, 10.95s/it, est. speed input: 1172.15 toks/s, output: 437.10 toks/s] Processed prompts: 100%|██████████| 53/53 [00:55<00:00, 10.95s/it, est. speed input: 1316.84 toks/s, output: 804.09 toks/s]Processed prompts: 100%|██████████| 53/53 [00:55<00:00,  1.05s/it, est. speed input: 1316.84 toks/s, output: 804.09 toks/s]
+2026-10-09 20:04:31,925 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:04:31,925 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:04:31,926 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,926 INFO     [0] 
+2026-10-09 20:04:31,927 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,927 INFO     [0] 
+2026-10-09 20:04:31,927 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,928 INFO     [0] 
+2026-10-09 20:04:31,928 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,929 INFO     [0] 
+2026-10-09 20:04:31,929 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,930 INFO     [0] 
+2026-10-09 20:04:31,930 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,931 INFO     [0] 
+2026-10-09 20:04:31,931 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,931 INFO     [0] 
+2026-10-09 20:04:31,932 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,932 INFO     [0] 
+2026-10-09 20:04:31,932 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:04:31,933 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,933 INFO     [0] 
+2026-10-09 20:04:31,933 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:04:31,934 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,934 INFO     [0] 
+2026-10-09 20:04:31,935 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,935 INFO     [0] 
+2026-10-09 20:04:31,935 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,936 INFO     [0] 
+2026-10-09 20:04:31,936 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:04:31,936 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,937 INFO     [0] 
+2026-10-09 20:04:31,937 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,937 INFO     [0] 
+2026-10-09 20:04:31,938 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,938 INFO     [0] 
+2026-10-09 20:04:31,938 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,939 INFO     [0] 
+2026-10-09 20:04:31,939 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,940 INFO     [0] 
+2026-10-09 20:04:31,940 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,940 INFO     [0] 
+2026-10-09 20:04:31,941 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,941 INFO     [0] 
+2026-10-09 20:04:31,941 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,942 INFO     [0] 
+2026-10-09 20:04:31,942 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,942 INFO     [0] 
+2026-10-09 20:04:31,943 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,943 INFO     [0] 
+2026-10-09 20:04:31,943 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,944 INFO     [0] 
+2026-10-09 20:04:31,944 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,944 INFO     [0] 
+2026-10-09 20:04:31,945 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,945 INFO     [0] 
+2026-10-09 20:04:31,945 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:04:31,946 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:04:31,946 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:04:31,947 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:04:31,947 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,947 INFO     [0] 
+2026-10-09 20:04:31,948 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,948 INFO     [0] 
+2026-10-09 20:04:31,948 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,949 INFO     [0] 
+2026-10-09 20:04:31,949 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,949 INFO     [0] 
+2026-10-09 20:04:31,950 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,950 INFO     [0] 
+2026-10-09 20:04:31,950 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,951 INFO     [0] 
+2026-10-09 20:04:31,951 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,951 INFO     [0] 
+2026-10-09 20:04:31,952 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,952 INFO     [0] 
+2026-10-09 20:04:31,952 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,953 INFO     [0] 
+2026-10-09 20:04:31,953 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,953 INFO     [0] 
+2026-10-09 20:04:31,954 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,954 INFO     [0] 
+2026-10-09 20:04:31,954 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,955 INFO     [0] 
+2026-10-09 20:04:31,955 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,955 INFO     [0] 
+2026-10-09 20:04:31,956 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,956 INFO     [0] 
+2026-10-09 20:04:31,957 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,957 INFO     [0] 
+2026-10-09 20:04:31,957 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,958 INFO     [0] 
+2026-10-09 20:04:31,958 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,958 INFO     [0] 
+2026-10-09 20:04:31,959 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,959 INFO     [0] 
+2026-10-09 20:04:31,959 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,960 INFO     [0] 
+2026-10-09 20:04:31,960 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,960 INFO     [0] 
+2026-10-09 20:04:31,961 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,961 INFO     [0] 
+2026-10-09 20:04:31,961 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,962 INFO     [0] 
+2026-10-09 20:04:31,962 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,962 INFO     [0] 
+2026-10-09 20:04:31,963 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,963 INFO     [0] 
+2026-10-09 20:04:31,963 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,964 INFO     [0] 
+2026-10-09 20:04:31,964 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,964 INFO     [0] 
+2026-10-09 20:04:31,965 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,965 INFO     [0] 
+2026-10-09 20:04:31,965 INFO status=success | articles=1 | 1.056s
+2026-10-09 20:04:31,966 INFO     [0] 
+2026-10-09 20:04:31,966 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:04:31,966 INFO status=failed | articles=0 | 0.000s
+2026-10-09 20:04:32,028 INFO Saved 64 new rows to data/corpus_construction/llm_extraction/publimetro/results_cropped_deepseek.parquet (total: 1216)
+2026-10-09 20:04:32,029 INFO [deepseek] Batch 1216-1280 / 68738
+Rendering prompts:   0%|          | 0/52 [00:00<?, ?it/s]Rendering prompts:  62%|██████▏   | 32/52 [00:00<00:00, 319.16it/s]Rendering prompts: 100%|██████████| 52/52 [00:00<00:00, 344.03it/s]
+Processed prompts:   0%|          | 0/52 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   2%|▏         | 1/52 [00:00<00:19,  2.57it/s, est. speed input: 3047.35 toks/s, output: 23.14 toks/s]Processed prompts:  12%|█▏        | 6/52 [00:00<00:06,  7.50it/s, est. speed input: 8085.53 toks/s, output: 91.23 toks/s]Processed prompts:  17%|█▋        | 9/52 [00:01<00:06,  6.19it/s, est. speed input: 7209.79 toks/s, output: 155.45 toks/s]Processed prompts:  19%|█▉        | 10/52 [00:01<00:06,  6.12it/s, est. speed input: 7185.28 toks/s, output: 190.19 toks/s]Processed prompts:  21%|██        | 11/52 [00:02<00:09,  4.45it/s, est. speed input: 6165.72 toks/s, output: 201.58 toks/s]Processed prompts:  23%|██▎       | 12/52 [00:02<00:10,  3.92it/s, est. speed input: 5775.28 toks/s, output: 228.02 toks/s]Processed prompts:  25%|██▌       | 13/52 [00:02<00:09,  4.01it/s, est. speed input: 5751.97 toks/s, output: 264.46 toks/s]Processed prompts:  27%|██▋       | 14/52 [00:03<00:09,  3.84it/s, est. speed input: 5619.18 toks/s, output: 295.45 toks/s]Processed prompts:  29%|██▉       | 15/52 [00:03<00:08,  4.23it/s, est. speed input: 5718.32 toks/s, output: 337.18 toks/s]Processed prompts:  33%|███▎      | 17/52 [00:03<00:06,  5.74it/s, est. speed input: 6170.86 toks/s, output: 432.77 toks/s]Processed prompts:  35%|███▍      | 18/52 [00:03<00:06,  5.24it/s, est. speed input: 6074.12 toks/s, output: 461.51 toks/s]Processed prompts:  46%|████▌     | 24/52 [00:03<00:02, 12.12it/s, est. speed input: 7734.12 toks/s, output: 780.51 toks/s]Processed prompts:  50%|█████     | 26/52 [00:04<00:03,  8.62it/s, est. speed input: 7503.08 toks/s, output: 812.56 toks/s]Processed prompts:  58%|█████▊    | 30/52 [00:04<00:01, 11.68it/s, est. speed input: 8331.23 toks/s, output: 1017.84 toks/s]Processed prompts:  62%|██████▏   | 32/52 [00:05<00:03,  5.52it/s, est. speed input: 7218.58 toks/s, output: 940.35 toks/s] Processed prompts:  65%|██████▌   | 34/52 [00:06<00:03,  4.62it/s, est. speed input: 6927.87 toks/s, output: 960.71 toks/s]Processed prompts:  67%|██████▋   | 35/52 [00:06<00:04,  3.77it/s, est. speed input: 6560.66 toks/s, output: 946.45 toks/s]Processed prompts:  69%|██████▉   | 36/52 [00:06<00:04,  3.96it/s, est. speed input: 6555.60 toks/s, output: 983.90 toks/s]Processed prompts:  73%|███████▎  | 38/52 [00:08<00:06,  2.03it/s, est. speed input: 5362.47 toks/s, output: 881.56 toks/s]Processed prompts:  75%|███████▌  | 39/52 [00:11<00:13,  1.02s/it, est. speed input: 4076.12 toks/s, output: 712.24 toks/s]Processed prompts:  77%|███████▋  | 40/52 [00:13<00:14,  1.20s/it, est. speed input: 3652.08 toks/s, output: 687.27 toks/s]Processed prompts:  79%|███████▉  | 41/52 [00:14<00:12,  1.14s/it, est. speed input: 3510.83 toks/s, output: 711.93 toks/s]Processed prompts:  81%|████████  | 42/52 [00:15<00:10,  1.04s/it, est. speed input: 3467.72 toks/s, output: 748.14 toks/s]Processed prompts:  83%|████████▎ | 43/52 [00:18<00:14,  1.63s/it, est. speed input: 2962.07 toks/s, output: 688.74 toks/s]

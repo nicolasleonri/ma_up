@@ -62,6 +62,7 @@ combined <- left_join(combined, distinct(sample_df, image_stem, page_position, s
 combined$image_stem <- as.factor(combined$image_stem)
 combined$detector <- factor(ifelse(is.na(combined$detector), "none", as.character(combined$detector)))
 cat("\n== summary ==\n"); print(summary(combined))
+cat("== str ==\n"); str(combined, give.attr = FALSE, vec.len = 3)
 
 # Step 8: Aggregate
 pipe <- c("config_id", "detector", "binarization", "ocr_extractor", "llm_extractor")
@@ -69,6 +70,7 @@ ctx0 <- c("newspaper")
 ctx1 <- c("newspaper", "page_position")
 ctx2 <- c("newspaper", "page_position", "scale")
 
+# Step 8.1: Adds tradeoffs
 agg <- function(df, by) df %>%
   group_by(across(all_of(by))) %>%
   summarise(across(where(is.numeric), ~ mean(.x, na.rm = TRUE)), .groups = "drop")
@@ -80,6 +82,7 @@ add_tradeoff <- function(df) df %>%
   ) %>%
   arrange(desc(detection_f1), matched_body_wer_mean, total_pipeline_seconds)
 
+# Step 8.2: Aggregate
 agg_pipe <- add_tradeoff(agg(combined, pipe))
 agg_ctx0 <- add_tradeoff(agg(combined, c(pipe, ctx0)))
 agg_ctx1 <- add_tradeoff(agg(combined, c(pipe, ctx1)))
@@ -88,6 +91,7 @@ agg_ctx2 <- add_tradeoff(agg(combined, c(pipe, ctx2)))
 ctxs <- list(ctx0 = ctx0, ctx1 = ctx1, ctx2 = ctx2)
 aggl <- list(ctx0 = agg_ctx0, ctx1 = agg_ctx1, ctx2 = agg_ctx2)
 
+# Step 8.3: Get top 5
 top_n <- 5
 top_fn <- function(df, by) df %>%
   group_by(across(all_of(by))) %>%

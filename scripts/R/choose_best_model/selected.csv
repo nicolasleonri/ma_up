@@ -1,0 +1,11 @@
+newspaper,page_position,config_id,detector,binarization,ocr_extractor,llm_extractor,detection_f1,matched_title_cer_mean,matched_body_wer_mean,total_pipeline_seconds
+correo,interior,34,ppdoclayout,none_color,docling_easyocr,mistral,0.86,0.39,0.35,131.05
+elcomercio,interior,51,none,none,docling_rapidocr,qwen,0.90,0.21,0.59,22.86
+gestion,interior,6,none,otsu,docling_rapidocr,qwen,0.65,0.53,0.37,22.64
+ojo,interior,52,ppdoclayout,basic,docling_rapidocr,qwen,0.77,0.85,0.01,78.57
+peru21,interior,38,ppdoclayout,none,rapidocr,deepseek,1.00,0.67,0.40,36.70
+publimetro,interior,12,histogram,none_grayscale,docling_easyocr,mistral,0.64,0.42,0.40,130.20
+trome,back,7,doclayout,otsu,docling_rapidocr,qwen,1.00,0.31,0.12,16.92
+trome,interior,34,ppdoclayout,none,docling_rapidocr,mistral,0.89,0.32,0.20,22.81
+,,,,,,mean,0.82,0.39,0.06,32.50
+,,,,,,median,0.88,0.41,0.36,29.78

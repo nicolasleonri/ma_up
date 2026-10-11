@@ -1,0 +1,1 @@
+/var/spool/slurmd/job1900329/slurm_script: line 20: NEWSPAPERS[$SLURM_ARRAY_TASK_ID]: unbound variable

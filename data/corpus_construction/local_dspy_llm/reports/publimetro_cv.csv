@@ -1,0 +1,5 @@
+newspaper,model,fold,n_test_pages,base_f1,opt_f1,base_title_cer,opt_title_cer,base_body_wer,opt_body_wer
+publimetro,mistral:7b,1,1,0.0,0.0,1.0,1.0,1.0,1.0
+publimetro,mistral:7b,2,1,0.0,0.0,1.0,1.0,1.0,1.0
+publimetro,mistral:7b,3,1,0.5714,0.0,0.0278,1.0,0.2148,1.0
+publimetro,mistral:7b,4,1,0.75,0.6,0.0,0.0,0.1705,0.2802

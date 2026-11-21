@@ -1,0 +1,4 @@
+newspaper,model,fold,n_test_pages,base_f1,opt_f1,base_title_cer,opt_title_cer,base_body_wer,opt_body_wer
+peru21,deepseek-r1:7b,1,1,0.0,0.4,1.0,0.6667,1.0,0.2899
+peru21,deepseek-r1:7b,2,1,0.0,0.0,1.0,1.0,1.0,1.0
+peru21,deepseek-r1:7b,3,1,0.0,0.0,1.0,1.0,1.0,1.0

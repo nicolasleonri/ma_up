@@ -1,0 +1,44 @@
+{
+  "extract_region": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "ocr_text": "PROPUESTAS SOBRE\n\nSEGURIDAD\n\nDigame, ¿está Ud. de\n\ncon la propuesta para...?\n\nacuerdo o en desacuerdo\n\n(%)",
+        "articles": "[]"
+      },
+      {
+        "augmented": true,
+        "ocr_text": "-H\n\n0\n\nHIIHN\n\ngGs\n\n0\n\n-\n\n0o   (e\n\nHi\n\n-\n\nF a 0 eg\n\nwe S0",
+        "articles": "[]"
+      },
+      {
+        "augmented": true,
+        "ocr_text": "10\n\ns 0 a\n\nge h e  ont\n\n-\n\na",
+        "articles": "[]"
+      }
+    ],
+    "signature": {
+      "instructions": "You are a structured extraction assistant specializing in Peruvian print journalism.\n\n    The input is OCR text from a scanned page or region of a Peruvian newspaper belonging to the El Comercio editorial group (Trome, Peru21, Ojo, etc.). These are Spanish-language publications covering Peruvian national and international news, politics, economy, culture and sport.\n\n    OCR quality may be imperfect: expect broken words, missing accents, inconsistent spacing and mixed-case artifacts. Use journalistic context to interpret ambiguous text —do not \"correct\" it in the output, preserve it as-is.\n\n    Given the OCR text below, extract every distinct article or editorial piece found.\n\n    Rules:\n- Text is primarily Spanish; preserve it as-is, including OCR artifacts.\n- Preserve reading order (top-to-bottom, left-to-right column order).\n- A region or page may contain multiple unrelated articles — extract each separately.\n- Exclude captions, page numbers, section headers and advertisements.\n- Do not invent, infer or complete missing fields.\n- Return [] if no articles are present.\n- Return ONLY the JSON array. No explanation, preamble, or markdown fences.",
+      "fields": [
+        {
+          "prefix": "Ocr Text:",
+          "description": "Raw OCR transcription of a scanned newspaper region or page in markdown format."
+        },
+        {
+          "prefix": "Articles:",
+          "description": "Return ONLY a JSON array of all newspaper articles found in the OCR text.\nEach element must contain exactly these keys:\n- \"title\"       : main headline, as it appears (empty string if absent)\n- \"subheadline\" : secondary headline, deck, or standfirst (empty string if absent)\n- \"author\"      : byline — typically introduced by \"Por\", \"Redacción\", or a staff name (empty string if absent)\n- \"body\"        : full article body text, preserving paragraph breaks with \\n (empty string if absent)\nReturn [] if no articles are present. No explanation or markdown fences."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.4.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+
+==================== CORREO (mistral:7b) ====================
+[build:correo] Saved 5 pages (5/5 with OCR regions, 19 gold articles) -> data/corpus_construction/local_dspy_llm/datasets/correo.parquet
+
+==================== ELCOMERCIO (qwen2.5:7b) ====================
+[build:elcomercio] Saved 4 pages (4/4 with OCR regions, 13 gold articles) -> data/corpus_construction/local_dspy_llm/datasets/elcomercio.parquet
+
+==================== GESTION (qwen2.5:7b) ====================
+[build:gestion] Saved 2 pages (2/2 with OCR regions, 14 gold articles) -> data/corpus_construction/local_dspy_llm/datasets/gestion.parquet
+
+==================== OJO (qwen2.5:7b) ====================
+[build:ojo] Saved 6 pages (4/6 with OCR regions, 36 gold articles) -> data/corpus_construction/local_dspy_llm/datasets/ojo.parquet
+
+==================== PERU21 (deepseek-r1:7b) ====================
+[build:peru21] Saved 3 pages (3/3 with OCR regions, 4 gold articles) -> data/corpus_construction/local_dspy_llm/datasets/peru21.parquet
+
+==================== PUBLIMETRO (mistral:7b) ====================
+[build:publimetro] Saved 4 pages (3/4 with OCR regions, 15 gold articles) -> data/corpus_construction/local_dspy_llm/datasets/publimetro.parquet
+
+==================== TROME_INTERIOR (mistral:7b) ====================
+[build:trome_interior] Saved 4 pages (1/4 with OCR regions, 16 gold articles) -> data/corpus_construction/local_dspy_llm/datasets/trome_interior.parquet
+
+==================== TROME_LAST (qwen2.5:7b) ====================
+[build:trome_last] Saved 2 pages (1/2 with OCR regions, 3 gold articles) -> data/corpus_construction/local_dspy_llm/datasets/trome_last.parquet

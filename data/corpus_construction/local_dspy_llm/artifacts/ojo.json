@@ -1,0 +1,44 @@
+{
+  "extract_region": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "ocr_text": "## OLVIDAR PARA VIVIR SINRENCORES\n\nPor más que sea dificil, obligue a su mente a no recordar las cosas que le han hecho tanto daño a lo largo de su vida. No vale la pena gastar el tiempo trayendo a la memoría cosas que solo le harán sufrir.\n\n## ¿CÓMO YIVIR UNA SOLTERIA FELIZ?\n\nLa soltería le permite a una poa pse a sí misma y no dejar la felicidad en manos de nadie más. Planifique va rias actividades e invierta en su vida social. Es un buen momento para triunfar en el trabajo.\n\n## UN ALIVIO PARA UNA RUPTURA AMOROSA\n\nCuando una relación termina abruptamente, el impacto de la ruptura es mayor si se anda escaso de autoestima. No se deje arrastrar por el dolor, es un buen momento para dedicarse a uno mismo.\n\n## UNA CONDUCTA ODIOSA EN PAREJAS\n\nTanto hombres como mujeres se sienten muy fastidiados cuando la pa reja le comenta a sus amistades cada uno de los detailes mas intimos de su relación, sin guardarse nada para el ámbito privado.\n\n22 DE AGOSTO AL 22 SETIEMBRE VIRGO\n\nLas relaciones con la familia serán aconsejables durante estedía pues el buen ambiente",
+        "articles": "[{\"title\":\"OLVIDAR PARA VIVIR SIN RENCORES\",\"body\":\"Por más que sea dificil, obligue a su mente a no recordar las cosas que le han hecho tanto daño a lo largo de su vida. No vale la pena gastar el tiempo trayendo a la memoría cosas que solo le harán sufrir.\"},{\"title\":\"¿CÓMO YIVIR UNA SOLTERIA FELIZ?\",\"body\":\"La soltería le permite a una poa pse a sí misma y no dejar la felicidad en manos de nadie más. Planifique va rias actividades e invierta en su vida social. Es un buen momento para triunfar en el trabajo.\"},{\"title\":\"UN ALIVIO PARA UNA RUPTURA AMOROSA\",\"body\":\"Cuando una relación termina abruptamente, el impacto de la ruptura es mayor si se anda escaso de autoestima. No se deje arrastrar por el dolor, es un buen momento para dedicarse a uno mismo.\"},{\"title\":\"UNA CONDUCTA ODIOSA EN PAREJAS\",\"body\":\"Tanto hombres como mujeres se sienten muy fastidiados cuando la pa reja le comenta a sus amistades cada uno de los detailes mas intimos de su relación, sin guardarse nada para el ámbito privado.\"}]"
+      },
+      {
+        "augmented": true,
+        "ocr_text": "Antónimos:\n\nconfirmar,\n\nprorrogar.\n\nrat\n\natificar, revalidar,",
+        "articles": "[]"
+      },
+      {
+        "augmented": true,
+        "ocr_text": "que no regresaré de nuevo con él. Ahora siento nada más que cólera por su terrible conducta. Sin embargo, lo que más me aterra es que hace algunos días noté que no venía mi periodo y tengo mucho miedo de estar embarazada.\n\n21 DE JUNIO AL 20 JUU0 CÁNCER\n\n<!-- image -->\n\nSitratas de imponer tu voluntad y forma de pensar a los demás y acuasdeinafomar:\n\nía podria-ser",
+        "articles": "[]"
+      }
+    ],
+    "signature": {
+      "instructions": "You are a structured extraction assistant specializing in Peruvian print journalism.\n\n    The input is OCR text from a scanned page or region of a Peruvian newspaper belonging to the El Comercio editorial group (Trome, Peru21, Ojo, etc.). These are Spanish-language publications covering Peruvian national and international news, politics, economy, culture and sport.\n\n    OCR quality may be imperfect: expect broken words, missing accents, inconsistent spacing and mixed-case artifacts. Use journalistic context to interpret ambiguous text —do not \"correct\" it in the output, preserve it as-is.\n\n    Given the OCR text below, extract every distinct article or editorial piece found.\n\n    Rules:\n- Text is primarily Spanish; preserve it as-is, including OCR artifacts.\n- Preserve reading order (top-to-bottom, left-to-right column order).\n- A region or page may contain multiple unrelated articles — extract each separately.\n- Exclude captions, page numbers, section headers and advertisements.\n- Do not invent, infer or complete missing fields.\n- Return [] if no articles are present.\n- Return ONLY the JSON array. No explanation, preamble, or markdown fences.",
+      "fields": [
+        {
+          "prefix": "Ocr Text:",
+          "description": "Raw OCR transcription of a scanned newspaper region or page in markdown format."
+        },
+        {
+          "prefix": "Articles:",
+          "description": "Return ONLY a JSON array of all newspaper articles found in the OCR text.\nEach element must contain exactly these keys:\n- \"title\"       : main headline, as it appears (empty string if absent)\n- \"subheadline\" : secondary headline, deck, or standfirst (empty string if absent)\n- \"author\"      : byline — typically introduced by \"Por\", \"Redacción\", or a staff name (empty string if absent)\n- \"body\"        : full article body text, preserving paragraph breaks with \\n (empty string if absent)\nReturn [] if no articles are present. No explanation or markdown fences."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.4.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

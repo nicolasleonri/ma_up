@@ -1,0 +1,5 @@
+newspaper,model,fold,n_test_pages,base_f1,opt_f1,base_title_cer,opt_title_cer,base_body_wer,opt_body_wer
+elcomercio,qwen2.5:7b,1,1,0.0,0.0,1.0,1.0,1.0,1.0
+elcomercio,qwen2.5:7b,2,1,0.25,0.0,0.0,1.0,0.0845,1.0
+elcomercio,qwen2.5:7b,3,1,0.4,0.0,1.0698,1.0,0.3081,1.0
+elcomercio,qwen2.5:7b,4,1,0.5,0.0,0.0,1.0,0.8704,1.0

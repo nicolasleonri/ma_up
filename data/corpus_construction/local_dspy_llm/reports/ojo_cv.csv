@@ -1,0 +1,6 @@
+newspaper,model,fold,n_test_pages,base_f1,opt_f1,base_title_cer,opt_title_cer,base_body_wer,opt_body_wer
+ojo,qwen2.5:7b,1,2,0.2222,0.1667,0.9087,0.9087,0.5061,0.5128
+ojo,qwen2.5:7b,2,1,0.0,0.0,1.0,1.0,1.0,1.0
+ojo,qwen2.5:7b,3,1,0.0,0.0,1.0,1.0,1.0,1.0
+ojo,qwen2.5:7b,4,1,0.3636,0.4444,0.4474,0.8448,0.7626,0.8251
+ojo,qwen2.5:7b,5,1,0.2857,0.3636,0.4446,0.4812,0.7002,0.8624

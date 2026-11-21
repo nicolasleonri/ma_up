@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=run_hpc_slow_nogpu
+#SBATCH --job-name=run_hpc_fast_nogpu
 #SBATCH --chdir=/work/leonrios/ma_up
 #SBATCH --output=/work/leonrios/ma_up/logs/slurm/%x_%A_%a.out
 #SBATCH --qos=normal
@@ -32,6 +32,7 @@ python3 -m src.workflows. \
 #     pueue add -g nogpu -l "${n}_${m}" -- scripts/run_evaluate_extraction.sh $n $m
 #     done
 # done
+# nohup find -type f \( -iname "*.parquet" -o -iname "*.txt" -o -iname "*.csv" \) -exec du -h {} + | sort -hr > big_size.out &
 
 ###############################################################################################################
 # ################# HPC FU Berlin ###################

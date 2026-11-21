@@ -1,5 +1,11 @@
+python optimize_format.py \
+  --parquet data/corpus_construction/llm_extraction/correo/results_cropped_mistral.parquet \
+  --inspect
+
+
+
 #!/bin/bash
-#SBATCH --job-name=run_hpc_slow_gpu
+#SBATCH --job-name=run_hpc_fast_gpu
 #SBATCH --chdir=/work/leonrios/ma_up
 #SBATCH --output=/work/leonrios/ma_up/logs/slurm/%x_%A_%a.out
 #SBATCH --partition=gpu
@@ -12,36 +18,45 @@
 #SBATCH --time=24:00:00
 #SBATCH --array=0-6%4
 
-set -uo pipefail
-module purge
+# set -uo pipefail
+# module purge
 
-NEWSPAPERS=(correo elcomercio gestion ojo peru21 publimetro trome)
-NEWSPAPER=${NEWSPAPERS[$SLURM_ARRAY_TASK_ID]}
-VARIANT=none
-LLM=deepseek
+# NEWSPAPERS=(correo elcomercio gestion ojo peru21 publimetro trome)
+# NEWSPAPER=${NEWSPAPERS[$SLURM_ARRAY_TASK_ID]}
+# VARIANT=none
+# LLM=deepseek
 
-export HF_HOME=/work/leonrios/hf
-export HF_HUB_OFFLINE=1
-export VLLM_USE_FLASHINFER_SAMPLER=0
-export GPU_MEM_UTIL=0.9
-source /work/leonrios/ma_up/.venv/corpus_construction/llm_extraction/bin/activate
+# export HF_HOME=/work/leonrios/hf
+# export HF_HUB_OFFLINE=1
+# export VLLM_USE_FLASHINFER_SAMPLER=0
+# export GPU_MEM_UTIL=0.9
+# # source /work/leonrios/ma_up/.venv/corpus_construction/llm_extraction/bin/activate
+# source /home/users/nleon/project/leonrios/ma_up/.venv/corpus_construction/local_llm_dspy/bin/activate
 
-echo "===== ${NEWSPAPER} | ${VARIANT} | ${LLM} | node $(hostname) ====="
-nvidia-smi --query-gpu=name,memory.total --format=csv
+# # echo "===== ${NEWSPAPER} | ${VARIANT} | ${LLM} | node $(hostname) ====="
+# # nvidia-smi --query-gpu=name,memory.total --format=csv
+# # python3 -m src.workflows.llm_extraction \
+# #   --ocr-parquet data/corpus_construction/ocr_extraction/${NEWSPAPER}/${VARIANT}/ocr.parquet \
+# #   --output-parquet data/corpus_construction/llm_extraction/${NEWSPAPER}/results_${VARIANT}_${LLM}.parquet \
+# #   --llms ${LLM} \
+# #   --gpu-memory-utilization 0.9
+# python3 -m src.workflows.llm_extraction \
+#   --ocr-parquet data/corpus_construction/ocr_extraction/${NEWSPAPER}/${VARIANT}/ocr.parquet \
+#   --output-parquet data/corpus_construction/llm_extraction/${NEWSPAPER}/results_${VARIANT}_${LLM}.parquet \
+#   --llms ${LLM} \
+#   --gpu-memory-utilization 0.9
 
-python3 -m src.workflows.llm_extraction \
-  --ocr-parquet data/corpus_construction/ocr_extraction/${NEWSPAPER}/${VARIANT}/ocr.parquet \
-  --output-parquet data/corpus_construction/llm_extraction/${NEWSPAPER}/results_${VARIANT}_${LLM}.parquet \
-  --llms ${LLM} \
-  --gpu-memory-utilization 0.9
 
 ###############################################################################################################
+
+
 # ################# PUEUE ###################
 # for n in correo elcomercio gestion ojo peru21 publimetro trome; do
 #     for m in llama mistral qwen deepseek; do
-#     pueue add -g gpu -l "${n}_${m}" -- scripts/run_llm_extraction.sh $n $m
+#     pueue add -g nogpu -l "${n}_${m}" -- scripts/run_evaluate_extraction.sh $n $m
 #     done
 # done
+# nohup find -type f \( -iname "*.parquet" -o -iname "*.txt" -o -iname "*.csv" \) -exec du -h {} + | sort -hr > big_size.out &
 
 ###############################################################################################################
 # ################# HPC FU Berlin ###################
@@ -88,7 +103,6 @@ python3 -m src.workflows.llm_extraction \
 # ############# Specs (1 image): 1x5GB; 1xh100 and 10min
 # TIME per model per newspaper (min): 40min*4*2=320min (5,33h)
 # TIME per model per newspaper (max): 80min*4*2=640min (10,66h)
-# find -type f \( -iname "*.parquet" -o -iname "*.txt" -o -iname "*.csv" \) -exec du -h {} + | sort -hr
 
 ####### VLM #######
 # module purge

@@ -10,9 +10,22 @@ if [ "$#" -gt 0 ]; then
   SUB_DIR_ARGS=(--sub-dirs "$@")
 fi
 
-uv run python -m src.workflows.binarize \
-  --input-dir "$HOME/data/leonrios/processed/layout/$NEWSPAPER" \
-  --output-dir "$HOME/data/leonrios/processed/enhanced/$NEWSPAPER" \
+BASE_DIR="$HOME/data/leonrios/processed"
+
+case "$NEWSPAPER" in
+  elcomercio|gestion)
+    INPUT_DIR="$BASE_DIR/enhanced/$NEWSPAPER"
+    ;;
+  *)
+    INPUT_DIR="$BASE_DIR/layout/$NEWSPAPER"
+    ;;
+esac
+
+OUTPUT_DIR="$BASE_DIR/binarized/$NEWSPAPER"
+
+.venv/corpus_construction/binarize/bin/python -m src.workflows.binarize \
+  --input-dir "$INPUT_DIR" \
+  --output-dir "$OUTPUT_DIR" \
   --newspaper "$NEWSPAPER" \
   --workers "$WORKERS" \
   "${SUB_DIR_ARGS[@]}"

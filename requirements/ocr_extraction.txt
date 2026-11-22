@@ -15,7 +15,7 @@ cuda-toolkit==13.0.3.0
 cysignals==1.12.6
 defusedxml==0.7.1
 dill==0.4.1
-distlib @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/distlib/distlib-0.4.0
+distlib 
 doclang==0.7.3
 docling==2.126.0
 docling-core==2.95.0
@@ -25,7 +25,7 @@ docling-slim==2.126.0
 easyocr==1.7.2
 et_xmlfile==2.0.0
 Faker==40.38.0
-filelock @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/filelock/filelock-3.18.0
+filelock 
 filetype==1.2.0
 flatbuffers==25.12.19
 fsspec==2026.7.0
@@ -78,7 +78,7 @@ openpyxl==3.1.5
 packaging==26.3
 pandas==3.0.5
 pillow==12.3.0
-platformdirs @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/platformdirs/platformdirs-4.3.8
+platformdirs 
 pluggy==1.6.0
 polyfactory==3.3.0
 protobuf==7.36.1
@@ -133,6 +133,5 @@ typer==0.26.8
 typing-inspection==0.4.4
 typing_extensions==4.16.0
 urllib3==2.7.0
-virtualenv @ file:///trinity/shared/easybuild/build/virtualenv/20.32.0/GCCcore-14.3.0/virtualenv/virtualenv-20.32.0
 websockets==16.1.1
 xlsxwriter==3.2.9

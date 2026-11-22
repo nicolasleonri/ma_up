@@ -12,7 +12,7 @@ fi
 
 .venv/corpus_construction/enhance_images/bin/python -m src.workflows.enhance_images \
   --input-dir "$HOME/data/leonrios/$NEWSPAPER" \
-  --output-dir "data/processed/enhanced/$NEWSPAPER" \
+  --output-dir "$HOME/data/leonrios/processed/enhanced/$NEWSPAPER" \
   --newspaper "$NEWSPAPER" \
   --workers "$WORKERS" \
   "${SUB_DIR_ARGS[@]}"

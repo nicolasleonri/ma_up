@@ -1,0 +1,2 @@
+remove /home/users/nleon/.paddlex/official_models/PP-DocLayout-L
+

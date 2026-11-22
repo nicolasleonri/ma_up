@@ -107,101 +107,36 @@ class Denoising:
         image,
         kernel_size: int = 3,
     ):
-        """Apply a conservative noise reduction filter.
-
-        The center pixel is compared against the minimum and maximum
-        intensity values of its neighbors. The center pixel itself is
-        excluded from the min/max calculation.
-
-        If the center pixel is outside the range defined by its neighbors,
-        it is replaced by the nearest valid boundary value. Otherwise,
-        it remains unchanged.
-
-        This is particularly useful for removing isolated impulse noise
-        while preserving edges.
-        """
+        """Vectorized conservative noise reduction filter."""
         if kernel_size % 2 == 0:
-            raise ValueError(
-                "kernel_size must be an odd number."
-            )
+            raise ValueError("kernel_size must be an odd number.")
+
+        from numpy.lib.stride_tricks import sliding_window_view
 
         pad_size = kernel_size // 2
+        center_idx = (kernel_size * kernel_size) // 2
 
-        # Handle grayscale and color images.
-        if len(image.shape) == 2:
-            padded = np.pad(
-                image,
-                pad_size,
-                mode="edge",
-            )
-        else:
-            padded = np.pad(
-                image,
-                (
-                    (pad_size, pad_size),
-                    (pad_size, pad_size),
-                    (0, 0),
-                ),
-                mode="edge",
-            )
+        if image.ndim == 2:
+            padded = np.pad(image, pad_size, mode="edge")
+            windows = sliding_window_view(padded, (kernel_size, kernel_size))
+            flat = windows.reshape(*image.shape, kernel_size * kernel_size)
+            neighbors = np.delete(flat, center_idx, axis=-1)
+            min_val = neighbors.min(axis=-1)
+            max_val = neighbors.max(axis=-1)
+            return np.clip(image, min_val, max_val).astype(image.dtype)
 
-        result = image.copy()
-
-        height, width = image.shape[:2]
-
-        for i in range(height):
-            for j in range(width):
-
-                # Extract neighborhood.
-                region = padded[
-                    i : i + kernel_size,
-                    j : j + kernel_size,
-                ]
-
-                center = region[
-                    pad_size,
-                    pad_size,
-                ]
-
-                # Remove center pixel from neighborhood.
-                if len(image.shape) == 2:
-
-                    neighbors = np.delete(
-                        region.flatten(),
-                        pad_size * kernel_size + pad_size,
-                    )
-
-                else:
-
-                    neighbors = np.delete(
-                        region.reshape(
-                            -1,
-                            image.shape[2],
-                        ),
-                        pad_size * kernel_size + pad_size,
-                        axis=0,
-                    )
-
-                min_val = np.min(
-                    neighbors,
-                    axis=0,
-                )
-
-                max_val = np.max(
-                    neighbors,
-                    axis=0,
-                )
-
-                # Conservative filtering:
-                # replace only pixels outside the
-                # range defined by their neighbors.
-                result[i, j] = np.clip(
-                    center,
-                    min_val,
-                    max_val,
-                )
-
-        return result
+        padded = np.pad(
+            image,
+            ((pad_size, pad_size), (pad_size, pad_size), (0, 0)),
+            mode="edge",
+        )
+        windows = sliding_window_view(padded, (kernel_size, kernel_size), axis=(0, 1))
+        # windows shape: (H, W, C, k, k) -> reshape to (H, W, C, k*k)
+        flat = windows.reshape(*image.shape, kernel_size * kernel_size)
+        neighbors = np.delete(flat, center_idx, axis=-1)
+        min_val = neighbors.min(axis=-1)
+        max_val = neighbors.max(axis=-1)
+        return np.clip(image, min_val, max_val).astype(image.dtype)
 
     @staticmethod
     def laplacian_filter(image):

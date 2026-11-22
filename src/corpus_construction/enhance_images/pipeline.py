@@ -1,24 +1,11 @@
-"""Image preprocessing pipeline.
-
-Applies all combinations of:
-
-    Contrast:     2 techniques
-    Denoising:    9 techniques
-    Sharpening:   3 techniques
-
-Total:
-
-    2 x 9 x 3 = 54 preprocessing configurations
-
-Each configuration is applied sequentially:
-
-    Contrast -> Denoising -> Sharpening
-"""
+"""Image preprocessing pipeline with multi-process parallelism."""
+from concurrent.futures import ProcessPoolExecutor, as_completed
 import cv2
-import time
 import logging
+import os
 import pandas as pd
 from pathlib import Path
+import time
 from .steps import (
     Contrast,
     Denoising,
@@ -27,9 +14,7 @@ from .steps import (
 
 logger = logging.getLogger(__name__)
 
-CHECKPOINT_FILENAME = (
-    ".enhancement_checkpoint.txt"
-)
+CHECKPOINT_FILENAME = ".enhancement_checkpoint.txt"
 
 SUPPORTED_EXTENSIONS = {
     ".jpg",
@@ -39,403 +24,362 @@ SUPPORTED_EXTENSIONS = {
     ".tif",
 }
 
-class EnhancementPipeline:
-    def __init__(self):
-        self.contrast_methods = {
-            "none": Contrast.none,
-            "clahe": Contrast.clahe,
-        }
-        self.denoising_methods = {
-            "none": Denoising.none,
-            "mean_filter": Denoising.mean_filter,
-            "gaussian_filter": Denoising.gaussian_filter,
-            "median_filter": Denoising.median_filter,
-            "conservative_filter": Denoising.conservative_filter,
-            "laplacian_filter": Denoising.laplacian_filter,
-            "frequency_filter": Denoising.frequency_filter,
-            "crimmins_speckle_removal": Denoising.crimmins_speckle_removal,
-            "unsharp_filter": Denoising.unsharp_filter,
-        }
-        self.sharpening_methods = {
-            "none": Sharpening.none,
-            "unsharp_masking": Sharpening.unsharp_mask,
-            "stroke_width_enhancement": Sharpening.stroke_width_enhancement,
-        }
+NEWSPAPER_CONFIG_IDS: dict[str, list[int]] = {
+    "correo": [13],
+    "elcomercio": [51],
+    "gestion": [6],
+    "ojo": [52],
+    "peru21": [38],
+    "publimetro": [12],
+    "trome": [7, 34],
+}
 
-    def _build_configs(self):
-        """Build all 54 preprocessing configurations."""
+CONTRAST_METHODS = {
+    "none": Contrast.none,
+    "clahe": Contrast.clahe,
+}
+
+DENOISING_METHODS = {
+    "none": Denoising.none,
+    "mean_filter": Denoising.mean_filter,
+    "gaussian_filter": Denoising.gaussian_filter,
+    "median_filter": Denoising.median_filter,
+    "conservative_filter": Denoising.conservative_filter,
+    "laplacian_filter": Denoising.laplacian_filter,
+    "frequency_filter": Denoising.frequency_filter,
+    "crimmins_speckle_removal": Denoising.crimmins_speckle_removal,
+    "unsharp_filter": Denoising.unsharp_filter,
+}
+
+SHARPENING_METHODS = {
+    "none": Sharpening.none,
+    "unsharp_masking": Sharpening.unsharp_mask,
+    "stroke_width_enhancement": Sharpening.stroke_width_enhancement,
+}
+
+
+def _worker_init() -> None:
+    """Prevent OpenCV thread oversubscription inside worker processes."""
+    cv2.setNumThreads(1)
+
+
+def _process_single_image_task(
+    image_path_str: str,
+    relative_path: str,
+    output_dir_str: str,
+    active_configs: list[dict],
+) -> tuple[str, Path, list[dict]]:
+    """Top-level picklable worker function to process and save one image."""
+    image_path = Path(image_path_str)
+    output_dir = Path(output_dir_str)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    image = cv2.imread(str(image_path))
+    if image is None:
+        return relative_path, output_dir, []
+
+    metadata_records: list[dict] = []
+
+    for config in active_configs:
+        start = time.time()
+        cid = config["config_id"]
+        contrast_name = config["contrast"]
+        denoising_name = config["denoising"]
+        sharpening_name = config["sharpening"]
+
+        try:
+            img = image.copy()
+            img = CONTRAST_METHODS[contrast_name](img)
+            img = DENOISING_METHODS[denoising_name](img)
+            img = SHARPENING_METHODS[sharpening_name](img)
+
+            output_filename = f"{image_path.stem}_config_{cid:03d}.tiff"
+            output_file = output_dir / output_filename
+            cv2.imwrite(str(output_file), img)
+
+            elapsed = time.time() - start
+            output_relative = str(Path(relative_path).parent / output_filename)
+
+            metadata_records.append(
+                {
+                    "image_path": relative_path,
+                    "config_id": cid,
+                    "contrast": contrast_name,
+                    "denoising": denoising_name,
+                    "sharpening": sharpening_name,
+                    "output_path": output_relative,
+                    "processing_time_seconds": round(elapsed, 3),
+                    "status": "success",
+                }
+            )
+        except Exception as exc:
+            metadata_records.append(
+                {
+                    "image_path": relative_path,
+                    "config_id": cid,
+                    "contrast": contrast_name,
+                    "denoising": denoising_name,
+                    "sharpening": sharpening_name,
+                    "output_path": None,
+                    "processing_time_seconds": None,
+                    "status": f"failed: {exc}",
+                }
+            )
+
+    return relative_path, output_dir, metadata_records
+
+
+class EnhancementPipeline:
+    def __init__(self, workers: int = 1):
+        self.workers = max(1, workers)
+        self.contrast_methods = CONTRAST_METHODS
+        self.denoising_methods = DENOISING_METHODS
+        self.sharpening_methods = SHARPENING_METHODS
+
+    def _build_configs(self) -> list[dict]:
+        """Build all 54 preprocessing configurations with stable config_id."""
         configs = []
+        idx = 0
         for contrast in self.contrast_methods:
             for denoising in self.denoising_methods:
                 for sharpening in self.sharpening_methods:
                     configs.append(
                         {
+                            "config_id": idx,
                             "contrast": contrast,
                             "denoising": denoising,
                             "sharpening": sharpening,
                         }
                     )
+                    idx += 1
         assert len(configs) == 54
         return configs
 
+    def _select_configs(
+        self,
+        all_configs: list[dict],
+        config_ids: list[int] | None,
+    ) -> list[dict]:
+        """Filter the 54 configurations to the requested config_ids."""
+        if not config_ids:
+            return all_configs
+
+        valid_ids = {c["config_id"] for c in all_configs}
+        unknown = sorted(set(config_ids) - valid_ids)
+        if unknown:
+            raise ValueError(
+                f"Invalid config_id(s): {unknown}. Must be in 0..53."
+            )
+
+        selected_set = set(config_ids)
+        return [c for c in all_configs if c["config_id"] in selected_set]
+
     def save_configurations(
         self,
-        configs,
+        configs: list[dict],
         output_dir: Path,
     ):
-        config_file = (
-            output_dir
-            / "configurations.txt"
-        )
-
+        config_file = output_dir / "configurations.txt"
         with open(config_file, "w") as f:
             f.write("IMAGE PREPROCESSING CONFIGURATIONS\n")
             f.write("=================================\n\n")
-            f.write("Total configurations: " f"{len(configs)}\n")
+            f.write(f"Total configurations: {len(configs)}\n")
             f.write("Pipeline order: Contrast -> Denoising -> Sharpening\n\n")
 
-            for idx, config in enumerate(configs):
-                f.write(f"config_{idx:03d}\n")
-                f.write(
-                    f"  contrast:    "
-                    f"{config['contrast']}\n"
-                )
+            for config in configs:
+                cid = config["config_id"]
+                f.write(f"config_{cid:03d}\n")
+                f.write(f"  contrast:    {config['contrast']}\n")
+                f.write(f"  denoising:   {config['denoising']}\n")
+                f.write(f"  sharpening:  {config['sharpening']}\n\n")
 
-                f.write(
-                    f"  denoising:   "
-                    f"{config['denoising']}\n"
-                )
-
-                f.write(
-                    f"  sharpening:  "
-                    f"{config['sharpening']}\n"
-                )
-
-                f.write("\n")
-
-        logger.info(
-            "Saved %d configurations to %s",
-            len(configs),
-            config_file,
-        )
-
-    def _save_metadata_parquet(
+    def _flush_metadata_buffers(
         self,
-        metadata_records: list[dict],
-        output_dir: Path,
-    ):
-        """Append metadata records to the parquet file."""
-        parquet_path = output_dir / "enhance_images.parquet"
+        buffers: dict[Path, list[dict]],
+    ) -> None:
+        """Flush buffered metadata records per output_dir in the main process."""
+        for out_dir, records in list(buffers.items()):
+            if not records:
+                continue
+            parquet_path = out_dir / "enhance_images.parquet"
+            df_new = pd.DataFrame(records)
 
-        df_new = pd.DataFrame(metadata_records)
-
-        if parquet_path.exists():
-            df_existing = pd.read_parquet(parquet_path)
-            df_combined = pd.concat(
-                [df_existing, df_new],
-                ignore_index=True,
-            )
-        else:
-            df_combined = df_new
-
-        df_combined.to_parquet(
-            parquet_path,
-            index=False,
-        )
-
-        logger.info(
-            "Saved %d metadata records to %s",
-            len(df_combined),
-            parquet_path,
-        )
-
-    def process(
-        self,
-        image,
-        image_name: str,
-        configs,
-        relative_path: str,
-        output_dir: Path,
-    ):
-        """Apply all 54 configurations to one image."""
-
-        outputs = []
-        metadata_records = []
-
-        for idx, config in enumerate(configs):
-            start = time.time()
-
-            contrast_name = config["contrast"]
-            denoising_name = config["denoising"]
-            sharpening_name = config["sharpening"]
-
-            logger.info(
-                "[%s] Config %d/%d | "
-                "contrast=%s | "
-                "denoising=%s | "
-                "sharpening=%s",
-                image_name,
-                idx + 1,
-                len(configs),
-                contrast_name,
-                denoising_name,
-                sharpening_name,
-            )
-
-            try:
-                img = image.copy()
-                img = self.contrast_methods[contrast_name](img) 
-                img = self.denoising_methods[denoising_name](img)
-                img = self.sharpening_methods[sharpening_name](img)
-
-                elapsed = (time.time() - start)
-
-                output_filename = (
-                    f"{Path(image_name).stem}"
-                    f"_config_"
-                    f"{idx:03d}"
-                    ".tiff"
+            if parquet_path.exists():
+                df_existing = pd.read_parquet(parquet_path)
+                df_combined = pd.concat(
+                    [df_existing, df_new],
+                    ignore_index=True,
+                ).drop_duplicates(
+                    subset=["image_path", "config_id"],
+                    keep="last",
                 )
-                output_relative = str(
-                    Path(relative_path).parent / output_filename
-                )
+            else:
+                df_combined = df_new
 
-                outputs.append(
-                    {
-                        "config": idx,
-                        "contrast":
-                            contrast_name,
-                        "denoising":
-                            denoising_name,
-                        "sharpening":
-                            sharpening_name,
-                        "image": img,
-                        "time": elapsed,
-                    }
-                )
+            df_combined.to_parquet(parquet_path, index=False)
+            buffers[out_dir] = []
 
-                # Collect metadata for parquet
-                metadata_records.append(
-                    {
-                        "image_path": relative_path,
-                        "config_id": idx,
-                        "contrast": contrast_name,
-                        "denoising": denoising_name,
-                        "sharpening": sharpening_name,
-                        "output_path": output_relative,
-                        "processing_time_seconds": round(elapsed, 3),
-                        "status": "success",
-                    }
-                )
-
-                logger.info(
-                    "[%s] Config %d finished "
-                    "in %.3fs",
-                    image_name,
-                    idx,
-                    elapsed,
-                )
-
-            except Exception as exc:
-                logger.exception(
-                    "[%s] FAILED config %d: %s",
-                    image_name,
-                    idx,
-                    exc,
-                )
-
-                # Record failure in metadata
-                metadata_records.append(
-                    {
-                        "image_path": relative_path,
-                        "config_id": idx,
-                        "contrast": contrast_name,
-                        "denoising": denoising_name,
-                        "sharpening": sharpening_name,
-                        "output_path": None,
-                        "processing_time_seconds": None,
-                        "status": f"failed: {exc}",
-                    }
-                )
-
-        if metadata_records:
-            self._save_metadata_parquet(
-                metadata_records,
-                output_dir,
-            )
-
-        return outputs
-
-    def _load_checkpoint(
-        self,
-        checkpoint_path: Path,
-    ):
+    def _load_checkpoint(self, checkpoint_path: Path) -> set[str]:
         if not checkpoint_path.exists():
             return set()
-
-        with open(
-            checkpoint_path,
-            "r",
-        ) as f:
-
-            return {
-                line.strip()
-                for line in f
-                if line.strip()
-            }
-
-    def _save_checkpoint(
-        self,
-        checkpoint_path: Path,
-        relative_path: str,
-    ):
-        with open(
-            checkpoint_path,
-            "a",
-        ) as f:
-
-            f.write(
-                relative_path
-                + "\n"
-            )
+        with open(checkpoint_path, "r") as f:
+            return {line.strip() for line in f if line.strip()}
 
     def run(
         self,
         input_root: Path,
         output_root: Path,
         resume: bool = True,
-    ):
-        """Run the 54 preprocessing configurations."""
+        config_ids: list[int] | None = None,
+        sub_dirs: list[str] | None = None,
+    ) -> int:
+        """Run selected preprocessing configurations across CPU workers."""
+        output_root.mkdir(parents=True, exist_ok=True)
 
-        output_root.mkdir(
-            parents=True,
-            exist_ok=True,
+        all_configs = self._build_configs()
+        self.save_configurations(all_configs, output_root)
+        active_configs = self._select_configs(all_configs, config_ids)
+        active_ids_tag = ",".join(str(c["config_id"]) for c in active_configs)
+
+        logger.info(
+            "Active config_id(s): %s | Workers: %d",
+            [c["config_id"] for c in active_configs],
+            self.workers,
         )
 
-        checkpoint_path = (
-            output_root
-            / CHECKPOINT_FILENAME
+        # Use a shard-specific checkpoint if sub_dirs is specified so parallel pueue jobs never collide
+        ckpt_name = (
+            f".enhancement_checkpoint_{'_'.join(sub_dirs)}.txt"
+            if sub_dirs
+            else CHECKPOINT_FILENAME
         )
+        checkpoint_path = output_root / ckpt_name
+        done = self._load_checkpoint(checkpoint_path) if resume else set()
 
-        done = (
-            self._load_checkpoint(
-                checkpoint_path
-            )
-            if resume
-            else set()
-        )
-
-        configs = (
-            self._build_configs()
-        )
-
-        self.save_configurations(
-            configs,
-            output_root,
+        scan_roots = (
+            [input_root / sd for sd in sub_dirs if (input_root / sd).exists()]
+            if sub_dirs
+            else [input_root]
         )
 
         image_files = sorted(
             f
-            for f in input_root.rglob("*")
-            if (
-                f.is_file()
-                and f.suffix.lower()
-                in SUPPORTED_EXTENSIONS
-            )
+            for root in scan_roots
+            for f in root.rglob("*")
+            if f.is_file() and f.suffix.lower() in SUPPORTED_EXTENSIONS
         )
 
-        total = len(
-            image_files
-        )
-
-        processed = 0
+        total = len(image_files)
+        pending_tasks: list[tuple[str, str, str]] = []
         skipped = 0
 
-        logger.info(
-            "Found %d image(s) under %s",
-            total,
-            input_root,
-        )
-
         for image_path in image_files:
-
-            relative = str(
-                image_path.relative_to(
-                    input_root
-                )
+            relative = str(image_path.relative_to(input_root))
+            checkpoint_key = (
+                f"{relative}::{active_ids_tag}" if config_ids else relative
             )
 
-            if (
-                resume
-                and relative in done
-            ):
+            if resume and (checkpoint_key in done or relative in done):
                 skipped += 1
                 continue
 
-            output_dir = (
-                output_root
-                / image_path.relative_to(
-                    input_root
-                ).parent
-            )
-
-            output_dir.mkdir(
-                parents=True,
-                exist_ok=True,
-            )
-
-            image = cv2.imread(
-                str(image_path)
-            )
-
-            if image is None:
-                logger.warning(
-                    "Could not read %s, "
-                    "skipping.",
-                    image_path,
-                )
-                continue
-
-            results = self.process(
-                image,
-                image_path.name,
-                configs,
-                relative,
-                output_dir
-            )
-
-            for result in results:
-
-                output_file = (
-                    output_dir
-                    / (
-                        f"{image_path.stem}"
-                        f"_config_"
-                        f"{result['config']:03d}"
-                        ".tiff"
-                    )
-                )
-
-                cv2.imwrite(
-                    str(output_file),
-                    result["image"],
-                )
-
-            self._save_checkpoint(
-                checkpoint_path,
-                relative,
-            )
-
-            processed += 1
+            out_dir = output_root / image_path.relative_to(input_root).parent
+            pending_tasks.append((str(image_path), relative, str(out_dir)))
 
         logger.info(
-            "Enhancement complete. "
-            "Processed: %d, "
-            "Skipped: %d, "
-            "Total: %d",
+            "Found %d image(s) under %s (skipped=%d, pending=%d)",
+            total,
+            input_root,
+            skipped,
+            len(pending_tasks),
+        )
+
+        if not pending_tasks:
+            return 0
+
+        processed = 0
+        metadata_buffers: dict[Path, list[dict]] = {}
+
+        with open(checkpoint_path, "a") as ckpt_file:
+            if self.workers == 1:
+                _worker_init()
+                for img_str, rel, out_str in pending_tasks:
+                    rel_done, out_dir, records = _process_single_image_task(
+                        img_str, rel, out_str, active_configs
+                    )
+                    if not records:
+                        logger.warning("Could not read %s, skipping.", img_str)
+                        continue
+
+                    metadata_buffers.setdefault(out_dir, []).extend(records)
+                    ckpt_key = (
+                        f"{rel_done}::{active_ids_tag}"
+                        if config_ids
+                        else rel_done
+                    )
+                    ckpt_file.write(ckpt_key + "\n")
+                    processed += 1
+
+                    if processed % 50 == 0:
+                        self._flush_metadata_buffers(metadata_buffers)
+                        ckpt_file.flush()
+                        logger.info(
+                            "Progress: %d/%d pending images completed",
+                            processed,
+                            len(pending_tasks),
+                        )
+            else:
+                with ProcessPoolExecutor(
+                    max_workers=self.workers,
+                    initializer=_worker_init,
+                ) as pool:
+                    futures = {
+                        pool.submit(
+                            _process_single_image_task,
+                            img_str,
+                            rel,
+                            out_str,
+                            active_configs,
+                        ): rel
+                        for img_str, rel, out_str in pending_tasks
+                    }
+
+                    for future in as_completed(futures):
+                        rel = futures[future]
+                        try:
+                            rel_done, out_dir, records = future.result()
+                        except Exception as exc:
+                            logger.exception("Worker failed on %s: %s", rel, exc)
+                            continue
+
+                        if not records:
+                            logger.warning("Could not read %s, skipping.", rel)
+                            continue
+
+                        metadata_buffers.setdefault(out_dir, []).extend(records)
+                        ckpt_key = (
+                            f"{rel_done}::{active_ids_tag}"
+                            if config_ids
+                            else rel_done
+                        )
+                        ckpt_file.write(ckpt_key + "\n")
+                        processed += 1
+
+                        if processed % 50 == 0:
+                            self._flush_metadata_buffers(metadata_buffers)
+                            ckpt_file.flush()
+                            logger.info(
+                                "Progress: %d/%d pending images completed",
+                                processed,
+                                len(pending_tasks),
+                            )
+
+        self._flush_metadata_buffers(metadata_buffers)
+
+        logger.info(
+            "Enhancement complete. Processed: %d, Skipped: %d, Total: %d",
             processed,
             skipped,
             total,
         )
-
         return processed

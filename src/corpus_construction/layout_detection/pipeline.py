@@ -1,51 +1,29 @@
 """
-Layout analysis pipeline.
-
-Output per article crop
------------------------
-Filename: {newspaper}_{date}_{page}_config_{N}_{detector}_article_{M}.tiff
-
-Parquet schema (one row per article crop)
------------------------------------------
-newspaper          str     e.g. "elcomercio"
-date               str     e.g. "2026-01-03"
-page               str     e.g. "2"
-image_stem         str     full original stem, e.g. "elcomercio_2026-01-03_2"
-preprocessing_config int   config index from preprocessing step
-detector           str     "layoutparser" | "doclayout" | "ppdoclayout" | "surya"
-article_idx        int     1-based article number (top-to-bottom)
-crop_file          str     filename of the saved crop
-x1, y1, x2, y2    int     merged bounding box of the article
-grid_row           int     row in composition grid
-grid_col           int     col in composition grid
-num_regions        int     number of detected regions merged into this article
-elapsed_s          float   wall-clock seconds for this detector × config run
-status             str     "ok" | "failed"
-error              str     error message if status == "failed", else null
+Layout analysis pipeline with recursive year discovery, newspaper detector
+routing, shard-safe checkpoints/Parquets, and CPU worker parallelism.
 """
 
+from concurrent.futures import ProcessPoolExecutor, as_completed
 import json
-import time
 import logging
 from pathlib import Path
-from typing import List, Dict, Any, Optional
+import time
+from typing import Any, Dict, List, Optional
 
 import cv2
 import numpy as np
 
-
 from .steps import (
-    LayoutParserDetector,
+    Article,
     DocLayoutYOLODetector,
+    HistogramColumnDetector,
+    LayoutParserDetector,
+    LayoutRegion,
     PPDocLayoutDetector,
     SuryaLayoutDetector,
-    HistogramColumnDetector,
-    LayoutRegion,
-    Article,
     assign_grid_index,
     group_regions_into_articles,
 )
-
 
 DETECTORS = {
     "layoutparser": LayoutParserDetector,
@@ -55,17 +33,25 @@ DETECTORS = {
     "histogram": HistogramColumnDetector,
 }
 
+GPU_DETECTORS = {"layoutparser", "doclayout", "ppdoclayout", "surya"}
+
+# Default winning layout detectors per newspaper (empty = full-page / no cropping)
+NEWSPAPER_DETECTORS: Dict[str, List[str]] = {
+    "correo": ["ppdoclayout"],
+    "elcomercio": [],
+    "gestion": [],
+    "ojo": ["ppdoclayout"],
+    "peru21": ["doclayout"],
+    "publimetro": ["ppdoclayout"],
+    "trome": ["histogram", "doclayout"],
+}
+
 CHECKPOINT_FILENAME = ".layout_checkpoint.txt"
 
 
 def _parse_image_stem(stem: str) -> Dict[str, str]:
-    """
-    Extract newspaper / date / page from a stem like 'elcomercio_2026-01-03_2'.
-    Falls back gracefully if the stem doesn't follow the convention.
-    """
     parts = stem.rsplit("_", 1)
     if len(parts) == 2:
-        # parts[0] = "elcomercio_2026-01-03", parts[1] = "2"
         left, page = parts
         left_parts = left.rsplit("_", 1)
         if len(left_parts) == 2:
@@ -74,18 +60,91 @@ def _parse_image_stem(stem: str) -> Dict[str, str]:
     return {"newspaper": stem, "date": "", "page": ""}
 
 
+def _run_histogram_worker(
+    variant_path_str: str,
+    image_stem: str,
+    config_id: int,
+    output_dir_str: str,
+    grid_rows: int,
+    grid_cols: int,
+    score_threshold: float,
+    col_overlap_threshold: float,
+    vertical_gap_ratio: float,
+) -> tuple[List[Dict], Dict]:
+    """Top-level picklable CPU worker for HistogramColumnDetector."""
+    cv2.setNumThreads(1)
+    variant_path = Path(variant_path_str)
+    output_dir = Path(output_dir_str)
+    detector_name = "histogram"
+    start = time.time()
+
+    image = cv2.imread(str(variant_path))
+    if image is None:
+        return [], {}
+
+    h, w = image.shape[:2]
+    try:
+        detector = HistogramColumnDetector(score_threshold=score_threshold)
+        regions = detector.detect(image)
+        for region in regions:
+            assign_grid_index(region, h, w, grid_rows, grid_cols)
+
+        articles = group_regions_into_articles(
+            regions,
+            image_height=h,
+            col_overlap_threshold=col_overlap_threshold,
+            vertical_gap_ratio=vertical_gap_ratio,
+        )
+
+        crops_dir = output_dir / image_stem / f"config_{config_id}" / detector_name
+        crops_dir.mkdir(parents=True, exist_ok=True)
+        elapsed = time.time() - start
+
+        rows: List[Dict] = []
+        for article_idx, article in enumerate(articles, start=1):
+            x1, y1 = max(0, article.x1), max(0, article.y1)
+            x2, y2 = min(w, article.x2), min(h, article.y2)
+            crop = image[y1:y2, x1:x2]
+            filename = (
+                f"{image_stem}_config_{config_id}_{detector_name}"
+                f"_article_{article_idx:03d}.tiff"
+            )
+            cv2.imwrite(str(crops_dir / filename), crop)
+            rows.append(
+                {
+                    "image_stem": image_stem,
+                    "config_id": config_id,
+                    "detector": detector_name,
+                    "crop_file": filename,
+                    "elapsed_s": round(elapsed, 3),
+                    "status": "success",
+                    "error": None,
+                }
+            )
+
+        summary = {
+            "image_stem": image_stem,
+            "config_id": config_id,
+            "detector": detector_name,
+            "elapsed_s": round(elapsed, 3),
+        }
+        return rows, summary
+    except Exception as exc:
+        elapsed = time.time() - start
+        return [
+            {
+                "image_stem": image_stem,
+                "config_id": config_id,
+                "detector": detector_name,
+                "crop_file": None,
+                "elapsed_s": round(elapsed, 3),
+                "status": "failed",
+                "error": str(exc),
+            }
+        ], {}
+
+
 class LayoutAnalysisPipeline:
-    """
-    Runs LayoutParser and DocLayout-YOLO on every preprocessed variant of a
-    newspaper image. For each variant it:
-
-      1. Detects editorial regions (headlines, body text, captions).
-      2. Groups regions into coherent articles (column + vertical proximity).
-      3. Crops and saves each article as a TIFF with full provenance in the name.
-      4. Appends one row per article crop to a shared Parquet results file.
-      5. Writes a per-image JSON index for quick inspection.
-    """
-
     def __init__(
         self,
         logger: logging.Logger,
@@ -94,7 +153,8 @@ class LayoutAnalysisPipeline:
         score_threshold: float = 0.5,
         col_overlap_threshold: float = 0.5,
         vertical_gap_ratio: float = 0.04,
-        detectors: List[str] = None,
+        detectors: Optional[List[str]] = None,
+        workers: int = 1,
     ):
         self.logger = logger
         self.grid_rows = grid_rows
@@ -102,12 +162,11 @@ class LayoutAnalysisPipeline:
         self.score_threshold = score_threshold
         self.col_overlap_threshold = col_overlap_threshold
         self.vertical_gap_ratio = vertical_gap_ratio
-        self.detector_names = detectors or list(DETECTORS.keys())
+        self.detector_names = (
+            detectors if detectors is not None else list(DETECTORS.keys())
+        )
+        self.workers = max(1, workers)
         self._loaded_detectors: Dict[str, Any] = {}
-
-    # ------------------------------------------------------------------
-    # Detector cache
-    # ------------------------------------------------------------------
 
     def _get_detector(self, name: str):
         if name not in self._loaded_detectors:
@@ -117,239 +176,268 @@ class LayoutAnalysisPipeline:
             )
         return self._loaded_detectors[name]
 
-    # ------------------------------------------------------------------
-    # Checkpoint
-    # ------------------------------------------------------------------
-
     def _load_checkpoint(self, checkpoint_path: Path) -> set:
         if not checkpoint_path.exists():
             return set()
         with open(checkpoint_path, "r") as f:
             return {line.strip() for line in f if line.strip()}
 
-    def _save_checkpoint(self, checkpoint_path: Path, stem: str) -> None:
+    def _save_checkpoint(self, checkpoint_path: Path, key: str) -> None:
         with open(checkpoint_path, "a") as f:
-            f.write(stem + "\n")
+            f.write(key + "\n")
 
-    # ------------------------------------------------------------------
-    # Core processing
-    # ------------------------------------------------------------------
-
-    def process(
+    def process_variant(
         self,
-        preprocessed_dir: Path,
+        variant_path: Path,
         image_stem: str,
+        config_id: int,
         output_dir: Path,
-    ) -> List[Dict]:
-        """
-        Process all preprocessed variants of one original image.
+        detectors_to_run: List[str],
+    ) -> tuple[List[Dict], List[Dict]]:
+        """Run one or more detectors on a single preprocessed variant."""
+        image = cv2.imread(str(variant_path))
+        if image is None:
+            self.logger.warning("Could not read variant: %s", variant_path)
+            return [], []
 
-        Returns a flat list of row dicts (one per article crop) ready to be
-        appended to the Parquet results file.
-        """
-        variants = sorted(preprocessed_dir.glob(f"{image_stem}_config_*.tiff"))
+        h, w = image.shape[:2]
+        rows: List[Dict] = []
+        results: List[Dict] = []
 
-        if not variants:
-            self.logger.warning(
-                "No preprocessed variants found for %s in %s",
-                image_stem, preprocessed_dir,
-            )
-            return []
+        for detector_name in detectors_to_run:
+            start = time.time()
+            try:
+                detector = self._get_detector(detector_name)
+                regions = detector.detect(image)
 
-        meta = _parse_image_stem(image_stem)
-        all_rows: List[Dict] = []
-        all_results: List[Dict] = []  # for JSON index
+                for region in regions:
+                    assign_grid_index(
+                        region, h, w, self.grid_rows, self.grid_cols
+                    )
 
-        for variant_path in variants:
-            config_id = int(self._extract_config_id(variant_path))
-            image = cv2.imread(str(variant_path))
-
-            if image is None:
-                self.logger.warning("Could not read variant: %s", variant_path)
-                continue
-
-            h, w = image.shape[:2]
-
-            for detector_name in self.detector_names:
-                start = time.time()
-                self.logger.info(
-                    "[%s] config_%s | detector=%s",
-                    image_stem, config_id, detector_name,
+                articles = group_regions_into_articles(
+                    regions,
+                    image_height=h,
+                    col_overlap_threshold=self.col_overlap_threshold,
+                    vertical_gap_ratio=self.vertical_gap_ratio,
                 )
 
-                try:
-                    detector = self._get_detector(detector_name)
-                    regions = detector.detect(image)
+                crops_dir = (
+                    output_dir
+                    / image_stem
+                    / f"config_{config_id}"
+                    / detector_name
+                )
+                crops_dir.mkdir(parents=True, exist_ok=True)
+                elapsed = time.time() - start
 
-                    for region in regions:
-                        assign_grid_index(region, h, w, self.grid_rows, self.grid_cols)
-
-                    articles = group_regions_into_articles(
-                        regions,
-                        image_height=h,
-                        col_overlap_threshold=self.col_overlap_threshold,
-                        vertical_gap_ratio=self.vertical_gap_ratio,
+                for article_idx, article in enumerate(articles, start=1):
+                    crop_path = self._save_article_crop(
+                        image,
+                        article,
+                        crops_dir,
+                        image_stem,
+                        config_id,
+                        detector_name,
+                        article_idx,
                     )
-
-                    crops_dir = (
-                        output_dir / image_stem
-                        / f"config_{config_id}"
-                        / detector_name
-                    )
-                    crops_dir.mkdir(parents=True, exist_ok=True)
-
-                    elapsed = time.time() - start
-                    article_records = []
-
-                    for article_idx, article in enumerate(articles, start=1):
-                        crop_path = self._save_article_crop(
-                            image, article, crops_dir,
-                            image_stem, config_id, detector_name, article_idx,
-                        )
-
-                        row = {
-                            # Provenance
-                            # "newspaper": meta["newspaper"],
-                            # "date": meta["date"],
-                            # "page": meta["page"],
+                    rows.append(
+                        {
                             "image_stem": image_stem,
                             "config_id": config_id,
                             "detector": detector_name,
-                            # "article_idx": article_idx,
-                            # Output
                             "crop_file": crop_path.name,
-                            # "crop_path": str(crop_path),
-                            # Geometry
-                            # "x1": article.x1,
-                            # "y1": article.y1,
-                            # "x2": article.x2,
-                            # "y2": article.y2,
-                            # "grid_row": article.grid_row,
-                            # "grid_col": article.grid_col,
-                            # "num_regions": len(article.regions),
-                            # Timing
                             "elapsed_s": round(elapsed, 3),
-                            # Status
                             "status": "success",
                             "error": None,
                         }
+                    )
 
-                        all_rows.append(row)
-
-                        record = article.to_dict()
-                        record["crop_file"] = crop_path.name
-                        article_records.append(record)
-
-                    all_results.append({
+                results.append(
+                    {
                         "image_stem": image_stem,
                         "config_id": config_id,
                         "detector": detector_name,
-                        # "num_regions_detected": len(regions),
-                        # "num_articles": len(articles),
                         "elapsed_s": round(elapsed, 3),
-                        # "articles": article_records,
-                    })
-
-                    self.logger.info(
-                        "[%s] config_%s | detector=%s → %d regions → %d articles in %.3fs",
-                        image_stem, config_id, detector_name,
-                        len(regions), len(articles), elapsed,
-                    )
-
-                except Exception as e:
-                    elapsed = time.time() - start
-                    self.logger.exception(
-                        "[%s] FAILED config_%s detector=%s: %s",
-                        image_stem, config_id, detector_name, e,
-                    )
-                    all_rows.append({
-                        # "newspaper": meta["newspaper"],
-                        # "date": meta["date"],
-                        # "page": meta["page"],
+                    }
+                )
+            except Exception as exc:
+                elapsed = time.time() - start
+                self.logger.exception(
+                    "[%s] FAILED config_%s detector=%s: %s",
+                    image_stem,
+                    config_id,
+                    detector_name,
+                    exc,
+                )
+                rows.append(
+                    {
                         "image_stem": image_stem,
                         "config_id": config_id,
                         "detector": detector_name,
                         "crop_file": None,
-                        # "crop_path": None,
-                        # "x1": None, "y1": None, "x2": None, "y2": None,
-                        # "grid_row": None, "grid_col": None,
-                        # "num_regions": None,
                         "elapsed_s": round(elapsed, 3),
                         "status": "failed",
-                        "error": str(e),
-                    })
+                        "error": str(exc),
+                    }
+                )
 
-        if all_results:
-            self._save_index(all_results, output_dir / image_stem)
-
-        return all_rows
-
-    # ------------------------------------------------------------------
-    # Run over a full directory
-    # ------------------------------------------------------------------
+        return rows, results
 
     def run(
         self,
         preprocessed_dir: Path,
         output_dir: Path,
         resume: bool = True,
+        sub_dirs: Optional[List[str]] = None,
     ) -> int:
-        """
-        Run layout analysis on all preprocessed images in preprocessed_dir.
-        Appends results to a Parquet file saved inside output_dir after each
-        image. Supports resuming interrupted runs via a checkpoint file.
-
-        Returns the number of original images processed.
-        """
-        output_dir.mkdir(parents=True, exist_ok=True)
-
-        checkpoint_path = output_dir / CHECKPOINT_FILENAME
-        parquet_path = output_dir / "layout_detection.parquet"
-
-        done = self._load_checkpoint(checkpoint_path) if resume else set()
-
-        stems = set()
-        for f in preprocessed_dir.glob("*_config_*.tiff"):
-            stem = f.stem.rsplit("_config_", 1)[0]
-            stems.add(stem)
-
-        if not stems:
-            self.logger.warning(
-                "No preprocessed variants found in %s", preprocessed_dir
+        if not self.detector_names:
+            self.logger.info(
+                "No detectors configured for %s (full-page mode). Skipping layout detection.",
+                preprocessed_dir,
             )
             return 0
 
-        self.logger.info(
-            "Found %d original image(s) to process with %s detector(s).",
-            len(stems), self.detector_names,
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        det_tag = "_".join(sorted(self.detector_names))
+        sub_tag = f"_{'_'.join(sub_dirs)}" if sub_dirs else ""
+        checkpoint_path = (
+            output_dir / f".layout_checkpoint{sub_tag}_{det_tag}.txt"
+        )
+        parquet_path = output_dir / f"layout_detection{sub_tag}_{det_tag}.parquet"
+
+        done = self._load_checkpoint(checkpoint_path) if resume else set()
+
+        scan_roots = (
+            [
+                preprocessed_dir / sd
+                for sd in sub_dirs
+                if (preprocessed_dir / sd).exists()
+            ]
+            if sub_dirs
+            else [preprocessed_dir]
         )
 
+        # Recursive discovery across year subdirectories (2013..2026)
+        variant_files = sorted(
+            f
+            for root in scan_roots
+            for f in root.rglob("*_config_*.tiff")
+            if f.is_file()
+        )
+
+        if not variant_files:
+            self.logger.warning(
+                "No preprocessed variants found in %s", scan_roots
+            )
+            return 0
+
+        # Group variants by image_stem
+        stem_to_variants: Dict[str, List[Path]] = {}
+        for vf in variant_files:
+            stem = vf.stem.rsplit("_config_", 1)[0]
+            stem_to_variants.setdefault(stem, []).append(vf)
+
+        pending_stems = [
+            stem for stem in sorted(stem_to_variants) if not (resume and stem in done)
+        ]
+        skipped = len(stem_to_variants) - len(pending_stems)
+
+        self.logger.info(
+            "Found %d image(s) (skipped=%d, pending=%d) | detectors=%s | workers=%d",
+            len(stem_to_variants),
+            skipped,
+            len(pending_stems),
+            self.detector_names,
+            self.workers,
+        )
+
+        if not pending_stems:
+            return 0
+
+        gpu_dets = [d for d in self.detector_names if d in GPU_DETECTORS]
+        cpu_dets = [d for d in self.detector_names if d == "histogram"]
+
         processed = 0
-        skipped = 0
+        row_buffer: List[Dict] = []
 
-        for stem in sorted(stems):
-            if resume and stem in done:
-                skipped += 1
-                continue
+        # 1. If pure-CPU histogram detector is requested and workers > 1, run in ProcessPoolExecutor
+        histogram_results_by_stem: Dict[str, tuple[List[Dict], List[Dict]]] = {}
+        if cpu_dets and self.workers > 1:
+            tasks = []
+            for stem in pending_stems:
+                for vf in stem_to_variants[stem]:
+                    cid = int(self._extract_config_id(vf))
+                    tasks.append((stem, vf, cid))
 
-            self.logger.info("Starting layout analysis: %s", stem)
-            rows = self.process(preprocessed_dir, stem, output_dir)
+            with ProcessPoolExecutor(max_workers=self.workers) as pool:
+                future_map = {
+                    pool.submit(
+                        _run_histogram_worker,
+                        str(vf),
+                        stem,
+                        cid,
+                        str(output_dir),
+                        self.grid_rows,
+                        self.grid_cols,
+                        self.score_threshold,
+                        self.col_overlap_threshold,
+                        self.vertical_gap_ratio,
+                    ): stem
+                    for stem, vf, cid in tasks
+                }
+                for fut in as_completed(future_map):
+                    stem = future_map[fut]
+                    r_list, res_obj = fut.result()
+                    s_rows, s_res = histogram_results_by_stem.setdefault(
+                        stem, ([], [])
+                    )
+                    s_rows.extend(r_list)
+                    if res_obj:
+                        s_res.append(res_obj)
 
-            if rows:
-                self._append_to_parquet(rows, parquet_path)
+        # 2. Run GPU detectors (in-process with preloaded models) and merge results per stem
+        for stem in pending_stems:
+            stem_rows, stem_results = histogram_results_by_stem.get(stem, ([], []))
+
+            if gpu_dets:
+                for vf in stem_to_variants[stem]:
+                    cid = int(self._extract_config_id(vf))
+                    r_list, res_list = self.process_variant(
+                        vf, stem, cid, output_dir, gpu_dets
+                    )
+                    stem_rows.extend(r_list)
+                    stem_results.extend(res_list)
+
+            if stem_rows:
+                row_buffer.extend(stem_rows)
+            if stem_results:
+                self._save_index(stem_results, output_dir / stem)
 
             self._save_checkpoint(checkpoint_path, stem)
             processed += 1
 
+            if processed % 50 == 0:
+                if row_buffer:
+                    self._append_to_parquet(row_buffer, parquet_path)
+                    row_buffer.clear()
+                self.logger.info(
+                    "Progress: %d/%d pending images completed",
+                    processed,
+                    len(pending_stems),
+                )
+
+        if row_buffer:
+            self._append_to_parquet(row_buffer, parquet_path)
+
         self.logger.info(
             "Layout analysis complete. Processed: %d, Skipped: %d, Total: %d",
-            processed, skipped, len(stems),
+            processed,
+            skipped,
+            len(stem_to_variants),
         )
         return processed
-
-    # ------------------------------------------------------------------
-    # Helpers
-    # ------------------------------------------------------------------
 
     def _extract_config_id(self, path: Path) -> str:
         return path.stem.rsplit("_config_", 1)[-1]
@@ -364,10 +452,6 @@ class LayoutAnalysisPipeline:
         detector_name: str,
         article_idx: int,
     ) -> Path:
-        """
-        Crop the merged article bounding box and save with full provenance name.
-        e.g. elcomercio_2026-01-03_2_config_1_layoutparser_article_001.tiff
-        """
         h, w = image.shape[:2]
         x1 = max(0, article.x1)
         y1 = max(0, article.y1)
@@ -387,18 +471,10 @@ class LayoutAnalysisPipeline:
         return out_path
 
     def _append_to_parquet(self, rows: List[Dict], parquet_path: Path) -> None:
-        """Append rows to the Parquet results file (upsert by key cols)."""
-        try:
-            import pandas as pd
-        except ImportError as exc:
-            raise ImportError(
-                "Saving results requires 'pandas' and 'pyarrow'. "
-                "Install with: pip install pandas pyarrow"
-            ) from exc
+        import pandas as pd
 
         new_df = pd.DataFrame(rows)
-
-        key_cols = ["image_stem", "config_id", "detector"]
+        key_cols = ["image_stem", "config_id", "detector", "crop_file"]
 
         if parquet_path.exists():
             existing_df = pd.read_parquet(parquet_path)
@@ -412,14 +488,8 @@ class LayoutAnalysisPipeline:
         ).reset_index(drop=True)
         combined.to_parquet(parquet_path, index=False)
 
-        self.logger.info(
-            "Appended %d row(s) to %s (total rows: %d)",
-            len(new_df), parquet_path, len(combined),
-        )
-
     def _save_index(self, results: List[Dict], image_output_dir: Path) -> None:
         image_output_dir.mkdir(parents=True, exist_ok=True)
         index_path = image_output_dir / "layout_index.json"
         with open(index_path, "w", encoding="utf-8") as f:
             json.dump(results, f, indent=2, ensure_ascii=False)
-        self.logger.info("Saved layout index: %s", index_path)

@@ -127,11 +127,11 @@ def main():
             output_dir=Path(args.output_dir),
             resume=not args.no_resume,
             sub_dirs=args.sub_dirs,
+            newspaper=newspaper_key,
         )
         logger.info("Layout analysis finished. Images processed: %s", processed)
     except Exception as e:
         logger.exception("Layout analysis failed: %s", e)
-
 
 if __name__ == "__main__":
     main()

@@ -12,8 +12,8 @@ if [ "$#" -gt 0 ]; then
 fi
 
 .venv/corpus_construction/layout_detection/bin/python -m src.workflows.layout_detection \
-  --preprocessed-dir "$HOME/data/processed/enhanced/$NEWSPAPER" \
-  --output-dir "$HOME/data/processed/layout/$NEWSPAPER" \
+  --preprocessed-dir "$HOME/data/leonrios/processed/enhanced/$NEWSPAPER" \
+  --output-dir "$HOME/data/leonrios/processed/layout/$NEWSPAPER" \
   --newspaper "$NEWSPAPER" \
   --detectors "$DETECTOR" \
   --workers "$WORKERS" \

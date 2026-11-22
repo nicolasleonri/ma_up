@@ -37,13 +37,19 @@ GPU_DETECTORS = {"layoutparser", "doclayout", "ppdoclayout", "surya"}
 
 # Default winning layout detectors per newspaper (empty = full-page / no cropping)
 NEWSPAPER_DETECTORS: Dict[str, List[str]] = {
-    "correo": ["ppdoclayout"],
+    "correo": ["histogram"],
     "elcomercio": [],
     "gestion": [],
     "ojo": ["ppdoclayout"],
-    "peru21": ["doclayout"],
-    "publimetro": ["ppdoclayout"],
-    "trome": ["histogram", "doclayout"],
+    "peru21": ["ppdoclayout"],
+    "publimetro": ["histogram"],
+    "trome": ["doclayout", "ppdoclayout"],
+}
+
+# Position-specific config_id -> detector routing for Trome
+TROME_CONFIG_DETECTORS: Dict[int, str] = {
+    7: "doclayout",     # Last page
+    34: "ppdoclayout",  # Interior / other pages
 }
 
 CHECKPOINT_FILENAME = ".layout_checkpoint.txt"
@@ -155,6 +161,7 @@ class LayoutAnalysisPipeline:
         vertical_gap_ratio: float = 0.04,
         detectors: Optional[List[str]] = None,
         workers: int = 1,
+        newspaper: Optional[str] = None,
     ):
         self.logger = logger
         self.grid_rows = grid_rows
@@ -166,7 +173,19 @@ class LayoutAnalysisPipeline:
             detectors if detectors is not None else list(DETECTORS.keys())
         )
         self.workers = max(1, workers)
+        self.newspaper = newspaper
         self._loaded_detectors: Dict[str, Any] = {}
+
+    def _detectors_for_variant(
+        self,
+        newspaper: Optional[str],
+        config_id: int,
+    ) -> List[str]:
+        """Resolve which active detectors apply to a specific (newspaper, config_id)."""
+        if newspaper and newspaper.lower() == "trome" and config_id in TROME_CONFIG_DETECTORS:
+            target = TROME_CONFIG_DETECTORS[config_id]
+            return [d for d in self.detector_names if d == target]
+        return list(self.detector_names)
 
     def _get_detector(self, name: str):
         if name not in self._loaded_detectors:
@@ -290,7 +309,9 @@ class LayoutAnalysisPipeline:
         output_dir: Path,
         resume: bool = True,
         sub_dirs: Optional[List[str]] = None,
+        newspaper: Optional[str] = None,
     ) -> int:
+        active_newspaper = newspaper or self.newspaper
         if not self.detector_names:
             self.logger.info(
                 "No detectors configured for %s (full-page mode). Skipping layout detection.",
@@ -369,7 +390,8 @@ class LayoutAnalysisPipeline:
             for stem in pending_stems:
                 for vf in stem_to_variants[stem]:
                     cid = int(self._extract_config_id(vf))
-                    tasks.append((stem, vf, cid))
+                    if "histogram" in self._detectors_for_variant(newspaper, cid):
+                        tasks.append((stem, vf, cid))
 
             with ProcessPoolExecutor(max_workers=self.workers) as pool:
                 future_map = {
@@ -401,11 +423,17 @@ class LayoutAnalysisPipeline:
         for stem in pending_stems:
             stem_rows, stem_results = histogram_results_by_stem.get(stem, ([], []))
 
-            if gpu_dets:
-                for vf in stem_to_variants[stem]:
-                    cid = int(self._extract_config_id(vf))
+            for vf in stem_to_variants[stem]:
+                cid = int(self._extract_config_id(vf))
+                variant_dets = self._detectors_for_variant(newspaper, cid)
+                variant_gpu_dets = [d for d in variant_dets if d in GPU_DETECTORS]
+                # If workers == 1 and histogram is in variant_dets, run it here too
+                if self.workers == 1 and "histogram" in variant_dets:
+                    variant_gpu_dets.append("histogram")
+
+                if variant_gpu_dets:
                     r_list, res_list = self.process_variant(
-                        vf, stem, cid, output_dir, gpu_dets
+                        vf, stem, cid, output_dir, variant_gpu_dets
                     )
                     stem_rows.extend(r_list)
                     stem_results.extend(res_list)

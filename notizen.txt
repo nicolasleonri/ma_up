@@ -1,2 +1,31 @@
 remove /home/users/nleon/.paddlex/official_models/PP-DocLayout-L
 
+((((((((((2))))))))))
+for n in ojo peru21; do
+  for y in $(seq 2013 2026); do
+    if [ -d "data/processed/enhanced/$n/$y" ]; then
+      pueue add -g gpu -l "layout_${n}_${y}_ppdoclayout" -- \
+        scripts/run_layout_detection.sh "$n" "ppdoclayout" 1 "$y"
+    fi
+  done
+done
+
+for det in doclayout ppdoclayout; do
+  for y in $(seq 2013 2026); do
+    if [ -d "data/processed/enhanced/trome/$y" ]; then
+      pueue add -g gpu -l "layout_trome_${y}_${det}" -- \
+        scripts/run_layout_detection.sh "trome" "$det" 1 "$y"
+    fi
+  done
+done
+
+((((((((((1))))))))))
+# CPU newspapers (correo, publimetro -> histogram across 24 cores: 4 slots x 6 workers)
+for n in publimetro; do
+  for y in $(seq 2013 2026); do
+    if [ -d "data/processed/enhanced/$n/$y" ]; then
+      pueue add -g cpu -l "layout_${n}_${y}_histogram" -- \
+        scripts/run_layout_detection.sh "$n" "histogram" 6 "$y"
+    fi
+  done
+done

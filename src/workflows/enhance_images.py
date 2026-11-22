@@ -104,6 +104,8 @@ def main():
         config_ids = None
     elif args.configs is not None:
         config_ids = args.configs
+    elif newspaper_key == "trome":
+        config_ids = None  # Handled per-page in EnhancementPipeline (7 for last page, 34 otherwise)
     elif newspaper_key and newspaper_key in NEWSPAPER_CONFIG_IDS:
         config_ids = NEWSPAPER_CONFIG_IDS[newspaper_key]
         logger.info(
@@ -122,6 +124,7 @@ def main():
         resume=not args.no_resume,
         config_ids=config_ids,
         sub_dirs=args.sub_dirs,
+        newspaper=newspaper_key,
     )
 
 

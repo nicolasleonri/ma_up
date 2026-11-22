@@ -31,7 +31,7 @@ NEWSPAPER_CONFIG_IDS: dict[str, list[int]] = {
     "ojo": [52],
     "peru21": [38],
     "publimetro": [12],
-    "trome": [7, 34],
+    "trome": [34],  # Default for non-last pages; last pages auto-route to [7]
 }
 
 CONTRAST_METHODS = {
@@ -57,6 +57,25 @@ SHARPENING_METHODS = {
     "stroke_width_enhancement": Sharpening.stroke_width_enhancement,
 }
 
+def _extract_edition_and_page(stem: str) -> tuple[str, int] | None:
+    """Parse 'trome_2014-10-07_32' -> ('trome_2014-10-07', 32)."""
+    parts = stem.rsplit("_", 1)
+    if len(parts) == 2 and parts[1].isdigit():
+        return parts[0], int(parts[1])
+    return None
+
+def _find_last_page_stems(image_files: list[Path]) -> set[str]:
+    """Identify the stem with the highest page number per (newspaper_date) edition."""
+    max_page_by_edition: dict[str, tuple[int, str]] = {}
+    for img in image_files:
+        parsed = _extract_edition_and_page(img.stem)
+        if parsed is None:
+            continue
+        edition, page_num = parsed
+        current = max_page_by_edition.get(edition)
+        if current is None or page_num > current[0]:
+            max_page_by_edition[edition] = (page_num, img.stem)
+    return {stem for _, stem in max_page_by_edition.values()}
 
 def _worker_init() -> None:
     """Prevent OpenCV thread oversubscription inside worker processes."""
@@ -232,22 +251,34 @@ class EnhancementPipeline:
         resume: bool = True,
         config_ids: list[int] | None = None,
         sub_dirs: list[str] | None = None,
+        newspaper: str | None = None,
     ) -> int:
         """Run selected preprocessing configurations across CPU workers."""
         output_root.mkdir(parents=True, exist_ok=True)
 
         all_configs = self._build_configs()
         self.save_configurations(all_configs, output_root)
-        active_configs = self._select_configs(all_configs, config_ids)
-        active_ids_tag = ",".join(str(c["config_id"]) for c in active_configs)
+        configs_by_id = {c["config_id"]: c for c in all_configs}
 
-        logger.info(
-            "Active config_id(s): %s | Workers: %d",
-            [c["config_id"] for c in active_configs],
-            self.workers,
+        use_trome_split = (
+            newspaper is not None
+            and newspaper.lower() == "trome"
+            and config_ids is None
         )
 
-        # Use a shard-specific checkpoint if sub_dirs is specified so parallel pueue jobs never collide
+        if use_trome_split:
+            logger.info(
+                "Trome position-aware routing active: last page -> [7], other pages -> [34] | Workers: %d",
+                self.workers,
+            )
+        else:
+            default_active = self._select_configs(all_configs, config_ids)
+            logger.info(
+                "Active config_id(s): %s | Workers: %d",
+                [c["config_id"] for c in default_active],
+                self.workers,
+            )
+
         ckpt_name = (
             f".enhancement_checkpoint_{'_'.join(sub_dirs)}.txt"
             if sub_dirs
@@ -269,22 +300,37 @@ class EnhancementPipeline:
             if f.is_file() and f.suffix.lower() in SUPPORTED_EXTENSIONS
         )
 
+        last_page_stems = (
+            _find_last_page_stems(image_files) if use_trome_split else set()
+        )
+
         total = len(image_files)
-        pending_tasks: list[tuple[str, str, str]] = []
+        pending_tasks: list[tuple[str, str, str, list[dict], str]] = []
         skipped = 0
 
         for image_path in image_files:
             relative = str(image_path.relative_to(input_root))
-            checkpoint_key = (
-                f"{relative}::{active_ids_tag}" if config_ids else relative
-            )
+
+            if use_trome_split:
+                img_cids = [7] if image_path.stem in last_page_stems else [34]
+                img_configs = [configs_by_id[cid] for cid in img_cids]
+                ids_tag = ",".join(str(cid) for cid in img_cids)
+                checkpoint_key = f"{relative}::{ids_tag}"
+            else:
+                img_configs = self._select_configs(all_configs, config_ids)
+                ids_tag = ",".join(str(c["config_id"]) for c in img_configs)
+                checkpoint_key = (
+                    f"{relative}::{ids_tag}" if config_ids else relative
+                )
 
             if resume and (checkpoint_key in done or relative in done):
                 skipped += 1
                 continue
 
             out_dir = output_root / image_path.relative_to(input_root).parent
-            pending_tasks.append((str(image_path), relative, str(out_dir)))
+            pending_tasks.append(
+                (str(image_path), relative, str(out_dir), img_configs, checkpoint_key)
+            )
 
         logger.info(
             "Found %d image(s) under %s (skipped=%d, pending=%d)",
@@ -303,20 +349,15 @@ class EnhancementPipeline:
         with open(checkpoint_path, "a") as ckpt_file:
             if self.workers == 1:
                 _worker_init()
-                for img_str, rel, out_str in pending_tasks:
+                for img_str, rel, out_str, img_configs, ckpt_key in pending_tasks:
                     rel_done, out_dir, records = _process_single_image_task(
-                        img_str, rel, out_str, active_configs
+                        img_str, rel, out_str, img_configs
                     )
                     if not records:
                         logger.warning("Could not read %s, skipping.", img_str)
                         continue
 
                     metadata_buffers.setdefault(out_dir, []).extend(records)
-                    ckpt_key = (
-                        f"{rel_done}::{active_ids_tag}"
-                        if config_ids
-                        else rel_done
-                    )
                     ckpt_file.write(ckpt_key + "\n")
                     processed += 1
 
@@ -339,13 +380,13 @@ class EnhancementPipeline:
                             img_str,
                             rel,
                             out_str,
-                            active_configs,
-                        ): rel
-                        for img_str, rel, out_str in pending_tasks
+                            img_configs,
+                        ): (rel, ckpt_key)
+                        for img_str, rel, out_str, img_configs, ckpt_key in pending_tasks
                     }
 
                     for future in as_completed(futures):
-                        rel = futures[future]
+                        rel, ckpt_key = futures[future]
                         try:
                             rel_done, out_dir, records = future.result()
                         except Exception as exc:
@@ -357,11 +398,6 @@ class EnhancementPipeline:
                             continue
 
                         metadata_buffers.setdefault(out_dir, []).extend(records)
-                        ckpt_key = (
-                            f"{rel_done}::{active_ids_tag}"
-                            if config_ids
-                            else rel_done
-                        )
                         ckpt_file.write(ckpt_key + "\n")
                         processed += 1
 

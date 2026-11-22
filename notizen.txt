@@ -29,3 +29,11 @@ for n in publimetro; do
     fi
   done
 done
+
+((((((((((3))))))))))
+for n in correo elcomercio gestion ojo peru21 publimetro trome; do
+  for y in $(seq 2013 2026); do
+    pueue add -g cpu -l "binarize_${n}_${y}" -- \
+      scripts/run_binarize.sh "$n" 6 "$y"
+  done
+done

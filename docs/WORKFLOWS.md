@@ -1,152 +1,82 @@
 # Workflows
 
-This document describes the application workflows under `src/workflows`.
+This document describes the executable workflows under `src/workflows` and stage pipelines under `src/corpus_construction`.
 
 ## Workflow responsibilities
 
-Each workflow should have one clear responsibility and a stable input/output contract.
+### 1. Corpus acquisition
 
-### Corpus acquisition
+**Purpose:** Prepare the newspaper scan corpus and stratified sampling manifest.
 
-**Purpose:** obtain and prepare the source corpus.
+- **Input:** Raw newspaper page images and metadata.
+- **Output:** `scripts/R/get_sample/sample.csv` recording `newspaper`, `date`, `page_number`, and `page_position` (`Interior`, `Back`).
 
-**Input:** source portal/service or existing source files.
+### 2. Image preprocessing & layout detection (`src/corpus_construction/ocr_extraction`)
 
-**Output:** downloaded source artifacts plus acquisition metadata.
+**Purpose:** Normalize scanned images and detect article regions.
 
-Important concerns:
+- **Binarization options:** `basic`, `otsu`, `none_color`, `none_grayscale`.
+- **Layout detectors:** `ppdoclayout`, `histogram`, `doclayout` (YOLO/DocLayout), or full-page (`None`).
+- **Output:** Cropped region images (`binarize_file`) sorted in reading order.
 
-- authentication and credentials;
-- rate limiting;
-- network failures;
-- duplicate detection;
-- provenance;
-- resumability.
+### 3. OCR extraction (`src/corpus_construction/ocr_extraction`)
 
-External-site selectors and portal-specific logic should remain isolated from the rest of the pipeline.
+**Purpose:** Transcribe detected crops or full pages into verbatim text.
 
-### Image preprocessing
+- **Engines:** `docling_rapidocr`, `docling_easyocr`.
+- **Output:** `data/corpus_construction/ocr_extraction/<newspaper>/{cropped,none}/ocr.parquet`.
 
-**Purpose:** convert source images into analysis-ready artifacts.
+### 4. DSPy prompt optimization (`src/corpus_construction/local_dspy_llm`)
 
-Typical operations include:
+**Purpose:** Build page-level datasets, evaluate baseline prompts, and optimize few-shot demonstrations via stratified $k$-fold cross-validation.
 
-- format normalization;
-- image validation;
-- resizing;
-- cropping;
-- orientation correction;
-- quality checks;
-- deterministic naming.
+- **Inputs:** `ocr.parquet`, `evaluate_extraction/<newspaper>.csv`, and `sample.csv`.
+- **Outputs:**
+  - `data/corpus_construction/local_dspy_llm/datasets/<newspaper>.parquet`
+  - `data/corpus_construction/local_dspy_llm/reports/<newspaper>_cv.csv`
+  - `data/corpus_construction/local_dspy_llm/prompts/base_prompt.md`
+  - `data/corpus_construction/local_dspy_llm/prompts/<newspaper>_prompt.md` (exported only when out-of-fold `F1 > table1_f1`, i.e., `gestion_prompt.md` and `publimetro_prompt.md`)
+- **Invocation:**
+  ```bash
+  python -m src.corpus_construction.local_dspy_llm.pipeline --build
+  python -m src.corpus_construction.local_dspy_llm.pipeline --eval
+  python -m src.corpus_construction.local_dspy_llm.pipeline --optimize --k 5
+  ```
 
-Preprocessing should never overwrite irreplaceable source files.
+### 5. Structured LLM extraction (`src/corpus_construction/llm_extraction`)
 
-### Layout detection
+**Purpose:** Extract structured articles (`title`, `subheadline`, `author`, `body`) from OCR regions/pages using local Ollama models (`qwen2.5:7b`, `mistral:7b`, `deepseek-r1:7b`).
 
-**Purpose:** identify regions or structural elements in a document.
+- **Inputs:** Filtered `ocr.parquet` rows and standalone Markdown prompt (`<newspaper>_prompt.md` if present, otherwise `base_prompt.md`).
+- **Output:** Structured JSON / Parquet extraction results per newspaper.
 
-The output should contain enough metadata to map every detected region back to its source document and image coordinates.
+### 6. Evaluation (`src/workflows/evaluate_extraction.py`)
 
-Recommended metadata:
+**Purpose:** Evaluate extracted articles against gold-standard annotations using page-level Hungarian matching (`linear_sum_assignment`).
 
-```json
-{
-  "document_id": "...",
-  "image_id": "...",
-  "region_id": "...",
-  "bbox": [0, 0, 0, 0],
-  "label": "...",
-  "confidence": 0.0
-}
-```
-
-Adapt the exact schema to the implementation used by the project.
-
-### VLM extraction
-
-**Purpose:** transform visual document content into structured predictions.
-
-Record:
-
-- model identifier;
-- model revision;
-- prompt/template version;
-- inference parameters;
-- source artifact;
-- output schema;
-- errors and retries.
-
-Structured output should be validated before it is accepted as a successful prediction.
-
-### Fine-tuning
-
-**Purpose:** create a project-specific model from curated examples.
-
-A training run should have an immutable or versioned description of:
-
-- training data;
-- validation data;
-- model base;
-- hyperparameters;
-- preprocessing;
-- random seed;
-- output checkpoint;
-- evaluation results.
-
-Avoid relying on an implicit "latest" model when publishing experiment results.
-
-### Evaluation
-
-**Purpose:** measure extraction or detection quality against reference data.
-
-Evaluation should produce machine-readable metrics as well as a human-readable summary.
-
-Where possible, preserve per-example results so that aggregate metrics can be audited.
-
-## Running a workflow
-
-First inspect the workflow's CLI:
-
-```bash
-python -m <workflow_module> --help
-```
-
-Prefer explicit configuration over hidden defaults:
-
-```bash
-python -m <workflow_module> \
-  --input <input> \
-  --output <output>
-```
-
-Use the actual options exposed by the repository rather than copying the example literally.
+- **Matching criterion:** Composite fuzzy similarity `0.30 * fuzzy_title + 0.70 * fuzzy_body >= 70.0` (`MATCH_THRESHOLD`).
+- **Metrics reported:** Detection **F1** (Precision / Recall), **Title CER** (Character Error Rate on true positives), and **Body WER** (Word Error Rate on true positives).
+- **Invocation:**
+  ```bash
+  python -m src.workflows.evaluate_extraction --help
+  ```
 
 ## Workflow contract
 
-Every workflow should document:
-
-| Item | Required |
-|---|---|
-| Inputs | Yes |
-| Outputs | Yes |
-| Configuration | Yes |
-| External dependencies | Yes |
-| Failure behavior | Yes |
-| Resume behavior | Recommended |
-| Example invocation | Recommended |
+| Item | Specification |
+| :--- | :--- |
+| **Inputs** | `sample.csv`, `ocr.parquet`, gold `<newspaper>.csv`, standalone `prompts/*.md` |
+| **Outputs** | Cached `.parquet` datasets, `_cv.csv` reports, winning `_prompt.md` files, extraction `.parquet` |
+| **Configuration** | `NEWSPAPERS` mapping (`config_id`, `detector`, `binarization`, `ocr_extractor`, `model`, `table1_f1`) |
+| **External dependencies** | Local Ollama server (`http://127.0.0.1:11434`) with `qwen2.5:7b`, `mistral:7b`, `deepseek-r1:7b` |
+| **Failure behavior** | Logs per-page/per-fold exceptions with timing; skips prompt overwrite if `opt_f1 <= table1_f1` |
+| **Resume behavior** | Persists intermediate `.parquet`, `.json`, `.csv`, and `.md` artifacts per stage |
 
 ## Recommended execution order
 
-For a complete processing run:
-
-1. Acquire the corpus.
-2. Validate source files.
-3. Preprocess images.
-4. Run layout detection.
-5. Run VLM extraction.
-6. Produce or update training data if required.
-7. Fine-tune a model if required.
-8. Evaluate predictions.
-9. Archive metrics and run metadata.
-
-Not every experiment needs every stage.
+1. Prepare `sample.csv` and raw newspaper scans.
+2. Run preprocessing, layout detection, and OCR extraction to produce `ocr.parquet`.
+3. Run `--build` to cache aligned page-level datasets (`datasets/<newspaper>.parquet`).
+4. Run `--optimize` to execute stratified $k$-fold CV and export `base_prompt.md` plus winning newspaper prompts (`gestion_prompt.md`, `publimetro_prompt.md`).
+5. Run structured LLM extraction across the target corpus using the selected prompts and Table 1 `config_id`s.
+6. Run `src/workflows/evaluate_extraction.py` to generate final metrics and audit per-page predictions.

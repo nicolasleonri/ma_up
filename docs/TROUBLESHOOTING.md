@@ -1,93 +1,53 @@
 # Troubleshooting
 
-## Workflow cannot find an input
+## Missing OCR parquet, gold CSV, or sample manifest
 
-Check:
+If `step_build_dataset` raises `FileNotFoundError`:
 
-1. the configured input path;
-2. the current working directory;
-3. whether acquisition completed successfully;
-4. whether the expected file extension/format is supported.
+1. Verify you are running commands from the repository root (`MA-UP/`).
+2. Confirm `scripts/R/get_sample/sample.csv` exists.
+3. Check that `data/corpus_construction/ocr_extraction/<newspaper>/{cropped,none}/ocr.parquet` and `data/corpus_construction/evaluate_extraction/<newspaper>.csv` exist for the target newspaper.
+4. For `trome_interior` and `trome_last`, note that both read from `data/corpus_construction/ocr_extraction/trome/cropped/ocr.parquet` and `evaluate_extraction/trome.csv`, filtered by `page_position` (`Interior` vs. `Back`/`Last`).
 
-Prefer absolute or project-root-relative paths during debugging.
+## Zero OCR regions matched for a newspaper
 
-## Authentication or network failures
+If `[build:<name>]` reports `0/N with OCR regions`:
 
-Check:
+1. Inspect `ocr.parquet` columns (`config_id`, `detector`, `binarization`, `ocr_extractor`, `image_stem`).
+2. Verify whether the configuration uses `ocr_variant="none"` (`elcomercio`, `gestion`) or `ocr_variant="cropped"` (all others).
+3. Ensure `detector` is `None` (or `"none"`) for full-page configs (`51` and `6`).
 
-- required credentials are available;
-- credentials have not expired;
-- the external service is reachable;
-- rate limits have not been exceeded;
-- the workflow is configured for the correct endpoint.
+## Ollama connection errors or timeouts
 
-Do not solve authentication failures by committing credentials into the repository.
+If `step_evaluate_pages` logs `ERROR` or connection failures:
 
-## Model loading fails
+1. Verify the Ollama daemon is running and reachable at `--host` (default `http://127.0.0.1:11434`).
+2. Confirm all required models are pulled locally:
+   ```bash
+   ollama list
+   # Expected: qwen2.5:7b, mistral:7b, deepseek-r1:7b
+   ```
+3. Lower `--threads` (e.g., `--threads 1` or `--threads 2`) if concurrent requests overwhelm GPU VRAM and trigger the `180s` timeout.
 
-Check:
+## Truncated JSON or DeepSeek reasoning blocks
 
-- model identifier/revision;
-- local cache;
-- runtime version;
-- available disk space;
-- available GPU/CPU memory;
-- CUDA/runtime compatibility where applicable.
+- **Truncated JSON on dense pages:** Ensure `max_tokens=16384` and `num_ctx=32768` are set in `make_lm` (and in production `llm_extraction`) so multi-article pages do not clip mid-array.
+- **DeepSeek-R1 `<think>` tags:** `deepseek-r1:7b` emits `<think>...</think>` reasoning traces before the JSON array. `_parse_articles` strips these automatically; ensure any custom parser applies the same regex cleanup before `json.loads`.
 
-Record the model version used for successful runs.
+## DSPy optimization skips saving a prompt
 
-## Out-of-memory errors
+If `[optimize:<name>] SKIPPED save` appears:
 
-Try, in this order:
-
-1. reduce batch size;
-2. reduce image/input resolution if scientifically acceptable;
-3. reduce concurrent workers;
-4. use an appropriate inference precision;
-5. move work to a machine with sufficient memory.
-
-Document any change that can affect model quality.
-
-## Workflow stops part way through
-
-Prefer resuming from persisted intermediate artifacts instead of deleting the output directory and starting again.
-
-If the workflow is not restartable, consider adding:
-
-- per-item checkpoints;
-- atomic output writes;
-- completed-item manifests;
-- retry handling.
-
-## Invalid structured output
-
-Validate model output against a schema before writing it as a successful result.
-
-Keep the original model response or an appropriate diagnostic artifact when possible so failures can be inspected.
-
-## Unexpected evaluation results
-
-Verify:
-
-- dataset split;
-- preprocessing version;
-- reference annotations;
-- model version;
-- prompt/schema version;
-- evaluation configuration.
-
-A metric change is not necessarily a model change; preprocessing and evaluation changes can also alter results.
+- This is expected behavior when no out-of-fold DSPy model strictly outperforms the newspaper's `table1_f1` baseline (`correo`, `elcomercio`, `ojo`, `peru21`, `trome_interior`, `trome_last`).
+- Use `data/corpus_construction/local_dspy_llm/prompts/base_prompt.md` for those configurations. Only `gestion` (`0.65 -> 0.73`) and `publimetro` (`0.64 -> 0.70`) export newspaper-specific prompts.
 
 ## Debugging checklist
 
 ```text
-[ ] Correct code revision
-[ ] Correct environment
-[ ] Correct configuration
-[ ] Correct input dataset/version
-[ ] Correct model/version
-[ ] Correct output directory
-[ ] Sufficient compute resources
-[ ] Relevant logs captured
-[ ] Failed artifact preserved
+[ ] Executed from repository root
+[ ] Virtual environment active with dspy, rapidfuzz, scipy, pandas installed
+[ ] Ollama server running with qwen2.5:7b, mistral:7b, deepseek-r1:7b
+[ ] sample.csv, ocr.parquet, and gold CSVs present in expected paths
+[ ] config_id and ocr_variant match Table 1 specification
+[ ] Standalone prompt (.md) contains {ocr_text} placeholder
 ```

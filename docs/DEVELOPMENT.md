@@ -2,93 +2,56 @@
 
 ## Development goals
 
-Changes to the project should preserve reproducibility while making the workflows easier to test, operate, and extend.
+Changes to MA-UP should preserve end-to-end reproducibility, maintain compatibility with persisted intermediate artifacts, and keep orchestration separate from extraction and evaluation logic.
 
 ## Before changing a workflow
 
-Read:
+Inspect:
 
-1. the workflow entry point;
-2. the modules it imports;
-3. its input/output contract;
-4. the relevant configuration;
-5. existing tests;
-6. the corresponding documentation.
+1. the entry point (`src/workflows/...` or `src/corpus_construction/.../pipeline.py`);
+2. domain logic in `steps.py`;
+3. the configuration dictionary (`NEWSPAPERS`) and prompt templates (`prompts/*.md`);
+4. the evaluation contract in `src/workflows/evaluate_extraction.py`.
 
 ## Keep orchestration thin
 
-A workflow should coordinate operations rather than implement every operation itself.
-
-Prefer:
+Separate CLI parsing and loop orchestration (`pipeline.py`) from domain operations (`steps.py`):
 
 ```python
-def run(config):
-    inputs = discover_inputs(config)
-    prepared = preprocess(inputs, config)
-    predictions = extract(prepared, config)
-    return write_outputs(predictions, config)
+# Preferred pattern
+pages = load_dataset(name)
+metrics = step_evaluate_pages(program, pages, verbose=True)
 ```
 
-over a single large function containing discovery, image processing, network calls, parsing, and persistence.
+Avoid duplicating JSON parsing, Hungarian matching, or OCR filtering across multiple scripts. Reuse `similarity_score`, `cer`, `wer`, and `MATCH_THRESHOLD` directly from `src/workflows/evaluate_extraction.py`.
+
+## Prompt & schema conventions
+
+- Standalone prompts live in `data/corpus_construction/local_dspy_llm/prompts/` (`base_prompt.md` and `<newspaper>_prompt.md`) and use a single `{ocr_text}` placeholder.
+- Keep `base_prompt.md` synchronized with `ArticleExtraction` and `BASELINE_DEMOS` via `export_base_prompt_markdown()`.
+- Preserve verbatim Spanish OCR text in extraction outputs—do not instruct models to autocorrect historical spelling or OCR noise.
 
 ## Testing
 
-Tests should cover at least:
+Tests should verify:
 
-- configuration validation;
-- input discovery;
-- deterministic transformations;
-- parsing/schema validation;
-- failure handling;
-- representative end-to-end execution with external services mocked.
-
-Expensive model inference and network operations should normally be separated from fast unit tests.
+- deterministic page filtering by `config_id`, `detector`, `binarization`, `ocr_extractor`, and `page_position`;
+- JSON parsing edge cases (Markdown fences, `<think>...</think>` reasoning blocks, empty arrays `[]`, malformed trailing text);
+- Hungarian matching (`evaluate_page_predictions`) on edge cases (0 gold articles, 0 predictions, partial matches around `MATCH_THRESHOLD = 70.0`);
+- standalone Markdown prompt export and `{ocr_text}` substitution.
 
 ## Logging
 
-Use structured, useful logs.
+Log messages should identify:
 
-A log message should answer:
-
-- what happened;
-- to which artifact;
-- during which stage;
-- whether the operation succeeded.
-
-Avoid logging secrets or unnecessarily sensitive source data.
+- `[stage:newspaper]` prefix (e.g., `[build:gestion]`, `[optimize:publimetro]`);
+- page/fold progress (`[idx/total] page_id`);
+- exact metrics (`F1`, `Title CER`, `Body WER`) and elapsed time;
+- explicit skip/save reasons when comparing against `table1_f1`.
 
 ## Code quality
 
-Prefer:
-
-- type hints for public functions;
-- small functions;
-- explicit error handling;
-- descriptive names;
-- documented non-obvious assumptions;
-- deterministic behavior.
-
-Avoid:
-
-- duplicated workflow implementations;
-- hard-coded absolute paths;
-- hidden global state;
-- broad `except Exception` blocks that discard context;
-- credentials in source code.
-
-## Pull requests / changes
-
-A workflow change should include:
-
-- implementation;
-- tests where practical;
-- documentation updates;
-- migration notes if outputs change.
-
-If an output schema changes, explicitly document the old and new formats.
-
-## Experiment changes
-
-Research changes should record why the change was made and how it affects comparability with previous runs.
-
-Do not silently change preprocessing or evaluation behavior while keeping the same experiment identifier.
+- Use type hints (`from __future__ import annotations`) on public functions.
+- Keep random seeds (`seed=42`) and sorting keys (`binarize_file`) explicit and deterministic.
+- Never hard-code local machine paths or credentials.
+- Update `README.md` and `docs/` whenever pipeline stages, `config_id`s, or benchmark results change.

@@ -1,95 +1,71 @@
 # Configuration
 
-Configuration should make a workflow portable between a laptop, workstation, and compute cluster without changing source code.
+Configuration keeps MA-UP portable across workstations and compute servers without hard-coding machine-specific paths or credentials.
 
 ## Principles
 
-- Never commit secrets.
-- Prefer environment variables for credentials.
-- Prefer explicit paths over implicit working-directory assumptions.
-- Record model identifiers and revisions.
-- Keep generated data outside the source tree where practical.
+- Never commit secrets or API tokens.
+- Prefer project-root-relative paths (`data/...`, `scripts/...`) and CLI flags over implicit working-directory assumptions.
+- Record explicit `config_id`s, model identifiers, and prompt filenames for every run.
+- Keep generated datasets, OCR parquets, and model outputs outside Git tracking.
 
 ## Configuration categories
 
 ### Paths
 
-Document paths for:
+Canonical project paths:
 
-- raw corpus;
-- processed images;
-- layout outputs;
-- extraction outputs;
-- training data;
-- model checkpoints;
-- evaluation reports.
-
-Use a single configuration mechanism rather than defining paths independently in every workflow.
+- **Sample manifest:** `scripts/R/get_sample/sample.csv`
+- **OCR outputs:** `data/corpus_construction/ocr_extraction/<newspaper>/{cropped,none}/ocr.parquet`
+- **Gold annotations:** `data/corpus_construction/evaluate_extraction/<newspaper>.csv`
+- **LLM extraction outputs:** `data/corpus_construction/llm_extraction/<newspaper>/`
+- **DSPy cached datasets:** `data/corpus_construction/local_dspy_llm/datasets/<newspaper>.parquet`
+- **DSPy compiled artifacts:** `data/corpus_construction/local_dspy_llm/artifacts/<newspaper>.json`
+- **Standalone prompts:** `data/corpus_construction/local_dspy_llm/prompts/{base_prompt.md, <newspaper>_prompt.md}`
+- **Cross-validation reports:** `data/corpus_construction/local_dspy_llm/reports/<newspaper>_cv.csv`
 
 ### Credentials
 
-Credentials for portals, model providers, or external services should be supplied through environment variables or the project's secret-management mechanism.
+Local inference runs against a local Ollama server (`http://127.0.0.1:11434`) using a placeholder key (`api_key="ollama"`). If external endpoints or portals are used during acquisition, supply credentials via environment variables—never in Python source files, notebooks, or tracked config files.
 
-Never place API keys or passwords directly in:
+### Models & runtime parameters
 
-- Python files;
-- notebooks;
-- README examples;
-- shell history committed to the repository;
-- JSON/YAML configuration tracked by Git.
-
-### Models
-
-Record at least:
+Record both the stage configuration and Ollama runtime settings:
 
 ```text
-model name
-model revision/version
-provider or local runtime
-inference parameters
+model names      : qwen2.5:7b, mistral:7b, deepseek-r1:7b
+provider/runtime : ollama_chat via http://127.0.0.1:11434
+temperature      : 0.0
+max_tokens       : 16384
+num_ctx          : 32768
+repeat_penalty   : 1.1 (repeat_last_n = 128)
+timeout          : 180s
 ```
 
-For fine-tuning, additionally record the base checkpoint and training configuration.
+### Selected newspaper configurations
+
+Each newspaper configuration binds a specific preprocessing, layout, OCR, LLM, and prompt setup:
+
+| Newspaper | Position | `config_id` | Detector | Binarization | OCR Engine | LLM Model | Active Prompt |
+| :--- | :--- | :---: | :--- | :--- | :--- | :--- | :--- |
+| `correo` | Interior | 13 | `histogram` | `basic` | `docling_rapidocr` | `mistral:7b` | `base_prompt.md` |
+| `elcomercio` | Interior | 51 | `None` (full-page) | `none_color` | `docling_rapidocr` | `qwen2.5:7b` | `base_prompt.md` |
+| `gestion` | Interior | 6 | `None` (full-page) | `otsu` | `docling_rapidocr` | `qwen2.5:7b` | `gestion_prompt.md` |
+| `ojo` | Interior | 52 | `ppdoclayout` | `basic` | `docling_rapidocr` | `qwen2.5:7b` | `base_prompt.md` |
+| `peru21` | Interior | 38 | `ppdoclayout` | `none_color` | `docling_rapidocr` | `deepseek-r1:7b` | `base_prompt.md` |
+| `publimetro` | Interior | 12 | `histogram` | `none_grayscale` | `docling_easyocr` | `mistral:7b` | `publimetro_prompt.md` |
+| `trome_last` | Last | 7 | `doclayout` | `otsu` | `docling_rapidocr` | `qwen2.5:7b` | `base_prompt.md` |
+| `trome_interior` | Interior | 34 | `ppdoclayout` | `none_color` | `docling_rapidocr` | `mistral:7b` | `base_prompt.md` |
 
 ### Compute
 
-Document hardware assumptions where relevant:
-
-- CPU/GPU requirements;
-- GPU memory;
-- CUDA/runtime version;
-- multiprocessing settings;
-- batch size;
-- precision.
-
-A workflow should fail with a clear error when required hardware or runtime support is unavailable.
-
-## Reproducible configuration
-
-For an experiment, save the effective configuration alongside the outputs:
-
-```text
-run/
-├── config.json
-├── logs/
-├── inputs/
-├── outputs/
-└── metrics/
-```
-
-The exact directory names may be adapted to the project's existing artifact layout.
+- Local 7B models require sufficient RAM/VRAM for `num_ctx=32768` and `max_tokens=16384`.
+- Thread concurrency (`--threads`, default `2`–`4`) should be tuned to available GPU/CPU capacity so Ollama requests do not time out.
 
 ## Configuration validation
 
-Validate required settings before expensive processing starts.
+Before running extraction or optimization, workflows verify:
 
-Examples:
-
-- required input exists;
-- output directory is writable;
-- model identifier is present;
-- credentials are available when required;
-- GPU/runtime is available when required;
-- incompatible options are rejected.
-
-Fail early rather than discovering configuration errors after hours of processing.
+- existence of `sample.csv`, `ocr.parquet`, and `<newspaper>.csv`;
+- presence of required filter columns (`config_id`, `detector`, `binarization`, `ocr_extractor`) in `ocr.parquet`;
+- reachability of the configured Ollama host (`--host`).

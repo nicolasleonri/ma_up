@@ -2,133 +2,114 @@
 
 ## Overview
 
-MA-UP is structured as a staged document-processing pipeline. Each stage consumes artifacts from the previous stage and produces artifacts that can be inspected, reused, or passed downstream.
+MA-UP is structured as a staged document-processing pipeline for historical Peruvian newspaper scans. Each stage consumes persisted artifacts from the previous stage and produces deterministic, inspectable outputs that can be reused downstream without repeating expensive upstream compute.
 
 ```text
-Acquisition
+Acquisition (sample.csv + raw scans)
     │
     ▼
-Raw corpus
+Preprocessing (Binarization: basic, otsu, none_color, none_grayscale)
     │
     ▼
-Preprocessing
+Layout analysis (PPDocLayout, Histogram, YOLO/DocLayout, or full-page)
     │
     ▼
-Prepared images
+OCR extraction (Docling RapidOCR / EasyOCR -> ocr.parquet)
     │
     ▼
-Layout analysis
+DSPy prompt optimization (Stratified k-fold CV -> winning *_prompt.md)
     │
     ▼
-Regions / layout metadata
+Structured LLM extraction (Ollama 7B models + standalone .md prompts)
     │
     ▼
-VLM extraction
+Structured predictions (JSON arrays / Parquet)
     │
     ▼
-Structured predictions
-    │
-    ├──────────────► Evaluation
-    │
-    └──────────────► Fine-tuning data
-                              │
-                              ▼
-                         Fine-tuned model
-                              │
-                              ▼
-                         Evaluation
+Evaluation (Page-level Hungarian matching -> F1, Title CER, Body WER)
 ```
 
 ## Design boundaries
 
-### Workflow layer
+### Workflow layer (`src/workflows`)
 
-`src/workflows` is the orchestration layer. A workflow should be responsible for:
+`src/workflows` is the orchestration layer (e.g., `evaluate_extraction.py`). A workflow is responsible for:
 
-- accepting configuration and CLI arguments;
-- determining input/output locations;
-- invoking the required processing components;
-- handling retries and failures at stage boundaries;
-- recording useful logs and metadata.
+- parsing CLI arguments and validating configuration;
+- resolving input/output paths;
+- invoking domain modules in `src/corpus_construction`;
+- handling stage-level retries and error reporting;
+- logging run summaries and evaluation metrics.
 
-It should not contain large amounts of reusable domain logic.
+### Processing layer (`src/corpus_construction`)
 
-### Processing layer
+Reusable domain logic is separated by stage under `src/corpus_construction/`:
 
-Reusable operations such as image transformations, parsing, schema validation, model invocation, and metric computation should live in dedicated modules rather than being duplicated across workflow scripts.
+- `ocr_extraction/`: image binarization, layout region cropping, and OCR transcription.
+- `local_dspy_llm/`: dataset alignment (`PageRecord`), stratified $k$-fold cross-validation, `BootstrapFewShot` optimization, and standalone Markdown prompt export (`export_prompt_markdown`).
+- `llm_extraction/`: region/page-level structured JSON extraction via local Ollama models using standalone `.md` prompt templates.
 
 ### External systems
 
-Network services, model providers, portals, storage systems, and GPU-specific runtimes should be isolated behind small interfaces where possible. This makes unit testing possible without requiring access to the external system.
+Local Ollama inference servers (`http://127.0.0.1:11434`), OCR runtimes (`docling_rapidocr`, `docling_easyocr`), and filesystem storage are isolated behind thin adapter functions (`make_lm`, `PageArticleExtractor`) so parsing, Hungarian matching, and dataset construction can be tested independently.
 
 ## Artifact-oriented execution
 
-A workflow should preferably follow:
+Each stage follows a restartable, artifact-oriented loop:
 
 ```text
-validate inputs
+validate inputs & config_id
     ↓
 create output directory
     ↓
-process one logical unit
+process logical unit (page / newspaper configuration)
     ↓
-write intermediate artifact
+write intermediate artifact (.parquet / .json / .md / .csv)
     ↓
-record metadata/log
+record metrics & elapsed time
     ↓
 continue
 ```
 
-This allows a failed run to be resumed without restarting the entire pipeline.
-
 ## Configuration
 
-Configuration should flow into a workflow from one place. Avoid scattering environment-variable reads throughout business logic.
-
-A recommended separation is:
+Configuration flows from explicit stage definitions (such as `NEWSPAPERS` in `src/corpus_construction/local_dspy_llm/steps.py`) and CLI arguments rather than scattered environment reads:
 
 ```text
-configuration
+configuration (NEWSPAPERS / CLI flags)
      │
      ▼
-workflow
+workflow / pipeline
      │
-     ├── acquisition
-     ├── preprocessing
-     ├── layout
-     ├── extraction
-     └── evaluation
+     ├── acquisition (sample.csv)
+     ├── preprocessing & layout (config_id, detector, binarization)
+     ├── ocr extraction (ocr_extractor, ocr_variant)
+     ├── prompt optimization (model, k-folds, table1_f1 threshold)
+     ├── llm extraction (prompt .md, Ollama runtime params)
+     └── evaluation (Hungarian matching, MATCH_THRESHOLD = 70.0)
 ```
 
 ## Error handling
 
-Errors should retain context:
+Errors preserve full stage context:
 
-- workflow/stage;
-- input artifact;
-- model/service involved;
-- operation being performed;
-- exception type;
-- retry status.
+- newspaper and `page_id` (`image_stem`);
+- `config_id` and stage (`build`, `eval`, `optimize`, `extract`, `evaluate`);
+- LLM model identifier and Ollama host;
+- exception type and per-page timing.
 
-Do not silently catch exceptions that can result in corrupted or incomplete scientific results.
+Malformed JSON or reasoning traces (such as `<think>...</think>` blocks from `deepseek-r1:7b`) are sanitized in `_parse_articles` without silently corrupting structured fields.
 
 ## Observability
 
-At minimum, each workflow should report:
+Each stage reports:
 
-- configuration summary;
-- number of inputs discovered;
-- number successfully processed;
-- number skipped;
-- number failed;
-- output location;
-- elapsed time.
-
-For model inference, also record model identifier and relevant generation/inference settings.
+- active newspaper configuration (`config_id`, detector, binarization, OCR engine, LLM model);
+- number of pages discovered and pages with non-empty OCR regions;
+- per-page and per-fold progress (`F1`, `Title CER`, `Body WER`, elapsed seconds);
+- selection decisions (whether a compiled DSPy fold strictly beat the Table 1 baseline);
+- output artifact paths.
 
 ## Extensibility
 
-New models or preprocessing strategies should be added behind stable interfaces rather than by cloning entire workflow scripts.
-
-A new implementation should ideally require changing configuration and dependency wiring rather than rewriting orchestration.
+Adding a new newspaper, OCR configuration, or LLM model requires adding an entry to the configuration dictionary and ensuring the target Ollama model is pulled—without rewriting orchestration or evaluation logic.

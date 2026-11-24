@@ -1,0 +1,102 @@
+Group "gpu" (4 parallel): running
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ Id    Status    Label                            Command                                                                      Path                      Start      End 
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+ 108   Running   layout_ojo_2015_ppdoclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh ojo ppdoclayout 1 2015      /project/leonrios/ma_up   22:16:43       
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 109   Running   layout_ojo_2016_ppdoclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh ojo ppdoclayout 1 2016      /project/leonrios/ma_up   22:16:44       
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 110   Running   layout_ojo_2017_ppdoclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh ojo ppdoclayout 1 2017      /project/leonrios/ma_up   22:16:44       
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 111   Running   layout_ojo_2018_ppdoclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh ojo ppdoclayout 1 2018      /project/leonrios/ma_up   22:16:45       
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 112   Queued    layout_ojo_2019_ppdoclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh ojo ppdoclayout 1 2019      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 113   Queued    layout_ojo_2020_ppdoclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh ojo ppdoclayout 1 2020      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 114   Queued    layout_ojo_2021_ppdoclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh ojo ppdoclayout 1 2021      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 115   Queued    layout_ojo_2022_ppdoclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh ojo ppdoclayout 1 2022      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 116   Queued    layout_ojo_2023_ppdoclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh ojo ppdoclayout 1 2023      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 117   Queued    layout_ojo_2024_ppdoclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh ojo ppdoclayout 1 2024      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 118   Queued    layout_ojo_2025_ppdoclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh ojo ppdoclayout 1 2025      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 119   Queued    layout_ojo_2026_ppdoclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh ojo ppdoclayout 1 2026      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 120   Queued    layout_peru21_2013_ppdoclayout   scripts/hpc_potsdam_fast/run_layout_detection.sh peru21 ppdoclayout 1 2013   /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 121   Queued    layout_peru21_2014_ppdoclayout   scripts/hpc_potsdam_fast/run_layout_detection.sh peru21 ppdoclayout 1 2014   /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 122   Queued    layout_peru21_2015_ppdoclayout   scripts/hpc_potsdam_fast/run_layout_detection.sh peru21 ppdoclayout 1 2015   /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 123   Queued    layout_peru21_2016_ppdoclayout   scripts/hpc_potsdam_fast/run_layout_detection.sh peru21 ppdoclayout 1 2016   /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 124   Queued    layout_peru21_2017_ppdoclayout   scripts/hpc_potsdam_fast/run_layout_detection.sh peru21 ppdoclayout 1 2017   /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 125   Queued    layout_peru21_2018_ppdoclayout   scripts/hpc_potsdam_fast/run_layout_detection.sh peru21 ppdoclayout 1 2018   /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 126   Queued    layout_peru21_2019_ppdoclayout   scripts/hpc_potsdam_fast/run_layout_detection.sh peru21 ppdoclayout 1 2019   /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 127   Queued    layout_peru21_2020_ppdoclayout   scripts/hpc_potsdam_fast/run_layout_detection.sh peru21 ppdoclayout 1 2020   /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 128   Queued    layout_peru21_2021_ppdoclayout   scripts/hpc_potsdam_fast/run_layout_detection.sh peru21 ppdoclayout 1 2021   /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 129   Queued    layout_peru21_2022_ppdoclayout   scripts/hpc_potsdam_fast/run_layout_detection.sh peru21 ppdoclayout 1 2022   /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 130   Queued    layout_peru21_2023_ppdoclayout   scripts/hpc_potsdam_fast/run_layout_detection.sh peru21 ppdoclayout 1 2023   /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 131   Queued    layout_trome_2014_doclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh trome doclayout 1 2014      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 132   Queued    layout_trome_2015_doclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh trome doclayout 1 2015      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 133   Queued    layout_trome_2016_doclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh trome doclayout 1 2016      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 134   Queued    layout_trome_2017_doclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh trome doclayout 1 2017      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 135   Queued    layout_trome_2018_doclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh trome doclayout 1 2018      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 136   Queued    layout_trome_2019_doclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh trome doclayout 1 2019      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 137   Queued    layout_trome_2020_doclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh trome doclayout 1 2020      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 138   Queued    layout_trome_2021_doclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh trome doclayout 1 2021      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 139   Queued    layout_trome_2022_doclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh trome doclayout 1 2022      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 140   Queued    layout_trome_2023_doclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh trome doclayout 1 2023      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 141   Queued    layout_trome_2024_doclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh trome doclayout 1 2024      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 142   Queued    layout_trome_2025_doclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh trome doclayout 1 2025      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 143   Queued    layout_trome_2026_doclayout      scripts/hpc_potsdam_fast/run_layout_detection.sh trome doclayout 1 2026      /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 144   Queued    layout_trome_2014_ppdoclayout    scripts/hpc_potsdam_fast/run_layout_detection.sh trome ppdoclayout 1 2014    /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 145   Queued    layout_trome_2015_ppdoclayout    scripts/hpc_potsdam_fast/run_layout_detection.sh trome ppdoclayout 1 2015    /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 146   Queued    layout_trome_2016_ppdoclayout    scripts/hpc_potsdam_fast/run_layout_detection.sh trome ppdoclayout 1 2016    /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 147   Queued    layout_trome_2017_ppdoclayout    scripts/hpc_potsdam_fast/run_layout_detection.sh trome ppdoclayout 1 2017    /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 148   Queued    layout_trome_2018_ppdoclayout    scripts/hpc_potsdam_fast/run_layout_detection.sh trome ppdoclayout 1 2018    /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 149   Queued    layout_trome_2019_ppdoclayout    scripts/hpc_potsdam_fast/run_layout_detection.sh trome ppdoclayout 1 2019    /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 150   Queued    layout_trome_2020_ppdoclayout    scripts/hpc_potsdam_fast/run_layout_detection.sh trome ppdoclayout 1 2020    /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 151   Queued    layout_trome_2021_ppdoclayout    scripts/hpc_potsdam_fast/run_layout_detection.sh trome ppdoclayout 1 2021    /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 152   Queued    layout_trome_2022_ppdoclayout    scripts/hpc_potsdam_fast/run_layout_detection.sh trome ppdoclayout 1 2022    /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 153   Queued    layout_trome_2023_ppdoclayout    scripts/hpc_potsdam_fast/run_layout_detection.sh trome ppdoclayout 1 2023    /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 154   Queued    layout_trome_2024_ppdoclayout    scripts/hpc_potsdam_fast/run_layout_detection.sh trome ppdoclayout 1 2024    /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 155   Queued    layout_trome_2025_ppdoclayout    scripts/hpc_potsdam_fast/run_layout_detection.sh trome ppdoclayout 1 2025    /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 156   Queued    layout_trome_2026_ppdoclayout    scripts/hpc_potsdam_fast/run_layout_detection.sh trome ppdoclayout 1 2026    /project/leonrios/ma_up                  
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────

@@ -320,9 +320,15 @@ class PPDocLayoutDetector:
     MODEL_NAME = "PP-DocLayout-L"
 
     def __init__(self, score_threshold: float = 0.5):
+        import os
+        os.environ.setdefault("PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK", "True")
+        
+        import paddle
         from paddleocr import LayoutDetection
 
-        self.model = LayoutDetection(model_name=self.MODEL_NAME)
+        device = "gpu" if paddle.device.is_compiled_with_cuda() else "cpu"
+        print(f"PP-DocLayout-L using device: {device}")
+        self.model = LayoutDetection(model_name=self.MODEL_NAME, device=device)
         self.score_threshold = score_threshold
 
     def detect(self, image: np.ndarray) -> List[LayoutRegion]:

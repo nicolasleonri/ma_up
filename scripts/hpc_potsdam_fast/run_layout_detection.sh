@@ -11,6 +11,13 @@ if [ "$#" -gt 0 ]; then
   SUB_DIR_ARGS=(--sub-dirs "$@")
 fi
 
+export PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK=True
+export PADDLE_PDX_MODEL_SOURCE=HuggingFace
+export OMP_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+export OPENBLAS_NUM_THREADS=1
+export CPU_NUM=1
+
 .venv/corpus_construction/layout_detection/bin/python -m src.workflows.layout_detection \
   --preprocessed-dir "$HOME/data/leonrios/processed/enhanced/$NEWSPAPER" \
   --output-dir "$HOME/data/leonrios/processed/layout/$NEWSPAPER" \

@@ -119,6 +119,7 @@ def main():
         score_threshold=args.score_threshold,
         detectors=detectors,
         workers=args.workers,
+        newspaper=newspaper_key,
     )
 
     try:
@@ -132,6 +133,8 @@ def main():
         logger.info("Layout analysis finished. Images processed: %s", processed)
     except Exception as e:
         logger.exception("Layout analysis failed: %s", e)
+        raise SystemExit(1)
+
 
 if __name__ == "__main__":
     main()

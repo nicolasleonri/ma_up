@@ -15,18 +15,23 @@ No vLLM server is required. DSPy receives a proper dspy.LM subclass
 so that optimization (BootstrapFewShot, MIPROv2) works correctly when
 fine-tuning against gold standards later.
 """
-import os
+
 import gc
 import json
+import os
 import re
 import time
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Any, Dict, List, Optional
+
 import dspy
+
 
 # ----------------------------------------------------------------------
 # Result containers
 # ----------------------------------------------------------------------
+
 
 @dataclass
 class ArticleResult:
@@ -49,16 +54,8 @@ class ExtractionResult:
 
 # ----------------------------------------------------------------------
 # DSPy LM subclass backed by in-process vLLM
-#
-# Subclassing dspy.LM (rather than using a plain callable shim) gives
-# DSPy full visibility into:
-#   - call history  (needed by BootstrapFewShot)
-#   - token counts  (needed by MIPROv2 budget tracking)
-#   - caching       (avoids redundant generations during optimization)
-#
-# The vLLM instance is injected after loading so the same in-process
-# model is shared between batch inference and DSPy Predict calls.
 # ----------------------------------------------------------------------
+
 
 class VLLMInProcessLM:
     """
@@ -73,15 +70,7 @@ class VLLMInProcessLM:
     This class satisfies both contracts without starting a server.
     """
 
-    def __init__(self, llm, max_new_tokens=4096):
-        """
-        Parameters
-        ----------
-        llm:
-            An already-initialised vLLM ``LLM`` instance.
-        max_new_tokens:
-            Default generation length passed to SamplingParams.
-        """
+    def __init__(self, llm, max_new_tokens: int = 4096):
         from vllm import SamplingParams
 
         self._llm = llm
@@ -90,13 +79,8 @@ class VLLMInProcessLM:
             max_tokens=max_new_tokens,
         )
 
-        # DSPy inspects these attributes on the LM object.
         self.kwargs = {"max_tokens": max_new_tokens}
         self.history: List[Dict[str, Any]] = []
-
-    # ------------------------------------------------------------------
-    # DSPy primary call interface
-    # ------------------------------------------------------------------
 
     def __call__(
         self,
@@ -104,14 +88,7 @@ class VLLMInProcessLM:
         messages: Optional[List[Dict]] = None,
         **kwargs,
     ) -> List[str]:
-        """
-        Generate a completion for a single prompt or message list.
-
-        DSPy calls this with either a plain string prompt or an
-        OpenAI-style messages list. Both are supported.
-
-        Returns a list with one string (DSPy expects a list).
-        """
+        """Generate a completion for a single prompt or message list."""
         text_prompt = self._to_prompt(prompt, messages)
 
         outputs = self._llm.generate(
@@ -139,12 +116,7 @@ class VLLMInProcessLM:
         prompts: List[str],
         **kwargs,
     ) -> List[List[str]]:
-        """
-        Generate completions for multiple prompts in one vLLM call.
-
-        Used by the pipeline for efficient batch inference. Each inner
-        list contains one string to match DSPy's per-prompt format.
-        """
+        """Generate completions for multiple prompts in one vLLM call."""
         outputs = self._llm.generate(
             prompts,
             self._params,
@@ -168,10 +140,6 @@ class VLLMInProcessLM:
 
         return results
 
-    # ------------------------------------------------------------------
-    # DSPy 2.x compatibility shim
-    # ------------------------------------------------------------------
-
     def basic_request(
         self,
         prompt: str,
@@ -179,10 +147,6 @@ class VLLMInProcessLM:
     ) -> str:
         """Called by some DSPy 2.x internals instead of __call__."""
         return self(prompt=prompt)[0]
-
-    # ------------------------------------------------------------------
-    # Helpers
-    # ------------------------------------------------------------------
 
     @staticmethod
     def _to_prompt(
@@ -206,6 +170,7 @@ class VLLMInProcessLM:
 # ----------------------------------------------------------------------
 # DSPy structured extraction
 # ----------------------------------------------------------------------
+
 
 class DSPyArticleExtraction:
     """
@@ -260,20 +225,23 @@ class DSPyArticleExtraction:
         """
         Parse the JSON array returned by DSPy into ArticleResult objects.
 
-        Tolerates markdown code fences and a bare dict instead of a list.
+        Strips DeepSeek reasoning blocks (<think>...</think>) and markdown
+        code fences, and tolerates a bare dict instead of a list.
         Falls back to storing the raw text in the body of a single
         ArticleResult when JSON parsing fails entirely.
         """
         text = (raw or "").strip()
 
-        # Strip markdown code fences.
+        # Strip reasoning blocks if present (e.g., DeepSeek-R1)
+        text = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL).strip()
+
+        # Strip markdown code fences
         text = re.sub(r"^```(?:json)?", "", text).strip()
         text = re.sub(r"```$", "", text).strip()
 
         try:
             data = json.loads(text)
         except json.JSONDecodeError:
-            # Non-JSON fallback: store whatever the model returned.
             return [
                 ArticleResult(
                     article_index=0,
@@ -281,7 +249,6 @@ class DSPyArticleExtraction:
                 )
             ]
 
-        # Allow a single object instead of a list.
         if isinstance(data, dict):
             data = [data]
 
@@ -307,12 +274,7 @@ class DSPyArticleExtraction:
         return articles
 
     def extract(self, ocr_text: str) -> List[ArticleResult]:
-        """
-        Extract articles from a single OCR text string.
-
-        Returns an empty list if the input is blank.
-        Falls back to _parse_articles on DSPy errors.
-        """
+        """Extract articles from a single OCR text string."""
         if not ocr_text:
             return []
 
@@ -329,15 +291,13 @@ class DSPyArticleExtraction:
 # Base LLM extractor
 # ----------------------------------------------------------------------
 
+
 class _BaseLLMExtractor:
     """
     Single-phase local extraction:
 
         DSPy Predict: raw OCR text → structured fields
             (text-only, in-process vLLM, proper dspy.LM subclass)
-
-    DSPy is configured after vLLM loads so the same in-process model
-    handles both batch inference and DSPy optimization runs.
     """
 
     model_id: str = ""
@@ -346,21 +306,49 @@ class _BaseLLMExtractor:
         self,
         max_new_tokens: int = 4096,
         max_model_len: Optional[int] = None,
-        gpu_memory_utilization: float = os.environ.get("GPU_MEM_UTIL", 0.4),
+        gpu_memory_utilization: float = float(os.environ.get("GPU_MEM_UTIL", 0.85)),
         tensor_parallel_size: int = 1,
-        dtype: str = "auto",  # FP8 models carry their own quant config
+        dtype: str = "auto",
+        prompt_path: Optional[Path] = None,
         **engine_kwargs: Any,
     ):
         self.max_new_tokens = max_new_tokens
         self.max_model_len = max_model_len
-        self.gpu_memory_utilization = gpu_memory_utilization
+        self.gpu_memory_utilization = float(gpu_memory_utilization)
         self.tensor_parallel_size = tensor_parallel_size
         self.dtype = dtype
         self.engine_kwargs = engine_kwargs
 
+        self.prompt_path = Path(prompt_path) if prompt_path else None
+        self.custom_prompt_template: Optional[str] = None
+        if self.prompt_path is not None:
+            if not self.prompt_path.exists():
+                raise FileNotFoundError(
+                    f"Newspaper prompt file not found: {self.prompt_path}"
+                )
+            self.custom_prompt_template = self.prompt_path.read_text(
+                encoding="utf-8"
+            )
+
         self._llm = None
-        self._lm = None           # VLLMInProcessLM instance
+        self._lm = None
         self._dspy_extractor = None
+
+    def _format_prompt(self, ocr_text: str) -> str:
+        """
+        Render the newspaper-specific markdown prompt (using safe string
+        replacement so JSON braces in few-shot examples never raise KeyError)
+        or fall back to the built-in template.
+        """
+        if self.custom_prompt_template is not None:
+            if "{ocr_text}" in self.custom_prompt_template:
+                return self.custom_prompt_template.replace("{ocr_text}", ocr_text)
+            return (
+                f"{self.custom_prompt_template.rstrip()}\n\n"
+                f"OCR TEXT:\n{ocr_text}\n\n"
+                "JSON ARRAY:"
+            )
+        return self.EXTRACTION_PROMPT_TEMPLATE.format(ocr_text=ocr_text)
 
     # ------------------------------------------------------------------
     # Load
@@ -370,7 +358,7 @@ class _BaseLLMExtractor:
         if self._llm is not None:
             return
 
-        from vllm import LLM, SamplingParams
+        from vllm import LLM
 
         llm_kwargs = dict(
             model=self.model_id,
@@ -387,7 +375,6 @@ class _BaseLLMExtractor:
 
         self._llm = LLM(**llm_kwargs)
 
-        # Wire DSPy to the in-process model via our proper LM subclass.
         self._lm = VLLMInProcessLM(
             llm=self._llm,
             max_new_tokens=self.max_new_tokens,
@@ -405,11 +392,9 @@ class _BaseLLMExtractor:
         if self._llm is None:
             return
 
-        # Shut down the engine and kill the EngineCore subprocess explicitly.
         try:
             engine = getattr(self._llm, "llm_engine", None)
             if engine is not None:
-                # Shutdown the engine core client (sends SIGTERM to subprocess)
                 engine_core = getattr(engine, "engine_core", None)
                 if engine_core is not None:
                     proc = getattr(engine_core, "_process", None)
@@ -435,6 +420,7 @@ class _BaseLLMExtractor:
         try:
             import torch
             import torch.distributed as dist
+
             if torch.cuda.is_available():
                 torch.cuda.empty_cache()
                 torch.cuda.synchronize()
@@ -448,6 +434,7 @@ class _BaseLLMExtractor:
 
         try:
             from vllm.distributed.parallel_state import destroy_model_parallel
+
             destroy_model_parallel()
         except Exception:
             pass
@@ -553,6 +540,7 @@ class _BaseLLMExtractor:
         "author": "",
         "body": "La Policía Nacional capturó en la madrugada del lunes a un ciudadano identificado como presunto líder de una banda criminal en el distrito de Huamanga, Ayacucho.\nSegún fuentes policiales, el detenido portaba documentos y material delincuencial."
     }}
+    ]
 
     --- END EXAMPLES ---
 
@@ -568,17 +556,13 @@ class _BaseLLMExtractor:
         ocr_texts: List[str],
         metadata_list: List[Dict[str, Any]],
     ) -> List[ExtractionResult]:
-
         self._ensure_loaded()
 
         prompts = [
-            self.EXTRACTION_PROMPT_TEMPLATE.format(ocr_text=t)
-            if t and t.strip()
-            else None
+            self._format_prompt(t) if t and t.strip() else None
             for t in ocr_texts
         ]
 
-        # Separate valid prompts from empty ones
         valid_indices = [i for i, p in enumerate(prompts) if p is not None]
         valid_prompts = [prompts[i] for i in valid_indices]
 
@@ -592,7 +576,6 @@ class _BaseLLMExtractor:
         elapsed_total = time.time() - start
         per_item = elapsed_total / max(len(valid_prompts), 1)
 
-        # Reconstruct full results list, inserting empty results for skipped items
         valid_iter = iter(batch_outputs_valid)
         results = []
         for i, (ocr_text, metadata) in enumerate(zip(ocr_texts, metadata_list)):
@@ -600,46 +583,35 @@ class _BaseLLMExtractor:
                 raw_list = next(valid_iter)
                 raw_text = raw_list[0] if raw_list else ""
 
-                # print("\n" + "=" * 100)
-                # print("RAW LLM OUTPUT")
-                # print("=" * 100)
-                # print(raw_text)
-                # print("=" * 100 + "\n")
-
                 articles = self._dspy_extractor._parse_articles(raw_text)
-                results.append(ExtractionResult(
-                    articles=articles,
-                    raw_text=raw_text,
-                    elapsed_s=per_item,
-                    status="success",
-                    metadata=metadata,
-                ))
+                results.append(
+                    ExtractionResult(
+                        articles=articles,
+                        raw_text=raw_text,
+                        elapsed_s=per_item,
+                        status="success",
+                        metadata=metadata,
+                    )
+                )
             else:
-                results.append(ExtractionResult(
-                    articles=[],
-                    raw_text="",
-                    elapsed_s=0.0,
-                    status="failed",
-                    error="empty OCR text",
-                    metadata=metadata,
-                ))
+                results.append(
+                    ExtractionResult(
+                        articles=[],
+                        raw_text="",
+                        elapsed_s=0.0,
+                        status="failed",
+                        error="empty OCR text",
+                        metadata=metadata,
+                    )
+                )
 
         return results
 
+
 # ----------------------------------------------------------------------
 # Concrete extractors
-#
-# All models use Neural Magic FP8-dynamic quantizations, which are
-# ready for vLLM out of the box and leverage the H100's native FP8
-# tensor cores for ~1.4x throughput over bfloat16 with negligible
-# quality loss.
-#
-# Sources:
-#   Qwen    : RedHatAI/Qwen2.5-7B-Instruct-FP8-dynamic
-#   Mistral : RedHatAI/Mistral-7B-Instruct-v0.3-FP8
-#   Llama   : RedHatAI/Meta-Llama-3.1-8B-Instruct-FP8-dynamic
-#   DeepSeek: RedHatAI/DeepSeek-R1-Distill-Qwen-7B-FP8-dynamic
 # ----------------------------------------------------------------------
+
 
 class QwenExtractor(_BaseLLMExtractor):
     model_id = "RedHatAI/Qwen2.5-7B-Instruct-FP8-dynamic"
@@ -654,19 +626,15 @@ class LlamaExtractor(_BaseLLMExtractor):
 
 
 class DeepSeekExtractor(_BaseLLMExtractor):
-    # model_id = "RedHatAI/DeepSeek-R1-Distill-Qwen-7B-FP8-dynamic"
     model_id = "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
 
     def _ensure_loaded(self):
         super()._ensure_loaded()
-        # Override sampling params to stop at end of thinking block
         from vllm import SamplingParams
+
         self._lm._params = SamplingParams(
             temperature=0.0,
             max_tokens=self.max_new_tokens,
-            # stop=["</think>"],
-            # include_stop_str_in_output=False,
-            # thinking_token_budget=0, # TODO: Test without
         )
 
 

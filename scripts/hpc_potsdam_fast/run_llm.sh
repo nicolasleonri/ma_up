@@ -9,6 +9,7 @@ if [ "$#" -gt 0 ]; then
   SUB_DIR_ARGS=(--sub-dirs "$@")
 fi
 
+export HF_HOME="$HOME//data/huggingface"
 BASE_DIR="$HOME/data/leonrios/processed/"
 PROMPTS_DIR="$HOME/project/leonrios/ma_up/data/corpus_construction/local_dspy_llm/prompts"
 
